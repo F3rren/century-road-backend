@@ -1,3 +1,0 @@
-# Shell scripts run on Linux servers. A CRLF checkout on Windows would put a carriage return
-# after the shebang and the script would fail with "bad interpreter".
-*.sh text eol=lf
