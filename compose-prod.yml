@@ -189,7 +189,7 @@ services:
   # Loopback only, same reasoning as Prometheus: the admin password is the single thing
   # standing between the internet and the dashboards.
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:13.2.2
     restart: unless-stopped
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}

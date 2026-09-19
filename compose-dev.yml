@@ -179,7 +179,7 @@ services:
 
   # ─── Grafana ─────────────────────────────────────────────────────────────────
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:13.2.2
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}
