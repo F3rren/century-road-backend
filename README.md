@@ -428,6 +428,32 @@ To build the same images by hand:
 docker buildx bake -f compose-prod.yml --load     # tagged ...-gateway:local, and so on
 ```
 
+### Running the gateway with no proxy of ours in front
+
+On the VPS Caddy hides the actuator and adds the security headers. On a platform that terminates
+TLS itself (Railway) nothing of ours does, so the gateway has a `railway` profile that does both.
+Turn it on with this variable on the gateway service:
+
+```
+SPRING_PROFILES_INCLUDE=railway
+```
+
+It has to be `INCLUDE`: the images start with `-Dspring.profiles.active=prod`, which outranks
+`SPRING_PROFILES_ACTIVE`, so setting that one changes nothing. Without the variable the gateway
+behaves exactly as before.
+
+- **Actuator**: only `/actuator/health` is exposed on the public port, which is what the
+  platform's healthcheck needs. Metrics and info are not, and there is no Prometheus to scrape
+  them.
+- **Headers**: `Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options` and
+  `Referrer-Policy` on every proxied response, the same set as the Caddyfile. HSTS follows
+  `HSTS_MAX_AGE`, five minutes if unset: raise it once HTTPS has been stable for a while.
+  The gateway's own answers (the actuator, a path with no route) do not carry them.
+- **Not covered**: the caller's address. The login rate limiter keys on it, and it depends on
+  how the platform's edge sets `X-Forwarded-For`, which has to be checked on a real deployment
+  before it is trusted: send a login with a forged `X-Forwarded-For` and read the address in
+  `auth-service`'s `Login refused | <address>|<email>` log line.
+
 ## History API
 
 `GET /api/history/on-this-day/{month}/{day}` returns what happened on a calendar day, from
