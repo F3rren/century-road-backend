@@ -326,6 +326,120 @@ behaves exactly as before.
   before it is trusted: send a login with a forged `X-Forwarded-For` and read the address in
   `auth-service`'s `Login refused | <address>|<email>` log line.
 
+## Running it on Railway
+
+One Railway project holds the whole stack: Postgres, the three services from the images CI
+publishes (see [Container images](#container-images)), and the frontend, which lives in its own
+repository. The backend is not built on Railway, and no application secret passes through GitHub.
+
+**Plan.** Hobby or above. On a Trial account, adding services stopped with "Free plan resource
+provision limit exceeded", and an unverified Trial restricts outbound network, which
+`history-service` needs to reach Wikipedia. Set a usage limit before deploying anything: in the
+workspace's Usage page, *Set Usage Limits*. A hard limit takes every service offline when reached.
+
+### The services
+
+Create Postgres first (*Add → Database → PostgreSQL*, keep the name `Postgres`) and wait until it is
+up. Then add each of the others with *Add → Docker Image* and **rename it at once** to the name in
+the table: the name is the service's address on the private network, `<name>.railway.internal`,
+and the gateway is told those addresses by hand. The images are public, so no registry credentials
+are needed.
+
+| Service | Image |
+|---|---|
+| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<tag>` |
+| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<tag>` |
+| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<tag>` |
+
+`<tag>` is a short commit id from the package's list of tags. Prefer it to `latest`: it never
+moves, so a redeploy cannot change what runs.
+
+Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
+
+```
+# auth-service
+SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
+SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
+SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
+JWT_EXPIRATION_MS=86400000
+
+# history-service
+WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
+
+# gateway
+SPRING_PROFILES_INCLUDE=railway
+AUTH_SERVICE_URI=http://auth-service.railway.internal:8081
+HISTORY_SERVICE_URI=http://history-service.railway.internal:8082
+GATEWAY_PORT=8080
+PORT=8080
+FRONTEND_ORIGIN=https://<the frontend's public domain>
+```
+
+On the gateway service, *Settings → Networking → Generate Domain* (port 8080), and set the
+healthcheck path to `/actuator/health`. `SPRING_PROFILES_INCLUDE=railway` is what hides the
+actuator and adds the security headers: see
+[Running the gateway with no proxy of ours in front](#running-the-gateway-with-no-proxy-of-ours-in-front).
+For the first administrator, see [First administrator](#first-administrator).
+
+Two things that cost time the first time:
+
+- **Variable changes are staged.** Railway keeps them pending until you confirm the deploy.
+- **The names must match.** If the gateway logs `Failed to resolve '<name>.railway.internal'` with
+  `NXDOMAIN`, no service has that name. Rename the service, or use the name it really has in the
+  `*_SERVICE_URI` variables. Until the routes load, the gateway still answers `/actuator/health`
+  with `UP`, so health alone does not prove it works.
+
+### Checking it
+
+```bash
+G=https://<the gateway's public domain>
+curl -s $G/actuator/health                                          # {"status":"UP"}
+curl -s -o /dev/null -w '%{http_code}\n' $G/actuator/prometheus     # 404
+curl -s -o /dev/null -w '%{http_code}\n' $G/api/history/on-this-day/10/16     # 200
+curl -s -D - -o /dev/null -X POST -H 'Content-Type: application/json' \
+  -d '{"email":"nobody@example.test","password":"wrong"}' $G/api/auth/login   # 401, and:
+#   strict-transport-security: max-age=300; includeSubDomains   (once, not the service's own)
+```
+
+And that the login limiter cannot be talked around. Five wrong attempts a minute are allowed per
+address and email, so seven with a different forged address each must still be limited:
+
+```bash
+for i in 1 2 3 4 5 6 7; do
+  curl -s -o /dev/null -w '%{http_code} ' -X POST -H 'Content-Type: application/json' \
+    -H "X-Forwarded-For: 10.0.0.$i" \
+    -d '{"email":"limit-check@example.test","password":"wrong"}' $G/api/auth/login
+done; echo                                  # 401 401 401 401 401 429 429
+```
+
+On Railway's edge this held: a client cannot choose the address the limiter sees, whether through
+`X-Forwarded-For` or `Forwarded`. It is behaviour of the platform, so run it again if that ever
+comes into doubt. The `Login refused | <address>|<email>` lines in `auth-service`'s log show which
+address was used.
+
+### The frontend
+
+The frontend repository has a `Dockerfile.railway` that serves the compiled app with Caddy. Add it
+with *Add → GitHub Repo*, pick the branch to deploy (`main` for production, with *Wait for CI*
+on), and set:
+
+```
+RAILWAY_DOCKERFILE_PATH=Dockerfile.railway
+VITE_API_BASE_URL=https://<the gateway's public domain>/api
+```
+
+`VITE_API_BASE_URL` is compiled into the app, so changing it means a new build. The gateway allows
+one origin, `FRONTEND_ORIGIN`, spelled exactly like the address in the browser with no trailing
+slash: the address of a preview deployment is a different origin and is refused.
+
+### Not covered
+
+- **Backups.** Every user and password hash is in Postgres's one volume. Nothing here backs it up:
+  check what the plan offers before there is data worth losing.
+- **Metrics.** The gateway exposes only `/actuator/health` here, and there is no Prometheus or
+  Grafana in this setup. Railway's own logs and resource graphs are what you have.
+
 ## History API
 
 `GET /api/history/on-this-day/{month}/{day}` returns what happened on a calendar day, from
