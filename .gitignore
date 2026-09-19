@@ -1,5 +1,7 @@
-# Environment
+# Environment: .env is production (compose-prod.yml), .env.dev is development (compose-dev.yml).
+# Only the .example files are committed.
 .env
+.env.dev
 
 # Maven
 service/*/target/

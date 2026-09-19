@@ -34,16 +34,35 @@ updates:
           - minor
           - patch
 
+  - package-ecosystem: maven
+    directory: "/service/history-service"
+    target-branch: develop
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 10
+    groups:
+      maven-minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
   # ---------- Docker ----------
-  # The two service images (eclipse-temurin) and the root compose stack (postgis).
-  # Prometheus and Grafana are pinned through environment variables in
-  # docker-compose.yml, so Dependabot cannot see or update those.
+  # The service Dockerfiles (eclipse-temurin). The compose files are a separate ecosystem,
+  # docker-compose, further down: "docker" only reads Dockerfiles, so an entry for the
+  # repository root under it would never have found an image.
+  #
+  # A new Java major is never taken here. The JDK version has to move everywhere at
+  # once - java.version in both pom.xml files, the Java in ci.yml, and every FROM in both
+  # Dockerfiles - or what CI tests is not what ships. That is a decision, not a bump.
   - package-ecosystem: docker
     directory: "/service/auth-service"
     target-branch: develop
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "eclipse-temurin"
+        update-types: ["version-update:semver-major"]
     groups:
       docker-minor-and-patch:
         update-types:
@@ -56,6 +75,9 @@ updates:
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "eclipse-temurin"
+        update-types: ["version-update:semver-major"]
     groups:
       docker-minor-and-patch:
         update-types:
@@ -63,13 +85,36 @@ updates:
           - patch
 
   - package-ecosystem: docker
+    directory: "/service/history-service"
+    target-branch: develop
+    schedule:
+      interval: weekly
+    open-pull-requests-limit: 5
+    ignore:
+      - dependency-name: "eclipse-temurin"
+        update-types: ["version-update:semver-major"]
+    groups:
+      docker-minor-and-patch:
+        update-types:
+          - minor
+          - patch
+
+  # ---------- Docker Compose ----------
+  # compose-dev.yml and compose-prod.yml: postgis, caddy, Prometheus and Grafana. Their versions
+  # are written in the files (not in .env) precisely so they show up here. The two files pin
+  # the same versions, and Dependabot proposes each bump for both.
+  - package-ecosystem: docker-compose
     directory: "/"
     target-branch: develop
     schedule:
       interval: weekly
     open-pull-requests-limit: 5
+    ignore:
+      # A new PostGIS major is a database upgrade: it needs a dump and restore, not a new tag.
+      - dependency-name: "postgis/postgis"
+        update-types: ["version-update:semver-major"]
     groups:
-      docker-minor-and-patch:
+      compose-minor-and-patch:
         update-types:
           - minor
           - patch

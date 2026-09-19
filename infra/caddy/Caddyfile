@@ -8,14 +8,36 @@
 
 {$PUBLIC_DOMAIN} {
 
-	reverse_proxy gateway:8080 {
-		# Set, never append. Caddy's default is to append to whatever the caller sent,
-		# which would let anyone put an address of their choosing at the front of the
-		# list - and the login rate limiter downstream keys on exactly that address.
-		# Overwriting is what makes server.forward-headers-strategy safe to enable.
-		header_up X-Forwarded-For {remote_host}
-		header_up X-Forwarded-Proto {scheme}
-		header_up X-Forwarded-Host {host}
+	# The gateway serves its own actuator on the same port as the API, so without this
+	# everything Prometheus scrapes (/actuator/prometheus, /actuator/metrics) would be
+	# readable by anyone. Prometheus reaches the gateway over the internal network and
+	# never comes through here. Only health stays public, for uptime checks and the
+	# README's HSTS verification.
+	@actuatorPrivate {
+		path /actuator/*
+		not path /actuator/health /actuator/health/*
+	}
+	handle @actuatorPrivate {
+		respond 404
+	}
+
+	handle {
+		reverse_proxy gateway:{$GATEWAY_PORT:8080} {
+			# Set, never append. Caddy's default is to append to whatever the caller sent,
+			# which would let anyone put an address of their choosing at the front of the
+			# list - and the login rate limiter downstream keys on exactly that address.
+			# Overwriting is what makes server.forward-headers-strategy safe to enable.
+			header_up X-Forwarded-For {remote_host}
+			header_up X-Forwarded-Proto {scheme}
+			header_up X-Forwarded-Host {host}
+
+			# The standard Forwarded header is not one of those: Caddy passes it on exactly as
+			# the caller sent it, and Spring reads it in preference to X-Forwarded-For, so a
+			# caller could still choose the address the rate limiter sees. Nothing here sets it,
+			# so drop it. The gateway ignores it too (XForwardedOnlyHeaderTransformer), so
+			# neither layer is the only thing standing in the way.
+			header_up -Forwarded
+		}
 	}
 
 	header {

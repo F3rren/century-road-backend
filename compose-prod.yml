@@ -1,0 +1,211 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# PRODUCTION.  Start it with:
+#
+#     docker compose -f compose-prod.yml up -d
+#
+# Secrets and ports all come from .env (see .env.example). Nothing is published except the
+# reverse proxy (80/443) and Prometheus/Grafana on the host's loopback.
+#
+# Not for local development: that is compose-dev.yml, which reads .env.dev instead.
+# The two files share nothing at run time, so an edit to one never changes the other.
+#
+# The three application services name their image next to the build: section. Compose builds
+# them under that name, and CI builds and pushes this same definition to GHCR (the
+# publish-images job in .github/workflows/ci.yml), so a platform that runs ready-made images
+# can pull what CI verified instead of building anything. IMAGE_PREFIX and IMAGE_TAG are set
+# by CI only; on a machine they fall back to a ":local" tag, which is never a published one.
+# ═══════════════════════════════════════════════════════════════════════════════
+services:
+
+  # ─── Database ────────────────────────────────────────────────────────────────
+  # No ports here on purpose: nothing outside the Compose network has a reason to talk
+  # to Postgres in production.
+  db:
+    image: postgis/postgis:16-3.4-alpine
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB:       ${POSTGRES_DB}
+      POSTGRES_USER:     ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ─── Auth service ────────────────────────────────────────────────────────────
+  auth-service:
+    image: ${IMAGE_PREFIX:-ghcr.io/f3rren/century-road-backend}-auth-service:${IMAGE_TAG:-local}
+    build:
+      context: ./service/auth-service
+      dockerfile: Dockerfile
+      target: prod
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE:     prod
+      # The port it listens on inside the Compose network. Everything that talks to it (the
+      # gateway, Prometheus, the healthcheck below) reads the same variable, so it is set in
+      # .env and nowhere else.
+      AUTH_PORT:                  ${AUTH_PORT:?set AUTH_PORT in .env}
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env}
+      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS}
+      # Creating a user needs an admin token, so an empty database has no way to get
+      # its first administrator without these. Inert unless both are set AND the users
+      # table is empty - see FirstAdminBootstrap. Clear them again after the first
+      # login and restart, or they sit in the container environment for good.
+      BOOTSTRAP_ADMIN_EMAIL:      ${BOOTSTRAP_ADMIN_EMAIL:-}
+      BOOTSTRAP_ADMIN_PASSWORD:   ${BOOTSTRAP_ADMIN_PASSWORD:-}
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:${AUTH_PORT}/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # ─── History service ─────────────────────────────────────────────────────────
+  # Historical events for a date, from Wikipedia's On this day feed. Needs no database and no
+  # secret; the one required setting is who Wikimedia can contact about this client, which its
+  # User-Agent policy asks every client to say.
+  history-service:
+    image: ${IMAGE_PREFIX:-ghcr.io/f3rren/century-road-backend}-history-service:${IMAGE_TAG:-local}
+    build:
+      context: ./service/history-service
+      dockerfile: Dockerfile
+      target: prod
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8082/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+
+  # ─── Gateway ─────────────────────────────────────────────────────────────────
+  # No ports here on purpose: the proxy below is the only way in. Publishing the gateway
+  # would break the login rate limiter - see the security notes in the README.
+  gateway:
+    image: ${IMAGE_PREFIX:-ghcr.io/f3rren/century-road-backend}-gateway:${IMAGE_TAG:-local}
+    build:
+      context: ./service/gateway
+      dockerfile: Dockerfile
+      target: prod
+    restart: unless-stopped
+    environment:
+      SPRING_PROFILES_ACTIVE: prod
+      GATEWAY_PORT:           ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
+      AUTH_SERVICE_URI:       http://auth-service:${AUTH_PORT:?set AUTH_PORT in .env}
+      HISTORY_SERVICE_URI:    http://history-service:8082
+      # The exact origin the frontend is served from. Without it the gateway answers CORS
+      # preflights for the default (http://localhost:5173) only, and a real frontend is
+      # refused by the browser before it reaches the API.
+      FRONTEND_ORIGIN:        ${FRONTEND_ORIGIN:?set FRONTEND_ORIGIN in .env (the frontend's real origin)}
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:${GATEWAY_PORT}/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 60s
+    depends_on:
+      - auth-service
+      - history-service
+
+  # ─── Reverse proxy (TLS termination) ─────────────────────────────────────────
+  # The only thing here that faces the internet. It needs PUBLIC_DOMAIN to resolve to this
+  # host before the first start, or it cannot obtain a certificate.
+  proxy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    environment:
+      PUBLIC_DOMAIN: ${PUBLIC_DOMAIN:?set PUBLIC_DOMAIN in .env}
+      HSTS_MAX_AGE:  ${HSTS_MAX_AGE:-300}
+      GATEWAY_PORT:  ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
+    volumes:
+      - ./infra/caddy/Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    # Host side only: Caddy always listens on 80/443 inside the container. Change these
+    # only when a router or firewall forwards the public 80/443 to them - the certificate
+    # challenge arrives on 80/443 whatever is configured here.
+    ports:
+      - "${PROXY_HTTP_PORT:-80}:80"
+      - "${PROXY_HTTPS_PORT:-443}:443"
+    depends_on:
+      gateway:
+        condition: service_healthy
+
+  # ─── Prometheus ──────────────────────────────────────────────────────────────
+  # Published on the host's loopback only: --web.enable-lifecycle plus no authentication
+  # means anyone who can reach this port can reload or shut Prometheus down. From
+  # another machine, go through an SSH tunnel (see README).
+  #
+  # The version is written here, not in .env, so Dependabot can see it and propose bumps.
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    restart: unless-stopped
+    environment:
+      AUTH_PORT:    ${AUTH_PORT:?set AUTH_PORT in .env}
+      GATEWAY_PORT: ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
+    volumes:
+      - ./infra/prometheus/prometheus.yml.tpl:/etc/prometheus/prometheus.yml.tpl:ro
+      - prometheus_data:/prometheus
+    # Prometheus cannot read environment variables in its own configuration, and the ports it
+    # scrapes are configurable, so the file is a template: this fills in the two ports and
+    # then starts Prometheus as the image would have (exec, so it is PID 1 and gets signals).
+    # The "prometheus" after the script is $0; the flags below become "$@".
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        set -e
+        sed -e "s/@AUTH_PORT@/$${AUTH_PORT}/g" /etc/prometheus/prometheus.yml.tpl > /tmp/step1.yml
+        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step1.yml > /tmp/prometheus.yml
+        exec /bin/prometheus "$$@"
+      - prometheus
+    command:
+      - --config.file=/tmp/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.enable-lifecycle
+    ports:
+      - "127.0.0.1:${PROMETHEUS_PORT:-9090}:9090"
+    depends_on:
+      - auth-service
+      - history-service
+      - gateway
+
+  # ─── Grafana ─────────────────────────────────────────────────────────────────
+  # Loopback only, same reasoning as Prometheus: the admin password is the single thing
+  # standing between the internet and the dashboards.
+  grafana:
+    image: grafana/grafana:11.1.0
+    restart: unless-stopped
+    environment:
+      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
+      GF_USERS_ALLOW_SIGN_UP:     "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro
+    ports:
+      - "127.0.0.1:${GRAFANA_PORT:-3000}:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  caddy_data:
+  caddy_config:
+  postgres_data:
+  prometheus_data:
+  grafana_data:

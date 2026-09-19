@@ -1,0 +1,123 @@
+{
+  "selected": [
+    {
+      "text": "Un cardinale polacco viene eletto papa.",
+      "year": 1978,
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Papa_Esempio",
+          "displaytitle": "<span class=\"mw-page-title-main\">Papa Esempio</span>",
+          "namespace": { "id": 0, "text": "" },
+          "wikibase_item": "Q1",
+          "titles": { "canonical": "Papa_Esempio", "normalized": "Papa Esempio", "display": "<span>Papa Esempio</span>" },
+          "pageid": 1,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Papa_Esempio.jpg/330px-Papa_Esempio.jpg",
+            "width": 330,
+            "height": 412
+          },
+          "originalimage": { "source": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Papa_Esempio.jpg", "width": 1000, "height": 1250 },
+          "lang": "it",
+          "dir": "ltr",
+          "revision": "151752549",
+          "tid": "82076342-8694-11f1-aafe-ede8c15c8c4a",
+          "timestamp": "2026-07-23T12:46:22Z",
+          "description": "papa della Chiesa cattolica",
+          "description_source": "local",
+          "content_urls": {
+            "desktop": {
+              "page": "https://it.wikipedia.org/wiki/Papa_Esempio",
+              "revisions": "https://it.wikipedia.org/wiki/Papa_Esempio?action=history",
+              "edit": "https://it.wikipedia.org/wiki/Papa_Esempio?action=edit",
+              "talk": "https://it.wikipedia.org/wiki/Discussione:Papa_Esempio"
+            },
+            "mobile": { "page": "https://it.m.wikipedia.org/wiki/Papa_Esempio" }
+          },
+          "extract": "Il papa di esempio e' una voce inventata per i test.",
+          "extract_html": "<p>Il papa di esempio e' una voce inventata per i test.</p>",
+          "normalizedtitle": "Papa Esempio"
+        },
+        {
+          "type": "standard",
+          "title": "Conclave_di_esempio",
+          "displaytitle": "<span>Conclave di esempio</span>",
+          "namespace": { "id": 0, "text": "" },
+          "titles": { "canonical": "Conclave_di_esempio", "normalized": "Conclave di esempio" },
+          "pageid": 2,
+          "thumbnail": {
+            "source": "https://upload.wikimedia.org/wikipedia/it/thumb/5/5b/Locale.jpg/330px-Locale.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
+            "width": 330,
+            "height": 386
+          },
+          "lang": "it",
+          "dir": "ltr",
+          "description": "elezione papale",
+          "content_urls": {
+            "desktop": { "page": "https://it.wikipedia.org/wiki/Conclave_di_esempio" }
+          },
+          "extract": "Un conclave inventato.",
+          "extract_html": "<p>Un conclave inventato.</p>",
+          "normalizedtitle": "Conclave di esempio"
+        }
+      ]
+    }
+  ],
+  "births": [],
+  "deaths": {},
+  "events": [
+    {
+      "text": "Un evento antico senza pagine collegate.",
+      "year": 456,
+      "pages": []
+    },
+    {
+      "text": "Un evento di prima dell'era volgare.",
+      "year": -44,
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Roma_antica",
+          "titles": { "canonical": "Roma_antica", "normalized": "Roma antica" },
+          "lang": "it",
+          "content_urls": { "desktop": { "page": "https://it.wikipedia.org/wiki/Roma_antica" } },
+          "extract": "Roma nell'antichita'."
+        }
+      ]
+    },
+    {
+      "text": "Un evento recente.",
+      "year": 2006,
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Pagina_con_link_pericoloso",
+          "titles": { "normalized": "Pagina con link pericoloso" },
+          "content_urls": { "desktop": { "page": "javascript:alert(1)" } },
+          "extract": "Questa pagina va scartata."
+        },
+        {
+          "type": "standard",
+          "title": "Pagina_buona",
+          "titles": { "normalized": "Pagina buona" },
+          "content_urls": { "desktop": { "page": "https://it.wikipedia.org/wiki/Pagina_buona" } }
+        }
+      ]
+    }
+  ],
+  "holidays": [
+    {
+      "text": "Giornata mondiale dell'alimentazione",
+      "pages": [
+        {
+          "type": "standard",
+          "title": "FAO",
+          "titles": { "canonical": "FAO", "normalized": "FAO" },
+          "description": "agenzia delle Nazioni Unite",
+          "content_urls": { "desktop": { "page": "https://it.wikipedia.org/wiki/FAO" } },
+          "extract": "La FAO e' un'agenzia."
+        }
+      ]
+    }
+  ]
+}

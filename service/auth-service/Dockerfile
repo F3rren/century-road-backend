@@ -18,6 +18,11 @@ RUN ./mvnw package -DskipTests -q
 # ---- Production stage ----
 FROM eclipse-temurin:21-jre AS prod
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
+# curl exists for the Compose healthcheck only; the JRE image is not guaranteed to ship it.
+RUN apt-get update && apt-get install -y --no-install-recommends curl && rm -rf /var/lib/apt/lists/* \
+  && useradd --system --uid 10001 --no-create-home app
+COPY --from=build --chown=app:app /app/target/*.jar app.jar
+USER app
+# Documents the default only: the port actually used is AUTH_PORT, which Compose passes in.
 EXPOSE 8081
 ENTRYPOINT ["java", "-jar", "-Dspring.profiles.active=prod", "app.jar"]

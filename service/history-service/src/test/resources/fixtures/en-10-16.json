@@ -1,0 +1,61 @@
+{
+  "selected": [
+    {
+      "text": "An invented selected event.",
+      "year": 1384,
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Example_page",
+          "titles": { "canonical": "Example_page", "normalized": "Example page" },
+          "lang": "en",
+          "description": "an invented page",
+          "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Example_page" } },
+          "extract": "An invented page for tests."
+        }
+      ]
+    }
+  ],
+  "births": [
+    {
+      "text": "An invented person is born.",
+      "year": 1351,
+      "pages": [
+        {
+          "type": "standard",
+          "title": "Invented_person",
+          "titles": { "canonical": "Invented_person", "normalized": "Invented person" },
+          "lang": "en",
+          "description": "invented person",
+          "content_urls": { "desktop": { "page": "https://en.wikipedia.org/wiki/Invented_person" } },
+          "extract": "An invented person."
+        }
+      ]
+    },
+    {
+      "text": "Another invented person is born.",
+      "year": 1978,
+      "pages": []
+    }
+  ],
+  "deaths": [
+    {
+      "text": "An invented person dies.",
+      "year": 385,
+      "pages": []
+    }
+  ],
+  "events": [
+    {
+      "text": "An invented event.",
+      "year": 456,
+      "pages": []
+    }
+  ],
+  "holidays": [
+    {
+      "text": "An invented holiday",
+      "pages": []
+    }
+  ]
+}

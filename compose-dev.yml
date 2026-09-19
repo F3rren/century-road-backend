@@ -1,0 +1,199 @@
+# ═══════════════════════════════════════════════════════════════════════════════
+# DEVELOPMENT.  Start it with:
+#
+#     docker compose --env-file .env.dev -f compose-dev.yml up
+#
+# Secrets come from .env.dev (copy .env.dev.example; never the production .env). The ports
+# are fixed, below, so nothing in any .env can move them:
+#
+#     gateway 8080   auth-service 8081   history-service 8082
+#     Prometheus 9090   Grafana 3000   Postgres 5433
+#     remote debug: 5006 auth-service, 5007 gateway, 5008 history-service
+#
+# A frontend calls the gateway, http://localhost:8080. Everything is published on the
+# loopback only: the debug ports accept an unauthenticated debugger, which is remote code
+# execution for anyone who can reach them, and this file is meant for laptops on any network.
+#
+# Source is mounted into the containers and run with mvnw, so edits reload. Nothing restarts
+# on its own: mvnw exits on a compile error, and a restart policy would loop it forever
+# instead of leaving the error where you can read it.
+#
+# Not for production: that is compose-prod.yml. The two share nothing at run time (own
+# project name, own volumes, own settings), so an edit to one never changes the other.
+# ═══════════════════════════════════════════════════════════════════════════════
+name: century-road-dev
+
+# A guard, not a setting. Compose reads .env unless told otherwise with --env-file, and .env
+# holds the PRODUCTION secrets: forget the flag and this file would run on them without a
+# word. CENTURY_ROAD_ENV exists only in .env.dev, so without it Compose stops here and says why.
+x-guard: ${CENTURY_ROAD_ENV:?compose-dev.yml must be started with --env-file .env.dev - without it Compose reads the production .env}
+
+services:
+
+  # ─── Database ────────────────────────────────────────────────────────────────
+  # Published on 5433, not 5432: a Postgres already installed on the machine is common, and on
+  # Windows Docker would not even refuse the port - both would listen, and a client such as
+  # psql or DBeaver could reach the wrong one. Only tools on the host care: the services reach
+  # the database as db:5432 inside the Compose network.
+  db:
+    image: postgis/postgis:16-3.4-alpine
+    environment:
+      POSTGRES_DB:       ${POSTGRES_DB:-centuryroad}
+      POSTGRES_USER:     ${POSTGRES_USER:-centuryroad}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
+    ports:
+      - "127.0.0.1:${DB_PORT:-5433}:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER:-centuryroad} -d ${POSTGRES_DB:-centuryroad}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+      start_period: 20s
+
+  # ─── Auth service ────────────────────────────────────────────────────────────
+  auth-service:
+    build:
+      context: ./service/auth-service
+      dockerfile: Dockerfile
+      target: dev
+    environment:
+      SPRING_PROFILES_ACTIVE:     dev
+      AUTH_PORT:                  "8081"
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
+      JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env.dev (openssl rand -base64 48)}
+      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS:-86400000}
+      # A first administrator for the empty development database, so login and the admin
+      # routes can be tried at once. Inert unless both are set AND the users table is empty.
+      BOOTSTRAP_ADMIN_EMAIL:      ${BOOTSTRAP_ADMIN_EMAIL:-}
+      BOOTSTRAP_ADMIN_PASSWORD:   ${BOOTSTRAP_ADMIN_PASSWORD:-}
+    volumes:
+      - ./service/auth-service:/app
+      - maven_cache:/root/.m2
+    ports:
+      - "127.0.0.1:8081:8081"
+      - "127.0.0.1:5006:5006"   # remote debug
+    # Informative only: it tells `docker compose ps` when the first compile is done. The long
+    # start period is that compile, so it is not reported as unhealthy while it runs.
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8081/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 180s
+    depends_on:
+      db:
+        condition: service_healthy
+
+  # ─── History service ─────────────────────────────────────────────────────────
+  # Historical events from Wikipedia. The contact below is what Wikimedia's User-Agent policy
+  # asks every client to give; a URL is enough, and this one holds no personal data.
+  history-service:
+    build:
+      context: ./service/history-service
+      dockerfile: Dockerfile
+      target: dev
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:-https://github.com/F3rren/century-road-backend}
+    volumes:
+      - ./service/history-service:/app
+      - maven_cache:/root/.m2
+    ports:
+      - "127.0.0.1:8082:8082"
+      - "127.0.0.1:5008:5008"   # remote debug
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8082/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 180s
+
+  # ─── Gateway ─────────────────────────────────────────────────────────────────
+  # The one address a frontend talks to. FRONTEND_ORIGIN is the origin it is served from -
+  # Vite's default port unless .env.dev says otherwise; any other origin is refused by the
+  # browser before the request reaches the API.
+  gateway:
+    build:
+      context: ./service/gateway
+      dockerfile: Dockerfile
+      target: dev
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+      GATEWAY_PORT:           "8080"
+      AUTH_SERVICE_URI:       http://auth-service:8081
+      HISTORY_SERVICE_URI:    http://history-service:8082
+      FRONTEND_ORIGIN:        ${FRONTEND_ORIGIN:-http://localhost:5173}
+    volumes:
+      - ./service/gateway:/app
+      - maven_cache:/root/.m2
+    ports:
+      - "127.0.0.1:8080:8080"
+      - "127.0.0.1:5007:5007"   # remote debug
+    healthcheck:
+      test: ["CMD", "curl", "-fsS", "http://localhost:8080/actuator/health"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
+      start_period: 180s
+    depends_on:
+      - auth-service
+      - history-service
+
+  # ─── Prometheus ──────────────────────────────────────────────────────────────
+  # The version is written here, not in .env.dev, so Dependabot can see it and propose bumps;
+  # keep it the same as compose-prod.yml.
+  prometheus:
+    image: prom/prometheus:v2.53.0
+    environment:
+      AUTH_PORT:    "8081"
+      GATEWAY_PORT: "8080"
+    volumes:
+      - ./infra/prometheus/prometheus.yml.tpl:/etc/prometheus/prometheus.yml.tpl:ro
+      - prometheus_data:/prometheus
+    # The scrape config is a template with the two service ports in it; this fills them in
+    # and starts Prometheus as the image would have. See compose-prod.yml for the reasoning.
+    entrypoint:
+      - /bin/sh
+      - -c
+      - |
+        set -e
+        sed -e "s/@AUTH_PORT@/$${AUTH_PORT}/g" /etc/prometheus/prometheus.yml.tpl > /tmp/step1.yml
+        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step1.yml > /tmp/prometheus.yml
+        exec /bin/prometheus "$$@"
+      - prometheus
+    command:
+      - --config.file=/tmp/prometheus.yml
+      - --storage.tsdb.path=/prometheus
+      - --web.enable-lifecycle
+    ports:
+      - "127.0.0.1:${PROMETHEUS_PORT:-9090}:9090"
+    depends_on:
+      - auth-service
+      - history-service
+      - gateway
+
+  # ─── Grafana ─────────────────────────────────────────────────────────────────
+  grafana:
+    image: grafana/grafana:11.1.0
+    environment:
+      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
+      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}
+      GF_USERS_ALLOW_SIGN_UP:     "false"
+    volumes:
+      - grafana_data:/var/lib/grafana
+      - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro
+    ports:
+      - "127.0.0.1:${GRAFANA_PORT:-3000}:3000"
+    depends_on:
+      - prometheus
+
+volumes:
+  postgres_data:
+  prometheus_data:
+  grafana_data:
+  maven_cache:

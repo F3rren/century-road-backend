@@ -28,7 +28,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        service: [auth-service, gateway]
+        service: [auth-service, gateway, history-service]
 
     steps:
       - name: Checkout repository

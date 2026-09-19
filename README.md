@@ -1,25 +1,30 @@
 # Century Road — Backend
 
-Two Spring Boot services behind an API gateway. `auth-service` owns identity: users,
-login, and the JWTs every other service will eventually verify. `gateway` is the single
-entry point and routes to it. In production a reverse proxy sits in front of both and
-terminates TLS.
+Three Spring Boot services behind an API gateway. `auth-service` owns identity: users,
+login, and the JWTs every other service will eventually verify. `history-service` answers
+"what happened on this date", from Wikipedia. `gateway` is the single entry point and
+routes to both. In production a reverse proxy sits in front and terminates TLS.
 
 ```
-browser ──HTTPS──▶ proxy (Caddy) ──HTTP──▶ gateway ──HTTP──▶ auth-service ──▶ postgres
-                   :443                    :8080             :8081             :5432
-                   TLS, HSTS               routing, CORS     identity
+browser ──HTTPS──▶ proxy (Caddy) ──HTTP──▶ gateway ─┬─HTTP─▶ auth-service ────▶ postgres
+                   :443                    :8080    │        :8081               :5432
+                   TLS, HSTS               routing, │        identity
+                                           CORS     │
+                                                    └─HTTP─▶ history-service ─▶ Wikipedia
+                                                             :8082              (HTTPS, cached)
 ```
 
-Only the proxy is published in production. The gateway and `auth-service` talk over the
-internal Compose network and are not reachable from outside.
+Only the proxy is public in production. The gateway, the services and Postgres talk
+over the internal Compose network and are not reachable from outside. Prometheus and
+Grafana are published on the host's loopback only, so the way to them is an SSH tunnel.
 
 | Path | Served by |
 |---|---|
 | `/api/auth/**` | login, token refresh, logout |
 | `/api/me/**` | the caller's own profile |
 | `/api/admin/users/**` | user administration, admin only |
-| `/actuator/health`, `/actuator/prometheus` | monitoring |
+| `/api/history/**` | [historical events for a date](#history-api), public |
+| `/actuator/health` | liveness, public. Every other `/actuator/*` path is a 404 at the proxy |
 
 ## Prerequisites
 
@@ -27,26 +32,53 @@ internal Compose network and are not reachable from outside.
 - **Java 21**, only if you want to build or run the test suite outside Docker. The Maven
   wrapper (`./mvnw`) is committed, so no separate Maven install is needed.
 
-## Configuration
+## Two environments, two files each
 
-Every variable lives in a single `.env` at the repository root:
+| | Development | Production |
+|---|---|---|
+| Compose file | `compose-dev.yml` | `compose-prod.yml` |
+| Settings and secrets | `.env.dev` | `.env` |
+| Start | `docker compose --env-file .env.dev -f compose-dev.yml up` | `docker compose -f compose-prod.yml up -d` |
+| The API is at | `http://localhost:8080` | `https://<PUBLIC_DOMAIN>` |
+| Ports | fixed in the file | from `.env` |
+| Reverse proxy | none, plain HTTP | Caddy, TLS |
+
+The two share nothing at run time: each has its own settings file, its own project name and
+its own volumes, so a value set for one can never leak into the other. There is no default
+file on purpose. A bare `docker compose up` does nothing but complain, so you always say
+which environment you mean.
+
+### Setting up
+
+Development, once:
+
+```bash
+cp .env.dev.example .env.dev
+```
+
+Fill in the three `change-me` values (`.env.dev.example` says how). These are throwaway
+secrets for your own machine; do not reuse the production ones.
+
+Production, on the server:
 
 ```bash
 cp .env.example .env
 ```
 
-`.env` is gitignored and must never be committed. Fill in at least these before the first
-start:
+Fill in at least these before the first start. `.env` and `.env.dev` are gitignored and must
+never be committed.
 
 | Variable | Why it matters |
 |---|---|
 | `POSTGRES_PASSWORD` | also used by the services to connect |
 | `JWT_SECRET` | see below — the service will not start with a bad one |
 | `GRAFANA_PASSWORD` | the Grafana admin login; sign-up is disabled, so this is the only way in |
+| `GATEWAY_PORT`, `AUTH_PORT` | production only: where the two services listen (see step 3 below) |
 | `FRONTEND_ORIGIN` | exact origin of the frontend, or the browser blocks every call |
+| `WIKIMEDIA_CONTACT` | a URL or address Wikimedia can reach about this client; `history-service` will not start without it |
 | `PUBLIC_DOMAIN` | production only — must already resolve to the host |
 
-`.env.example` documents the rest inline.
+`.env.example` and `.env.dev.example` document the rest inline.
 
 ### Generating `JWT_SECRET`
 
@@ -63,19 +95,59 @@ which is why the command above asks for 48.
 ## Local development
 
 ```bash
-docker compose up
+docker compose --env-file .env.dev -f compose-dev.yml up
 ```
 
-`docker-compose.override.yml` is applied automatically and swaps in the dev image
-targets: hot reload, the `dev` Spring profile, and published ports. Plain HTTP, no proxy.
+Forget `--env-file .env.dev` and Compose stops with a message instead of running on the
+production `.env`: `.env.dev` holds a marker without which `compose-dev.yml` will not start.
+
+Source is mounted into the containers and run with `mvnw`, so edits reload. The first start
+compiles everything and takes a minute or two. Nothing restarts on its own: `mvnw` exits on
+a compile error, and a restart policy would loop it forever instead of leaving the error on
+screen. Plain HTTP, no proxy.
+
+The ports are fixed by `compose-dev.yml`, so no `.env` can move them:
 
 | | URL |
 |---|---|
-| Gateway | http://localhost:8080 |
+| **Gateway** - the one a frontend calls | http://localhost:8080 |
 | auth-service (direct) | http://localhost:8081 |
+| history-service (direct) | http://localhost:8082 |
 | Prometheus | http://localhost:9090 |
 | Grafana | http://localhost:3000 |
-| Remote debug | `5006` auth-service, `5007` gateway |
+| Postgres | `localhost:5433` |
+| Remote debug | `5006` auth-service, `5007` gateway, `5008` history-service |
+
+Everything is published on the loopback only. The debug ports accept an unauthenticated
+debugger, which is remote code execution for anyone who can reach them, and this file is
+meant for laptops on any network. Postgres is on 5433 rather than 5432 because a Postgres
+already installed on the machine is common: on Windows Docker does not refuse the port, both
+end up listening, and a client such as psql or DBeaver may reach the wrong database without
+telling you. The services themselves reach the database as `db:5432` inside the Compose
+network, so only tools on your machine care.
+
+`docker compose up` opens nothing by itself: it starts the containers and publishes their
+ports on this machine, and that is all. These are APIs answering JSON, not web pages - the
+frontend is a separate app, run on its own (Vite's dev server, on 5173). To see the backend
+answer, open one of these in a browser:
+
+- http://localhost:8080/actuator/health - is it up
+- http://localhost:8080/api/history/on-this-day/10/16?lang=it - real data
+
+`docker compose --env-file .env.dev -f compose-dev.yml ps` lists what is published, and in
+Docker Desktop each published port in the container list is a link that opens the browser on
+it. Grafana is the one thing here that is a page.
+
+**A frontend calls the gateway**, `http://localhost:8080`, never a service directly. The
+gateway answers the browser's CORS preflight itself, for the one origin in `FRONTEND_ORIGIN`
+(default `http://localhost:5173`, Vite's port). If the frontend runs anywhere else, set that
+variable in `.env.dev` and restart the gateway: an origin that is not listed is refused by
+the browser before the request ever reaches the API, and the symptom looks like a network
+error.
+
+To stop it, `docker compose --env-file .env.dev -f compose-dev.yml down`; add `-v` to wipe
+the development database too. Development and production can run side by side on one
+machine, except that both want Prometheus on 9090 and Grafana on 3000: stop one first.
 
 ## Production deployment
 
@@ -97,26 +169,54 @@ HSTS_MAX_AGE=300
 `https://app.example` and `https://app.example/` are different origins to a browser, and
 the symptom of getting it wrong is a blocked request that looks like a network error.
 
-### 3. Start the stack
+### 3. Choose the ports
 
-```bash
-docker compose -f docker-compose.yml --profile proxy up -d
+Two kinds, both read from `.env`.
+
+**The ports the gateway and `auth-service` listen on.** Inside the Compose network only:
+nothing publishes them in production. Set them on the production host:
+
+```
+GATEWAY_PORT=12129
+AUTH_PORT=12130
 ```
 
-Two details, both easy to get wrong:
+Those two variables are all there is to change. The proxy, the gateway (which routes to
+`auth-service`), Prometheus and every healthcheck read them, so nothing else needs editing.
+`history-service` stays on 8082.
 
-- **`-f docker-compose.yml` is not optional.** Without it Compose also applies
-  `docker-compose.override.yml` and you silently deploy the development stack — dev image
-  targets, source mounts, debug ports and the `dev` profile.
-- **`--profile proxy`** is what starts the reverse proxy. Without it nothing terminates
-  TLS and nothing is published at all, since the gateway no longer exposes a port of its
-  own in production.
+**The ports published on the host.** Only these, and they move on the host side alone:
 
-### 4. Create the first administrator
+```
+PROMETHEUS_PORT=9090
+GRAFANA_PORT=3000
+PROXY_HTTP_PORT=80
+PROXY_HTTPS_PORT=443
+```
+
+`PROXY_HTTP_PORT` and `PROXY_HTTPS_PORT` are the exception to "pick anything": the
+certificate challenge always arrives on the public 80/443, so leave them alone unless a
+router or firewall forwards those two to the ports you chose.
+
+Neither the gateway nor `auth-service` is reachable from outside the machine in production,
+whatever port they use - on purpose. See the security notes for why the gateway must never be
+exposed directly: publishing 12129 would put it there.
+
+### 4. Start the stack
+
+```bash
+docker compose -f compose-prod.yml up -d
+```
+
+That is the whole command. The reverse proxy is part of this file, and there is no override
+that could silently swap in the development stack: `compose-dev.yml` is a different file,
+with different settings, that this one never reads.
+
+### 5. Create the first administrator
 
 See the section below. Do this before handing the API to anyone.
 
-### 5. Verify TLS and HSTS
+### 6. Verify TLS and HSTS
 
 ```bash
 curl -sI https://$PUBLIC_DOMAIN/actuator/health | grep -i strict-transport
@@ -128,7 +228,7 @@ If the header is missing, the request did not reach the proxy over HTTPS, or the
 not running. HSTS is only ever emitted on an HTTPS request — that is deliberate, not a
 bug.
 
-### 6. Only later, raise the HSTS window
+### 7. Only later, raise the HSTS window
 
 Once HTTPS has been stable for a few days, set `HSTS_MAX_AGE=31536000` (one year) and
 restart the proxy.
@@ -170,11 +270,252 @@ first administrator on its own. `FirstAdminBootstrap` exists for exactly that ga
    so leaving them set keeps a password readable by anyone who can inspect the container,
    for no further benefit — the mechanism will not fire again anyway.
 
+## Container images
+
+For a platform that runs ready-made images rather than a Compose file, CI publishes the three
+application services to GitHub Container Registry, on every push to `main` or `develop`, and only
+once the tests of all three have passed:
+
+```
+ghcr.io/f3rren/century-road-backend-auth-service
+ghcr.io/f3rren/century-road-backend-gateway
+ghcr.io/f3rren/century-road-backend-history-service
+```
+
+Every image carries two tags: the short commit id (`:1a2b3c4`), which never moves and is the one
+to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. They are
+built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
+is the one the production stack would have built itself.
+
+The packages inherit the repository's visibility, so on a public repository they can be pulled
+without credentials. Check the package's visibility after the first run: a private one needs a
+token to pull. Nothing else is published. Postgres, Caddy, Prometheus and Grafana are stock
+images that `compose-prod.yml` pulls as they are.
+
+To build the same images by hand:
+
+```bash
+docker buildx bake -f compose-prod.yml --load     # tagged ...-gateway:local, and so on
+```
+
+### Running the gateway with no proxy of ours in front
+
+On the VPS Caddy hides the actuator and adds the security headers. On a platform that terminates
+TLS itself (Railway) nothing of ours does, so the gateway has a `railway` profile that does both.
+Turn it on with this variable on the gateway service:
+
+```
+SPRING_PROFILES_INCLUDE=railway
+```
+
+It has to be `INCLUDE`: the images start with `-Dspring.profiles.active=prod`, which outranks
+`SPRING_PROFILES_ACTIVE`, so setting that one changes nothing. Without the variable the gateway
+behaves exactly as before.
+
+- **Actuator**: only `/actuator/health` is exposed on the public port, which is what the
+  platform's healthcheck needs. Metrics and info are not, and there is no Prometheus to scrape
+  them.
+- **Headers**: `Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options` and
+  `Referrer-Policy` on every proxied response, the same set as the Caddyfile. HSTS follows
+  `HSTS_MAX_AGE`, five minutes if unset: raise it once HTTPS has been stable for a while.
+  They replace whatever a service sets itself, as Caddy does: `auth-service` sends an HSTS of
+  its own with a one-year max-age, and that value never reaches the browser. The gateway's own
+  answers (the actuator, a path with no route) do not carry them.
+- **Not covered**: the caller's address. The login rate limiter keys on it, and it depends on
+  how the platform's edge sets `X-Forwarded-For`, which has to be checked on a real deployment
+  before it is trusted: send a login with a forged `X-Forwarded-For` and read the address in
+  `auth-service`'s `Login refused | <address>|<email>` log line.
+
+## Running it on Railway
+
+One Railway project holds the whole stack: Postgres, the three services from the images CI
+publishes (see [Container images](#container-images)), and the frontend, which lives in its own
+repository. The backend is not built on Railway, and no application secret passes through GitHub.
+
+**Plan.** Hobby or above. On a Trial account, adding services stopped with "Free plan resource
+provision limit exceeded", and an unverified Trial restricts outbound network, which
+`history-service` needs to reach Wikipedia. Set a usage limit before deploying anything: in the
+workspace's Usage page, *Set Usage Limits*. A hard limit takes every service offline when reached.
+
+### The services
+
+Create Postgres first (*Add → Database → PostgreSQL*, keep the name `Postgres`) and wait until it is
+up. Then add each of the others with *Add → Docker Image* and **rename it at once** to the name in
+the table: the name is the service's address on the private network, `<name>.railway.internal`,
+and the gateway is told those addresses by hand. The images are public, so no registry credentials
+are needed.
+
+| Service | Image |
+|---|---|
+| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<tag>` |
+| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<tag>` |
+| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<tag>` |
+
+`<tag>` is a short commit id from the package's list of tags. Prefer it to `latest`: it never
+moves, so a redeploy cannot change what runs.
+
+Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
+
+```
+# auth-service
+SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
+SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
+SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
+JWT_EXPIRATION_MS=86400000
+
+# history-service
+WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
+
+# gateway
+SPRING_PROFILES_INCLUDE=railway
+AUTH_SERVICE_URI=http://auth-service.railway.internal:8081
+HISTORY_SERVICE_URI=http://history-service.railway.internal:8082
+GATEWAY_PORT=8080
+PORT=8080
+FRONTEND_ORIGIN=https://<the frontend's public domain>
+```
+
+On the gateway service, *Settings → Networking → Generate Domain* (port 8080), and set the
+healthcheck path to `/actuator/health`. `SPRING_PROFILES_INCLUDE=railway` is what hides the
+actuator and adds the security headers: see
+[Running the gateway with no proxy of ours in front](#running-the-gateway-with-no-proxy-of-ours-in-front).
+For the first administrator, see [First administrator](#first-administrator).
+
+Two things that cost time the first time:
+
+- **Variable changes are staged.** Railway keeps them pending until you confirm the deploy.
+- **The names must match.** If the gateway logs `Failed to resolve '<name>.railway.internal'` with
+  `NXDOMAIN`, no service has that name. Rename the service, or use the name it really has in the
+  `*_SERVICE_URI` variables. Until the routes load, the gateway still answers `/actuator/health`
+  with `UP`, so health alone does not prove it works.
+
+### Checking it
+
+```bash
+G=https://<the gateway's public domain>
+curl -s $G/actuator/health                                          # {"status":"UP"}
+curl -s -o /dev/null -w '%{http_code}\n' $G/actuator/prometheus     # 404
+curl -s -o /dev/null -w '%{http_code}\n' $G/api/history/on-this-day/10/16     # 200
+curl -s -D - -o /dev/null -X POST -H 'Content-Type: application/json' \
+  -d '{"email":"nobody@example.test","password":"wrong"}' $G/api/auth/login   # 401, and:
+#   strict-transport-security: max-age=300; includeSubDomains   (once, not the service's own)
+```
+
+And that the login limiter cannot be talked around. Five wrong attempts a minute are allowed per
+address and email, so seven with a different forged address each must still be limited:
+
+```bash
+for i in 1 2 3 4 5 6 7; do
+  curl -s -o /dev/null -w '%{http_code} ' -X POST -H 'Content-Type: application/json' \
+    -H "X-Forwarded-For: 10.0.0.$i" \
+    -d '{"email":"limit-check@example.test","password":"wrong"}' $G/api/auth/login
+done; echo                                  # 401 401 401 401 401 429 429
+```
+
+On Railway's edge this held: a client cannot choose the address the limiter sees, whether through
+`X-Forwarded-For` or `Forwarded`. It is behaviour of the platform, so run it again if that ever
+comes into doubt. The `Login refused | <address>|<email>` lines in `auth-service`'s log show which
+address was used.
+
+### The frontend
+
+The frontend repository has a `Dockerfile.railway` that serves the compiled app with Caddy. Add it
+with *Add → GitHub Repo*, pick the branch to deploy (`main` for production, with *Wait for CI*
+on), and set:
+
+```
+RAILWAY_DOCKERFILE_PATH=Dockerfile.railway
+VITE_API_BASE_URL=https://<the gateway's public domain>/api
+```
+
+`VITE_API_BASE_URL` is compiled into the app, so changing it means a new build. The gateway allows
+one origin, `FRONTEND_ORIGIN`, spelled exactly like the address in the browser with no trailing
+slash: the address of a preview deployment is a different origin and is refused.
+
+### Not covered
+
+- **Backups.** Every user and password hash is in Postgres's one volume. Nothing here backs it up:
+  check what the plan offers before there is data worth losing.
+- **Metrics.** The gateway exposes only `/actuator/health` here, and there is no Prometheus or
+  Grafana in this setup. Railway's own logs and resource graphs are what you have.
+
+## History API
+
+`GET /api/history/on-this-day/{month}/{day}` returns what happened on a calendar day, from
+Wikipedia's "On this day" feed. Public: no token, nothing per-user in it.
+
+| Parameter | Meaning | Default |
+|---|---|---|
+| `month`, `day` (path) | any real date; `2/29` is valid, `2/30` is a 400 | required |
+| `lang` | `it` or `en` | `it` |
+| `types` | any of `selected`, `events`, `births`, `deaths`, `holidays`; comma-separated or repeated | all five |
+| `year` | one year; negative for before the common era (`-44`) | none |
+| `fromYear`, `toYear` | an inclusive range, either end optional; not combinable with `year` | none |
+
+```bash
+curl 'https://<host>/api/history/on-this-day/10/16?lang=it&types=events,births&fromYear=1900'
+```
+
+The answer is the usual envelope. `data.sections.<type>` holds `items` (each with `text`,
+`year`, and `pages` linking to the Wikipedia article) plus three fields about where they
+came from:
+
+- `language`: the edition that really supplied the items. It is not always the one asked
+  for: **the Italian feed has no births or deaths at all**, so those come from English,
+  with `fallback: true`. A frontend should say so rather than pass English off as Italian.
+- `stale`: the copy is older than six hours because Wikipedia could not be reached to
+  refresh it. Old history is served in preference to an error, for up to seven days.
+- `data.warnings`: `PRIMARY_UNAVAILABLE` (the language asked for could not be fetched, all
+  sections are from the fallback) or `FALLBACK_UNAVAILABLE` (a gap could not be filled).
+
+The year filter is applied here, not by Wikipedia, which cannot filter by year, so it
+narrows a single day; it cannot answer "everything that happened in 1789". Holidays have no
+year and are left out once a year filter is set.
+
+| Status | `error` | Meaning |
+|---|---|---|
+| 400 | `INVALID_DATE`, `UNSUPPORTED_LANGUAGE`, `INVALID_TYPE`, `INVALID_YEAR`, `BAD_REQUEST` | the request cannot be answered; nothing was asked of Wikipedia |
+| 503 | `UPSTREAM_UNAVAILABLE` | Wikipedia unreachable, and no copy and no other language to fall back on |
+| 503 | `UPSTREAM_RATE_LIMITED` | Wikipedia asked us to slow down; `Retry-After` says for how long |
+| 502 | `UPSTREAM_BAD_RESPONSE` | Wikipedia answered with something unusable, e.g. the API has changed |
+
+### Being a good neighbour to Wikipedia
+
+Wikipedia is a shared resource with rules, and this service follows them:
+
+- **It says who it is.** Every request carries a `User-Agent` naming the client and
+  `WIKIMEDIA_CONTACT`. Wikimedia's policy asks for exactly that, and blocks clients that do
+  not, without notice.
+- **It asks rarely.** One entry per language and day, kept six hours. The load on Wikipedia
+  depends on how many *different* days are looked at, not on how many people call: at most
+  one request per language and day every six hours, and a hundred simultaneous callers for
+  the same day cost one request.
+- **It asks gently.** At most three requests in flight, gzip on, one retry for a transient
+  failure, and a circuit breaker that leaves Wikipedia alone after a run of errors.
+- **It backs off when told to.** After a 429 nothing is sent for as long as `Retry-After`
+  says, and callers are answered from cache or the other language in the meantime.
+- **It never follows a redirect**, and the language is a fixed list, so what it contacts is
+  never decided by a caller or by a response.
+
+### Licence: what you must show
+
+Wikipedia's text is **CC BY-SA 4.0**. Whatever shows it must credit Wikipedia, link the
+article, and name the licence. The response carries all three: `data.attribution`
+(source, licence, licence URL, a ready notice) and, per entry, `pages[].url`. Show them.
+
+Images are not covered by that licence: each file has its own. The service therefore
+forwards only images hosted on Wikimedia Commons, which accepts only free files, and gives
+each a `filePageUrl` naming its author and licence. Images uploaded to a single wiki, where
+non-free "fair use" pictures live, are dropped, because nothing in Wikipedia's answer says
+which are which.
+
 ## Tests
 
 ```bash
-cd service/auth-service && ./mvnw test    # 57 tests
-cd service/gateway      && ./mvnw test    #  9 tests
+cd service/auth-service    && ./mvnw test    #  57 tests
+cd service/gateway         && ./mvnw test    #  14 tests
+cd service/history-service && ./mvnw test    # 181 tests
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
@@ -187,23 +528,48 @@ or when the daemon rejects the API version the client asks for. When it shows up
 `Attempted configurations were:` block just above it — it names the real reason for each
 strategy that was tried.
 
-The gateway suite needs no Docker: it stubs its upstream in-process.
+The gateway suite needs no Docker: it stubs its upstream in-process. So does
+`history-service`: its tests talk to a stand-in for Wikipedia on a local port and never
+reach the real one.
 
 ## Observability
 
-Both services expose `/actuator/health` and `/actuator/prometheus`. Prometheus scrapes
-them and Grafana is provisioned with it as a datasource, so the dashboards come up with
-no manual wiring. Configuration lives under `infra/`.
+Every service exposes `/actuator/health` and `/actuator/prometheus`. Prometheus scrapes
+them over the internal network and Grafana is provisioned with it as a datasource, so the
+datasource comes up with no manual wiring. Configuration lives under `infra/`.
+
+In production Prometheus and Grafana listen on the host's loopback only. From your
+machine, open a tunnel and use them as if they were local:
+
+```bash
+ssh -L 3000:localhost:<GRAFANA_PORT> -L 9090:localhost:<PROMETHEUS_PORT> user@your-server
+```
+
+Then Grafana is at http://localhost:3000 and Prometheus at http://localhost:9090.
+
+`history-service` adds a few metrics of its own: `history_upstream_requests_seconds` (Wikipedia
+calls by outcome: `ok`, `rate_limited`, `unavailable`, `bad_response`), `history_stale_served_total`,
+`history_fallback_total`, and the cache and circuit-breaker gauges. A rising `bad_response` means
+the integration is broken, not the network.
+
+The proxy serves `/actuator/health` and answers 404 to every other `/actuator/*` path.
+The gateway shares its port between the API and its actuator, so without that filter the
+metrics would be public.
 
 ## Security notes
 
-- **The database port is published.** `docker-compose.yml` maps `5432:5432`, which is
-  convenient locally but exposes Postgres on the host in production. Remove that mapping,
-  or restrict it at the firewall, on any machine reachable from outside.
-- **Never commit `.env`.** It holds the JWT signing secret; anyone with it can mint valid
-  tokens for any user.
+- **Postgres is published only in dev**, on the loopback (`localhost:5433`, in
+  `compose-dev.yml`). `compose-prod.yml` publishes nothing for the database.
+- **Prometheus and Grafana are loopback-only.** Prometheus runs with
+  `--web.enable-lifecycle` and no authentication, so anyone who could reach its port could
+  shut it down. Do not change those bindings to `0.0.0.0` to save an SSH tunnel.
+- **Never commit `.env` or `.env.dev`.** They hold the JWT signing secret; anyone with it can
+  mint valid tokens for any user. Use different secrets in the two.
 - **`server.forward-headers-strategy` is enabled in the `prod` profile**, so the services
   trust the `X-Forwarded-*` headers they receive. That is safe only because the proxy
-  overwrites them rather than passing on what the caller sent. If you ever expose the
-  gateway directly, remove that setting first: a caller could otherwise claim any address
-  it likes and walk around the login rate limiting.
+  overwrites them rather than passing on what the caller sent. The standard `Forwarded`
+  header is the one the proxy does not set: it is dropped there, and the gateway ignores it
+  as well, because Spring prefers it to `X-Forwarded-For` and a caller could otherwise pick
+  the address the login rate limiter sees. If you ever expose the gateway directly, remove
+  the setting first: a caller could otherwise claim any address it likes through
+  `X-Forwarded-For` and walk around the login rate limiting.
