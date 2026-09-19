@@ -30,6 +30,13 @@
 			header_up X-Forwarded-For {remote_host}
 			header_up X-Forwarded-Proto {scheme}
 			header_up X-Forwarded-Host {host}
+
+			# The standard Forwarded header is not one of those: Caddy passes it on exactly as
+			# the caller sent it, and Spring reads it in preference to X-Forwarded-For, so a
+			# caller could still choose the address the rate limiter sees. Nothing here sets it,
+			# so drop it. The gateway ignores it too (XForwardedOnlyHeaderTransformer), so
+			# neither layer is the only thing standing in the way.
+			header_up -Forwarded
 		}
 	}
 
