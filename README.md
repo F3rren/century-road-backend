@@ -555,6 +555,9 @@ metrics would be public.
   mint valid tokens for any user. Use different secrets in the two.
 - **`server.forward-headers-strategy` is enabled in the `prod` profile**, so the services
   trust the `X-Forwarded-*` headers they receive. That is safe only because the proxy
-  overwrites them rather than passing on what the caller sent. If you ever expose the
-  gateway directly, remove that setting first: a caller could otherwise claim any address
-  it likes and walk around the login rate limiting.
+  overwrites them rather than passing on what the caller sent. The standard `Forwarded`
+  header is the one the proxy does not set: it is dropped there, and the gateway ignores it
+  as well, because Spring prefers it to `X-Forwarded-For` and a caller could otherwise pick
+  the address the login rate limiter sees. If you ever expose the gateway directly, remove
+  the setting first: a caller could otherwise claim any address it likes through
+  `X-Forwarded-For` and walk around the login rate limiting.

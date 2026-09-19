@@ -69,9 +69,11 @@ public class AuthController {
         // service - the TLS terminator and the gateway - so the connection's own remote
         // address is the gateway's, identical for everybody. What makes this the real
         // caller again is server.forward-headers-strategy in the prod profile, which
-        // has Spring rewrite getRemoteAddr() from X-Forwarded-For; the terminator
-        // overwrites that header rather than passing on what the caller sent, so it
-        // still cannot be forged.
+        // has Spring rewrite getRemoteAddr() from the Forwarded header the gateway adds.
+        // The gateway takes that address from X-Forwarded-For, which the terminator
+        // overwrites rather than passing on what the caller sent, and it ignores a
+        // Forwarded header from the caller (XForwardedOnlyHeaderTransformer), which the
+        // terminator drops as well. So the caller cannot choose it.
         String limiterKey = httpRequest.getRemoteAddr() + "|" + request.email();
         long retryAfter = loginAttemptLimiter.checkAndRecord(limiterKey);
         if (retryAfter > 0) {
