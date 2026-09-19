@@ -448,7 +448,9 @@ behaves exactly as before.
 - **Headers**: `Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options` and
   `Referrer-Policy` on every proxied response, the same set as the Caddyfile. HSTS follows
   `HSTS_MAX_AGE`, five minutes if unset: raise it once HTTPS has been stable for a while.
-  The gateway's own answers (the actuator, a path with no route) do not carry them.
+  They replace whatever a service sets itself, as Caddy does: `auth-service` sends an HSTS of
+  its own with a one-year max-age, and that value never reaches the browser. The gateway's own
+  answers (the actuator, a path with no route) do not carry them.
 - **Not covered**: the caller's address. The login rate limiter keys on it, and it depends on
   how the platform's edge sets `X-Forwarded-For`, which has to be checked on a real deployment
   before it is trusted: send a login with a forged `X-Forwarded-For` and read the address in
