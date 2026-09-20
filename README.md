@@ -285,8 +285,8 @@ ghcr.io/f3rren/century-road-backend-history-service
 ```
 
 Every image carries two tags: the short commit id (`:1a2b3c4`), which never moves and is the one
-to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. They are
-built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
+to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. A release adds
+`:1.2.3` and `:1.2` (see below). They are built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
 is the one the production stack would have built itself.
 
 The packages inherit the repository's visibility, so on a public repository they can be pulled
@@ -299,6 +299,39 @@ To build the same images by hand:
 ```bash
 docker buildx bake -f compose-prod.yml --load     # tagged ...-gateway:local, and so on
 ```
+
+### Releasing a version
+
+A version is a tag on a commit of `main`. The images already exist by then: CI built and tested them
+when the commit reached `main`. Releasing gives them their version tags and creates the GitHub
+release. It builds nothing, so `:1.2.3` is byte for byte what was tested.
+
+```bash
+git checkout main && git pull
+git tag -a v1.2.3 -m "v1.2.3"
+git push origin v1.2.3
+```
+
+The **Release** workflow (`.github/workflows/release.yml`) then:
+
+- checks that the commit is on `main` and that its CI run passed, and waits for that run if it is
+  still going, so tagging right after the merge is fine;
+- tags each of the three images `:1.2.3` and `:1.2`. `:1.2` follows the newest patch: releasing an
+  older one later does not pull it back;
+- creates the GitHub release, with the image names and the notes GitHub generates from the pull
+  requests merged since the previous release.
+
+It refuses, and changes nothing, when the tag is not `vMAJOR.MINOR.PATCH` (no pre-releases yet), the
+commit is not on `main`, its CI run failed, a service has no image for the commit, or `:1.2.3` is
+already published for a different image. Running it again for the same tag is harmless. In
+production pin the full version (`:1.2.3`) or the commit tag: `:latest` and `:1.2` move.
+
+**A tag that already exists**, made before this workflow, such as `v0.1.0`: Actions, Release, Run
+workflow, and give the tag. *Dry run* is ticked by default: it does every check and prints what it
+would do, and writes nothing. Untick it to do it.
+
+The logic is `.github/scripts/release.sh`. `bash .github/scripts/release_test.sh` tests it with `gh`
+and `docker` replaced by stand-ins, so it needs no network, and CI runs it on every push.
 
 ### Running the gateway with no proxy of ours in front
 
@@ -610,6 +643,7 @@ which are which.
 cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
 cd service/history-service && ./mvnw test    # 224 tests
+bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
