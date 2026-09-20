@@ -10,6 +10,8 @@ import centuryroad.history.model.Section;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.time.MonthDay;
 
@@ -25,6 +27,14 @@ class WikimediaFeedParserUnitTest {
 
     private static DayFeed parse(String json) throws Exception {
         return WikimediaFeedParser.parse(MAPPER.readTree(json), Language.IT, DAY);
+    }
+
+    /** The only page of a one-entry feed, built from extra fields on top of a minimal valid page. */
+    private static PageRef onlyPage(String extraFields) throws Exception {
+        String page = "{\"title\":\"Pagina\",\"content_urls\":{\"desktop\":{\"page\":\"https://it.wikipedia.org/wiki/Pagina\"}}"
+                + (extraFields.isEmpty() ? "" : "," + extraFields) + "}";
+        DayFeed parsed = parse("{\"events\":[{\"text\":\"ok\",\"year\":1900,\"pages\":[" + page + "]}]}");
+        return parsed.entries(Section.EVENTS).get(0).pages().get(0);
     }
 
     @Test
@@ -77,11 +87,97 @@ class WikimediaFeedParserUnitTest {
     }
 
     @Test
+    void aCommonsThumbnailServedFromTheThumbHostIsKeptWithTheLinkToItsFilePage() throws Exception {
+        PageRef page = onlyPage("\"thumbnail\":{\"source\":\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Prodi.jpg"
+                + "/330px-Prodi.jpg?utm_source=it.wikipedia.org&utm_campaign=api\",\"width\":330,\"height\":440}");
+
+        assertThat(page.thumbnail()).isNotNull();
+        assertThat(page.thumbnail().filePageUrl()).isEqualTo("https://commons.wikimedia.org/wiki/File:Prodi.jpg");
+    }
+
+    @Test
     void aThumbnailFromALocalWikiIsDropped_butItsPageIsKept() {
         PageRef page = feed.entries(Section.SELECTED).get(0).pages().get(1);
 
         assertThat(page.title()).isEqualTo("Conclave di esempio");
         assertThat(page.thumbnail()).isNull();
+    }
+
+    @Test
+    void aCommonsOriginalImageIsKeptWithTheLinkToItsFilePage() {
+        PageRef page = feed.entries(Section.SELECTED).get(0).pages().get(0);
+
+        assertThat(page.originalImage()).isNotNull();
+        assertThat(page.originalImage().url()).isEqualTo("https://upload.wikimedia.org/wikipedia/commons/a/ab/Papa_Esempio.jpg");
+        assertThat(page.originalImage().width()).isEqualTo(1000);
+        assertThat(page.originalImage().height()).isEqualTo(1250);
+        assertThat(page.originalImage().filePageUrl()).isEqualTo("https://commons.wikimedia.org/wiki/File:Papa_Esempio.jpg");
+    }
+
+    @Test
+    void anOriginalImageFromALocalWikiIsDropped_likeItsThumbnail() throws Exception {
+        PageRef page = onlyPage("\"originalimage\":{\"source\":\"https://upload.wikimedia.org/wikipedia/it/5/5b/Locale.jpg\","
+                + "\"width\":900,\"height\":800}");
+
+        assertThat(page.originalImage()).isNull();
+    }
+
+    @Test
+    void aPageWithNoOriginalImageHasNone() {
+        assertThat(feed.entries(Section.SELECTED).get(0).pages().get(1).originalImage()).isNull();
+    }
+
+    @Test
+    void coordinatesAreCarriedOver() {
+        PageRef page = feed.entries(Section.SELECTED).get(0).pages().get(1);
+
+        assertThat(page.coordinates()).isNotNull();
+        assertThat(page.coordinates().lat()).isEqualTo(41.9022);
+        assertThat(page.coordinates().lon()).isEqualTo(12.4539);
+    }
+
+    @Test
+    void wholeNumberCoordinatesAreNumbersToo() throws Exception {
+        // The live feed sends {"lat": 57, "lon": 25}, not 57.0.
+        PageRef page = onlyPage("\"coordinates\":{\"lat\":57,\"lon\":-25}");
+
+        assertThat(page.coordinates().lat()).isEqualTo(57.0);
+        assertThat(page.coordinates().lon()).isEqualTo(-25.0);
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {
+            "\"coordinates\":{\"lat\":91,\"lon\":0}",
+            "\"coordinates\":{\"lat\":-90.5,\"lon\":0}",
+            "\"coordinates\":{\"lat\":0,\"lon\":181}",
+            "\"coordinates\":{\"lat\":0,\"lon\":-180.1}",
+            "\"coordinates\":{\"lat\":\"57\",\"lon\":\"25\"}",
+            "\"coordinates\":{\"lat\":57}",
+            "\"coordinates\":{}",
+            "\"coordinates\":[]",
+            "\"coordinates\":null"})
+    void coordinatesThatAreNotAPlaceOnEarthAreDropped_butThePageIsKept(String field) throws Exception {
+        PageRef page = onlyPage(field);
+
+        assertThat(page.coordinates()).isNull();
+        assertThat(page.title()).isEqualTo("Pagina");
+    }
+
+    @Test
+    void aPageWithoutCoordinatesHasNone() throws Exception {
+        assertThat(onlyPage("").coordinates()).isNull();
+    }
+
+    @Test
+    void theWikidataIdIsCarriedOver_andAbsentWhenThePageHasNone() {
+        assertThat(feed.entries(Section.SELECTED).get(0).pages().get(0).wikibaseItem()).isEqualTo("Q1");
+        assertThat(feed.entries(Section.SELECTED).get(0).pages().get(1).wikibaseItem()).isNull();
+    }
+
+    @ParameterizedTest
+    @ValueSource(strings = {"q1", "Q", "Q1a", "P31", "1", "Q1\\nQ2", "<b>Q1</b>", "Q1234567890123"})
+    void aWikidataIdThatIsNotOneIsDropped_becauseAFrontendMayBuildALinkFromIt(String id) throws Exception {
+        assertThat(onlyPage("\"wikibase_item\":\"" + id + "\"").wikibaseItem()).isNull();
     }
 
     @Test

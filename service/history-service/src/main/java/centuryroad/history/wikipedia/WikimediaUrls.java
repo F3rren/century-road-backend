@@ -2,6 +2,7 @@ package centuryroad.history.wikipedia;
 
 import java.net.URI;
 import java.util.Optional;
+import java.util.Set;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -11,7 +12,9 @@ import java.util.regex.Pattern;
  */
 final class WikimediaUrls {
 
-    private static final String UPLOAD_HOST = "upload.wikimedia.org";
+    /** Where the feed's images live: originals on upload, and most thumbnails on thumb. Both
+     *  serve the same /wikipedia/commons/... paths. */
+    private static final Set<String> IMAGE_HOSTS = Set.of("upload.wikimedia.org", "thumb.wikimedia.org");
     private static final String COMMONS_FILE_PAGE = "https://commons.wikimedia.org/wiki/File:";
 
     /** /wikipedia/commons/a/ab/Name.jpg and /wikipedia/commons/thumb/a/ab/Name.jpg/330px-Name.jpg */
@@ -45,7 +48,8 @@ final class WikimediaUrls {
     static Optional<String> commonsFilePage(String imageUrl) {
         try {
             URI uri = URI.create(imageUrl);
-            if (!UPLOAD_HOST.equals(uri.getHost()) || uri.getRawPath() == null) {
+            String host = uri.getHost();
+            if (host == null || !IMAGE_HOSTS.contains(host) || uri.getRawPath() == null) {
                 return Optional.empty();
             }
             Matcher matcher = COMMONS_PATH.matcher(uri.getRawPath());

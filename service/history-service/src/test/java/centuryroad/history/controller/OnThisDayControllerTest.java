@@ -3,7 +3,9 @@ package centuryroad.history.controller;
 import centuryroad.history.exception.UpstreamBadResponseException;
 import centuryroad.history.exception.UpstreamRateLimitedException;
 import centuryroad.history.exception.UpstreamUnavailableException;
+import centuryroad.history.model.Coordinates;
 import centuryroad.history.model.Entry;
+import centuryroad.history.model.ImageRef;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.OnThisDayResult;
 import centuryroad.history.model.PageRef;
@@ -57,10 +59,17 @@ class OnThisDayControllerTest {
     private OnThisDayService service;
 
     private static OnThisDayResult result(List<String> warnings, boolean stale) {
-        PageRef page = new PageRef("Papa Esempio", "papa", "Un papa.", "https://it.wikipedia.org/wiki/Papa_Esempio", null);
+        PageRef page = new PageRef("Papa Esempio", "papa", "Un papa.", "https://it.wikipedia.org/wiki/Papa_Esempio",
+                null, null, null, null);
+        PageRef rich = new PageRef("Beirut", "capitale del Libano", "Beirut e' la capitale.", "https://it.wikipedia.org/wiki/Beirut",
+                new ImageRef("https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Beirut.jpg/330px-Beirut.jpg", 330, 220,
+                        "https://commons.wikimedia.org/wiki/File:Beirut.jpg"),
+                new ImageRef("https://upload.wikimedia.org/wikipedia/commons/a/ab/Beirut.jpg", 3000, 2000,
+                        "https://commons.wikimedia.org/wiki/File:Beirut.jpg"),
+                new Coordinates(33.8938, 35.5018), "Q3820");
         Map<Section, SectionResult> sections = new LinkedHashMap<>();
         sections.put(Section.EVENTS, new SectionResult(Language.IT, false, stale,
-                List.of(new Entry("Un evento.", 1978, List.of(page)))));
+                List.of(new Entry("Un evento.", 1978, List.of(page, rich)))));
         sections.put(Section.BIRTHS, new SectionResult(Language.EN, true, false,
                 List.of(new Entry("A birth.", 1351, List.of()))));
         sections.put(Section.HOLIDAYS, new SectionResult(Language.IT, false, false,
@@ -112,6 +121,32 @@ class OnThisDayControllerTest {
         mvc.perform(get(URL))
                 .andExpect(jsonPath("$.data.sections.holidays.items[0].year").doesNotExist())
                 .andExpect(jsonPath("$.data.sections.events.items[0].pages[0].thumbnail").doesNotExist());
+    }
+
+    @Test
+    void aPageCarriesItsOriginalImageCoordinatesAndWikidataIdUnderTheseNames() throws Exception {
+        given(service.find(any())).willReturn(result(List.of(), false));
+
+        mvc.perform(get(URL))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].thumbnail.width").value(330))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].originalImage.url")
+                        .value("https://upload.wikimedia.org/wikipedia/commons/a/ab/Beirut.jpg"))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].originalImage.width").value(3000))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].originalImage.filePageUrl")
+                        .value("https://commons.wikimedia.org/wiki/File:Beirut.jpg"))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].coordinates.lat").value(33.8938))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].coordinates.lon").value(35.5018))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[1].wikibaseItem").value("Q3820"));
+    }
+
+    @Test
+    void aPageWithoutThemHasNoSuchKeysRatherThanNullOnes() throws Exception {
+        given(service.find(any())).willReturn(result(List.of(), false));
+
+        mvc.perform(get(URL))
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[0].originalImage").doesNotExist())
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[0].coordinates").doesNotExist())
+                .andExpect(jsonPath("$.data.sections.events.items[0].pages[0].wikibaseItem").doesNotExist());
     }
 
     @Test
