@@ -20,6 +20,10 @@
 		     Spring integration: the decorators are wired by hand in WikimediaClientConfig so
 		     the order they wrap in is visible in one place rather than implied by AOP. -->
 		<resilience4j.version>2.4.0</resilience4j.version>
+
+		<!-- 2.6.0 is the last springdoc release built on Spring Boot 3.3; 2.7 moved to 3.4. Raise
+		     it together with Spring Boot, not on its own (dependabot.yml ignores its minors). -->
+		<springdoc.version>2.6.0</springdoc.version>
 	</properties>
 
 	<dependencies>
@@ -32,6 +36,14 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-validation</artifactId>
+		</dependency>
+
+		<!-- The OpenAPI document only, no Swagger UI: the interactive page is served once, by the
+		     gateway, which is where the traffic goes through. Off unless springdoc.api-docs.enabled. -->
+		<dependency>
+			<groupId>org.springdoc</groupId>
+			<artifactId>springdoc-openapi-starter-webmvc-api</artifactId>
+			<version>${springdoc.version}</version>
 		</dependency>
 
 		<!-- Upstream HTTP. Apache HttpClient 5 rather than the JDK client because it pools
