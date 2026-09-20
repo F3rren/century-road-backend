@@ -457,9 +457,8 @@ Wikipedia's "On this day" feed. Public: no token, nothing per-user in it.
 curl 'https://<host>/api/history/on-this-day/10/16?lang=it&types=events,births&fromYear=1900'
 ```
 
-The answer is the usual envelope. `data.sections.<type>` holds `items` (each with `text`,
-`year`, and `pages` linking to the Wikipedia article) plus three fields about where they
-came from:
+The answer is the usual envelope. `data.sections.<type>` holds `items` plus three fields
+about where they came from:
 
 - `language`: the edition that really supplied the items. It is not always the one asked
   for: **the Italian feed has no births or deaths at all**, so those come from English,
@@ -468,6 +467,31 @@ came from:
   refresh it. Old history is served in preference to an error, for up to seven days.
 - `data.warnings`: `PRIMARY_UNAVAILABLE` (the language asked for could not be fetched, all
   sections are from the fallback) or `FALLBACK_UNAVAILABLE` (a gap could not be filled).
+
+#### Reading an item
+
+An item has `text`, `year` (absent for holidays, negative before the common era) and `pages`.
+**`text` is the event.** `pages` are the Wikipedia articles *linked from that text*, in the
+order they appear in it. They are related reading, not "the article about the event" (abridged
+example):
+
+```json
+{
+  "year": 1992,
+  "text": "Referendum in Francia sull'adesione al Trattato di Maastricht: vincono i \"sì\"",
+  "pages": [ { "title": "Referendum" }, { "title": "Francia" }, { "title": "Trattato di Maastricht" } ]
+}
+```
+
+Most events have no article of their own, so the first page can be as generic as
+"Referendum" or "Beirut". A page's `description` and `extract` describe *that article*, not
+the event it was linked from: the extract of "Beirut" says what Beirut is, not what happened
+there. So show `text` as the headline and `pages` as "related articles", and never use
+`pages[0]` as an event's title or summary.
+
+Births and deaths are the one place where `pages[0]` is usually right: `text` opens with the
+person's name and the first link is that person. Usually is not always, and nothing in the
+answer says which one is the person, so treat it as a convenience rather than a guarantee.
 
 The year filter is applied here, not by Wikipedia, which cannot filter by year, so it
 narrows a single day; it cannot answer "everything that happened in 1789". Holidays have no
