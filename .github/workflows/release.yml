@@ -1,0 +1,78 @@
+name: Release
+
+# Publishes a version: the images CI built and tested for a commit on main get their version tags
+# (:1.2.3 and :1.2), and a GitHub release is created with the notes GitHub generates from the pull
+# requests merged since the last one. Nothing is built here, see .github/scripts/release.sh.
+#
+# To release:   merge develop into main, then  git tag v1.2.3 && git push origin v1.2.3
+# The run waits for the CI run of that commit if it is still going, and refuses a commit that is
+# not on main, a CI run that failed, and a version that is already published for another image.
+#
+# By hand (workflow_dispatch) it releases a tag that already exists, which is how a tag made before
+# this workflow, such as v0.1.0, gets its images and its release. Dry run is on by default: it does
+# every check and says what it would do, and writes nothing.
+
+on:
+  push:
+    tags:
+      - 'v[0-9]+.[0-9]+.[0-9]+'
+
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'An existing tag to release, such as v0.1.0'
+        required: true
+        type: string
+      dry_run:
+        description: 'Only check, and say what would be done'
+        required: true
+        type: boolean
+        default: true
+
+# Each job asks for what it needs; nothing is granted by default.
+permissions: {}
+
+# One release of a version at a time. A second run for the same tag waits, it does not cancel:
+# stopping one half way would leave images tagged and the release not created.
+concurrency:
+  group: release-${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+  cancel-in-progress: false
+
+jobs:
+  release:
+    name: Release ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+    runs-on: ubuntu-latest
+    # The script waits up to 30 minutes for the CI run of the commit; the rest takes seconds.
+    timeout-minutes: 45
+
+    permissions:
+      contents: write   # create the release
+      packages: write   # tag the images
+      actions: read     # find the CI run of the commit
+
+    steps:
+      # Only for the script. The images and the release come from the registry and the API.
+      - name: Checkout the script
+        uses: actions/checkout@v6
+        with:
+          sparse-checkout: .github/scripts
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v4
+
+      - name: Log in to GHCR
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # The tag and the switch go in through the environment, never spliced into the script text:
+      # a tag name is input. The script checks it against a strict pattern anyway.
+      - name: Release
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          REPOSITORY: ${{ github.repository }}
+          TAG: ${{ github.event_name == 'workflow_dispatch' && inputs.tag || github.ref_name }}
+          DRY_RUN: ${{ github.event_name == 'workflow_dispatch' && inputs.dry_run || false }}
+        run: bash .github/scripts/release.sh
