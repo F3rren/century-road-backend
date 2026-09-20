@@ -27,6 +27,14 @@ class WikimediaFeedParserUnitTest {
         return WikimediaFeedParser.parse(MAPPER.readTree(json), Language.IT, DAY);
     }
 
+    /** The only page of a one-entry feed, built from extra fields on top of a minimal valid page. */
+    private static PageRef onlyPage(String extraFields) throws Exception {
+        String page = "{\"title\":\"Pagina\",\"content_urls\":{\"desktop\":{\"page\":\"https://it.wikipedia.org/wiki/Pagina\"}}"
+                + (extraFields.isEmpty() ? "" : "," + extraFields) + "}";
+        DayFeed parsed = parse("{\"events\":[{\"text\":\"ok\",\"year\":1900,\"pages\":[" + page + "]}]}");
+        return parsed.entries(Section.EVENTS).get(0).pages().get(0);
+    }
+
     @Test
     void everySectionIsPresent_evenWhenWikipediaSentNothingForIt() {
         assertThat(feed.sections()).containsOnlyKeys(Section.values());
@@ -74,6 +82,15 @@ class WikimediaFeedParserUnitTest {
         assertThat(page.thumbnail().width()).isEqualTo(330);
         assertThat(page.thumbnail().height()).isEqualTo(412);
         assertThat(page.thumbnail().filePageUrl()).isEqualTo("https://commons.wikimedia.org/wiki/File:Papa_Esempio.jpg");
+    }
+
+    @Test
+    void aCommonsThumbnailServedFromTheThumbHostIsKeptWithTheLinkToItsFilePage() throws Exception {
+        PageRef page = onlyPage("\"thumbnail\":{\"source\":\"https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Prodi.jpg"
+                + "/330px-Prodi.jpg?utm_source=it.wikipedia.org&utm_campaign=api\",\"width\":330,\"height\":440}");
+
+        assertThat(page.thumbnail()).isNotNull();
+        assertThat(page.thumbnail().filePageUrl()).isEqualTo("https://commons.wikimedia.org/wiki/File:Prodi.jpg");
     }
 
     @Test
