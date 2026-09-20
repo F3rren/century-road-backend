@@ -87,13 +87,14 @@ public class OnThisDayController {
                             allowableValues = {"selected", "events", "births", "deaths", "holidays"})),
                     example = "events,births")
             @RequestParam(required = false) List<String> types,
-            @Parameter(description = "Only items from this year. Negative before the common era (`-44`). "
-                    + "Cannot be combined with fromYear or toYear; holidays have no year and are left out.",
-                    example = "1969")
+            // No example on the three year filters, on purpose: "Try it out" sends every example, and
+            // year cannot be combined with fromYear or toYear, so a first click would be a 400.
+            @Parameter(description = "Only items from this year, such as `1969`. Negative before the common era "
+                    + "(`-44`). Cannot be combined with fromYear or toYear; holidays have no year and are left out.")
             @RequestParam(required = false) Integer year,
-            @Parameter(description = "Only items from this year on, inclusive.", example = "1900")
+            @Parameter(description = "Only items from this year on, inclusive, such as `1900`.")
             @RequestParam(required = false) Integer fromYear,
-            @Parameter(description = "Only items up to this year, inclusive.", example = "1999")
+            @Parameter(description = "Only items up to this year, inclusive, such as `1999`.")
             @RequestParam(required = false) Integer toYear) {
         OnThisDayQuery query = OnThisDayQuery.of(month, day, lang, types, year, fromYear, toYear);
         OnThisDayResult result = service.find(query);

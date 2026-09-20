@@ -96,6 +96,19 @@ class OpenApiDocsTest {
     }
 
     @Test
+    void theYearFiltersCarryNoExample_becauseTryItOutSendsEveryExampleAndTheyCannotBeCombined() throws Exception {
+        // Swagger UI fills the form with each parameter's example, so a first click on Execute
+        // would send year together with fromYear and toYear, and get a 400 for it.
+        JsonNode operation = spec().path("paths").path(DAY_PATH).path("get");
+
+        for (String name : new String[]{"year", "fromYear", "toYear"}) {
+            JsonNode parameter = parameter(operation, name);
+            assertThat(parameter.has("example") || parameter.path("schema").has("example") || parameter.has("examples"))
+                    .as("%s has an example", name).isFalse();
+        }
+    }
+
+    @Test
     void everyAnswerIsDeclaredAsJson_notAsAnything() throws Exception {
         JsonNode responses = spec().path("paths").path(DAY_PATH).path("get").path("responses");
 
