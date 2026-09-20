@@ -111,6 +111,7 @@ The ports are fixed by `compose-dev.yml`, so no `.env` can move them:
 | | URL |
 |---|---|
 | **Gateway** - the one a frontend calls | http://localhost:8080 |
+| **API documentation** (Swagger UI) | http://localhost:8080/swagger-ui.html |
 | auth-service (direct) | http://localhost:8081 |
 | history-service (direct) | http://localhost:8082 |
 | Prometheus | http://localhost:9090 |
@@ -133,10 +134,11 @@ answer, open one of these in a browser:
 
 - http://localhost:8080/actuator/health - is it up
 - http://localhost:8080/api/history/on-this-day/10/16?lang=it - real data
+- http://localhost:8080/swagger-ui.html - every endpoint, documented, with a form to try it
 
 `docker compose --env-file .env.dev -f compose-dev.yml ps` lists what is published, and in
 Docker Desktop each published port in the container list is a link that opens the browser on
-it. Grafana is the one thing here that is a page.
+it. Grafana and Swagger UI are the two things here that are pages.
 
 **A frontend calls the gateway**, `http://localhost:8080`, never a service directly. The
 gateway answers the browser's CORS preflight itself, for the one origin in `FRONTEND_ORIGIN`
@@ -440,6 +442,60 @@ slash: the address of a preview deployment is a different origin and is refused.
 - **Metrics.** The gateway exposes only `/actuator/health` here, and there is no Prometheus or
   Grafana in this setup. Railway's own logs and resource graphs are what you have.
 
+## API documentation
+
+Every endpoint is documented in OpenAPI and browsable in Swagger UI. In development it is at
+http://localhost:8080/swagger-ui.html, served by the gateway for every service at once: pick
+`auth-service` or `history-service` from the list at the top. "Try it out" sends its calls to
+the gateway, the way a frontend does, so there is no CORS to get in the way. For the protected
+endpoints, call `/api/auth/login`, copy the `token` from the answer and paste it into
+"Authorize". (A service's definition loads only while that service is running: the gateway
+relays the document from it, so a stopped service shows as an error in the list.)
+
+This is the contract, the machine-readable one. The sections below are the guide to the
+history API, for a person reading it through.
+
+**How it fits together.** Each service publishes its own OpenAPI document at `/v3/api-docs`
+(springdoc, the API module only). The gateway relays it at `/docs/<service>/v3/api-docs`, GET
+only and only that path, because in production the services are not reachable from a browser,
+and serves the one Swagger UI that reads them. The documents declare a relative server (`/`),
+so a call always goes to whichever origin served the page.
+
+**It is off unless switched on.** The `dev` profile turns it on, and nothing else does: the
+gateway is the one public address in production, and describing an API is something to enable
+on purpose. `compose-prod.yml` passes none of the switches, so a production stack made from it
+never serves them. Anywhere else, for a staging environment say, set on `auth-service`,
+`history-service` and `gateway`:
+
+```
+SPRINGDOC_API_DOCS_ENABLED=true
+```
+
+and on the `gateway` also `SPRINGDOC_SWAGGER_UI_ENABLED=true`. Without them a service answers
+`/v3/api-docs` like any other route (`auth-service`: a 401, like everything without a token) and
+the gateway has no page and no relay route at all.
+
+**Adding an endpoint.** Two tests fail until it is documented, in each service, so it cannot be
+forgotten: one walks the endpoints the application really has and wants each in the document
+with a summary, and one wants every field of every request and answer to have a description.
+What it takes:
+
+- on the controller, `@Tag`; on each method, `@Operation(summary = ...)` and an `@ApiResponse`
+  for each refusal it can produce, with the `error` code in the description;
+- on each DTO field, `@Schema(description = ...)`;
+- on a protected controller, `@SecurityRequirement(name = OpenApiConfig.BEARER_AUTH)`.
+
+Two things learned the hard way. Do not give an `example` to optional parameters that cannot be
+combined: "Try it out" sends every example, so a first click on Execute would be a 400 (this
+happened with `year` and `fromYear`/`toYear`). And a validation such as `@Pattern(regexp =
+"(?i)...")` is published as it is, where an inline flag is a syntax error for JavaScript;
+`auth-service` strips those (`OpenApiConfig`), and the allowed values are listed as an enum
+instead.
+
+springdoc is pinned to 2.6.0, the last release built on Spring Boot 3.3. Its newer lines need
+newer Spring Boot, so it moves with Spring Boot and not on its own; `dependabot.yml` does not
+propose its minor or major bumps.
+
 ## History API
 
 `GET /api/history/on-this-day/{month}/{day}` returns what happened on a calendar day, from
@@ -551,9 +607,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  57 tests
-cd service/gateway         && ./mvnw test    #  14 tests
-cd service/history-service && ./mvnw test    # 212 tests
+cd service/auth-service    && ./mvnw test    #  71 tests
+cd service/gateway         && ./mvnw test    #  43 tests
+cd service/history-service && ./mvnw test    # 224 tests
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through

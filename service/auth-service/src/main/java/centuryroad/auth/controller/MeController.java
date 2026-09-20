@@ -1,12 +1,19 @@
 package centuryroad.auth.controller;
 
 import centuryroad.auth.config.RequestCorrelationFilter;
+import centuryroad.auth.config.OpenApiConfig;
 import centuryroad.auth.dto.ApiEnvelope;
 import centuryroad.auth.dto.UserSummaryDto;
 import centuryroad.auth.exception.ResourceNotFoundException;
 import centuryroad.auth.model.User;
 import centuryroad.auth.security.AppPrincipal;
 import centuryroad.auth.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.security.SecurityRequirement;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -22,6 +29,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 @RequestMapping("/api/me")
+@Tag(name = "Profile", description = "The signed-in user's own account.")
+@SecurityRequirement(name = OpenApiConfig.BEARER_AUTH)
 public class MeController {
 
     private final UserService userService;
@@ -30,6 +39,16 @@ public class MeController {
         this.userService = userService;
     }
 
+    @Operation(
+            summary = "The caller's own profile",
+            description = """
+                    Read from the database on every call, not from the token's claims, so a change an
+                    administrator makes shows at once instead of when the token expires.""")
+    @ApiResponse(responseCode = "200", description = "The caller's account.")
+    @ApiResponse(responseCode = "401", description = "No token, or an invalid or expired one. `error` is UNAUTHENTICATED.",
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "404", description = "The account no longer exists. `error` is NOT_FOUND.",
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @GetMapping
     public ResponseEntity<ApiEnvelope<UserSummaryDto>> getMe(@AuthenticationPrincipal AppPrincipal principal) {
         User user = userService.findById(principal.id());

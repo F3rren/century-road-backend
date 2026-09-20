@@ -21,6 +21,14 @@ updates:
         update-types:
           - minor
           - patch
+    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
+    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # compiles and then fails at startup. Patch releases of the same line still come through.
+    ignore:
+      - dependency-name: "org.springdoc:*"
+        update-types:
+          - version-update:semver-minor
+          - version-update:semver-major
 
   - package-ecosystem: maven
     directory: "/service/gateway"
@@ -33,6 +41,14 @@ updates:
         update-types:
           - minor
           - patch
+    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
+    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # compiles and then fails at startup. Patch releases of the same line still come through.
+    ignore:
+      - dependency-name: "org.springdoc:*"
+        update-types:
+          - version-update:semver-minor
+          - version-update:semver-major
 
   - package-ecosystem: maven
     directory: "/service/history-service"
@@ -45,6 +61,14 @@ updates:
         update-types:
           - minor
           - patch
+    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
+    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # compiles and then fails at startup. Patch releases of the same line still come through.
+    ignore:
+      - dependency-name: "org.springdoc:*"
+        update-types:
+          - version-update:semver-minor
+          - version-update:semver-major
 
   # ---------- Docker ----------
   # The service Dockerfiles (eclipse-temurin). The compose files are a separate ecosystem,
