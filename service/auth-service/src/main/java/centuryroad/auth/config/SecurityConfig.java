@@ -1,5 +1,6 @@
 package centuryroad.auth.config;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
@@ -26,12 +27,15 @@ public class SecurityConfig {
     private final JwtAuthFilter jwtAuthFilter;
     private final ApiAuthenticationEntryPoint authenticationEntryPoint;
     private final ApiAccessDeniedHandler accessDeniedHandler;
+    private final boolean apiDocsEnabled;
 
     public SecurityConfig(JwtAuthFilter jwtAuthFilter, ApiAuthenticationEntryPoint authenticationEntryPoint,
-                           ApiAccessDeniedHandler accessDeniedHandler) {
+                           ApiAccessDeniedHandler accessDeniedHandler,
+                           @Value("${springdoc.api-docs.enabled:false}") boolean apiDocsEnabled) {
         this.jwtAuthFilter = jwtAuthFilter;
         this.authenticationEntryPoint = authenticationEntryPoint;
         this.accessDeniedHandler = accessDeniedHandler;
+        this.apiDocsEnabled = apiDocsEnabled;
     }
 
     @Bean
@@ -42,10 +46,17 @@ public class SecurityConfig {
                 .exceptionHandling(exceptions -> exceptions
                         .authenticationEntryPoint(authenticationEntryPoint)
                         .accessDeniedHandler(accessDeniedHandler))
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/api/auth/**").permitAll()
-                        .requestMatchers("/actuator/health", "/actuator/prometheus").permitAll()
-                        .anyRequest().authenticated())
+                .authorizeHttpRequests(auth -> {
+                    auth.requestMatchers("/api/auth/**").permitAll();
+                    auth.requestMatchers("/actuator/health", "/actuator/prometheus").permitAll();
+                    if (apiDocsEnabled) {
+                        // The gateway's Swagger UI reads this without a token, the way a browser
+                        // loads any page. Only while documentation is on: otherwise the route is
+                        // refused like every other, and nothing tells a caller it exists.
+                        auth.requestMatchers("/v3/api-docs", "/v3/api-docs/**").permitAll();
+                    }
+                    auth.anyRequest().authenticated();
+                })
                 .addFilterBefore(jwtAuthFilter, UsernamePasswordAuthenticationFilter.class);
 
         return http.build();

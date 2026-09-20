@@ -1,5 +1,6 @@
 package centuryroad.auth.dto;
 
+import io.swagger.v3.oas.annotations.media.Schema;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Getter;
 
@@ -15,12 +16,27 @@ import java.time.OffsetDateTime;
 @Getter
 public class ApiEnvelope<T> {
 
+    @Schema(description = "True when the request was answered, false when it was refused or failed.")
     private boolean success;
+
+    @Schema(description = "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            example = "INVALID_CREDENTIALS")
     private String error;
+
+    @Schema(description = "A message for developers and logs. Not meant to be shown to a user.")
     private String message;
+
+    @Schema(description = "A message that is safe to show to a user, in Italian. Only present on errors.")
     private String userMessage;
+
+    @Schema(description = "The answer itself. Only present on success.")
     private T data;
+
+    @Schema(description = "When the answer was produced, ISO 8601 with offset.", example = "2026-09-20T10:22:12+02:00")
     private String timestamp;
+
+    @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            example = "REQ_1A2B3C4D")
     private String sessionId;
 
     public static <T> ApiEnvelope<T> success(String message, T data, String sessionId) {
