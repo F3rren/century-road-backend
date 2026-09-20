@@ -386,16 +386,22 @@ are needed.
 | `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<version>` |
 | `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<version>` |
 
-`<version>` is a released version, such as `0.1.0` (see [Releasing a version](#releasing-a-version)).
+`<version>` is a released version, such as `0.2.0` (see [Releasing a version](#releasing-a-version)).
 Prefer it to `latest`: a version never moves, so a redeploy cannot change what runs. The short commit
 id from the package's list of tags does the same for a commit that has not been released.
 
 **Following the releases automatically.** Railway can move a service to the newer versions of its
 image by itself: *Settings → Source → Configure Auto Updates*. With a full version tag such as
-`:0.1.0` it offers **patches only** or **minor updates and patches**, and a major version is never
-automatic. Choose *patches only*, with a maintenance window (the night one, 02:00-06:00 UTC): a
-`v0.1.1` release then reaches production by itself, and `v0.2.0` waits until you change the tag.
-What gets deployed is what you release, not what is merged to `main`.
+`:0.2.0` it offers **patches only** or **minor updates and patches**, and a major version is never
+automatic. Choose *patches only* (the interface may label it *Security and bugfix patches*: it is the
+same option, x.y.**Z**), with a maintenance window (the night one, 02:00-06:00 UTC): a `v0.2.1`
+release then reaches production by itself, and `v0.3.0` waits until you change the tag. What gets
+deployed is what you release, not what is merged to `main`.
+
+**Railway follows the version number, not what is inside it.** Nothing checks that a patch only
+carries fixes: it is a promise kept by whoever tags. So a patch (`v0.2.1`) is for fixes, security
+ones included, and anything new is a minor (`v0.3.0`). Tag a feature as a patch and every service
+on *patches only* installs it by itself.
 
 What to know before switching it on:
 
@@ -407,9 +413,9 @@ What to know before switching it on:
 - **`auth-service` runs its database migrations when it starts, and nothing here backs Postgres up**
   (see *Not covered*). Leave auto updates off for it, and change its tag yourself, until there is a
   backup.
-- **Use the full version.** Railway's documentation does not say how it treats `:0.1` (the tag that
+- **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
   follows the newest patch) or a commit id, and neither has been tried here. Point the services at
-  `:0.1.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
 - **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
   push to `main`, with no version to go back to but a commit id.
 
