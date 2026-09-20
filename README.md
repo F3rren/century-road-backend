@@ -493,6 +493,18 @@ Births and deaths are the one place where `pages[0]` is usually right: `text` op
 person's name and the first link is that person. Usually is not always, and nothing in the
 answer says which one is the person, so treat it as a convenience rather than a guarantee.
 
+A page has a `title` and a `url`, and, when Wikipedia has them, what a card needs. A key that
+has no value is left out, not sent as `null`.
+
+| Field | What it is |
+|---|---|
+| `description`, `extract` | the article's one-line description and its opening paragraph, as plain text |
+| `thumbnail`, `originalImage` | the same picture at two sizes, each with `url`, `width`, `height` and `filePageUrl`. Use the thumbnail in lists and the original in a detail view: originals can be several megabytes, and the feed has some over 8,000 pixels wide, so check `width` and `height` before loading one |
+| `coordinates` | `lat` and `lon` in decimal degrees, on the pages that have a place. Values outside the range of a place on Earth are dropped |
+| `wikibaseItem` | the Wikidata id, such as `Q3820`. It is the same in every language, so "Beirut" from `it` and from `en` can be matched without comparing titles |
+
+#### Filtering by year
+
 The year filter is applied here, not by Wikipedia, which cannot filter by year, so it
 narrows a single day; it cannot answer "everything that happened in 1789". Holidays have no
 year and are left out once a year filter is set.
@@ -530,7 +542,9 @@ article, and name the licence. The response carries all three: `data.attribution
 
 Images are not covered by that licence: each file has its own. The service therefore
 forwards only images hosted on Wikimedia Commons, which accepts only free files, and gives
-each a `filePageUrl` naming its author and licence. Images uploaded to a single wiki, where
+each, thumbnail or original, a `filePageUrl` naming its author and licence. The feed serves
+Commons images from both `upload.wikimedia.org` and `thumb.wikimedia.org`, and both count.
+Images uploaded to a single wiki, where
 non-free "fair use" pictures live, are dropped, because nothing in Wikipedia's answer says
 which are which.
 
@@ -539,7 +553,7 @@ which are which.
 ```bash
 cd service/auth-service    && ./mvnw test    #  57 tests
 cd service/gateway         && ./mvnw test    #  14 tests
-cd service/history-service && ./mvnw test    # 181 tests
+cd service/history-service && ./mvnw test    # 212 tests
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
