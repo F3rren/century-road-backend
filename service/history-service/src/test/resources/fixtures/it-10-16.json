@@ -45,6 +45,7 @@
           "namespace": { "id": 0, "text": "" },
           "titles": { "canonical": "Conclave_di_esempio", "normalized": "Conclave di esempio" },
           "pageid": 2,
+          "coordinates": { "lat": 41.9022, "lon": 12.4539 },
           "thumbnail": {
             "source": "https://upload.wikimedia.org/wikipedia/it/thumb/5/5b/Locale.jpg/330px-Locale.jpg?utm_source=it.wikipedia.org&utm_campaign=api&utm_content=thumbnail",
             "width": 330,
