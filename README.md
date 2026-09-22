@@ -230,6 +230,10 @@ If the header is missing, the request did not reach the proxy over HTTPS, or the
 not running. HSTS is only ever emitted on an HTTPS request — that is deliberate, not a
 bug.
 
+`bash infra/caddy/headers_test.sh` checks the same thing without a domain: it starts Caddy with
+this Caddyfile in front of a stand-in that sends a one-year HSTS of its own, as `auth-service`
+does, and requires that the browser gets ours once and nothing of the service's. CI runs it.
+
 ### 7. Only later, raise the HSTS window
 
 Once HTTPS has been stable for a few days, set `HSTS_MAX_AGE=31536000` (one year) and
@@ -674,6 +678,7 @@ cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
 cd service/history-service && ./mvnw test    # 224 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
+bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through

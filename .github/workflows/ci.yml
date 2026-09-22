@@ -165,3 +165,18 @@ jobs:
 
       - name: Test the release script
         run: bash .github/scripts/release_test.sh
+
+  # The Caddyfile is what puts HSTS and the other security headers on every response, and what
+  # makes them replace the ones a service sends itself. That is only worth anything if it holds
+  # on a real Caddy, so this runs one in Docker in front of a stand-in for the services.
+  caddy-headers:
+    name: Caddyfile headers test
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Test the Caddyfile
+        run: bash infra/caddy/headers_test.sh
