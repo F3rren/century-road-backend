@@ -1,5 +1,7 @@
 package centuryroad.history.model;
 
+import io.swagger.v3.oas.annotations.media.Schema;
+
 import java.util.List;
 
 /**
@@ -9,7 +11,16 @@ import java.util.List;
  * copy is older than the freshness window because Wikipedia could not be reached to
  * refresh it.
  */
-public record SectionResult(Language language, boolean fallback, boolean stale, List<Entry> items) {
+@Schema(description = "One section of the day, and where it really came from.")
+public record SectionResult(
+        @Schema(description = "The edition that supplied these items. It is not always the one asked for.")
+        Language language,
+        @Schema(description = "True when the language asked for had nothing for this section and another one "
+                + "was used. The Italian feed has no births or deaths, so those arrive in English. Say so "
+                + "rather than present English text as Italian.") boolean fallback,
+        @Schema(description = "True when this is a copy older than six hours because Wikipedia could not be "
+                + "reached to refresh it. Old history is served in preference to an error.") boolean stale,
+        @Schema(description = "The items of the section.") List<Entry> items) {
 
     public SectionResult {
         items = List.copyOf(items);

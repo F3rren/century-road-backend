@@ -54,6 +54,24 @@ class WikimediaUrlsUnitTest {
     }
 
     @Test
+    void aCommonsThumbnailServedFromTheThumbHostPointsBackAtItsFilePageToo() {
+        // What the feed sends today for most images: the same Commons path, another host.
+        assertThat(WikimediaUrls.commonsFilePage(
+                "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b4/Romano_Prodi_2024_%28cropped%29.jpg"
+                        + "/330px-Romano_Prodi_2024_%28cropped%29.jpg?utm_source=it.wikipedia.org&utm_campaign=api"))
+                .contains("https://commons.wikimedia.org/wiki/File:Romano_Prodi_2024_%28cropped%29.jpg");
+        assertThat(WikimediaUrls.commonsFilePage(
+                "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b7/Flag_of_Europe.svg/langit-330px-Flag_of_Europe.svg.png"))
+                .contains("https://commons.wikimedia.org/wiki/File:Flag_of_Europe.svg");
+    }
+
+    @Test
+    void anImageOnTheThumbHostFromASingleWikiIsStillNotOne() {
+        assertThat(WikimediaUrls.commonsFilePage(
+                "https://thumb.wikimedia.org/wikipedia/it/thumb/5/5b/Locale.jpg/330px-Locale.jpg")).isEmpty();
+    }
+
+    @Test
     void anImageUploadedToASingleWikiIsNotOneBecauseNothingSaysItIsFree() {
         assertThat(WikimediaUrls.commonsFilePage(
                 "https://upload.wikimedia.org/wikipedia/it/thumb/5/5b/Locale.jpg/330px-Locale.jpg")).isEmpty();
@@ -64,6 +82,8 @@ class WikimediaUrlsUnitTest {
     @ParameterizedTest
     @ValueSource(strings = {
             "https://evil.example/wikipedia/commons/a/ab/X.jpg",
+            "https://thumb.wikimedia.org.evil.example/wikipedia/commons/thumb/a/ab/X.jpg/330px-X.jpg",
+            "https://evilthumb.wikimedia.org/wikipedia/commons/thumb/a/ab/X.jpg/330px-X.jpg",
             "https://upload.wikimedia.org/somewhere/else.jpg",
             "https://upload.wikimedia.org/wikipedia/commons/zz/ab/X.jpg",
             "not a url at all",

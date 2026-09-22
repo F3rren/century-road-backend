@@ -111,6 +111,7 @@ The ports are fixed by `compose-dev.yml`, so no `.env` can move them:
 | | URL |
 |---|---|
 | **Gateway** - the one a frontend calls | http://localhost:8080 |
+| **API documentation** (Swagger UI) | http://localhost:8080/swagger-ui.html |
 | auth-service (direct) | http://localhost:8081 |
 | history-service (direct) | http://localhost:8082 |
 | Prometheus | http://localhost:9090 |
@@ -133,10 +134,11 @@ answer, open one of these in a browser:
 
 - http://localhost:8080/actuator/health - is it up
 - http://localhost:8080/api/history/on-this-day/10/16?lang=it - real data
+- http://localhost:8080/swagger-ui.html - every endpoint, documented, with a form to try it
 
 `docker compose --env-file .env.dev -f compose-dev.yml ps` lists what is published, and in
 Docker Desktop each published port in the container list is a link that opens the browser on
-it. Grafana is the one thing here that is a page.
+it. Grafana and Swagger UI are the two things here that are pages.
 
 **A frontend calls the gateway**, `http://localhost:8080`, never a service directly. The
 gateway answers the browser's CORS preflight itself, for the one origin in `FRONTEND_ORIGIN`
@@ -283,8 +285,8 @@ ghcr.io/f3rren/century-road-backend-history-service
 ```
 
 Every image carries two tags: the short commit id (`:1a2b3c4`), which never moves and is the one
-to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. They are
-built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
+to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. A release adds
+`:1.2.3` and `:1.2` (see below). They are built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
 is the one the production stack would have built itself.
 
 The packages inherit the repository's visibility, so on a public repository they can be pulled
@@ -297,6 +299,39 @@ To build the same images by hand:
 ```bash
 docker buildx bake -f compose-prod.yml --load     # tagged ...-gateway:local, and so on
 ```
+
+### Releasing a version
+
+A version is a tag on a commit of `main`. The images already exist by then: CI built and tested them
+when the commit reached `main`. Releasing gives them their version tags and creates the GitHub
+release. It builds nothing, so `:1.2.3` is byte for byte what was tested.
+
+```bash
+git checkout main && git pull
+git tag -a v1.2.3 -m "v1.2.3"
+git push origin v1.2.3
+```
+
+The **Release** workflow (`.github/workflows/release.yml`) then:
+
+- checks that the commit is on `main` and that its CI run passed, and waits for that run if it is
+  still going, so tagging right after the merge is fine;
+- tags each of the three images `:1.2.3` and `:1.2`. `:1.2` follows the newest patch: releasing an
+  older one later does not pull it back;
+- creates the GitHub release, with the image names and the notes GitHub generates from the pull
+  requests merged since the previous release.
+
+It refuses, and changes nothing, when the tag is not `vMAJOR.MINOR.PATCH` (no pre-releases yet), the
+commit is not on `main`, its CI run failed, a service has no image for the commit, or `:1.2.3` is
+already published for a different image. Running it again for the same tag is harmless. In
+production pin the full version (`:1.2.3`) or the commit tag: `:latest` and `:1.2` move.
+
+**A tag that already exists**, made before this workflow, such as `v0.1.0`: Actions, Release, Run
+workflow, and give the tag. *Dry run* is ticked by default: it does every check and prints what it
+would do, and writes nothing. Untick it to do it.
+
+The logic is `.github/scripts/release.sh`. `bash .github/scripts/release_test.sh` tests it with `gh`
+and `docker` replaced by stand-ins, so it needs no network, and CI runs it on every push.
 
 ### Running the gateway with no proxy of ours in front
 
@@ -347,12 +382,42 @@ are needed.
 
 | Service | Image |
 |---|---|
-| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<tag>` |
-| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<tag>` |
-| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<tag>` |
+| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<version>` |
+| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<version>` |
+| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<version>` |
 
-`<tag>` is a short commit id from the package's list of tags. Prefer it to `latest`: it never
-moves, so a redeploy cannot change what runs.
+`<version>` is a released version, such as `0.2.0` (see [Releasing a version](#releasing-a-version)).
+Prefer it to `latest`: a version never moves, so a redeploy cannot change what runs. The short commit
+id from the package's list of tags does the same for a commit that has not been released.
+
+**Following the releases automatically.** Railway can move a service to the newer versions of its
+image by itself: *Settings → Source → Configure Auto Updates*. With a full version tag such as
+`:0.2.0` it offers **patches only** or **minor updates and patches**, and a major version is never
+automatic. Choose *patches only* (the interface may label it *Security and bugfix patches*: it is the
+same option, x.y.**Z**), with a maintenance window (the night one, 02:00-06:00 UTC): a `v0.2.1`
+release then reaches production by itself, and `v0.3.0` waits until you change the tag. What gets
+deployed is what you release, not what is merged to `main`.
+
+**Railway follows the version number, not what is inside it.** Nothing checks that a patch only
+carries fixes: it is a promise kept by whoever tags. So a patch (`v0.2.1`) is for fixes, security
+ones included, and anything new is a minor (`v0.3.0`). Tag a feature as a patch and every service
+on *patches only* installs it by itself.
+
+What to know before switching it on:
+
+- **It is not immediate.** Railway checks the registry periodically and caches what it finds for up
+  to a few hours, and applies the update in the window you chose.
+- **Each service updates on its own**, so for a while the three can run different releases. Between
+  consecutive releases that is harmless; for a release that changes what the gateway and the
+  services say to each other, update by hand.
+- **`auth-service` runs its database migrations when it starts, and nothing here backs Postgres up**
+  (see *Not covered*). Leave auto updates off for it, and change its tag yourself, until there is a
+  backup.
+- **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
+  follows the newest patch) or a commit id, and neither has been tried here. Point the services at
+  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+- **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
+  push to `main`, with no version to go back to but a commit id.
 
 Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
 
@@ -440,6 +505,60 @@ slash: the address of a preview deployment is a different origin and is refused.
 - **Metrics.** The gateway exposes only `/actuator/health` here, and there is no Prometheus or
   Grafana in this setup. Railway's own logs and resource graphs are what you have.
 
+## API documentation
+
+Every endpoint is documented in OpenAPI and browsable in Swagger UI. In development it is at
+http://localhost:8080/swagger-ui.html, served by the gateway for every service at once: pick
+`auth-service` or `history-service` from the list at the top. "Try it out" sends its calls to
+the gateway, the way a frontend does, so there is no CORS to get in the way. For the protected
+endpoints, call `/api/auth/login`, copy the `token` from the answer and paste it into
+"Authorize". (A service's definition loads only while that service is running: the gateway
+relays the document from it, so a stopped service shows as an error in the list.)
+
+This is the contract, the machine-readable one. The sections below are the guide to the
+history API, for a person reading it through.
+
+**How it fits together.** Each service publishes its own OpenAPI document at `/v3/api-docs`
+(springdoc, the API module only). The gateway relays it at `/docs/<service>/v3/api-docs`, GET
+only and only that path, because in production the services are not reachable from a browser,
+and serves the one Swagger UI that reads them. The documents declare a relative server (`/`),
+so a call always goes to whichever origin served the page.
+
+**It is off unless switched on.** The `dev` profile turns it on, and nothing else does: the
+gateway is the one public address in production, and describing an API is something to enable
+on purpose. `compose-prod.yml` passes none of the switches, so a production stack made from it
+never serves them. Anywhere else, for a staging environment say, set on `auth-service`,
+`history-service` and `gateway`:
+
+```
+SPRINGDOC_API_DOCS_ENABLED=true
+```
+
+and on the `gateway` also `SPRINGDOC_SWAGGER_UI_ENABLED=true`. Without them a service answers
+`/v3/api-docs` like any other route (`auth-service`: a 401, like everything without a token) and
+the gateway has no page and no relay route at all.
+
+**Adding an endpoint.** Two tests fail until it is documented, in each service, so it cannot be
+forgotten: one walks the endpoints the application really has and wants each in the document
+with a summary, and one wants every field of every request and answer to have a description.
+What it takes:
+
+- on the controller, `@Tag`; on each method, `@Operation(summary = ...)` and an `@ApiResponse`
+  for each refusal it can produce, with the `error` code in the description;
+- on each DTO field, `@Schema(description = ...)`;
+- on a protected controller, `@SecurityRequirement(name = OpenApiConfig.BEARER_AUTH)`.
+
+Two things learned the hard way. Do not give an `example` to optional parameters that cannot be
+combined: "Try it out" sends every example, so a first click on Execute would be a 400 (this
+happened with `year` and `fromYear`/`toYear`). And a validation such as `@Pattern(regexp =
+"(?i)...")` is published as it is, where an inline flag is a syntax error for JavaScript;
+`auth-service` strips those (`OpenApiConfig`), and the allowed values are listed as an enum
+instead.
+
+springdoc is pinned to 2.6.0, the last release built on Spring Boot 3.3. Its newer lines need
+newer Spring Boot, so it moves with Spring Boot and not on its own; `dependabot.yml` does not
+propose its minor or major bumps.
+
 ## History API
 
 `GET /api/history/on-this-day/{month}/{day}` returns what happened on a calendar day, from
@@ -457,9 +576,8 @@ Wikipedia's "On this day" feed. Public: no token, nothing per-user in it.
 curl 'https://<host>/api/history/on-this-day/10/16?lang=it&types=events,births&fromYear=1900'
 ```
 
-The answer is the usual envelope. `data.sections.<type>` holds `items` (each with `text`,
-`year`, and `pages` linking to the Wikipedia article) plus three fields about where they
-came from:
+The answer is the usual envelope. `data.sections.<type>` holds `items` plus three fields
+about where they came from:
 
 - `language`: the edition that really supplied the items. It is not always the one asked
   for: **the Italian feed has no births or deaths at all**, so those come from English,
@@ -468,6 +586,43 @@ came from:
   refresh it. Old history is served in preference to an error, for up to seven days.
 - `data.warnings`: `PRIMARY_UNAVAILABLE` (the language asked for could not be fetched, all
   sections are from the fallback) or `FALLBACK_UNAVAILABLE` (a gap could not be filled).
+
+#### Reading an item
+
+An item has `text`, `year` (absent for holidays, negative before the common era) and `pages`.
+**`text` is the event.** `pages` are the Wikipedia articles *linked from that text*, in the
+order they appear in it. They are related reading, not "the article about the event" (abridged
+example):
+
+```json
+{
+  "year": 1992,
+  "text": "Referendum in Francia sull'adesione al Trattato di Maastricht: vincono i \"sì\"",
+  "pages": [ { "title": "Referendum" }, { "title": "Francia" }, { "title": "Trattato di Maastricht" } ]
+}
+```
+
+Most events have no article of their own, so the first page can be as generic as
+"Referendum" or "Beirut". A page's `description` and `extract` describe *that article*, not
+the event it was linked from: the extract of "Beirut" says what Beirut is, not what happened
+there. So show `text` as the headline and `pages` as "related articles", and never use
+`pages[0]` as an event's title or summary.
+
+Births and deaths are the one place where `pages[0]` is usually right: `text` opens with the
+person's name and the first link is that person. Usually is not always, and nothing in the
+answer says which one is the person, so treat it as a convenience rather than a guarantee.
+
+A page has a `title` and a `url`, and, when Wikipedia has them, what a card needs. A key that
+has no value is left out, not sent as `null`.
+
+| Field | What it is |
+|---|---|
+| `description`, `extract` | the article's one-line description and its opening paragraph, as plain text |
+| `thumbnail`, `originalImage` | the same picture at two sizes, each with `url`, `width`, `height` and `filePageUrl`. Use the thumbnail in lists and the original in a detail view: originals can be several megabytes, and the feed has some over 8,000 pixels wide, so check `width` and `height` before loading one |
+| `coordinates` | `lat` and `lon` in decimal degrees, on the pages that have a place. Values outside the range of a place on Earth are dropped |
+| `wikibaseItem` | the Wikidata id, such as `Q3820`. It is the same in every language, so "Beirut" from `it` and from `en` can be matched without comparing titles |
+
+#### Filtering by year
 
 The year filter is applied here, not by Wikipedia, which cannot filter by year, so it
 narrows a single day; it cannot answer "everything that happened in 1789". Holidays have no
@@ -506,16 +661,19 @@ article, and name the licence. The response carries all three: `data.attribution
 
 Images are not covered by that licence: each file has its own. The service therefore
 forwards only images hosted on Wikimedia Commons, which accepts only free files, and gives
-each a `filePageUrl` naming its author and licence. Images uploaded to a single wiki, where
+each, thumbnail or original, a `filePageUrl` naming its author and licence. The feed serves
+Commons images from both `upload.wikimedia.org` and `thumb.wikimedia.org`, and both count.
+Images uploaded to a single wiki, where
 non-free "fair use" pictures live, are dropped, because nothing in Wikipedia's answer says
 which are which.
 
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  57 tests
-cd service/gateway         && ./mvnw test    #  14 tests
-cd service/history-service && ./mvnw test    # 181 tests
+cd service/auth-service    && ./mvnw test    #  71 tests
+cd service/gateway         && ./mvnw test    #  43 tests
+cd service/history-service && ./mvnw test    # 224 tests
+bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
