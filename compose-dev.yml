@@ -36,7 +36,7 @@ services:
   # psql or DBeaver could reach the wrong one. Only tools on the host care: the services reach
   # the database as db:5432 inside the Compose network.
   db:
-    image: postgis/postgis:16-3.4-alpine
+    image: postgis/postgis:16-3.5-alpine
     environment:
       POSTGRES_DB:       ${POSTGRES_DB:-centuryroad}
       POSTGRES_USER:     ${POSTGRES_USER:-centuryroad}
