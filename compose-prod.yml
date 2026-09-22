@@ -21,7 +21,7 @@ services:
   # No ports here on purpose: nothing outside the Compose network has a reason to talk
   # to Postgres in production.
   db:
-    image: postgis/postgis:16-3.4-alpine
+    image: postgis/postgis:16-3.5-alpine
     restart: unless-stopped
     environment:
       POSTGRES_DB:       ${POSTGRES_DB}
