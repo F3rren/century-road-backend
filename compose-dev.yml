@@ -36,7 +36,7 @@ services:
   # psql or DBeaver could reach the wrong one. Only tools on the host care: the services reach
   # the database as db:5432 inside the Compose network.
   db:
-    image: postgis/postgis:16-3.4-alpine
+    image: postgis/postgis:16-3.5-alpine
     environment:
       POSTGRES_DB:       ${POSTGRES_DB:-centuryroad}
       POSTGRES_USER:     ${POSTGRES_USER:-centuryroad}
@@ -148,7 +148,7 @@ services:
   # The version is written here, not in .env.dev, so Dependabot can see it and propose bumps;
   # keep it the same as compose-prod.yml.
   prometheus:
-    image: prom/prometheus:v2.53.0
+    image: prom/prometheus:v3.14.0
     environment:
       AUTH_PORT:    "8081"
       GATEWAY_PORT: "8080"
@@ -179,7 +179,7 @@ services:
 
   # ─── Grafana ─────────────────────────────────────────────────────────────────
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:13.2.2
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}
