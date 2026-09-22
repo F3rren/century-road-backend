@@ -285,8 +285,8 @@ ghcr.io/f3rren/century-road-backend-history-service
 ```
 
 Every image carries two tags: the short commit id (`:1a2b3c4`), which never moves and is the one
-to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. They are
-built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
+to pin, and a moving one, `:latest` for what is on `main` and `:develop` for `develop`. A release adds
+`:1.2.3` and `:1.2` (see below). They are built from `compose-prod.yml` (`target: prod`, the non-root runtime stage), so a published image
 is the one the production stack would have built itself.
 
 The packages inherit the repository's visibility, so on a public repository they can be pulled
@@ -299,6 +299,39 @@ To build the same images by hand:
 ```bash
 docker buildx bake -f compose-prod.yml --load     # tagged ...-gateway:local, and so on
 ```
+
+### Releasing a version
+
+A version is a tag on a commit of `main`. The images already exist by then: CI built and tested them
+when the commit reached `main`. Releasing gives them their version tags and creates the GitHub
+release. It builds nothing, so `:1.2.3` is byte for byte what was tested.
+
+```bash
+git checkout main && git pull
+git tag -a v1.2.3 -m "v1.2.3"
+git push origin v1.2.3
+```
+
+The **Release** workflow (`.github/workflows/release.yml`) then:
+
+- checks that the commit is on `main` and that its CI run passed, and waits for that run if it is
+  still going, so tagging right after the merge is fine;
+- tags each of the three images `:1.2.3` and `:1.2`. `:1.2` follows the newest patch: releasing an
+  older one later does not pull it back;
+- creates the GitHub release, with the image names and the notes GitHub generates from the pull
+  requests merged since the previous release.
+
+It refuses, and changes nothing, when the tag is not `vMAJOR.MINOR.PATCH` (no pre-releases yet), the
+commit is not on `main`, its CI run failed, a service has no image for the commit, or `:1.2.3` is
+already published for a different image. Running it again for the same tag is harmless. In
+production pin the full version (`:1.2.3`) or the commit tag: `:latest` and `:1.2` move.
+
+**A tag that already exists**, made before this workflow, such as `v0.1.0`: Actions, Release, Run
+workflow, and give the tag. *Dry run* is ticked by default: it does every check and prints what it
+would do, and writes nothing. Untick it to do it.
+
+The logic is `.github/scripts/release.sh`. `bash .github/scripts/release_test.sh` tests it with `gh`
+and `docker` replaced by stand-ins, so it needs no network, and CI runs it on every push.
 
 ### Running the gateway with no proxy of ours in front
 
@@ -349,12 +382,42 @@ are needed.
 
 | Service | Image |
 |---|---|
-| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<tag>` |
-| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<tag>` |
-| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<tag>` |
+| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<version>` |
+| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<version>` |
+| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<version>` |
 
-`<tag>` is a short commit id from the package's list of tags. Prefer it to `latest`: it never
-moves, so a redeploy cannot change what runs.
+`<version>` is a released version, such as `0.2.0` (see [Releasing a version](#releasing-a-version)).
+Prefer it to `latest`: a version never moves, so a redeploy cannot change what runs. The short commit
+id from the package's list of tags does the same for a commit that has not been released.
+
+**Following the releases automatically.** Railway can move a service to the newer versions of its
+image by itself: *Settings → Source → Configure Auto Updates*. With a full version tag such as
+`:0.2.0` it offers **patches only** or **minor updates and patches**, and a major version is never
+automatic. Choose *patches only* (the interface may label it *Security and bugfix patches*: it is the
+same option, x.y.**Z**), with a maintenance window (the night one, 02:00-06:00 UTC): a `v0.2.1`
+release then reaches production by itself, and `v0.3.0` waits until you change the tag. What gets
+deployed is what you release, not what is merged to `main`.
+
+**Railway follows the version number, not what is inside it.** Nothing checks that a patch only
+carries fixes: it is a promise kept by whoever tags. So a patch (`v0.2.1`) is for fixes, security
+ones included, and anything new is a minor (`v0.3.0`). Tag a feature as a patch and every service
+on *patches only* installs it by itself.
+
+What to know before switching it on:
+
+- **It is not immediate.** Railway checks the registry periodically and caches what it finds for up
+  to a few hours, and applies the update in the window you chose.
+- **Each service updates on its own**, so for a while the three can run different releases. Between
+  consecutive releases that is harmless; for a release that changes what the gateway and the
+  services say to each other, update by hand.
+- **`auth-service` runs its database migrations when it starts, and nothing here backs Postgres up**
+  (see *Not covered*). Leave auto updates off for it, and change its tag yourself, until there is a
+  backup.
+- **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
+  follows the newest patch) or a commit id, and neither has been tried here. Point the services at
+  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+- **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
+  push to `main`, with no version to go back to but a commit id.
 
 Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
 
@@ -610,6 +673,7 @@ which are which.
 cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
 cd service/history-service && ./mvnw test    # 224 tests
+bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
