@@ -16,6 +16,12 @@ import centuryroad.auth.service.JwtService;
 import centuryroad.auth.service.LoginAttemptLimiter;
 import centuryroad.auth.service.RefreshTokenService;
 import centuryroad.auth.service.UserService;
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.headers.Header;
+import io.swagger.v3.oas.annotations.media.Content;
+import io.swagger.v3.oas.annotations.media.Schema;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
 import lombok.extern.slf4j.Slf4j;
@@ -34,6 +40,8 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/api/auth")
+@Tag(name = "Authentication",
+        description = "Sign in, renew a token, sign out. The only endpoints reachable without a token.")
 public class AuthController {
 
     private final AuthService authService;
@@ -55,6 +63,24 @@ public class AuthController {
         return RequestCorrelationFilter.current();
     }
 
+    @Operation(
+            summary = "Log in with email and password",
+            description = """
+                    Returns an access token, a JWT to send afterwards as `Authorization: Bearer <token>`, and
+                    a refresh token to renew it with.
+
+                    Attempts are limited per caller and email: too many is a 429 with a `Retry-After` header.
+                    A wrong email, a wrong password and a disabled account all answer the same 401, on purpose,
+                    so the answer does not say which accounts exist.""")
+    @ApiResponse(responseCode = "200", description = "Logged in.")
+    @ApiResponse(responseCode = "400", description = "Email or password missing. `error` is INVALID_REQUEST.",
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "401", description = "Email or password not correct, or the account is disabled. "
+            + "`error` is INVALID_CREDENTIALS.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "429", description = "Too many attempts. `error` is TOO_MANY_ATTEMPTS.",
+            headers = @Header(name = "Retry-After", description = "Seconds to wait before trying again.",
+                    schema = @Schema(type = "integer")),
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @PostMapping("/login")
     public ResponseEntity<ApiEnvelope<LoginPayload>> login(@RequestBody LoginRequest request,
                                                             HttpServletRequest httpRequest) {
@@ -97,6 +123,16 @@ public class AuthController {
         return ResponseEntity.ok(ApiEnvelope.success("Login effettuato con successo", payload, sessionId()));
     }
 
+    @Operation(
+            summary = "Exchange a refresh token for a new access token",
+            description = """
+                    Refresh tokens are single-use: the answer carries a new one, and the one just sent stops
+                    working. Keep the new one for next time.""")
+    @ApiResponse(responseCode = "200", description = "A new access token and a new refresh token.")
+    @ApiResponse(responseCode = "400", description = "The refresh token is missing. `error` is VALIDATION_ERROR.",
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "401", description = "The refresh token is unknown, expired or already used, or "
+            + "its user no longer exists. `error` is INVALID_CREDENTIALS.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @PostMapping("/refresh")
     public ResponseEntity<ApiEnvelope<RefreshPayload>> refresh(@Valid @RequestBody RefreshTokenRequest request) {
         Long userId = refreshTokenService.rotate(request.refreshToken())
@@ -116,6 +152,14 @@ public class AuthController {
                 new RefreshPayload(newToken, newRefreshToken), sessionId()));
     }
 
+    @Operation(
+            summary = "Sign out by revoking a refresh token",
+            description = """
+                    Revokes the refresh token sent. The access token already issued is a signed JWT and cannot
+                    be recalled: it stays valid until it expires.""")
+    @ApiResponse(responseCode = "200", description = "Signed out.")
+    @ApiResponse(responseCode = "400", description = "The refresh token is missing. `error` is VALIDATION_ERROR.",
+            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @PostMapping("/logout")
     public ResponseEntity<ApiEnvelope<Void>> logout(@Valid @RequestBody RefreshTokenRequest request) {
         refreshTokenService.revoke(request.refreshToken());

@@ -4,6 +4,7 @@ import centuryroad.history.model.Language;
 import centuryroad.history.model.OnThisDayResult;
 import centuryroad.history.model.Section;
 import centuryroad.history.model.SectionResult;
+import io.swagger.v3.oas.annotations.media.Schema;
 
 import java.util.LinkedHashMap;
 import java.util.List;
@@ -18,13 +19,32 @@ import java.util.Map;
  * crediting the source and naming the licence wherever it is shown. The per-page url is the
  * link back to the article; this is the licence notice to go with it.
  */
-public record OnThisDayResponse(DateDto date, Language language, Attribution attribution,
-                                Map<String, SectionResult> sections, List<String> warnings) {
+@Schema(description = "What happened on one calendar day.")
+public record OnThisDayResponse(
+        @Schema(description = "The day that was asked for.") DateDto date,
+        @Schema(description = "The language that was asked for. Each section says which one it really came from.")
+        Language language,
+        @Schema(description = "The credit Wikipedia's licence requires wherever its text is shown.")
+        Attribution attribution,
+        @Schema(description = "The sections asked for, keyed by name: selected, events, births, deaths, holidays. "
+                + "Always in that order.") Map<String, SectionResult> sections,
+        @Schema(description = "Things worth telling the user about how this answer was put together. "
+                + "PRIMARY_UNAVAILABLE: the language asked for could not be fetched and every section comes from "
+                + "the fallback. FALLBACK_UNAVAILABLE: a gap in the language asked for could not be filled.",
+                example = "[]") List<String> warnings) {
 
-    public record DateDto(int month, int day) {
+    @Schema(description = "A calendar day, without a year.")
+    public record DateDto(
+            @Schema(description = "Month, 1 to 12.", example = "10") int month,
+            @Schema(description = "Day of the month.", example = "16") int day) {
     }
 
-    public record Attribution(String source, String license, String licenseUrl, String notice) {
+    @Schema(description = "Where the text comes from and under what licence. Show it with the text.")
+    public record Attribution(
+            @Schema(description = "The source of the text.", example = "Wikipedia") String source,
+            @Schema(description = "The licence the text is under.", example = "CC BY-SA 4.0") String license,
+            @Schema(description = "The licence itself.") String licenseUrl,
+            @Schema(description = "A ready-made notice, in Italian, to show as it is.") String notice) {
     }
 
     private static final Attribution ATTRIBUTION = new Attribution(

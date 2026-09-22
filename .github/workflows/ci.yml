@@ -151,3 +151,17 @@ jobs:
           SHA_TAG: ${{ steps.names.outputs.sha }}
           MOVING_TAG: ${{ steps.names.outputs.moving }}
         run: docker buildx imagetools create --tag "$IMAGE:$MOVING_TAG" "$IMAGE:$SHA_TAG"
+
+  # The release script decides what gets published under a version, so it is tested like code.
+  # It talks to gh and docker through stand-ins: no network, a few seconds.
+  release-script:
+    name: release script test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Test the release script
+        run: bash .github/scripts/release_test.sh

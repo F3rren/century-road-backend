@@ -1,6 +1,7 @@
 package centuryroad.history.wikipedia;
 
 import centuryroad.history.exception.UpstreamBadResponseException;
+import centuryroad.history.model.Coordinates;
 import centuryroad.history.model.DayFeed;
 import centuryroad.history.model.Entry;
 import centuryroad.history.model.ImageRef;
@@ -15,6 +16,7 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.regex.Pattern;
 
 /**
  * Turns Wikipedia's JSON into a DayFeed, tolerating what the feed actually does rather than
@@ -28,6 +30,12 @@ import java.util.Optional;
  * down to something worth caching.
  */
 final class WikimediaFeedParser {
+
+    private static final double MAX_LATITUDE = 90;
+    private static final double MAX_LONGITUDE = 180;
+
+    /** Q, then digits. Real ids have at most nine of them today; twelve leaves room to grow. */
+    private static final Pattern WIKIDATA_ID = Pattern.compile("Q[0-9]{1,12}");
 
     private WikimediaFeedParser() {
     }
@@ -80,18 +88,40 @@ final class WikimediaFeedParser {
             return Optional.empty();
         }
         return Optional.of(new PageRef(title, text(page, "description"), text(page, "extract"), url,
-                parseThumbnail(page.path("thumbnail"))));
+                parseImage(page.path("thumbnail")), parseImage(page.path("originalimage")),
+                parseCoordinates(page.path("coordinates")), parseWikidataId(page)));
     }
 
-    private static ImageRef parseThumbnail(JsonNode thumbnail) {
-        String source = text(thumbnail, "source");
+    /** Thumbnail and original go through the same rule: Commons only, with its file page. */
+    private static ImageRef parseImage(JsonNode image) {
+        String source = text(image, "source");
         if (source == null || !WikimediaUrls.isWikimediaHttps(source)) {
             return null;
         }
         return WikimediaUrls.commonsFilePage(source)
-                .map(filePage -> new ImageRef(source, thumbnail.path("width").asInt(0),
-                        thumbnail.path("height").asInt(0), filePage))
+                .map(filePage -> new ImageRef(source, image.path("width").asInt(0),
+                        image.path("height").asInt(0), filePage))
                 .orElse(null);
+    }
+
+    /** The feed sends whole numbers as integers ({"lat": 57}), so read any number. Anything
+     *  that is not a place on Earth is dropped rather than passed on for a map to plot. */
+    private static Coordinates parseCoordinates(JsonNode coordinates) {
+        JsonNode lat = coordinates.path("lat");
+        JsonNode lon = coordinates.path("lon");
+        if (!lat.isNumber() || !lon.isNumber()) {
+            return null;
+        }
+        double latitude = lat.doubleValue();
+        double longitude = lon.doubleValue();
+        boolean isOnEarth = Math.abs(latitude) <= MAX_LATITUDE && Math.abs(longitude) <= MAX_LONGITUDE;
+        return isOnEarth ? new Coordinates(latitude, longitude) : null;
+    }
+
+    /** A frontend may build a link from this, so it is only passed on if it is a Wikidata id. */
+    private static String parseWikidataId(JsonNode page) {
+        String id = text(page, "wikibase_item");
+        return id != null && WIKIDATA_ID.matcher(id).matches() ? id : null;
     }
 
     private static String text(JsonNode parent, String field) {
