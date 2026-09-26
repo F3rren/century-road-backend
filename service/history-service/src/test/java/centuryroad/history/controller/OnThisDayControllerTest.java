@@ -14,6 +14,7 @@ import centuryroad.history.model.SectionResult;
 import centuryroad.history.query.OnThisDayQuery;
 import centuryroad.history.query.YearRange;
 import centuryroad.history.service.OnThisDayService;
+import centuryroad.history.service.ViewStatsService;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -57,6 +58,9 @@ class OnThisDayControllerTest {
 
     @MockBean
     private OnThisDayService service;
+
+    @MockBean
+    private ViewStatsService viewStats;
 
     private static OnThisDayResult result(List<String> warnings, boolean stale) {
         PageRef page = new PageRef("Papa Esempio", "papa", "Un papa.", "https://it.wikipedia.org/wiki/Papa_Esempio",
@@ -172,6 +176,15 @@ class OnThisDayControllerTest {
     }
 
     @Test
+    void aGoodRequestRecordsAViewOfThatDay() throws Exception {
+        given(service.find(any())).willReturn(result(List.of(), false));
+
+        mvc.perform(get(URL));
+
+        verify(viewStats).recordDayView(MonthDay.of(10, 16));
+    }
+
+    @Test
     void theRequestIdIsOnTheResponseAndInTheEnvelope() throws Exception {
         given(service.find(any())).willReturn(result(List.of(), false));
 
@@ -263,6 +276,7 @@ class OnThisDayControllerTest {
                 .andExpect(jsonPath("$.userMessage").isNotEmpty())
                 .andExpect(jsonPath("$.data").doesNotExist());
         verifyNoInteractions(service);
+        verifyNoInteractions(viewStats);
     }
 
     @Test
@@ -350,6 +364,8 @@ class OnThisDayControllerTest {
                 .andExpect(status().isServiceUnavailable())
                 .andExpect(jsonPath("$.error").value("UPSTREAM_UNAVAILABLE"))
                 .andExpect(jsonPath("$.userMessage").isNotEmpty());
+        // A failed request never reaches the increment - see where it sits in the controller.
+        verifyNoInteractions(viewStats);
     }
 
     @Test

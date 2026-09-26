@@ -100,6 +100,11 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: dev
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:-https://github.com/F3rren/century-road-backend}
+      # Same Postgres instance and credentials as auth-service, own schema within it
+      # ("history", created by Flyway) - see the flyway.schemas note in application.properties.
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
     volumes:
       - ./service/history-service:/app
       - maven_cache:/root/.m2
@@ -112,6 +117,9 @@ services:
       timeout: 5s
       retries: 5
       start_period: 180s
+    depends_on:
+      db:
+        condition: service_healthy
 
   # ─── Gateway ─────────────────────────────────────────────────────────────────
   # The one address a frontend talks to. FRONTEND_ORIGIN is the origin it is served from -

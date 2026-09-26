@@ -29,7 +29,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
-@Import(NoRetryClientConfiguration.class)
+@Import({NoRetryClientConfiguration.class, TestcontainersConfiguration.class})
 class HistoryServiceIntegrationTest {
 
     private static final String IT_10_16 = "/it/api/rest_v1/feed/onthisday/all/10/16";
