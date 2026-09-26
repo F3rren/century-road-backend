@@ -1,5 +1,12 @@
 # Century Road — Backend
 
+[![CI](https://github.com/F3rren/century-road-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/F3rren/century-road-backend/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/F3rren/century-road-backend/actions/workflows/codeql.yml/badge.svg)](https://github.com/F3rren/century-road-backend/actions/workflows/codeql.yml)
+[![Latest release](https://img.shields.io/github/v/release/F3rren/century-road-backend?label=release)](https://github.com/F3rren/century-road-backend/releases)
+[![License: MIT](https://img.shields.io/github/license/F3rren/century-road-backend)](LICENSE)
+[![Java 21](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/21/)
+[![Spring Boot 3.3.4](https://img.shields.io/badge/Spring%20Boot-3.3.4-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+
 Three Spring Boot services behind an API gateway. `auth-service` owns identity: users,
 login, and the JWTs every other service will eventually verify. `history-service` answers
 "what happened on this date", from Wikipedia. `gateway` is the single entry point and
@@ -25,6 +32,21 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | `/api/admin/users/**` | user administration, admin only |
 | `/api/history/**` | [historical events for a date](#history-api), public |
 | `/actuator/health` | liveness, public. Every other `/actuator/*` path is a 404 at the proxy |
+
+## Contents
+
+- [Prerequisites](#prerequisites)
+- [Two environments, two files each](#two-environments-two-files-each)
+- [Local development](#local-development)
+- [Production deployment](#production-deployment)
+- [First administrator](#first-administrator)
+- [Container images](#container-images) · [Releasing a version](#releasing-a-version)
+- [Running it on Railway](#running-it-on-railway)
+- [API documentation](#api-documentation)
+- [History API](#history-api)
+- [Tests](#tests)
+- [Observability](#observability)
+- [Security notes](#security-notes)
 
 ## Prerequisites
 
