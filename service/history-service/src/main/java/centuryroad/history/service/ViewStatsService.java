@@ -49,8 +49,15 @@ public class ViewStatsService {
         try {
             countryViews.increment(countryCode);
         } catch (DataAccessException e) {
-            log.warn("Failed to record a country view for {}", countryCode, e);
+            log.warn("Failed to record a country view for {}", sanitizeForLog(countryCode), e);
         }
+    }
+
+    private String sanitizeForLog(String value) {
+        if (value == null) {
+            return "null";
+        }
+        return value.replace('\n', '_').replace('\r', '_');
     }
 
     public List<DayViewCounter> topDays(int limit) {
