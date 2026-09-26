@@ -73,9 +73,10 @@ services:
         condition: service_healthy
 
   # ─── History service ─────────────────────────────────────────────────────────
-  # Historical events for a date, from Wikipedia's On this day feed. Needs no database and no
-  # secret; the one required setting is who Wikimedia can contact about this client, which its
-  # User-Agent policy asks every client to say.
+  # Historical events for a date, from Wikipedia's On this day feed, plus its own anonymous
+  # view counters (own schema in the shared Postgres instance - see the flyway.schemas note
+  # in application.properties). The one required non-database setting is who Wikimedia can
+  # contact about this client, which its User-Agent policy asks every client to say.
   history-service:
     image: ${IMAGE_PREFIX:-ghcr.io/f3rren/century-road-backend}-history-service:${IMAGE_TAG:-local}
     build:
@@ -86,12 +87,18 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: prod
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:8082/actuator/health"]
       interval: 15s
       timeout: 5s
       retries: 5
       start_period: 60s
+    depends_on:
+      db:
+        condition: service_healthy
 
   # ─── Gateway ─────────────────────────────────────────────────────────────────
   # No ports here on purpose: the proxy below is the only way in. Publishing the gateway
