@@ -21,7 +21,7 @@ services:
   # No ports here on purpose: nothing outside the Compose network has a reason to talk
   # to Postgres in production.
   db:
-    image: postgis/postgis:16-3.4-alpine
+    image: postgis/postgis:16-3.5-alpine
     restart: unless-stopped
     environment:
       POSTGRES_DB:       ${POSTGRES_DB}
@@ -160,7 +160,7 @@ services:
   #
   # The version is written here, not in .env, so Dependabot can see it and propose bumps.
   prometheus:
-    image: prom/prometheus:v2.53.0
+    image: prom/prometheus:v3.14.0
     restart: unless-stopped
     environment:
       AUTH_PORT:    ${AUTH_PORT:?set AUTH_PORT in .env}
@@ -196,7 +196,7 @@ services:
   # Loopback only, same reasoning as Prometheus: the admin password is the single thing
   # standing between the internet and the dashboards.
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:13.2.2
     restart: unless-stopped
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
