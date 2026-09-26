@@ -6,6 +6,7 @@ import centuryroad.history.dto.OnThisDayResponse;
 import centuryroad.history.model.OnThisDayResult;
 import centuryroad.history.query.OnThisDayQuery;
 import centuryroad.history.service.OnThisDayService;
+import centuryroad.history.service.ViewStatsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.ArraySchema;
@@ -43,9 +44,11 @@ public class OnThisDayController {
     private static final Duration CACHEABLE_WHEN_DEGRADED = Duration.ofSeconds(30);
 
     private final OnThisDayService service;
+    private final ViewStatsService viewStats;
 
-    public OnThisDayController(OnThisDayService service) {
+    public OnThisDayController(OnThisDayService service, ViewStatsService viewStats) {
         this.service = service;
+        this.viewStats = viewStats;
     }
 
     @Operation(
@@ -98,6 +101,9 @@ public class OnThisDayController {
             @RequestParam(required = false) Integer toYear) {
         OnThisDayQuery query = OnThisDayQuery.of(month, day, lang, types, year, fromYear, toYear);
         OnThisDayResult result = service.find(query);
+        // Every valid, answered request counts as a view of that day - degraded or not: the
+        // visitor did land on it. A request for an invalid date never reaches this line.
+        viewStats.recordDayView(query.day());
 
         // A degraded answer (stale copy, a language that could not be reached) is cached for
         // a moment only, so browsers and proxies come back for the good one soon.

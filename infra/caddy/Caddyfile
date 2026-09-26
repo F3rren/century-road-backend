@@ -58,5 +58,14 @@
 
 		# Nothing downstream needs to advertise what is running here.
 		-Server
+
+		# Set these once the service has answered, so they replace what it sent. Without
+		# this, Caddy sets them before the reverse proxy runs, and the proxy then adds the
+		# service's own next to them: auth-service sends an HSTS of one year on any request
+		# it takes for secure, and the browser would see both. The -Server line above
+		# already makes Caddy do this for the whole block, but that is a side effect of
+		# deleting a header, and nobody removing the line should get a different result.
+		# infra/caddy/headers_test.sh checks that.
+		defer
 	}
 }

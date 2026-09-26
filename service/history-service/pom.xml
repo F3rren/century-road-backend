@@ -29,7 +29,27 @@
 		     (uncontrolled recursion, fixed in 3.18.0). Only springdoc's swagger-core brings it in
 		     here. Drop this once Spring Boot manages 3.18 or later. -->
 		<commons-lang3.version>3.18.0</commons-lang3.version>
+
+		<!-- Same pin as auth-service, same reason: 1.19.8 (what Spring Boot 3.3.4 manages) ships
+		     a docker-java that asks the daemon for Docker API 1.32, which an up-to-date Docker
+		     Engine/Desktop refuses - Testcontainers then reports the misleading "Could not find
+		     a valid Docker environment". 1.21.4 negotiates fine. Keep the two services' pins equal. -->
+		<testcontainers.version>1.21.4</testcontainers.version>
 	</properties>
+
+	<!-- See auth-service's pom.xml for why this import exists: it attaches the property above
+	     to a real <version> declaration so Dependabot can see and bump it. -->
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.testcontainers</groupId>
+				<artifactId>testcontainers-bom</artifactId>
+				<version>${testcontainers.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
 
 	<dependencies>
 		<dependency>
@@ -85,6 +105,25 @@
 			<version>${resilience4j.version}</version>
 		</dependency>
 
+		<!-- Data: anonymous aggregate view counters (day and country), the one piece of state
+		     this service keeps. Its own schema in the shared Postgres instance, not its own
+		     database - see the flyway.schemas note in application.properties. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-data-jpa</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.postgresql</groupId>
+			<artifactId>postgresql</artifactId>
+			<scope>runtime</scope>
+		</dependency>
+
+		<!-- Migrations -->
+		<dependency>
+			<groupId>org.flywaydb</groupId>
+			<artifactId>flyway-database-postgresql</artifactId>
+		</dependency>
+
 		<!-- Monitoring: same pair every other service exposes to Prometheus. -->
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -112,6 +151,16 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-testcontainers</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.testcontainers</groupId>
+			<artifactId>postgresql</artifactId>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>

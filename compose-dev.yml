@@ -36,7 +36,7 @@ services:
   # psql or DBeaver could reach the wrong one. Only tools on the host care: the services reach
   # the database as db:5432 inside the Compose network.
   db:
-    image: postgis/postgis:16-3.4-alpine
+    image: postgis/postgis:16-3.5-alpine
     environment:
       POSTGRES_DB:       ${POSTGRES_DB:-centuryroad}
       POSTGRES_USER:     ${POSTGRES_USER:-centuryroad}
@@ -100,6 +100,11 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: dev
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:-https://github.com/F3rren/century-road-backend}
+      # Same Postgres instance and credentials as auth-service, own schema within it
+      # ("history", created by Flyway) - see the flyway.schemas note in application.properties.
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}
+      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
+      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
     volumes:
       - ./service/history-service:/app
       - maven_cache:/root/.m2
@@ -112,6 +117,9 @@ services:
       timeout: 5s
       retries: 5
       start_period: 180s
+    depends_on:
+      db:
+        condition: service_healthy
 
   # ─── Gateway ─────────────────────────────────────────────────────────────────
   # The one address a frontend talks to. FRONTEND_ORIGIN is the origin it is served from -
@@ -148,7 +156,7 @@ services:
   # The version is written here, not in .env.dev, so Dependabot can see it and propose bumps;
   # keep it the same as compose-prod.yml.
   prometheus:
-    image: prom/prometheus:v2.53.0
+    image: prom/prometheus:v3.14.0
     environment:
       AUTH_PORT:    "8081"
       GATEWAY_PORT: "8080"
@@ -179,7 +187,7 @@ services:
 
   # ─── Grafana ─────────────────────────────────────────────────────────────────
   grafana:
-    image: grafana/grafana:11.1.0
+    image: grafana/grafana:13.2.2
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}

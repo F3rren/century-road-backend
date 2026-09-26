@@ -1,5 +1,12 @@
 # Century Road — Backend
 
+[![CI](https://github.com/F3rren/century-road-backend/actions/workflows/ci.yml/badge.svg)](https://github.com/F3rren/century-road-backend/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/F3rren/century-road-backend/actions/workflows/codeql.yml/badge.svg)](https://github.com/F3rren/century-road-backend/actions/workflows/codeql.yml)
+[![Latest release](https://img.shields.io/github/v/release/F3rren/century-road-backend?label=release)](https://github.com/F3rren/century-road-backend/releases)
+[![License: MIT](https://img.shields.io/github/license/F3rren/century-road-backend)](LICENSE)
+[![Java 21](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/21/)
+[![Spring Boot 3.3.4](https://img.shields.io/badge/Spring%20Boot-3.3.4-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+
 Three Spring Boot services behind an API gateway. `auth-service` owns identity: users,
 login, and the JWTs every other service will eventually verify. `history-service` answers
 "what happened on this date", from Wikipedia. `gateway` is the single entry point and
@@ -25,6 +32,21 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | `/api/admin/users/**` | user administration, admin only |
 | `/api/history/**` | [historical events for a date](#history-api), public |
 | `/actuator/health` | liveness, public. Every other `/actuator/*` path is a 404 at the proxy |
+
+## Contents
+
+- [Prerequisites](#prerequisites)
+- [Two environments, two files each](#two-environments-two-files-each)
+- [Local development](#local-development)
+- [Production deployment](#production-deployment)
+- [First administrator](#first-administrator)
+- [Container images](#container-images) · [Releasing a version](#releasing-a-version)
+- [Running it on Railway](#running-it-on-railway)
+- [API documentation](#api-documentation)
+- [History API](#history-api)
+- [Tests](#tests)
+- [Observability](#observability)
+- [Security notes](#security-notes)
 
 ## Prerequisites
 
@@ -230,6 +252,10 @@ If the header is missing, the request did not reach the proxy over HTTPS, or the
 not running. HSTS is only ever emitted on an HTTPS request — that is deliberate, not a
 bug.
 
+`bash infra/caddy/headers_test.sh` checks the same thing without a domain: it starts Caddy with
+this Caddyfile in front of a stand-in that sends a one-year HSTS of its own, as `auth-service`
+does, and requires that the browser gets ours once and nothing of the service's. CI runs it.
+
 ### 7. Only later, raise the HSTS window
 
 Once HTTPS has been stable for a few days, set `HSTS_MAX_AGE=31536000` (one year) and
@@ -382,12 +408,42 @@ are needed.
 
 | Service | Image |
 |---|---|
-| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<tag>` |
-| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<tag>` |
-| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<tag>` |
+| `auth-service` | `ghcr.io/f3rren/century-road-backend-auth-service:<version>` |
+| `history-service` | `ghcr.io/f3rren/century-road-backend-history-service:<version>` |
+| `gateway` | `ghcr.io/f3rren/century-road-backend-gateway:<version>` |
 
-`<tag>` is a short commit id from the package's list of tags. Prefer it to `latest`: it never
-moves, so a redeploy cannot change what runs.
+`<version>` is a released version, such as `0.2.0` (see [Releasing a version](#releasing-a-version)).
+Prefer it to `latest`: a version never moves, so a redeploy cannot change what runs. The short commit
+id from the package's list of tags does the same for a commit that has not been released.
+
+**Following the releases automatically.** Railway can move a service to the newer versions of its
+image by itself: *Settings → Source → Configure Auto Updates*. With a full version tag such as
+`:0.2.0` it offers **patches only** or **minor updates and patches**, and a major version is never
+automatic. Choose *patches only* (the interface may label it *Security and bugfix patches*: it is the
+same option, x.y.**Z**), with a maintenance window (the night one, 02:00-06:00 UTC): a `v0.2.1`
+release then reaches production by itself, and `v0.3.0` waits until you change the tag. What gets
+deployed is what you release, not what is merged to `main`.
+
+**Railway follows the version number, not what is inside it.** Nothing checks that a patch only
+carries fixes: it is a promise kept by whoever tags. So a patch (`v0.2.1`) is for fixes, security
+ones included, and anything new is a minor (`v0.3.0`). Tag a feature as a patch and every service
+on *patches only* installs it by itself.
+
+What to know before switching it on:
+
+- **It is not immediate.** Railway checks the registry periodically and caches what it finds for up
+  to a few hours, and applies the update in the window you chose.
+- **Each service updates on its own**, so for a while the three can run different releases. Between
+  consecutive releases that is harmless; for a release that changes what the gateway and the
+  services say to each other, update by hand.
+- **`auth-service` runs its database migrations when it starts, and nothing here backs Postgres up**
+  (see *Not covered*). Leave auto updates off for it, and change its tag yourself, until there is a
+  backup.
+- **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
+  follows the newest patch) or a commit id, and neither has been tried here. Point the services at
+  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+- **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
+  push to `main`, with no version to go back to but a commit id.
 
 Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
 
@@ -644,6 +700,7 @@ cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
 cd service/history-service && ./mvnw test    # 224 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
+bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
 
 `auth-service` runs its integration tests against a real PostgreSQL started through
