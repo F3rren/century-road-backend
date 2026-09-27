@@ -9,8 +9,8 @@
 | Spring Boot | 3.3.4 | All 3 services, same parent |
 | Java | 21 | |
 | Maven | wrapper (`./mvnw`) per service | **No root aggregator `pom.xml`** — this is not a Maven reactor multi-module build. Each of the 3 services is a fully independent Maven project; every command is run from inside `service/<name>/`. |
-| PostgreSQL | via `postgis/postgis:16-3.4-alpine` | `auth-service` and `history-service` only — `gateway` is stateless |
-| Flyway | flyway-database-postgresql | Per-service migrations, per-service schema (see Data model) |
+| PostgreSQL | via `postgis/postgis:16-3.5-alpine` | `auth-service` and `history-service` only — `gateway` is stateless |
+| Flyway | flyway-database-postgresql | Per-service migrations, per-service database (see Data model) |
 | Testcontainers | **1.21.4**, pinned | Overrides Spring Boot 3.3.4's managed 1.19.8 — see Key technical decisions |
 | springdoc-openapi | 2.6.0, pinned | Last release built on Spring Boot 3.3; moves with Spring Boot, not independently |
 
@@ -33,19 +33,21 @@ Only the proxy is public in production. The gateway, the services, and Postgres 
 
 ## Data model
 
-Each service that has state owns its own Postgres **schema** in the same database instance — not a separate physical database, not a shared schema. This is the pattern to extend for any future stateful service.
+Each service that has state owns its own Postgres **database** within the one shared Postgres container/resource — not the same database, not just a separate schema within it. This is the pattern to extend for any future stateful service. (Revised from an earlier same-database-different-schema design — see Key technical decisions for why.)
 
-**`auth-service`**, schema `public` (`V1__baseline_schema.sql`):
+**`auth-service`**, database `${POSTGRES_DB}` (e.g. `centuryroad`), schema `public` (`V1__baseline_schema.sql`):
 - `users` — `id BIGSERIAL PK`, `email VARCHAR(255) UNIQUE NOT NULL`, `password VARCHAR(255) NOT NULL` (BCrypt hash), `role VARCHAR(20) NOT NULL DEFAULT 'USER' CHECK (role IN ('ADMIN','USER'))`, `enabled BOOLEAN NOT NULL DEFAULT TRUE`, `created_at TIMESTAMPTZ NOT NULL DEFAULT now()`.
 - `refresh_tokens` — `id BIGSERIAL PK`, `user_id BIGINT NOT NULL REFERENCES users(id) ON DELETE CASCADE`, `token_hash VARCHAR(64) UNIQUE NOT NULL` (SHA-256 hex digest — the raw token is never stored, same reasoning as a hashed password), `created_at`, `expires_at TIMESTAMPTZ NOT NULL`, `revoked_at TIMESTAMPTZ` (nullable). Indexed on `user_id`.
 
-**`history-service`**, its own schema `history` (`V1__create_view_counters.sql`), isolated from `auth-service`'s `public` schema **and** its Flyway history table via `spring.flyway.schemas=history` — so the two services' migration histories can never collide in the same database:
+**`history-service`**, its own database `${POSTGRES_DB}_history` (created by `infra/postgres/init-history-db.sh` on first container init), schema `history` within it (`V1__create_view_counters.sql`, `spring.flyway.schemas=history`) — the schema is redundant now that the database itself is the isolation boundary, but V1 already created it that way and rewriting an applied migration just to flatten it isn't worth the risk:
 - `day_views` — `month SMALLINT CHECK (1-12)`, `day SMALLINT CHECK (1-31)`, `view_count BIGINT DEFAULT 0`, `PRIMARY KEY (month, day)`.
 - `country_views` — `country_code VARCHAR(2) PRIMARY KEY CHECK (country_code ~ '^[A-Z]{2}$')` (ISO 3166-1 alpha-2), `view_count BIGINT DEFAULT 0`.
 
 Both counter tables are purely anonymous and aggregate — no visitor identifier of any kind, incremented via an atomic Postgres upsert (`INSERT ... ON CONFLICT DO UPDATE SET view_count = view_count + 1`), never a read-modify-write, so concurrent requests can't lose an increment.
 
 `gateway` has no `db/migration` — it is entirely stateless.
+
+On Railway, which doesn't run custom Postgres init scripts, the `${POSTGRES_DB}_history` database has to be created once by hand (`CREATE DATABASE ...` via Railway's own Postgres connect UI or `psql`) before `history-service` can start — see the README's Railway section.
 
 ## API design
 
@@ -79,7 +81,7 @@ service/
 infra/
 ├── caddy/               Caddyfile (prod TLS/HSTS reverse proxy)
 ├── grafana/              provisioning (datasource + dashboards)
-├── postgres/             init-postgis.sql
+├── postgres/             init-postgis.sql, init-history-db.sh (creates history-service's database)
 └── prometheus/           prometheus.yml.tpl (env-substituted at container start)
 compose-dev.yml           local dev — plain HTTP, hot reload, all ports published on loopback
 compose-prod.yml          production — only Caddy is internet-facing
@@ -96,6 +98,8 @@ compose-prod.yml          production — only Caddy is internet-facing
 **Resilience4j is hand-wired, not annotation-based, in `history-service` only** (`WikimediaClientConfig`) — bulkhead → retry → circuit breaker composition is explicit in code so the wrapping order is visible in one place, rather than implied by annotation-processing order. Only `UpstreamUnavailableException`/`UpstreamBadResponseException` count as circuit-breaker failures; `UpstreamRateLimitedException` (a 429) is handled separately by `UpstreamCooldown`, since "asked to slow down" isn't the same fault class as "broken."
 
 **`gateway` is reactive (WebFlux/Spring Cloud Gateway)**, the other two are servlet-based (`spring-boot-starter-web`) — the gateway's only job is routing/proxying, where a reactive, non-blocking model fits its I/O-bound nature; the two backing services do real work (DB queries, upstream HTTP calls with retries) where the blocking servlet model is simpler to reason about.
+
+**`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`.
 
 ## Deployment and environments
 

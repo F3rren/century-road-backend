@@ -2,7 +2,7 @@
 
 Century Road backend: 3 independent Spring Boot services (`auth-service`, `gateway`, `history-service`) behind a gateway, no shared aggregator build. The frontend (React SPA) lives in the sibling repo [century-road-frontend](https://github.com/F3rren/century-road-frontend).
 
-**Stack**: Spring Boot 3.3.4, Java 21, Maven wrapper per service, PostgreSQL + Flyway (one schema per stateful service — see `architecture.md`), Testcontainers **pinned to 1.21.4** (don't bump back to Boot's managed 1.19.8 — see the pom.xml comment / `architecture.md`'s ADR, it breaks against modern Docker Engine).
+**Stack**: Spring Boot 3.3.4, Java 21, Maven wrapper per service, PostgreSQL + Flyway (one database per stateful service, same Postgres container — see `docs/architecture.md`), Testcontainers **pinned to 1.21.4** (don't bump back to Boot's managed 1.19.8 — see the pom.xml comment / `docs/architecture.md`'s ADR, it breaks against modern Docker Engine).
 
 **Commands** (run from inside the relevant `service/<name>/`):
 ```

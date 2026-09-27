@@ -441,7 +441,7 @@ What to know before switching it on:
   backup.
 - **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
   follows the newest patch) or a commit id, and neither has been tried here. Point the services at
-  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+  `:0.2.0`, a tag it names as a version.
 - **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
   push to `main`, with no version to go back to but a commit id.
 
@@ -457,6 +457,16 @@ JWT_EXPIRATION_MS=86400000
 
 # history-service
 WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
+# Same Postgres service as auth-service, but its own database (note the _history
+# suffix, appended to whatever Postgres.PGDATABASE actually is) - real SQL-level
+# isolation, not just a separate schema. That database does not exist until you
+# create it once by hand (see the note right after this block) - without it, or
+# without these three variables at all, the service crashes on startup trying to
+# run its Flyway migration against an unresolved "${SPRING_DATASOURCE_URL}" or a
+# database that isn't there.
+SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}_history
+SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
+SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
 
 # gateway
 SPRING_PROFILES_INCLUDE=railway
@@ -466,6 +476,14 @@ GATEWAY_PORT=8080
 PORT=8080
 FRONTEND_ORIGIN=https://<the frontend's public domain>
 ```
+
+**Before `history-service` can start for the first time**, its database has to exist - Railway's managed Postgres doesn't run the custom init script `compose-dev.yml`/`compose-prod.yml` use for this locally. One-time step, on the `Postgres` service: *Connect* tab → *psql* (or any Postgres client with the connection string shown there), then:
+
+```sql
+CREATE DATABASE "<PGDATABASE value>_history";
+```
+
+`<PGDATABASE value>` is whatever the `Postgres` service's own `PGDATABASE` variable actually is (check its *Variables* tab - `${{...}}` references only expand for other Railway services, not inside a manual psql session). Nothing else to do afterward: `history-service` creates its own tables in that database the first time it starts, via Flyway.
 
 On the gateway service, *Settings → Networking → Generate Domain* (port 8080), and set the
 healthcheck path to `/actuator/health`. `SPRING_PROFILES_INCLUDE=railway` is what hides the
