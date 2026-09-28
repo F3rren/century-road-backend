@@ -1,6 +1,9 @@
 apiVersion: 1
 datasources:
   - name: Prometheus
+    # Pinned rather than left to Grafana's auto-generated one, so the alert rules under
+    # provisioning/alerting/ (which reference it by uid) resolve to it deterministically.
+    uid: prometheus
     type: prometheus
     url: http://prometheus:9090
     isDefault: true
