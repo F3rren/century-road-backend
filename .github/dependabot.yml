@@ -21,8 +21,8 @@ updates:
         update-types:
           - minor
           - patch
-    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
-    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # springdoc is built against one Spring Boot line: 2.9.1 is built on 3.5.14, matching our
+    # 3.5.16. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
     # compiles and then fails at startup. Patch releases of the same line still come through.
     ignore:
       - dependency-name: "org.springdoc:*"
@@ -41,8 +41,8 @@ updates:
         update-types:
           - minor
           - patch
-    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
-    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # springdoc is built against one Spring Boot line: 2.9.1 is built on 3.5.14, matching our
+    # 3.5.16. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
     # compiles and then fails at startup. Patch releases of the same line still come through.
     ignore:
       - dependency-name: "org.springdoc:*"
@@ -61,8 +61,8 @@ updates:
         update-types:
           - minor
           - patch
-    # springdoc is built against one Spring Boot line: 2.6.0 is the last release on 3.3, 2.7 is on
-    # 3.4. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
+    # springdoc is built against one Spring Boot line: 2.9.1 is built on 3.5.14, matching our
+    # 3.5.16. It moves together with Spring Boot, in a PR that says so, not as a grouped bump that
     # compiles and then fails at startup. Patch releases of the same line still come through.
     ignore:
       - dependency-name: "org.springdoc:*"
