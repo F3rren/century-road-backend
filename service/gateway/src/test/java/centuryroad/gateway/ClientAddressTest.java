@@ -33,7 +33,10 @@ import reactor.netty.http.server.HttpServer;
  */
 @SpringBootTest(
 		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = "server.forward-headers-strategy=framework")
+		properties = {
+				"server.forward-headers-strategy=framework",
+				"spring.cloud.gateway.trusted-proxies=.*"
+		})
 class ClientAddressTest {
 
 	private static final String SEEN_X_FORWARDED_FOR = "X-Seen-X-Forwarded-For";
