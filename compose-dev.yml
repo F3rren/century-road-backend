@@ -44,6 +44,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
+      - ./infra/postgres/init-history-db.sh:/docker-entrypoint-initdb.d/20-history-db.sh:ro
     ports:
       - "127.0.0.1:${DB_PORT:-5433}:5432"
     healthcheck:
@@ -100,9 +101,13 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: dev
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:-https://github.com/F3rren/century-road-backend}
-      # Same Postgres instance and credentials as auth-service, own schema within it
-      # ("history", created by Flyway) - see the flyway.schemas note in application.properties.
-      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}
+      # Same Postgres container as auth-service, but its own database ("_history" -
+      # see init-history-db.sh), not the same one: real SQL-level isolation instead of
+      # sharing one database, without running a second Postgres. Flyway additionally
+      # puts its tables in their own "history" schema within that database - redundant
+      # now, but V1 already created it that way and rewriting an applied migration just
+      # to flatten it isn't worth the risk. See docs/architecture.md.
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}_history
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
     volumes:

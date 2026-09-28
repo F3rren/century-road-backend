@@ -40,6 +40,7 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 - [Local development](#local-development)
 - [Production deployment](#production-deployment)
 - [First administrator](#first-administrator)
+- [Backups](#backups)
 - [Container images](#container-images) · [Releasing a version](#releasing-a-version)
 - [Running it on Railway](#running-it-on-railway)
 - [API documentation](#api-documentation)
@@ -298,6 +299,56 @@ first administrator on its own. `FirstAdminBootstrap` exists for exactly that ga
    so leaving them set keeps a password readable by anyone who can inspect the container,
    for no further benefit — the mechanism will not fire again anyway.
 
+## Backups
+
+Everything either service knows — every user, every password hash, every view counter — lives
+in Postgres's one volume. `infra/postgres/backup.sh`, run daily from cron, dumps both databases
+(`${POSTGRES_DB}` and `${POSTGRES_DB}_history`), gzips them, and copies them off this host with
+[rclone](https://rclone.org) — so the copy that matters does not depend on this VPS's own disk
+surviving. See `.env.example`'s `# ── Backups ──` section for the variables it reads, and
+`infra/postgres/backup.cron.example` for the crontab line.
+
+```bash
+bash infra/postgres/backup.sh
+```
+
+It needs `rclone` installed and configured (`rclone config`, once, on the host — the remote's
+own credentials live in `~/.config/rclone/rclone.conf`, never in `.env` or this repository) and
+`RCLONE_REMOTE` pointing at wherever backups should land: Backblaze B2, a Hetzner Storage Box,
+a second host over SFTP, anything rclone supports. A failed dump posts to `ALERT_WEBHOOK_URL`
+(the same one used for [alerting](#observability)) instead of failing silently in a cron log
+nobody reads.
+
+**Railway** may offer its own managed Postgres backups (check the plan's *Settings → Backups*
+tab) — prefer that over building a second pipeline on top of a database Railway already
+manages. This script is for the VPS/Compose path.
+
+### Restoring
+
+An untested backup is not a backup, so this is a runbook, not a second script — the same
+reasoning as [First administrator](#first-administrator) above.
+
+1. If restoring onto a **brand-new** Postgres instance (not the one already running), first
+   recreate the second database once: `CREATE DATABASE "${POSTGRES_DB}_history";` — the same
+   one-time step `infra/postgres/init-history-db.sh` does automatically on a fresh container,
+   or the Railway section above does by hand. Restoring onto the *same, still-running* instance
+   needs no such step: both databases already exist.
+2. Import the dump:
+
+   ```bash
+   gunzip -c centuryroad_<timestamp>.sql.gz | \
+     docker compose -f compose-prod.yml exec -T db psql -U "$POSTGRES_USER" -d "$POSTGRES_DB"
+   ```
+
+   and the same for `centuryroad_history_<timestamp>.sql.gz` against `${POSTGRES_DB}_history`.
+3. Spot-check it: `SELECT count(*) FROM users;`, `SELECT count(*) FROM day_views;` against what
+   you expect.
+4. Restart `auth-service` and `history-service` so their connection pools pick up a clean state.
+
+Worth rehearsing this on `compose-dev.yml` once in a while — it is a fully disposable Postgres,
+so a real prod dump can be restored into it at zero risk, which is the only way to know the
+backup actually works before the day it has to.
+
 ## Container images
 
 For a platform that runs ready-made images rather than a Compose file, CI publishes the three
@@ -441,7 +492,7 @@ What to know before switching it on:
   backup.
 - **Use the full version.** Railway's documentation does not say how it treats `:0.2` (the tag that
   follows the newest patch) or a commit id, and neither has been tried here. Point the services at
-  `:0.2.0`, a tag it names as a version. Try it on `history-service` first: it has no database.
+  `:0.2.0`, a tag it names as a version.
 - **`:latest` is the other mode**, and not the one to use here: Railway would redeploy on every
   push to `main`, with no version to go back to but a commit id.
 
@@ -457,6 +508,16 @@ JWT_EXPIRATION_MS=86400000
 
 # history-service
 WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
+# Same Postgres service as auth-service, but its own database (note the _history
+# suffix, appended to whatever Postgres.PGDATABASE actually is) - real SQL-level
+# isolation, not just a separate schema. That database does not exist until you
+# create it once by hand (see the note right after this block) - without it, or
+# without these three variables at all, the service crashes on startup trying to
+# run its Flyway migration against an unresolved "${SPRING_DATASOURCE_URL}" or a
+# database that isn't there.
+SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}_history
+SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
+SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
 
 # gateway
 SPRING_PROFILES_INCLUDE=railway
@@ -466,6 +527,14 @@ GATEWAY_PORT=8080
 PORT=8080
 FRONTEND_ORIGIN=https://<the frontend's public domain>
 ```
+
+**Before `history-service` can start for the first time**, its database has to exist - Railway's managed Postgres doesn't run the custom init script `compose-dev.yml`/`compose-prod.yml` use for this locally. One-time step, on the `Postgres` service: *Connect* tab → *psql* (or any Postgres client with the connection string shown there), then:
+
+```sql
+CREATE DATABASE "<PGDATABASE value>_history";
+```
+
+`<PGDATABASE value>` is whatever the `Postgres` service's own `PGDATABASE` variable actually is (check its *Variables* tab - `${{...}}` references only expand for other Railway services, not inside a manual psql session). Nothing else to do afterward: `history-service` creates its own tables in that database the first time it starts, via Flyway.
 
 On the gateway service, *Settings → Networking → Generate Domain* (port 8080), and set the
 healthcheck path to `/actuator/health`. `SPRING_PROFILES_INCLUDE=railway` is what hides the
@@ -526,10 +595,23 @@ slash: the address of a preview deployment is a different origin and is refused.
 
 ### Not covered
 
-- **Backups.** Every user and password hash is in Postgres's one volume. Nothing here backs it up:
-  check what the plan offers before there is data worth losing.
-- **Metrics.** The gateway exposes only `/actuator/health` here, and there is no Prometheus or
-  Grafana in this setup. Railway's own logs and resource graphs are what you have.
+- **Backups — a known, accepted gap.** [`infra/postgres/backup.sh`](#backups) covers the
+  VPS/Compose path; it does not run here. Railway's own scheduled backups and point-in-time
+  recovery need the **Pro** plan; on a lower plan the only backups are the ones Railway takes
+  on its own initiative before some platform-side changes (e.g. a security patch), which are
+  not something to plan around. Revisit this — either the Pro plan, or a scheduled
+  `pg_dump` against Railway's public Postgres connection string — before the data here is worth
+  more than the cost of losing it.
+- **Application metrics.** The gateway exposes only `/actuator/health` here, and there is no
+  Prometheus or Grafana in this setup, so none of the [alerting rules](#observability) — the
+  circuit breaker, upstream latency, stale-serve rate ones — apply: that telemetry simply does
+  not exist on this deployment.
+- **Platform-level alerting is covered, differently.** Project Settings → Webhooks, pointed at
+  a Discord incoming webhook, notifies on *Volume Alert Triggered*, *Monitor Triggered*,
+  *Deployment Crashed*, *Deployment Oom Killed* and *Deployment Failed*. Coarser than the
+  Grafana rules — it knows a service crashed or a volume is filling up, not that the Wikipedia
+  circuit breaker is open — but it is real coverage for "is anything on fire", configured
+  without running anything extra.
 
 ## API documentation
 
@@ -737,6 +819,26 @@ calls by outcome: `ok`, `rate_limited`, `unavailable`, `bad_response`), `history
 `history_fallback_total`, and the cache and circuit-breaker gauges. A rising `bad_response` means
 the integration is broken, not the network.
 
+A dashboard for all of this (`history-service-overview`, provisioned from
+`infra/grafana/provisioning/dashboards/history-service-overview.json`) is there from the first
+start — no manual import.
+
+**Alerting** is Grafana's own built-in alerting, not a separate Alertmanager: it evaluates
+directly against the Prometheus datasource already wired above, and its rules, contact point
+and notification policy are provisioned from `infra/grafana/provisioning/alerting/`, so they
+exist from the first start too. Five rules, all on metrics already listed above: a service down,
+the Wikipedia circuit breaker open, upstream latency degraded, a spike in stale responses, and
+the Wikipedia bulkhead fully saturated — see `rules.yaml` for the exact thresholds. Notifications
+go to `ALERT_WEBHOOK_URL` (a Discord incoming webhook by default; edit `contact-points.yaml` for
+Slack instead), the same variable `infra/postgres/backup.sh` uses for a failed backup, so there
+is one operational channel, not several.
+
+After the first deploy, check **Alerting → Alert rules** in Grafana: every rule should show a
+real Normal/Pending/Firing state. These rules were written against the metrics' names and were
+not exercised against a running Grafana while adding them — if one shows an evaluation error
+instead, open it in the Grafana UI, which will say why, and fix it there; editing the exported
+YAML by hand afterward is easier than getting it right blind a second time.
+
 The proxy serves `/actuator/health` and answers 404 to every other `/actuator/*` path.
 The gateway shares its port between the API and its actuator, so without that filter the
 metrics would be public.
@@ -750,6 +852,13 @@ metrics would be public.
   shut it down. Do not change those bindings to `0.0.0.0` to save an SSH tunnel.
 - **Never commit `.env` or `.env.dev`.** They hold the JWT signing secret; anyone with it can
   mint valid tokens for any user. Use different secrets in the two.
+- **`rclone.conf` (the backup off-box storage credentials) lives outside this repository**,
+  at `~/.config/rclone/rclone.conf` on the host — same reasoning as `.env`. `ALERT_WEBHOOK_URL`
+  is lower stakes (it can post to the ops channel, nothing more) but still belongs only in
+  `.env`, not committed.
+- **Published images are scanned for known vulnerabilities** (Trivy, in `publish-images`) before
+  the moving tag (`latest`/branch) is pointed at them; results are in the repository's Security
+  tab, alongside CodeQL's.
 - **`server.forward-headers-strategy` is enabled in the `prod` profile**, so the services
   trust the `X-Forwarded-*` headers they receive. That is safe only because the proxy
   overwrites them rather than passing on what the caller sent. The standard `Forwarded`

@@ -1,0 +1,14 @@
+apiVersion: 1
+
+# Everything routes to the one contact point (contact-points.yaml) - a single operator, a
+# single channel, nothing to split by team or service here yet.
+policies:
+  - orgId: 1
+    receiver: ops-discord
+    group_by: ["alertname"]
+    group_wait: 30s
+    group_interval: 5m
+    # How long to wait before re-notifying for a still-firing alert. Long enough not to spam
+    # for something already known about, short enough that a forgotten incident is not silent
+    # for a full day.
+    repeat_interval: 4h

@@ -1,0 +1,199 @@
+apiVersion: 1
+
+# Five rules, all on metrics history-service and the platform already expose today - see the
+# README's Observability section for where each one comes from. None of these were tried
+# against a running Grafana while writing this file (this repository has no CI step that can
+# start Grafana), so after the first deploy, check Alerting > Alert rules in the "Century Road"
+# folder: every rule should show a real Normal/Pending/Firing state, never an evaluation error.
+# The "condition" node on each rule is Grafana's classic_conditions expression, the oldest and
+# most stable one, checking "does query A return at least one series" - each PromQL query below
+# is already written to return series only for the condition that should alert.
+groups:
+  - orgId: 1
+    name: history-service-health
+    folder: Century Road
+    interval: 1m
+    rules:
+      - uid: cr-service-down
+        title: ServiceDown
+        condition: B
+        for: 1m
+        noDataState: NoData
+        execErrState: Alerting
+        labels:
+          severity: critical
+        annotations:
+          summary: "{{ $labels.job }} has no healthy scrape target"
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              editorMode: code
+              expr: up{job=~"century-road-.*"} == 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: "__expr__"
+            model:
+              refId: B
+              type: classic_conditions
+              datasource: { type: "__expr__", uid: "__expr__" }
+              conditions:
+                - type: query
+                  query: { params: ["A"] }
+                  reducer: { type: count, params: [] }
+                  evaluator: { type: gt, params: [0] }
+                  operator: { type: and }
+
+      - uid: cr-circuit-breaker-open
+        title: CircuitBreakerOpen
+        condition: B
+        for: 2m
+        noDataState: NoData
+        execErrState: Alerting
+        labels:
+          severity: warning
+        annotations:
+          summary: "The Wikipedia circuit breaker is open - callers are being served cache/stale/fallback only"
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              editorMode: code
+              expr: resilience4j_circuitbreaker_state{name="wikipedia",state="open"} == 1
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: "__expr__"
+            model:
+              refId: B
+              type: classic_conditions
+              datasource: { type: "__expr__", uid: "__expr__" }
+              conditions:
+                - type: query
+                  query: { params: ["A"] }
+                  reducer: { type: count, params: [] }
+                  evaluator: { type: gt, params: [0] }
+                  operator: { type: and }
+
+      - uid: cr-upstream-latency-degraded
+        title: UpstreamLatencyDegraded
+        condition: B
+        for: 5m
+        noDataState: NoData
+        execErrState: Alerting
+        labels:
+          severity: warning
+        annotations:
+          summary: "Average Wikipedia upstream latency over the last 5m is above 3s"
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 600
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              editorMode: code
+              expr: >-
+                rate(history_upstream_requests_seconds_sum{outcome="ok"}[5m])
+                /
+                rate(history_upstream_requests_seconds_count{outcome="ok"}[5m])
+                > 3
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: "__expr__"
+            model:
+              refId: B
+              type: classic_conditions
+              datasource: { type: "__expr__", uid: "__expr__" }
+              conditions:
+                - type: query
+                  query: { params: ["A"] }
+                  reducer: { type: count, params: [] }
+                  evaluator: { type: gt, params: [0] }
+                  operator: { type: and }
+
+      - uid: cr-stale-serve-rate-spike
+        title: StaleServeRateSpike
+        condition: B
+        for: 1m
+        noDataState: NoData
+        execErrState: Alerting
+        labels:
+          severity: warning
+        annotations:
+          summary: "More than 3 stale responses served in the last 15m - Wikipedia refreshes keep failing"
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 900
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              editorMode: code
+              expr: increase(history_stale_served_total[15m]) > 3
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: "__expr__"
+            model:
+              refId: B
+              type: classic_conditions
+              datasource: { type: "__expr__", uid: "__expr__" }
+              conditions:
+                - type: query
+                  query: { params: ["A"] }
+                  reducer: { type: count, params: [] }
+                  evaluator: { type: gt, params: [0] }
+                  operator: { type: and }
+
+      - uid: cr-bulkhead-saturated
+        title: BulkheadSaturated
+        condition: B
+        for: 2m
+        noDataState: NoData
+        execErrState: Alerting
+        labels:
+          severity: warning
+        annotations:
+          summary: "No concurrent Wikipedia calls available - the bulkhead is fully saturated"
+        data:
+          - refId: A
+            relativeTimeRange:
+              from: 300
+              to: 0
+            datasourceUid: prometheus
+            model:
+              refId: A
+              editorMode: code
+              expr: resilience4j_bulkhead_available_concurrent_calls{name="wikipedia"} == 0
+              instant: true
+              intervalMs: 1000
+              maxDataPoints: 43200
+          - refId: B
+            datasourceUid: "__expr__"
+            model:
+              refId: B
+              type: classic_conditions
+              datasource: { type: "__expr__", uid: "__expr__" }
+              conditions:
+                - type: query
+                  query: { params: ["A"] }
+                  reducer: { type: count, params: [] }
+                  evaluator: { type: gt, params: [0] }
+                  operator: { type: and }

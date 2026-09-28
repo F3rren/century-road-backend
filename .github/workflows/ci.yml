@@ -76,10 +76,12 @@ jobs:
     timeout-minutes: 20
 
     # Declaring permissions at all drops every unlisted scope to none, so contents: read has to
-    # be spelled out again or the checkout below loses read access.
+    # be spelled out again or the checkout below loses read access. security-events: write is
+    # for the Trivy SARIF upload further down, same as codeql.yml's job permissions.
     permissions:
       contents: read
       packages: write
+      security-events: write
 
     strategy:
       fail-fast: false
@@ -142,6 +144,39 @@ jobs:
           set: |
             *.cache-from=type=gha,scope=${{ matrix.service }}
             *.cache-to=type=gha,scope=${{ matrix.service }},mode=max
+
+      # Scans the image just pushed, by its immutable SHA tag, so what gets scanned is exactly
+      # what was published. ignore-unfixed is a deliberate policy: a HIGH/CRITICAL CVE in the
+      # base image with no fix available yet should not keep this job red forever. Dependabot's
+      # existing github-actions group already tracks bumps to this action.
+      - name: Scan the image for vulnerabilities
+        id: trivy
+        continue-on-error: true
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: image
+          image-ref: ${{ steps.names.outputs.prefix }}-${{ matrix.service }}:${{ steps.names.outputs.sha }}
+          format: sarif
+          output: trivy-${{ matrix.service }}.sarif
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          exit-code: "1"
+
+      # Uploaded whether the scan passed or failed, so findings are visible in the Security tab
+      # even on a red run - the same tab codeql.yml already publishes to, one category per
+      # service so the three legs of this matrix don't overwrite each other's results.
+      - name: Upload scan results to the Security tab
+        if: always()
+        uses: github/codeql-action/upload-sarif@v4
+        with:
+          sarif_file: trivy-${{ matrix.service }}.sarif
+          category: trivy-${{ matrix.service }}
+
+      # Fails the job only after the SARIF above is already uploaded, so a vulnerable image
+      # still blocks the moving tag below without hiding what was found.
+      - name: Fail if the scan found HIGH/CRITICAL vulnerabilities
+        if: steps.trivy.outcome == 'failure'
+        run: exit 1
 
       # Retagging the pushed manifest copies no layers and rebuilds nothing: the moving tag and
       # the commit tag are the same image, byte for byte.

@@ -1,0 +1,20 @@
+apiVersion: 1
+
+# One contact point: a Discord incoming webhook, matching the payload infra/postgres/backup.sh
+# also posts to on a failed dump - one shared ops channel, one secret (ALERT_WEBHOOK_URL),
+# nothing new to configure per alert. Swap "type: discord" for "type: slack" here if a Slack
+# incoming webhook is preferred instead; the URL still comes from the same variable.
+#
+# $__env{...} is Grafana's own provisioning-time environment substitution, so the real URL
+# never has to be templated into this file at container start the way prometheus.yml.tpl is -
+# it just needs ALERT_WEBHOOK_URL present in the grafana service's environment (compose-prod.yml).
+contactPoints:
+  - orgId: 1
+    name: ops-discord
+    receivers:
+      - uid: ops-discord-1
+        type: discord
+        settings:
+          url: $__env{ALERT_WEBHOOK_URL}
+          use_discord_username: false
+        disableResolveMessage: false

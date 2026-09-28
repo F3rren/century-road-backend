@@ -1,0 +1,15 @@
+# Example crontab line for infra/postgres/backup.sh - not read by anything, a reference to
+# copy from. Cron itself is not version-controlled, so this file documents the line the same
+# way .env.example documents .env.
+#
+# Install with: crontab -e (as whichever user has access to the repo checkout and Docker),
+# then paste a line like this, with the real path to the checkout:
+#
+# 0 3 * * * cd /opt/century-road-backend && bash infra/postgres/backup.sh >> /var/log/century-road-backup.log 2>&1
+#
+# Called through "bash", not "./infra/postgres/backup.sh" directly - this repo is edited on
+# Windows, where the executable bit does not reliably survive a checkout/commit round trip
+# (see the release workflow's own CRLF notes), so this does not depend on it.
+#
+# Daily at 03:00 server time. stdout/stderr both go to the logfile, since cron silently
+# discards them otherwise: a broken backup you never hear about is worse than a noisy log.

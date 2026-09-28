@@ -30,6 +30,7 @@ services:
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
+      - ./infra/postgres/init-history-db.sh:/docker-entrypoint-initdb.d/20-history-db.sh:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
@@ -74,8 +75,9 @@ services:
 
   # ─── History service ─────────────────────────────────────────────────────────
   # Historical events for a date, from Wikipedia's On this day feed, plus its own anonymous
-  # view counters (own schema in the shared Postgres instance - see the flyway.schemas note
-  # in application.properties). The one required non-database setting is who Wikimedia can
+  # view counters, in their own database within this same Postgres container (real SQL-level
+  # isolation from auth-service, without a second Postgres to run - see init-history-db.sh
+  # and docs/architecture.md). The one required non-database setting is who Wikimedia can
   # contact about this client, which its User-Agent policy asks every client to say.
   history-service:
     image: ${IMAGE_PREFIX:-ghcr.io/f3rren/century-road-backend}-history-service:${IMAGE_TAG:-local}
@@ -87,7 +89,7 @@ services:
     environment:
       SPRING_PROFILES_ACTIVE: prod
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
-      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}
+      SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}_history
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
     healthcheck:
@@ -202,6 +204,10 @@ services:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
       GF_USERS_ALLOW_SIGN_UP:     "false"
+      # Read by infra/grafana/provisioning/alerting/contact-points.yaml via Grafana's own
+      # $__env{} provisioning macro - no sed/entrypoint step needed, unlike Prometheus's
+      # config above, because Grafana (not this compose file) does that substitution itself.
+      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:-}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro
