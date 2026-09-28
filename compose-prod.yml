@@ -204,6 +204,10 @@ services:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
       GF_USERS_ALLOW_SIGN_UP:     "false"
+      # Read by infra/grafana/provisioning/alerting/contact-points.yaml via Grafana's own
+      # $__env{} provisioning macro - no sed/entrypoint step needed, unlike Prometheus's
+      # config above, because Grafana (not this compose file) does that substitution itself.
+      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:-}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro

@@ -80,8 +80,11 @@ service/
 └── history-service/     controller/ dto/ exception/ model/ query/ repository/ service/ wikipedia/ config/
 infra/
 ├── caddy/               Caddyfile (prod TLS/HSTS reverse proxy)
-├── grafana/              provisioning (datasource + dashboards)
-├── postgres/             init-postgis.sql, init-history-db.sh (creates history-service's database)
+├── grafana/              provisioning: datasource, one dashboard, alerting/ (rules, contact
+│                         point, notification policy - see Key technical decisions)
+├── postgres/             init-postgis.sql, init-history-db.sh (creates history-service's
+│                         database), backup.sh + backup.cron.example (daily dump, off-box via
+│                         rclone - see README's Backups section for the restore runbook)
 └── prometheus/           prometheus.yml.tpl (env-substituted at container start)
 compose-dev.yml           local dev — plain HTTP, hot reload, all ports published on loopback
 compose-prod.yml          production — only Caddy is internet-facing
@@ -99,6 +102,30 @@ compose-prod.yml          production — only Caddy is internet-facing
 
 **`gateway` is reactive (WebFlux/Spring Cloud Gateway)**, the other two are servlet-based (`spring-boot-starter-web`) — the gateway's only job is routing/proxying, where a reactive, non-blocking model fits its I/O-bound nature; the two backing services do real work (DB queries, upstream HTTP calls with retries) where the blocking servlet model is simpler to reason about.
 
+**Postgres backups are a host cron script (`infra/postgres/backup.sh`) plus `rclone`, not a
+sidecar container or a managed backup service.** A sidecar would be a fourth long-lived
+production container (another image to keep patched and scanned) whose lifecycle is tied to
+`docker compose up`/`down` — routine maintenance would silently stop backups along with
+everything else. A host script is decoupled from the app stack entirely and is the simplest
+thing that works for one operator. `rclone` over `rsync`/`scp`: one config supports S3, B2,
+SFTP and more, so the actual off-box provider is a runtime choice, not a code one. Railway's
+own managed Postgres backups, where available, are preferred over a second pipeline on a
+database Railway already owns — see the README's Backups section.
+
+**Alerting is Grafana's own built-in unified alerting, not a standalone Prometheus
+Alertmanager.** Both Prometheus and Grafana are already loopback-only in production; a fourth
+container would add nothing an alerting engine already colocated with the datasource does not
+provide, and Grafana's contact points reach Discord/Slack over an outbound webhook, which fits
+that loopback-only constraint without opening anything new. See
+`infra/grafana/provisioning/alerting/`.
+
+**Published container images are scanned with Trivy in CI** (`publish-images` in `ci.yml`),
+gating the moving tag (`latest`/branch) but never the immutable SHA tag, with results uploaded
+as SARIF to the same Security tab CodeQL already uses. Chosen over Snyk Container (needs an
+account/token) or Docker Scout (tied to Docker Hub's auth model) for needing neither against a
+GHCR-only setup. `ignore-unfixed: true` is deliberate: a HIGH/CRITICAL CVE in a base image with
+no available fix should not keep the job red indefinitely.
+
 **`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`.
 
 ## Deployment and environments
@@ -115,4 +142,4 @@ Two fully isolated environments, deliberately sharing nothing at runtime (own pr
 
 **Railway** is the actual production target: one Railway project holds Postgres + the 3 backend services (pulled as pre-built GHCR images, not built on Railway) + the frontend (from its own repo, built there). Since Railway terminates TLS itself, there is no Caddy in front there — the gateway instead runs with `SPRING_PROFILES_INCLUDE=railway`, which hides everything but `/actuator/health` and adds the same security headers (`Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) Caddy would otherwise add.
 
-**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).
+**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`) — each image is scanned with Trivy first, gating the moving tag (see Key technical decisions). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).
