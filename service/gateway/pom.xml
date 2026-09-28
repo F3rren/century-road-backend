@@ -5,7 +5,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.3.4</version>
+		<version>3.5.16</version>
 		<relativePath/>
 	</parent>
 	<groupId>com.centuryroad</groupId>
@@ -16,11 +16,14 @@
 
 	<properties>
 		<java.version>21</java.version>
-		<spring-cloud.version>2023.0.3</spring-cloud.version>
+		<!-- The 2025.0.x ("Northfields") train pairs with Spring Boot 3.5.x - 2025.0.0 was built
+		     against 3.5.0, 2025.0.1 against 3.5.8. 2025.1.x is the next train, for Spring Boot 4;
+		     do not take it without also moving Spring Boot to 4.x. -->
+		<spring-cloud.version>2025.0.3</spring-cloud.version>
 
-		<!-- 2.6.0 is the last springdoc release built on Spring Boot 3.3; 2.7 moved to 3.4. Raise
+		<!-- 2.9.1 is built against Spring Boot 3.5.14 - the line that matches our 3.5.16. Raise
 		     it together with Spring Boot, not on its own (dependabot.yml ignores its minors). -->
-		<springdoc.version>2.6.0</springdoc.version>
+		<springdoc.version>2.9.1</springdoc.version>
 
 		<!-- Spring Boot 3.3.4 manages commons-lang3 at 3.14.0, which has GHSA-j288-q9x7-2f5v
 		     (uncontrolled recursion, fixed in 3.18.0). Only springdoc's swagger-core brings it in

@@ -6,13 +6,13 @@
 
 | | Version | Notes |
 |---|---|---|
-| Spring Boot | 3.3.4 | All 3 services, same parent |
+| Spring Boot | 3.5.16 | All 3 services, same parent. Last released 3.x patch — every Boot 3.x line is now past OSS end-of-life; the move to a supported line (Boot 4.1.x) is a separate, bigger, deliberately-deferred migration (Spring Cloud two trains over, springdoc's major now locked to Boot's, Jackson 3's default date serialization changes the API's wire format) — see Key technical decisions |
 | Java | 21 | |
 | Maven | wrapper (`./mvnw`) per service | **No root aggregator `pom.xml`** — this is not a Maven reactor multi-module build. Each of the 3 services is a fully independent Maven project; every command is run from inside `service/<name>/`. |
 | PostgreSQL | via `postgis/postgis:16-3.5-alpine` | `auth-service` and `history-service` only — `gateway` is stateless |
 | Flyway | flyway-database-postgresql | Per-service migrations, per-service database (see Data model) |
-| Testcontainers | **1.21.4**, pinned | Overrides Spring Boot 3.3.4's managed 1.19.8 — see Key technical decisions |
-| springdoc-openapi | 2.6.0, pinned | Last release built on Spring Boot 3.3; moves with Spring Boot, not independently |
+| Testcontainers | **1.21.4**, pinned | Overrides Spring Boot's managed version — see Key technical decisions |
+| springdoc-openapi | 2.9.1, pinned | Built against Spring Boot 3.5.14; moves with Spring Boot, not independently |
 
 ## General architecture
 
@@ -94,7 +94,9 @@ compose-prod.yml          production — only Caddy is internet-facing
 
 **Testcontainers pinned to 1.21.4** (`service/{auth-service,history-service}/pom.xml`, explicit `testcontainers-bom` import in `<dependencyManagement>` so Dependabot can see and bump the property — an override with no `<version>` tag reference would be invisible to it):
 
-> Ahead of the 1.19.8 Spring Boot 3.3.4 manages. That release ships docker-java 3.3.6, which asks the daemon for Docker API 1.32; recent Docker Engine and Docker Desktop builds refuse anything that old and answer 400, which Testcontainers reports as the misleading "Could not find a valid Docker environment" — so the integration tests fail on an up-to-date local Docker while older CI runners still accept 1.32 and pass. Verified: 1.20.4 is still refused, 1.21.4 negotiates fine.
+> Ahead of the 1.19.8 Spring Boot 3.3.4 used to manage. That release ships docker-java 3.3.6, which asks the daemon for Docker API 1.32; recent Docker Engine and Docker Desktop builds refuse anything that old and answer 400, which Testcontainers reports as the misleading "Could not find a valid Docker environment" — so the integration tests fail on an up-to-date local Docker while older CI runners still accept 1.32 and pass. Verified: 1.20.4 is still refused, 1.21.4 negotiates fine. Unrelated to the Spring Boot 3.5.16 bump below, so left untouched by it.
+
+**Spring Boot bumped 3.3.4 → 3.5.16, deliberately not straight to 4.1.x.** A Trivy scan added to CI found 153 HIGH/CRITICAL vulnerabilities, entirely in libraries Spring Boot's own BOM manages (Tomcat, Netty, Spring Framework, Spring Security, Jackson, Logback, the Postgres driver) — 3.3.4 had gone stale, and in fact every Boot 3.x line is now past its own OSS end-of-life (3.5, the last one, ended 2026-06-30). 3.5.16 is the last Boot 3.x patch: a same-major bump that resets those managed versions to current without any breaking changes, and should clear the large majority of those 153 findings. The real fix, Boot 4.1.x (the currently-supported line), is a major-version jump — a two-train Spring Cloud move (`spring-cloud.version` 2023.0.3 → 2025.0.3 here, but 4.x needs the *next* train, 2025.1.x), springdoc's major now locked to Boot's (2.6.0 → 2.9.1 here; Boot 4 needs springdoc 3.x), and Jackson 3's default date serialization changing the API's wire format (epoch timestamps → ISO-8601 strings) in a way that could affect the frontend — deliberately deferred to its own planning pass rather than bundled in under the pressure of a red CI gate.
 
 **`ApiEnvelope<T>` and the exception hierarchy are duplicated per service, not extracted to a shared library.** Each service also has its own `RequestCorrelationFilter` (identical implementation, minting `REQ_<8hex>` and setting `X-Request-Id`) rather than a shared one. This trades DRY for each service being independently deployable/buildable with zero shared-library version-skew risk — a real cost (identical bug fixes must be applied 2-3 times) accepted deliberately, not an oversight.
 
