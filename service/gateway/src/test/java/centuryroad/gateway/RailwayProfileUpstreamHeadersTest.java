@@ -13,15 +13,17 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.netty.DisposableServer;
 
 /**
- * A service adds security headers of its own: auth-service runs Spring Security, which sends
- * HSTS with a one-year max-age as soon as it sees a request it takes for secure. Behind the
- * proxy that never reached a browser, because the proxy replaced the header. With nothing of
- * ours in front, the gateway has to do the replacing, or HSTS_MAX_AGE is not the value a
+ * A service adds security headers of its own: auth-service runs Spring
+ * Security, which sends
+ * HSTS with a one-year max-age as soon as it sees a request it takes for
+ * secure. Behind the
+ * proxy that never reached a browser, because the proxy replaced the header.
+ * With nothing of
+ * ours in front, the gateway has to do the replacing, or HSTS_MAX_AGE is not
+ * the value a
  * browser gets for the routes that matter most, the ones people log in through.
  */
-@SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = "spring.profiles.include=railway")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "spring.profiles.include=railway")
 @ActiveProfiles("prod")
 class RailwayProfileUpstreamHeadersTest {
 
@@ -46,7 +48,8 @@ class RailwayProfileUpstreamHeadersTest {
 
 	@Test
 	void theGatewaysHeadersReplaceTheOnesAServiceSetsItself() {
-		// valueEquals compares the whole list of values, so a second copy of a header, the
+		// valueEquals compares the whole list of values, so a second copy of a header,
+		// the
 		// service's next to the gateway's, would fail it as well.
 		WebTestClient.bindToServer().baseUrl("http://localhost:" + gatewayPort).build()
 				.get().uri("/api/auth/login").exchange()

@@ -12,8 +12,10 @@ import java.util.Date;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * The core promise this whole service exists to keep: a token JwtService signs must be
- * exactly the one JwtVerifier accepts back, with the right claims - and nothing signed
+ * The core promise this whole service exists to keep: a token JwtService signs
+ * must be
+ * exactly the one JwtVerifier accepts back, with the right claims - and nothing
+ * signed
  * with a different key, or expired, should ever verify.
  */
 class JwtRoundTripUnitTest {

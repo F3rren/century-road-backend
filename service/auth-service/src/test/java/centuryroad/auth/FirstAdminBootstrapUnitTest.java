@@ -17,10 +17,14 @@ import static org.mockito.Mockito.when;
 
 /**
  * The three branches of the bootstrap mechanism. A plain CommandLineRunner with
- * constructor injection, so the whole decision table is reachable without an application
- * context - which matters here, because every combination needs a different pair of
- * property values and a context each would be an expensive way to test four if statements.
- * FirstAdminBootstrapTest covers the half this cannot: that Spring actually runs it.
+ * constructor injection, so the whole decision table is reachable without an
+ * application
+ * context - which matters here, because every combination needs a different
+ * pair of
+ * property values and a context each would be an expensive way to test four if
+ * statements.
+ * FirstAdminBootstrapTest covers the half this cannot: that Spring actually
+ * runs it.
  */
 class FirstAdminBootstrapUnitTest {
 

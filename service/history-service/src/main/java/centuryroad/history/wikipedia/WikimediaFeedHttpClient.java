@@ -31,16 +31,22 @@ import java.time.format.DateTimeParseException;
 import java.util.Optional;
 
 /**
- * Asks Wikipedia for a day and reports the outcome as a DayFeed or one of the three
- * UpstreamExceptions. This is the only class that knows what the URL looks like and what a
+ * Asks Wikipedia for a day and reports the outcome as a DayFeed or one of the
+ * three
+ * UpstreamExceptions. This is the only class that knows what the URL looks like
+ * and what a
  * status code means; it applies no retry, cache or breaker of its own (see
- * ResilientWikipediaFeedClient), so it can be read and tested as a plain translation.
+ * ResilientWikipediaFeedClient), so it can be read and tested as a plain
+ * translation.
  *
- * Always asks for "all" rather than one section: the four lists of a day are wanted together
- * far more often than not, and one cached entry per day and language keeps the number of
+ * Always asks for "all" rather than one section: the four lists of a day are
+ * wanted together
+ * far more often than not, and one cached entry per day and language keeps the
+ * number of
  * requests Wikipedia ever sees at a few hundred, however many people use this.
  *
- * Month and day are zero-padded because the feed answers an unpadded "1/6" with a 404 page
+ * Month and day are zero-padded because the feed answers an unpadded "1/6" with
+ * a 404 page
  * in HTML, not JSON.
  */
 @Slf4j
@@ -56,7 +62,7 @@ public class WikimediaFeedHttpClient implements WikipediaFeedClient {
     private final Clock clock;
 
     public WikimediaFeedHttpClient(RestClient restClient, ObjectMapper objectMapper,
-                                   HistoryProperties.Wikipedia settings, MeterRegistry meters, Clock clock) {
+            HistoryProperties.Wikipedia settings, MeterRegistry meters, Clock clock) {
         this.restClient = restClient;
         this.objectMapper = objectMapper;
         this.settings = settings;
@@ -112,8 +118,10 @@ public class WikimediaFeedHttpClient implements WikipediaFeedClient {
             log.warn("Wikipedia ({}) answered {}", language.code(), status);
             throw new UpstreamUnavailableException("Wikipedia answered " + status, null);
         }
-        // The request was validated before it got here, so a 4xx means the API changed under us
-        // - or that this client has been blocked (a 403), which is what a bad User-Agent earns.
+        // The request was validated before it got here, so a 4xx means the API changed
+        // under us
+        // - or that this client has been blocked (a 403), which is what a bad
+        // User-Agent earns.
         log.error("Wikipedia ({}) answered {} to a validated request - has the API changed, or is this client blocked?",
                 language.code(), status);
         throw new UpstreamBadResponseException("Wikipedia answered " + status + " to a validated request");
@@ -136,9 +144,13 @@ public class WikimediaFeedHttpClient implements WikipediaFeedClient {
         }
     }
 
-    /** Retry-After is either a number of seconds or an HTTP date. Missing, malformed or
-     *  already past falls back to the default; anything absurd is capped, so a bad header
-     *  cannot park the service for a day. */
+    /**
+     * Retry-After is either a number of seconds or an HTTP date. Missing, malformed
+     * or
+     * already past falls back to the default; anything absurd is capped, so a bad
+     * header
+     * cannot park the service for a day.
+     */
     private Duration retryAfter(HttpHeaders headers) {
         Duration wait = settings.defaultCooldown();
         String value = headers.getFirst(HttpHeaders.RETRY_AFTER);

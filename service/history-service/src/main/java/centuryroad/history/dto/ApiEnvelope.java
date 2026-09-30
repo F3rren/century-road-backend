@@ -7,9 +7,12 @@ import lombok.Getter;
 import java.time.OffsetDateTime;
 
 /**
- * The generic response envelope every endpoint answers with: success, error, message,
- * userMessage, data, timestamp, sessionId. Fields left unset are absent from the JSON
- * rather than "null" (@JsonInclude below), so a success body carries no error/userMessage
+ * The generic response envelope every endpoint answers with: success, error,
+ * message,
+ * userMessage, data, timestamp, sessionId. Fields left unset are absent from
+ * the JSON
+ * rather than "null" (@JsonInclude below), so a success body carries no
+ * error/userMessage
  * keys and an error body carries no data key. Same shape auth-service uses.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
@@ -19,8 +22,7 @@ public class ApiEnvelope<T> {
     @Schema(description = "True when the request was answered, false when it was refused or failed.")
     private boolean success;
 
-    @Schema(description = "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
-            example = "INVALID_DATE")
+    @Schema(description = "Machine-readable error code, such as INVALID_DATE. Only present on errors.", example = "INVALID_DATE")
     private String error;
 
     @Schema(description = "A message for developers and logs. Not meant to be shown to a user.")
@@ -35,8 +37,7 @@ public class ApiEnvelope<T> {
     @Schema(description = "When the answer was produced, ISO 8601 with offset.", example = "2026-09-20T10:22:12+02:00")
     private String timestamp;
 
-    @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
-            example = "REQ_1A2B3C4D")
+    @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.", example = "REQ_1A2B3C4D")
     private String sessionId;
 
     public static <T> ApiEnvelope<T> success(String message, T data, String sessionId) {

@@ -6,7 +6,9 @@ import java.util.EnumMap;
 import java.util.List;
 import java.util.Map;
 
-/** What one Wikipedia edition says about one calendar day, already cleaned up. */
+/**
+ * What one Wikipedia edition says about one calendar day, already cleaned up.
+ */
 public record DayFeed(Language language, MonthDay day, Map<Section, List<Entry>> sections) {
 
     public DayFeed {

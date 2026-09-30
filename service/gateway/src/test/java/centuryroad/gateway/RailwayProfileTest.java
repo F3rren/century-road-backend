@@ -11,16 +11,18 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.netty.DisposableServer;
 
 /**
- * The gateway with the railway profile added to the active one, which is how it is switched on:
- * the images start with -Dspring.profiles.active=prod, which outranks SPRING_PROFILES_ACTIVE,
- * so the environment adds the profile with SPRING_PROFILES_INCLUDE=railway instead.
+ * The gateway with the railway profile added to the active one, which is how it
+ * is switched on:
+ * the images start with -Dspring.profiles.active=prod, which outranks
+ * SPRING_PROFILES_ACTIVE,
+ * so the environment adds the profile with SPRING_PROFILES_INCLUDE=railway
+ * instead.
  *
- * On the VPS Caddy stands in front of the gateway and hides the actuator and adds the security
+ * On the VPS Caddy stands in front of the gateway and hides the actuator and
+ * adds the security
  * headers. Where nothing of ours does, the gateway has to do both itself.
  */
-@SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = "spring.profiles.include=railway")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "spring.profiles.include=railway")
 @ActiveProfiles("prod")
 class RailwayProfileTest {
 
@@ -66,7 +68,8 @@ class RailwayProfileTest {
 
 	@Test
 	void theHeadersCaddyDidNotSetAreNotAdded() {
-		// SecureHeaders adds these by default; the point is to match what the proxy did, and a
+		// SecureHeaders adds these by default; the point is to match what the proxy
+		// did, and a
 		// Content-Security-Policy written for pages means nothing on a JSON API.
 		client().get().uri("/api/auth/login").exchange()
 				.expectHeader().doesNotExist("Content-Security-Policy")

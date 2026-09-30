@@ -13,10 +13,14 @@ import reactor.netty.DisposableServer;
 import reactor.netty.http.server.HttpServer;
 
 /**
- * Stubs stand in for auth-service and history-service with reactor-netty (already on the classpath
- * transitively via spring-cloud-starter-gateway) so route resolution can be verified
- * without a real upstream. It is started as a static field initializer, not @BeforeAll,
- * so it is guaranteed listening before Spring resolves @DynamicPropertySource values
+ * Stubs stand in for auth-service and history-service with reactor-netty
+ * (already on the classpath
+ * transitively via spring-cloud-starter-gateway) so route resolution can be
+ * verified
+ * without a real upstream. It is started as a static field initializer,
+ * not @BeforeAll,
+ * so it is guaranteed listening before Spring resolves @DynamicPropertySource
+ * values
  * while building the gateway's ApplicationContext.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
@@ -121,7 +125,8 @@ class GatewayRoutingTest {
 
 	@Test
 	void thePathReachesTheUpstreamUnmodified() {
-		// auth-service serves its real /api/... paths, so the gateway deliberately has no
+		// auth-service serves its real /api/... paths, so the gateway deliberately has
+		// no
 		// path-stripping filter - see the routes comment in application.properties.
 		client().get().uri("/api/auth/login")
 				.exchange()
@@ -148,7 +153,8 @@ class GatewayRoutingTest {
 
 	@Test
 	void aPathThatOnlyStartsLikeTheHistoryOneIsNotForwarded() {
-		// The predicate is /api/history/**, so /api/historyx must not be swallowed by it.
+		// The predicate is /api/history/**, so /api/historyx must not be swallowed by
+		// it.
 		client().get().uri("/api/historyx/anything")
 				.exchange()
 				.expectStatus().isEqualTo(HttpStatus.NOT_FOUND);

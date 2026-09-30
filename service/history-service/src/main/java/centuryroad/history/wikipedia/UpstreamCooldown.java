@@ -7,10 +7,14 @@ import java.util.Optional;
 import java.util.concurrent.atomic.AtomicReference;
 
 /**
- * The stay-away period a 429 starts. While it runs, no request is sent to Wikipedia at all:
- * the callers fall through to a stale copy or the other language instead of waiting out a
- * Retry-After inside an HTTP request, and Wikipedia is not asked again before it said it
- * would be willing to answer. A later, longer cool-down extends the period, never shortens it.
+ * The stay-away period a 429 starts. While it runs, no request is sent to
+ * Wikipedia at all:
+ * the callers fall through to a stale copy or the other language instead of
+ * waiting out a
+ * Retry-After inside an HTTP request, and Wikipedia is not asked again before
+ * it said it
+ * would be willing to answer. A later, longer cool-down extends the period,
+ * never shortens it.
  */
 public class UpstreamCooldown {
 

@@ -13,8 +13,10 @@ import java.util.List;
 
 public interface DayViewCounterRepository extends JpaRepository<DayViewCounter, DayViewCounterId> {
 
-    // An upsert, not read-increment-write: two requests for the same day at the same instant
-    // must both land, and a JPA load-then-save round trip would let one overwrite the other.
+    // An upsert, not read-increment-write: two requests for the same day at the
+    // same instant
+    // must both land, and a JPA load-then-save round trip would let one overwrite
+    // the other.
     // ON CONFLICT makes the increment atomic in Postgres itself.
     @Modifying
     @Transactional

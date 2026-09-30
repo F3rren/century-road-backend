@@ -22,20 +22,28 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
 
 /**
- * What stands between the users and Wikipedia. One entry per (language, day), so the number
- * of distinct requests this service can ever send upstream is bounded by 366 times the
+ * What stands between the users and Wikipedia. One entry per (language, day),
+ * so the number
+ * of distinct requests this service can ever send upstream is bounded by 366
+ * times the
  * number of languages, whatever traffic it gets.
  *
- * Three behaviours, all of which exist for Wikipedia's benefit as much as the users':
+ * Three behaviours, all of which exist for Wikipedia's benefit as much as the
+ * users':
  *
- *   fresh    an entry younger than freshTtl is returned without a request. History barely
- *            changes, so this is hours, not the five minutes Wikipedia's own cache headers say.
- *   refresh  an older entry is refreshed; a hundred simultaneous callers for the same key
- *            produce ONE request, the others wait for its answer.
- *   stale    when the refresh fails, the old copy is served, flagged as stale, for up to
- *            maxStale. Old history is far better than an error page.
+ * fresh an entry younger than freshTtl is returned without a request. History
+ * barely
+ * changes, so this is hours, not the five minutes Wikipedia's own cache headers
+ * say.
+ * refresh an older entry is refreshed; a hundred simultaneous callers for the
+ * same key
+ * produce ONE request, the others wait for its answer.
+ * stale when the refresh fails, the old copy is served, flagged as stale, for
+ * up to
+ * maxStale. Old history is far better than an error page.
  *
- * Only entries that exist are ever served stale. A key never fetched successfully has
+ * Only entries that exist are ever served stale. A key never fetched
+ * successfully has
  * nothing to fall back on, and the failure is passed up.
  */
 @Slf4j
@@ -68,8 +76,11 @@ public class FeedCache {
         CaffeineCacheMetrics.monitor(meters, cache, "history_feed");
     }
 
-    /** @throws UpstreamException when there is no fresh copy, Wikipedia cannot supply one,
-     *  and there is no usable stale copy either */
+    /**
+     * @throws UpstreamException when there is no fresh copy, Wikipedia cannot
+     *                           supply one,
+     *                           and there is no usable stale copy either
+     */
     public Served get(Language language, MonthDay day) {
         Key key = new Key(language, day);
         Instant now = clock.instant();
@@ -98,7 +109,10 @@ public class FeedCache {
         return stored != null && age(stored, now).compareTo(settings.freshTtl()) < 0;
     }
 
-    /** Single-flight: the first caller for a key fetches, the rest wait on its future. */
+    /**
+     * Single-flight: the first caller for a key fetches, the rest wait on its
+     * future.
+     */
     private Stored load(Key key) {
         CompletableFuture<Stored> mine = new CompletableFuture<>();
         CompletableFuture<Stored> leader = inFlight.putIfAbsent(key, mine);
@@ -106,9 +120,11 @@ public class FeedCache {
             return await(leader);
         }
         try {
-            // Checked again now that this caller is the leader: another one may have finished
+            // Checked again now that this caller is the leader: another one may have
+            // finished
             // between the first look at the cache and taking the lead, and asking Wikipedia
-            // a second time for what has just been fetched is exactly what this class is for
+            // a second time for what has just been fetched is exactly what this class is
+            // for
             // preventing.
             Stored current = cache.getIfPresent(key);
             if (isFresh(current, clock.instant())) {

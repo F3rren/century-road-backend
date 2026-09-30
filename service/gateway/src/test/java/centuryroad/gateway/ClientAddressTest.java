@@ -17,26 +17,32 @@ import reactor.netty.DisposableServer;
 import reactor.netty.http.server.HttpServer;
 
 /**
- * What the gateway hands to auth-service as the caller's address, which is what the login rate
- * limiter there keys on: whoever can choose that address chooses a new key for every attempt
- * and is never limited. The gateway passes it on in a Forwarded header of its own
+ * What the gateway hands to auth-service as the caller's address, which is what
+ * the login rate
+ * limiter there keys on: whoever can choose that address chooses a new key for
+ * every attempt
+ * and is never limited. The gateway passes it on in a Forwarded header of its
+ * own
  * (for="address:port"), and that is what auth-service reads.
  *
- * The prod profile makes the gateway trust the forwarding headers it receives, which is safe
- * only if whatever sits in front of it overwrites them. The proxy overwrites X-Forwarded-For,
- * but the standard Forwarded header goes through it untouched, and Spring prefers it. So the
- * gateway has to ignore a Forwarded header from the caller itself and keep honouring
+ * The prod profile makes the gateway trust the forwarding headers it receives,
+ * which is safe
+ * only if whatever sits in front of it overwrites them. The proxy overwrites
+ * X-Forwarded-For,
+ * but the standard Forwarded header goes through it untouched, and Spring
+ * prefers it. So the
+ * gateway has to ignore a Forwarded header from the caller itself and keep
+ * honouring
  * X-Forwarded-For.
  *
- * The strategy is set here on purpose rather than left to the default profile, so that this
+ * The strategy is set here on purpose rather than left to the default profile,
+ * so that this
  * test still means what it says if the profile ever changes.
  */
-@SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = {
-				"server.forward-headers-strategy=framework",
-				"spring.cloud.gateway.trusted-proxies=.*"
-		})
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
+		"server.forward-headers-strategy=framework",
+		"spring.cloud.gateway.trusted-proxies=.*"
+})
 class ClientAddressTest {
 
 	private static final String SEEN_X_FORWARDED_FOR = "X-Seen-X-Forwarded-For";

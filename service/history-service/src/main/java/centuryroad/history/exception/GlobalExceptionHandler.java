@@ -15,14 +15,19 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 /**
- * The single place where errors become responses, all in the project's envelope.
+ * The single place where errors become responses, all in the project's
+ * envelope.
  *
- * Extends ResponseEntityExceptionHandler, unlike auth-service's handler, so the protocol-level
- * cases Spring MVC raises itself - a month that is not a number, a missing parameter, a wrong
- * method, an unknown path - come through here too instead of falling back to Spring's own
+ * Extends ResponseEntityExceptionHandler, unlike auth-service's handler, so the
+ * protocol-level
+ * cases Spring MVC raises itself - a month that is not a number, a missing
+ * parameter, a wrong
+ * method, an unknown path - come through here too instead of falling back to
+ * Spring's own
  * error page. handleExceptionInternal is the one funnel they all go through.
  *
- * Nothing from Wikipedia - URL, status, body - is ever put in a response: the messages here
+ * Nothing from Wikipedia - URL, status, body - is ever put in a response: the
+ * messages here
  * are ours, and the detail goes to the log.
  */
 @Slf4j
@@ -42,7 +47,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(UpstreamRateLimitedException.class)
     public ResponseEntity<ApiEnvelope<Void>> handleRateLimited(UpstreamRateLimitedException ex) {
-        // Round up: "Retry-After: 0" would invite an immediate retry into the cool-down.
+        // Round up: "Retry-After: 0" would invite an immediate retry into the
+        // cool-down.
         long seconds = Math.max(1, (ex.getRetryAfter().toMillis() + 999) / 1000);
         log.warn("Answering 503, Wikipedia is rate-limiting this service: {}", ex.getMessage());
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
@@ -77,9 +83,9 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @Override
     protected ResponseEntity<Object> handleExceptionInternal(@NonNull Exception ex, @Nullable Object body,
-                                                             @NonNull HttpHeaders headers,
-                                                             @NonNull HttpStatusCode statusCode,
-                                                             @NonNull WebRequest request) {
+            @NonNull HttpHeaders headers,
+            @NonNull HttpStatusCode statusCode,
+            @NonNull WebRequest request) {
         HttpStatus status = HttpStatus.resolve(statusCode.value());
         String code = status != null ? status.name() : "ERROR";
         String reason = status != null ? status.getReasonPhrase() : "Error";

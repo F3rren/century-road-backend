@@ -8,10 +8,15 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-/** How many times a country has been viewed, in total, keyed by its ISO 3166-1 alpha-2 code.
- *  Written only through CountryViewCounterRepository's atomic upsert - never via save(), so
- *  this entity carries no setters; the all-args constructor exists for tests to build a
- *  result row directly. */
+/**
+ * How many times a country has been viewed, in total, keyed by its ISO 3166-1
+ * alpha-2 code.
+ * Written only through CountryViewCounterRepository's atomic upsert - never via
+ * save(), so
+ * this entity carries no setters; the all-args constructor exists for tests to
+ * build a
+ * result row directly.
+ */
 @Entity
 @Table(schema = "history", name = "country_views")
 @Getter
