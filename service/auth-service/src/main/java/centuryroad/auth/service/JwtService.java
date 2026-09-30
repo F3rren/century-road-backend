@@ -9,7 +9,8 @@ import org.springframework.stereotype.Service;
 import java.util.Date;
 
 /**
- * Signs access tokens. The only service in this project that does: everyone else
+ * Signs access tokens. The only service in this project that does: everyone
+ * else
  * verifies with JwtVerifier and jjwt-api alone, never touching jjwt-impl.
  */
 @Service

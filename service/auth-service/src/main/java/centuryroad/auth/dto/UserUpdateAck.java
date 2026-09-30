@@ -7,7 +7,8 @@ import centuryroad.auth.model.User;
 public record UserUpdateAck(
         @Schema(description = "The user's id.", example = "42") Long id,
         @Schema(description = "The user's email address.", example = "mario.rossi@example.com") String email,
-        @Schema(description = "The user's role.", allowableValues = {"ADMIN", "USER"}, example = "USER") String role,
+        @Schema(description = "The user's role.", allowableValues = {
+                "ADMIN", "USER" }, example = "USER") String role,
         @Schema(description = "False when the account is disabled: it cannot log in.") boolean enabled) {
 
     public UserUpdateAck(User user) {

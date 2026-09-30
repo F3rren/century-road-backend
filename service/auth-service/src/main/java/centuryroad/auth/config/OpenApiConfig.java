@@ -14,8 +14,10 @@ import org.springframework.context.annotation.Configuration;
 import java.util.List;
 
 /**
- * The header of the OpenAPI document, and the one security scheme the endpoints refer to.
- * Only exists when documentation is switched on (springdoc.api-docs.enabled), so a
+ * The header of the OpenAPI document, and the one security scheme the endpoints
+ * refer to.
+ * Only exists when documentation is switched on (springdoc.api-docs.enabled),
+ * so a
  * deployment that leaves it off carries nothing of it.
  */
 @Configuration
@@ -25,8 +27,11 @@ public class OpenApiConfig {
     /** What @SecurityRequirement on a controller names. */
     public static final String BEARER_AUTH = "bearerAuth";
 
-    /** The revision of this API's contract, raised by hand when it changes. It is not the
-     *  artifact's version, which says nothing to somebody reading the documentation. */
+    /**
+     * The revision of this API's contract, raised by hand when it changes. It is
+     * not the
+     * artifact's version, which says nothing to somebody reading the documentation.
+     */
     private static final String API_VERSION = "0.1";
 
     @Bean
@@ -52,14 +57,20 @@ public class OpenApiConfig {
     }
 
     /**
-     * A field validated with "(?i)admin|user" would be published with that as its pattern. JSON
-     * Schema patterns are ECMAScript regular expressions, where an inline flag like "(?i)" is a
-     * syntax error, so a client generator or a form library reading the document would fail on
-     * it. The values the field accepts are listed as an enum next to it, which says the same
+     * A field validated with "(?i)admin|user" would be published with that as its
+     * pattern. JSON
+     * Schema patterns are ECMAScript regular expressions, where an inline flag like
+     * "(?i)" is a
+     * syntax error, so a client generator or a form library reading the document
+     * would fail on
+     * it. The values the field accepts are listed as an enum next to it, which says
+     * the same
      * thing in a way every reader understands.
      *
-     * Done on the finished document, not while each property is built: the validation
-     * annotations are applied at a point a per-property customizer cannot be relied on to
+     * Done on the finished document, not while each property is built: the
+     * validation
+     * annotations are applied at a point a per-property customizer cannot be relied
+     * on to
      * come after.
      */
     @Bean

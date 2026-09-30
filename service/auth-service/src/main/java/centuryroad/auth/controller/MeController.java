@@ -21,10 +21,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
- * The caller's own profile. Trusts the AppPrincipal JwtAuthFilter already put in the
- * SecurityContext rather than re-deriving anything from the request, and still hits the
- * database once: the token's claims are enough to authorize, but a profile view should
- * reflect the current row (an admin could have disabled the account since the token was
+ * The caller's own profile. Trusts the AppPrincipal JwtAuthFilter already put
+ * in the
+ * SecurityContext rather than re-deriving anything from the request, and still
+ * hits the
+ * database once: the token's claims are enough to authorize, but a profile view
+ * should
+ * reflect the current row (an admin could have disabled the account since the
+ * token was
  * issued), not a snapshot from whenever it was signed.
  */
 @RestController
@@ -39,16 +43,12 @@ public class MeController {
         this.userService = userService;
     }
 
-    @Operation(
-            summary = "The caller's own profile",
-            description = """
-                    Read from the database on every call, not from the token's claims, so a change an
-                    administrator makes shows at once instead of when the token expires.""")
+    @Operation(summary = "The caller's own profile", description = """
+            Read from the database on every call, not from the token's claims, so a change an
+            administrator makes shows at once instead of when the token expires.""")
     @ApiResponse(responseCode = "200", description = "The caller's account.")
-    @ApiResponse(responseCode = "401", description = "No token, or an invalid or expired one. `error` is UNAUTHENTICATED.",
-            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
-    @ApiResponse(responseCode = "404", description = "The account no longer exists. `error` is NOT_FOUND.",
-            content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "401", description = "No token, or an invalid or expired one. `error` is UNAUTHENTICATED.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
+    @ApiResponse(responseCode = "404", description = "The account no longer exists. `error` is NOT_FOUND.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @GetMapping
     public ResponseEntity<ApiEnvelope<UserSummaryDto>> getMe(@AuthenticationPrincipal AppPrincipal principal) {
         User user = userService.findById(principal.id());
@@ -56,6 +56,7 @@ public class MeController {
             throw new ResourceNotFoundException("No user with id " + principal.id(),
                     "L'utente richiesto non esiste.");
         }
-        return ResponseEntity.ok(ApiEnvelope.success(null, UserSummaryDto.of(user), RequestCorrelationFilter.current()));
+        return ResponseEntity
+                .ok(ApiEnvelope.success(null, UserSummaryDto.of(user), RequestCorrelationFilter.current()));
     }
 }

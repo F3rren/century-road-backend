@@ -16,8 +16,10 @@ import java.time.OffsetDateTime;
 import java.util.List;
 
 /**
- * Everything that touches a password: authenticating one, and the admin-only creation/
- * update of a user (UserService covers the id-only, password-blind operations - lookup
+ * Everything that touches a password: authenticating one, and the admin-only
+ * creation/
+ * update of a user (UserService covers the id-only, password-blind operations -
+ * lookup
  * and deletion - the split classroom-backend uses between the two classes).
  */
 @Service
@@ -31,10 +33,14 @@ public class AuthService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    /** Returns the authenticated user, or throws - never null, so a caller cannot
-     *  forget to check and silently proceed as nobody. Deliberately the same exception
-     *  and message whether the email does not exist or the password is wrong: telling
-     *  the two apart would let a caller enumerate which emails are registered. */
+    /**
+     * Returns the authenticated user, or throws - never null, so a caller cannot
+     * forget to check and silently proceed as nobody. Deliberately the same
+     * exception
+     * and message whether the email does not exist or the password is wrong:
+     * telling
+     * the two apart would let a caller enumerate which emails are registered.
+     */
     public User login(String email, String password) {
         User user = userRepository.findByEmail(email)
                 .filter(User::isEnabled)
@@ -77,7 +83,8 @@ public class AuthService {
         if (request.email() != null) {
             user.setEmail(request.email());
         }
-        // Empty means "leave it unchanged" - an admin resetting every other field should
+        // Empty means "leave it unchanged" - an admin resetting every other field
+        // should
         // not be forced to also know or invent a new password.
         if (request.password() != null && !request.password().isBlank()) {
             user.setPassword(passwordEncoder.encode(request.password()));
