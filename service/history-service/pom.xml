@@ -34,7 +34,7 @@
 		     a docker-java that asks the daemon for Docker API 1.32, which an up-to-date Docker
 		     Engine/Desktop refuses - Testcontainers then reports the misleading "Could not find
 		     a valid Docker environment". 1.21.4 negotiates fine. Keep the two services' pins equal. -->
-		<testcontainers.version>1.21.4</testcontainers.version>
+		<testcontainers.version>2.0.5</testcontainers.version>
 
 		<!-- Same override as auth-service, same reason: Spring Boot 3.5.16 manages 10.1.55, which
 		     has three CRITICAL CVEs (CVE-2026-68525, CVE-2026-65905, CVE-2026-65182), all fixed by
