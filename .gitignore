@@ -2,6 +2,7 @@
 # Only the .example files are committed.
 .env
 .env.dev
+.env.local
 
 # Maven
 service/*/target/
