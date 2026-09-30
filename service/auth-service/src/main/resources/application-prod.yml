@@ -1,21 +1,14 @@
-# Do not expose internal details in error responses. Spring Boot defaults may change
-# between versions, so state the intended behavior explicitly.
 server:
+  # The production environment must provide AUTH_PORT.
+  port: ${AUTH_PORT}
+
+  # Do not expose internal details in error responses.
   error:
     include-stacktrace: never
     include-message: never
     include-binding-errors: never
 
-  # Behind the TLS-terminating proxy (infra/caddy/Caddyfile), trust the
-  # X-Forwarded-* headers it sets. This lets the application see the original
-  # scheme and caller address instead of the proxy's own.
-  #
-  # Spring Security emits HSTS only for requests it considers secure. The
-  # original caller address also keeps the login rate limiter from treating
-  # every request as if it came from the proxy.
-  #
-  # Safe ONLY if requests reach this service through the gateway, which uses
-  # the address overwritten by the proxy and ignores caller-supplied Forwarded
-  # headers. Do not enable this on a service directly reachable from the
-  # internet: a caller could spoof its address to bypass rate limiting.
+  # Trust forwarded headers only when auth-service is reachable through
+  # the intended proxy and gateway chain. Untrusted clients must not be
+  # able to supply the headers used to determine their apparent address.
   forward-headers-strategy: framework

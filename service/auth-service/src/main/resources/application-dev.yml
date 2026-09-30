@@ -1,33 +1,28 @@
-# Set SPRING_PROFILES_ACTIVE=dev outside a container.
-#
-# Enable settings useful during local development: SQL logging, verbose errors,
-# and DevTools restart. Connection details remain in application.properties.
-# This service has no local connection defaults by design; set them in .env.
+server:
+  # Convenient local port; override it with AUTH_PORT if needed.
+  port: ${AUTH_PORT:8081}
 
-# Read by the gateway's Swagger UI. See application.properties for why
-# the API docs are disabled in other environments.
-springdoc:
-  api-docs:
-    enabled: true
-
-logging:
-  level:
-    org.hibernate.SQL: DEBUG
-    org.hibernate.orm.jdbc.bind: TRACE
-    root: INFO
-    centuryroad: DEBUG
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
 
 spring:
   jpa:
     properties:
       hibernate:
         format_sql: true
+
   devtools:
     restart:
       enabled: true
 
-server:
-  error:
-    include-message: always
-    include-binding-errors: always
-    include-stacktrace: on_param
+springdoc:
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    centuryroad: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: OFF

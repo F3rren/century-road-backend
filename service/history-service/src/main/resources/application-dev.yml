@@ -1,17 +1,7 @@
-# Set SPRING_PROFILES_ACTIVE=dev outside a container.
-
-# Read by the gateway's Swagger UI. See application.yml for why the
-# OpenAPI document is disabled in other environments.
-springdoc:
-  api-docs:
-    enabled: true
-
-logging:
-  level:
-    root: INFO
-    centuryroad: DEBUG
-
 server:
+  # Local default; override it with HISTORY_PORT if needed.
+  port: ${HISTORY_PORT:8082}
+
   error:
     include-message: always
     include-binding-errors: always
@@ -21,3 +11,12 @@ spring:
   devtools:
     restart:
       enabled: true
+
+# The gateway's Swagger UI can read this service's OpenAPI document.
+springdoc:
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    centuryroad: DEBUG

@@ -1,6 +1,8 @@
-# Do not expose internal details in error responses. Spring Boot defaults
-# may change between versions, so state the intended behavior explicitly.
 server:
+  # The production environment must provide HISTORY_PORT.
+  port: ${HISTORY_PORT}
+
+  # Do not expose internal details in error responses.
   error:
     include-stacktrace: never
     include-message: never
