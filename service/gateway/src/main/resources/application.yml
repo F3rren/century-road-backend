@@ -27,7 +27,7 @@ spring:
       # in a header, not a browser-attached cookie.
       globalcors:
         cors-configurations:
-          "/**":
+          '[/**]':
             allowedOrigins: "${FRONTEND_ORIGIN:http://localhost:5173}"
             allowedMethods:
               - GET
