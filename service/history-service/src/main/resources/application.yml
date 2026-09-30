@@ -1,0 +1,114 @@
+spring:
+  application:
+    name: history-service
+
+  # The same PostgreSQL instance used by auth-service, with connection
+  # details injected through the environment. This service uses its own
+  # "history" schema rather than a separate database.
+  datasource:
+    url: "${SPRING_DATASOURCE_URL}"
+    username: "${SPRING_DATASOURCE_USERNAME}"
+    password: "${SPRING_DATASOURCE_PASSWORD}"
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate validates the schema but never changes it. Flyway migrations
+  # are the only mechanism that modifies the schema.
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+  # Keep this service's migrations and flyway_schema_history table in the
+  # "history" schema, separate from auth-service's migration history.
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+    schemas: history
+
+  # Use the hardened production profile if none is explicitly active.
+  profiles:
+    default: prod
+
+server:
+  port: "${HISTORY_PORT:8082}"
+
+  # Responses can reach roughly 100 KB for days with many births.
+  # The gateway forwards the response encoding unchanged.
+  compression:
+    enabled: true
+    mime-types: application/json
+    min-response-size: 2KB
+
+# Use this edition when the requested edition lacks a section or cannot
+# be reached. Accepted request languages are restricted by the Language
+# enum because the language code becomes part of a hostname.
+history:
+  fallback-language: en
+
+  cache:
+    # Serve a day without asking Wikipedia again for this period.
+    # Keep an older copy available if a refresh fails. Historical content
+    # changes infrequently; 800 entries cover a year in two languages.
+    fresh-ttl: 6h
+    max-stale: 7d
+    max-entries: 800
+
+  wikipedia:
+    # Keep the host in one place. Contact has no default: provide a URL or
+    # address through WIKIMEDIA_CONTACT so the operator can be reached.
+    host-template: "https://{lang}.wikipedia.org"
+    client-name: CenturyRoad-History/0.1
+    contact: "${WIKIMEDIA_CONTACT}"
+    connect-timeout: 2s
+
+    # A cold response has been observed to take about 4 s; a cached one
+    # about 0.2 s.
+    read-timeout: 5s
+
+    # Expected daily responses are 60–620 KB. Anything beyond this limit
+    # is not treated as a feed.
+    max-body-bytes: 8388608
+
+    # Used when a 429 response has no usable Retry-After value.
+    default-cooldown: 5s
+    max-cooldown: 10m
+
+  resilience:
+    # Limit concurrent requests to Wikipedia.
+    max-concurrent-calls: 3
+    bulkhead-max-wait: 1s
+    retry-attempts: 2
+    retry-wait: 300ms
+    breaker-open-duration: 30s
+
+# Expose only health and Prometheus. The metrics endpoint adds nothing
+# needed by the Prometheus scraper in this setup.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: when-authorized
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+# The gateway is public in production, so expose the OpenAPI document only
+# when deliberately enabled. The dev profile enables it; elsewhere set
+# SPRINGDOC_API_DOCS_ENABLED=true. Swagger UI lives at the gateway.
+springdoc:
+  api-docs:
+    enabled: false
+
+  # Documentation only: prevents responses from being listed as */*.
+  # It does not change what endpoints actually accept or produce.
+  default-produces-media-type: application/json
+
+logging:
+  level:
+    root: INFO
+    centuryroad: DEBUG

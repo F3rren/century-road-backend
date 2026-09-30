@@ -1,0 +1,35 @@
+# Do not expose internal details in error responses. Spring Boot defaults may
+# change between versions, so state the intended behavior explicitly.
+server:
+  error:
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never
+
+  # Behind the TLS-terminating proxy (infra/caddy/Caddyfile), trust the
+  # X-Forwarded-* headers it sets. This lets the application see the original
+  # scheme and caller address instead of the proxy's own.
+  #
+  # Spring Security emits HSTS only for requests it considers secure. The
+  # original caller address also prevents the login rate limiter from treating
+  # every request as if it came from the proxy.
+  #
+  # Safe ONLY because the proxy overwrites X-Forwarded-* instead of forwarding
+  # caller-supplied values. It drops the standard Forwarded header, which is
+  # also ignored here (XForwardedOnlyHeaderTransformer): only X-Forwarded-*
+  # is trusted. Do not enable this on a service directly reachable from the
+  # internet; callers could spoof their address to bypass rate limiting.
+  forward-headers-strategy: framework
+
+# CVE-2025-41235: since Spring Cloud Gateway 2025.0, the gateway does not add
+# X-Forwarded-*/Forwarded headers to proxied requests unless its trusted proxies
+# are configured.
+#
+# ".*" is intentional here rather than a specific address. This configuration
+# relies on the gateway being reachable only through the proxy; see the gateway
+# service's port comment in compose-prod.yml. Without forwarded caller details,
+# auth-service cannot key the login rate limiter on the caller's address.
+spring:
+  cloud:
+    gateway:
+      trusted-proxies: ".*"

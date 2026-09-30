@@ -1,0 +1,7 @@
+# Do not expose internal details in error responses. Spring Boot defaults
+# may change between versions, so state the intended behavior explicitly.
+server:
+  error:
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never

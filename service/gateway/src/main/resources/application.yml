@@ -1,0 +1,91 @@
+spring:
+  application:
+    name: gateway
+
+  cloud:
+    gateway:
+      # auth-service already exposes its real /api/... paths, so requests
+      # are forwarded unchanged. No path-stripping filter is needed.
+      routes:
+        - id: auth-service
+          uri: "${AUTH_SERVICE_URI:http://auth-service:8081}"
+          predicates:
+            - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
+
+        # history-service also serves its real /api/history/... paths.
+        # These routes are public and do not contain per-user data.
+        - id: history-service
+          uri: "${HISTORY_SERVICE_URI:http://history-service:8082}"
+          predicates:
+            - "Path=/api/history/**"
+
+      # The frontend is hosted at a different origin. Configure CORS at the
+      # gateway because it handles preflight OPTIONS requests itself.
+      #
+      # List allowed origins explicitly rather than using "*".
+      # allowCredentials remains off: authentication uses a bearer token
+      # in a header, not a browser-attached cookie.
+      globalcors:
+        cors-configurations:
+          "/**":
+            allowedOrigins: "${FRONTEND_ORIGIN:http://localhost:5173}"
+            allowedMethods:
+              - GET
+              - POST
+              - PUT
+              - DELETE
+              - OPTIONS
+            allowedHeaders:
+              - Authorization
+              - Content-Type
+              - X-Request-Id
+            exposedHeaders:
+              - X-Request-Id
+              - Retry-After
+            maxAge: 3600
+
+  # If no profile is explicitly active, use the hardened production profile.
+  profiles:
+    default: prod
+
+server:
+  port: "${GATEWAY_PORT:8080}"
+
+# One Swagger UI at the gateway for both services. OpenApiDocsRoutes relays
+# each service's OpenAPI document at /docs/<service>/v3/api-docs because the
+# services are not directly reachable from a browser in production.
+#
+# Documentation is disabled unless explicitly enabled. The dev profile
+# enables it; elsewhere, set SPRINGDOC_API_DOCS_ENABLED=true and
+# SPRINGDOC_SWAGGER_UI_ENABLED=true. Each service must also expose its
+# own OpenAPI document for the gateway to relay it.
+springdoc:
+  api-docs:
+    enabled: false
+  swagger-ui:
+    enabled: false
+    urls:
+      - name: auth-service
+        url: /docs/auth-service/v3/api-docs
+      - name: history-service
+        url: /docs/history-service/v3/api-docs
+
+# Expose the same Actuator endpoints as the other services so the gateway
+# can use the existing Prometheus/Grafana dashboards.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+logging:
+  level:
+    root: INFO
+    centuryroad: DEBUG

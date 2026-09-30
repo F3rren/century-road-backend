@@ -1,0 +1,19 @@
+# Test-only values, never used outside this profile.
+history:
+  wikipedia:
+    # .invalid is reserved (RFC 2606). If a test forgets to stub
+    # Wikipedia, this hostname should not resolve to the real service.
+    contact: "https://example.invalid/century-road-tests"
+    host-template: "http://wikipedia.invalid/{lang}"
+
+    # Intentionally short so timeout and retry tests stay fast.
+    connect-timeout: 200ms
+    read-timeout: 500ms
+
+  resilience:
+    retry-wait: 10ms
+    bulkhead-max-wait: 50ms
+
+logging:
+  level:
+    root: WARN

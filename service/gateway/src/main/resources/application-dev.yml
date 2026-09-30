@@ -1,0 +1,26 @@
+# Set SPRING_PROFILES_ACTIVE=dev outside a container.
+
+# Enable Swagger UI at /swagger-ui.html in development.
+# See application.yml for why it is disabled elsewhere.
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+logging:
+  level:
+    root: INFO
+    centuryroad: DEBUG
+    org.springframework.cloud.gateway: DEBUG
+
+server:
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+
+spring:
+  devtools:
+    restart:
+      enabled: true

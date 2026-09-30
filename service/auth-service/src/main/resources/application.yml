@@ -1,0 +1,81 @@
+spring:
+  application:
+    name: auth-service
+
+  # DataSource credentials are injected through the environment (Docker Compose
+  # or the IDE run configuration). This service owns its own database: user
+  # identity no longer lives in backend. See the backend migration that drops
+  # the foreign key on events.author_id.
+  datasource:
+    url: "${SPRING_DATASOURCE_URL}"
+    username: "${SPRING_DATASOURCE_USERNAME}"
+    password: "${SPRING_DATASOURCE_PASSWORD}"
+    driver-class-name: org.postgresql.Driver
+
+  # Hibernate validates the schema but never changes it. Flyway migrations
+  # are the only mechanism that modifies the schema.
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+
+  # If no profile is explicitly active, use the hardened production profile
+  # rather than permissive development settings.
+  profiles:
+    default: prod
+
+server:
+  port: "${AUTH_PORT:8081}"
+
+# Expose the same Actuator endpoints as backend so this service can use the
+# existing Prometheus/Grafana dashboards without a special case.
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+# The secret will eventually also be used by backend to verify tokens.
+# There is deliberately no fallback: the service should refuse to start
+# rather than issue tokens signed with an empty key.
+jwt:
+  secret: "${JWT_SECRET}"
+  expiration-ms: "${JWT_EXPIRATION_MS}"
+
+# FirstAdminBootstrap creates the first administrator only when the users
+# table is empty. If these values are unset, the mechanism remains inactive.
+bootstrap:
+  admin:
+    email: "${BOOTSTRAP_ADMIN_EMAIL:}"
+    password: "${BOOTSTRAP_ADMIN_PASSWORD:}"
+
+# The OpenAPI document is available at /v3/api-docs only when explicitly
+# enabled. The dev profile enables it; in other profiles it can be enabled
+# with SPRINGDOC_API_DOCS_ENABLED=true.
+#
+# Swagger UI is served by the gateway, not by this service. SecurityConfig
+# opens the document route to the gateway only when API docs are enabled.
+springdoc:
+  api-docs:
+    enabled: false
+
+  # Documentation only: avoids listing every response as */*. This does
+  # not change what the endpoints actually accept or produce.
+  default-produces-media-type: application/json
+
+logging:
+  level:
+    root: INFO
+    centuryroad: DEBUG

@@ -1,0 +1,44 @@
+# On the VPS, Caddy sits in front of the gateway (infra/caddy/Caddyfile).
+# On Railway, TLS is terminated by the platform, and the gateway is the
+# first component we control that receives the request.
+#
+# Add this profile to those already active with SPRING_PROFILES_INCLUDE=railway.
+# Do not use SPRING_PROFILES_ACTIVE: the images start with
+# -Dspring.profiles.active=prod, and that system property takes precedence.
+# Without the railway profile, these settings do not affect the VPS.
+#
+# The caller's address is intentionally not configured here. How Railway's
+# edge sets X-Forwarded-For must be observed on a real deployment before
+# deciding which forwarded information to trust.
+
+management:
+  endpoints:
+    web:
+      # The gateway exposes Actuator on the same public port as the API.
+      # Railway needs /actuator/health for its healthcheck; metrics and info
+      # should not be exposed publicly in this deployment.
+      exposure:
+        include: health
+
+spring:
+  cloud:
+    gateway:
+      # Match the security headers set by Caddy on the VPS. HSTS_MAX_AGE
+      # starts low deliberately: a browser that receives the header will
+      # refuse plain HTTP for the specified period. Raise it after HTTPS
+      # has been stable.
+      #
+      # Use SetResponseHeader rather than SecureHeaders so these values
+      # replace headers sent by a downstream service. In particular,
+      # auth-service may send its own HSTS header through Spring Security.
+      # SecureHeaders also has different defaults and adds headers not
+      # configured in the Caddyfile.
+      #
+      # Unlike Caddy's headers, these route filters apply only to proxied
+      # responses. The gateway's own responses, such as Actuator responses
+      # or requests with no matching route, do not receive them.
+      default-filters:
+        - "SetResponseHeader=Strict-Transport-Security, max-age=${HSTS_MAX_AGE:300}; includeSubDomains"
+        - "SetResponseHeader=X-Content-Type-Options, nosniff"
+        - "SetResponseHeader=X-Frame-Options, DENY"
+        - "SetResponseHeader=Referrer-Policy, no-referrer"
