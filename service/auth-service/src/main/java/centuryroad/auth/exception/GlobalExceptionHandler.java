@@ -31,35 +31,31 @@ import java.util.stream.Collectors;
 @RestControllerAdvice
 public class GlobalExceptionHandler {
 
-        private String sessionId() {
-                return RequestCorrelationFilter.current();
-        }
-
         @ExceptionHandler(AuthenticationFailedException.class)
         public ResponseEntity<ApiEnvelope<Void>> handleAuthenticationFailed(AuthenticationFailedException ex) {
                 return new ResponseEntity<>(
-                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), RequestCorrelationFilter.current()),
                                 HttpStatus.UNAUTHORIZED);
         }
 
         @ExceptionHandler(InvalidRequestException.class)
         public ResponseEntity<ApiEnvelope<Void>> handleInvalidRequest(InvalidRequestException ex) {
                 return new ResponseEntity<>(
-                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), RequestCorrelationFilter.current()),
                                 HttpStatus.BAD_REQUEST);
         }
 
         @ExceptionHandler(ResourceNotFoundException.class)
         public ResponseEntity<ApiEnvelope<Void>> handleNotFound(ResourceNotFoundException ex) {
                 return new ResponseEntity<>(
-                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), RequestCorrelationFilter.current()),
                                 HttpStatus.NOT_FOUND);
         }
 
         @ExceptionHandler(DomainConflictException.class)
         public ResponseEntity<ApiEnvelope<Void>> handleConflict(DomainConflictException ex) {
                 return new ResponseEntity<>(
-                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), RequestCorrelationFilter.current()),
                                 HttpStatus.CONFLICT);
         }
 
@@ -68,14 +64,14 @@ public class GlobalExceptionHandler {
                 return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
                                 .header(HttpHeaders.RETRY_AFTER, String.valueOf(ex.getRetryAfterSeconds()))
                                 .body(ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(),
-                                                sessionId()));
+                                                RequestCorrelationFilter.current()));
         }
 
         @ExceptionHandler(AccessDeniedException.class)
         public ResponseEntity<ApiEnvelope<Void>> handleAccessDenied(AccessDeniedException ex) {
                 return new ResponseEntity<>(
                                 ApiEnvelope.error("ACCESS_DENIED", ex.getMessage(),
-                                                "Non hai i permessi necessari per questa operazione.", sessionId()),
+                                                "Non hai i permessi necessari per questa operazione.", RequestCorrelationFilter.current()),
                                 HttpStatus.FORBIDDEN);
         }
 
@@ -85,7 +81,7 @@ public class GlobalExceptionHandler {
                                 .map(FieldError::getDefaultMessage)
                                 .collect(Collectors.joining(" "));
                 return new ResponseEntity<>(
-                                ApiEnvelope.error("VALIDATION_ERROR", "Validation failed", userMessage, sessionId()),
+                                ApiEnvelope.error("VALIDATION_ERROR", "Validation failed", userMessage, RequestCorrelationFilter.current()),
                                 HttpStatus.BAD_REQUEST);
         }
 
@@ -100,7 +96,7 @@ public class GlobalExceptionHandler {
                 return new ResponseEntity<>(
                                 ApiEnvelope.error("CONFLICT", "Conflict with the current state of the data",
                                                 "L'operazione non e' andata a buon fine per un conflitto con dati esistenti.",
-                                                sessionId()),
+                                                RequestCorrelationFilter.current()),
                                 HttpStatus.CONFLICT);
         }
 
@@ -110,7 +106,7 @@ public class GlobalExceptionHandler {
                 return new ResponseEntity<>(
                                 ApiEnvelope.error("INTERNAL_ERROR", "Internal server error",
                                                 "Si e' verificato un errore imprevisto. Riprova piu' tardi.",
-                                                sessionId()),
+                                                RequestCorrelationFilter.current()),
                                 HttpStatus.INTERNAL_SERVER_ERROR);
         }
 }

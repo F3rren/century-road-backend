@@ -34,14 +34,14 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @RestControllerAdvice
 public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
-    private String sessionId() {
+    private String requestId() {
         return RequestCorrelationFilter.current();
     }
 
     @ExceptionHandler(InvalidRequestException.class)
     public ResponseEntity<ApiEnvelope<Void>> handleInvalidRequest(InvalidRequestException ex) {
         return new ResponseEntity<>(
-                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()),
                 HttpStatus.BAD_REQUEST);
     }
 
@@ -53,14 +53,14 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         log.warn("Answering 503, Wikipedia is rate-limiting this service: {}", ex.getMessage());
         return ResponseEntity.status(HttpStatus.SERVICE_UNAVAILABLE)
                 .header(HttpHeaders.RETRY_AFTER, String.valueOf(seconds))
-                .body(ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()));
+                .body(ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()));
     }
 
     @ExceptionHandler(UpstreamUnavailableException.class)
     public ResponseEntity<ApiEnvelope<Void>> handleUnavailable(UpstreamUnavailableException ex) {
         log.warn("Answering 503, Wikipedia is unavailable and there is nothing to fall back on: {}", ex.getMessage());
         return new ResponseEntity<>(
-                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()),
                 HttpStatus.SERVICE_UNAVAILABLE);
     }
 
@@ -68,7 +68,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<ApiEnvelope<Void>> handleBadResponse(UpstreamBadResponseException ex) {
         log.error("Answering 502, Wikipedia's response was unusable: {}", ex.getMessage());
         return new ResponseEntity<>(
-                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), sessionId()),
+                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()),
                 HttpStatus.BAD_GATEWAY);
     }
 
@@ -77,7 +77,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         log.error("Unhandled internal error", ex);
         return new ResponseEntity<>(
                 ApiEnvelope.error("INTERNAL_ERROR", "Internal server error",
-                        "Si e' verificato un errore imprevisto. Riprova piu' tardi.", sessionId()),
+                        "Si e' verificato un errore imprevisto. Riprova piu' tardi.", requestId()),
                 HttpStatus.INTERNAL_SERVER_ERROR);
     }
 
@@ -89,7 +89,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         HttpStatus status = HttpStatus.resolve(statusCode.value());
         String code = status != null ? status.name() : "ERROR";
         String reason = status != null ? status.getReasonPhrase() : "Error";
-        return new ResponseEntity<>(ApiEnvelope.error(code, reason, userMessageFor(statusCode), sessionId()),
+        return new ResponseEntity<>(ApiEnvelope.error(code, reason, userMessageFor(statusCode), requestId()),
                 headers, statusCode);
     }
 

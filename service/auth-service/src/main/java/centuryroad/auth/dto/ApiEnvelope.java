@@ -2,6 +2,7 @@ package centuryroad.auth.dto;
 
 import io.swagger.v3.oas.annotations.media.Schema;
 import com.fasterxml.jackson.annotation.JsonInclude;
+import com.fasterxml.jackson.annotation.JsonProperty;
 import lombok.Getter;
 
 import java.time.OffsetDateTime;
@@ -14,6 +15,11 @@ import java.time.OffsetDateTime;
  * rather than "null" (@JsonInclude below), so a success body carries no
  * error/userMessage
  * keys and an error body carries no data key.
+ *
+ * The wire field is still named "sessionId" for API-compatibility (frontend
+ * and history-service both read it by that name), even though it carries the
+ * per-request correlation id, not a session - see RequestCorrelationFilter.
+ * requestId below is pinned back to that wire name via @JsonProperty.
  */
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @Getter
@@ -38,26 +44,27 @@ public class ApiEnvelope<T> {
     private String timestamp;
 
     @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.", example = "REQ_1A2B3C4D")
-    private String sessionId;
+    @JsonProperty("sessionId")
+    private String requestId;
 
-    public static <T> ApiEnvelope<T> success(String message, T data, String sessionId) {
+    public static <T> ApiEnvelope<T> success(String message, T data, String requestId) {
         ApiEnvelope<T> response = new ApiEnvelope<>();
         response.success = true;
         response.message = message;
         response.data = data;
         response.timestamp = OffsetDateTime.now().toString();
-        response.sessionId = sessionId;
+        response.requestId = requestId;
         return response;
     }
 
-    public static <T> ApiEnvelope<T> error(String errorCode, String message, String userMessage, String sessionId) {
+    public static <T> ApiEnvelope<T> error(String errorCode, String message, String userMessage, String requestId) {
         ApiEnvelope<T> response = new ApiEnvelope<>();
         response.success = false;
         response.error = errorCode;
         response.message = message;
         response.userMessage = userMessage;
         response.timestamp = OffsetDateTime.now().toString();
-        response.sessionId = sessionId;
+        response.requestId = requestId;
         return response;
     }
 }

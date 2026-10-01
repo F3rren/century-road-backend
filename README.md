@@ -500,6 +500,7 @@ Variables, in each service's *Variables* tab (the Raw Editor takes them all at o
 
 ```
 # auth-service
+AUTH_PORT=8081
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
 SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
 SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
@@ -507,6 +508,7 @@ JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
 JWT_EXPIRATION_MS=86400000
 
 # history-service
+HISTORY_PORT=8082
 WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
 # Same Postgres service as auth-service, but its own database (note the _history
 # suffix, appended to whatever Postgres.PGDATABASE actually is) - real SQL-level

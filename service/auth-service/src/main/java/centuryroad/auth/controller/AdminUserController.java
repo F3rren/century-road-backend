@@ -65,10 +65,6 @@ public class AdminUserController {
                 this.userService = userService;
         }
 
-        private String sessionId() {
-                return RequestCorrelationFilter.current();
-        }
-
         @Operation(summary = "Create a user", description = "The role defaults to `user`. The new account is enabled.")
         @ApiResponse(responseCode = "201", description = "The user was created.")
         @ApiResponse(responseCode = "400", description = "The request is not valid: a missing or malformed email, a "
@@ -80,7 +76,7 @@ public class AdminUserController {
                 User user = authService.register(request);
                 return new ResponseEntity<>(
                                 ApiEnvelope.success("Utente registrato con successo dall'amministratore",
-                                                new UserRegisterAck(user), sessionId()),
+                                                new UserRegisterAck(user), RequestCorrelationFilter.current()),
                                 HttpStatus.CREATED);
         }
 
@@ -93,7 +89,7 @@ public class AdminUserController {
                                 .collect(Collectors.toList());
                 return ResponseEntity.ok(
                                 ApiEnvelope.success("Lista utenti recuperata con successo", new UserListPayload(users),
-                                                sessionId()));
+                                                RequestCorrelationFilter.current()));
         }
 
         @Operation(summary = "Update a user", description = """
@@ -110,7 +106,7 @@ public class AdminUserController {
                 User updated = authService.updateUser(id, request);
                 return ResponseEntity.ok(
                                 ApiEnvelope.success("Utente aggiornato con successo dall'amministratore",
-                                                new UserUpdateAck(updated), sessionId()));
+                                                new UserUpdateAck(updated), RequestCorrelationFilter.current()));
         }
 
         @Operation(summary = "Delete a user", description = "Permanent: the account cannot be recovered.")
@@ -125,6 +121,6 @@ public class AdminUserController {
                 }
                 userService.deleteById(id);
                 return ResponseEntity.ok(ApiEnvelope.success("Utente eliminato con successo",
-                                new DeletedUserResponse(id), sessionId()));
+                                new DeletedUserResponse(id), RequestCorrelationFilter.current()));
         }
 }

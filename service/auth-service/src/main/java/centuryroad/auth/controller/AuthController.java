@@ -60,10 +60,6 @@ public class AuthController {
                 this.loginAttemptLimiter = loginAttemptLimiter;
         }
 
-        private String sessionId() {
-                return RequestCorrelationFilter.current();
-        }
-
         @Operation(summary = "Log in with email and password", description = """
                         Returns an access token, a JWT to send afterwards as `Authorization: Bearer <token>`, and
                         a refresh token to renew it with.
@@ -116,7 +112,7 @@ public class AuthController {
                 String refreshToken = refreshTokenService.issue(user.getId());
 
                 LoginPayload payload = new LoginPayload(token, refreshToken, UserSummaryDto.of(user));
-                return ResponseEntity.ok(ApiEnvelope.success("Login effettuato con successo", payload, sessionId()));
+                return ResponseEntity.ok(ApiEnvelope.success("Login effettuato con successo", payload, RequestCorrelationFilter.current()));
         }
 
         @Operation(summary = "Exchange a refresh token for a new access token", description = """
@@ -144,7 +140,7 @@ public class AuthController {
                 String newRefreshToken = refreshTokenService.issue(user.getId());
 
                 return ResponseEntity.ok(ApiEnvelope.success("Token aggiornato",
-                                new RefreshPayload(newToken, newRefreshToken), sessionId()));
+                                new RefreshPayload(newToken, newRefreshToken), RequestCorrelationFilter.current()));
         }
 
         @Operation(summary = "Sign out by revoking a refresh token", description = """
@@ -156,6 +152,6 @@ public class AuthController {
         public ResponseEntity<ApiEnvelope<Void>> logout(@Valid @RequestBody RefreshTokenRequest request) {
                 refreshTokenService.revoke(request.refreshToken());
                 return ResponseEntity.status(HttpStatus.OK)
-                                .body(ApiEnvelope.success("Logout effettuato", null, sessionId()));
+                                .body(ApiEnvelope.success("Logout effettuato", null, RequestCorrelationFilter.current()));
         }
 }
