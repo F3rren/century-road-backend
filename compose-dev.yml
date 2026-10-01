@@ -197,6 +197,7 @@ services:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}
       GF_USERS_ALLOW_SIGN_UP:     "false"
+      ALERT_WEBHOOK_URL: ${ALERT_WEBHOOK_URL:?set a development webhook URL in .env.dev}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro
