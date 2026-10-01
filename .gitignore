@@ -19,3 +19,6 @@ infra/prometheus/data/
 # OS
 .DS_Store
 Thumbs.db
+
+# graphify (local knowledge-graph cache, contains machine-specific paths)
+graphify-out/
