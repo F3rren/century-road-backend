@@ -4,12 +4,15 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.annotation.EnableScheduling;
 
 // @EnableAsync backs ViewStatsService's @Async methods: view counting runs off the request
 // thread, so a database hiccup there can never slow down or fail an on-this-day answer.
+// @EnableScheduling backs TimelineIndexer's nightly pass over the year.
 @SpringBootApplication
 @ConfigurationPropertiesScan
 @EnableAsync
+@EnableScheduling
 public class HistoryServiceApplication {
 
     public static void main(String[] args) {

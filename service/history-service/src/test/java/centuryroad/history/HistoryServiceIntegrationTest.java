@@ -1,5 +1,7 @@
 package centuryroad.history;
 
+import centuryroad.history.model.Language;
+import centuryroad.history.service.TimelineIndexer;
 import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
@@ -14,6 +16,7 @@ import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.context.DynamicPropertyRegistry;
 import org.springframework.test.context.DynamicPropertySource;
 
+import java.time.MonthDay;
 import java.util.List;
 import java.util.Map;
 
@@ -41,13 +44,29 @@ class HistoryServiceIntegrationTest {
     // resolves the @DynamicPropertySource value while it builds the context.
     private static final FakeWikipedia wikipedia = FakeWikipedia.start();
 
+    // Days of their own for the country index, so its extra requests never touch the
+    // request counts other tests make on 10/16.
+    private static final String ROME_PAGE = """
+            {"titles":{"normalized":"Roma"},"content_urls":{"desktop":{"page":"https://it.wikipedia.org/wiki/Roma"}},
+             "coordinates":{"lat":41.9028,"lon":12.4964}}""";
+
     static {
         wikipedia.reply(IT_10_16, FakeWikipedia.Reply.json(Fixtures.text("it-10-16.json")));
         wikipedia.reply(EN_10_16, FakeWikipedia.Reply.json(Fixtures.text("en-10-16.json")));
+        wikipedia.reply("/it/api/rest_v1/feed/onthisday/all/08/08", FakeWikipedia.Reply.json("""
+                {"selected":[],"events":[{"text":"Evento di prova a Roma.","year":1951,"pages":[%s]}],
+                 "births":[],"deaths":[],"holidays":[]}""".formatted(ROME_PAGE)));
+        wikipedia.reply("/it/api/rest_v1/feed/onthisday/all/08/09", FakeWikipedia.Reply.json("""
+                {"selected":[{"text":"In evidenza a Roma.","year":1952,"pages":[%s]}],
+                 "events":[{"text":"Evento senza luogo.","year":1953,"pages":[]}],
+                 "births":[],"deaths":[],"holidays":[]}""".formatted(ROME_PAGE)));
     }
 
     @Autowired
     private TestRestTemplate rest;
+
+    @Autowired
+    private TimelineIndexer timelineIndexer;
 
     @AfterAll
     static void stopFakeWikipedia() {
@@ -219,5 +238,30 @@ class HistoryServiceIntegrationTest {
                 .contains("history_feed");
         assertThat(get("/actuator/metrics").getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
         assertThat(get("/actuator/info").getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
+    }
+
+    // ----- the country index -------------------------------------------------------------
+
+    @Test
+    void anIndexedDayIsServedByCountry_throughTheRealDatabase() {
+        // No test transaction here: replaceDay's own @Transactional is what lets its
+        // DELETE run at all.
+        assertThat(timelineIndexer.indexDay(Language.IT, MonthDay.of(8, 8))).isTrue();
+
+        ResponseEntity<String> countries = get("/api/history/countries?lang=it");
+        assertThat((List<String>) read(countries, "$.data[*].countryCode")).contains("IT");
+
+        ResponseEntity<String> timeline = get("/api/history/countries/IT/timeline?lang=it&fromYear=1951&toYear=1951");
+        assertThat(timeline.getStatusCode()).isEqualTo(HttpStatus.OK);
+        assertThat((List<String>) read(timeline, "$.data.events[*].text")).containsExactly("Evento di prova a Roma.");
+        assertThat((Integer) read(timeline, "$.data.events[0].day")).isEqualTo(8);
+    }
+
+    @Test
+    void featuredEntriesNeverReachTheIndex() {
+        timelineIndexer.indexDay(Language.IT, MonthDay.of(8, 9));
+
+        ResponseEntity<String> timeline = get("/api/history/countries/IT/timeline?lang=it&fromYear=1952&toYear=1953");
+        assertThat((List<?>) read(timeline, "$.data.events")).isEmpty();
     }
 }

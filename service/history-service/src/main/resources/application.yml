@@ -63,6 +63,18 @@ history:
     retry-wait: 300ms
     breaker-open-duration: 30s
 
+  timeline:
+    # The nightly pass that builds the country index: all 366 days in both editions, one
+    # request at a time. A pass takes a little over an hour (72 minutes measured: ~5 s per
+    # feed plus the delay below), so it starts at midnight UTC and ends well before
+    # Railway's 02:00-06:00 update window. Six-field Spring cron, read in UTC; "-" switches the job
+    # off, the build at startup included.
+    cron: "0 0 0 * * *"
+    # Pause between two requests to Wikipedia.
+    delay: 1s
+    # Stop a pass after this many days in a row could not be refreshed.
+    max-consecutive-failures: 10
+
 management:
   endpoints:
     web:

@@ -25,7 +25,7 @@ public class OpenApiConfig {
          * not the
          * artifact's version, which says nothing to somebody reading the documentation.
          */
-        private static final String API_VERSION = "0.1";
+        private static final String API_VERSION = "0.2";
 
         @Bean
         OpenAPI historyOpenApi() {
@@ -33,7 +33,8 @@ public class OpenApiConfig {
                                 .info(new Info()
                                                 .title("Century Road - history-service")
                                                 .version(API_VERSION)
-                                                .description("What happened on a calendar day, from Wikipedia's \"On this day\" feed. "
+                                                .description("What happened on a calendar day, from Wikipedia's \"On this day\" feed, "
+                                                                + "and, per country, across the whole year. "
                                                                 + "Public: no token, nothing per-user. The text is Wikipedia's, under CC BY-SA 4.0: "
                                                                 + "whatever shows it must credit Wikipedia, link the article and name the licence "
                                                                 + "(the answer carries `attribution` for that).")
