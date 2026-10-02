@@ -204,11 +204,12 @@ nothing publishes them in production. Set them on the production host:
 ```
 GATEWAY_PORT=12129
 AUTH_PORT=12130
+HISTORY_PORT=12131
 ```
 
-Those two variables are all there is to change. The proxy, the gateway (which routes to
-`auth-service`), Prometheus and every healthcheck read them, so nothing else needs editing.
-`history-service` stays on 8082.
+Those three variables are all there is to change. The proxy, the gateway (which routes to
+both `auth-service` and `history-service`), Prometheus and every healthcheck read them, so
+nothing else needs editing.
 
 **The ports published on the host.** Only these, and they move on the host side alone:
 
@@ -498,9 +499,14 @@ What to know before switching it on:
 
 Variables, in each service's *Variables* tab (the Raw Editor takes them all at once):
 
+Changing `AUTH_PORT` or `HISTORY_PORT` on a running service also needs its healthcheck
+target port updated to match (Settings -> Networking), even though neither service has a
+public domain - Railway still probes that port internally, and a mismatch fails the deploy
+and silently keeps the previous revision running on the old port instead.
+
 ```
 # auth-service
-AUTH_PORT=8081
+AUTH_PORT=12130
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
 SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
 SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
@@ -508,7 +514,7 @@ JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
 JWT_EXPIRATION_MS=86400000
 
 # history-service
-HISTORY_PORT=8082
+HISTORY_PORT=12131
 WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
 # Same Postgres service as auth-service, but its own database (note the _history
 # suffix, appended to whatever Postgres.PGDATABASE actually is) - real SQL-level
@@ -523,8 +529,12 @@ SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
 
 # gateway
 SPRING_PROFILES_INCLUDE=railway
-AUTH_SERVICE_URI=http://auth-service.railway.internal:8081
-HISTORY_SERVICE_URI=http://history-service.railway.internal:8082
+AUTH_SERVICE_URI=http://auth-service.railway.internal:12130
+HISTORY_SERVICE_URI=http://history-service.railway.internal:12131
+# GATEWAY_PORT/PORT must stay 8080: it is the target port the gateway's
+# public domain is wired to (Settings -> Networking), independent of
+# AUTH_PORT/HISTORY_PORT above, which are private-network only. Changing
+# it here without also changing that target port fails the healthcheck.
 GATEWAY_PORT=8080
 PORT=8080
 FRONTEND_ORIGIN=https://<the frontend's public domain>
