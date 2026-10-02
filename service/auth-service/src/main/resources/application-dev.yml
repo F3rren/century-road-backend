@@ -1,0 +1,28 @@
+server:
+  # Convenient local port; override it with AUTH_PORT if needed.
+  port: ${AUTH_PORT:8081}
+
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+
+spring:
+  jpa:
+    properties:
+      hibernate:
+        format_sql: true
+
+  devtools:
+    restart:
+      enabled: true
+
+springdoc:
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    centuryroad: DEBUG
+    org.hibernate.SQL: DEBUG
+    org.hibernate.orm.jdbc.bind: OFF

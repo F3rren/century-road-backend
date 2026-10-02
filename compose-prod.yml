@@ -88,12 +88,13 @@ services:
     restart: unless-stopped
     environment:
       SPRING_PROFILES_ACTIVE: prod
+      HISTORY_PORT: ${HISTORY_PORT:?set HISTORY_PORT in .env}
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}_history
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
     healthcheck:
-      test: ["CMD", "curl", "-fsS", "http://localhost:8082/actuator/health"]
+      test: ["CMD", "curl", "-fsS", "http://localhost:${HISTORY_PORT:?set HISTORY_PORT in .env}/actuator/health"]
       interval: 15s
       timeout: 5s
       retries: 5
@@ -116,7 +117,7 @@ services:
       SPRING_PROFILES_ACTIVE: prod
       GATEWAY_PORT:           ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
       AUTH_SERVICE_URI:       http://auth-service:${AUTH_PORT:?set AUTH_PORT in .env}
-      HISTORY_SERVICE_URI:    http://history-service:8082
+      HISTORY_SERVICE_URI: http://history-service:${HISTORY_PORT:?set HISTORY_PORT in .env}
       # The exact origin the frontend is served from. Without it the gateway answers CORS
       # preflights for the default (http://localhost:5173) only, and a real frontend is
       # refused by the browser before it reaches the API.
@@ -162,7 +163,7 @@ services:
   #
   # The version is written here, not in .env, so Dependabot can see it and propose bumps.
   prometheus:
-    image: prom/prometheus:v3.14.0
+    image: prom/prometheus:v3.15.0
     restart: unless-stopped
     environment:
       AUTH_PORT:    ${AUTH_PORT:?set AUTH_PORT in .env}

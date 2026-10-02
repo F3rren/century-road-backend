@@ -12,8 +12,10 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
- * The request id has to reach three places at once - the response header, the MDC and
- * current() - and has to be gone from the last two by the time the thread is handed to
+ * The request id has to reach three places at once - the response header, the
+ * MDC and
+ * current() - and has to be gone from the last two by the time the thread is
+ * handed to
  * the next request, or a pooled thread would go on logging somebody else's id.
  */
 class RequestCorrelationFilterUnitTest {
@@ -59,8 +61,7 @@ class RequestCorrelationFilterUnitTest {
             throw new IOException("upstream blew up");
         };
 
-        assertThatThrownBy(() ->
-                filter.doFilter(new MockHttpServletRequest(), new MockHttpServletResponse(), throwing))
+        assertThatThrownBy(() -> filter.doFilter(new MockHttpServletRequest(), new MockHttpServletResponse(), throwing))
                 .isInstanceOf(IOException.class);
 
         assertThat(MDC.get("requestId")).isNull();

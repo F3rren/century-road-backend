@@ -1,7 +1,9 @@
 # Environment: .env is production (compose-prod.yml), .env.dev is development (compose-dev.yml).
 # Only the .example files are committed.
 .env
+.env.prod
 .env.dev
+.env.local
 
 # Maven
 service/*/target/
@@ -18,3 +20,6 @@ infra/prometheus/data/
 # OS
 .DS_Store
 Thumbs.db
+
+# graphify (local knowledge-graph cache, contains machine-specific paths)
+graphify-out/

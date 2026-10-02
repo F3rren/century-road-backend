@@ -11,8 +11,11 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-/** What a protected route answers when no valid token was presented - in this
- *  project's own envelope, not Spring Security's default WWW-Authenticate-only 401. */
+/**
+ * What a protected route answers when no valid token was presented - in this
+ * project's own envelope, not Spring Security's default WWW-Authenticate-only
+ * 401.
+ */
 @Component
 public class ApiAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
@@ -24,7 +27,7 @@ public class ApiAuthenticationEntryPoint implements AuthenticationEntryPoint {
 
     @Override
     public void commence(HttpServletRequest request, HttpServletResponse response,
-                          AuthenticationException authException) throws IOException {
+            AuthenticationException authException) throws IOException {
         response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         ApiEnvelope<Void> body = ApiEnvelope.error("UNAUTHENTICATED", "Authentication required",

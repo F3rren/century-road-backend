@@ -1,0 +1,28 @@
+# Test-only values, never used outside this profile. The secret is long
+# enough for HS256 (32+ decoded bytes); it signs no token exposed outside tests.
+jwt:
+  secret: "Y2VudHVyeS1yb2FkLXRlc3Qtc2VjcmV0LWF0LWxlYXN0LTMyLWJ5dGVzLWxvbmctZm9yLWhzMjU2"
+  expiration-ms: 3600000
+
+# Intentionally low so rate-limiter tests do not need dozens of requests
+# to reach the limit.
+auth:
+  rate-limit:
+    max-attempts: 3
+    window-ms: 60000
+
+# Disabled unless a test explicitly sets both values. Otherwise, a full
+# application context started with an empty users table could create an admin.
+bootstrap:
+  admin:
+    email: ""
+    password: ""
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: validate
+
+logging:
+  level:
+    root: WARN

@@ -21,17 +21,25 @@ import java.util.Map;
 import java.util.Set;
 
 /**
- * Answers a query, and is the single place that decides what to do when Wikipedia's answer
+ * Answers a query, and is the single place that decides what to do when
+ * Wikipedia's answer
  * is not what was asked for. The rules, in one paragraph:
  *
- * Take each requested section from the language asked for. A section that language has no
- * entries for - the Italian feed has no births or deaths at all - is filled from the
- * fallback language instead, and marked as such so the caller can say so. If the language
- * asked for cannot be fetched at all, every section comes from the fallback. Only when
- * neither can be reached does the request fail, with the failure of the language asked for.
+ * Take each requested section from the language asked for. A section that
+ * language has no
+ * entries for - the Italian feed has no births or deaths at all - is filled
+ * from the
+ * fallback language instead, and marked as such so the caller can say so. If
+ * the language
+ * asked for cannot be fetched at all, every section comes from the fallback.
+ * Only when
+ * neither can be reached does the request fail, with the failure of the
+ * language asked for.
  *
- * The decision to fall back looks at what Wikipedia returned, never at what is left after
- * the year filter: "nothing happened in 1200 on this day" is an answer, not a gap to fill
+ * The decision to fall back looks at what Wikipedia returned, never at what is
+ * left after
+ * the year filter: "nothing happened in 1200 on this day" is an answer, not a
+ * gap to fill
  * from another language.
  */
 @Service
@@ -73,7 +81,8 @@ public class OnThisDayService {
         if (fallback.succeeded() && !fallback.entries(section).isEmpty()) {
             meters.counter("history.fallback", "section", section.key(),
                     "reason", primary.failed() ? "primary_failed" : "section_empty").increment();
-            return new SectionResult(fallback.language(), true, fallback.stale(), years.apply(fallback.entries(section)));
+            return new SectionResult(fallback.language(), true, fallback.stale(),
+                    years.apply(fallback.entries(section)));
         }
         // Empty in every language that could be reached: report it as what it is.
         Load shown = primary.succeeded() ? primary : fallback;
@@ -98,7 +107,10 @@ public class OnThisDayService {
         }
     }
 
-    /** The outcome of trying one language. All three fields null means "not attempted". */
+    /**
+     * The outcome of trying one language. All three fields null means "not
+     * attempted".
+     */
     private record Load(Language language, FeedCache.Served served, UpstreamException failure) {
 
         static Load skipped() {

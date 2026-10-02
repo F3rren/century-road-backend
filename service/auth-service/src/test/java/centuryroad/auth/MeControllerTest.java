@@ -25,13 +25,16 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * /api/me - the caller's own profile, which had no test at all. The property worth
- * pinning down is the one the controller's javadoc claims: it answers from the current
- * database row rather than from the claims the token happens to carry, so a change an
+ * /api/me - the caller's own profile, which had no test at all. The property
+ * worth
+ * pinning down is the one the controller's javadoc claims: it answers from the
+ * current
+ * database row rather than from the claims the token happens to carry, so a
+ * change an
  * admin makes is visible without waiting for the token to expire.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Import({TestcontainersConfiguration.class, RestTemplateTestConfiguration.class})
+@Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
 class MeControllerTest {
 

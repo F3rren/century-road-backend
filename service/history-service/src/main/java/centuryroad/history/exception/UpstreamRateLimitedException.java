@@ -4,8 +4,12 @@ import lombok.Getter;
 
 import java.time.Duration;
 
-/** Wikipedia answered 429, or we are still inside the cool-down that answer started.
- *  retryAfter is how long to stay away, which the handler passes on as Retry-After. */
+/**
+ * Wikipedia answered 429, or we are still inside the cool-down that answer
+ * started.
+ * retryAfter is how long to stay away, which the handler passes on as
+ * Retry-After.
+ */
 @Getter
 public class UpstreamRateLimitedException extends UpstreamException {
 

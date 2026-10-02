@@ -9,9 +9,14 @@ import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-/** How many times a calendar day's page has been viewed, in total. Written only through
- *  DayViewCounterRepository's atomic upsert - never via save(), so this entity carries no
- *  setters; the all-args constructor exists for tests to build a result row directly. */
+/**
+ * How many times a calendar day's page has been viewed, in total. Written only
+ * through
+ * DayViewCounterRepository's atomic upsert - never via save(), so this entity
+ * carries no
+ * setters; the all-args constructor exists for tests to build a result row
+ * directly.
+ */
 @Entity
 @Table(schema = "history", name = "day_views")
 @IdClass(DayViewCounterId.class)

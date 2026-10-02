@@ -13,8 +13,10 @@ import reactor.netty.DisposableServer;
 import reactor.netty.http.server.HttpServer;
 
 /**
- * What a deployment gets unless somebody switches documentation on: no page, no document, and
- * no route to the services' own documents. The gateway is the one public address in production,
+ * What a deployment gets unless somebody switches documentation on: no page, no
+ * document, and
+ * no route to the services' own documents. The gateway is the one public
+ * address in production,
  * so a service's API description must not be reachable through it by accident.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)

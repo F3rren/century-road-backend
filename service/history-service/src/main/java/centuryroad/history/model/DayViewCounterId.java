@@ -6,8 +6,11 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
-/** The composite key of DayViewCounter: a calendar day, month then day, the same order the
- *  on-this-day API's own path uses. */
+/**
+ * The composite key of DayViewCounter: a calendar day, month then day, the same
+ * order the
+ * on-this-day API's own path uses.
+ */
 @EqualsAndHashCode
 @NoArgsConstructor
 @AllArgsConstructor

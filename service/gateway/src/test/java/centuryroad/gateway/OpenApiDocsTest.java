@@ -16,13 +16,16 @@ import reactor.netty.http.client.HttpClient;
 import reactor.netty.http.server.HttpServer;
 
 /**
- * The gateway serves one Swagger UI for every service. Each service publishes its own OpenAPI
- * document at /v3/api-docs, on a network the browser cannot reach in production, so the gateway
- * relays it: /docs/{service}/v3/api-docs is the service's /v3/api-docs. Stubs stand in for the
+ * The gateway serves one Swagger UI for every service. Each service publishes
+ * its own OpenAPI
+ * document at /v3/api-docs, on a network the browser cannot reach in
+ * production, so the gateway
+ * relays it: /docs/{service}/v3/api-docs is the service's /v3/api-docs. Stubs
+ * stand in for the
  * services, the way GatewayRoutingTest does.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = { "springdoc.api-docs.enabled=true", "springdoc.swagger-ui.enabled=true" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
+		"springdoc.api-docs.enabled=true", "springdoc.swagger-ui.enabled=true" })
 class OpenApiDocsTest {
 
 	private static DisposableServer stub(String name) {
@@ -36,7 +39,8 @@ class OpenApiDocsTest {
 				.bindNow();
 	}
 
-	// Static initializers, not @BeforeAll: they must be listening before Spring resolves
+	// Static initializers, not @BeforeAll: they must be listening before Spring
+	// resolves
 	// @DynamicPropertySource while it builds the context.
 	private static final DisposableServer authServiceStub = stub("auth-service");
 	private static final DisposableServer historyServiceStub = stub("history-service");
@@ -109,8 +113,10 @@ class OpenApiDocsTest {
 
 	@Test
 	void theInteractivePageIsServed() {
-		// /swagger-ui.html redirects to the page proper, so follow it like a browser does.
-		WebTestClient browser = WebTestClient.bindToServer(new ReactorClientHttpConnector(HttpClient.create().followRedirect(true)))
+		// /swagger-ui.html redirects to the page proper, so follow it like a browser
+		// does.
+		WebTestClient browser = WebTestClient
+				.bindToServer(new ReactorClientHttpConnector(HttpClient.create().followRedirect(true)))
 				.baseUrl("http://localhost:" + gatewayPort)
 				.build();
 
@@ -119,7 +125,8 @@ class OpenApiDocsTest {
 				.exchange()
 				.expectStatus().isOk()
 				.expectHeader().contentTypeCompatibleWith(MediaType.TEXT_HTML)
-				.expectBody(String.class).value(body -> org.assertj.core.api.Assertions.assertThat(body).contains("swagger-ui"));
+				.expectBody(String.class)
+				.value(body -> org.assertj.core.api.Assertions.assertThat(body).contains("swagger-ui"));
 	}
 
 	@Test

@@ -1,0 +1,88 @@
+spring:
+  application:
+    name: history-service
+
+  # This service uses the "history" schema in the PostgreSQL instance
+  # shared with auth-service. Connection details come from the environment.
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  # Flyway changes the schema; Hibernate only validates it.
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+  # Keep migrations and Flyway's history table in this service's schema.
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+    schemas: history
+
+  # Use the production profile when none is explicitly active.
+  profiles:
+    default: prod
+
+server:
+  # Responses can reach roughly 100 KB on days with many births.
+  compression:
+    enabled: true
+    mime-types: application/json
+    min-response-size: 2KB
+
+history:
+  # Use this edition when the requested edition lacks a section or fails.
+  fallback-language: en
+
+  cache:
+    # Serve fresh entries without another Wikipedia request; retain older
+    # entries temporarily if a refresh fails.
+    fresh-ttl: 6h
+    max-stale: 7d
+    max-entries: 800
+
+  wikipedia:
+    # Contact is required so the operator can be reached.
+    host-template: "https://{lang}.wikipedia.org"
+    client-name: CenturyRoad-History/0.1
+    contact: ${WIKIMEDIA_CONTACT}
+    connect-timeout: 2s
+    read-timeout: 5s
+    max-body-bytes: 8388608
+    default-cooldown: 5s
+    max-cooldown: 10m
+
+  resilience:
+    max-concurrent-calls: 3
+    bulkhead-max-wait: 1s
+    retry-attempts: 2
+    retry-wait: 300ms
+    breaker-open-duration: 30s
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,prometheus
+  endpoint:
+    health:
+      show-details: when-authorized
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+# The gateway serves Swagger UI. Enable this service's OpenAPI document
+# explicitly when needed; the dev profile enables it below.
+springdoc:
+  api-docs:
+    enabled: false
+  default-produces-media-type: application/json
+
+logging:
+  level:
+    root: INFO

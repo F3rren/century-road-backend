@@ -1,0 +1,14 @@
+server:
+  # The production environment must provide AUTH_PORT.
+  port: ${AUTH_PORT}
+
+  # Do not expose internal details in error responses.
+  error:
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never
+
+  # Trust forwarded headers only when auth-service is reachable through
+  # the intended proxy and gateway chain. Untrusted clients must not be
+  # able to supply the headers used to determine their apparent address.
+  forward-headers-strategy: framework

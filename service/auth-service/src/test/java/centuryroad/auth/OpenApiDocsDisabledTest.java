@@ -12,12 +12,15 @@ import org.springframework.test.context.ActiveProfiles;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * What a deployment gets unless somebody switches documentation on: nothing, and no way to
- * read it without a token either. This service authenticates every route but the ones that
- * hand out tokens, and the documentation route is only opened when the documentation is on.
+ * What a deployment gets unless somebody switches documentation on: nothing,
+ * and no way to
+ * read it without a token either. This service authenticates every route but
+ * the ones that
+ * hand out tokens, and the documentation route is only opened when the
+ * documentation is on.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Import({TestcontainersConfiguration.class, RestTemplateTestConfiguration.class})
+@Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
 class OpenApiDocsDisabledTest {
 

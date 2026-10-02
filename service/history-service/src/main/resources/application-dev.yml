@@ -1,0 +1,22 @@
+server:
+  # Local default; override it with HISTORY_PORT if needed.
+  port: ${HISTORY_PORT:8082}
+
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+# The gateway's Swagger UI can read this service's OpenAPI document.
+springdoc:
+  api-docs:
+    enabled: true
+
+logging:
+  level:
+    centuryroad: DEBUG

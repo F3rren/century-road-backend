@@ -12,9 +12,12 @@ import java.util.Optional;
 import java.util.Set;
 
 /**
- * What the caller asked for, validated. Wikipedia does no validation of its own - it answers
- * 200 with empty lists for 13/40 and for 30 February - so every check that matters happens
- * here, before anything is sent upstream. MonthDay accepts 29 February, which is right: the
+ * What the caller asked for, validated. Wikipedia does no validation of its own
+ * - it answers
+ * 200 with empty lists for 13/40 and for 30 February - so every check that
+ * matters happens
+ * here, before anything is sent upstream. MonthDay accepts 29 February, which
+ * is right: the
  * feed has entries for it.
  */
 public record OnThisDayQuery(MonthDay day, Language language, Set<Section> sections, YearRange years) {
@@ -27,7 +30,7 @@ public record OnThisDayQuery(MonthDay day, Language language, Set<Section> secti
     }
 
     public static OnThisDayQuery of(int month, int day, String lang, List<String> types,
-                                    Integer year, Integer fromYear, Integer toYear) {
+            Integer year, Integer fromYear, Integer toYear) {
         return new OnThisDayQuery(parseDay(month, day), parseLanguage(lang), parseSections(types),
                 parseYears(year, fromYear, toYear));
     }
