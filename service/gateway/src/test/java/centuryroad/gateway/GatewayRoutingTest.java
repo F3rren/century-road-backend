@@ -49,6 +49,7 @@ class GatewayRoutingTest {
 	static void routeToStubs(DynamicPropertyRegistry registry) {
 		registry.add("AUTH_SERVICE_URI", () -> "http://localhost:" + authServiceStub.port());
 		registry.add("HISTORY_SERVICE_URI", () -> "http://localhost:" + historyServiceStub.port());
+		registry.add("FRONTEND_ORIGIN", () -> "http://localhost:5173");
 	}
 
 	@AfterAll

@@ -64,6 +64,7 @@ class ClientAddressTest {
 	@DynamicPropertySource
 	static void routeToTheStub(DynamicPropertyRegistry registry) {
 		registry.add("AUTH_SERVICE_URI", () -> "http://localhost:" + authServiceStub.port());
+		registry.add("HISTORY_SERVICE_URI", () -> "http://localhost:" + authServiceStub.port());
 	}
 
 	@AfterAll

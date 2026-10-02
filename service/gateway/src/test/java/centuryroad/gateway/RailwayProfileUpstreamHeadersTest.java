@@ -39,6 +39,7 @@ class RailwayProfileUpstreamHeadersTest {
 	@DynamicPropertySource
 	static void routeToTheStub(DynamicPropertyRegistry registry) {
 		registry.add("AUTH_SERVICE_URI", () -> "http://localhost:" + upstream.port());
+		registry.add("HISTORY_SERVICE_URI", () -> "http://localhost:" + upstream.port());
 	}
 
 	@AfterAll
