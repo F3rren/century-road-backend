@@ -32,7 +32,8 @@ public final class TestSupport {
                 new HistoryProperties.Cache(FRESH_TTL, MAX_STALE, 100),
                 wikipediaSettings(),
                 new HistoryProperties.Resilience(3, Duration.ofMillis(50), 2, Duration.ofMillis(1),
-                        Duration.ofSeconds(30)));
+                        Duration.ofSeconds(30)),
+                new HistoryProperties.Timeline("-", Duration.ZERO, 3));
     }
 
     public static Entry entry(String text, Integer year) {

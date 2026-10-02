@@ -24,7 +24,8 @@ public record HistoryProperties(
         @NotNull Language fallbackLanguage,
         @Valid @NotNull Cache cache,
         @Valid @NotNull Wikipedia wikipedia,
-        @Valid @NotNull Resilience resilience) {
+        @Valid @NotNull Resilience resilience,
+        @Valid @NotNull Timeline timeline) {
 
     /**
      * freshTtl: how long a copy is served without asking Wikipedia again. maxStale:
@@ -66,5 +67,14 @@ public record HistoryProperties(
             @Positive int retryAttempts,
             @NotNull Duration retryWait,
             @NotNull Duration breakerOpenDuration) {
+    }
+
+    /**
+     * The nightly pass that builds the country index (TimelineIndexer). cron is a six-field
+     * Spring expression read in UTC, or "-" to switch the job off, the build at startup
+     * included. delay spaces two requests to Wikipedia; maxConsecutiveFailures stops a pass
+     * that keeps failing instead of grinding through every remaining day.
+     */
+    public record Timeline(@NotBlank String cron, @NotNull Duration delay, @Positive int maxConsecutiveFailures) {
     }
 }

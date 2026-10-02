@@ -28,7 +28,7 @@ browser ──HTTPS──▶ proxy (Caddy) ──HTTP──▶ gateway ─┬─
 Only the proxy is public in production. The gateway, the services, and Postgres talk over the internal Compose network and are never reachable from outside. Prometheus/Grafana are loopback-only even in production (SSH tunnel to reach them).
 
 - **`auth-service`** — owns identity: users, login, the JWTs every other service will eventually verify offline.
-- **`history-service`** — answers "what happened on this date", proxying and caching Wikipedia's On This Day feed; also owns the anonymous, aggregate day/country view counters.
+- **`history-service`** — answers "what happened on this date", proxying and caching Wikipedia's On This Day feed; keeps a nightly per-country index of every day's events; also owns the anonymous, aggregate day/country view counters.
 - **`gateway`** (Spring Cloud Gateway, reactive/WebFlux) — the single entry point; pure routing + CORS + OpenAPI-doc relay, no business logic and no database of its own.
 
 ## Data model
@@ -44,6 +44,8 @@ Each service that has state owns its own Postgres **database** within the one sh
 - `country_views` — `country_code VARCHAR(2) PRIMARY KEY CHECK (country_code ~ '^[A-Z]{2}$')` (ISO 3166-1 alpha-2), `view_count BIGINT DEFAULT 0`.
 
 Both counter tables are purely anonymous and aggregate — no visitor identifier of any kind, incremented via an atomic Postgres upsert (`INSERT ... ON CONFLICT DO UPDATE SET view_count = view_count + 1`), never a read-modify-write, so concurrent requests can't lose an increment.
+
+- `timeline_events` (`V2__create_timeline_events.sql`) — the country index: `id BIGSERIAL PK`, `language VARCHAR(2) CHECK IN ('it','en')`, `month`/`day SMALLINT` (same checks as `day_views`), `year INTEGER`, `country_code VARCHAR(2)` (same check as `country_views`), `text TEXT`, `indexed_at TIMESTAMPTZ`, all `NOT NULL`. Indexed on `(language, country_code, year, month, day)`, the order the timeline is read in. Derived data only — Wikipedia's text and a country computed from it, nothing about users — so `TRUNCATE` is always safe; the service rebuilds it. Written a whole day at a time (`replaceDay`: delete that language/day, insert its rows, one transaction), so readers never see a day half-written.
 
 `gateway` has no `db/migration` — it is entirely stateless.
 
@@ -68,6 +70,8 @@ On Railway, which doesn't run custom Postgres init scripts, the `${POSTGRES_DB}_
 | auth-service | GET | `/api/me` | bearer, any role |
 | auth-service | POST/GET/PUT/DELETE | `/api/admin/users[/{id}]` | bearer, `ROLE_ADMIN` |
 | history-service | GET | `/api/history/on-this-day/{month}/{day}` | public |
+| history-service | GET | `/api/history/countries` | public |
+| history-service | GET | `/api/history/countries/{code}/timeline` | public |
 | history-service | GET | `/api/history/stats/{days,countries}` | public |
 | history-service | POST | `/api/history/track/country/{code}` | public |
 
@@ -78,6 +82,7 @@ service/
 ├── auth-service/       controller/ dto/ exception/ model/ repository/ security/ service/ config/ util/
 ├── gateway/             flat package — routing/CORS config only, no controllers of its own
 └── history-service/     controller/ dto/ exception/ model/ query/ repository/ service/ wikipedia/ config/
+                         (+ resources/geo/: the Natural Earth country shapes CountryLocator reads)
 infra/
 ├── caddy/               Caddyfile (prod TLS/HSTS reverse proxy)
 ├── grafana/              provisioning: datasource, one dashboard, alerting/ (rules, contact
@@ -129,6 +134,14 @@ GHCR-only setup. `ignore-unfixed: true` is deliberate: a HIGH/CRITICAL CVE in a 
 no available fix should not keep the job red indefinitely.
 
 **`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`.
+
+**The country index is built ahead of time, every night, not answered per request.** Wikipedia's feed comes one day at a time, so "every Italian event" is 366 requests per edition. Answering it on demand would cost a reader minutes and Wikipedia 732 requests per question. Keeping a whole year in `FeedCache` instead (Caffeine, 800 entries, evicted by count only) would pin roughly 250–400 MB of heap with every section of every day, to serve a page that needs one section. So `TimelineIndexer` walks the year once a night, keeps only what the page reads (placed events: text, date, country), and writes it to `timeline_events`. It calls `WikipediaFeedClient` directly, so it shares the resilience chain (bulkhead, retry, breaker, the 429 cool-down) but never fills the cache users are served from. The cost is freshness: the index can be a day behind Wikipedia.
+
+**Countries are found with `java.awt.geom.Path2D` on a hash-pinned copy of the frontend's shapes, not with JTS or PostGIS.** The index must place an event exactly where the frontend's map does (turf.js, Natural Earth 1:110m), or the two would disagree about the same event. `CountryLocator` reads the very same file (Natural Earth v3.3.0, its SHA-256 checked by `CountryLocatorTest`) and applies the same rules: the first linked page with coordinates decides, countries without an ISO code (`-99`) are skipped, the first shape in file order wins. One even-odd `Path2D` per country handles holes (Lesotho inside South Africa); on a 1° grid over the whole world it disagrees with turf at no point. JTS would be a new dependency for the same answer. PostGIS would be a database extension for 177 polygons, and nothing installs it on the history database, here or on Railway. The catch: `java.awt` lives in the `java.desktop` module, so the runtime image must stay a full JRE (`eclipse-temurin:21-jre`). A jlink'd or trimmed runtime fails at startup, when the locator is built.
+
+**One JVM runs the job, and an `AtomicBoolean` is its only lock.** The nightly cron and the build at startup can meet (a restart near midnight); the flag turns the second into a no-op. It cannot stop two replicas from each running a pass, which would double the requests and could write a day twice, since each day is a delete then an insert. Railway runs one replica. ShedLock, a lock row in Postgres, is the upgrade the day it runs two.
+
+**The pass reads the full `all` feed, though Wikipedia's events-only feed is about 3.4× smaller** (68 KB against 227 KB for one day, measured). `all` is what `WikipediaFeedClient` and its parser already fetch, test and harden; a second request shape would mean a second parser to keep right, for a job that runs at midnight with nobody waiting on it. Worth switching if the pass ever has to be shorter or lighter.
 
 ## Deployment and environments
 
