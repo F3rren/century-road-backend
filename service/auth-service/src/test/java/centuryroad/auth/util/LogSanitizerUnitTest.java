@@ -5,8 +5,10 @@ import org.junit.jupiter.api.Test;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * The masking that keeps personal data out of the logs. Every branch here is a case the
- * class javadoc promises never throws: a logging helper that fails would take the
+ * The masking that keeps personal data out of the logs. Every branch here is a
+ * case the
+ * class javadoc promises never throws: a logging helper that fails would take
+ * the
  * caller's flow down with it, over nothing more than a line of output.
  */
 class LogSanitizerUnitTest {

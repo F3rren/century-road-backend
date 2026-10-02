@@ -18,10 +18,13 @@ import java.io.IOException;
 import java.util.List;
 
 /**
- * Reads the bearer token, verifies it, and populates the SecurityContext - offline,
- * without ever calling another service. A missing or invalid token simply leaves the
+ * Reads the bearer token, verifies it, and populates the SecurityContext -
+ * offline,
+ * without ever calling another service. A missing or invalid token simply
+ * leaves the
  * context empty rather than rejecting the request here: SecurityConfig's
- * .anyRequest().authenticated() is what turns "nobody authenticated" into a 401, via
+ * .anyRequest().authenticated() is what turns "nobody authenticated" into a
+ * 401, via
  * ApiAuthenticationEntryPoint, on whichever routes actually require it.
  */
 @Component
@@ -37,12 +40,13 @@ public class JwtAuthFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response,
-                                     @NonNull FilterChain filterChain) throws ServletException, IOException {
+            @NonNull FilterChain filterChain) throws ServletException, IOException {
         String header = request.getHeader("Authorization");
         if (header != null && header.startsWith(PREFIX)) {
             AppPrincipal principal = jwtVerifier.verify(header.substring(PREFIX.length()));
             if (principal != null) {
-                List<GrantedAuthority> authorities = List.of(new SimpleGrantedAuthority(principal.role().toAuthority()));
+                List<GrantedAuthority> authorities = List
+                        .of(new SimpleGrantedAuthority(principal.role().toAuthority()));
                 var authentication = new UsernamePasswordAuthenticationToken(principal, null, authorities);
                 SecurityContextHolder.getContext().setAuthentication(authentication);
             }

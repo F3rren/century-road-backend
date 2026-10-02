@@ -7,11 +7,16 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 
 /**
- * A simple in-memory rate limiter on login attempts, keyed by "ip|email" so one address
- * exhausting its quota does not lock out somebody else typing the same address by
- * coincidence. In-memory and per-instance on purpose: this service does not run more
- * than one replica yet, and a shared store (Redis) is the upgrade to make the day it
- * does, not before - see the classroom-backend project's own note on the same tradeoff.
+ * A simple in-memory rate limiter on login attempts, keyed by "ip|email" so one
+ * address
+ * exhausting its quota does not lock out somebody else typing the same address
+ * by
+ * coincidence. In-memory and per-instance on purpose: this service does not run
+ * more
+ * than one replica yet, and a shared store (Redis) is the upgrade to make the
+ * day it
+ * does, not before - see the classroom-backend project's own note on the same
+ * tradeoff.
  */
 @Component
 public class LoginAttemptLimiter {
@@ -27,7 +32,9 @@ public class LoginAttemptLimiter {
         this.windowMs = windowMs;
     }
 
-    /** Returns the seconds to wait before retrying, or 0 if the attempt may proceed. */
+    /**
+     * Returns the seconds to wait before retrying, or 0 if the attempt may proceed.
+     */
     public long checkAndRecord(String key) {
         long now = System.currentTimeMillis();
         Attempts attempts = attemptsByKey.compute(key, (k, existing) -> {
@@ -49,9 +56,13 @@ public class LoginAttemptLimiter {
         attemptsByKey.remove(key);
     }
 
-    /** Drops every counter at once. This bean is a singleton for the whole application
-     *  context, so an integration test that trips the limiter leaves it tripped for
-     *  whichever test runs next - clearing the database between tests does not undo it. */
+    /**
+     * Drops every counter at once. This bean is a singleton for the whole
+     * application
+     * context, so an integration test that trips the limiter leaves it tripped for
+     * whichever test runs next - clearing the database between tests does not undo
+     * it.
+     */
     public void clear() {
         attemptsByKey.clear();
     }

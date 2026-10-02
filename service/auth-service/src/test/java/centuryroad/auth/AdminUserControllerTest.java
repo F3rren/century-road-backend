@@ -27,11 +27,13 @@ import java.util.Objects;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Admin-only user management, and the one property every response here has to keep:
- * the password never appears, in a list of many users just as much as in a single one.
+ * Admin-only user management, and the one property every response here has to
+ * keep:
+ * the password never appears, in a list of many users just as much as in a
+ * single one.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Import({TestcontainersConfiguration.class, RestTemplateTestConfiguration.class})
+@Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
 class AdminUserControllerTest {
 
@@ -52,7 +54,8 @@ class AdminUserControllerTest {
 
     @BeforeEach
     void setUp() throws Exception {
-        // Every test here logs in during setup: see AuthControllerTest.setUp for why the
+        // Every test here logs in during setup: see AuthControllerTest.setUp for why
+        // the
         // limiter has to be cleared rather than just the database.
         loginAttemptLimiter.clear();
         userRepository.deleteAll();
@@ -186,8 +189,10 @@ class AdminUserControllerTest {
 
     @Test
     void deletingAUserRemovesItAndDeletingAgainAnswers404() {
-        ResponseEntity<String> firstDelete = call("/api/admin/users/" + regularUserId, HttpMethod.DELETE, adminToken, null);
-        ResponseEntity<String> secondDelete = call("/api/admin/users/" + regularUserId, HttpMethod.DELETE, adminToken, null);
+        ResponseEntity<String> firstDelete = call("/api/admin/users/" + regularUserId, HttpMethod.DELETE, adminToken,
+                null);
+        ResponseEntity<String> secondDelete = call("/api/admin/users/" + regularUserId, HttpMethod.DELETE, adminToken,
+                null);
 
         assertThat(firstDelete.getStatusCode()).isEqualTo(HttpStatus.OK);
         assertThat(secondDelete.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);

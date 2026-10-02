@@ -11,13 +11,15 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.netty.DisposableServer;
 
 /**
- * HSTS starts at five minutes on purpose, so that a broken certificate in the first rollout
- * cannot lock browsers out for long, and HSTS_MAX_AGE is what raises it once HTTPS has been
- * stable. The same variable the proxy reads, so there is one knob whichever way it is deployed.
+ * HSTS starts at five minutes on purpose, so that a broken certificate in the
+ * first rollout
+ * cannot lock browsers out for long, and HSTS_MAX_AGE is what raises it once
+ * HTTPS has been
+ * stable. The same variable the proxy reads, so there is one knob whichever way
+ * it is deployed.
  */
-@SpringBootTest(
-		webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-		properties = { "spring.profiles.include=railway", "HSTS_MAX_AGE=31536000" })
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
+		"spring.profiles.include=railway", "HSTS_MAX_AGE=31536000" })
 @ActiveProfiles("prod")
 class RailwayProfileHstsTest {
 
@@ -29,6 +31,7 @@ class RailwayProfileHstsTest {
 	@DynamicPropertySource
 	static void routeToTheStub(DynamicPropertyRegistry registry) {
 		registry.add("AUTH_SERVICE_URI", () -> "http://localhost:" + upstream.port());
+		registry.add("HISTORY_SERVICE_URI", () -> "http://localhost:" + upstream.port());
 	}
 
 	@AfterAll

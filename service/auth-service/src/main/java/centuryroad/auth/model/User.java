@@ -18,9 +18,12 @@ import lombok.ToString;
 import java.time.OffsetDateTime;
 
 /**
- * The one identity every other Century Road service will eventually verify a token
- * against. This entity is never returned directly by a controller - see UserSummaryDto -
- * and password is WRITE_ONLY on top of that, so even a future mistake that did return
+ * The one identity every other Century Road service will eventually verify a
+ * token
+ * against. This entity is never returned directly by a controller - see
+ * UserSummaryDto -
+ * and password is WRITE_ONLY on top of that, so even a future mistake that did
+ * return
  * the entity would not serialise the hash into a response.
  */
 @Entity
@@ -29,7 +32,7 @@ import java.time.OffsetDateTime;
 @Setter
 @NoArgsConstructor
 @ToString(onlyExplicitlyIncluded = true)
-@JsonIgnoreProperties({"hibernateLazyInitializer", "handler"})
+@JsonIgnoreProperties({ "hibernateLazyInitializer", "handler" })
 public class User {
 
     @Id

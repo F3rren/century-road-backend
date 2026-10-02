@@ -14,8 +14,10 @@ import java.util.Base64;
 import java.util.Optional;
 
 /**
- * Issues, rotates and revokes refresh tokens. The raw value is handed to the caller
- * exactly once, at issuing time, and never again - only its SHA-256 hash is stored,
+ * Issues, rotates and revokes refresh tokens. The raw value is handed to the
+ * caller
+ * exactly once, at issuing time, and never again - only its SHA-256 hash is
+ * stored,
  * exactly like User.password.
  */
 @Service
@@ -43,10 +45,14 @@ public class RefreshTokenService {
         return rawToken;
     }
 
-    /** Verifies the raw token, revokes it, and returns the user id it belonged to - or
-     *  empty if it is unknown, expired or already revoked. Single-use by design: a
-     *  refresh call always rotates, so a stolen-and-replayed old token stops working the
-     *  moment the legitimate client refreshes once. */
+    /**
+     * Verifies the raw token, revokes it, and returns the user id it belonged to -
+     * or
+     * empty if it is unknown, expired or already revoked. Single-use by design: a
+     * refresh call always rotates, so a stolen-and-replayed old token stops working
+     * the
+     * moment the legitimate client refreshes once.
+     */
     public Optional<Long> rotate(String rawToken) {
         Optional<RefreshToken> found = refreshTokenRepository.findByTokenHash(hash(rawToken));
         if (found.isEmpty()) {

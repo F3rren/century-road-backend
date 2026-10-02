@@ -11,9 +11,12 @@ import org.springframework.test.web.reactive.server.WebTestClient;
 import reactor.netty.DisposableServer;
 
 /**
- * The gateway as the VPS runs it, with no railway profile: Prometheus scrapes the metrics over
- * the internal network on the same port as the API, and Caddy is the one adding headers. Nothing
- * the railway profile does may leak into this one, or the stack that works today changes.
+ * The gateway as the VPS runs it, with no railway profile: Prometheus scrapes
+ * the metrics over
+ * the internal network on the same port as the API, and Caddy is the one adding
+ * headers. Nothing
+ * the railway profile does may leak into this one, or the stack that works
+ * today changes.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("prod")
@@ -27,6 +30,7 @@ class WithoutRailwayProfileTest {
 	@DynamicPropertySource
 	static void routeToTheStub(DynamicPropertyRegistry registry) {
 		registry.add("AUTH_SERVICE_URI", () -> "http://localhost:" + upstream.port());
+		registry.add("HISTORY_SERVICE_URI", () -> "http://localhost:" + upstream.port());
 	}
 
 	@AfterAll

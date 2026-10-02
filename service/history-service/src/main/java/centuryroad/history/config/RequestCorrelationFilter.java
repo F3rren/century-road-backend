@@ -14,11 +14,16 @@ import java.io.IOException;
 import java.security.SecureRandom;
 
 /**
- * Mints a request id and makes it available two ways: in the MDC, so every log line for this
- * request carries it, and on the response header, so a client and a person reading logs can
- * correlate the same request. GlobalExceptionHandler reads the same id via current(), which
- * is what lets an error response and its log line share one value. Same filter, same header
- * and same id format as auth-service, so a request can be followed across services.
+ * Mints a request id and makes it available two ways: in the MDC, so every log
+ * line for this
+ * request carries it, and on the response header, so a client and a person
+ * reading logs can
+ * correlate the same request. GlobalExceptionHandler reads the same id via
+ * current(), which
+ * is what lets an error response and its log line share one value. Same filter,
+ * same header
+ * and same id format as auth-service, so a request can be followed across
+ * services.
  */
 @Component
 @Order(1)
@@ -31,8 +36,11 @@ public class RequestCorrelationFilter extends OncePerRequestFilter {
 
     private static final ThreadLocal<String> CURRENT = new ThreadLocal<>();
 
-    /** The id of the request being served on this thread, or a fallback if called outside
-     *  one - never null, so callers never need a null check just to log something. */
+    /**
+     * The id of the request being served on this thread, or a fallback if called
+     * outside
+     * one - never null, so callers never need a null check just to log something.
+     */
     public static String current() {
         String id = CURRENT.get();
         return id != null ? id : "REQ_00000000";
@@ -40,7 +48,7 @@ public class RequestCorrelationFilter extends OncePerRequestFilter {
 
     @Override
     protected void doFilterInternal(@NonNull HttpServletRequest request, @NonNull HttpServletResponse response,
-                                     @NonNull FilterChain filterChain) throws ServletException, IOException {
+            @NonNull FilterChain filterChain) throws ServletException, IOException {
         String id = "REQ_" + randomHex(8);
         CURRENT.set(id);
         MDC.put(MDC_KEY, id);

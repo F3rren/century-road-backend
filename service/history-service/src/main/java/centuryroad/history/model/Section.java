@@ -4,8 +4,11 @@ import java.util.Arrays;
 import java.util.Optional;
 import java.util.stream.Collectors;
 
-/** The five lists Wikipedia's On this day feed is made of. The key is both the name
- *  Wikipedia uses in its response and the name this service uses in its own. */
+/**
+ * The five lists Wikipedia's On this day feed is made of. The key is both the
+ * name
+ * Wikipedia uses in its response and the name this service uses in its own.
+ */
 public enum Section {
 
     SELECTED("selected"),

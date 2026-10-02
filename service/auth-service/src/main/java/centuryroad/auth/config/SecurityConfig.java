@@ -13,11 +13,16 @@ import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 /**
- * The security chain: stateless (a JWT carries everything a request needs, so there is
- * no session to keep), CSRF disabled (CSRF matters for cookie-based sessions a browser
- * attaches automatically; a bearer token in an Authorization header is never attached
- * that way, so there is nothing for CSRF protection to defend here), and every route
- * authenticated except the ones that hand out or renew a token in the first place.
+ * The security chain: stateless (a JWT carries everything a request needs, so
+ * there is
+ * no session to keep), CSRF disabled (CSRF matters for cookie-based sessions a
+ * browser
+ * attaches automatically; a bearer token in an Authorization header is never
+ * attached
+ * that way, so there is nothing for CSRF protection to defend here), and every
+ * route
+ * authenticated except the ones that hand out or renew a token in the first
+ * place.
  */
 @Configuration
 @EnableWebSecurity
@@ -30,8 +35,8 @@ public class SecurityConfig {
     private final boolean apiDocsEnabled;
 
     public SecurityConfig(JwtAuthFilter jwtAuthFilter, ApiAuthenticationEntryPoint authenticationEntryPoint,
-                           ApiAccessDeniedHandler accessDeniedHandler,
-                           @Value("${springdoc.api-docs.enabled:false}") boolean apiDocsEnabled) {
+            ApiAccessDeniedHandler accessDeniedHandler,
+            @Value("${springdoc.api-docs.enabled:false}") boolean apiDocsEnabled) {
         this.jwtAuthFilter = jwtAuthFilter;
         this.authenticationEntryPoint = authenticationEntryPoint;
         this.accessDeniedHandler = accessDeniedHandler;

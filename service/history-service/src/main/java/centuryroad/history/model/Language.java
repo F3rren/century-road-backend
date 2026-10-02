@@ -7,10 +7,14 @@ import java.util.Optional;
 import java.util.stream.Collectors;
 
 /**
- * The Wikipedia editions this service talks to. An enum rather than a configurable list
- * because the code ends up in a hostname (it.wikipedia.org): a fixed set means a caller
- * can never steer the request at a host of their choosing, and adding a language is a
- * deliberate act. It also deserves a look at how complete that edition's feed is - the
+ * The Wikipedia editions this service talks to. An enum rather than a
+ * configurable list
+ * because the code ends up in a hostname (it.wikipedia.org): a fixed set means
+ * a caller
+ * can never steer the request at a host of their choosing, and adding a
+ * language is a
+ * deliberate act. It also deserves a look at how complete that edition's feed
+ * is - the
  * Italian one, for instance, carries no births or deaths at all.
  */
 public enum Language {

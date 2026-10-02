@@ -12,10 +12,14 @@ import org.springframework.stereotype.Component;
 import java.time.OffsetDateTime;
 
 /**
- * Creates the first administrator on startup, but ONLY if the users table is empty and
- * ONLY if both bootstrap.admin.* values are set - on any other database, or with either
- * left blank, the mechanism is inert. Without this there would be no way to create the
- * first admin at all: user creation itself requires an admin token. Clear both variables
+ * Creates the first administrator on startup, but ONLY if the users table is
+ * empty and
+ * ONLY if both bootstrap.admin.* values are set - on any other database, or
+ * with either
+ * left blank, the mechanism is inert. Without this there would be no way to
+ * create the
+ * first admin at all: user creation itself requires an admin token. Clear both
+ * variables
  * after the first login.
  */
 @Slf4j
@@ -28,8 +32,8 @@ public class FirstAdminBootstrap implements CommandLineRunner {
     private final String adminPassword;
 
     public FirstAdminBootstrap(UserRepository userRepository, PasswordEncoder passwordEncoder,
-                                @Value("${bootstrap.admin.email:}") String adminEmail,
-                                @Value("${bootstrap.admin.password:}") String adminPassword) {
+            @Value("${bootstrap.admin.email:}") String adminEmail,
+            @Value("${bootstrap.admin.password:}") String adminPassword) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
         this.adminEmail = adminEmail;

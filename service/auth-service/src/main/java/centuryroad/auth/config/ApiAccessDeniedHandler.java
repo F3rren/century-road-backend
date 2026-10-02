@@ -11,8 +11,11 @@ import org.springframework.stereotype.Component;
 
 import java.io.IOException;
 
-/** What an authenticated caller without the right role gets - 403 in this project's
- *  envelope, the counterpart of ApiAuthenticationEntryPoint's 401. */
+/**
+ * What an authenticated caller without the right role gets - 403 in this
+ * project's
+ * envelope, the counterpart of ApiAuthenticationEntryPoint's 401.
+ */
 @Component
 public class ApiAccessDeniedHandler implements AccessDeniedHandler {
 
@@ -24,7 +27,7 @@ public class ApiAccessDeniedHandler implements AccessDeniedHandler {
 
     @Override
     public void handle(HttpServletRequest request, HttpServletResponse response,
-                        AccessDeniedException accessDeniedException) throws IOException {
+            AccessDeniedException accessDeniedException) throws IOException {
         response.setStatus(HttpServletResponse.SC_FORBIDDEN);
         response.setContentType(MediaType.APPLICATION_JSON_VALUE);
         ApiEnvelope<Void> body = ApiEnvelope.error("ACCESS_DENIED", "Insufficient privileges",

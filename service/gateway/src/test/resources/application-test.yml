@@ -1,0 +1,4 @@
+# Shared configuration for gateway tests only.
+logging:
+  level:
+    root: WARN

@@ -1,0 +1,57 @@
+spring:
+  application:
+    name: auth-service
+
+  # Database connection details are supplied by the environment.
+  datasource:
+    url: ${SPRING_DATASOURCE_URL}
+    username: ${SPRING_DATASOURCE_USERNAME}
+    password: ${SPRING_DATASOURCE_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+
+  # Flyway changes the schema; Hibernate only validates it.
+  jpa:
+    hibernate:
+      ddl-auto: validate
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    open-in-view: false
+
+  flyway:
+    locations: classpath:db/migration
+    baseline-on-migrate: false
+
+  # Use the production profile when no active profile is specified.
+  profiles:
+    default: prod
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info,prometheus,metrics
+  endpoint:
+    health:
+      show-details: when-authorized
+  prometheus:
+    metrics:
+      export:
+        enabled: true
+
+jwt:
+  # Neither the signing secret nor token lifetime has a fallback.
+  secret: ${JWT_SECRET}
+  expiration-ms: ${JWT_EXPIRATION_MS}
+
+bootstrap:
+  admin:
+    email: ${BOOTSTRAP_ADMIN_EMAIL:}
+    password: ${BOOTSTRAP_ADMIN_PASSWORD:}
+
+springdoc:
+  api-docs:
+    enabled: false
+  default-produces-media-type: application/json
+
+logging:
+  level:
+    root: INFO

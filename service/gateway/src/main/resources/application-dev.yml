@@ -1,0 +1,43 @@
+server:
+  # Local default; override it with GATEWAY_PORT if needed.
+  port: ${GATEWAY_PORT:8080}
+
+  error:
+    include-message: always
+    include-binding-errors: always
+    include-stacktrace: on_param
+
+spring:
+  devtools:
+    restart:
+      enabled: true
+
+  cloud:
+    gateway:
+      # Downstream services can be started individually on the host machine.
+      routes:
+        - id: auth-service
+          uri: ${AUTH_SERVICE_URI:http://localhost:8081}
+          predicates:
+            - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
+
+        - id: history-service
+          uri: ${HISTORY_SERVICE_URI:http://localhost:8082}
+          predicates:
+            - "Path=/api/history/**"
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: ${FRONTEND_ORIGIN:http://localhost:5173}
+
+springdoc:
+  api-docs:
+    enabled: true
+  swagger-ui:
+    enabled: true
+
+logging:
+  level:
+    centuryroad: DEBUG
+    org.springframework.cloud.gateway: DEBUG

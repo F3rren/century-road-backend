@@ -15,12 +15,16 @@ import java.time.MonthDay;
 import java.util.List;
 
 /**
- * Anonymous, aggregate view counting: how many times a calendar day or a country has been
+ * Anonymous, aggregate view counting: how many times a calendar day or a
+ * country has been
  * viewed, in total. No visitor identifier is ever recorded - see the migration.
  *
- * The two record* methods run off the caller's thread (@Async) and never let a database
- * problem surface to it: on-this-day's own answer must never depend on this service's
- * counters being reachable, so a failure here is logged and swallowed, not thrown.
+ * The two record* methods run off the caller's thread (@Async) and never let a
+ * database
+ * problem surface to it: on-this-day's own answer must never depend on this
+ * service's
+ * counters being reachable, so a failure here is logged and swallowed, not
+ * thrown.
  */
 @Service
 public class ViewStatsService {

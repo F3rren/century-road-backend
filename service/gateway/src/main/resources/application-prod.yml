@@ -1,0 +1,40 @@
+server:
+  # The production environment must provide GATEWAY_PORT.
+  port: ${GATEWAY_PORT}
+
+  # Do not expose internal details in error responses.
+  error:
+    include-stacktrace: never
+    include-message: never
+    include-binding-errors: never
+
+  # Trust forwarded headers only when the gateway is reachable through
+  # the intended, trusted ingress chain. The VPS configuration relies on
+  # Caddy overwriting X-Forwarded-* and dropping caller-supplied Forwarded.
+  forward-headers-strategy: framework
+
+spring:
+  cloud:
+    gateway:
+      # Downstream addresses must be supplied by the deployment.
+      # Requests are forwarded without stripping their /api/... paths.
+      routes:
+        - id: auth-service
+          uri: ${AUTH_SERVICE_URI}
+          predicates:
+            - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
+
+        - id: history-service
+          uri: ${HISTORY_SERVICE_URI}
+          predicates:
+            - "Path=/api/history/**"
+
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            # Do not fall back to a development origin in production.
+            allowedOrigins: ${FRONTEND_ORIGIN}
+
+      # This setting was designed for the VPS path behind Caddy.
+      # Its safety must be checked separately for Railway's ingress.
+      trusted-proxies: ".*"

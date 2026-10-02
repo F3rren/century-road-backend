@@ -1,0 +1,32 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Auth Service (dev)",
+      "request": "launch",
+      "mainClass": "centuryroad.auth.AuthServiceApplication",
+      "projectName": "auth-service",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "envFile": "${workspaceFolder}/.env.local"
+    },
+    {
+      "type": "java",
+      "name": "Gateway (dev)",
+      "request": "launch",
+      "mainClass": "centuryroad.gateway.GatewayApplication",
+      "projectName": "gateway",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "envFile": "${workspaceFolder}/.env.local"
+    },
+    {
+      "type": "java",
+      "name": "History Service (dev)",
+      "request": "launch",
+      "mainClass": "centuryroad.history.HistoryServiceApplication",
+      "projectName": "history-service",
+      "vmArgs": "-Dspring.profiles.active=dev",
+      "envFile": "${workspaceFolder}/.env.local"
+    }
+  ]
+}

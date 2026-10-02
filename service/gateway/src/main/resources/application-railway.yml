@@ -1,0 +1,20 @@
+# Add this profile alongside prod with SPRING_PROFILES_INCLUDE=railway.
+# Railway terminates TLS; Caddy is not present in this deployment.
+
+management:
+  endpoints:
+    web:
+      # The gateway exposes Actuator on the public API port.
+      exposure:
+        include: health
+
+spring:
+  cloud:
+    gateway:
+      # Replace downstream security headers on proxied responses.
+      # These filters do not cover the gateway's own responses.
+      default-filters:
+        - "SetResponseHeader=Strict-Transport-Security, max-age=${HSTS_MAX_AGE:300}; includeSubDomains"
+        - "SetResponseHeader=X-Content-Type-Options, nosniff"
+        - "SetResponseHeader=X-Frame-Options, DENY"
+        - "SetResponseHeader=Referrer-Policy, no-referrer"

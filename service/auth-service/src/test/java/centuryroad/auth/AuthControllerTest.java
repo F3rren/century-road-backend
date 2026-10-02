@@ -22,12 +22,14 @@ import java.util.Map;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * Login, refresh and logout against a real Postgres via Testcontainers - the constraint
- * on email uniqueness and the actual password hash comparison are exactly what an H2 or
+ * Login, refresh and logout against a real Postgres via Testcontainers - the
+ * constraint
+ * on email uniqueness and the actual password hash comparison are exactly what
+ * an H2 or
  * mocked run would not really exercise.
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
-@Import({TestcontainersConfiguration.class, RestTemplateTestConfiguration.class})
+@Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
 class AuthControllerTest {
 

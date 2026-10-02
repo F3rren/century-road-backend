@@ -9,8 +9,10 @@ import java.util.Base64;
 
 /**
  * Builds the one SecretKey every signing and verification operation uses, from
- * jwt.secret. Accepts either base64 alphabet, standard ('+' and '/') or url-safe
- * ('-' and '_'): "openssl rand -base64 48" produces standard base64, and a secret
+ * jwt.secret. Accepts either base64 alphabet, standard ('+' and '/') or
+ * url-safe
+ * ('-' and '_'): "openssl rand -base64 48" produces standard base64, and a
+ * secret
  * containing '/' decoded as url-safe has already broken a sibling project once.
  */
 @Component

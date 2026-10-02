@@ -20,7 +20,8 @@ class XForwardedOnlyHeaderTransformerTest {
 				.remoteAddress(new InetSocketAddress(PROXY_ADDRESS, 40000));
 	}
 
-	// getHostString and not getAddress: the address taken from a forwarding header is not
+	// getHostString and not getAddress: the address taken from a forwarding header
+	// is not
 	// resolved, so getAddress() is null for it.
 	private static String remoteHostOf(ServerHttpRequest request) {
 		return request.getRemoteAddress().getHostString();

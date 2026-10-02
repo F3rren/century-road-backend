@@ -24,14 +24,16 @@ import java.util.Objects;
 import static org.assertj.core.api.Assertions.assertThat;
 
 /**
- * The OpenAPI document this service publishes when documentation is switched on. Two tests
- * matter for the future: one walks the endpoints the application really has and fails for
- * any the document lacks, and one fails for any field of any answer with no description, so a
+ * The OpenAPI document this service publishes when documentation is switched
+ * on. Two tests
+ * matter for the future: one walks the endpoints the application really has and
+ * fails for
+ * any the document lacks, and one fails for any field of any answer with no
+ * description, so a
  * new endpoint cannot be added undocumented.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
-        properties = "springdoc.api-docs.enabled=true")
-@Import({TestcontainersConfiguration.class, RestTemplateTestConfiguration.class})
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "springdoc.api-docs.enabled=true")
+@Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
 class OpenApiDocsTest {
 
@@ -118,8 +120,8 @@ class OpenApiDocsTest {
 
     @Test
     void everyAdminOperationDeclaresThatItNeedsALoginAndTheAdminRole() throws Exception {
-        for (String[] endpoint : new String[][]{{"get", "/api/admin/users"}, {"post", "/api/admin/users"},
-                {"put", "/api/admin/users/{id}"}, {"delete", "/api/admin/users/{id}"}}) {
+        for (String[] endpoint : new String[][] { { "get", "/api/admin/users" }, { "post", "/api/admin/users" },
+                { "put", "/api/admin/users/{id}" }, { "delete", "/api/admin/users/{id}" } }) {
             assertThat(responseCodes(operation(endpoint[0], endpoint[1])))
                     .as("%s %s", endpoint[0], endpoint[1]).contains("401", "403");
         }
@@ -137,11 +139,12 @@ class OpenApiDocsTest {
     void everyAnswerIsDeclaredAsJson_notAsAnything() throws Exception {
         List<String> notJson = new ArrayList<>();
 
-        spec().path("paths").fields().forEachRemaining(path -> path.getValue().fields().forEachRemaining(method ->
-                method.getValue().path("responses").fields().forEachRemaining(response ->
-                        response.getValue().path("content").fieldNames().forEachRemaining(mediaType -> {
+        spec().path("paths").fields().forEachRemaining(path -> path.getValue().fields()
+                .forEachRemaining(method -> method.getValue().path("responses").fields().forEachRemaining(
+                        response -> response.getValue().path("content").fieldNames().forEachRemaining(mediaType -> {
                             if (!"application/json".equals(mediaType)) {
-                                notJson.add(method.getKey() + " " + path.getKey() + " " + response.getKey() + " " + mediaType);
+                                notJson.add(method.getKey() + " " + path.getKey() + " " + response.getKey() + " "
+                                        + mediaType);
                             }
                         }))));
 
@@ -152,7 +155,7 @@ class OpenApiDocsTest {
     void passwordsAreMarkedAsPasswordsAndAsWriteOnly() throws Exception {
         JsonNode schemas = spec().path("components").path("schemas");
 
-        for (String schema : new String[]{"LoginRequest", "CreateUserRequest", "UpdateUserRequest"}) {
+        for (String schema : new String[] { "LoginRequest", "CreateUserRequest", "UpdateUserRequest" }) {
             JsonNode password = schemas.path(schema).path("properties").path("password");
             assertThat(password.path("format").asText()).as(schema + ".password format").isEqualTo("password");
             assertThat(password.path("writeOnly").asBoolean()).as(schema + ".password writeOnly").isTrue();
@@ -160,13 +163,16 @@ class OpenApiDocsTest {
     }
 
     @Test
-    void noPatternUsesJavaRegexFlagsThatJavaScriptCannotRead_becauseAClientGeneratorWouldChokeOnThem() throws Exception {
-        // The role is validated with "(?i)admin|user". JSON Schema patterns are ECMAScript, where
-        // "(?i)" is a syntax error, and the allowed values are listed as an enum anyway.
+    void noPatternUsesJavaRegexFlagsThatJavaScriptCannotRead_becauseAClientGeneratorWouldChokeOnThem()
+            throws Exception {
+        // The role is validated with "(?i)admin|user". JSON Schema patterns are
+        // ECMAScript, where
+        // "(?i)" is a syntax error, and the allowed values are listed as an enum
+        // anyway.
         List<String> unreadable = new ArrayList<>();
 
-        spec().path("components").path("schemas").fields().forEachRemaining(schema ->
-                schema.getValue().path("properties").fields().forEachRemaining(property -> {
+        spec().path("components").path("schemas").fields()
+                .forEachRemaining(schema -> schema.getValue().path("properties").fields().forEachRemaining(property -> {
                     String pattern = property.getValue().path("pattern").asText();
                     if (pattern.startsWith("(?")) {
                         unreadable.add(schema.getKey() + "." + property.getKey() + " = " + pattern);
@@ -190,8 +196,8 @@ class OpenApiDocsTest {
     void everyFieldOfEveryRequestAndAnswerIsDescribed_becauseTheNamesAloneDoNotSayWhatTheyMean() throws Exception {
         List<String> undescribed = new ArrayList<>();
 
-        spec().path("components").path("schemas").fields().forEachRemaining(schema ->
-                schema.getValue().path("properties").fields().forEachRemaining(property -> {
+        spec().path("components").path("schemas").fields()
+                .forEachRemaining(schema -> schema.getValue().path("properties").fields().forEachRemaining(property -> {
                     boolean isReference = property.getValue().has("$ref");
                     if (!isReference && property.getValue().path("description").asText().isBlank()) {
                         undescribed.add(schema.getKey() + "." + property.getKey());
@@ -207,7 +213,8 @@ class OpenApiDocsTest {
         List<String> undocumented = new ArrayList<>();
 
         for (Map.Entry<RequestMappingInfo, HandlerMethod> mapping : handlerMapping.getHandlerMethods().entrySet()) {
-            // Only this application's own controllers: Boot's error page and springdoc's own
+            // Only this application's own controllers: Boot's error page and springdoc's
+            // own
             // endpoints are not part of the API.
             if (!mapping.getValue().getBeanType().getName().startsWith("centuryroad.")) {
                 continue;
