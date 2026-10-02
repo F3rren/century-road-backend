@@ -44,7 +44,7 @@ public record OnThisDayQuery(MonthDay day, Language language, Set<Section> secti
         }
     }
 
-    private static Language parseLanguage(String lang) {
+    public static Language parseLanguage(String lang) {
         return Language.fromCode(lang).orElseThrow(() -> new InvalidRequestException(
                 "UNSUPPORTED_LANGUAGE", "Unsupported language",
                 "Lingua non supportata. Lingue disponibili: " + Language.supportedCodes() + "."));
@@ -63,7 +63,7 @@ public record OnThisDayQuery(MonthDay day, Language language, Set<Section> secti
         return sections;
     }
 
-    private static YearRange parseYears(Integer year, Integer fromYear, Integer toYear) {
+    static YearRange parseYears(Integer year, Integer fromYear, Integer toYear) {
         if (year != null && (fromYear != null || toYear != null)) {
             throw invalidYears("year cannot be combined with fromYear/toYear",
                     "Indica un anno preciso oppure un intervallo, non entrambi.");

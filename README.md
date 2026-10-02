@@ -745,8 +745,9 @@ has no value is left out, not sent as `null`.
 #### Filtering by year
 
 The year filter is applied here, not by Wikipedia, which cannot filter by year, so it
-narrows a single day; it cannot answer "everything that happened in 1789". Holidays have no
-year and are left out once a year filter is set.
+narrows a single day; it cannot answer "everything that happened in 1789". For one country
+at a time, the [country index](#events-by-country) can. Holidays have no year and are left
+out once a year filter is set.
 
 | Status | `error` | Meaning |
 |---|---|---|
@@ -755,6 +756,110 @@ year and are left out once a year filter is set.
 | 503 | `UPSTREAM_RATE_LIMITED` | Wikipedia asked us to slow down; `Retry-After` says for how long |
 | 502 | `UPSTREAM_BAD_RESPONSE` | Wikipedia answered with something unusable, e.g. the API has changed |
 
+### Events by country
+
+A day's answer covers one day, and its pages carry coordinates, not countries. For
+"everything Wikipedia lists in Italy" the service keeps a **country index**: every day of the
+year in both editions, with each event placed in a country. Two endpoints read it, public like
+the day's one. Neither calls Wikipedia: they read the database.
+
+`GET /api/history/countries?lang=it` lists the countries with at least one event, by code:
+
+```json
+{ "success": true, "data": [ { "countryCode": "AT", "eventCount": 56 }, { "countryCode": "AU", "eventCount": 54 } ] }
+```
+
+`GET /api/history/countries/{code}/timeline` is one country's events, oldest first:
+
+| Parameter | Meaning | Default |
+|---|---|---|
+| `code` (path) | ISO 3166-1 alpha-2, uppercase: `IT`, not `it` | required |
+| `lang` | `it` or `en` | `it` |
+| `fromYear`, `toYear` | an inclusive range, either end optional; negative before the common era | none |
+
+```bash
+curl 'https://<host>/api/history/countries/IT/timeline?lang=it&fromYear=1901&toYear=2000'
+```
+
+`data` holds the events and the same `attribution` as a day's answer (abridged):
+
+```json
+{
+  "countryCode": "IT",
+  "language": "it",
+  "indexedAt": "2026-10-02T00:41:13.120511Z",
+  "events": [
+    { "year": 1904, "month": 1, "day": 26, "text": "A Torino un incendio distrugge metà del patrimonio della Biblioteca Nazionale" }
+  ]
+}
+```
+
+What is in the index:
+
+- **Events only**, and only those with a year: not the featured selection, births, deaths or
+  holidays.
+- **Placed the way the frontend's map places them.** The first linked page with coordinates
+  decides, inside the same Natural Earth 1:110m country shapes: the very file, which
+  `CountryLocatorTest` checks by its hash. An event whose first located page is at sea, or in a
+  place the dataset has no code for (Kosovo, Somaliland, Northern Cyprus), is left out, and so
+  is one with no located page at all: about half of each day's events (51% placed in a
+  full local pass, 17,516 rows, 4.4 MB).
+- **Each edition on its own**, with no fallback between them. `en` holds about half again as
+  many events as `it` (10,716 against 6,800).
+- **Up to a day behind Wikipedia.** `indexedAt` is when the newest of the returned events was
+  written, and is absent when there are none.
+
+A valid code with nothing indexed is a 200 with no events, not a 404. Both answers are cached
+for five minutes (`Cache-Control: max-age=300, public`): short, because a new index fills while
+it is being read.
+
+| Status | `error` | Meaning |
+|---|---|---|
+| 400 | `INVALID_COUNTRY_CODE`, `UNSUPPORTED_LANGUAGE`, `INVALID_YEAR`, `BAD_REQUEST` | the request cannot be answered |
+
+#### How the index is built
+
+`TimelineIndexer` reads all 366 days (29 February included) in both editions, 732 requests one
+at a time, and replaces each day's rows as soon as that day is read. The table is never emptied
+as a whole, so it always has an answer. The pass runs:
+
+- **every night at 00:00 UTC**, and takes a little over an hour (72 minutes measured), so it
+  is over before Railway's 02:00-06:00 update window;
+- **at startup, when the table is empty**, in the background: the service is up and healthy at
+  once, and the country endpoints fill in as the pass goes.
+
+A day Wikipedia cannot serve keeps the rows it had, and ten such days in a row stop the pass:
+by then the trouble is upstream, and pressing on would only add to it. Expect a few: a
+day's full feed sometimes takes Wikipedia longer than the 5-second read timeout to put
+together (18 of 732 requests in a full local run), and the next night fills it in.
+
+A pass cut short, by a redeploy say, leaves every day it did not reach as it was, so a first build cut short stays
+partial until the next night. `Country index pass done` in the log closes each pass, with
+what it refreshed, kept and wrote.
+
+| Variable | Default | |
+|---|---|---|
+| `HISTORY_TIMELINE_CRON` | `0 0 0 * * *` | when the pass runs: six-field Spring cron, in UTC. `-` switches the job off, the build at startup included |
+| `HISTORY_TIMELINE_DELAY` | `1s` | the pause between two requests |
+| `HISTORY_TIMELINE_MAXCONSECUTIVEFAILURES` | `10` | days in a row that may fail before the pass stops |
+
+**Rebuilding it by hand.** Every row is derived from Wikipedia, so nothing is lost: empty the
+table and restart the service, and it rebuilds the index in the background.
+
+```sql
+TRUNCATE history.timeline_events;
+```
+
+**One instance.** Each running copy of the service runs the pass, so two would double the
+requests and could write a day twice. Railway runs one; before running more, the job needs a
+shared lock (ShedLock, say).
+
+**Releasing it.** The index arrived in 0.5.0, a minor version, so a service on Railway's
+*patches only* stays on 0.4.x until its tag is changed by hand. Its first start applies
+migration `V2`, which only adds the table, and then builds the index. Going back to 0.4.x is
+safe: Flyway leaves alone a migration newer than the ones it knows, and 0.4.x never reads the
+table.
+
 ### Being a good neighbour to Wikipedia
 
 Wikipedia is a shared resource with rules, and this service follows them:
@@ -762,12 +867,16 @@ Wikipedia is a shared resource with rules, and this service follows them:
 - **It says who it is.** Every request carries a `User-Agent` naming the client and
   `WIKIMEDIA_CONTACT`. Wikimedia's policy asks for exactly that, and blocks clients that do
   not, without notice.
-- **It asks rarely.** One entry per language and day, kept six hours. The load on Wikipedia
-  depends on how many *different* days are looked at, not on how many people call: at most
-  one request per language and day every six hours, and a hundred simultaneous callers for
-  the same day cost one request.
-- **It asks gently.** At most three requests in flight, gzip on, one retry for a transient
-  failure, and a circuit breaker that leaves Wikipedia alone after a run of errors.
+- **It asks rarely.** What callers cause is bounded by the cache: one entry per language and
+  day, kept six hours. The load on Wikipedia depends on how many *different* days are looked
+  at, not on how many people call: at most one request per language and day every six hours,
+  and a hundred simultaneous callers for the same day cost one request.
+- **Its own work is bounded too.** The [country index](#how-the-index-is-built) adds one
+  pass a night, whoever calls: 732 requests, one at a time and at least a second apart. It
+  waits out any cool-down Wikipedia has asked for, and stops after ten failures in a row.
+- **It asks gently.** At most three requests in flight (the nightly pass takes one), gzip on,
+  one retry for a transient failure, and a circuit breaker that leaves Wikipedia alone after a
+  run of errors.
 - **It backs off when told to.** After a 429 nothing is sent for as long as `Retry-After`
   says, and callers are answered from cache or the other language in the meantime.
 - **It never follows a redirect**, and the language is a fixed list, so what it contacts is
@@ -792,7 +901,7 @@ which are which.
 ```bash
 cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 224 tests
+cd service/history-service && ./mvnw test    # 274 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -807,9 +916,9 @@ or when the daemon rejects the API version the client asks for. When it shows up
 `Attempted configurations were:` block just above it — it names the real reason for each
 strategy that was tried.
 
-The gateway suite needs no Docker: it stubs its upstream in-process. So does
-`history-service`: its tests talk to a stand-in for Wikipedia on a local port and never
-reach the real one.
+The gateway suite needs no Docker: it stubs its upstream in-process. `history-service` needs
+it for its database, like `auth-service`, but never reaches the real Wikipedia: its tests
+talk to a stand-in on a local port.
 
 ## Observability
 

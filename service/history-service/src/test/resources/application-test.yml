@@ -14,6 +14,11 @@ history:
     retry-wait: 10ms
     bulkhead-max-wait: 50ms
 
+  # Off in tests: a pass would share the circuit breaker, bulkhead and cool-down with the
+  # tests' own requests and break their request counts. TimelineIndexer is tested directly.
+  timeline:
+    cron: "-"
+
 logging:
   level:
     root: WARN

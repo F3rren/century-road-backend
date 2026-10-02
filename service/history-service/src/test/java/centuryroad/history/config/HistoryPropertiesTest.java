@@ -38,7 +38,9 @@ class HistoryPropertiesTest {
                 "history.wikipedia.default-cooldown=5s", "history.wikipedia.max-cooldown=10m",
                 "history.resilience.max-concurrent-calls=3", "history.resilience.bulkhead-max-wait=1s",
                 "history.resilience.retry-attempts=2", "history.resilience.retry-wait=300ms",
-                "history.resilience.breaker-open-duration=30s"));
+                "history.resilience.breaker-open-duration=30s",
+                "history.timeline.cron=0 0 1 * * *", "history.timeline.delay=1s",
+                "history.timeline.max-consecutive-failures=10"));
     }
 
     private static String[] without(String key) {
