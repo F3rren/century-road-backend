@@ -531,12 +531,12 @@ SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
 SPRING_PROFILES_INCLUDE=railway
 AUTH_SERVICE_URI=http://auth-service.railway.internal:12130
 HISTORY_SERVICE_URI=http://history-service.railway.internal:12131
-# GATEWAY_PORT/PORT must stay 8080: it is the target port the gateway's
-# public domain is wired to (Settings -> Networking), independent of
-# AUTH_PORT/HISTORY_PORT above, which are private-network only. Changing
-# it here without also changing that target port fails the healthcheck.
+# GATEWAY_PORT must stay 8080: it is the target port the gateway's public
+# domain is wired to (Settings -> Networking), independent of AUTH_PORT/
+# HISTORY_PORT on the other two services, which are private-network only.
+# Changing it here without also changing that target port fails the
+# healthcheck. The app never reads PORT, only GATEWAY_PORT - no need to set it.
 GATEWAY_PORT=8080
-PORT=8080
 FRONTEND_ORIGIN=https://<the frontend's public domain>
 ```
 
