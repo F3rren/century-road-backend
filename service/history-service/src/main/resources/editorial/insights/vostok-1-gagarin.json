@@ -1,0 +1,55 @@
+{
+  "slug": "vostok-1-gagarin",
+  "title": "Gagarin è il primo essere umano nello spazio",
+  "summary": "Il 12 aprile 1961 Jurij Gagarin compie un'orbita attorno alla Terra a bordo della Vostok 1: è il primo essere umano a viaggiare nello spazio.",
+  "date": {
+    "year": 1961,
+    "month": 4,
+    "day": 12
+  },
+  "place": {
+    "name": "Zona di atterraggio, regione di Saratov, Russia",
+    "lat": 51.27,
+    "lon": 46.0,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Il volo partì da Baikonur, in Kazakistan; il punto sulla mappa indica la zona dell'atterraggio, nella regione di Saratov, ed è approssimato."
+  },
+  "before": "Dopo lo Sputnik il programma sovietico lanciò altri satelliti e sonde. Nel 1957 la cagnetta Laika era stata il primo animale in orbita e, tra il 1960 e il 1961, altri voli di prova con animali precedettero quello con un equipaggio umano. Anche gli Stati Uniti stavano preparando un programma con equipaggio, Mercury: il primo americano nello spazio, Alan Shepard, volò il 5 maggio 1961, poche settimane dopo Gagarin, e solo per un breve tratto, senza completare un'orbita.",
+  "event": "Il 12 aprile 1961 la Vostok 1 partì da Baikonur con a bordo Jurij Gagarin, pilota dell'aeronautica sovietica di 27 anni. La capsula compì un'orbita completa attorno alla Terra e l'intero volo durò 108 minuti. A circa 7 chilometri di quota Gagarin si lanciò con il paracadute, mentre la capsula toccava terra separatamente, vicino al villaggio di Smelovka, nella regione di Saratov.",
+  "after": "Gagarin diventò una celebrità mondiale e il volo mostrò che una persona poteva vivere, per un breve tempo, in assenza di peso. Poco più di sei settimane dopo, il 25 maggio 1961, il presidente statunitense John F. Kennedy propose di portare un uomo sulla Luna entro la fine del decennio: una scelta maturata in un contesto più ampio, con più fattori, ma in cui il successo sovietico ebbe un peso.",
+  "links": [
+    {
+      "slug": "sputnik-1",
+      "reason": "Il lancio da cui parte tutta la storia: il primo satellite, quattro anni prima."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Il traguardo che Kennedy indicò nel 1961 e che fu raggiunto otto anni dopo."
+    },
+    {
+      "slug": "salyut-1",
+      "reason": "Dopo i voli brevi, i primi tentativi di restare nello spazio per settimane."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vostok 1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vostok_1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Yuri Gagarin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yuri_Gagarin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Per alcuni anni l'URSS non rese noto che Gagarin non era atterrato dentro la capsula: le regole internazionali per l'omologazione dei record richiedevano, in quel periodo, che il pilota atterrasse con il suo mezzo."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

@@ -1,0 +1,49 @@
+{
+  "slug": "hubble",
+  "title": "Il telescopio spaziale Hubble",
+  "summary": "Il 24 aprile 1990 lo Space Shuttle Discovery porta in orbita il telescopio spaziale Hubble, che osserva l'universo senza il filtro dell'atmosfera terrestre.",
+  "date": {
+    "year": 1990,
+    "month": 4,
+    "day": 24
+  },
+  "place": {
+    "name": "Kennedy Space Center, Florida, Stati Uniti",
+    "lat": 28.57,
+    "lon": -80.65,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Il telescopio lavora in orbita attorno alla Terra: il punto sulla mappa indica il Kennedy Space Center, da cui fu lanciato con lo Space Shuttle Discovery."
+  },
+  "before": "L'idea di un telescopio in orbita fu proposta già nel 1946 dall'astrofisico Lyman Spitzer: dallo spazio si vedrebbe meglio, perché l'atmosfera assorbe parte della luce e rende le immagini instabili. Il progetto, sostenuto da NASA ed ESA, fu rinviato più volte, anche dopo l'incidente dello Shuttle Challenger nel 1986, che fermò i voli per quasi tre anni.",
+  "event": "Il telescopio, lungo circa 13 metri e con uno specchio principale di 2,4 metri di diametro, fu lanciato il 24 aprile 1990 dallo Shuttle Discovery (missione STS-31) e rilasciato in orbita il giorno dopo. Poco dopo le prime immagini ci si accorse che lo specchio aveva un difetto di fabbricazione, un'aberrazione sferica, che rendeva le immagini sfocate.",
+  "after": "Nel dicembre 1993 una missione di manutenzione con astronauti installò ottiche correttive, e da allora Hubble ha prodotto immagini e dati usati in migliaia di studi: ha contribuito a misurare con più precisione la velocità di espansione dell'universo e ha osservato galassie lontanissime. Ebbe altre quattro missioni di manutenzione, l'ultima nel 2009. Il telescopio James Webb, lanciato nel 2021, lo affianca osservando soprattutto l'infrarosso.",
+  "links": [
+    {
+      "slug": "ariane-1",
+      "reason": "L'altro grande risultato dell'ESA di quegli anni: il lanciatore europeo."
+    },
+    {
+      "slug": "iss-zarya",
+      "reason": "Lo Shuttle che serviva Hubble fu anche il mezzo con cui furono assemblati i moduli della stazione spaziale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hubble Space Telescope - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hubble_Space_Telescope",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Telescopio spaziale Hubble - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Telescopio_spaziale_Hubble",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

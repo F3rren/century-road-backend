@@ -30,7 +30,7 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | `/api/auth/**` | login, token refresh, logout |
 | `/api/me/**` | the caller's own profile |
 | `/api/admin/users/**` | user administration, admin only |
-| `/api/history/**` | [historical events for a date](#history-api), public |
+| `/api/history/**` | [historical events for a date](#history-api), [guided paths and insights](#guided-paths-and-insights), [discovery](#discovery-a-random-event-and-the-same-years-elsewhere), [sources and error reports](#sources-and-reporting-a-mistake), public |
 | `/actuator/health` | liveness, public. Every other `/actuator/*` path is a 404 at the proxy |
 
 ## Contents
@@ -860,6 +860,160 @@ migration `V2`, which only adds the table, and then builds the index. Going back
 safe: Flyway leaves alone a migration newer than the ones it knows, and 0.4.x never reads the
 table.
 
+### Guided paths and insights
+
+Wikipedia's feed says *what* happened on a day. Three endpoints say *why it matters* and
+*where to start*, from content written by hand and kept in this repository. None of them asks
+Wikipedia or the database, so they answer even when Wikipedia does not. Everything is in
+Italian, and cached for an hour: it only changes with a release.
+
+| Endpoint | Answers |
+|---|---|
+| `GET /api/history/start-here` | "Inizia da qui": a few hand-picked paths and events, each with a sentence on why to open it |
+| `GET /api/history/paths` | every guided path as a card: title, one sentence, cover, reading time, number of stops |
+| `GET /api/history/paths/{slug}` | one path: introduction and its stops in order, each with the place for the map to move to |
+| `GET /api/history/insights?month=&day=` | the events that have an insight, optionally those of one day |
+| `GET /api/history/insights/{slug}` | "Perché conta" for one event |
+
+**A path** is a small itinerary of 6 to 10 stops, not a category. A stop carries its `place`
+(`lat`, `lon`, for the map), its `date`, and `narrative`: the line that ties it to the stop
+before. Opening a stop is a second request, `GET /api/history/insights/{slug}` with the stop's
+`slug`, so a path stays small. `readingMinutes` is counted from the words at 200 a minute, never
+written by hand. The cover, when there is one, is an image from Wikimedia Commons, with its file
+page to credit.
+
+**An insight** is told in three parts, as the product asks: `before` (what prepared the event),
+`event` (what happened) and `after` (what followed - developments, not all direct effects).
+Around them: `related`, two or three insights to read next (the data for "Continua a
+esplorare"); `inPaths`, the paths that have a stop on it; `sources`, links where each claim can
+be checked; `notes`, caveats about dates and places; and `provenance`.
+
+To mark "Approfondimento disponibile" on a day's events, ask `GET
+/api/history/insights?month=10&day=4` next to the day's own request and match on `date.year`.
+Events carry no identifier, so the match is by date: that is why the insight is its own resource
+and the on-this-day answer, a faithful copy of Wikipedia's, is left as it is.
+
+**What the frontend must show, not drop:**
+
+- `place.approximate: true` means the pin is a stand-in - a launch site for an event on the Moon
+  or in orbit - and `place.note` says so. Show the note.
+- `provenance.reviewedAt` is the day somebody really checked the text against its sources. It is
+  **absent when nobody did**: show no date then, and do not call such an insight "verified".
+- `notes` are caveats (a date that depends on the time zone). Show them when there are any.
+
+#### Writing content
+
+The content is JSON in `service/history-service/src/main/resources/editorial`:
+
+```
+editorial/insights/<slug>.json   one per event
+editorial/paths/<slug>.json      one per path
+editorial/start-here.json        the "Inizia da qui" proposals (1 to 6)
+```
+
+The file name is the slug. Adding content is a pull request, reviewed like code, and a release.
+
+The service **checks every file at startup and refuses to start** with every problem listed: an
+unknown key (a `"befor"` is an error, not an insight with no past), a stop that opens an insight
+that does not exist, a path of three stops, two or three `links` required per insight, an
+approximate pin with no note, a cover that is not on Commons. `EditorialContentTest` runs the
+same checks on the real files in CI, so a mistake fails the build and not the deploy.
+
+**Review dates.** Texts are first written as drafts, with no `reviewedAt`. When a person has
+read one against its sources, they add `"reviewedAt": "YYYY-MM-DD"` to its `provenance`, in the
+same commit. Nothing generates that date, and the service refuses one in the future.
+
+The first path and its nine insights are **drafts** in exactly that sense: they have no review
+date, and should be read against their sources and corrected before they are presented as more
+than that.
+
+### Discovery: a random event and the same years elsewhere
+
+Two ways into the data that are not a search. Both read the [country index](#events-by-country),
+so neither asks Wikipedia, and both are only as complete as the index.
+
+`GET /api/history/random` - "Sorprendimi". One event picked at random, from those that match the
+filters the visitor has active: `country` (ISO code), `fromYear`, `toYear`, `lang`. It carries its
+date and country, so the frontend can open that day and select that country. Never cached. When
+nothing matches it is a `200` with no `event`.
+
+`GET /api/history/same-period?year=1969` - "Nello stesso periodo". The index's events in the
+years around `year` (`span`, 0 to 25, default 5), by country, leaving out `excludeCountry` (the one
+the visitor is looking at), at most `perCountry` (default 3) each, the closest to the year kept.
+
+It is a comparison in time and says so (`comparison: "TEMPORAL"`, and a `notice` to show): the
+events were contemporary, not connected. And it says how thin the data is: `coverage.level` is
+`NONE`, `SPARSE` (under 5 events or under 3 countries) or `OK`, with a `note` to show at every
+level, because even `OK` is a selection. The index holds only what Wikipedia lists on its day pages
+and the map can place, about half of it, so an empty window is far more often a gap in the data
+than a quiet world. A frontend should show `SPARSE` as "poco materiale", not as "nothing happened".
+
+"Near this place" has no endpoint of its own: the map selects countries, and a country's events
+across the year are [`/countries/{code}/timeline`](#events-by-country).
+
+### Sources, and reporting a mistake
+
+`GET /api/history/sources` is the data behind a "Il progetto e le fonti" page: every source of
+content with its licence and whether it must be credited; how much there is (the index per
+edition - events, countries, oldest and newest year, when last written - and how many paths and
+insights, of which how many were reviewed); and `limits`, what the content is not, in Italian.
+It is computed from the real state of the service, so it cannot go stale. The prose of the page -
+what the project wants to tell, how contents are chosen - is the frontend's to write.
+
+It is **provenance, not a seal**: nothing in it says "verified". The one source that is the
+project's own, its editorial content, declares no licence, because none has been chosen; that is
+a decision for the owner, not for the code.
+
+`POST /api/history/reports` - "Segnala un errore". The frontend fills in `target` from the card
+the visitor is on - an `EVENT` by its `year`, `month`, `day`, `language` and `text` (an event has
+no identifier of its own), an `INSIGHT` or a `PATH` by its `slug` - so the visitor only says what is
+wrong:
+
+```bash
+curl -X POST 'https://<host>/api/history/reports' -H 'Content-Type: application/json' -d '{
+  "target": {"type": "EVENT", "year": 1957, "month": 10, "day": 4, "language": "it", "text": "Viene lanciato lo Sputnik 1."},
+  "category": "WRONG_DATE",
+  "message": "A Baikonur era già il 5 ottobre.",
+  "contact": "nome@example.org"
+}'
+```
+
+`category` is `WRONG_DATE`, `WRONG_PLACE`, `WRONG_TEXT`, `BROKEN_LINK` or `OTHER`; `message` is 10 to
+1000 characters; `contact` is an optional email address, only for replying. The answer is a `201`
+with the report's number. A malformed report is a `400` (`INVALID_REPORT`, `INVALID_DATE`, ...) and
+**does not count against the limit**. The body must be `application/json` (anything else is a `415`)
+and is read up to 8 KB, whatever the client announces: a report is a few hundred bytes, and this is
+an endpoint anybody can call.
+
+It is the one public endpoint that writes, so it is limited, in memory and per instance, as
+auth-service's login is:
+
+| Variable | Default | |
+|---|---|---|
+| `HISTORY_REPORTS_MAXPERCLIENT` | `5` | reports one address may send per window |
+| `HISTORY_REPORTS_MAXTOTAL` | `200` | reports the whole service accepts per window |
+| `HISTORY_REPORTS_WINDOW` | `1h` | the window |
+
+Over either limit it is a `429` with `Retry-After`. "One address" is the caller's real address
+only because `server.forward-headers-strategy: framework` is set in the `prod` profile, as in
+auth-service: history-service is reachable only through the gateway.
+
+**What is stored** (migration `V3`): the report and what it is about, and nothing that identifies
+the visitor - no address, no session. `contact` is the one exception, and only if they chose to
+leave it. **It is personal data**: use it to reply, then clear it, and say so in the privacy notice
+of the frontend. There is no screen for reports yet; read them in SQL:
+
+```sql
+SELECT id, created_at, target_type, target_slug, target_year, target_month, target_day,
+       category, message, contact
+FROM history.error_reports WHERE handled_at IS NULL ORDER BY created_at;
+
+UPDATE history.error_reports SET handled_at = now(), contact = NULL WHERE id = 42;
+```
+
+An admin view is the next step, and needs history-service to verify `auth-service`'s JWTs, which it
+does not do yet.
+
 ### Being a good neighbour to Wikipedia
 
 Wikipedia is a shared resource with rules, and this service follows them:
@@ -901,7 +1055,7 @@ which are which.
 ```bash
 cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 274 tests
+cd service/history-service && ./mvnw test    # 383 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```

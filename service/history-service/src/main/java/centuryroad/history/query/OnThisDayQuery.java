@@ -22,8 +22,8 @@ import java.util.Set;
  */
 public record OnThisDayQuery(MonthDay day, Language language, Set<Section> sections, YearRange years) {
 
-    static final int MIN_YEAR = -9999;
-    static final int MAX_YEAR = 9999;
+    public static final int MIN_YEAR = -9999;
+    public static final int MAX_YEAR = 9999;
 
     public OnThisDayQuery {
         sections = Set.copyOf(sections);
@@ -35,7 +35,7 @@ public record OnThisDayQuery(MonthDay day, Language language, Set<Section> secti
                 parseYears(year, fromYear, toYear));
     }
 
-    private static MonthDay parseDay(int month, int day) {
+    public static MonthDay parseDay(int month, int day) {
         try {
             return MonthDay.of(month, day);
         } catch (DateTimeException e) {

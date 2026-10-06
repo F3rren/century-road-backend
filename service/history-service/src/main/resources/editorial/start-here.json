@@ -1,0 +1,19 @@
+{
+  "picks": [
+    {
+      "type": "PATH",
+      "slug": "conquista-dello-spazio",
+      "teaser": "Un viaggio in nove tappe, dal primo satellite artificiale all'ultimo atterraggio sulla Luna: la mappa ti porta di luogo in luogo."
+    },
+    {
+      "type": "INSIGHT",
+      "slug": "apollo-11",
+      "teaser": "L'evento che molti associano alla parola «storia»: cosa lo preparò, cosa accadde davvero e cosa venne dopo."
+    },
+    {
+      "type": "INSIGHT",
+      "slug": "hubble",
+      "teaser": "Un telescopio con un difetto, una riparazione in orbita e le immagini che ne sono nate: un buon esempio di come cambia la conoscenza."
+    }
+  ]
+}

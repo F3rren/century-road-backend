@@ -25,7 +25,8 @@ public record HistoryProperties(
         @Valid @NotNull Cache cache,
         @Valid @NotNull Wikipedia wikipedia,
         @Valid @NotNull Resilience resilience,
-        @Valid @NotNull Timeline timeline) {
+        @Valid @NotNull Timeline timeline,
+        @Valid @NotNull Reports reports) {
 
     /**
      * freshTtl: how long a copy is served without asking Wikipedia again. maxStale:
@@ -76,5 +77,14 @@ public record HistoryProperties(
      * that keeps failing instead of grinding through every remaining day.
      */
     public record Timeline(@NotBlank String cron, @NotNull Duration delay, @Positive int maxConsecutiveFailures) {
+    }
+
+    /**
+     * The limits on "Segnala un errore", the one public endpoint that writes. A visitor may send
+     * maxPerClient reports per window, and the whole service accepts maxTotal per window, so that
+     * even many addresses together cannot fill the table. Counted in memory, per instance: a restart
+     * forgets them, which is fine for a limit whose job is to stop floods, not to keep accounts.
+     */
+    public record Reports(@Positive int maxPerClient, @Positive int maxTotal, @NotNull Duration window) {
     }
 }

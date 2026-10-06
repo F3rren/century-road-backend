@@ -62,7 +62,8 @@ class TimelineIndexerUnitTest {
         HistoryProperties defaults = TestSupport.properties();
         HistoryProperties properties = new HistoryProperties(defaults.fallbackLanguage(), defaults.cache(),
                 defaults.wikipedia(), defaults.resilience(),
-                new HistoryProperties.Timeline(cron, Duration.ofSeconds(1), maxConsecutiveFailures));
+                new HistoryProperties.Timeline(cron, Duration.ofSeconds(1), maxConsecutiveFailures),
+                defaults.reports());
         return new TimelineIndexer(client, LOCATOR, repository, cooldown, properties, clock) {
             @Override
             boolean pause(Duration duration) {

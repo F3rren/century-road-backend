@@ -1,0 +1,48 @@
+{
+  "slug": "conquista-dello-spazio",
+  "title": "La conquista dello spazio",
+  "tagline": "Da uno Sputnik che fa «bip» alla Luna, alle stazioni, ai telescopi: nove tappe dalla corsa tra due superpotenze a uno spazio con molti protagonisti.",
+  "intro": "Il 4 ottobre 1957 una piccola sfera di metallo è diventata il primo oggetto costruito dall'uomo a girare attorno alla Terra. Da lì il percorso segue la corsa tra Stati Uniti e Unione Sovietica fino alla Luna, poi le stazioni abitate e i grandi strumenti scientifici, e arriva ai paesi che oggi, dall'Europa all'India, hanno costruito una propria strada verso lo spazio. Ogni tappa ti porta in un luogo della mappa: un cosmodromo, una zona di atterraggio, una rampa di lancio.",
+  "cover": {
+    "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg",
+    "alt": "La Terra fotografata dall'equipaggio dell'Apollo 17 nel dicembre 1972, nota come «Blue Marble»."
+  },
+  "stops": [
+    {
+      "insight": "sputnik-1",
+      "narrative": "Si parte dal giorno in cui lo spazio diventò raggiungibile: un satellite grande come un pallone da spiaggia e un segnale radio che tutto il mondo poteva ascoltare."
+    },
+    {
+      "insight": "vostok-1-gagarin",
+      "narrative": "Quattro anni dopo il «bip», nello spazio non va più solo una macchina: va una persona. L'Unione Sovietica è ancora avanti, e gli Stati Uniti rispondono con un obiettivo molto più lontano."
+    },
+    {
+      "insight": "apollo-11",
+      "narrative": "L'obiettivo era la Luna. Nel 1969 viene raggiunto: il momento che per molte persone coincide con l'idea stessa di «conquista dello spazio»."
+    },
+    {
+      "insight": "salyut-1",
+      "narrative": "Dopo la Luna la sfida cambia: non è più arrivare, ma restare. La prima stazione spaziale mostra le possibilità, e i rischi, di una vita in orbita."
+    },
+    {
+      "insight": "ariane-1",
+      "narrative": "Lo spazio non è più soltanto di due superpotenze. L'Europa, che per i lanci dipendeva da altri, costruisce il proprio razzo e un proprio accesso all'orbita."
+    },
+    {
+      "insight": "hubble",
+      "narrative": "Lo spazio diventa anche un punto di osservazione: un telescopio sopra l'atmosfera, un errore da riparare e immagini dell'universo entrate nell'immaginario comune."
+    },
+    {
+      "insight": "iss-zarya",
+      "narrative": "Gli ex rivali costruiscono insieme. È il primo modulo di una stazione che da oltre venticinque anni ospita un equipaggio senza interruzioni."
+    },
+    {
+      "insight": "shenzhou-5",
+      "narrative": "Fuori dalla cooperazione della ISS, un altro paese costruisce la propria strada: la Cina porta una persona in orbita con un mezzo proprio, terzo paese dopo URSS e Stati Uniti."
+    },
+    {
+      "insight": "chandrayaan-3",
+      "narrative": "L'ultima tappa è anche un ritorno: la Luna, di nuovo, ma stavolta a raggiungerla è un paese che negli anni delle missioni Apollo non aveva ancora lanciato un proprio satellite."
+    }
+  ]
+}

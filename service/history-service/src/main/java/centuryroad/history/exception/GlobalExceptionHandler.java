@@ -45,6 +45,20 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
                 HttpStatus.BAD_REQUEST);
     }
 
+    @ExceptionHandler(NotFoundException.class)
+    public ResponseEntity<ApiEnvelope<Void>> handleNotFound(NotFoundException ex) {
+        return new ResponseEntity<>(
+                ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()),
+                HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(TooManyRequestsException.class)
+    public ResponseEntity<ApiEnvelope<Void>> handleTooManyRequests(TooManyRequestsException ex) {
+        return ResponseEntity.status(HttpStatus.TOO_MANY_REQUESTS)
+                .header(HttpHeaders.RETRY_AFTER, String.valueOf(ex.getRetryAfterSeconds()))
+                .body(ApiEnvelope.error(ex.getErrorCode(), ex.getMessage(), ex.getUserMessage(), requestId()));
+    }
+
     @ExceptionHandler(UpstreamRateLimitedException.class)
     public ResponseEntity<ApiEnvelope<Void>> handleRateLimited(UpstreamRateLimitedException ex) {
         // Round up: "Retry-After: 0" would invite an immediate retry into the

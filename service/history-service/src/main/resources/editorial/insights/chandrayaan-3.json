@@ -1,0 +1,51 @@
+{
+  "slug": "chandrayaan-3",
+  "title": "Chandrayaan-3: l'India atterra vicino al polo sud della Luna",
+  "summary": "Il 23 agosto 2023 il lander Vikram della missione indiana Chandrayaan-3 si posa sulla Luna: l'India è il quarto paese a riuscirci e il primo a farlo in una regione così vicina al polo sud lunare.",
+  "date": {
+    "year": 2023,
+    "month": 8,
+    "day": 23
+  },
+  "place": {
+    "name": "Centro spaziale Satish Dhawan, Sriharikota, India",
+    "lat": 13.72,
+    "lon": 80.23,
+    "countryCode": "IN",
+    "approximate": true,
+    "note": "L'atterraggio è avvenuto sulla Luna, in una regione vicina al polo sud: il punto sulla mappa indica il centro spaziale di Sriharikota, da cui la missione partì il 14 luglio 2023."
+  },
+  "before": "L'India aveva già un programma lunare: Chandrayaan-1 (2008) orbitò attorno alla Luna e contribuì alla ricerca di tracce d'acqua; nel 2019 Chandrayaan-2 perse il contatto con il lander durante la discesa e il lander si schiantò. Chandrayaan-3 fu preparata per ripetere il tentativo, con modifiche pensate per rendere più sicura la discesa.",
+  "event": "Chandrayaan-3 partì il 14 luglio 2023 da Sriharikota. Il modulo di atterraggio Vikram toccò il suolo lunare il 23 agosto 2023, alle 12:33 UTC (le 18:03 in India). Dal lander uscì il piccolo rover Pragyan, che nei giorni seguenti fece misure sul suolo lunare. L'India divenne così il quarto paese, dopo Unione Sovietica, Stati Uniti e Cina, a far atterrare un veicolo sulla Luna in modo controllato. Con il calare della notte lunare, dopo circa due settimane terrestri, lander e rover furono messi in «sospensione».",
+  "after": "La regione polare interessa gli scienziati perché alcuni crateri, sempre in ombra, potrebbero contenere ghiaccio d'acqua, e per questo è tra le zone considerate per future missioni, anche con equipaggio. Nel gennaio 2024 il Giappone, con la sonda SLIM, divenne il quinto paese a posarsi sulla Luna. Dopo decenni in cui gli atterraggi sulla Luna erano stati rarissimi, l'interesse è tornato a crescere e coinvolge più paesi e anche aziende private.",
+  "links": [
+    {
+      "slug": "apollo-11",
+      "reason": "Il primo allunaggio, 54 anni prima."
+    },
+    {
+      "slug": "shenzhou-5",
+      "reason": "Il programma spaziale cinese, l'altro grande protagonista asiatico."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chandrayaan-3 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chandrayaan-3",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Chandrayaan-2 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chandrayaan-2",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'orario dell'atterraggio, 12:33 UTC, corrisponde alla sera del 23 agosto in India."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

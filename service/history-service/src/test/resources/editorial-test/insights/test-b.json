@@ -1,0 +1,43 @@
+{
+  "slug": "test-b",
+  "title": "Titolo test-b",
+  "summary": "Sintesi di test-b.",
+  "date": {
+    "year": 1950,
+    "month": 3,
+    "day": 5
+  },
+  "place": {
+    "name": "Luogo test-b",
+    "lat": 11.0,
+    "lon": 21.0,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Prima uno due tre.",
+  "event": "Evento uno due tre.",
+  "after": "Dopo uno due tre.",
+  "links": [
+    {
+      "slug": "test-a",
+      "reason": "Perché sì."
+    },
+    {
+      "slug": "test-c",
+      "reason": "Perché no."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fonte",
+      "url": "https://it.wikipedia.org/wiki/Test",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road",
+    "reviewedAt": "2026-09-01"
+  }
+}

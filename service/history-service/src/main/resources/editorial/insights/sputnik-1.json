@@ -1,0 +1,50 @@
+{
+  "slug": "sputnik-1",
+  "title": "Lo Sputnik 1 entra in orbita",
+  "summary": "Il 4 ottobre 1957 l'Unione Sovietica lancia il primo satellite artificiale della storia: una sfera di metallo che trasmette un segnale radio mentre gira attorno alla Terra.",
+  "date": {
+    "year": 1957,
+    "month": 10,
+    "day": 4
+  },
+  "place": {
+    "name": "Cosmodromo di Baikonur, Kazakistan",
+    "lat": 45.92,
+    "lon": 63.34,
+    "countryCode": "KZ",
+    "approximate": false
+  },
+  "before": "Dopo la Seconda guerra mondiale Stati Uniti e Unione Sovietica svilupparono missili sempre più potenti, pensati prima di tutto come armi. Nel 1957-58 si teneva l'Anno geofisico internazionale, e le due potenze avevano annunciato l'intenzione di mandare in orbita un satellite per la ricerca scientifica. A rendere possibile il lancio sovietico fu il missile R-7, progettato da Sergej Korolëv.",
+  "event": "Il 4 ottobre 1957 un R-7 decollò dal cosmodromo di Baikonur, nell'attuale Kazakistan, e portò in orbita lo Sputnik 1: una sfera di alluminio di circa 58 centimetri di diametro e 83 chilogrammi di peso. Compiva un giro della Terra in circa 96 minuti e trasmetteva un semplice segnale radio, il celebre «bip», che radioamatori di tutto il mondo poterono ricevere. Funzionò per circa tre settimane; il satellite rientrò nell'atmosfera e si disintegrò il 4 gennaio 1958.",
+  "after": "La notizia ebbe un forte impatto politico e psicologico negli Stati Uniti, dove si parlò di «crisi dello Sputnik». Tra i fattori che portarono alla creazione della NASA, nel 1958, ci fu anche questo, insieme ad altri legati alla rivalità militare e scientifica dell'epoca; negli stessi anni furono finanziati nuovi programmi di istruzione scientifica. Il lancio non causò da solo la corsa allo spazio, ma ne fu uno dei momenti d'avvio più visibili.",
+  "links": [
+    {
+      "slug": "vostok-1-gagarin",
+      "reason": "Quattro anni dopo, lo stesso programma sovietico porta nello spazio il primo essere umano."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Il traguardo con cui la corsa iniziata nel 1957 viene ricordata più spesso: lo sbarco sulla Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sputnik 1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sputnik_1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sputnik and The Dawn of the Space Age - NASA History",
+      "url": "https://history.nasa.gov/sputnik/",
+      "publisher": "NASA"
+    }
+  ],
+  "notes": [
+    "La data è quella in uso a Mosca e in UTC (le 19:28 UTC del 4 ottobre): a Baikonur, in quel momento, era già passata la mezzanotte e il calendario locale segnava il 5 ottobre.",
+    "Nel 1957 Baikonur faceva parte della Repubblica Sovietica Kazaka, all'interno dell'URSS: il Kazakistan indipendente esiste dal 1991."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

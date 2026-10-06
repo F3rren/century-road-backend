@@ -75,6 +75,13 @@ history:
     # Stop a pass after this many days in a row could not be refreshed.
     max-consecutive-failures: 10
 
+  # "Segnala un errore" is the one public endpoint that writes to the database, so it is
+  # limited: per visitor's address, and for the whole service, within the same window.
+  reports:
+    max-per-client: 5
+    max-total: 200
+    window: 1h
+
 management:
   endpoints:
     web:

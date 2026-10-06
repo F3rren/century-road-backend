@@ -19,6 +19,11 @@ history:
   timeline:
     cron: "-"
 
+  # A small fixed set of editorial content, so tests do not break when the real texts change.
+  # EditorialContentTest checks the real ones.
+  editorial:
+    root: classpath:editorial-test
+
 logging:
   level:
     root: WARN

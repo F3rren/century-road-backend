@@ -1,0 +1,51 @@
+{
+  "slug": "apollo-11",
+  "title": "Apollo 11: i primi esseri umani sulla Luna",
+  "summary": "Il 20 luglio 1969 il modulo lunare di Apollo 11 si posa sulla Luna; poche ore dopo Neil Armstrong e Buzz Aldrin sono i primi esseri umani a camminarci.",
+  "date": {
+    "year": 1969,
+    "month": 7,
+    "day": 20
+  },
+  "place": {
+    "name": "Kennedy Space Center, Florida, Stati Uniti",
+    "lat": 28.57,
+    "lon": -80.65,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "L'allunaggio avvenne sulla Luna, nel Mare della Tranquillità: il punto sulla mappa indica il Kennedy Space Center, da cui la missione partì il 16 luglio 1969."
+  },
+  "before": "Nel 1961 il presidente Kennedy aveva fissato l'obiettivo di portare un uomo sulla Luna «prima della fine di questo decennio». Il programma Apollo coinvolse centinaia di migliaia di persone e richiese un investimento enorme; ebbe anche un lutto: nel gennaio 1967 un incendio durante una prova uccise i tre astronauti di Apollo 1. Nel dicembre 1968 Apollo 8 aveva portato per la prima volta un equipaggio in orbita attorno alla Luna.",
+  "event": "Apollo 11 partì dalla Florida il 16 luglio 1969 con Neil Armstrong, Buzz Aldrin e Michael Collins. Il 20 luglio il modulo lunare Eagle, con Armstrong e Aldrin, si posò nel Mare della Tranquillità, mentre Collins restava in orbita lunare. Armstrong scese sulla superficie poco dopo le 02:56 UTC del 21 luglio, seguito da Aldrin. I due trascorsero circa due ore e mezza all'esterno del modulo e raccolsero campioni di roccia; l'equipaggio rientrò sulla Terra il 24 luglio.",
+  "after": "Tra il novembre 1969 e il dicembre 1972 altre cinque missioni Apollo allunarono, per un totale di dodici persone sulla superficie lunare. Dopo Apollo 17 il programma si fermò e per oltre cinquant'anni nessun essere umano è tornato a camminare sulla Luna. Restano i campioni di roccia, studiati ancora oggi. Il costo e il significato politico dell'impresa furono discussi già allora, e gli storici distinguono ciò che fu conseguenza diretta del programma da ciò che gli viene attribuito a posteriori.",
+  "links": [
+    {
+      "slug": "vostok-1-gagarin",
+      "reason": "Il primo passo della corsa verso la Luna: il primo essere umano nello spazio, otto anni prima."
+    },
+    {
+      "slug": "chandrayaan-3",
+      "reason": "Più di cinquant'anni dopo, un altro paese porta un lander sulla Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apollo 11 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apollo_11",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Programma Apollo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Programma_Apollo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data dipende dal fuso orario: l'allunaggio avvenne alle 20:17 UTC del 20 luglio; il primo passo di Armstrong poco dopo le 02:56 UTC del 21 luglio, che negli Stati Uniti era ancora la sera del 20."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

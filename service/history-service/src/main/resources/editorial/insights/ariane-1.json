@@ -1,0 +1,50 @@
+{
+  "slug": "ariane-1",
+  "title": "Ariane 1: l'Europa ha un lanciatore proprio",
+  "summary": "Il 24 dicembre 1979 il razzo europeo Ariane 1 compie il suo primo lancio da Kourou, nella Guyana francese: nasce un accesso europeo autonomo allo spazio.",
+  "date": {
+    "year": 1979,
+    "month": 12,
+    "day": 24
+  },
+  "place": {
+    "name": "Centro spaziale della Guyana, Kourou, Guyana francese",
+    "lat": 5.24,
+    "lon": -52.77,
+    "countryCode": "GF",
+    "approximate": false
+  },
+  "before": "Negli anni Sessanta i tentativi europei di costruire un lanciatore comune, tra cui il programma Europa, fallirono. Per lanciare i propri satelliti l'Europa dipendeva così, in molti casi, dai razzi statunitensi. Nel 1973 i governi europei decisero di avviare un nuovo progetto sotto la guida della Francia, e nel 1975 fu firmata la convenzione dell'Agenzia spaziale europea (ESA).",
+  "event": "Il 24 dicembre 1979 Ariane 1 decollò per la prima volta dal Centro spaziale della Guyana, a Kourou. La base si trova a circa 5 gradi a nord dell'equatore, una posizione favorevole per i lanci verso l'orbita geostazionaria. Il volo, il primo di una serie di test, riuscì e portò in orbita un carico sperimentale.",
+  "after": "Ariane 1 volò fino al 1986 e fu seguita da versioni sempre più potenti, fino ad Ariane 5, in servizio dal 1996 al 2023. Nel 1980 nacque Arianespace, la società che commercializza i lanci e che per molti anni è stata tra i principali operatori del mercato dei satelliti. La strada prosegue con Ariane 6, il cui primo lancio è del luglio 2024.",
+  "links": [
+    {
+      "slug": "hubble",
+      "reason": "Un grande strumento scientifico nato dalla collaborazione tra NASA ed ESA."
+    },
+    {
+      "slug": "chandrayaan-3",
+      "reason": "Un altro paese che ha costruito una propria via di accesso allo spazio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ariane 1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ariane_1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Agenzia spaziale europea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Agenzia_spaziale_europea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La Guyana francese è un dipartimento d'oltremare della Francia, in Sud America."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

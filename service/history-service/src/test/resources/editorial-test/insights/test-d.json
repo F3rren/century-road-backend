@@ -1,0 +1,42 @@
+{
+  "slug": "test-d",
+  "title": "Titolo test-d",
+  "summary": "Sintesi di test-d.",
+  "date": {
+    "year": 1989,
+    "month": 11,
+    "day": 9
+  },
+  "place": {
+    "name": "Luogo test-d",
+    "lat": 13.0,
+    "lon": 23.0,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Prima uno due tre.",
+  "event": "Evento uno due tre.",
+  "after": "Dopo uno due tre.",
+  "links": [
+    {
+      "slug": "test-a",
+      "reason": "Perché sì."
+    },
+    {
+      "slug": "test-b",
+      "reason": "Perché no."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fonte",
+      "url": "https://it.wikipedia.org/wiki/Test",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

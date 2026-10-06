@@ -1,0 +1,54 @@
+{
+  "slug": "shenzhou-5",
+  "title": "Shenzhou 5: la Cina manda il primo astronauta nello spazio",
+  "summary": "Il 15 ottobre 2003 Yang Liwei compie 14 orbite attorno alla Terra: la Cina diventa il terzo paese a mandare una persona nello spazio con un proprio veicolo.",
+  "date": {
+    "year": 2003,
+    "month": 10,
+    "day": 15
+  },
+  "place": {
+    "name": "Centro di lancio di Jiuquan, Cina",
+    "lat": 40.96,
+    "lon": 100.29,
+    "countryCode": "CN",
+    "approximate": false
+  },
+  "before": "Il programma spaziale cinese cominciò negli anni Cinquanta e Sessanta, con missili sviluppati inizialmente per scopi militari, e il primo satellite cinese, Dong Fang Hong 1, fu lanciato nel 1970. Un primo progetto con equipaggio degli anni Settanta fu abbandonato; il programma attuale, il 921, fu approvato nel 1992 e proseguì con voli di prova senza equipaggio dal 1999.",
+  "event": "La Shenzhou 5 partì il 15 ottobre 2003 dal centro di lancio di Jiuquan, nel deserto del Gobi, con a bordo il pilota militare Yang Liwei. Rimase in orbita circa 21 ore e compì 14 giri attorno alla Terra, poi rientrò nella Mongolia Interna, il 16 ottobre. La Cina divenne il terzo paese, dopo Unione Sovietica (poi Russia) e Stati Uniti, a mandare una persona in orbita con un mezzo proprio.",
+  "after": "Nel 2008 Zhai Zhigang compì la prima passeggiata spaziale cinese (Shenzhou 7). I laboratori Tiangong-1 (2011) e Tiangong-2 (2016) precedettero la stazione Tiangong, completata nella sua configurazione base nel 2022. La Cina ha inviato anche sonde sulla Luna e su Marte. Il suo programma è rimasto separato da quello della ISS: non vi partecipa, e una legge statunitense del 2011 limita la cooperazione bilaterale della NASA con la Cina.",
+  "links": [
+    {
+      "slug": "vostok-1-gagarin",
+      "reason": "Il primo volo con equipaggio della storia, 42 anni prima."
+    },
+    {
+      "slug": "iss-zarya",
+      "reason": "La stazione internazionale da cui la Cina è rimasta fuori."
+    },
+    {
+      "slug": "chandrayaan-3",
+      "reason": "Un altro paese asiatico che ha portato a termine un atterraggio controllato sulla Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Shenzhou 5 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Shenzhou_5",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Yang Liwei - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yang_Liwei",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il lancio avvenne il 15 ottobre alle 09:00 ora cinese (01:00 UTC); l'atterraggio il 16 ottobre."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

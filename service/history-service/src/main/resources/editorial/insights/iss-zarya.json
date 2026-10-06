@@ -1,0 +1,50 @@
+{
+  "slug": "iss-zarya",
+  "title": "Il lancio di Zarya, primo modulo della Stazione Spaziale Internazionale",
+  "summary": "Il 20 novembre 1998 viene lanciato Zarya, il primo modulo della Stazione Spaziale Internazionale, uno dei più grandi progetti di cooperazione internazionale in campo scientifico e tecnologico.",
+  "date": {
+    "year": 1998,
+    "month": 11,
+    "day": 20
+  },
+  "place": {
+    "name": "Cosmodromo di Baikonur, Kazakistan",
+    "lat": 46.07,
+    "lon": 62.98,
+    "countryCode": "KZ",
+    "approximate": false
+  },
+  "before": "Dopo la fine della Guerra fredda Stati Uniti e Russia passarono dalla competizione alla collaborazione: tra il 1995 e il 1998 lo Shuttle americano si agganciò più volte alla stazione russa Mir. Intanto gli Stati Uniti progettavano una propria stazione, «Freedom», con costi alti e molti ritardi; nel 1993 si decise di unire quei progetti a quelli russi, europei, giapponesi e canadesi in un'unica stazione internazionale.",
+  "event": "Zarya, un modulo costruito in Russia e finanziato dagli Stati Uniti, fu lanciato il 20 novembre 1998 da Baikonur con un razzo Proton. Due settimane dopo lo Shuttle Endeavour gli collegò il primo modulo americano, Unity: iniziava l'assemblaggio in orbita, che sarebbe proseguito per oltre dieci anni.",
+  "after": "Il primo equipaggio stabile, quello della «Expedition 1», arrivò il 2 novembre 2000 e da allora la stazione è abitata senza interruzioni. Ha ospitato più di 250 persone provenienti da oltre 20 paesi. Il suo funzionamento dipende da accordi tra le agenzie spaziali che hanno retto anche nei periodi di tensione politica tra i paesi partecipanti. L'uso della stazione è previsto fino al 2030 circa, dopodiché i partner prevedono di sostituirla con altri progetti, anche commerciali.",
+  "links": [
+    {
+      "slug": "salyut-1",
+      "reason": "La prima stazione spaziale, quasi trent'anni prima."
+    },
+    {
+      "slug": "shenzhou-5",
+      "reason": "Il primo volo con equipaggio del programma cinese, che ha poi costruito una propria stazione, Tiangong."
+    }
+  ],
+  "sources": [
+    {
+      "title": "International Space Station - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/International_Space_Station",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stazione Spaziale Internazionale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Stazione_Spaziale_Internazionale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Nel 1998 Baikonur apparteneva al Kazakistan indipendente ma era in affitto alla Russia, come oggi."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

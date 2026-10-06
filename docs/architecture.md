@@ -28,7 +28,7 @@ browser ──HTTPS──▶ proxy (Caddy) ──HTTP──▶ gateway ─┬─
 Only the proxy is public in production. The gateway, the services, and Postgres talk over the internal Compose network and are never reachable from outside. Prometheus/Grafana are loopback-only even in production (SSH tunnel to reach them).
 
 - **`auth-service`** — owns identity: users, login, the JWTs every other service will eventually verify offline.
-- **`history-service`** — answers "what happened on this date", proxying and caching Wikipedia's On This Day feed; keeps a nightly per-country index of every day's events; also owns the anonymous, aggregate day/country view counters.
+- **`history-service`** — answers "what happened on this date", proxying and caching Wikipedia's On This Day feed; keeps a nightly per-country index of every day's events; serves the hand-written content (guided paths, "Perché conta" insights, "Inizia da qui") from JSON in its own repository; offers two ways into the index that are not a search (a random event, the same years elsewhere); publishes its sources, coverage and limits; takes error reports from visitors; and owns the anonymous, aggregate day/country view counters.
 - **`gateway`** (Spring Cloud Gateway, reactive/WebFlux) — the single entry point; pure routing + CORS + OpenAPI-doc relay, no business logic and no database of its own.
 
 ## Data model
@@ -46,6 +46,10 @@ Each service that has state owns its own Postgres **database** within the one sh
 Both counter tables are purely anonymous and aggregate — no visitor identifier of any kind, incremented via an atomic Postgres upsert (`INSERT ... ON CONFLICT DO UPDATE SET view_count = view_count + 1`), never a read-modify-write, so concurrent requests can't lose an increment.
 
 - `timeline_events` (`V2__create_timeline_events.sql`) — the country index: `id BIGSERIAL PK`, `language VARCHAR(2) CHECK IN ('it','en')`, `month`/`day SMALLINT` (same checks as `day_views`), `year INTEGER`, `country_code VARCHAR(2)` (same check as `country_views`), `text TEXT`, `indexed_at TIMESTAMPTZ`, all `NOT NULL`. Indexed on `(language, country_code, year, month, day)`, the order the timeline is read in. Derived data only — Wikipedia's text and a country computed from it, nothing about users — so `TRUNCATE` is always safe; the service rebuilds it. Written a whole day at a time (`replaceDay`: delete that language/day, insert its rows, one transaction), so readers never see a day half-written.
+
+- `error_reports` (`V3__create_error_reports.sql`) — "Segnala un errore": `id BIGSERIAL PK`, `target_type VARCHAR(10)` (`EVENT`/`INSIGHT`/`PATH`), then either a `target_slug` (insight, path) or `target_year`/`target_month`/`target_day`/`target_language` plus an optional `target_text` (an event has no identifier of its own, so it is named by its date, its edition and the text the visitor saw — a table check enforces one or the other), `category` (`WRONG_DATE`/`WRONG_PLACE`/`WRONG_TEXT`/`BROKEN_LINK`/`OTHER`), `message VARCHAR(1000)`, `contact VARCHAR(254)` nullable, `created_at`, `handled_at` nullable (a partial index on the open ones). No visitor identifier of any kind; `contact` is the one personal datum, optional, meant to be cleared once answered.
+
+The guided paths and insights are **not** in the database — see Key technical decisions.
 
 `gateway` has no `db/migration` — it is entirely stateless.
 
@@ -74,6 +78,11 @@ On Railway, which doesn't run custom Postgres init scripts, the `${POSTGRES_DB}_
 | history-service | GET | `/api/history/countries/{code}/timeline` | public |
 | history-service | GET | `/api/history/stats/{days,countries}` | public |
 | history-service | POST | `/api/history/track/country/{code}` | public |
+| history-service | GET | `/api/history/start-here`, `/paths`, `/paths/{slug}` | public |
+| history-service | GET | `/api/history/insights`, `/insights/{slug}` | public |
+| history-service | GET | `/api/history/random`, `/same-period` | public |
+| history-service | GET | `/api/history/sources` | public |
+| history-service | POST | `/api/history/reports` | public, rate-limited |
 
 ## Folder structure
 
@@ -83,6 +92,8 @@ service/
 ├── gateway/             flat package — routing/CORS config only, no controllers of its own
 └── history-service/     controller/ dto/ exception/ model/ query/ repository/ service/ wikipedia/ config/
                          (+ resources/geo/: the Natural Earth country shapes CountryLocator reads)
+                         (+ resources/editorial/: the hand-written paths, insights and start-here
+                         proposals, as JSON — EditorialCatalog reads and checks them at startup)
 infra/
 ├── caddy/               Caddyfile (prod TLS/HSTS reverse proxy)
 ├── grafana/              provisioning: datasource, one dashboard, alerting/ (rules, contact
@@ -142,6 +153,16 @@ no available fix should not keep the job red indefinitely.
 **One JVM runs the job, and an `AtomicBoolean` is its only lock.** The nightly cron and the build at startup can meet (a restart near midnight); the flag turns the second into a no-op. It cannot stop two replicas from each running a pass, which would double the requests and could write a day twice, since each day is a delete then an insert. Railway runs one replica. ShedLock, a lock row in Postgres, is the upgrade the day it runs two.
 
 **The pass reads the full `all` feed, though Wikipedia's events-only feed is about 3.4× smaller** (68 KB against 227 KB for one day, measured). `all` is what `WikipediaFeedClient` and its parser already fetch, test and harden; a second request shape would mean a second parser to keep right, for a job that runs at midnight with nobody waiting on it. Worth switching if the pass ever has to be shorter or lighter.
+
+**The hand-written content is JSON in the repository, not rows in the database.** Guided paths, "Perché conta" insights and the "Inizia da qui" proposals live in `service/history-service/src/main/resources/editorial/`, read once at startup by `EditorialCatalog` and held in memory. There is no editor yet, and for the first paths there should not be one: a person writing nine paragraphs about the Moon landing wants a text file, a diff and a reviewer, not a form. In the repository the content is versioned, reviewed in a pull request, deployed with the code that serves it, and needs no migration. The cost is that a change of text is a release, which is acceptable at this scale and with one author; the day content is written by several people, or has to change without a deploy, it moves to tables and an admin screen, and the JSON shape is already the contract for that. `EditorialCatalog` is deliberately strict — an unknown key, a dangling link, a path of three stops, an approximate pin without a note, a cover that is not on Commons all stop the service, with every problem listed — and `EditorialContentTest` runs the same checks on the real files in CI, so a typo in a hand-written file fails the build rather than the deploy.
+
+**Insights are their own resource, not a field added to the on-this-day answer.** The day endpoint is a faithful, cached copy of Wikipedia's feed and stays that. An event in it has no identifier, so an insight cannot be attached to it reliably; instead `GET /insights?month=&day=` lists a day's insights and the frontend matches them on the year. This also means the insights, paths and "Inizia da qui" answer from memory when Wikipedia is down, and that curated content never inherits the feed's staleness rules. `reviewedAt` on an insight's provenance exists only when a person really reviewed it, and the catalog refuses a date in the future: a missing date is the truth, a generated one would be a reliability label with nothing behind it — the same reason the sources endpoint never says "verified".
+
+**"Sorprendimi" and "Nello stesso periodo" read the country index and declare what it lacks.** The index is the only place with events by year and country, so both reuse it, with no Wikipedia call and no new table. Its limits are the point of the design: only events with a year and a placeable location (about half), in today's countries, up to a day behind. "Same period" therefore answers with `coverage` (`NONE`/`SPARSE`/`OK`, thresholds in `SamePeriodResponse`) and a fixed `notice` that it is a comparison in time, not a chain of causes; a quiet window is more often a gap in the data than a quiet world, and the answer says so rather than let a gap read as history. Both stay below a bounded read (`span` ≤ 25 years, `perCountry` ≤ 10), trimmed in Java rather than with a window function, because the rows are in the low thousands.
+
+**Error reports go in a table with no visitor identifier, behind an in-memory limit.** `POST /reports` is the one public endpoint that writes, so it gets a per-address window and a service-wide one (`ReportRateLimiter`, `history.reports.*`), in memory and per instance for the same reason auth-service's login limiter is. A malformed report is refused before it is counted, so a typo costs nothing. "Per address" only means the caller because the `prod` profile sets `server.forward-headers-strategy: framework`, as auth-service does: history-service is reachable only through the gateway, which takes the address from the proxy's header. What is stored is the report and what it is about; the optional `contact` is personal data meant to be cleared after replying. There is no admin screen: reports are read in SQL, since a screen needs history-service to verify auth-service's JWTs, which it does not do yet.
+
+**The Wikipedia feed stays the source of events; the alternatives were looked at and none replaces it.** `WikimediaFeedHttpClient` calls `https://{lang}.wikipedia.org/api/rest_v1/feed/onthisday/all/MM/DD`, the wikifeeds service, not the `api.wikimedia.org/feed/v1` gateway that Wikimedia has announced it will deprecate gradually from July 2026 — so the announced deprecation does not touch this client, though it is worth rechecking each quarter. Wikimedia Enterprise, the commercial API, has structured article content but no "on this day" endpoint in what was found. Wikidata's SPARQL service (CC0, a 60-second query deadline, a User-Agent policy) is the real alternative for events by date and place beyond what Wikipedia's day pages list, and the natural next source for "same period"; it was not adopted, because it would be a second upstream with its own resilience, cache and coverage story, to be justified by a measured gap in the index rather than added in advance.
 
 ## Deployment and environments
 

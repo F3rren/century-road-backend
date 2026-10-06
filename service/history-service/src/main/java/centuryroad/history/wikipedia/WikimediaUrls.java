@@ -11,7 +11,7 @@ import java.util.regex.Pattern;
  * response is
  * passed on as a link or an image without going through here first.
  */
-final class WikimediaUrls {
+public final class WikimediaUrls {
 
     /**
      * Where the feed's images live: originals on upload, and most thumbnails on
@@ -59,7 +59,7 @@ final class WikimediaUrls {
      * shown
      * with a link to its file page; an image that is not is left out.
      */
-    static Optional<String> commonsFilePage(String imageUrl) {
+    public static Optional<String> commonsFilePage(String imageUrl) {
         try {
             URI uri = URI.create(imageUrl);
             String host = uri.getHost();

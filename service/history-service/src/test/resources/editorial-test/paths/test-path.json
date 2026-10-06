@@ -1,0 +1,32 @@
+{
+  "slug": "test-path",
+  "title": "Percorso di prova",
+  "tagline": "Una frase.",
+  "intro": "Una breve introduzione di prova.",
+  "stops": [
+    {
+      "insight": "test-a",
+      "narrative": "Perché test-a viene qui."
+    },
+    {
+      "insight": "test-b",
+      "narrative": "Perché test-b viene qui."
+    },
+    {
+      "insight": "test-c",
+      "narrative": "Perché test-c viene qui."
+    },
+    {
+      "insight": "test-d",
+      "narrative": "Perché test-d viene qui."
+    },
+    {
+      "insight": "test-e",
+      "narrative": "Perché test-e viene qui."
+    },
+    {
+      "insight": "test-f",
+      "narrative": "Perché test-f viene qui."
+    }
+  ]
+}
