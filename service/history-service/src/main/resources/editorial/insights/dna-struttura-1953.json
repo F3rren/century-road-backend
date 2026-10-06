@@ -1,0 +1,50 @@
+{
+  "slug": "dna-struttura-1953",
+  "title": "La doppia elica del DNA",
+  "summary": "Il 25 aprile 1953 la rivista Nature pubblica l'articolo di James Watson e Francis Crick con il modello a doppia elica del DNA, insieme a due lavori sperimentali.",
+  "date": {
+    "year": 1953,
+    "month": 4,
+    "day": 25
+  },
+  "place": {
+    "name": "Cambridge, Regno Unito",
+    "lat": 52.2053,
+    "lon": 0.1218,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Nel 1869 Friedrich Miescher aveva isolato il DNA e nel 1944 Oswald Avery e i colleghi avevano mostrato che era il materiale ereditario. Restava da capire la sua struttura. A Londra Rosalind Franklin e Raymond Gosling ottenevano immagini di diffrazione a raggi X del DNA, tra cui la celebre «fotografia 51», e Maurice Wilkins studiava lo stesso problema.",
+  "event": "Il 25 aprile 1953 Nature pubblicò tre articoli: quello di Watson e Crick, dell'università di Cambridge, che proponeva un modello a doppia elica con due filamenti appaiati, e due lavori sperimentali, uno di Wilkins e collaboratori e uno di Franklin e Gosling, che ne sostenevano la struttura.",
+  "after": "Il modello spiegava come il DNA si potesse copiare, e fu la base per la biologia molecolare. Watson, Crick e Wilkins ebbero il Nobel nel 1962; Franklin era morta nel 1958 e il premio non si assegna alla memoria. Nel 2003 fu completato il sequenziamento del genoma umano.",
+  "links": [
+    {
+      "slug": "raggi-x-1895",
+      "reason": "La tecnica su cui si basavano le immagini di Franklin."
+    },
+    {
+      "slug": "penicillina-1928",
+      "reason": "La scoperta di un altro strumento della medicina del Novecento."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Molecular Structure of Nucleic Acids - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Molecular_Structure_of_Nucleic_Acids",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "DNA - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/DNA",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il contributo di Rosalind Franklin ai dati su cui il modello fu costruito è stato a lungo trascurato e resta oggetto di discussione tra gli storici."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

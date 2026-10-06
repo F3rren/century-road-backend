@@ -1,0 +1,48 @@
+{
+  "slug": "luigi-xvi-ghigliottina-1793",
+  "title": "Luigi XVI viene ghigliottinato",
+  "summary": "Il 21 gennaio 1793, dopo la condanna a morte votata dalla Convenzione nazionale, Luigi XVI è ghigliottinato a Parigi, in quella che oggi è place de la Concorde.",
+  "date": {
+    "year": 1793,
+    "month": 1,
+    "day": 21
+  },
+  "place": {
+    "name": "Place de la Concorde, Parigi, Francia",
+    "lat": 48.8656,
+    "lon": 2.3212,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Nel giugno 1791 il re aveva tentato di fuggire all'estero, ma fu fermato a Varennes. Dopo l'assalto alle Tuileries del 10 agosto 1792 la monarchia fu sospesa, e il 21 settembre la Convenzione nazionale abolì la monarchia e proclamò la Repubblica. Il re fu processato per tradimento davanti alla Convenzione.",
+  "event": "La Convenzione dichiarò il re colpevole e, in una votazione conclusa pochi giorni prima, lo condannò a morte. Il 21 gennaio 1793 Luigi XVI fu portato alla ghigliottina in place de la Révolution, oggi place de la Concorde, davanti a una grande folla.",
+  "after": "L'esecuzione del re accentuò lo scontro con le monarchie europee, che già si preparavano a combattere la Francia rivoluzionaria. Nei mesi seguenti la Rivoluzione si radicalizzò: Maria Antonietta fu ghigliottinata il 16 ottobre 1793 e cominciò la fase conosciuta come il Terrore.",
+  "links": [
+    {
+      "slug": "marcia-su-versailles-1789",
+      "reason": "Il percorso del re, da Versailles a Parigi, nel 1789."
+    },
+    {
+      "slug": "caduta-robespierre-1794",
+      "reason": "Il Terrore e la sua fine."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Execution of Louis XVI - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Execution_of_Louis_XVI",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Luigi XVI di Francia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Luigi_XVI_di_Francia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

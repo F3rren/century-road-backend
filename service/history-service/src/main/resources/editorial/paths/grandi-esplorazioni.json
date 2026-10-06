@@ -1,0 +1,40 @@
+{
+  "slug": "grandi-esplorazioni",
+  "title": "Le grandi esplorazioni",
+  "tagline": "Otto viaggi, dal 1492 alla Luna: come gli esseri umani hanno raggiunto i luoghi più lontani e più estremi della Terra.",
+  "intro": "Per secoli l'Europa conosceva solo una piccola parte del mondo. Tra la fine del Quattrocento e il Novecento le navi, e poi le slitte, gli alpinisti, i sommergibili e i razzi, hanno raggiunto quasi ogni luogo: l'India, le Americhe, il Pacifico, i Poli, la vetta più alta, il fondo dell'oceano, la Luna.\n\nQuesto percorso segue otto tappe. Le esplorazioni raccontate così sembrano imprese di singoli, ma sono anche la storia di popoli che già vivevano nei luoghi \"scoperti\", e di conseguenze che furono spesso dure per loro: dove serve, la tappa lo dice.",
+  "stops": [
+    {
+      "insight": "colombo-1492",
+      "narrative": "Si parte da un errore di calcolo: Colombo cerca l'Asia e raggiunge un continente che gli europei non conoscevano."
+    },
+    {
+      "insight": "vasco-da-gama-calicut-1498",
+      "narrative": "Intanto i portoghesi arrivano in India per mare, intorno all'Africa."
+    },
+    {
+      "insight": "circumnavigazione-1522",
+      "narrative": "Un viaggio cominciato da Magellano si chiude con Elcano: la Terra si può circumnavigare."
+    },
+    {
+      "insight": "cook-botany-bay-1770",
+      "narrative": "Nel Settecento l'esplorazione si fa scienza: Cook mappa il Pacifico e la costa dell'Australia."
+    },
+    {
+      "insight": "amundsen-polo-sud-1911",
+      "narrative": "Nel Novecento restano i luoghi estremi: il primo è il Polo Sud, e una gara tra due spedizioni."
+    },
+    {
+      "insight": "everest-1953",
+      "narrative": "Il tetto del mondo: la vetta dell'Everest, raggiunta nel 1953 da una spedizione internazionale."
+    },
+    {
+      "insight": "trieste-fossa-marianne-1960",
+      "narrative": "Il contrario della vetta: il punto più profondo degli oceani, raggiunto in un batiscafo."
+    },
+    {
+      "insight": "apollo-11",
+      "narrative": "L'ultima frontiera, per ora: nel 1969 gli esseri umani camminano sulla Luna."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "marcia-su-versailles-1789",
+  "title": "La marcia su Versailles",
+  "summary": "Il 5 e 6 ottobre 1789 una folla di parigini, in gran parte donne in cerca di pane, marcia su Versailles, fa irruzione nella reggia e costringe la famiglia reale a trasferirsi a Parigi.",
+  "date": {
+    "year": 1789,
+    "month": 10,
+    "day": 6
+  },
+  "place": {
+    "name": "Reggia di Versailles, Francia",
+    "lat": 48.8049,
+    "lon": 2.1204,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Nell'autunno 1789 il pane mancava e costava molto a Parigi. Il re non aveva ancora accettato i decreti di agosto e la Dichiarazione dei diritti, e a Versailles la notizia di un banchetto delle guardie del corpo, nel quale si diceva fosse stata calpestata la coccarda tricolore, fece crescere il malumore.",
+  "event": "Il 5 ottobre migliaia di donne partirono da Parigi per Versailles, una ventina di chilometri, per chiedere pane al re, seguite più tardi dalla Guardia nazionale guidata da La Fayette. Nella notte alcuni manifestanti entrarono nella reggia. La mattina del 6 ottobre ci furono scontri con le guardie del corpo, con due morti, e la folla chiese che il re tornasse a Parigi. La regina Maria Antonietta si affacciò al balcone, e la sua apparizione calmò gli animi.",
+  "after": "Il 6 ottobre la famiglia reale lasciò Versailles e fu condotta a Parigi, al palazzo delle Tuileries; l'Assemblea la seguì pochi giorni dopo. Da quel momento il re fu, di fatto, sotto il controllo di Parigi e dell'Assemblea.",
+  "links": [
+    {
+      "slug": "dichiarazione-diritti-1789",
+      "reason": "Il testo che il re non aveva ancora accettato."
+    },
+    {
+      "slug": "luigi-xvi-ghigliottina-1793",
+      "reason": "Il re a Parigi: quattro anni dopo finisce sul patibolo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Women's March on Versailles - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Women%27s_March_on_Versailles",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Marcia su Versailles - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Marcia_su_Versailles",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La marcia cominciò il 5 ottobre e culminò il 6: molte fonti indicano entrambe le date."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

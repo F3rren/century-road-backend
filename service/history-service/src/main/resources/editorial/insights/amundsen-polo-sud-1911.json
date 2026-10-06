@@ -1,0 +1,49 @@
+{
+  "slug": "amundsen-polo-sud-1911",
+  "title": "Amundsen raggiunge il Polo Sud",
+  "summary": "Il 14 dicembre 1911 una squadra norvegese guidata da Roald Amundsen è la prima a raggiungere il Polo Sud, battendo di poche settimane la spedizione britannica di Robert Falcon Scott.",
+  "date": {
+    "year": 1911,
+    "month": 12,
+    "day": 14
+  },
+  "place": {
+    "name": "Polo Sud, Antartide",
+    "lat": -90,
+    "lon": 0,
+    "approximate": false
+  },
+  "before": "All'inizio del Novecento il Polo Sud era uno degli ultimi luoghi della Terra non raggiunti. Amundsen, esploratore norvegese, aveva preparato la spedizione con attenzione ai metodi di viaggio dei popoli polari, usando slitte con cani e una base nella Baia delle Balene. Scott guidava una spedizione britannica con metodi diversi, che puntava anche su pony e trattori a motore.",
+  "event": "Amundsen e altri quattro uomini partirono dalla base nell'ottobre 1911, con cani da slitta, e il 14 dicembre raggiunsero il Polo Sud. Scott lo raggiunse il 17 gennaio 1912 e vi trovò la tenda lasciata dai norvegesi.",
+  "after": "Amundsen e i suoi tornarono alla base senza gravi perdite. Scott e i suoi quattro compagni morirono durante il ritorno, per il freddo, la fame e la fatica, a circa venti chilometri da un deposito di viveri. Nel 1912 la notizia di Amundsen fece il giro del mondo, e la vicenda di Scott fu a lungo raccontata come un'impresa eroica.",
+  "links": [
+    {
+      "slug": "cook-botany-bay-1770",
+      "reason": "Cook, che nel 1773 fu il primo a superare il circolo polare antartico, senza vedere la terra."
+    },
+    {
+      "slug": "everest-1953",
+      "reason": "Un’altra conquista di un luogo estremo, quarant’anni dopo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Amundsen's South Pole expedition - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Amundsen%27s_South_Pole_expedition",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Roald Amundsen - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Roald_Amundsen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il Polo Sud non appartiene a nessuno Stato: il trattato antartico del 1959 ne vieta lo sfruttamento militare e ne regola l’uso scientifico."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

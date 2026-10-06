@@ -1,0 +1,48 @@
+{
+  "slug": "raggi-x-1895",
+  "title": "Röntgen scopre i raggi X",
+  "summary": "L'8 novembre 1895 Wilhelm Röntgen osserva a Würzburg una radiazione sconosciuta che attraversa i corpi: le prime radiografie rivoluzionano la diagnostica.",
+  "date": {
+    "year": 1895,
+    "month": 11,
+    "day": 8
+  },
+  "place": {
+    "name": "Würzburg, Germania",
+    "lat": 49.7913,
+    "lon": 9.9534,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Alla fine dell'Ottocento molti fisici studiavano i raggi catodici, prodotti nei tubi di vetro in cui è stato fatto il vuoto. Röntgen, professore all'università di Würzburg, stava ripetendo alcuni di questi esperimenti.",
+  "event": "La sera dell'8 novembre 1895 Röntgen notò che uno schermo fluorescente, posto a distanza e lontano dal tubo coperto con cartone nero, si illuminava. Capì di avere a che fare con una radiazione nuova, che chiamò «raggi X», con la X dei simboli ignoti in matematica. Il 22 dicembre fece la prima radiografia della mano della moglie.",
+  "after": "Pubblicò i suoi risultati alla fine di dicembre e in poche settimane i raggi X furono usati in tutto il mondo per vedere fratture e corpi estranei. Röntgen ricevette il primo premio Nobel per la fisica, nel 1901. Più tardi la diffrazione dei raggi X servì a studiare la struttura delle molecole, compreso il DNA.",
+  "links": [
+    {
+      "slug": "dna-struttura-1953",
+      "reason": "I raggi X usati per studiare la struttura del DNA."
+    },
+    {
+      "slug": "etere-1846",
+      "reason": "Lo strumento che rese più sicuro operare."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wilhelm Röntgen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wilhelm_R%C3%B6ntgen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Wilhelm Conrad Röntgen - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Wilhelm_Conrad_R%C3%B6ntgen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

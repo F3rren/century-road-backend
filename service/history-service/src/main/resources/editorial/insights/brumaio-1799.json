@@ -1,0 +1,50 @@
+{
+  "slug": "brumaio-1799",
+  "title": "Il colpo di Stato del 18 brumaio",
+  "summary": "Il 9 novembre 1799 (18 brumaio dell'anno VIII) Napoleone Bonaparte e i suoi alleati rovesciano il Direttorio: comincia il Consolato, che molti storici considerano la fine della Rivoluzione.",
+  "date": {
+    "year": 1799,
+    "month": 11,
+    "day": 9
+  },
+  "place": {
+    "name": "Saint-Cloud, Francia",
+    "lat": 48.8451,
+    "lon": 2.2189,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Il Direttorio governava dal 1795 in una situazione instabile: crisi finanziarie, difficoltà militari, scontri tra fazioni e colpi di mano. Il generale Napoleone Bonaparte, tornato dalla campagna d'Egitto nell'ottobre 1799, godeva di grande prestigio e fu avvicinato da politici, fra cui Emmanuel-Joseph Sieyès, che volevano cambiare la costituzione.",
+  "event": "Il 9 novembre 1799 il Consiglio degli Anziani, convinto con il pretesto di un complotto, trasferì le Camere a Saint-Cloud, fuori Parigi, e affidò a Bonaparte il comando delle truppe. Il giorno dopo i deputati del Consiglio dei Cinquecento resistettero, ma i soldati li sciolsero. Fu istituito un Consolato provvisorio di tre membri.",
+  "after": "La nuova costituzione dell'anno VIII, approvata poco dopo, diede a Napoleone, primo console, poteri molto estesi. Nel 1804 si proclamò imperatore dei francesi. Per molti storici il 18 brumaio chiude il periodo rivoluzionario.",
+  "links": [
+    {
+      "slug": "caduta-robespierre-1794",
+      "reason": "Il periodo che porta al Direttorio."
+    },
+    {
+      "slug": "dichiarazione-diritti-1789",
+      "reason": "I principi con cui la Rivoluzione era cominciata dieci anni prima."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Coup of 18 Brumaire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coup_of_18_Brumaire",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Colpo di Stato del 18 brumaio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_del_18_brumaio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il colpo di Stato si svolse tra il 9 e il 10 novembre (18 e 19 brumaio): si usa il giorno di inizio."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

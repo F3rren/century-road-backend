@@ -1,0 +1,50 @@
+{
+  "slug": "bastiglia-1789",
+  "title": "La presa della Bastiglia",
+  "summary": "Il 14 luglio 1789 una folla parigina assalta la Bastiglia, fortezza e prigione di Stato: un episodio militarmente limitato che diventa il simbolo della Rivoluzione francese.",
+  "date": {
+    "year": 1789,
+    "month": 7,
+    "day": 14
+  },
+  "place": {
+    "name": "Bastiglia, Parigi, Francia",
+    "lat": 48.8532,
+    "lon": 2.3691,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Nei primi giorni di luglio 1789 Parigi era agitata da una crisi del pane e dalle notizie dell'Assemblea. L'11 luglio il re licenziò il ministro Necker, molto popolare, e intorno alla città si concentrarono truppe: i parigini temettero un colpo di forza contro l'Assemblea. Il 14 luglio una folla armata si procurò fucili agli Invalides e si diresse verso la Bastiglia, dove si sapeva che c'era della polvere da sparo.",
+  "event": "La Bastiglia era una fortezza medievale usata come prigione di Stato, con pochi detenuti, sette secondo i racconti più comuni. Dopo ore di trattative e scontri, il governatore, il marchese de Launay, si arrese; fu ucciso dalla folla poco dopo, insieme ad altri difensori. Il significato dell'evento fu soprattutto simbolico: la fortezza rappresentava, per i parigini, l'arbitrio del potere regio.",
+  "after": "Il re dovette ritirare le truppe e riconoscere il nuovo potere municipale di Parigi. Nelle campagne si diffuse la «Grande Paura», con rivolte contro i signori feudali. Dal 1880 il 14 luglio è la festa nazionale francese.",
+  "links": [
+    {
+      "slug": "pallacorda-1789",
+      "reason": "Le settimane precedenti: l'Assemblea nazionale sfida il re."
+    },
+    {
+      "slug": "dichiarazione-diritti-1789",
+      "reason": "Pochi mesi dopo, i principi della Rivoluzione messi per iscritto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Storming of the Bastille - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Storming_of_the_Bastille",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Presa della Bastiglia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Presa_della_Bastiglia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il numero dei detenuti e quello delle vittime variano un poco da fonte a fonte."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

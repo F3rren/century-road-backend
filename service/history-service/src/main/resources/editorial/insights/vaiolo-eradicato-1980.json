@@ -1,0 +1,50 @@
+{
+  "slug": "vaiolo-eradicato-1980",
+  "title": "Il vaiolo è dichiarato eradicato",
+  "summary": "L'8 maggio 1980 l'Assemblea mondiale della sanità dichiara che il mondo è libero dal vaiolo: è la prima, e finora unica, malattia umana eradicata.",
+  "date": {
+    "year": 1980,
+    "month": 5,
+    "day": 8
+  },
+  "place": {
+    "name": "Ginevra, Svizzera",
+    "lat": 46.2325,
+    "lon": 6.1382,
+    "countryCode": "CH",
+    "approximate": false
+  },
+  "before": "Nel 1967 l'Organizzazione mondiale della sanità (OMS) intensificò una campagna globale contro il vaiolo, che causava ancora milioni di casi ogni anno. Alla vaccinazione di massa si aggiunse una strategia di sorveglianza e contenimento: individuare i casi e vaccinare le persone intorno a ciascuno. L'ultimo caso naturale fu registrato in Somalia nel 1977.",
+  "event": "L'8 maggio 1980 la 33ª Assemblea mondiale della sanità, a Ginevra, dichiarò il mondo libero dal vaiolo, dopo che una commissione internazionale ne aveva certificato la scomparsa.",
+  "after": "È tuttora l'unica malattia umana eradicata. Campioni del virus sono rimasti in pochissimi laboratori ad alta sicurezza, e il loro destino è oggetto di discussione. L'eradicazione fu possibile anche perché il vaiolo ha caratteristiche particolari, come l'assenza di serbatoi animali: per altre malattie, come la poliomielite, il lavoro continua.",
+  "links": [
+    {
+      "slug": "jenner-vaccino-1796",
+      "reason": "Il vaccino da cui tutto è cominciato, quasi due secoli prima."
+    },
+    {
+      "slug": "pasteur-rabbia-1885",
+      "reason": "La vaccinazione sviluppata nell’Ottocento."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Smallpox - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Smallpox",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vaiolo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Vaiolo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Un ultimo caso, legato a un laboratorio, si verificò a Birmingham nel 1978: la dichiarazione del 1980 è la data di riferimento per la certificazione."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "etere-1846",
+  "title": "La prima operazione con l'etere",
+  "summary": "Il 16 ottobre 1846 a Boston William Morton dimostra in pubblico che l'etere permette di operare un paziente senza dolore: comincia l'era dell'anestesia generale.",
+  "date": {
+    "year": 1846,
+    "month": 10,
+    "day": 16
+  },
+  "place": {
+    "name": "Massachusetts General Hospital, Boston, Stati Uniti",
+    "lat": 42.3631,
+    "lon": -71.0686,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Prima dell'Ottocento le operazioni si facevano con il paziente sveglio, tenuto fermo, e i chirurghi cercavano di essere il più veloci possibile. Alcuni, negli anni Quaranta, avevano sperimentato l'etere e il protossido d'azoto, ma senza una dimostrazione convincente davanti ai colleghi.",
+  "event": "Il 16 ottobre 1846, nell'anfiteatro chirurgico del Massachusetts General Hospital, il dentista William Morton fece inalare etere a un paziente, Gilbert Abbott, mentre il chirurgo John Collins Warren gli asportava un tumore al collo. L'intervento ebbe luogo senza i segni di dolore che gli spettatori si aspettavano.",
+  "after": "La notizia attraversò l'Atlantico in poche settimane e già nel dicembre 1846 si operava con l'etere in Gran Bretagna. L'anestesia permise interventi più lunghi e complessi e cambiò per sempre la chirurgia. Lo stesso nome «anestesia» fu proposto proprio in quei mesi.",
+  "links": [
+    {
+      "slug": "raggi-x-1895",
+      "reason": "Un altro strumento che ha reso la chirurgia più precisa."
+    },
+    {
+      "slug": "penicillina-1928",
+      "reason": "Anestesia e antibiotici: due condizioni della chirurgia moderna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ether Dome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ether_Dome",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anestesia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Anestesia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Chi per primo ebbe l'idea fu a lungo discusso: Crawford Long aveva usato l'etere già nel 1842, ma non ne pubblicò i risultati."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

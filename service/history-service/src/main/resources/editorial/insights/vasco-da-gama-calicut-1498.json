@@ -1,0 +1,48 @@
+{
+  "slug": "vasco-da-gama-calicut-1498",
+  "title": "Vasco da Gama arriva a Calicut",
+  "summary": "Il 20 maggio 1498 la flotta di Vasco da Gama raggiunge Calicut, in India, dopo aver doppiato l'Africa: è aperta la rotta marittima dall'Europa all'Asia.",
+  "date": {
+    "year": 1498,
+    "month": 5,
+    "day": 20
+  },
+  "place": {
+    "name": "Calicut (Kozhikode), India",
+    "lat": 11.2588,
+    "lon": 75.7804,
+    "countryCode": "IN",
+    "approximate": false
+  },
+  "before": "Per tutto il Quattrocento i portoghesi esplorarono la costa africana, alla ricerca di una via marittima verso le spezie dell'Oriente. Nel 1488 Bartolomeu Dias aveva doppiato la punta meridionale dell'Africa, il Capo di Buona Speranza. Nel 1497 il re Manuele I affidò a Vasco da Gama una spedizione per arrivare in India.",
+  "event": "Vasco da Gama partì da Lisbona nel luglio 1497 con quattro navi. Dopo aver doppiato il Capo e risalito la costa orientale dell'Africa, con l'aiuto di un pilota locale attraversò l'oceano Indiano e il 20 maggio 1498 arrivò a Calicut, sulla costa del Malabar.",
+  "after": "L'accoglienza fu ambigua: il sovrano locale, lo Zamorin, non fu impressionato dai doni portoghesi. Vasco da Gama tornò in Portogallo con un carico di spezie, e negli anni seguenti i portoghesi crearono una rete di basi nell'oceano Indiano, spesso con la forza. La nuova rotta spostò una parte del commercio delle spezie dal Mediterraneo all'Atlantico.",
+  "links": [
+    {
+      "slug": "colombo-1492",
+      "reason": "L'altra grande esplorazione di quegli anni, verso ovest."
+    },
+    {
+      "slug": "circumnavigazione-1522",
+      "reason": "Gli spagnoli completano il giro del mondo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Vasco da Gama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Vasco_da_Gama",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Vasco da Gama - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Vasco_da_Gama",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

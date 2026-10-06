@@ -1,0 +1,49 @@
+{
+  "slug": "voyager-1",
+  "title": "Parte la sonda Voyager 1",
+  "summary": "Il 5 settembre 1977 la NASA lancia Voyager 1, che visiterà Giove e Saturno e, anni dopo, diventerà il primo oggetto costruito dall'uomo a entrare nello spazio interstellare.",
+  "date": {
+    "year": 1977,
+    "month": 9,
+    "day": 5
+  },
+  "place": {
+    "name": "Cape Canaveral, Florida, Stati Uniti",
+    "lat": 28.4889,
+    "lon": -80.5778,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "La sonda viaggia nello spazio profondo: il punto sulla mappa indica la rampa di lancio di Cape Canaveral."
+  },
+  "before": "A metà degli anni Settanta, per una rara disposizione dei pianeti esterni, la NASA poté progettare una missione che con una serie di sorvoli, aiutati dalla gravità di ciascun pianeta, avrebbe raggiunto più pianeti con un solo viaggio. Le due sonde gemelle Voyager furono costruite con questo scopo.",
+  "event": "Voyager 2 fu lanciata il 20 agosto 1977 e Voyager 1 il 5 settembre, con un razzo Titan IIIE-Centaur da Cape Canaveral. A bordo di ciascuna c'è un disco d'oro con suoni e immagini della Terra, destinato a eventuali ascoltatori extraterrestri.",
+  "after": "Voyager 1 sorvolò Giove nel 1979 e Saturno nel 1980, e nel 1990 fotografò la Terra da circa sei miliardi di chilometri, nell'immagine detta «Pale Blue Dot». La NASA considera che nel 2012 sia entrata nello spazio interstellare. Entrambe le sonde, a decenni dal lancio, trasmettono ancora.",
+  "links": [
+    {
+      "slug": "hubble",
+      "reason": "Un altro strumento che ha ampliato la nostra visione dell'universo."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Pochi anni prima, la Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voyager 1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Voyager_1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Voyager 1 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Voyager_1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

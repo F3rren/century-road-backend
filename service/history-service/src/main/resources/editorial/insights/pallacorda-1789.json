@@ -1,0 +1,50 @@
+{
+  "slug": "pallacorda-1789",
+  "title": "Il giuramento della Pallacorda",
+  "summary": "Il 20 giugno 1789 i deputati del terzo stato, trovata chiusa la loro sala, si riuniscono nella sala della pallacorda di Versailles e giurano di non separarsi finché la Francia non avrà una costituzione.",
+  "date": {
+    "year": 1789,
+    "month": 6,
+    "day": 20
+  },
+  "place": {
+    "name": "Salle du Jeu de paume, Versailles, Francia",
+    "lat": 48.8035,
+    "lon": 2.1281,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dopo il blocco degli Stati generali, il 17 giugno 1789 i deputati del terzo stato si dichiararono Assemblea nazionale, aprendo ai membri degli altri ordini che volessero unirsi a loro. Tre giorni dopo, il 20 giugno, trovarono chiusa la sala in cui si riunivano: il governo la aveva fatta sbarrare, ufficialmente per lavori, e molti deputati temettero un tentativo di scioglimento.",
+  "event": "I deputati si spostarono in una vicina sala della pallacorda, un edificio usato per un antenato del tennis, e giurarono di non separarsi fino a quando non avessero dato alla Francia una costituzione. Il giuramento, che quasi tutti i presenti firmarono, è uno dei momenti più noti dell'inizio della Rivoluzione.",
+  "after": "Il 23 giugno il re ordinò ai deputati di sciogliersi, ma l'Assemblea rimase riunita; pochi giorni dopo Luigi XVI cedette e invitò clero e nobiltà a unirsi. Il 9 luglio l'Assemblea prese il nome di Assemblea nazionale costituente.",
+  "links": [
+    {
+      "slug": "stati-generali-1789",
+      "reason": "Da dove nasce lo scontro: la convocazione degli Stati generali."
+    },
+    {
+      "slug": "bastiglia-1789",
+      "reason": "Pochi giorni dopo la tensione esplode a Parigi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tennis Court Oath - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tennis_Court_Oath",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Giuramento della Pallacorda - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Giuramento_della_Pallacorda",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è quella del giuramento; la sala fu aperta dopo che i deputati si erano già spostati altrove."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

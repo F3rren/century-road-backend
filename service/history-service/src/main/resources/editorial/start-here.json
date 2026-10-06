@@ -6,6 +6,16 @@
       "teaser": "Un viaggio in nove tappe, dal primo satellite artificiale all'ultimo atterraggio sulla Luna: la mappa ti porta di luogo in luogo."
     },
     {
+      "type": "PATH",
+      "slug": "scoperte-che-cambiano-la-medicina",
+      "teaser": "Dal primo vaccino all'eradicazione del vaiolo: otto scoperte che hanno cambiato come ci curiamo."
+    },
+    {
+      "type": "PATH",
+      "slug": "rivoluzione-francese",
+      "teaser": "Otto date, dagli Stati generali a Napoleone: come in dieci anni un regno diventa una repubblica."
+    },
+    {
       "type": "INSIGHT",
       "slug": "apollo-11",
       "teaser": "L'evento che molti associano alla parola «storia»: cosa lo preparò, cosa accadde davvero e cosa venne dopo."

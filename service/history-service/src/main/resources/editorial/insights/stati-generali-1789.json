@@ -1,0 +1,48 @@
+{
+  "slug": "stati-generali-1789",
+  "title": "Si aprono gli Stati generali a Versailles",
+  "summary": "Il 5 maggio 1789 Luigi XVI apre a Versailles gli Stati generali, l'assemblea dei tre ordini del regno che non si riuniva dal 1614.",
+  "date": {
+    "year": 1789,
+    "month": 5,
+    "day": 5
+  },
+  "place": {
+    "name": "Reggia di Versailles, Francia",
+    "lat": 48.8049,
+    "lon": 2.1204,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Alla fine degli anni Ottanta del Settecento lo Stato francese era in gravi difficoltà finanziarie, anche per le spese di guerra e per il debito accumulato. Le riforme proposte dai ministri del re incontravano l'opposizione dei privilegiati. La società era divisa in tre ordini, clero, nobiltà e terzo stato, e il re si decise a convocare gli Stati generali, che non si riunivano dal 1614, per cercare un accordo sulle nuove imposte.",
+  "event": "Il 5 maggio 1789 i deputati, più di mille, si riunirono a Versailles per la cerimonia di apertura. Fin dai primi giorni la discussione si bloccò su una questione di procedura: votare per ordine, dove clero e nobiltà potevano superare il terzo stato, o per testa, dove i deputati del terzo stato, numerosi quanto gli altri due ordini insieme, avrebbero pesato di più.",
+  "after": "Lo stallo durò settimane. Il 17 giugno i deputati del terzo stato si proclamarono Assemblea nazionale, un atto che metteva in discussione la divisione per ordini. Fu il primo passo di una serie di eventi che portò, in pochi mesi, alla fine dell'ancien régime.",
+  "links": [
+    {
+      "slug": "pallacorda-1789",
+      "reason": "Tre giorni dopo la proclamazione dell'Assemblea nazionale, i deputati giurano di non separarsi."
+    },
+    {
+      "slug": "bastiglia-1789",
+      "reason": "Quando la tensione politica arriva nelle strade di Parigi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Estates General of 1789 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Estates_General_of_1789",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stati generali del 1789 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Stati_generali_del_1789",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

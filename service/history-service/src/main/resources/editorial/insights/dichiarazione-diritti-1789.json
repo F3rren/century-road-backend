@@ -1,0 +1,50 @@
+{
+  "slug": "dichiarazione-diritti-1789",
+  "title": "La Dichiarazione dei diritti dell'uomo e del cittadino",
+  "summary": "Il 26 agosto 1789 l'Assemblea nazionale costituente approva la Dichiarazione dei diritti dell'uomo e del cittadino, in 17 articoli: un testo destinato a influenzare costituzioni di tutto il mondo.",
+  "date": {
+    "year": 1789,
+    "month": 8,
+    "day": 26
+  },
+  "place": {
+    "name": "Versailles, Francia",
+    "lat": 48.8049,
+    "lon": 2.1204,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dopo la presa della Bastiglia, nella notte tra il 4 e il 5 agosto 1789 l'Assemblea aveva votato l'abolizione dei diritti feudali e di molti privilegi. Restava da scrivere a quali principi dovesse ispirarsi la futura costituzione: i deputati si ispirarono all'Illuminismo e all'esempio delle dichiarazioni dei diritti americane.",
+  "event": "Il 26 agosto 1789 l'Assemblea approvò la Dichiarazione in 17 articoli: gli uomini nascono e restano liberi e uguali nei diritti, la sovranità risiede nella nazione, la legge è espressione della volontà generale, e a tutti sono riconosciuti la libertà, la proprietà, la sicurezza e la resistenza all'oppressione.",
+  "after": "Il testo fu posto in apertura della Costituzione del 1791 e circolò in tutta Europa e nelle Americhe. I suoi limiti erano però evidenti già ai contemporanei: non riconosceva diritti politici alle donne, e Olympe de Gouges rispose nel 1791 con una Dichiarazione dei diritti della donna e della cittadina. La schiavitù nelle colonie fu abolita nel 1794, ripristinata nel 1802 e abolita definitivamente nel 1848.",
+  "links": [
+    {
+      "slug": "bastiglia-1789",
+      "reason": "L'evento che apre la strada a un nuovo ordine politico."
+    },
+    {
+      "slug": "marcia-su-versailles-1789",
+      "reason": "Pochi mesi dopo il re è costretto a lasciare Versailles."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Declaration of the Rights of Man and of the Citizen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Declaration_of_the_Rights_of_Man_and_of_the_Citizen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dichiarazione dei diritti dell'uomo e del cittadino - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dichiarazione_dei_diritti_dell%27uomo_e_del_cittadino",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'Assemblea approvò il testo il 26 agosto; fu poi accettato dal re solo in ottobre, sotto la pressione degli eventi."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

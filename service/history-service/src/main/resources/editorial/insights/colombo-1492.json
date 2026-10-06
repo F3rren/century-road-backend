@@ -1,0 +1,52 @@
+{
+  "slug": "colombo-1492",
+  "title": "Colombo approda nelle Americhe",
+  "summary": "Il 12 ottobre 1492 Cristoforo Colombo, in cerca di una rotta occidentale verso l'Asia, sbarca su un'isola dei Caraibi: comincia il contatto stabile tra Europa e Americhe.",
+  "date": {
+    "year": 1492,
+    "month": 10,
+    "day": 12
+  },
+  "place": {
+    "name": "Bahamas",
+    "lat": 24.0865,
+    "lon": -74.4686,
+    "countryCode": "BS",
+    "approximate": true,
+    "note": "L'isola dello sbarco, che i Lucayan chiamavano Guanahani, non è certa: il punto sulla mappa indica San Salvador, una delle isole proposte dagli studiosi."
+  },
+  "before": "Alla fine del Quattrocento le rotte verso le ricchezze dell'Asia passavano per il Mediterraneo orientale e l'Africa. Colombo, navigatore genovese, riteneva che la Terra fosse più piccola di quanto in realtà fosse e che navigando a ovest si arrivasse in Asia. Dopo molti rifiuti ottenne il finanziamento dei re di Spagna, Isabella di Castiglia e Ferdinando d'Aragona.",
+  "event": "Colombo partì da Palos nell'agosto 1492 con tre navi. Il 12 ottobre, secondo il calendario giuliano allora in uso, avvistò e raggiunse un'isola dei Caraibi, che chiamò San Salvador e che gli abitanti chiamavano Guanahani. Credeva di essere vicino alle Indie.",
+  "after": "Colombo fece altri tre viaggi. Nei decenni seguenti seguì l'esplorazione e la conquista spagnola delle Americhe. Per le popolazioni native le conseguenze furono devastanti: malattie portate dagli europei, violenze, sfruttamento e schiavitù ne ridussero drasticamente il numero. Nel 1494 il trattato di Tordesillas divise le aree di espansione tra Spagna e Portogallo.",
+  "links": [
+    {
+      "slug": "vasco-da-gama-calicut-1498",
+      "reason": "Pochi anni dopo, la rotta orientale per le Indie."
+    },
+    {
+      "slug": "circumnavigazione-1522",
+      "reason": "La prova, trent’anni dopo, che le terre di Colombo erano un continente nuovo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Voyages of Christopher Columbus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Voyages_of_Christopher_Columbus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cristoforo Colombo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Cristoforo_Colombo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è quella del calendario giuliano; nel calendario gregoriano, introdotto nel 1582, corrisponde al 21 ottobre.",
+    "Già prima di Colombo le Americhe erano abitate da molti popoli, e i vichinghi avevano raggiunto la costa del Nord America intorno all'anno 1000."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "cook-botany-bay-1770",
+  "title": "Cook approda a Botany Bay",
+  "summary": "Il 29 aprile 1770 James Cook sbarca a Botany Bay, sulla costa orientale dell'Australia, durante la prima delle sue tre grandi spedizioni nel Pacifico.",
+  "date": {
+    "year": 1770,
+    "month": 4,
+    "day": 29
+  },
+  "place": {
+    "name": "Botany Bay, Australia",
+    "lat": -34,
+    "lon": 151.2,
+    "countryCode": "AU",
+    "approximate": false
+  },
+  "before": "Nel 1768 la Royal Society e la Marina britannica inviarono James Cook con la nave Endeavour a Tahiti per osservare il transito di Venere davanti al Sole, che si sarebbe verificato nel 1769. Cook aveva anche istruzioni segrete di cercare il grande continente meridionale che alcuni ipotizzavano. Dopo Tahiti navigò fino alla Nuova Zelanda e ne tracciò le coste.",
+  "event": "Proseguendo verso ovest, Cook raggiunse la costa orientale dell'Australia. Il 29 aprile 1770 sbarcò in una baia che chiamò prima Stingray Bay e poi Botany Bay, per la ricchezza di piante notate dai naturalisti. Risalì poi la costa e la mappò per oltre tremila chilometri.",
+  "after": "Nel 1788 la Gran Bretagna avviò una colonia penale a Sydney, vicino a Botany Bay. La costa che Cook raggiunse era già abitata da popoli aborigeni, presenti in Australia da decine di migliaia di anni; l'arrivo degli europei portò con sé malattie, perdita di terre e violenze.",
+  "links": [
+    {
+      "slug": "circumnavigazione-1522",
+      "reason": "Le spedizioni che aprirono il Pacifico agli europei."
+    },
+    {
+      "slug": "amundsen-polo-sud-1911",
+      "reason": "Un'altra grande esplorazione di un continente lontano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "James Cook - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/James_Cook",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "James Cook - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/James_Cook",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'approdo avvenne in una terra già abitata: la popolazione locale, i Gweagal, si oppose allo sbarco."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}
