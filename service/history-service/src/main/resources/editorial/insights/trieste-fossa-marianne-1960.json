@@ -1,0 +1,49 @@
+{
+  "slug": "trieste-fossa-marianne-1960",
+  "title": "Il batiscafo Trieste scende nella Fossa delle Marianne",
+  "summary": "Il 23 gennaio 1960 Jacques Piccard e Don Walsh raggiungono il fondo del Challenger Deep, il punto più profondo degli oceani, a bordo del batiscafo Trieste.",
+  "date": {
+    "year": 1960,
+    "month": 1,
+    "day": 23
+  },
+  "place": {
+    "name": "Challenger Deep, Fossa delle Marianne, Oceano Pacifico",
+    "lat": 11.3733,
+    "lon": 142.5917,
+    "approximate": false
+  },
+  "before": "Il batiscafo era un sommergibile per grandi profondità ideato dallo svizzero Auguste Piccard. Il Trieste, costruito a metà degli anni Cinquanta con il sostegno di Trieste e dell'Italia, fu acquistato nel 1958 dalla Marina degli Stati Uniti per esplorare le massime profondità.",
+  "event": "Il 23 gennaio 1960 Jacques Piccard, figlio di Auguste, e il tenente Don Walsh, della Marina statunitense, scesero con il Trieste nel Challenger Deep, nella Fossa delle Marianne, a circa 10.900 metri di profondità. La discesa durò quasi cinque ore, e la sosta sul fondo solo venti minuti.",
+  "after": "Passarono più di cinquant'anni prima che altri esseri umani tornassero nel Challenger Deep: nel 2012 vi scese il regista James Cameron, da solo, e nel 2019 Victor Vescovo. Le esplorazioni più recenti si fanno spesso con robot senza equipaggio.",
+  "links": [
+    {
+      "slug": "everest-1953",
+      "reason": "L'altro estremo del pianeta, sette anni prima."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Pochi anni dopo gli esseri umani raggiungeranno anche la Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trieste (bathyscaphe) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trieste_(bathyscaphe)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Batiscafo Trieste - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Batiscafo_Trieste",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La profondità raggiunta è stata stimata in modi diversi nel tempo: le misure moderne danno valori vicini a 10.900 metri."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

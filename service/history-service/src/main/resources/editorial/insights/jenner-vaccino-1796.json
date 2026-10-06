@@ -1,0 +1,50 @@
+{
+  "slug": "jenner-vaccino-1796",
+  "title": "Jenner prova il vaccino contro il vaiolo",
+  "summary": "Il 14 maggio 1796 il medico inglese Edward Jenner inocula a un bambino materiale del vaiolo bovino per proteggerlo dal vaiolo umano: nasce la vaccinazione.",
+  "date": {
+    "year": 1796,
+    "month": 5,
+    "day": 14
+  },
+  "place": {
+    "name": "Berkeley, Gloucestershire, Regno Unito",
+    "lat": 51.6893,
+    "lon": -2.4586,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Il vaiolo era una delle malattie più letali: uccideva circa un malato su tre, e lasciava segni permanenti in molti sopravvissuti. Si praticava già la variolizzazione, che consisteva nell'inoculare materiale da una forma lieve della malattia, ma era rischiosa. Jenner, medico di campagna, notò che le mungitrici che avevano contratto il vaiolo bovino sembravano protette dal vaiolo umano.",
+  "event": "Il 14 maggio 1796 Jenner inoculò a James Phipps, un bambino di otto anni, il contenuto di una pustola di vaiolo bovino presa dalla mano di una mungitrice. Più tardi lo espose al vaiolo umano, e il bambino non si ammalò. Il termine «vaccino» deriva dal latino vacca.",
+  "after": "Jenner pubblicò i risultati nel 1798 e la vaccinazione si diffuse rapidamente in Europa e oltre. Fu il punto di partenza di un lungo lavoro che, quasi due secoli dopo, portò all'eradicazione del vaiolo.",
+  "links": [
+    {
+      "slug": "vaiolo-eradicato-1980",
+      "reason": "Come finisce la storia che Jenner comincia."
+    },
+    {
+      "slug": "pasteur-rabbia-1885",
+      "reason": "L'idea di vaccino sviluppata da Pasteur nell'Ottocento."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edward Jenner - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edward_Jenner",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Edward Jenner - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Edward_Jenner",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Oggi un esperimento di questo tipo, su un bambino, non sarebbe accettabile: gli standard etici della ricerca sono cambiati molto."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

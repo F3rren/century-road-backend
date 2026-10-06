@@ -1,0 +1,40 @@
+{
+  "slug": "scoperte-che-cambiano-la-medicina",
+  "title": "Le scoperte che hanno cambiato la medicina",
+  "tagline": "Otto momenti, da Jenner all'eradicazione del vaiolo: come in due secoli abbiamo imparato a prevenire, osservare e curare.",
+  "intro": "Per gran parte della storia le malattie infettive sono state tra le principali cause di morte, e il dolore faceva parte della chirurgia. Questo percorso ripercorre otto momenti in cui qualcosa è cambiato: il primo vaccino, l'anestesia, la prima analisi epidemiologica, la teoria dei germi, i raggi X, il primo antibiotico, la struttura del DNA e la scomparsa di una malattia dalla Terra.\n\nNon è un elenco dei \"più importanti\": altre scoperte avrebbero meritato un posto. È una scelta, e ogni tappa dice anche dove le storie sono più complicate di come le si racconta di solito.",
+  "stops": [
+    {
+      "insight": "jenner-vaccino-1796",
+      "narrative": "Si comincia da un medico di campagna che osserva le mungitrici e prova un'idea nuova."
+    },
+    {
+      "insight": "etere-1846",
+      "narrative": "Mezzo secolo dopo, la chirurgia smette di essere un atto compiuto sul dolore del paziente."
+    },
+    {
+      "insight": "snow-colera-1854",
+      "narrative": "A Londra, una mappa e una pompa: un modo nuovo di cercare le cause di una malattia."
+    },
+    {
+      "insight": "pasteur-rabbia-1885",
+      "narrative": "La teoria dei germi diventa una cura: Pasteur vaccina contro la rabbia."
+    },
+    {
+      "insight": "raggi-x-1895",
+      "narrative": "Uno schermo che si illumina in laboratorio, e per la prima volta si può vedere dentro il corpo."
+    },
+    {
+      "insight": "penicillina-1928",
+      "narrative": "Una muffa su una piastra dimenticata apre l'era degli antibiotici."
+    },
+    {
+      "insight": "dna-struttura-1953",
+      "narrative": "La biologia guarda dentro le cellule e scopre la forma del materiale ereditario."
+    },
+    {
+      "insight": "vaiolo-eradicato-1980",
+      "narrative": "Si chiude il cerchio: il vaccino di Jenner porta, due secoli dopo, alla scomparsa del vaiolo."
+    }
+  ]
+}

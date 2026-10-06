@@ -1,0 +1,49 @@
+{
+  "slug": "everest-1953",
+  "title": "Hillary e Tenzing sull'Everest",
+  "summary": "Il 29 maggio 1953 Edmund Hillary e Tenzing Norgay raggiungono la vetta dell'Everest, la montagna più alta della Terra, durante una spedizione britannica guidata da John Hunt.",
+  "date": {
+    "year": 1953,
+    "month": 5,
+    "day": 29
+  },
+  "place": {
+    "name": "Monte Everest, Himalaya",
+    "lat": 27.9881,
+    "lon": 86.925,
+    "approximate": false
+  },
+  "before": "Fin dagli anni Venti diverse spedizioni, soprattutto britanniche, avevano tentato di salire l'Everest. Nel 1924 George Mallory e Andrew Irvine scomparvero vicino alla cima: non è mai stato chiarito se l'avessero raggiunta. Nel 1953 una grande spedizione, guidata dal colonnello John Hunt, preparò con cura la salita lungo la via del Colle Sud.",
+  "event": "Il 29 maggio 1953, dopo un campo allestito a grande altezza, Edmund Hillary, neozelandese, e lo sherpa Tenzing Norgay raggiunsero la vetta, a circa 8.850 metri, e vi rimasero poco più di un quarto d'ora.",
+  "after": "La notizia fu annunciata in Gran Bretagna il 2 giugno, giorno dell'incoronazione di Elisabetta II. Hillary e Tenzing divennero celebri in tutto il mondo. Dopo di loro migliaia di alpinisti hanno raggiunto la cima, e il lavoro degli sherpa, spesso poco riconosciuto, è oggi al centro del dibattito sulle spedizioni commerciali.",
+  "links": [
+    {
+      "slug": "amundsen-polo-sud-1911",
+      "reason": "Un altro luogo estremo, raggiunto per la prima volta."
+    },
+    {
+      "slug": "trieste-fossa-marianne-1960",
+      "reason": "Pochi anni dopo, l'altro estremo: il fondo degli oceani."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1953 British Mount Everest expedition - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1953_British_Mount_Everest_expedition",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Edmund Hillary - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Edmund_Hillary",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La vetta si trova sul confine tra Nepal e Cina, e l'altezza ufficiale è stata rivista nel 2020 in 8.848,86 metri."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

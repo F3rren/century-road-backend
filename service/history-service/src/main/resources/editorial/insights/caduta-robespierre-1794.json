@@ -1,0 +1,50 @@
+{
+  "slug": "caduta-robespierre-1794",
+  "title": "La caduta di Robespierre",
+  "summary": "Il 27 luglio 1794 (9 termidoro dell'anno II) la Convenzione fa arrestare Robespierre e i suoi alleati: il giorno dopo è ghigliottinato, e il Terrore finisce.",
+  "date": {
+    "year": 1794,
+    "month": 7,
+    "day": 27
+  },
+  "place": {
+    "name": "Parigi, Francia",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dal 1793 il Comitato di salute pubblica, di cui Maximilien Robespierre era una delle figure principali, governava la Francia in guerra con misure d'emergenza e con un sistema di tribunali rivoluzionari. Nella primavera 1794 la repressione si fece più dura, con la legge del 22 pratile che accelerava i processi. Molti deputati cominciarono a temere di essere i prossimi.",
+  "event": "Il 27 luglio 1794, il 9 termidoro del calendario rivoluzionario, Robespierre fu interrotto e accusato in Convenzione e ne fu decretato l'arresto, insieme a diversi suoi alleati. La Comune di Parigi tentò di liberarli, ma la Convenzione ebbe la meglio.",
+  "after": "Robespierre fu ghigliottinato il 28 luglio insieme a molti dei suoi sostenitori, e nei giorni seguenti ne furono giustiziati altri. Il Terrore finì, le restrizioni furono allentate e nel 1795 una nuova costituzione istituì il Direttorio.",
+  "links": [
+    {
+      "slug": "luigi-xvi-ghigliottina-1793",
+      "reason": "L'esecuzione del re, con cui si apre la fase più radicale."
+    },
+    {
+      "slug": "brumaio-1799",
+      "reason": "Il Direttorio e la sua fine."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thermidorian Reaction - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thermidorian_Reaction",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Colpo di Stato del 9 termidoro - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_del_9_termidoro",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il calendario rivoluzionario, in uso dal 1793, contava gli anni a partire dalla proclamazione della Repubblica: il 9 termidoro è il giorno 27 luglio 1794 del calendario gregoriano."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

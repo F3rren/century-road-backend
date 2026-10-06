@@ -1,0 +1,50 @@
+{
+  "slug": "circumnavigazione-1522",
+  "title": "La prima circumnavigazione del globo",
+  "summary": "Il 6 settembre 1522 la nave Victoria, guidata da Juan Sebastián Elcano, rientra a Sanlúcar de Barrameda dopo aver compiuto il primo giro del mondo.",
+  "date": {
+    "year": 1522,
+    "month": 9,
+    "day": 6
+  },
+  "place": {
+    "name": "Sanlúcar de Barrameda, Spagna",
+    "lat": 36.7783,
+    "lon": -6.3517,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Nel 1519 una flotta di cinque navi, comandata dal portoghese Ferdinando Magellano al servizio della Spagna, partì in cerca di una rotta occidentale verso le isole delle Spezie. Dopo aver trovato uno stretto nella punta dell'America meridionale, oggi detto di Magellano, la spedizione attraversò il Pacifico.",
+  "event": "Magellano morì nelle Filippine, in uno scontro, il 27 aprile 1521. La spedizione proseguì sotto la guida di Juan Sebastián Elcano, con la nave Victoria, attraverso l'oceano Indiano e attorno all'Africa. Il 6 settembre 1522 la Victoria arrivò a Sanlúcar de Barrameda, in Spagna, con diciotto superstiti.",
+  "after": "Fu la prima circumnavigazione del globo documentata e la prova pratica che la Terra poteva essere circumnavigata. Al ritorno i marinai scoprirono di avere perso un giorno nel calendario, effetto del viaggio verso ovest. Delle cinque navi iniziali ne tornò una.",
+  "links": [
+    {
+      "slug": "colombo-1492",
+      "reason": "Il viaggio da cui comincia la ricerca di una via occidentale."
+    },
+    {
+      "slug": "cook-botany-bay-1770",
+      "reason": "Il Pacifico, due secoli e mezzo dopo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Magellan–Elcano circumnavigation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Magellan%E2%80%93Elcano_circumnavigation",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ferdinando Magellano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ferdinando_Magellano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Magellano non completò il viaggio: morì nel 1521. Il merito della prima circumnavigazione si attribuisce a Elcano e ai superstiti della spedizione."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

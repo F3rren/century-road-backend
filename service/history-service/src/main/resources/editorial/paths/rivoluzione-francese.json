@@ -1,0 +1,40 @@
+{
+  "slug": "rivoluzione-francese",
+  "title": "La Rivoluzione francese",
+  "tagline": "Otto date, dagli Stati generali del 1789 al colpo di Stato di Napoleone del 1799: come un regno si trasforma in una repubblica e poi in un consolato.",
+  "intro": "Nel maggio 1789 il re di Francia convoca un'assemblea che non si riuniva da oltre un secolo e mezzo. Dieci anni dopo un generale prende il potere con un colpo di Stato. In mezzo ci sono la presa della Bastiglia, la Dichiarazione dei diritti, la fine della monarchia, il Terrore e la caduta di Robespierre.\n\nQuesto percorso segue otto date: non è una storia completa della Rivoluzione, ma una guida ai momenti che si ricordano più spesso e a ciò che li lega. Ogni tappa ti porta in un luogo della mappa: Versailles, Parigi, Saint-Cloud.",
+  "stops": [
+    {
+      "insight": "stati-generali-1789",
+      "narrative": "Si parte da Versailles, dove un re in difficoltà finanziarie convoca un'assemblea che non si riuniva dal 1614."
+    },
+    {
+      "insight": "pallacorda-1789",
+      "narrative": "Un blocco di procedura diventa una sfida: i deputati del terzo stato giurano di non sciogliersi."
+    },
+    {
+      "insight": "bastiglia-1789",
+      "narrative": "La tensione politica arriva nelle strade di Parigi, e un episodio militare limitato diventa un simbolo."
+    },
+    {
+      "insight": "dichiarazione-diritti-1789",
+      "narrative": "Dopo la caduta dei privilegi, i principi della Rivoluzione vengono messi per iscritto."
+    },
+    {
+      "insight": "marcia-su-versailles-1789",
+      "narrative": "La crisi del pane porta una folla fino a Versailles, e il re finisce a Parigi."
+    },
+    {
+      "insight": "luigi-xvi-ghigliottina-1793",
+      "narrative": "Dal re a Parigi alla Repubblica: nel 1793 Luigi XVI viene giustiziato."
+    },
+    {
+      "insight": "caduta-robespierre-1794",
+      "narrative": "La Rivoluzione si radicalizza nel Terrore, e il 9 termidoro i suoi stessi protagonisti ne mettono fine."
+    },
+    {
+      "insight": "brumaio-1799",
+      "narrative": "Un generale rovescia il Direttorio: per molti storici, qui finisce la Rivoluzione."
+    }
+  ]
+}

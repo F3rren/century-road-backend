@@ -1,0 +1,50 @@
+{
+  "slug": "penicillina-1928",
+  "title": "Fleming osserva la penicillina",
+  "summary": "Nel settembre 1928 Alexander Fleming, a Londra, nota che una muffa uccide i batteri intorno a sé su una piastra di coltura: è la penicillina, il primo antibiotico.",
+  "date": {
+    "year": 1928,
+    "month": 9,
+    "day": 28
+  },
+  "place": {
+    "name": "St Mary's Hospital, Londra, Regno Unito",
+    "lat": 51.5173,
+    "lon": -0.1736,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "All'inizio del Novecento le infezioni batteriche erano una delle principali cause di morte, anche per ferite lievi. Fleming, batteriologo, aveva già scoperto nel 1922 il lisozima, una sostanza naturale con effetto antibatterico, e cercava modi di combattere i batteri.",
+  "event": "Tornato da una vacanza, Fleming osservò che in una piastra con colonie di stafilococchi, rimasta aperta, era cresciuta una muffa del genere Penicillium; intorno alla muffa i batteri erano stati distrutti. La data del 28 settembre è quella tradizionale dell'osservazione.",
+  "after": "Fleming pubblicò la scoperta nel 1929, ma non riuscì a produrre la sostanza in quantità sufficienti. Alla fine degli anni Trenta Howard Florey e Ernst Chain, a Oxford, la purificarono e ne provarono l'efficacia. Durante la seconda guerra mondiale la penicillina fu prodotta in grandi quantità e salvò molti feriti. Fleming, Florey e Chain ebbero il Nobel nel 1945.",
+  "links": [
+    {
+      "slug": "pasteur-rabbia-1885",
+      "reason": "Come la comprensione dei microrganismi ha cambiato la medicina."
+    },
+    {
+      "slug": "dna-struttura-1953",
+      "reason": "La biologia che, vent’anni dopo, guarda dentro le cellule."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Alexander Fleming - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Alexander_Fleming",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Alexander Fleming - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Alexander_Fleming",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data esatta della scoperta non è documentata: 28 settembre 1928 è la più usata dalle fonti, ma i dettagli del racconto sono stati in parte ricostruiti a posteriori."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

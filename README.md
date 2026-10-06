@@ -923,9 +923,10 @@ same checks on the real files in CI, so a mistake fails the build and not the de
 read one against its sources, they add `"reviewedAt": "YYYY-MM-DD"` to its `provenance`, in the
 same commit. Nothing generates that date, and the service refuses one in the future.
 
-The first path and its nine insights are **drafts** in exactly that sense: they have no review
-date, and should be read against their sources and corrected before they are presented as more
-than that.
+Every path and insight so far (four paths, thirty-three insights) is a **draft** in exactly that sense:
+they have no review date, and should be read against their sources and corrected before they are
+presented as more than that. The sources are, for now, Wikipedia articles (English and Italian) for
+each insight: a reviewer should add at least one source that is not Wikipedia.
 
 ### Discovery: a random event and the same years elsewhere
 

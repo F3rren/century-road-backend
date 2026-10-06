@@ -1,0 +1,50 @@
+{
+  "slug": "snow-colera-1854",
+  "title": "John Snow e la pompa di Broad Street",
+  "summary": "Nel settembre 1854, durante un'epidemia di colera a Londra, il medico John Snow mappa i casi intorno a una pompa dell'acqua e ne fa rimuovere la maniglia: nasce l'epidemiologia moderna.",
+  "date": {
+    "year": 1854,
+    "month": 9,
+    "day": 8
+  },
+  "place": {
+    "name": "Broad Street, Soho, Londra, Regno Unito",
+    "lat": 51.5136,
+    "lon": -0.1366,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Il colera arrivò in Europa dall'India negli anni Trenta dell'Ottocento e uccise decine di migliaia di persone. Si pensava che si trasmettesse attraverso i «miasmi», l'aria cattiva. Snow, medico londinese, sosteneva invece che si propagasse attraverso l'acqua contaminata.",
+  "event": "Alla fine di agosto 1854 un'epidemia colpì il quartiere di Soho. Snow, interrogando gli abitanti e segnando i casi su una mappa, notò che si addensavano intorno alla pompa di Broad Street. L'8 settembre ottenne dalle autorità locali che la maniglia della pompa fosse tolta.",
+  "after": "L'epidemia era già in calo quando la pompa fu chiusa, e il solo gesto non basta a dimostrare la teoria; tuttavia il metodo di Snow, raccogliere i casi e metterli in relazione con un luogo e una causa possibile, è considerato un modello dell'epidemiologia. Negli anni Ottanta Robert Koch identificò il batterio del colera.",
+  "links": [
+    {
+      "slug": "jenner-vaccino-1796",
+      "reason": "La prevenzione delle malattie con metodi basati su osservazioni."
+    },
+    {
+      "slug": "pasteur-rabbia-1885",
+      "reason": "La teoria dei germi, che spiega ciò che Snow aveva osservato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1854 Broad Street cholera outbreak - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1854_Broad_Street_cholera_outbreak",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "John Snow - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/John_Snow",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data dell'8 settembre è quella convenzionale della rimozione della maniglia; l'epidemia era già in diminuzione."
+  ],
+  "provenance": {
+    "author": "Century Road"
+  }
+}
