@@ -1,0 +1,52 @@
+{
+  "slug": "eruzione-del-vesuvio-79",
+  "title": "L'eruzione del Vesuvio e la distruzione di Pompei",
+  "summary": "Nel 79 d.C. il Vesuvio erutta e seppellisce Pompei, Ercolano, Stabia e Oplontis; una lettera di Plinio il Giovane è la testimonianza diretta, e la data tradizionale, il 24 agosto, è oggi discussa.",
+  "date": {
+    "year": 79,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Vesuvio, Campania, Italia",
+    "lat": 40.8214,
+    "lon": 14.426,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il 5 febbraio del 62 un forte terremoto aveva danneggiato la zona del golfo di Napoli, in particolare Pompei, e nel 79 alcuni danni non erano ancora riparati. Il vulcano veniva da un lungo periodo di quiete. Nei quattro giorni prima dell'eruzione ci furono scosse minori, che gli abitanti, abituati ai tremori, non riconobbero come un avvertimento: Plinio il Giovane scrisse che erano frequenti in Campania.",
+  "event": "Nel primo pomeriggio il Vesuvio eruttò con violenza, lanciando in alto una colonna da cui cominciarono a cadere cenere e pomici, che fecero crollare i tetti; terremoti e un lieve maremoto accompagnarono la prima fase. Nella notte o all'inizio del giorno dopo cominciarono i flussi piroclastici, nubi di gas e cenere roventi: quello della mattina, rapido e molto caldo, abbatté muri e uccise gli abitanti rimasti. Plinio il Giovane, che osservava da Miseno, descrisse l'eruzione in due lettere a Tacito: la nube gli ricordò un pino.",
+  "after": "L'eruzione durò due giorni e distrusse Pompei, Ercolano, Stabia e Oplontis, rimaste sepolte per secoli. Sono stati ritrovati i resti di oltre 1 500 persone, ma il totale delle vittime non è noto. Tra i morti c'era Plinio il Vecchio, che comandava la flotta a Miseno e partì in soccorso con le navi: morì a Stabia; il nipote lo attribuì ai gas tossici, ma è più probabile un malore. Gli scavi, iniziati nel Settecento, hanno riportato alla luce le città; i corpi sepolti nella cenere lasciarono cavità da cui Giuseppe Fiorelli ricavò dei calchi in gesso.",
+  "links": [
+    {
+      "slug": "assedio-di-gerusalemme-70",
+      "reason": "Tito, che nel 70 aveva conquistato Gerusalemme, era imperatore quando il Vesuvio eruttò."
+    },
+    {
+      "slug": "inaugurazione-del-colosseo-80",
+      "reason": "L'anno dopo l'eruzione Tito inaugura il Colosseo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Eruption of Mount Vesuvius in 79 AD - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Eruption_of_Mount_Vesuvius_in_79_AD",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eruzione del Vesuvio del 79 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Eruzione_del_Vesuvio_del_79",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La lettera di Plinio il Giovane a Tacito, che dà il giorno, ci è arrivata in copie medievali: la maggior parte indica il 24 agosto, ma ritrovamenti archeologici (frutta autunnale, vasi pieni di vino, vittime con abiti pesanti) e uno studio sui venti fanno pensare a una data in autunno, in ottobre o novembre. Per questo la data è data solo all'anno.",
+    "La causa della morte di Plinio il Vecchio non è certa: il nipote parlò di gas tossici, ma i suoi compagni non ne furono colpiti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

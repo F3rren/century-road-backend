@@ -1,0 +1,53 @@
+{
+  "slug": "constitutio-antoniniana-212",
+  "title": "La Constitutio Antoniniana: la cittadinanza a tutti",
+  "summary": "Nel 212 d.C. l'imperatore Caracalla concede la cittadinanza romana a tutti gli uomini liberi dell'Impero, con l'eccezione dei dediticii: un editto di cui gli storici discutono le ragioni.",
+  "date": {
+    "year": 212,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Roma, capitale dell'Impero; l'editto valeva per tutto l'Impero e le fonti consultate non indicano dove fu emanato."
+  },
+  "before": "Prima del 212 la piena cittadinanza romana era in gran parte riservata agli abitanti dell'Italia, ai discendenti dei coloni e dei Romani residenti nelle province, agli abitanti di alcune città e a pochi nobili locali; i provinciali di solito non erano cittadini. Essere cittadino romano era una condizione molto ambita. Fin dalle prime conquiste Roma poteva concedere ai vinti la cittadinanza, intera o parziale, oppure lasciarli nelle loro città con autonomia locale.",
+  "event": "Con un editto del 212 Caracalla concesse la cittadinanza romana a tutti gli uomini liberi dell'Impero, e alle donne libere gli stessi diritti delle donne romane. Faceva eccezione la categoria dei dediticii, di cui il testo parla in un passo controverso. Il testo greco dell'editto ci è giunto in un papiro lacunoso, il papiro di Giessen, e resta discussa la sua reale applicazione. Il giurista Ulpiano scrisse che tutti gli abitanti del mondo romano erano diventati cittadini per un editto di Caracalla.",
+  "after": "Secondo Cassio Dione la ragione principale era aumentare il numero di persone da tassare; ma pochi dei nuovi cittadini erano ricchi, e gli studiosi pensano che non fosse l'unico scopo. Altri scopi proposti: avere più uomini arruolabili nelle legioni, evitare i ricorsi all'imperatore sulla cittadinanza e unire nel culto le divinità di tutte le province. Molti nuovi cittadini presero il nome Aurelio, in onore di Caracalla: sette degli undici imperatori tra Gallieno e Diocleziano lo portarono. I contemporanei non vissero l'editto come un atto rivoluzionario, perché confermava una situazione in parte già esistente.",
+  "links": [
+    {
+      "slug": "battaglia-di-edessa-260",
+      "reason": "Nel 260 l'esercito di Valeriano, secondo Sapore, comprendeva uomini di quasi ogni parte dell'Impero."
+    },
+    {
+      "slug": "tetrarchia-293",
+      "reason": "Fino a Diocleziano, che dà vita alla Tetrarchia, molti imperatori portano il nome Aurelio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Constitutio Antoniniana - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Constitutio_Antoniniana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Constitutio Antoniniana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Constitutio_Antoniniana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti danno l'anno, il 212, non il giorno. Il testo ci è giunto in un papiro lacunoso, e per questo resta aperto il dibattito sull'applicazione dell'editto e sul significato dell'eccezione dei dediticii.",
+    "Le ragioni dell'editto sono discusse: Cassio Dione, che giudicava Caracalla un cattivo imperatore, vi vedeva una misura fiscale; altri studiosi vi vedono motivi militari, amministrativi o religiosi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

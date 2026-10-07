@@ -1,0 +1,56 @@
+{
+  "slug": "tetrarchia-293",
+  "title": "Diocleziano e la Tetrarchia",
+  "summary": "Nel 293 d.C. Diocleziano divide il governo dell'Impero tra due Augusti e due Cesari, i tetrarchi, che risiedono vicino alle frontiere e non a Roma: un sistema pensato per rispondere alle crisi del III secolo.",
+  "date": {
+    "year": 293,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Nicomedia (İzmit), Turchia",
+    "lat": 40.7656,
+    "lon": 29.9406,
+    "countryCode": "TR",
+    "approximate": true,
+    "note": "Il punto indica Nicomedia, la capitale di Diocleziano; i quattro tetrarchi risiedevano in città diverse, vicine alle frontiere."
+  },
+  "before": "Nel III secolo uno dei problemi era che gli imperatori potevano comandare le truppe di persona su un solo fronte per volta, e delegare il comando a un generale era rischioso: se vinceva, i suoi soldati potevano proclamarlo imperatore rivale, e succedeva spesso. Diocleziano, imperatore dal 284, nominò Massimiano suo cesare nel 285 e augusto nel 286: i due imperatori si dividevano il governo e la difesa dei confini, Diocleziano a oriente e Massimiano a occidente.",
+  "event": "Nel 293, con il consenso di Massimiano, Diocleziano allargò il collegio imperiale nominando due cesari, uno per ogni augusto: Costanzo Cloro per l'Occidente e Galerio per l'Oriente. I quattro tetrarchi risiedevano non a Roma ma in città più vicine alle frontiere: Nicomedia, Sirmio, Milano e Treviri. Gli imperatori avevano in pratica pari autorità e ciascuno comandava in una zona dell'Impero, mentre l'amministrazione era affidata a una burocrazia guidata dai prefetti del pretorio e a nuove circoscrizioni, le diocesi.",
+  "after": "Il sistema ottenne vittorie militari: nel 298 Galerio sconfisse il re persiano Narsete e ottenne una pace favorevole che durò una generazione. Nel 305 Diocleziano e Massimiano abdicarono e Galerio e Costanzo divennero augusti, con due nuovi cesari; ma il sistema si ruppe in fretta, con le rivendicazioni di Costantino e di Massenzio e una serie di guerre civili. Dopo Ponte Milvio nel 312 e Crisopoli nel 324 Costantino rimase solo padrone dell'Impero. L'idea di due metà, Oriente e Occidente, tornò dopo la morte di Teodosio I, con una divisione di fatto permanente.",
+  "links": [
+    {
+      "slug": "aureliano-sconfigge-zenobia-272",
+      "reason": "Imperatori come Aureliano dovevano accompagnare di persona l'esercito da un fronte all'altro."
+    },
+    {
+      "slug": "persecuzione-di-diocleziano-303",
+      "reason": "Dieci anni dopo la Tetrarchia comincia la persecuzione dei cristiani voluta da Diocleziano."
+    },
+    {
+      "slug": "battaglia-di-ponte-milvio-312",
+      "reason": "Nel 312 Costantino batte Massenzio e il sistema dei tetrarchi si disfa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tetrarchy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tetrarchy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tetrarchia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Tetrarchia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Un articolo data la nomina di Costanzo al 1° marzo del 293 e quella di Galerio probabilmente a maggio; l'altro le colloca entrambe a marzo. Per questo la data è data solo all'anno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

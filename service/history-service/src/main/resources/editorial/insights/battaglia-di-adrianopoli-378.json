@@ -1,0 +1,56 @@
+{
+  "slug": "battaglia-di-adrianopoli-378",
+  "title": "La battaglia di Adrianopoli",
+  "summary": "Il 9 agosto del 378 d.C. i Goti di Fritigerno annientano l'esercito dell'imperatore d'Oriente Valente presso Adrianopoli, in Tracia: Valente muore, e la battaglia è spesso considerata l'inizio della fine dell'Impero d'Occidente.",
+  "date": {
+    "year": 378,
+    "month": 8,
+    "day": 9
+  },
+  "place": {
+    "name": "Adrianopoli (Edirne), Turchia",
+    "lat": 41.81,
+    "lon": 26.55,
+    "countryCode": "TR",
+    "approximate": true,
+    "note": "Il punto indica un luogo a nord di Adrianopoli, l'odierna Edirne: la posizione esatta del campo di battaglia è incerta, e gli storici moderni ne propongono tre, a nord e a est della città."
+  },
+  "before": "Nel 376 i Goti, spinti dall'invasione degli Unni, chiesero di stabilirsi nell'Impero d'Oriente; Valente li accolse come alleati, i foederati, sperando di averli come contadini e soldati. Passato il Danubio, però, la disonestà dei comandanti romani Lupicino e Massimo li spinse a ribellarsi dopo molte sofferenze. Per due anni ci furono scontri senza vittorie decisive. Nel 378 Valente decise di prendere il comando di persona.",
+  "event": "Il 6 agosto Valente seppe che circa 10 000 Goti avanzavano verso Adrianopoli. L'imperatore d'Occidente Graziano gli aveva scritto di aspettare i suoi rinforzi, e anche gli ufficiali lo consigliavano, ma Valente volle combattere subito per non dividere il successo con il collega; l'8 agosto respinse una proposta di pace di Fritigerno. Il 9 agosto i Romani arrivarono stanchi e assetati davanti al campo goto, dopo otto miglia di marcia su terreno difficile. Mentre si trattava, alcune unità romane attaccarono senza ordini, e la cavalleria gota, tornata dal foraggiamento, circondò i Romani. Valente morì: non si è mai saputo come, forse colpito da una freccia, forse bruciato in una fattoria incendiata dai Goti.",
+  "after": "Un terzo dell'esercito romano riuscì a ritirarsi, ma le perdite furono incalcolabili: morirono molti ufficiali e fu distrutto il nucleo dell'esercito d'Oriente, nella peggiore sconfitta romana dopo Edessa. I Goti non furono mai espulsi né assimilati: Teodosio, successore di Valente, li accettò di nuovo come alleati, e da allora gli imperatori adottarono politiche di accomodamento, basate su ospitalità e federazioni, e l'esercito dipese sempre più da soldati di origine barbarica. La battaglia è spesso considerata l'inizio degli eventi che portarono alla caduta dell'Impero d'Occidente nel V secolo, ma l'Impero non finì lì: la sua forza militare era solo temporaneamente indebolita.",
+  "links": [
+    {
+      "slug": "battaglia-di-edessa-260",
+      "reason": "Era la peggiore sconfitta romana dopo quella di Edessa, nel 260."
+    },
+    {
+      "slug": "editto-di-tessalonica-380",
+      "reason": "Due anni dopo Teodosio, successore di Valente, emana l'editto di Tessalonica."
+    },
+    {
+      "slug": "deposizione-di-romolo-augustolo-476",
+      "reason": "Nel 476 finisce l'Impero d'Occidente, di cui Adrianopoli è considerata l'inizio della fine."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Adrianople - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Adrianople",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Adrianopoli (378) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Adrianopoli_(378)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre di eserciti e perdite sono incerte: gli articoli riportano stime diverse. Il racconto più dettagliato, dal punto di vista romano, è quello di Ammiano Marcellino."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

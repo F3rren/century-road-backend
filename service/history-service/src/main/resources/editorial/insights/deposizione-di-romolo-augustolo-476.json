@@ -1,0 +1,55 @@
+{
+  "slug": "deposizione-di-romolo-augustolo-476",
+  "title": "La deposizione di Romolo Augustolo",
+  "summary": "Il 4 settembre del 476 d.C. il generale barbaro Odoacre depone l'imperatore ragazzo Romolo Augustolo e non nomina un successore: la data è tradizionalmente usata per segnare la fine dell'Impero romano d'Occidente.",
+  "date": {
+    "year": 476,
+    "month": 9,
+    "day": 4
+  },
+  "place": {
+    "name": "Ravenna, Italia",
+    "lat": 44.4184,
+    "lon": 12.2035,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Romolo, forse di appena dieci anni, fu proclamato imperatore d'Occidente il 31 ottobre del 475 dal padre Oreste, comandante dell'esercito, al posto di Giulio Nepote, che fuggì in Dalmazia e continuò a rivendicare il titolo. Romolo fu poco più di un prestanome: era il padre a governare. L'imperatore d'Oriente Zenone non lo riconobbe mai. Nel 476 i federati barbarici in Italia, in gran parte Eruli, Sciri e Turcilingi, chiesero terre su cui stabilirsi, e Oreste rifiutò. Il loro capo era Odoacre.",
+  "event": "Il 28 agosto del 476 Odoacre sconfisse Oreste a Ticinum, oggi Pavia, lo catturò e lo fece giustiziare. Il 4 settembre conquistò Ravenna, dove fu ucciso Paolo, fratello di Oreste; Romolo fu catturato e deposto, e Odoacre prese il controllo dell'Italia come primo re d'Italia. Mandò le insegne imperiali d'Occidente all'imperatore Zenone, a Costantinopoli, e gli giurò fedeltà, governando senza nominare altri imperatori d'Occidente. Secondo lo storico Malco, Romolo avrebbe inviato anche una lettera di dimissioni, scrivendo che all'Impero bastava un solo imperatore, a Costantinopoli.",
+  "after": "Odoacre risparmiò Romolo per la sua giovinezza e bellezza e gli concesse una pensione annua di 6 000 solidi e una tenuta in Campania, il Castellum Lucullanum, vicino a Napoli; delle sue vicende successive si sa poco, e forse era ancora vivo nel 507 o nel 511. Romolo è considerato in genere l'ultimo imperatore romano d'Occidente, e la sua deposizione è una delle date più usate dagli storici per segnare il passaggio dall'antichità al Medioevo. Alcuni studiosi ritengono però che l'ultimo sia Giulio Nepote, che continuò a regnare in Dalmazia, riconosciuto da Zenone, fino alla morte nel 480.",
+  "links": [
+    {
+      "slug": "ottaviano-diventa-augusto-27-ac",
+      "reason": "Il nome Augustolo, «piccolo Augusto», richiama il primo imperatore."
+    },
+    {
+      "slug": "fondazione-di-roma-753-ac",
+      "reason": "Il suo nome, Romolo, richiama il fondatore di Roma: molti storici hanno notato la coincidenza."
+    },
+    {
+      "slug": "sacco-di-roma-455",
+      "reason": "Ventun anni dopo il sacco dei Vandali l'Impero d'Occidente finisce."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Romulus Augustulus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Romulus_Augustulus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Romolo Augusto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Romolo_Augusto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Del regno di Romolo restano pochissime testimonianze: non si conoscono leggi o iscrizioni importanti. Il nome Augustolo, «piccolo Augusto», era un'allusione ironica alla sua giovane età. Per i cronisti dell'Impero d'Oriente la deposizione segnò la fine dell'Impero d'Occidente, ma alcuni storici moderni discutono se Romolo sia davvero l'ultimo imperatore d'Occidente."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

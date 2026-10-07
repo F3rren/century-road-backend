@@ -1,0 +1,55 @@
+{
+  "slug": "morte-di-augusto-14",
+  "title": "La morte di Augusto e il passaggio del potere a Tiberio",
+  "summary": "Il 19 agosto del 14 d.C. Augusto muore a Nola, a quasi settantasei anni: il potere passa al figliastro Tiberio e il Senato proclama dio il fondatore del principato.",
+  "date": {
+    "year": 14,
+    "month": 8,
+    "day": 19
+  },
+  "place": {
+    "name": "Nola, Campania, Italia",
+    "lat": 40.9264,
+    "lon": 14.5283,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il potere di Augusto non era una carica a cui si potesse succedere, né un titolo da lasciare a un familiare come nelle monarchie ellenistiche: la successione fu una delle sue maggiori preoccupazioni. Gli eredi che aveva via via preferito, come il nipote Marcello e il genero Agrippa, morirono prima di lui. Alla fine il potere toccò a Tiberio Claudio Nerone, che Augusto aveva preparato a una transizione tranquilla.",
+  "event": "Nell'estate del 14 d.C. Augusto accompagnò Tiberio, in partenza per l'Illirico, fino a Benevento. Sulla via del ritorno, malato, si fermò a Nola e si trattenne con lui in un lungo colloquio. Morì il 19 agosto, nella stessa camera in cui era morto suo padre, a quasi settantasei anni. Nel racconto di Svetonio chiese agli amici se avesse recitato bene la commedia della vita. Tacito e Cassio Dione riferiscono che Livia lo avrebbe avvelenato, ma molti storici considerano la voce un'invenzione per screditare Tiberio.",
+  "after": "Il corpo fu portato da Nola a Roma e cremato presso il suo mausoleo; Tiberio e il figlio Druso pronunciarono le orazioni funebri. Augusto morì di morte naturale e il Senato lo proclamò dio. In vita aveva evitato appellativi divini, ma subito dopo la morte gli fu attribuita un'origine divina. Il principato, il sistema di governo da lui fondato, in cui l'imperatore mostrava un rispetto solo formale verso il Senato, durò fino alla crisi del III secolo.",
+  "links": [
+    {
+      "slug": "ottaviano-diventa-augusto-27-ac",
+      "reason": "Il principato nasce nel 27 a.C., quando Ottaviano riceve il titolo di Augusto."
+    },
+    {
+      "slug": "battaglia-della-foresta-di-teutoburgo-9",
+      "reason": "Gli ultimi anni di Augusto sono segnati dalla sconfitta in Germania."
+    },
+    {
+      "slug": "morte-di-nerone-68",
+      "reason": "Con Nerone, oltre cinquant'anni dopo, finisce la dinastia fondata da Augusto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Augustus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Augustus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Augusto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Augusto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le ultime parole e le circostanze della morte sono riferite soprattutto da Svetonio; la voce dell'avvelenamento è riferita da Tacito e Cassio Dione, e molti storici la ritengono falsa."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

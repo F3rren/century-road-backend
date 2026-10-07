@@ -1,0 +1,56 @@
+{
+  "slug": "inaugurazione-del-colosseo-80",
+  "title": "L'inaugurazione del Colosseo",
+  "summary": "Nell'80 d.C. l'imperatore Tito inaugura con cento giorni di giochi l'Anfiteatro Flavio, il Colosseo, costruito sul terreno di un lago artificiale di Nerone con il bottino della guerra giudaica.",
+  "date": {
+    "year": 80,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Colosseo, Roma, Italia",
+    "lat": 41.8902,
+    "lon": 12.4922,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "La valle tra il Palatino, l'Esquilino e il Celio era stata devastata dal grande incendio del 64; Nerone se n'era impadronito per la Domus Aurea, creando davanti alla reggia un lago artificiale. Vespasiano decise di costruirvi l'anfiteatro: riempì il lago e restituì al popolo un'area che Nerone aveva usato per sé, un gesto che segnava la differenza tra il vecchio e il nuovo principato. I lavori cominciarono tra il 70 e il 72 e furono pagati con il bottino del Tempio di Gerusalemme. Era il primo grande anfiteatro stabile di Roma.",
+  "event": "Vespasiano vide costruire i primi due piani e dedicò l'edificio prima di morire, nel 79. Il figlio Tito aggiunse il terzo e il quarto ordine di posti e lo inaugurò nell'80 con cento giorni di giochi. Secondo Cassio Dione nei giochi inaugurali furono uccisi oltre 9 000 animali selvatici; un resoconto racconta che l'arena fu allagata per uno spettacolo di cavalli e tori addestrati a nuotare. L'anfiteatro, il più grande mai costruito, poteva ospitare decine di migliaia di spettatori.",
+  "after": "Domiziano, fratello di Tito, completò l'opera e costruì i sotterranei dell'arena: da allora non fu più possibile allagarla per le battaglie navali. Accanto sorsero le caserme dei gladiatori e gli edifici di servizio. Il Colosseo ospitò combattimenti di gladiatori, cacce, esecuzioni e rievocazioni di battaglie; smise di servire per gli spettacoli all'inizio del Medioevo e fu poi riusato come abitazione, laboratorio, fortezza e cava. Nel 1980 è stato inserito nella lista dell'UNESCO insieme al centro storico di Roma.",
+  "links": [
+    {
+      "slug": "assedio-di-gerusalemme-70",
+      "reason": "Il Colosseo fu pagato con il bottino della conquista di Gerusalemme."
+    },
+    {
+      "slug": "eruzione-del-vesuvio-79",
+      "reason": "L'anno prima, mentre l'edificio era quasi finito, il Vesuvio aveva seppellito Pompei."
+    },
+    {
+      "slug": "grande-incendio-di-roma-64",
+      "reason": "Il terreno era quello che Nerone si era preso dopo l'incendio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Colosseum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Colosseum",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Colosseo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Colosseo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non concordano sull'anno e sul giorno dell'inaugurazione: un articolo dà il 21 aprile dell'80, l'altro dice che i giochi inaugurali si tennero «nell'80 o nell'81». Per questo la data è data solo all'anno.",
+    "Il numero di animali uccisi nei giochi inaugurali è riferito da Cassio Dione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

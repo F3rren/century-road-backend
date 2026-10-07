@@ -1,0 +1,33 @@
+{
+  "slug": "traiano-adriano-e-gli-antonini",
+  "title": "Traiano, Adriano e gli Antonini",
+  "tagline": "Dall'Impero alla sua massima estensione alla morte di Marco Aurelio: le conquiste di Traiano, i confini di Adriano, una grande rivolta e una peste.",
+  "intro": "Nel II secolo l'Impero raggiunge la sua massima estensione territoriale con Traiano; i suoi successori scelgono invece di difendere i confini. Il percorso segue questi decenni, dalla conquista della Dacia alla morte di Marco Aurelio, e le prove che attraversano l'Impero: una rivolta in Giudea, una peste arrivata dall'Oriente, le guerre sul Danubio.\n\nDove le fonti non concordano, per esempio sul giorno di una morte o sul luogo, il testo lo dice.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "conquista-della-dacia-106",
+      "narrative": "Nel 106 Traiano conquista la Dacia: la provincia porta oro e argento a Roma."
+    },
+    {
+      "insight": "morte-di-traiano-117",
+      "narrative": "Nel 117 Traiano muore e l'Impero ha la sua massima estensione: il successore, Adriano, rinuncia alle conquiste in Oriente."
+    },
+    {
+      "insight": "vallo-di-adriano-122",
+      "narrative": "Adriano ferma l'espansione e fa costruire in Britannia un muro per difendere il confine."
+    },
+    {
+      "insight": "rivolta-di-bar-kokhba-132",
+      "narrative": "Nel 132 il progetto di rifondare Gerusalemme come città romana scatena in Giudea l'ultima grande rivolta ebraica."
+    },
+    {
+      "insight": "peste-antonina-165",
+      "narrative": "Nel 165 i soldati di ritorno dall'Oriente portano nell'Impero una grande epidemia."
+    },
+    {
+      "insight": "morte-di-marco-aurelio-180",
+      "narrative": "Nel 180 muore Marco Aurelio, e per alcuni studiosi finisce l'età della Pax Romana."
+    }
+  ]
+}

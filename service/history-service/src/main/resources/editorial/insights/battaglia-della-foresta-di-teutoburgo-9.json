@@ -1,0 +1,57 @@
+{
+  "slug": "battaglia-della-foresta-di-teutoburgo-9",
+  "title": "La battaglia della foresta di Teutoburgo",
+  "summary": "Nel settembre del 9 d.C. tre legioni romane guidate da Publio Quintilio Varo cadono in un'imboscata dei Germani di Arminio nella foresta, e Roma rinuncia a conquistare la Germania oltre il Reno.",
+  "date": {
+    "year": 9,
+    "month": 9,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Kalkriese, Bassa Sassonia, Germania",
+    "lat": 52.407,
+    "lon": 8.126,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Il punto indica Kalkriese, dove gli scavi iniziati nel 1987 hanno trovato i resti di una battaglia dell'epoca di Augusto; un articolo dice che lo scontro avvenne «forse» lì, e per quasi duemila anni il luogo era rimasto ignoto."
+  },
+  "before": "Dopo le campagne di Tiberio, figliastro di Augusto, i territori tra il Reno e l'Elba apparivano ai Romani come una provincia a cui dare il diritto e le istituzioni di Roma. Augusto ne affidò il governo a Publio Quintilio Varo, già governatore della Siria, scelto più come amministratore che come comandante. Varo trattò i Germani come sudditi già sottomessi e non vide il loro rancore. Tra i suoi ufficiali ausiliari c'era Arminio, capo dei Cherusci, che aveva ricevuto la cittadinanza e un'educazione militare romana.",
+  "event": "Nel settembre del 9 d.C. l'esercito di Varo, tre legioni (la XVII, la XVIII e la XIX) con le truppe ausiliarie, attraversava una zona di foreste e paludi con la colonna molto allungata, quando fu attaccato da una coalizione di popoli germanici guidata da Arminio. Presso la collina di Kalkriese il passaggio tra la collina e la palude si restringeva, e i Germani avevano costruito un terrapieno da cui colpire al riparo. Dopo giorni di combattimenti sotto la pioggia i Romani furono sopraffatti. Varo si uccise; le perdite romane sono stimate in 15 000-20 000 morti.",
+  "after": "Secondo Svetonio, Augusto ne fu sconvolto e gridava: «Quintilio Varo, restituiscimi le legioni!». Le legioni dai numeri XVII, XVIII e XIX non furono più ricostituite. Tiberio e poi Germanico condussero campagne di rappresaglia, ma Roma non tentò più la conquista della Germania: il Reno restò il confine dell'Impero. Per quasi duemila anni il luogo della battaglia fu sconosciuto; nel 1987 un archeologo dilettante britannico trovò a Kalkriese monete dell'epoca di Augusto e proiettili di piombo.",
+  "links": [
+    {
+      "slug": "ottaviano-diventa-augusto-27-ac",
+      "reason": "Il potere che Augusto riceve nel 27 a.C. incontra qui uno dei suoi limiti."
+    },
+    {
+      "slug": "battaglia-di-alesia-52-ac",
+      "reason": "Circa sessant'anni prima, in Gallia, un'altra grande resistenza armata aveva messo Roma alla prova."
+    },
+    {
+      "slug": "morte-di-augusto-14",
+      "reason": "Pochi anni dopo Augusto muore e il potere passa a Tiberio, che aveva guidato le legioni sul Reno."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Teutoburg Forest - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Teutoburg_Forest",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia della foresta di Teutoburgo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_della_foresta_di_Teutoburgo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il mese è quello indicato dalle fonti: un articolo parla di una battaglia tra l'8 e l'11 settembre del 9 d.C., l'altro dà solo l'anno. undefined",
+    "Le cifre dei caduti sono stime moderne; i resti trovati a Kalkriese sono per lo più romani, ma i Germani portavano via i propri morti e le loro armi, e alcuni indossavano armature romane."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

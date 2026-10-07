@@ -1,0 +1,57 @@
+{
+  "slug": "editto-di-milano-313",
+  "title": "L'editto di Milano e la tolleranza per i cristiani",
+  "summary": "Nel 313 d.C. Costantino e Licinio concordano a Milano una politica di tolleranza verso i cristiani e di restituzione dei loro beni; non fu un vero editto e non fece del cristianesimo la religione dell'Impero.",
+  "date": {
+    "year": 313,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Milano, Italia",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Milano, dove si incontrarono i due imperatori; il testo che ci è giunto fu emanato a Nicomedia."
+  },
+  "before": "Nel 311 Galerio, da Serdica, aveva emanato un editto di tolleranza, affisso a Nicomedia il 30 aprile, che concedeva un'indulgenza ai cristiani. Dopo la sua morte Massimino Daia, Cesare d'Oriente che si faceva chiamare Augusto, riprese con entusiasmo la persecuzione nei suoi territori, incoraggiando petizioni contro i cristiani. In Occidente, invece, Costantino e Licinio avevano già liberato i cristiani dalle prigioni.",
+  "event": "Costantino e Licinio si incontrarono a Milano nel 313 e decisero, tra l'altro, di concedere ai cristiani e a tutti la libera facoltà di seguire la religione scelta; la libertà era riconosciuta anche alle altre religioni. Il documento che ci è giunto non è un editto: è una lettera di Licinio ai governatori delle province orientali, che aveva appena conquistato battendo Massimino, affissa a Nicomedia il 13 giugno 313. Disponeva anche la restituzione ai cristiani di luoghi e beni confiscati, anche a chi li avesse acquistati legittimamente.",
+  "after": "L'editto di Milano diede al cristianesimo uno status legale e una tregua dalle persecuzioni, ma non ne fece la religione di Stato: ciò avvenne nel 380 con l'editto di Tessalonica. Il testo esprime la politica di Licinio, pagano, più che quella di Costantino, che era già cristiano e andò oltre la semplice tolleranza. Gli studiosi respingono in genere la storia di un «editto di Milano» formale così come ci è stata tramandata. Eusebio di Cesarea, nella Vita di Costantino, tolse ogni ruolo a Licinio, che dipinse come l'opposto del suo eroe.",
+  "links": [
+    {
+      "slug": "battaglia-di-ponte-milvio-312",
+      "reason": "La vittoria su Massenzio nel 312 fa di Costantino il padrone dell'Occidente."
+    },
+    {
+      "slug": "persecuzione-di-diocleziano-303",
+      "reason": "Le leggi persecutorie erano state emanate dieci anni prima da Diocleziano."
+    },
+    {
+      "slug": "editto-di-tessalonica-380",
+      "reason": "Il cristianesimo diventa religione di Stato solo nel 380."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edict of Milan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edict_of_Milan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Editto di Milano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Editto_di_Milano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non danno un'unica data: un articolo parla di un accordo del 13 febbraio 313, l'altro di febbraio-marzo, e un documento fu affisso il 13 giugno. Per questo la data è data solo all'anno.",
+    "Il documento ci è giunto da Lattanzio e da Eusebio di Cesarea, con differenze notevoli; i due imperatori si incontrarono a Milano, e secondo alcuni studiosi moderni le disposizioni furono scritte in Bitinia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "assedio-di-masada-73",
+  "title": "L'assedio di Masada",
+  "summary": "Nel 73 d.C. i Romani conquistano la fortezza di Masada, ultimo rifugio dei ribelli della prima guerra giudaica; secondo Giuseppe Flavio gli assediati si diedero la morte, un racconto che gli archeologi discutono.",
+  "date": {
+    "year": 73,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Masada, deserto della Giudea, Israele",
+    "lat": 31.3156,
+    "lon": 35.3536,
+    "countryCode": "IL",
+    "approximate": false
+  },
+  "before": "Nel 66 la fortezza di Masada, sulla sommità di un altopiano nel deserto, era stata conquistata dai Sicarii, un gruppo di ribelli ebrei, che vi si erano stabiliti con donne e bambini. Dopo la caduta di Gerusalemme nel 70 vi trovarono rifugio altri ribelli, gli zeloti. La fortezza era considerata inespugnabile per la natura del luogo.",
+  "event": "Nel 72 il governatore della Giudea, Lucio Flavio Silva, con la legione X Fretensis, truppe ausiliarie e prigionieri ebrei, circa 15 000 persone in tutto, assediò i 960 abitanti della fortezza. I Romani costruirono un muro di circonvallazione e una rampa contro il lato occidentale dell'altopiano; la rampa fu finita nella primavera del 73 e una torre d'assedio con un ariete aprì una breccia. Secondo Giuseppe Flavio, l'unica fonte scritta dell'epoca, i Romani entrarono e trovarono i difensori morti: guidati da Eleazar ben Yair, si erano uccisi tra loro per non essere catturati.",
+  "after": "L'episodio concluse la prima guerra giudaica. Il racconto di Giuseppe Flavio è discusso: negli scavi sono stati trovati i resti di una trentina di persone, secondo alcuni studiosi l'archeologia lo contraddice, mentre per altri non può né confermarlo né smentirlo. Per un archeologo i difensori furono massacrati dai Romani. In epoca moderna la storia fu ripresa come il «mito di Masada», un racconto costruito sulla versione di Giuseppe Flavio e diventato un simbolo nei primi anni dello Stato di Israele.",
+  "links": [
+    {
+      "slug": "assedio-di-gerusalemme-70",
+      "reason": "Masada resiste tre anni dopo la caduta di Gerusalemme."
+    },
+    {
+      "slug": "rivolta-di-bar-kokhba-132",
+      "reason": "Quasi sessant'anni dopo gli ebrei della Giudea si ribellano di nuovo a Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Masada - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Masada",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Masada - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Masada",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non concordano sulla data: un articolo colloca l'assedio tra il 72 e il 73 e la breccia nelle mura il 16 aprile del 73, l'altro la caduta della fortezza il 15 del mese di Xanthico (marzo) del 73. Per questo la data è data solo all'anno.",
+    "L'unica fonte scritta dell'epoca è Giuseppe Flavio: sul suicidio di massa, e sulla durata dell'assedio, gli studiosi moderni hanno dubbi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

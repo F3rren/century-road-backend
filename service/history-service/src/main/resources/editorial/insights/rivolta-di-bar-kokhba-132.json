@@ -1,0 +1,56 @@
+{
+  "slug": "rivolta-di-bar-kokhba-132",
+  "title": "La rivolta di Bar Kokhba",
+  "summary": "Nel 132 d.C. gli ebrei della Giudea si ribellano a Roma sotto la guida di Simone bar Kokhba, dopo il progetto di Adriano di rifondare Gerusalemme come colonia romana: è l'ultima e la più disastrosa delle tre grandi rivolte.",
+  "date": {
+    "year": 132,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Gerusalemme",
+    "lat": 31.7683,
+    "lon": 35.2137,
+    "approximate": true,
+    "note": "Il punto indica Gerusalemme, la cui rifondazione come colonia romana fu, secondo gli studiosi, la causa principale della rivolta; la rivolta interessò tutta la Giudea e finì a Betar."
+  },
+  "before": "Dopo la prima rivolta e la distruzione del Tempio, il risentimento verso Roma e le aspirazioni nazionali restavano forti in Giudea. Intorno al 130 l'imperatore Adriano progettò di ricostruire Gerusalemme come Aelia Capitolina, una colonia romana dedicata a Giove, cancellando le speranze di ricostruire il Tempio. Secondo la Historia Augusta ci fu anche un divieto di circoncisione, ma gli studiosi discutono se precedette la rivolta o ne fu la punizione, e oggi considerano la rifondazione di Gerusalemme la causa principale.",
+  "event": "La rivolta scoppiò probabilmente nell'estate del 132. I ribelli, guidati da Simone bar Kokhba, proclamato nasi («principe») di Israele, costituirono uno Stato indipendente, con monete e pesi propri, e prepararono una guerriglia con complessi sotterranei nei villaggi. Il governatore Tineio Rufo tentò di reprimere la rivolta e subì una sconfitta umiliante; Adriano inviò allora Sesto Giulio Severo, trasferito dal governo della Britannia, con almeno nove legioni, tra formazioni intere e distaccamenti. I Romani devastarono sistematicamente città e villaggi. Nel 135 cadde Betar, la roccaforte dei ribelli, e Bar Kokhba fu ucciso.",
+  "after": "Molti ribelli e profughi si rifugiarono nelle grotte del deserto di Giuda, ma i Romani le assediarono. Le conseguenze furono disastrose: le fonti antiche e moderne stimano centinaia di migliaia di morti, e molti altri furono ridotti in schiavitù o costretti a fuggire. Furono vietati la circoncisione, lo studio della Torah e l'osservanza del sabato, divieti in gran parte revocati dopo la morte di Adriano. La provincia fu ribattezzata Syria Palaestina e gli ebrei furono esclusi da Gerusalemme e dai suoi dintorni. Il centro della vita ebraica si spostò in Galilea.",
+  "links": [
+    {
+      "slug": "assedio-di-gerusalemme-70",
+      "reason": "La rivolta nasce dal risentimento seguito alla distruzione del Tempio."
+    },
+    {
+      "slug": "vallo-di-adriano-122",
+      "reason": "Pochi anni prima Adriano aveva fatto cominciare il Vallo in Britannia."
+    },
+    {
+      "slug": "assedio-di-masada-73",
+      "reason": "Masada, caduta nel 73, era stata l'ultima fortezza della prima rivolta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bar Kokhba Revolt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bar_Kokhba_Revolt",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Terza guerra giudaica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Terza_guerra_giudaica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La rivolta scoppiò probabilmente nell'estate del 132; per la fine gli articoli danno il 135 (la caduta di Betar) o il 136. Per questo la data è data solo all'anno.",
+    "Le cifre dei morti sono stime di fonti antiche e moderne."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

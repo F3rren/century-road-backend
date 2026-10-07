@@ -1,0 +1,54 @@
+{
+  "slug": "persecuzione-di-diocleziano-303",
+  "title": "L'inizio della grande persecuzione dei cristiani",
+  "summary": "Il 24 febbraio del 303 d.C. Diocleziano pubblica il primo editto contro i cristiani e apre l'ultima e più grave persecuzione dell'Impero romano: chiese distrutte, libri sacri bruciati, diritti revocati.",
+  "date": {
+    "year": 303,
+    "month": 2,
+    "day": 24
+  },
+  "place": {
+    "name": "Nicomedia (İzmit), Turchia",
+    "lat": 40.7656,
+    "lon": 29.9406,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "I cristiani erano da sempre oggetto di discriminazione locale, ma gli imperatori erano riluttanti a emettere leggi generali contro di loro. Intorno al 250, sotto Decio e Valeriano, i sudditi furono costretti a sacrificare agli dei romani o a subire detenzione ed esecuzione; nel 260 Gallieno emise il primo editto di tolleranza, che portò a quasi quarant'anni di convivenza pacifica. Diocleziano, imperatore dal 284, espulse i cristiani dall'esercito e condannò a morte i manichei. Nell'inverno del 302 Galerio lo esortò a una persecuzione generale; Diocleziano, diffidente, consultò un oracolo, la cui risposta fu interpretata come un'approvazione.",
+  "event": "Il 23 febbraio del 303, festa dei Terminalia, Diocleziano fece radere al suolo la nuova chiesa di Nicomedia, bruciarne i libri sacri e confiscarne i beni. Il giorno dopo fu pubblicato il primo editto contro i cristiani: vietava le riunioni di culto, ordinava di distruggere Scritture, libri liturgici e luoghi di culto in tutto l'Impero, toglieva ai cristiani il diritto di rivolgersi ai tribunali e il rango a senatori, cavalieri, veterani e soldati, e riduceva di nuovo in schiavitù i liberti imperiali cristiani. Diocleziano chiese di procedere «senza spargimento di sangue», mentre Galerio voleva bruciare vivi chi rifiutava di sacrificare. Un uomo, Eutizio, strappò l'editto a Nicomedia e fu bruciato vivo: il primo martire.",
+  "after": "Altri editti colpirono il clero e imposero a tutti gli abitanti il sacrificio agli dei romani, con l'esenzione degli ebrei. La persecuzione fu più forte nelle province orientali e più debole in Gallia e in Britannia, dove fu applicato solo il primo editto. Nel 311 Galerio la fermò in Oriente con l'editto di Serdica, ma il suo successore Massimino la riprese in Egitto, Palestina e Asia Minore. Tradizionalmente il regno di Costantino e l'editto di Milano del 313 ne segnano la fine. La persecuzione non fermò la crescita della Chiesa: nel 324 Costantino era l'unico imperatore e il cristianesimo la sua religione preferita.",
+  "links": [
+    {
+      "slug": "tetrarchia-293",
+      "reason": "Diocleziano governa con la Tetrarchia, in cui i quattro imperatori emanano insieme gli editti."
+    },
+    {
+      "slug": "battaglia-di-edessa-260",
+      "reason": "Dopo la cattura di Valeriano, Gallieno aveva fermato le persecuzioni: seguirono quasi quarant'anni di pace."
+    },
+    {
+      "slug": "editto-di-milano-313",
+      "reason": "Dieci anni dopo, Costantino e Licinio concordano la tolleranza per i cristiani."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Diocletianic Persecution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diocletianic_Persecution",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Persecuzione dei cristiani sotto Diocleziano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Persecuzione_dei_cristiani_sotto_Diocleziano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il primo editto è datato al 24 febbraio; per un articolo la persecuzione generale fu proclamata il 23, giorno in cui fu distrutta la chiesa di Nicomedia. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
