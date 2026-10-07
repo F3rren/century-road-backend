@@ -1,0 +1,51 @@
+{
+  "slug": "inizio-prima-guerra-punica-264-ac",
+  "title": "Roma sbarca in Sicilia: comincia la prima guerra punica",
+  "summary": "Nel 264 a.C. Roma accoglie la richiesta d'aiuto dei Mamertini e manda un esercito a Messina, in Sicilia: è l'inizio della prima guerra punica, il primo scontro con Cartagine, che durò più di vent'anni.",
+  "date": {
+    "year": -264,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Messina, Sicilia, Italia",
+    "lat": 38.1938,
+    "lon": 15.554,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Intorno al 289 a.C. un gruppo di mercenari italici, i Mamertini, aveva occupato Messana (Messina), all'estremità nord-orientale della Sicilia. Incalzati da Siracusa, i Mamertini chiesero aiuto sia a Cartagine, che dominava da tempo la parte occidentale dell'isola, sia a Roma. Cartagine fu più rapida e ottenne di mettere una guarnigione in città. A Roma il Senato si divise: molti non volevano soccorrere uomini che avevano rubato una città, altri vedevano vantaggi strategici e di bottino nel mettere piede in Sicilia.",
+  "event": "Il Senato lasciò la decisione all'assemblea popolare, dove, secondo Polibio, Appio Claudio Caudice spinse a votare per l'intervento promettendo un ricco bottino. Nel 264 a.C. l'assemblea accettò la richiesta dei Mamertini e Caudice, con due legioni, attraversò lo stretto di Messina, poco ostacolato dalla flotta cartaginese. I Mamertini avevano nel frattempo cacciato la guarnigione cartaginese; Siracusani e Cartaginesi, che assediavano la città, si ritirarono. I Romani marciarono verso sud fino a Siracusa, ma non riuscirono a prenderla.",
+  "after": "Ne nacque una guerra di ventitré anni, la più lunga e la più grande guerra navale dell'antichità, combattuta soprattutto in Sicilia e nelle sue acque. Roma, che non aveva una flotta all'altezza, ne costruì una per sfidare Cartagine. Con la vittoria, nel 241 a.C., ottenne la Sicilia.",
+  "links": [
+    {
+      "slug": "battaglia-di-benevento-275-ac",
+      "reason": "Pochi anni prima Roma aveva completato la conquista dell'Italia meridionale."
+    },
+    {
+      "slug": "battaglia-delle-egadi-241-ac",
+      "reason": "La battaglia navale che, ventitré anni dopo, chiude la guerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Punic War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Punic_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Prima guerra punica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Prima_guerra_punica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti sono più tarde degli eventi e non concordano su tutti i particolari: l'occupazione di Messana è datata al 289 o al 288 a.C. L'anno della guerra è quello della cronologia tradizionale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

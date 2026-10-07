@@ -1,0 +1,51 @@
+{
+  "slug": "scandalo-dei-baccanali-186-ac",
+  "title": "Il Senato vieta i Baccanali in tutta l'Italia",
+  "summary": "Nel 186 a.C. il Senato romano vieta in tutta l'Italia i culti di Bacco non autorizzati, dopo uno scandalo che Livio racconta con accuse di violenze e di crimini: una copia del decreto è stata trovata a Tiriolo, in Calabria.",
+  "date": {
+    "year": -186,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il culto di Bacco, secondo Livio arrivato a Roma dall'Etruria, si era diffuso «come un'epidemia». Livio, che scrive due secoli dopo, lo descrive come un'associazione notturna in cui si praticavano violenze, e alcuni studiosi ritengono che ne abbia ingigantito le tendenze licenziose. Quando anche i membri dell'élite cominciarono a prendervi parte, la notizia arrivò al Senato tramite Publio Ebuzio e la sua amante Ispala Fecenia, una prostituta, che raccontarono di riti segreti e violenti.",
+  "event": "Il Senato giudicò il culto una minaccia per la sicurezza dello Stato: nominò inquirenti, offrì ricompense a chi denunciava e istruì processi. Secondo Livio i perseguiti furono circa 7 000; chi si era macchiato di dissolutezza o di assassinio fu condannato a morte, e molti si uccisero per evitare l'accusa. Un decreto, il Senatus consultum de Bacchanalibus, vietò i Baccanali in tutta l'Italia romana: i santuari di Bacco furono distrutti, tranne quelli con un altare o una statua consacrati, e chi voleva continuare un rito tradizionale doveva chiederne il permesso al Senato.",
+  "after": "Dopo la repressione i Baccanali sopravvissero solo nell'Italia meridionale. Il decreto, fatto incidere dal pretore in carica, ci è arrivato su una tavola di bronzo in latino arcaico, trovata nel 1640 a Tiriolo, in Calabria, e oggi a Vienna. Molti studiosi lo leggono come una dimostrazione dell'autorità del Senato verso gli alleati italici dopo la guerra contro Annibale e come un avvertimento ai politici ambiziosi; la durezza della reazione fu probabilmente senza precedenti e rivela una forma di panico morale.",
+  "links": [
+    {
+      "slug": "battaglia-di-magnesia-190-ac",
+      "reason": "Pochi anni prima Roma aveva vinto in Oriente: ora impone la sua autorità anche in Italia."
+    },
+    {
+      "slug": "battaglia-di-pidna-168-ac",
+      "reason": "Diciotto anni dopo Roma elimina il regno di Macedonia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Senatus consultum de Bacchanalibus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Senatus_consultum_de_Bacchanalibus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Senatus consultum de Bacchanalibus - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Senatus_consultum_de_Bacchanalibus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno, il 186 a.C., è quello dell'iscrizione. Il racconto principale è di Livio, scritto due secoli dopo: alcuni studiosi ritengono che abbia ingigantito le pratiche del culto, e le cifre sui condannati non sono verificate."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

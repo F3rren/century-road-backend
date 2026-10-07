@@ -1,0 +1,63 @@
+{
+  "slug": "morte-di-gaio-gracco-121-ac",
+  "title": "Il primo «decreto ultimo» del Senato: la morte di Gaio Gracco",
+  "summary": "Nel 121 a.C. il Senato approva per la prima volta il «decreto ultimo», che esorta il console Opimio a difendere lo Stato con ogni mezzo: Gaio Gracco e i suoi sostenitori, asserragliati sull'Aventino, vengono sconfitti e uccisi.",
+  "date": {
+    "year": -121,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Colle Aventino, Roma, Italia",
+    "lat": 41.8836,
+    "lon": 12.4851,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Gaio Gracco non fu rieletto tribuno per il 121 a.C. Uno dei nuovi tribuni, Minucio Rufo, voleva abrogare la legge che autorizzava la colonia di Cartagine, e il console Lucio Opimio, avversario di Gaio, era pronto a reprimere i disordini. Durante un sacrificio un inserviente che aveva schernito il seguito di Gaio fu ucciso a colpi di stilo, e Opimio convocò il Senato.",
+  "event": "Il Senato approvò il primo senatus consultum ultimum, il «decreto finale» con cui esortava Opimio a difendere lo Stato con ogni mezzo. Gaio e il suo alleato Marco Fulvio Flacco armarono i loro seguaci e occuparono il tempio di Diana sull'Aventino. Opimio chiamò la milizia, con arcieri cretesi mercenari, rifiutò di trattare e attaccò, offrendo una taglia per i due. Flacco e i suoi figli furono uccisi; Gaio, fuggito oltre il Tevere, morì, per suicidio o ucciso: secondo un racconto si fece uccidere da uno schiavo nel bosco di Furrina, sul Gianicolo.",
+  "after": "Seguì una repressione durissima: secondo le fonti furono uccisi migliaia di sostenitori dei Gracchi, molti senza regolare processo. Opimio fece purificare la città e costruire un tempio alla Concordia nel Foro; qualcuno vi scrisse di notte che era «l'opera di una folle discordia». Quando, uscito di carica, fu accusato di aver violato la legge che vietava di giustiziare cittadini senza appello al popolo, fu assolto: il suo successo legittimò il ricorso a questi decreti, che nell'ultimo secolo della Repubblica furono usati sempre più spesso. Gran parte delle leggi di Gaio sopravvisse.",
+  "links": [
+    {
+      "slug": "gaio-gracco-tribuno-123-ac",
+      "reason": "Il tribuno che aveva proposto leggi per la plebe e per i cavalieri."
+    },
+    {
+      "slug": "congiura-di-catilina-63-ac",
+      "reason": "Il Senato userà il «decreto ultimo» anche contro Catilina, quasi sessant'anni dopo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Senatus consultum ultimum - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Senatus_consultum_ultimum",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Senatus consultum ultimum - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Senatus_consultum_ultimum",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Gaio Sempronio Gracco - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Gaio_Sempronio_Gracco",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Gaius Gracchus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gaius_Gracchus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non concordano su come morì Gaio: per suicidio, in battaglia o per mano di uno schiavo. Le cifre dei morti della repressione variano da una fonte all'altra. L'anno, il 121 a.C., è quello dell'uccisione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

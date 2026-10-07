@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-cinocefale-197-ac",
+  "title": "Cinocefale: Roma sconfigge la Macedonia di Filippo V",
+  "summary": "Nel giugno del 197 a.C., in Tessaglia, l'esercito romano di Flaminino batte quello macedone di Filippo V: è la battaglia decisiva della seconda guerra macedonica e mostra la forza della legione contro la falange.",
+  "date": {
+    "year": -197,
+    "month": 6,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Colline di Cinocefale, Tessaglia, Grecia",
+    "lat": 39.417,
+    "lon": 22.567,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "Filippo V di Macedonia si era alleato con Cartagine durante la guerra contro Annibale, e questo i Romani non lo dimenticarono. Quando poi il re si spinse verso la Tracia e gli Stretti, Rodi e Pergamo, preoccupate, chiesero aiuto a Roma, che gli dichiarò guerra: era la seconda guerra macedonica. Nel 198 a.C. il comando passò a Tito Quinzio Flaminino, che chiese a Filippo di ritirarsi da tutta la Grecia, fuori dalla Macedonia; Filippo rifiutò.",
+  "event": "Nella primavera del 197 a.C. i due eserciti marciarono ai lati delle colline di Cinocefale, in Tessaglia. Una forte pioggia e la nebbia del mattino li fecero scontrare quasi per caso: le avanguardie leggere si incontrarono sulle alture e ciascun comandante mandò rinforzi. Filippo, convinto che i suoi stessero vincendo, lanciò la falange all'attacco su un terreno spezzato, mentre la sua ala sinistra non era ancora schierata. Flaminino fece uscire le legioni, con gli elefanti all'ala destra, e riuscì a sopraffare la falange.",
+  "after": "Secondo Polibio e Livio i Macedoni persero circa 8 000 uomini e 5 000 furono presi prigionieri, mentre i Romani ne persero tra 700 e 750. Filippo accettò di trattare: dovette ritirarsi dalla Grecia e rinunciare alle sue conquiste, consegnare prigionieri e disertori. La battaglia, con quella di Pidna, è considerata la prova della superiorità della legione manipolare sulla falange; alcuni ricordano però che i Romani vinsero anche perché la sinistra macedone non era ancora schierata.",
+  "links": [
+    {
+      "slug": "battaglia-di-zama-202-ac",
+      "reason": "Cinque anni prima Roma aveva vinto Annibale, di cui Filippo V era stato alleato."
+    },
+    {
+      "slug": "battaglia-di-magnesia-190-ac",
+      "reason": "Sette anni dopo Roma sconfigge un altro re ellenistico, Antioco III."
+    },
+    {
+      "slug": "battaglia-di-pidna-168-ac",
+      "reason": "Quasi trent'anni dopo, a Pidna, finisce il regno di Macedonia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Cynoscephalae - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Cynoscephalae",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Cinocefale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Cinocefale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti danno il mese, giugno, ma non il giorno. Il mese è quello del calendario romano dell'epoca: prima della riforma giuliana quel calendario non seguiva con precisione le stagioni e non coincide con il calendario giuliano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

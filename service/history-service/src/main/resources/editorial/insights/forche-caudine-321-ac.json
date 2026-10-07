@@ -1,0 +1,53 @@
+{
+  "slug": "forche-caudine-321-ac",
+  "title": "Le Forche Caudine",
+  "summary": "Nel 321 a.C., durante la seconda guerra sannitica, un esercito romano cade in una trappola dei Sanniti in una stretta valle e, senza combattere, si arrende e passa sotto il giogo.",
+  "date": {
+    "year": -321,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Valle Caudina, Campania, Italia",
+    "lat": 41.15,
+    "lon": 14.533,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il luogo esatto è incerto: l'ipotesi più accettata è una valle tra Arienzo e Arpaia, attraversata dalla via Appia, ma gli studiosi ne propongono altre. Il punto indica quella zona."
+  },
+  "before": "Roma e i Sanniti, popolo dell'Italia meridionale, erano in guerra da alcuni anni. Nel 322 a.C. i Sanniti, sconfitti, avevano accettato condizioni umilianti e speravano in un'alleanza, che Roma non concesse. Nel 321 a.C. furono eletti consoli Tiberio Veturio Calvino e Spurio Postumio Albino, mentre i Sanniti scelsero come comandante Gaio Ponzio, che li spinse a riprendere le armi.",
+  "event": "Secondo Livio, Ponzio fece credere ai Romani che i Sanniti assediassero Luceria, città alleata di Roma, mandando soldati travestiti da pastori a farsi catturare. I consoli scelsero la strada più breve, attraverso le strette di Caudio, e trovarono sbarrata la seconda gola; tornati indietro, trovarono bloccata anche la prima. Intrappolati e senza viveri, i Romani non combatterono: si arresero. I Sanniti li lasciarono liberi, ma i soldati, disarmati, dovettero passare sotto il giogo, un rito di umiliazione.",
+  "after": "L'esercito raggiunse l'alleata Capua; a Roma la notizia provocò lutto, botteghe chiuse e la proposta di non accogliere i vinti in città. Livio si contraddice: dice che il Senato respinse la pace dei consoli, ma altrove che Roma la rispettò fino alla ripresa della guerra nel 316 a.C. I Romani ricordarono per secoli le Forche Caudine come un marchio negativo, associandole alla disfatta dell'Allia e poi a Canne.",
+  "links": [
+    {
+      "slug": "battaglia-dell-allia-390-ac",
+      "reason": "I Romani ricordavano le Forche Caudine insieme all'Allia, come le loro umiliazioni."
+    },
+    {
+      "slug": "battaglia-di-canne-216-ac",
+      "reason": "Canne, la sconfitta più grave della guerra contro Annibale, fu accostata alle Forche Caudine e all'Allia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Caudine Forks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Caudine_Forks",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia delle Forche Caudine - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_delle_Forche_Caudine",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il racconto di Livio, l'unica fonte con particolari sul luogo, è giudicato in parte letterario dagli storici moderni: le due gole che descrive non corrispondono bene al terreno reale.",
+    "L'anno segue la cronologia di Varrone, usata per convenzione nella storia romana: altre cronologie, antiche e moderne, danno per questi eventi anni diversi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

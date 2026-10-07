@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-canne-216-ac",
+  "title": "Annibale distrugge un esercito romano a Canne",
+  "summary": "Il 2 agosto del 216 a.C., a Canne, in Puglia, Annibale circonda e quasi distrugge un esercito romano molto più numeroso: è considerata una delle più grandi manovre tattiche della storia militare.",
+  "date": {
+    "year": -216,
+    "month": 8,
+    "day": 2
+  },
+  "place": {
+    "name": "Canne della Battaglia, Puglia, Italia",
+    "lat": 41.306,
+    "lon": 16.133,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo la Trebbia e il Trasimeno i Romani, guidati da Fabio Massimo, avevano scelto di evitare lo scontro. Nel 216 a.C. furono però eletti consoli Lucio Emilio Paolo, prudente, e Gaio Terenzio Varrone, che le fonti descrivono come temerario e deciso a battere Annibale in campo aperto. Fu raccolto un esercito di dimensioni mai viste, circa 86 000 uomini tra Romani e alleati.",
+  "event": "Il 2 agosto i due eserciti si schierarono vicino a Canne. I Romani ammassarono la fanteria pesante al centro, in una formazione più serrata del solito; Annibale dispose al centro, ad arco, i suoi uomini più deboli e li fece arretrare lentamente, mentre la sua cavalleria batteva quella romana. Quando i legionari furono avanzati nel semicerchio, la fanteria africana li attaccò sui fianchi e la cavalleria li prese alle spalle: compressi in uno spazio sempre più stretto, i Romani non riuscirono più a combattere.",
+  "after": "Le perdite romane furono enormi: le fonti antiche parlano di circa 45 000-70 000 morti, mentre alcuni storici moderni propongono cifre molto più basse. Morì il console Emilio Paolo, e si salvarono solo circa 15 000 Romani, per lo più rimasti nei campi. Capua e altre città dell'Italia meridionale passarono dalla parte di Cartagine. A Roma si proclamò il lutto, si vietarono le processioni e si ricorse perfino al sacrificio umano.",
+  "links": [
+    {
+      "slug": "battaglia-del-trasimeno-217-ac",
+      "reason": "Un anno prima, un'altra imboscata aveva distrutto un esercito romano."
+    },
+    {
+      "slug": "battaglia-di-zama-202-ac",
+      "reason": "Quattordici anni dopo, Scipione vince Annibale in Africa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Cannae - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Cannae",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Canne - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Canne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 2 agosto è il giorno nel calendario romano dell'epoca, riferito da Macrobio. Quel calendario non coincideva con il giuliano: secondo una ricostruzione il giorno corrispondente sarebbe il 1° luglio.",
+    "Le cifre dei caduti variano molto da una fonte all'altra."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

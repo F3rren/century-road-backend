@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-porta-collina-82-ac",
+  "title": "La battaglia di Porta Collina: Silla vince la guerra civile",
+  "summary": "Il 1° novembre dell'82 a.C., davanti a una porta di Roma, Silla sconfigge i Sanniti e i Mariani e decide a suo favore la prima guerra civile romana; subito dopo comincia le proscrizioni.",
+  "date": {
+    "year": -82,
+    "month": 11,
+    "day": 1
+  },
+  "place": {
+    "name": "Porta Collina, Roma, Italia",
+    "lat": 41.907,
+    "lon": 12.499,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Silla tornò in Italia nella primavera dell'83 a.C. con un esercito di veterani, dopo aver vinto Mitridate in Oriente, e cominciò una guerra civile contro i seguaci di Mario, che governavano Roma. Nell'82 a.C. i Mariani erano in difficoltà: il giovane Gaio Mario, console, era assediato a Preneste. Il condottiero sannita Ponzio Telesino radunò, secondo una fonte, 70 000 uomini tra Sanniti e Lucani, che odiavano Silla e temevano di essere i prossimi, e marciò per liberare Preneste; poi puntò su Roma.",
+  "event": "Il 1° novembre, presso la porta Collina, sul lato nord-orientale delle mura, Silla arrivò con il suo esercito mentre i Sanniti stavano per attaccare la città. Lo scontro fu accanito e molto sanguinoso, e Silla vinse dopo fasi di grande difficoltà. Secondo Appiano, che è l'unica fonte con particolari sulla battaglia, i morti furono circa 50 000 da entrambe le parti. I Sanniti furono sconfitti e la guerra civile era decisa.",
+  "after": "Il giorno dopo Silla fece massacrare nella Villa Publica i capi mariani e i prigionieri sanniti, e il 3 novembre cominciò le proscrizioni contro i suoi nemici. Preneste si arrese: il giovane Mario si uccise, i senatori catturati furono uccisi, e con loro la maggior parte degli abitanti sanniti e prenestini; i Romani furono graziati. Silla controllava l'Italia e fu poi nominato dittatore, per realizzare il suo programma di riforma della costituzione.",
+  "links": [
+    {
+      "slug": "silla-marcia-su-roma-88-ac",
+      "reason": "Sei anni prima Silla aveva già preso Roma con il suo esercito."
+    },
+    {
+      "slug": "rivolta-di-spartaco-73-ac",
+      "reason": "Nove anni dopo un'altra guerra, quella degli schiavi guidati da Spartaco, mette alla prova Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Colline Gate - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Colline_Gate",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Porta Collina - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Porta_Collina",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è quello del calendario romano dell'epoca: prima della riforma giuliana quel calendario non seguiva con precisione le stagioni e non coincide con il calendario giuliano.",
+    "Le fonti sono poche: Appiano è l'unico a dare particolari della battaglia, e le cifre dei morti sono sue. Un'altra fonte indica anche il 2 novembre come secondo giorno di combattimento."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

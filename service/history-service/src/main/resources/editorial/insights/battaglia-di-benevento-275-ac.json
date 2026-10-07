@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-benevento-275-ac",
+  "title": "Pirro è fermato a Malevento",
+  "summary": "Nel 275 a.C. i Romani guidati dal console Manio Curio Dentato fermano Pirro, re dell'Epiro, presso Malevento, la città che poi si chiamò Benevento: è l'ultima battaglia della guerra contro Pirro.",
+  "date": {
+    "year": -275,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Malevento (Benevento), Campania, Italia",
+    "lat": 41.133,
+    "lon": 14.783,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica la città di Benevento, l'antica Malevento; le fonti collocano la battaglia nei suoi dintorni senza indicare il luogo preciso."
+  },
+  "before": "All'inizio del terzo secolo a.C., finite le guerre sannitiche, Roma premeva sulle città greche dell'Italia meridionale. Taranto chiamò in aiuto Pirro, re dell'Epiro, che sbarcò in Italia nel 280 a.C. con elefanti da guerra e vinse a Eraclea e, l'anno seguente, ad Ascoli di Puglia, ma con perdite pesanti. Passò allora in Sicilia contro i Cartaginesi e nel 275 a.C. tornò in Italia. Roma aveva intanto riconquistato le sue posizioni nel Sud e minacciava ancora Taranto.",
+  "event": "Pirro tentò di sorprendere il console Manio Curio Dentato, accampato presso Malevento, con una marcia notturna: i suoi uomini si persero nei boschi e arrivarono in vista dei Romani solo all'alba. Manio Curio uscì dal campo e catturò alcuni elefanti; poi, respinto da una carica degli elefanti, fece lanciare giavellotti dagli uomini rimasti a guardia del campo. Gli animali, feriti, si volsero indietro e sconvolsero le file di Pirro, che si ritirò. Otto elefanti furono catturati.",
+  "after": "Gli storici moderni discutono se Pirro abbia davvero perso: per alcuni fu un pareggio. In ogni caso, privato della sua forza di manovra, fu costretto sulla difensiva e tornò a Taranto e poi in Epiro. Taranto si arrese a Roma nel 272 a.C., e Roma completò la conquista dell'Italia meridionale. Nel 268 a.C. fondò una colonia a Malevento e ne cambiò il nome, di cattivo augurio, in Benevento.",
+  "links": [
+    {
+      "slug": "forche-caudine-321-ac",
+      "reason": "Mezzo secolo prima i Sanniti avevano umiliato Roma; ora combattono a fianco di Pirro."
+    },
+    {
+      "slug": "inizio-prima-guerra-punica-264-ac",
+      "reason": "Pochi anni dopo, padrona dell'Italia, Roma si scontra con Cartagine per la Sicilia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Beneventum (275 BC) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Beneventum_(275_BC)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Benevento (275 a.C.) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Benevento_(275_a.C.)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non danno il giorno né, in modo affidabile, il numero delle truppe e delle perdite: le cifre riferite dalla tradizione romana non sono verificate. L'anno segue la cronologia tradizionale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

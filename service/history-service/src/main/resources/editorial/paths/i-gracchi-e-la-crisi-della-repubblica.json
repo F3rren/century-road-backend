@@ -1,0 +1,37 @@
+{
+  "slug": "i-gracchi-e-la-crisi-della-repubblica",
+  "title": "I Gracchi e la crisi della Repubblica",
+  "tagline": "Dalla riforma agraria di Tiberio Gracco alla guerra sociale: come, in poco più di quarant'anni, le tensioni tra ricchi e poveri, Senato e cavalieri, Roma e Italici portano la Repubblica alla violenza.",
+  "intro": "Le conquiste hanno portato a Roma ricchezze e schiavi, e Tiberio Gracco pensava che i grandi proprietari stessero togliendo la terra ai contadini. Con lui e con suo fratello Gaio la politica romana prova a cambiare le cose con le riforme, e conosce la violenza e i morti in piazza.\n\nIl percorso segue i protagonisti e i temi di quella crisi: la terra, i tribunali, la cittadinanza degli alleati italici e i generali che, come Mario, ottengono un potere personale.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "testamento-di-attalo-iii-133-ac",
+      "narrative": "Si parte da Pergamo: il lascito di Attalo III dà a Roma un regno e a Tiberio Gracco un'idea per finanziare la sua riforma."
+    },
+    {
+      "insight": "tiberio-gracco-133-ac",
+      "narrative": "Tiberio Gracco, tribuno della plebe, vuole dare la terra ai contadini poveri e, per farlo, infrange le regole."
+    },
+    {
+      "insight": "gaio-gracco-tribuno-123-ac",
+      "narrative": "Dieci anni dopo suo fratello Gaio riprende e allarga il programma: grano, colonie, tribunali."
+    },
+    {
+      "insight": "morte-di-gaio-gracco-121-ac",
+      "narrative": "La risposta del Senato è violenta: per la prima volta un «decreto ultimo» autorizza il console a usare la forza."
+    },
+    {
+      "insight": "guerra-giugurtina-111-ac",
+      "narrative": "Fuori d'Italia un re africano compra i senatori, e la corruzione porta al comando Gaio Mario."
+    },
+    {
+      "insight": "battaglia-di-vercelle-101-ac",
+      "narrative": "Mario ferma i Cimbri e sfida il Senato, concedendo la cittadinanza ai soldati alleati."
+    },
+    {
+      "insight": "marco-livio-druso-91-ac",
+      "narrative": "Tornano le riforme: Druso propone la cittadinanza agli Italici, e il suo assassinio apre la guerra sociale."
+    }
+  ]
+}

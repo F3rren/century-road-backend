@@ -1,0 +1,51 @@
+{
+  "slug": "distruzione-di-cartagine-146-ac",
+  "title": "Roma distrugge Cartagine",
+  "summary": "All'inizio del 146 a.C., dopo quasi tre anni di assedio, l'esercito di Scipione Emiliano prende e distrugge Cartagine: i sopravvissuti sono venduti come schiavi e il territorio diventa la provincia romana d'Africa.",
+  "date": {
+    "year": -146,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Cartagine, Tunisia",
+    "lat": 36.853,
+    "lon": 10.323,
+    "countryCode": "TN",
+    "approximate": false
+  },
+  "before": "Dopo Zama Cartagine era una città ricca ma subordinata a Roma, e continuava a pagare l'indennità. Il re numida Massinissa, alleato dei Romani, ne occupava i territori, e Catone concludeva tutti i suoi discorsi con la frase «Cartagine deve essere distrutta». Quando nel 150 a.C. Cartagine, rompendo i patti, armò un esercito contro Massinissa, Roma ebbe il pretesto per intervenire: chiese di demolire la parte della città sul mare e di allontanare ogni edificio dalla costa, e di fronte al rifiuto dichiarò guerra, nel 149 a.C.",
+  "event": "Un grande esercito romano sbarcò a Utica; i Cartaginesi consegnarono tutte le armi, ma i Romani assediarono comunque la città. L'assedio durò quasi tre anni, con molti insuccessi romani, finché nel 147 a.C. il comando fu dato a Scipione Emiliano, nipote adottivo dell'Africano, che chiuse il porto con una diga e fermò i rifornimenti. All'inizio del 146 a.C. i Romani assaltarono la città: per circa una settimana la conquistarono quartiere per quartiere, uccidendo chi trovavano e incendiando le case, finché gli ultimi difensori si arresero.",
+  "after": "Circa 50 000 sopravvissuti, in gran parte donne e bambini, furono venduti come schiavi. Una commissione di dieci senatori ordinò a Scipione di distruggere ciò che restava della città e vietò di abitarvi; l'idea che i Romani abbiano cosparso di sale il terreno è un'invenzione dell'Ottocento. Il territorio divenne la provincia romana d'Africa, con Utica per capitale, e un secolo dopo Giulio Cesare rifondò Cartagine come città romana.",
+  "links": [
+    {
+      "slug": "battaglia-di-zama-202-ac",
+      "reason": "Come finì la guerra contro Annibale, mezzo secolo prima."
+    },
+    {
+      "slug": "distruzione-di-corinto-146-ac",
+      "reason": "Nello stesso anno Roma distrugge anche Corinto, in Grecia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Carthage (Third Punic War) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Carthage_(Third_Punic_War)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Terza guerra punica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Terza_guerra_punica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'assedio durò dal 149 al 146 a.C.; le fonti non danno il giorno dell'assalto finale, che le ricostruzioni collocano all'inizio, in primavera, del 146 a.C. Polibio, la fonte principale, era presente e accompagnava Scipione Emiliano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

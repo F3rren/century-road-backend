@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-vercelle-101-ac",
+  "title": "Vercelle: Mario ferma i Cimbri",
+  "summary": "Il 30 luglio del 101 a.C., in una pianura vicino a Vercelle, i Romani di Gaio Mario e di Quinto Lutazio Catulo distruggono i Cimbri, popolo germanico che da anni minacciava Roma: finisce la guerra contro Cimbri e Teutoni.",
+  "date": {
+    "year": -101,
+    "month": 7,
+    "day": 30
+  },
+  "place": {
+    "name": "Presso Vercelle, Piemonte, Italia",
+    "lat": 45.317,
+    "lon": 8.417,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il luogo esatto è molto discusso: le ipotesi vanno dal Vercellese al Rodigino e al Mantovano. Il punto indica la zona di Vercelli."
+  },
+  "before": "Dal 113 a.C. i Cimbri e i Teutoni, popoli germanici e celtici in migrazione, infliggevano ai Romani una serie di sconfitte, fino a quella di Arausio, nel 105 a.C., una delle peggiori della storia di Roma. Gaio Mario, console, ebbe il comando contro di loro e nel 102 a.C. distrusse i Teutoni ad Aquae Sextiae.",
+  "event": "Il 30 luglio i Cimbri, guidati dal re Boiorix, si scontrarono con l'esercito romano condotto da Mario e dal proconsole Lutazio Catulo in una pianura presso Vercelle. I Cimbri furono annientati: secondo Mario i morti furono circa 100 000 e furono catturate molte migliaia di persone, tra cui molte donne e bambini; altre fonti parlano di oltre 140 000 morti e 60 000 prigionieri.",
+  "after": "La vittoria, dopo quella sui Teutoni dell'anno prima, pose fine alla minaccia germanica ai confini settentrionali. Mario e Catulo si contesero il merito. Mario, per ricompensare gli alleati italici, concesse la cittadinanza ai loro soldati senza consultare il Senato: secondo il racconto, rispose che nella confusione della battaglia non aveva distinto la voce delle leggi da quella degli alleati. Fu forse la prima volta che un generale vittorioso sfidò apertamente il Senato; la battaglia segnò anche l'inizio della rivalità tra Mario e Silla.",
+  "links": [
+    {
+      "slug": "guerra-giugurtina-111-ac",
+      "reason": "Mario aveva comandato la fase decisiva della guerra contro Giugurta."
+    },
+    {
+      "slug": "marco-livio-druso-91-ac",
+      "reason": "Dieci anni dopo la questione dei diritti degli alleati italici esplode con Druso."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Vercellae - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Vercellae",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia dei Campi Raudii - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_dei_Campi_Raudii",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è quello del calendario romano dell'epoca: prima della riforma giuliana quel calendario non seguiva con precisione le stagioni e non coincide con il calendario giuliano.",
+    "Le cifre dei morti sono quelle riferite dalle fonti antiche e non sono verificate; l'identificazione del luogo è molto controversa."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

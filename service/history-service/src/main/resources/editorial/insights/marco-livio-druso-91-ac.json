@@ -1,0 +1,51 @@
+{
+  "slug": "marco-livio-druso-91-ac",
+  "title": "Marco Livio Druso: la riforma che doveva dare la cittadinanza agli Italici",
+  "summary": "Nel 91 a.C. il tribuno Marco Livio Druso propone riforme sui tribunali, sulla terra e sulla cittadinanza degli alleati italici; il Senato le annulla e Druso viene assassinato: la sua morte è considerata una causa immediata della guerra sociale.",
+  "date": {
+    "year": -91,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo Gaio Gracco lo scontro tra Senato e cavalieri sui tribunali, e la questione della cittadinanza degli alleati italici, rimasta chiusa per circa trent'anni, restavano irrisolti. Marco Livio Druso, tribuno della plebe per il 91 a.C., con il sostegno di senatori importanti come Marco Emilio Scauro e dell'oratore Lucio Licinio Crasso, preparò un programma per rafforzare l'autorità del Senato.",
+  "event": "Il programma prevedeva di far entrare in Senato circa 300 cavalieri e di restituire ai senatori le giurie dei tribunali permanenti; per ottenere l'appoggio popolare Druso presentò anche una legge agraria, nuove colonie e forse un grano a prezzo ridotto. Le proposte, riunite in un solo testo, furono approvate tra violente opposizioni, anche del console Lucio Marcio Filippo. A settembre il vento era cambiato: i senatori temevano il potere personale di Druso e, quando egli propose di estendere la cittadinanza agli Italici, l'opposizione crebbe.",
+  "after": "Il Senato annullò le leggi di Druso e verso settembre del 91 a.C. Druso fu assassinato da un ignoto, in casa sua o mentre tornava dal Foro. Gli Italici si vedevano negare la cittadinanza promessa e la guerra sociale scoppiò quasi subito: molti Romani ne diedero la colpa a Druso, e un tribunale speciale, istituito con la lex Varia, perseguì chi era sospettato di aver incoraggiato la rivolta. Gli storici romani collocarono il suo tribunato nella serie di crisi cominciata con i Gracchi.",
+  "links": [
+    {
+      "slug": "gaio-gracco-tribuno-123-ac",
+      "reason": "Trent'anni prima Gaio Gracco aveva proposto la cittadinanza ai Latini, senza successo."
+    },
+    {
+      "slug": "guerra-sociale-90-ac",
+      "reason": "Pochi mesi dopo gli Italici si ribellano: è la guerra sociale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marcus Livius Drusus (reformer) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marcus_Livius_Drusus_(reformer)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Marco Livio Druso (tribuno) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Marco_Livio_Druso_(tribuno)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'assassinio è datato circa al settembre del 91 a.C.; le fonti non concordano sul luogo né sul responsabile: alcune accusano il console Filippo o il pretore Cepione. Il quadro politico è noto soprattutto da fonti ostili o più tarde."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

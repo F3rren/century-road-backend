@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-del-trasimeno-217-ac",
+  "title": "L'imboscata di Annibale al lago Trasimeno",
+  "summary": "Il 21 giugno del 217 a.C. Annibale tende un'imboscata all'esercito del console Flaminio sulla riva del lago Trasimeno e lo distrugge quasi per intero: è una delle peggiori sconfitte di Roma.",
+  "date": {
+    "year": -217,
+    "month": 6,
+    "day": 21
+  },
+  "place": {
+    "name": "Lago Trasimeno, Umbria, Italia",
+    "lat": 43.197,
+    "lon": 12.085,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto esatto dello scontro, sulla riva nord del lago, è discusso: gli studiosi propongono più ipotesi. Il punto indica quella zona."
+  },
+  "before": "Dopo la Trebbia, nella primavera del 217 a.C. i Romani schierarono un esercito su ciascun lato dell'Appennino. Annibale lo attraversò con più di 50 000 uomini per un passo difficile ma non sorvegliato e scese in Etruria, devastando i villaggi. Il console Gaio Flaminio, che comandava l'esercito più vicino, si mise a inseguirlo, mentre l'altro console, Gneo Servilio Gemino, era lontano, nella zona di Rimini.",
+  "event": "Annibale giunse in anticipo presso il lago e scelse una valle tra le pendici dei monti di Cortona e la riva, dove nascose le sue truppe sulle alture. Flaminio arrivò al tramonto e si accampò; all'alba del 21 giugno riprese la marcia in colonna lungo la riva, forse con scarsa visibilità. I Cartaginesi attaccarono dai fianchi e alle spalle e in circa tre ore di combattimento i Romani non riuscirono a formare una linea: il console cadde. Circa 15 000 Romani furono uccisi; altri 6 000, che erano riusciti a fuggire in avanti, vennero circondati e si arresero.",
+  "after": "A Roma la notizia provocò il panico. Poiché nessun console poteva nominare un dittatore, l'assemblea elesse dittatore Quinto Fabio Massimo, che adottò una strategia di attesa, evitando le battaglie in campo aperto: per questo fu detto il Temporeggiatore. Annibale trattò bene gli alleati latini catturati, nella speranza di staccarli da Roma, e proseguì per l'Umbria fino all'Adriatico e poi verso il Sud.",
+  "links": [
+    {
+      "slug": "annibale-attraversa-le-alpi-218-ac",
+      "reason": "L'anno prima, l'arrivo di Annibale in Italia."
+    },
+    {
+      "slug": "battaglia-di-canne-216-ac",
+      "reason": "L'anno dopo, in Puglia, una sconfitta ancora più grave."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Lake Trasimene - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Lake_Trasimene",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del lago Trasimeno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_lago_Trasimeno",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è quello del calendario romano dell'epoca: prima della riforma giuliana quel calendario non seguiva con precisione le stagioni e non coincide con il calendario giuliano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-delle-egadi-241-ac",
+  "title": "La battaglia delle Egadi chiude la prima guerra punica",
+  "summary": "Il 10 marzo del 241 a.C. la nuova flotta romana batte quella cartaginese al largo delle isole Egadi, a ovest della Sicilia: Cartagine chiede la pace e cede la Sicilia a Roma.",
+  "date": {
+    "year": -241,
+    "month": 3,
+    "day": 10
+  },
+  "place": {
+    "name": "Mare a ovest di Levanzo, isole Egadi, Italia",
+    "lat": 37.967,
+    "lon": 12.2,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica il mare a ovest dell'isola di Levanzo, dove le fonti collocano lo scontro; il luogo preciso non è noto."
+  },
+  "before": "Dopo oltre vent'anni di guerra le finanze di entrambe le potenze erano esauste. Roma, rimasta senza flotta, nel 243 a.C. chiese prestiti ai cittadini più ricchi, che finanziarono una nave ciascuno, da rimborsare con le riparazioni imposte a Cartagine in caso di vittoria: ne uscirono circa duecento quinqueremi. La flotta, al comando del console Gaio Lutazio Catulo, bloccò i porti cartaginesi della Sicilia occidentale e addestrò gli equipaggi. Cartagine impiegò nove mesi per armare una flotta di soccorso, carica di grano.",
+  "event": "La flotta cartaginese, comandata da Annone, doveva portare viveri alle truppe in Sicilia e imbarcare soldati da usare come fanti di marina. Il 10 marzo, con un forte vento da ovest, Catulo, ferito, lasciò il comando in battaglia al suo collega Quinto Valerio Faltone e decise di attaccare controvento, facendo alleggerire le navi. Presso l'isola di Levanzo i Romani, più manovrabili e con equipaggi addestrati, ebbero la meglio sui Cartaginesi, appesantiti dai carichi e con equipaggi improvvisati.",
+  "after": "Cartagine non ebbe la forza di armare un'altra flotta e ordinò ad Amilcare Barca di trattare. Con il trattato di Lutazio i Cartaginesi lasciarono la Sicilia, restituirono i prigionieri e pagarono un'indennità di 3 200 talenti in dieci anni. Roma divenne la principale potenza militare del Mediterraneo occidentale: durante la guerra aveva costruito più di mille galee, un'esperienza che pose le basi del suo predominio sul mare.",
+  "links": [
+    {
+      "slug": "inizio-prima-guerra-punica-264-ac",
+      "reason": "Come cominciò la guerra: una richiesta d'aiuto a Messina, ventitré anni prima."
+    },
+    {
+      "slug": "annibale-attraversa-le-alpi-218-ac",
+      "reason": "Ventitré anni dopo, il figlio di Amilcare, Annibale, riprende la guerra contro Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Aegates - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Aegates",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia delle Isole Egadi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_delle_Isole_Egadi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è quello del calendario romano dell'epoca: prima della riforma giuliana quel calendario non seguiva con precisione le stagioni e non coincide con il calendario giuliano.",
+    "Una ricostruzione colloca il 9 marzo l'arrivo della flotta romana a Favignana, e il giorno dopo la battaglia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "idi-di-marzo-44-ac",
+  "title": "Le Idi di marzo: l'assassinio di Giulio Cesare",
+  "summary": "Il 15 marzo del 44 a.C., le Idi di marzo, un gruppo di senatori uccide a coltellate Giulio Cesare nella Curia di Pompeo, durante una seduta del Senato: volevano salvare la Repubblica, ma aprirono una nuova guerra civile.",
+  "date": {
+    "year": -44,
+    "month": 3,
+    "day": 15
+  },
+  "place": {
+    "name": "Curia di Pompeo, Roma, Italia",
+    "lat": 41.8957,
+    "lon": 12.4768,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo aver vinto la guerra civile Cesare accumulò onori e poteri e fu nominato dittatore a vita. Molti senatori temevano che volesse farsi re: secondo gli autori antichi, alla festa dei Lupercali Marco Antonio gli offrì un diadema, simbolo regale. Una congiura di circa sessanta senatori, guidata da Marco Giunio Bruto, Gaio Cassio Longino e Decimo Giunio Bruto Albino, si formò per ucciderlo; tra loro c'erano non solo avversari ma anche ex sostenitori di Cesare, mossi da rancore o da ambizione.",
+  "event": "Il 15 marzo, durante una seduta del Senato nella Curia di Pompeo, i congiurati si strinsero intorno a Cesare e lo pugnalarono: secondo la tradizione i colpi furono circa 23. Giustificarono il gesto come la difesa della Repubblica contro un potere personale che, a loro giudizio, minacciava le tradizioni repubblicane.",
+  "after": "L'assassinio non restaurò la Repubblica. Due giorni dopo Marco Antonio convocò il Senato e ottenne un compromesso: nessuna punizione per gli assassini, ma validità di tutti gli atti di Cesare. Nel Foro fu esposta una statua di cera di Cesare con le 23 ferite, e la folla, furiosa, incendiò la Curia di Pompeo. Cesare aveva nominato erede Ottaviano, suo pronipote: ne nacque la guerra tra i cesariani e i liberatori, nel 43-42 a.C., e infine l'impero di Augusto.",
+  "links": [
+    {
+      "slug": "passaggio-del-rubicone-49-ac",
+      "reason": "Cinque anni prima Cesare aveva attraversato il Rubicone con le sue legioni."
+    },
+    {
+      "slug": "secondo-triumvirato-43-ac",
+      "reason": "L'anno dopo Ottaviano, Antonio e Lepido si alleano contro gli assassini di Cesare."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Assassination of Julius Caesar - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Assassination_of_Julius_Caesar",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cesaricidio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Cesaricidio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è espresso nel calendario giuliano, in uso nel mondo romano, che non coincide con quello gregoriano.",
+    "Il numero dei congiurati varia secondo le fonti: tra una ventina di senatori, che avrebbero agito, e sessanta o ottanta che avrebbero partecipato al complotto. Anche il numero dei colpi, circa 23, è tradizionale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

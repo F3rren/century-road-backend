@@ -1,0 +1,37 @@
+{
+  "slug": "roma-contro-cartagine",
+  "title": "Roma contro Cartagine",
+  "tagline": "Tre guerre in oltre un secolo per il dominio del Mediterraneo occidentale, dalla Sicilia alle Alpi, da Canne e Zama alla distruzione di Cartagine.",
+  "intro": "Per più di un secolo Roma e Cartagine si sono contese la supremazia sul Mediterraneo occidentale. Le guerre che le oppongono, dette puniche dal nome latino dei Cartaginesi, cominciano in Sicilia, passano per l'impresa di Annibale, che attraversa le Alpi e porta la guerra in Italia, e finiscono con la distruzione di Cartagine.\n\nLe fonti sono quasi tutte romane o vicine a Roma: la versione cartaginese dei fatti non ci è arrivata, e le cifre dei caduti vanno prese con prudenza.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "inizio-prima-guerra-punica-264-ac",
+      "narrative": "Tutto comincia a Messina: una richiesta d'aiuto convince Roma a mettere piede in Sicilia e a sfidare Cartagine."
+    },
+    {
+      "insight": "battaglia-delle-egadi-241-ac",
+      "narrative": "Dopo più di vent'anni di guerra, una battaglia navale decide tutto: Cartagine cede la Sicilia."
+    },
+    {
+      "insight": "annibale-attraversa-le-alpi-218-ac",
+      "narrative": "Ventitré anni dopo, il figlio di Amilcare riprende la guerra e la porta in Italia, passando dalle Alpi."
+    },
+    {
+      "insight": "battaglia-del-trasimeno-217-ac",
+      "narrative": "In Etruria Annibale tende un'imboscata a un esercito romano e lo distrugge."
+    },
+    {
+      "insight": "battaglia-di-canne-216-ac",
+      "narrative": "L'anno dopo, in Puglia, la sconfitta più grave: Annibale accerchia un esercito molto più numeroso."
+    },
+    {
+      "insight": "battaglia-di-zama-202-ac",
+      "narrative": "Roma resiste, porta la guerra in Africa e batte Annibale a Zama."
+    },
+    {
+      "insight": "distruzione-di-cartagine-146-ac",
+      "narrative": "Più di mezzo secolo dopo, una terza guerra finisce con la distruzione della città."
+    }
+  ]
+}

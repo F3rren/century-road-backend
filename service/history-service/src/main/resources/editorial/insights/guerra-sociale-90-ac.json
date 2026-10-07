@@ -1,0 +1,52 @@
+{
+  "slug": "guerra-sociale-90-ac",
+  "title": "La guerra sociale: gli Italici combattono per la cittadinanza romana",
+  "summary": "Nel 90 a.C., mentre infuria la guerra sociale, Roma, in difficoltà contro la rivolta degli alleati italici, concede con la lex Iulia la cittadinanza alle comunità che non si sono ribellate o che depongono le armi.",
+  "date": {
+    "year": -90,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Corfinio, Abruzzo, Italia",
+    "lat": 42.1206,
+    "lon": 13.8403,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Corfinio, prima capitale della lega degli Italici; la guerra si combatté in gran parte dell'Italia centrale e meridionale."
+  },
+  "before": "Gli Italici erano da tempo alleati di Roma, ma non avevano la cittadinanza romana. Dopo i Gracchi le proposte di estenderla erano fallite, e l'assassinio di Druso, nel 91 a.C., fece esplodere la rivolta, cominciata ad Ascoli, nel Piceno, dove furono massacrati un legato romano e i Romani residenti. Gli insorti, Marsi, Sanniti, Piceni, Apuli, Lucani e altri, formarono una lega con un proprio Senato di 500 membri e capitale a Corfinio, e coniarono monete: su alcune c'era la scritta «Italia», su altre un toro che abbatteva la lupa romana.",
+  "event": "La guerra fu dura: i ribelli sconfissero più volte gli eserciti romani, e il console Publio Rutilio Lupo cadde in un'imboscata dei Marsi sul fiume Toleno. Con Gaio Mario e Silla i Romani riuscirono poi a dividere gli insorti in due gruppi, uno al Nord e uno al Sud. Intanto il Senato, verso ottobre, incaricò il console Lucio Giulio Cesare di proporre una legge: la lex Iulia concesse la cittadinanza romana a ogni comunità italica che non si fosse ribellata o che avesse subito deposto le armi.",
+  "after": "La legge tolse ai ribelli una delle ragioni principali della guerra, e solo gli intransigenti restarono in campo. L'anno seguente la lex Plautia Papiria estese ancora la cittadinanza, e Silla, console nell'88 a.C., sottomise il Sud. La cittadinanza romana arrivò a tutte le comunità a sud del Po, e a quelle a nord andò il diritto latino: il diritto romano si diffuse in tutta la penisola e cittadini di origine italica poterono accedere alle magistrature e al Senato. Già gli antichi non erano certi se avessero vinto i Romani o gli Italici.",
+  "links": [
+    {
+      "slug": "marco-livio-druso-91-ac",
+      "reason": "L'assassinio di Druso e il fallimento della sua riforma fanno esplodere la guerra."
+    },
+    {
+      "slug": "silla-marcia-su-roma-88-ac",
+      "reason": "Silla, console nell'88, userà l'esercito per prendere Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Social War (91–87 BC) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Social_War_(91–87_BC)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra sociale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_sociale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La guerra durò dal 91 all'88 a.C., con alcune resistenze fino all'87. L'anno 90 a.C. è quello della lex Iulia. Le fonti principali sono tarde, soprattutto Appiano, del secondo secolo d.C.; alcune date e cifre, per esempio quella della morte del console Rutilio Lupo, differiscono da una fonte all'altra."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

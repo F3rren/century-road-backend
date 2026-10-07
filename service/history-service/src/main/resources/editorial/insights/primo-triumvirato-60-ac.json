@@ -1,0 +1,55 @@
+{
+  "slug": "primo-triumvirato-60-ac",
+  "title": "Il primo triumvirato: Cesare, Pompeo e Crasso si alleano",
+  "summary": "Nel 60 a.C. Giulio Cesare, Pompeo e Crasso stringono un'alleanza privata e segreta per superare l'opposizione del Senato: il primo triumvirato, che non è una carica ufficiale, domina la politica romana per circa sette anni.",
+  "date": {
+    "year": -60,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Pompeo, vincitore in Oriente, voleva terre per i suoi veterani e la conferma dei suoi accordi con i regni orientali; Crasso, ricchissimo, aveva grande influenza tra i cavalieri che gestivano le imposte; Cesare, giovane politico ambizioso, cercava il consolato. Per anni l'opposizione di molti senatori aveva bloccato le richieste di tutti e tre. Pompeo e Crasso erano rivali, ma Cesare riuscì a riconciliarli.",
+  "event": "L'alleanza fu all'inizio segreta, un accordo privato senza valore ufficiale: i tre promisero di usare la loro influenza per sostenersi a vicenda. Cesare consolidò l'intesa dando in moglie a Pompeo la figlia Giulia. Fu eletto console per il 59 a.C., e il patto emerse apertamente quando il Senato si oppose alla sua legge agraria, che dava terre ai veterani di Pompeo: Cesare la portò all'assemblea della plebe con Crasso e Pompeo al suo fianco.",
+  "after": "Grazie al patto Cesare ottenne leggi sulla terra, la ratifica degli accordi di Pompeo in Oriente e un governo di lunga durata in Gallia. Nel 55 a.C., dopo gli accordi di Lucca, Pompeo e Crasso furono di nuovo consoli e ottennero la Spagna e la Siria, mentre il comando di Cesare fu prorogato di cinque anni. L'alleanza però si incrinò: morì Giulia, moglie di Pompeo, e nel 53 a.C. Crasso fu sconfitto e ucciso dai Parti a Carre. Pompeo si avvicinò al Senato, e lo scontro con Cesare portò alla guerra civile.",
+  "links": [
+    {
+      "slug": "rivolta-di-spartaco-73-ac",
+      "reason": "Crasso e Pompeo, i vincitori di Spartaco, erano stati consoli insieme nel 70 a.C."
+    },
+    {
+      "slug": "lex-gabinia-pirati-67-ac",
+      "reason": "Sette anni prima Pompeo aveva ricevuto, con la lex Gabinia, poteri straordinari."
+    },
+    {
+      "slug": "passaggio-del-rubicone-49-ac",
+      "reason": "Undici anni dopo l'alleanza è rotta e Cesare passa il Rubicone."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Triumvirate - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Triumvirate",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Primo triumvirato - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Primo_triumvirato",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 60 a.C. è l'anno convenzionale dell'accordo, che fu privato e segreto: la data precisa non è nota. Il nome «triumvirato» è moderno: non fu una magistratura."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
