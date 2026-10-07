@@ -74,6 +74,8 @@ class PathsControllerTest {
                 .andExpect(jsonPath("$.data.stops[0].place.lat").value(10.0))
                 .andExpect(jsonPath("$.data.stops[0].place.approximate").value(false))
                 .andExpect(jsonPath("$.data.stops[0].date.year").value(1901))
+                .andExpect(jsonPath("$.data.stops[0].date.precision").value("DAY"))
+                .andExpect(jsonPath("$.data.stops[3].date.precision").value("MONTH"))
                 .andExpect(jsonPath("$.data.stops[2].slug").value("test-c"))
                 .andExpect(jsonPath("$.data.stops[2].place.approximate").value(true))
                 .andExpect(jsonPath("$.data.stops[2].place.note").value("Il punto sulla mappa è un luogo di partenza."))

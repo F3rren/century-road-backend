@@ -5,7 +5,8 @@
   "date": {
     "year": 1989,
     "month": 11,
-    "day": 9
+    "day": 1,
+    "precision": "MONTH"
   },
   "place": {
     "name": "Luogo test-d",

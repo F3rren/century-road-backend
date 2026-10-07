@@ -31,6 +31,7 @@ class InsightsControllerTest {
                 .andExpect(jsonPath("$.data.length()").value(6))
                 .andExpect(jsonPath("$.data[0].slug").value("test-a"))
                 .andExpect(jsonPath("$.data[0].date.year").value(1901))
+                .andExpect(jsonPath("$.data[0].date.precision").value("DAY"))
                 .andExpect(jsonPath("$.data[5].slug").value("test-f"));
     }
 
@@ -43,6 +44,19 @@ class InsightsControllerTest {
                 .andExpect(jsonPath("$.data[0].date.year").value(1901))
                 .andExpect(jsonPath("$.data[1].date.year").value(1950))
                 .andExpect(jsonPath("$.data[2].date.year").value(2020));
+    }
+
+    @Test
+    void aDateKnownOnlyByItsMonthSaysSo_andBelongsToNoDay() throws Exception {
+        // test-d is November 1989, written as the 1st: that placeholder day must not find it.
+        mvc.perform(get("/api/history/insights"))
+                .andExpect(jsonPath("$.data[3].slug").value("test-d"))
+                .andExpect(jsonPath("$.data[3].date.precision").value("MONTH"));
+        mvc.perform(get("/api/history/insights/test-d"))
+                .andExpect(jsonPath("$.data.date.precision").value("MONTH"));
+        mvc.perform(get("/api/history/insights").param("month", "11").param("day", "1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.data").isEmpty());
     }
 
     @Test

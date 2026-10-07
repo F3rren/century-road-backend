@@ -1,5 +1,6 @@
 package centuryroad.history.service;
 
+import centuryroad.history.model.DatePrecision;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import centuryroad.history.model.Topic;
@@ -66,6 +67,10 @@ class EditorialCatalogTest {
         write("insights/" + slug + ".json", node);
     }
 
+    private static void precision(ObjectNode insight, String precision) {
+        ((ObjectNode) insight.get("date")).put("precision", precision);
+    }
+
     private void writePath(String slug, List<String> stops, Consumer<ObjectNode> edit) throws IOException {
         ObjectNode node = JSON.createObjectNode();
         node.put("slug", slug).put("title", "Percorso").put("tagline", "Una frase.").put("intro", "Una introduzione.")
@@ -121,6 +126,28 @@ class EditorialCatalogTest {
 
         assertThat(catalog().insightsOn(MonthDay.of(7, 20))).extracting(Insight::slug).containsExactly("a", "b");
         assertThat(catalog().insightsOn(MonthDay.of(12, 25))).isEmpty();
+    }
+
+    @Test
+    void aDateWithNoPrecisionIsKnownToTheDay_andOneThatSaysOtherwiseKeepsIt() throws IOException {
+        writeInsight("b", -133, 1, 1, node -> precision(node, "YEAR"));
+        writeInsight("c", 1900, 7, 1, node -> precision(node, "MONTH"));
+
+        EditorialCatalog catalog = catalog();
+
+        assertThat(catalog.insight("a").orElseThrow().date().precision()).isEqualTo(DatePrecision.DAY);
+        assertThat(catalog.insight("b").orElseThrow().date().precision()).isEqualTo(DatePrecision.YEAR);
+        assertThat(catalog.insight("c").orElseThrow().date().precision()).isEqualTo(DatePrecision.MONTH);
+    }
+
+    @Test
+    void aDayDoesNotFindTheInsightsThatKnowOnlyTheYearOrTheMonth() throws IOException {
+        writeInsight("a", -133, 1, 1, node -> precision(node, "YEAR"));
+        writeInsight("b", 1900, 7, 1, node -> precision(node, "MONTH"));
+        writeInsight("c", 1969, 1, 1, node -> { });
+
+        assertThat(catalog().insightsOn(MonthDay.of(1, 1))).extracting(Insight::slug).containsExactly("c");
+        assertThat(catalog().insightsOn(MonthDay.of(7, 1))).isEmpty();
     }
 
     @Test
@@ -180,6 +207,41 @@ class EditorialCatalogTest {
         writeInsight("a", 0, 3, 5, node -> { });
 
         assertRefused("insight a: date is not a real date");
+    }
+
+    @Test
+    void aDateKnownOnlyByItsYearIsWrittenAsTheFirstOfJanuary_andOneKnownByItsMonthAsTheFirst() throws IOException {
+        writeInsight("a", -133, 7, 14, node -> precision(node, "YEAR"));
+        writeInsight("b", 1900, 7, 14, node -> precision(node, "MONTH"));
+
+        assertRefused("insight a: a date known only by its year is written as 1 January");
+        assertRefused("insight b: a date known only by its month is written as the 1st of that month");
+    }
+
+    @Test
+    void aPrecisionItDoesNotKnowIsAMistake() throws IOException {
+        writeInsight("a", 1900, 1, 1, node -> precision(node, "SEASON"));
+
+        assertRefused("a.json");
+        assertRefused("SEASON");
+    }
+
+    @Test
+    void aNumberWhereAnEnumBelongsIsAMistake_notThePositionOfAValue() throws IOException {
+        writeInsight("a", 1900, 1, 1, node -> ((ObjectNode) node.get("date")).put("precision", 0));
+        writePath("route", SLUGS, node -> node.put("topic", 1));
+
+        assertRefused("a.json");
+        assertRefused("route.json");
+    }
+
+    @Test
+    void aYearOnlyDateIsRefusedWhenEitherPlaceholderIsOff_theMonthOrTheDay() throws IOException {
+        writeInsight("a", -133, 6, 1, node -> precision(node, "YEAR"));
+        writeInsight("b", -133, 1, 2, node -> precision(node, "YEAR"));
+
+        assertRefused("insight a: a date known only by its year is written as 1 January");
+        assertRefused("insight b: a date known only by its year is written as 1 January");
     }
 
     @Test

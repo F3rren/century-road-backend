@@ -911,6 +911,10 @@ and the on-this-day answer, a faithful copy of Wikipedia's, is left as it is.
 - `provenance.reviewedAt` is the day somebody really checked the text against its sources. It is
   **absent when nobody did**: show no date then, and do not call such an insight "verified".
 - `notes` are caveats (a date that depends on the time zone). Show them when there are any.
+- `date.precision` says how much of the date is known: `YEAR`, `MONTH` or `DAY` (`DAY` when the
+  content does not say). Show no more than that - "133 a.C.", "settembre 52 a.C." - because the
+  month and day of a coarser date are placeholders (1 January, the 1st), not facts. Such an insight
+  is never returned for a day: `?month=&day=` only has those known to the day.
 
 #### Writing content
 
@@ -931,8 +935,12 @@ them in CI):
   target also stops the service for every insight that links to it.
 - **Years before the common era are negative, and there is no year 0.** The slug ends in
   `-<year>-ac` (`idi-di-marzo-44-ac`); a slug that ends in a four-digit year must say the year of
-  its date. Before 1583 an insight needs at least one note: the day is conventional or the date
-  is Julian, and the note says which.
+  its date. Before 1583 an insight needs at least one note: the date is in the Julian (or the
+  Roman republican) calendar, or only partly known, and the note says which.
+- **Never write a day the sources do not give.** A date known only by its year has
+  `"precision": "YEAR"` with month 1 and day 1; one known by its month, `"MONTH"` with day 1
+  (anything else is refused at startup, see below). Stops are in order only as far as both dates
+  know: a year-only stop is not "earlier" than a day of the same year.
 - **A count written in words has to be true**: "nove tappe" in a tagline, an intro or a
   start-here teaser fails the build when the path has ten stops. Better not to write counts.
 - **An insight is shared by several paths**, so it does not talk about the path it is read in
@@ -940,7 +948,7 @@ them in CI):
   written ("ancora oggi", "da oltre venticinque anni"). The line that ties an insight to a path
   is the stop's `narrative`.
 - Stops of a path are in chronological order; two paths do not share most of their stops; two
-  insights are not the same event written twice (same day, within 25 km); an insight is neither a
+  insights are not the same event written twice (known to the same day, within 25 km); an insight is neither a
   headline nor an essay (about 130 to 230 words in its three parts, now); a `countryCode` agrees
   with the map's own country shapes (an exception goes in `KNOWN_COARSE_SHAPES` with its reason).
 - Links go to insights that already exist. When content arrives in batches, a batch links to
@@ -948,7 +956,8 @@ them in CI):
   lands.
 
 The service **checks every file at startup and refuses to start** with every problem listed: an
-unknown key (a `"befor"` is an error, not an insight with no past), a stop that opens an insight
+unknown key (a `"befor"` is an error, not an insight with no past), a `precision` that is not one
+of `YEAR`, `MONTH`, `DAY` (a number is refused too), a year-only date that is not 1 January, a stop that opens an insight
 that does not exist, a path of three stops, two or three `links` required per insight, an
 approximate pin with no note, a cover that is not on Commons. `EditorialContentTest` runs the
 same checks on the real files in CI, so a mistake fails the build and not the deploy.

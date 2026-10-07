@@ -51,7 +51,8 @@ public class InsightsController {
                     Without parameters, every insight, oldest first. With `month` and `day`, only those of
                     that day of the year, whatever the year: the way to know which of a day's events from
                     /api/history/on-this-day to mark "Approfondimento disponibile". Match them on `date.year`.
-                    A day with none is an empty list, not an error.""")
+                    An insight whose `date.precision` is not `DAY` (only the year, or the month, is known)
+                    belongs to no day and is left out. A day with none is an empty list, not an error.""")
     @ApiResponse(responseCode = "200", description = "The insights, oldest first. Cached for five minutes.")
     @ApiResponse(responseCode = "400", description = "`error` is INVALID_DATE: only one of month and day was given, "
             + "or they are not a real day.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
