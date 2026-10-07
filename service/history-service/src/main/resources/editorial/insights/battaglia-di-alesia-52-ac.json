@@ -1,7 +1,7 @@
 {
   "slug": "battaglia-di-alesia-52-ac",
   "title": "Alesia: Cesare sconfigge Vercingetorige",
-  "summary": "Nel 52 a.C., ad Alesia, in Gallia, Giulio Cesare assedia e costringe alla resa Vercingetorige e la coalizione gallica: è l'ultimo grande scontro delle guerre galliche e segna la fine dell'indipendenza dei Galli.",
+  "summary": "Nel 52 a.C., ad Alesia, in Gallia, Giulio Cesare assedia e costringe alla resa Vercingetorige e la coalizione gallica: è l'ultimo grande scontro delle guerre galliche e segna la fine della resistenza organizzata dei Galli.",
   "date": {
     "year": -52,
     "month": 1,
@@ -16,9 +16,9 @@
     "approximate": true,
     "note": "La ricerca archeologica indica come luogo più probabile il Mont Auxois, sopra Alise-Sainte-Reine."
   },
-  "before": "Cesare era arrivato in Gallia nel 58 a.C., dopo il consolato, come governatore, grazie agli accordi del primo triumvirato. Nel 52 a.C. si ribellò una grande coalizione di tribù galliche, unita sotto il capo degli Arverni Vercingetorige, che scelse di affamare i Romani: evitava le battaglie in campo aperto e attaccava i rifornimenti. A Gergovia ottenne una vittoria limitata, ma poi dovette ritirarsi con il suo esercito in Alesia, fortezza dei Mandubi su un'altura.",
-  "event": "Cesare, dopo la prova di Gergovia, rinunciò ad attaccare e scelse di affamare la città, dove secondo i suoi racconti c'erano circa 80 000 uomini oltre ai civili. In circa un mese fece costruire quasi 25 miglia di fortificazioni su due linee, una rivolta verso la città, lunga undici miglia e con 23 torri, e una verso l'esterno contro i soccorsi. L'esercito gallico di soccorso arrivò e attaccò insieme agli assediati, ma gli attacchi coordinati fallirono e i soccorsi si dispersero.",
-  "after": "Vercingetorige propose al consiglio dei capi di essere ucciso o consegnato ai Romani per salvare gli altri, e si arrese a Cesare. I prigionieri furono dati ai soldati come bottino, tranne gli Edui e gli Arverni, che Cesare voleva guadagnare alla sua causa. Vercingetorige restò in prigione per sei anni e poi fu strangolato, dopo la sfilata del trionfo di Cesare. Alesia pose fine alla resistenza organizzata dei Galli, e il Senato concesse a Cesare venti giorni di ringraziamenti. La Gallia a nord della provincia romana non divenne però una provincia prima del 27 a.C.",
+  "before": "Cesare era arrivato in Gallia nel 58 a.C., dopo il consolato, come governatore, grazie agli accordi del primo triumvirato. Nel 52 a.C. si ribellò una grande coalizione di tribù galliche, unita sotto il capo degli Arverni Vercingetorige, che scelse di affamare i Romani: evitava le battaglie in campo aperto e attaccava i rifornimenti. A Gergovia ebbe la meglio sui Romani, ma poi dovette ritirarsi con il suo esercito in Alesia, fortezza dei Mandubi su un'altura.",
+  "event": "Cesare, dopo la prova di Gergovia, rinunciò ad attaccare e scelse di affamare la città, dove secondo i suoi racconti c'erano circa 80 000 uomini oltre ai civili. In poche settimane fece costruire quasi 25 miglia di fortificazioni su due linee, una rivolta verso la città, lunga circa 15 chilometri e con 23 fortini, e una verso l'esterno contro i soccorsi. L'esercito gallico di soccorso arrivò e attaccò insieme agli assediati, ma gli attacchi coordinati fallirono e i soccorsi si dispersero.",
+  "after": "Vercingetorige propose al consiglio dei capi di essere ucciso o consegnato ai Romani per salvare gli altri, e si arrese a Cesare. I prigionieri furono dati ai soldati come bottino, tranne gli Edui e gli Arverni, che Cesare voleva guadagnare alla sua causa. Vercingetorige restò in prigione per cinque o sei anni e poi fu strangolato, dopo la sfilata del trionfo di Cesare. Alesia pose fine alla resistenza organizzata dei Galli, e il Senato concesse a Cesare venti giorni di ringraziamenti. L'organizzazione della Gallia in province venne più tardi, dopo le guerre civili.",
   "links": [
     {
       "slug": "primo-triumvirato-60-ac",
@@ -44,8 +44,8 @@
     }
   ],
   "notes": [
-    "L'assedio si colloca di solito tra luglio e settembre del 52 a.C., con la battaglia finale in settembre. Prima della riforma giuliana il calendario romano non seguiva con precisione le stagioni e non coincideva con il giuliano: il mese indicato è quello riportato dalle fonti, e nel calendario giuliano potrebbe essere un altro.",
-    "Le cifre sulle truppe sono quelle di Cesare e di altri autori antichi e vanno prese con prudenza."
+    "Le fonti non concordano sui tempi: un articolo parla di settembre del 52 a.C., l'altro di un assedio tra i primi di settembre e metà ottobre. Prima della riforma giuliana il calendario romano non seguiva con precisione le stagioni e non coincideva con il giuliano: il mese indicato è quello riportato dalle fonti, e nel calendario giuliano potrebbe essere un altro.",
+    "Le cifre sulle truppe sono quelle di Cesare, spesso l'unica testimonianza scritta, e vanno prese con prudenza."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

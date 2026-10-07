@@ -15,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Intorno al 289 a.C. un gruppo di mercenari italici, i Mamertini, aveva occupato Messana (Messina), all'estremità nord-orientale della Sicilia. Incalzati da Siracusa, i Mamertini chiesero aiuto sia a Cartagine, che dominava da tempo la parte occidentale dell'isola, sia a Roma. Cartagine fu più rapida e ottenne di mettere una guarnigione in città. A Roma il Senato si divise: molti non volevano soccorrere uomini che avevano rubato una città, altri vedevano vantaggi strategici e di bottino nel mettere piede in Sicilia.",
-  "event": "Il Senato lasciò la decisione all'assemblea popolare, dove, secondo Polibio, Appio Claudio Caudice spinse a votare per l'intervento promettendo un ricco bottino. Nel 264 a.C. l'assemblea accettò la richiesta dei Mamertini e Caudice, con due legioni, attraversò lo stretto di Messina, poco ostacolato dalla flotta cartaginese. I Mamertini avevano nel frattempo cacciato la guarnigione cartaginese; Siracusani e Cartaginesi, che assediavano la città, si ritirarono. I Romani marciarono verso sud fino a Siracusa, ma non riuscirono a prenderla.",
-  "after": "Ne nacque una guerra di ventitré anni, la più lunga e la più grande guerra navale dell'antichità, combattuta soprattutto in Sicilia e nelle sue acque. Roma, che non aveva una flotta all'altezza, ne costruì una per sfidare Cartagine. Con la vittoria, nel 241 a.C., ottenne la Sicilia.",
+  "before": "Intorno al 289 a.C. un gruppo di mercenari italici, i Mamertini, aveva occupato Messana (Messina), all'estremità nord-orientale della Sicilia. Incalzati da Siracusa, i Mamertini chiesero aiuto sia a Cartagine, che dominava da tempo la parte occidentale dell'isola, sia a Roma. Cartagine fu più rapida e ottenne di mettere una guarnigione in città. Secondo Polibio a Roma il dibattito fu ampio: alcuni non volevano soccorrere uomini che avevano rubato una città, mentre molti vedevano vantaggi strategici e di bottino nel mettere piede in Sicilia.",
+  "event": "Il Senato lasciò la decisione all'assemblea popolare, dove Appio Claudio Caudice spinse a votare per l'intervento promettendo un ricco bottino. Nel 264 a.C. l'assemblea accettò la richiesta dei Mamertini e Caudice, con due legioni, attraversò lo stretto di Messina, poco ostacolato dalla flotta cartaginese. I Mamertini avevano nel frattempo cacciato la guarnigione cartaginese; Siracusani e Cartaginesi, che assediavano la città, si ritirarono, per motivi che le fonti non chiariscono. I Romani marciarono verso sud fino a Siracusa, ma non riuscirono a prenderla.",
+  "after": "Ne nacque una guerra di ventitré anni, il più lungo conflitto continuo e la più grande guerra navale dell'antichità, combattuta soprattutto in Sicilia e nelle sue acque. Roma, che non aveva una flotta all'altezza, ne costruì una per sfidare Cartagine. Con la vittoria, nel 241 a.C., ottenne la Sicilia.",
   "links": [
     {
       "slug": "battaglia-di-benevento-275-ac",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Le fonti sono più tarde degli eventi e non concordano su tutti i particolari: l'occupazione di Messana è datata al 289 o al 288 a.C. L'anno della guerra è quello della cronologia tradizionale."
+    "Le fonti sono più tarde degli eventi e non concordano su tutti i particolari: l'occupazione di Messana è datata al 289 o al 288 a.C."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

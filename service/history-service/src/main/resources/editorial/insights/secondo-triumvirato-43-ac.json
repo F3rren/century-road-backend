@@ -1,7 +1,7 @@
 {
   "slug": "secondo-triumvirato-43-ac",
   "title": "La lex Titia istituisce il secondo triumvirato",
-  "summary": "Il 27 novembre del 43 a.C. la lex Titia dà ad Antonio, Lepido e Ottaviano, per cinque anni, poteri quasi assoluti per riorganizzare lo Stato: nascono le proscrizioni e la guerra contro gli assassini di Cesare.",
+  "summary": "Il 27 novembre del 43 a.C. la lex Titia dà ad Antonio, Lepido e Ottaviano, per cinque anni, poteri quasi assoluti per riorganizzare lo Stato: tornano le proscrizioni e comincia la guerra contro gli assassini di Cesare.",
   "date": {
     "year": -43,
     "month": 11,
@@ -16,7 +16,7 @@
   },
   "before": "Dopo l'assassinio di Cesare il Senato e Antonio si scontrarono: nell'aprile del 43 a.C. Antonio fu sconfitto presso Modena dai consoli Irzio e Pansa e fuggì in Gallia, dove fu accolto da Lepido. Il Senato aveva usato contro di lui anche Ottaviano, figlio adottivo di Cesare, ma Ottaviano scelse di riconciliarsi con Antonio e con Lepido. L'incontro fu organizzato da Lepido su un'isoletta del fiume Lavino, presso Bononia, l'odierna Bologna.",
   "event": "Il patto tra i tre fu legalizzato dalla lex Titia, il 27 novembre del 43 a.C.: Antonio, Lepido e Ottaviano ottennero per cinque anni poteri quasi assoluti. Potevano fare e abrogare leggi, emettere condanne senza processo e senza appello, nominare tutti gli altri magistrati, e si spartirono le province. Ufficialmente erano «triumviri per riordinare lo Stato».",
-  "after": "I triumviri cominciarono con le proscrizioni, che colpirono senatori e cavalieri, e con la guerra contro i «liberatori», gli assassini di Cesare, che sconfissero a Filippi nel 42 a.C. Dopo Filippi Antonio ebbe l'Oriente, Ottaviano l'Occidente e Lepido l'Africa. Il triumvirato fu rinnovato nel 37 a.C. per altri cinque anni; Ottaviano estromise Lepido nel 36 a.C., e il suo scontro con Antonio portò ad Azio. L'alleanza segnò il passaggio dalla Repubblica al principato.",
+  "after": "I triumviri cominciarono con le proscrizioni, che colpirono senatori e cavalieri, e con la guerra contro i «liberatori», gli assassini di Cesare, che sconfissero a Filippi nel 42 a.C. Dopo Filippi Antonio ebbe l'Oriente, Ottaviano l'Occidente e Lepido l'Africa. Il triumvirato fu rinnovato nel 37 a.C. per altri cinque anni; Ottaviano estromise Lepido nel 36 a.C., e il suo scontro con Antonio portò ad Azio. L'alleanza fu una magistratura straordinaria della fine della Repubblica.",
   "links": [
     {
       "slug": "idi-di-marzo-44-ac",
@@ -43,7 +43,7 @@
   ],
   "notes": [
     "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
-    "Le fonti non concordano sul giorno: il 27 novembre è quello della lex Titia, mentre il 26 novembre è indicato come inizio della carica e altre fonti datano l'accordo all'11 novembre."
+    "Le fonti non concordano sul giorno: il 27 novembre è quello della lex Titia, mentre un articolo indica il 26 novembre come inizio della carica."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

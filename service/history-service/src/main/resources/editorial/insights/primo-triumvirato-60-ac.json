@@ -1,7 +1,7 @@
 {
   "slug": "primo-triumvirato-60-ac",
   "title": "Il primo triumvirato: Cesare, Pompeo e Crasso si alleano",
-  "summary": "Nel 60 a.C. Giulio Cesare, Pompeo e Crasso stringono un'alleanza privata e segreta per superare l'opposizione del Senato: il primo triumvirato, che non è una carica ufficiale, domina la politica romana per circa sette anni.",
+  "summary": "Nel 60 a.C. Giulio Cesare, Pompeo e Crasso stringono un'alleanza privata e segreta per superare l'opposizione del Senato: il primo triumvirato, che non è una carica ufficiale e dura fino al 53 a.C.",
   "date": {
     "year": -60,
     "month": 1,
@@ -15,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Pompeo, vincitore in Oriente, voleva terre per i suoi veterani e la conferma dei suoi accordi con i regni orientali; Crasso, ricchissimo, aveva grande influenza tra i cavalieri che gestivano le imposte; Cesare, giovane politico ambizioso, cercava il consolato. Per anni l'opposizione di molti senatori aveva bloccato le richieste di tutti e tre. Pompeo e Crasso erano rivali, ma Cesare riuscì a riconciliarli.",
+  "before": "Pompeo, vincitore in Oriente, voleva terre per i suoi veterani e la conferma dei suoi accordi in Oriente; Crasso, ricchissimo, aveva grande influenza tra i cavalieri che gestivano le imposte; Cesare cercava il consolato. Per anni l'opposizione di molti senatori aveva bloccato le richieste di tutti e tre. Pompeo e Crasso erano rivali, ma Cesare riuscì a riconciliarli.",
   "event": "L'alleanza fu all'inizio segreta, un accordo privato senza valore ufficiale: i tre promisero di usare la loro influenza per sostenersi a vicenda. Cesare consolidò l'intesa dando in moglie a Pompeo la figlia Giulia. Fu eletto console per il 59 a.C., e il patto emerse apertamente quando il Senato si oppose alla sua legge agraria, che dava terre ai veterani di Pompeo: Cesare la portò all'assemblea della plebe con Crasso e Pompeo al suo fianco.",
-  "after": "Grazie al patto Cesare ottenne leggi sulla terra, la ratifica degli accordi di Pompeo in Oriente e un governo di lunga durata in Gallia. Nel 55 a.C., dopo gli accordi di Lucca, Pompeo e Crasso furono di nuovo consoli e ottennero la Spagna e la Siria, mentre il comando di Cesare fu prorogato di cinque anni. L'alleanza però si incrinò: morì Giulia, moglie di Pompeo, e nel 53 a.C. Crasso fu sconfitto e ucciso dai Parti a Carre. Pompeo si avvicinò al Senato, e lo scontro con Cesare portò alla guerra civile.",
+  "after": "Grazie al patto Cesare ottenne leggi sulla terra, la ratifica degli accordi di Pompeo in Oriente e un governo di lunga durata in Gallia. Nel 55 a.C., dopo gli accordi di Lucca, Pompeo e Crasso furono di nuovo consoli e ottennero la Spagna e la Siria, mentre il comando di Cesare fu prorogato di cinque anni. L'alleanza però si incrinò: morì Giulia, moglie di Pompeo, e nel 53 a.C. Crasso fu sconfitto e ucciso dai Parti a Carre; secondo alcuni studiosi la morte di Giulia non portò però a una rottura immediata. Pompeo si avvicinò al Senato, e lo scontro con Cesare portò alla guerra civile.",
   "links": [
     {
       "slug": "rivolta-di-spartaco-73-ac",

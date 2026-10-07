@@ -1,7 +1,7 @@
 {
   "slug": "testamento-di-attalo-iii-133-ac",
   "title": "Attalo III lascia il regno di Pergamo a Roma",
-  "summary": "Nel 133 a.C. muore Attalo III, ultimo re di Pergamo, e per testamento lascia il suo regno alla Repubblica romana: la decisione di un sovrano senza eredi porta Roma in Asia Minore.",
+  "summary": "Nel 133 a.C. muore Attalo III, ultimo re di Pergamo, che non ha eredi e per testamento lascia il suo regno alla Repubblica romana.",
   "date": {
     "year": -133,
     "month": 1,
@@ -15,9 +15,9 @@
     "countryCode": "TR",
     "approximate": false
   },
-  "before": "Pergamo, in Asia Minore, era un regno legato da tempo a Roma, retto dalla dinastia degli Attalidi. Attalo III, figlio di Eumene II, regnava dal 138 a.C. e secondo Livio aveva poco interesse per il governo: preferiva studiare medicina e botanica e dedicarsi al giardinaggio. Non aveva figli né altri eredi.",
-  "event": "Alla sua morte, nel 133 a.C., il regno passò per testamento alla Repubblica romana. Secondo Livio, Attalo aveva deciso così perché credeva che, se non l'avesse fatto, Roma se ne sarebbe impadronita comunque, e il lascito avrebbe evitato spargimenti di sangue.",
-  "after": "Non tutti a Pergamo accettarono il passaggio a Roma. Nel 131 a.C. Aristonico, che si dichiarava figlio di Eumene II e fratello di Attalo, guidò una rivolta popolare, aiutato dal filosofo Blossio, e regnò con il nome di Eumene III; la rivolta fu repressa nel 129 a.C. e il regno fu diviso tra Roma, il Ponto e la Cappadocia. A Roma Tiberio Gracco chiese di usare il tesoro di Pergamo per la sua riforma agraria, ma il Senato rifiutò.",
+  "before": "Pergamo era un regno retto dalla dinastia degli Attalidi. Attalo III, figlio di Eumene II, regnava dal 138 a.C. e secondo Livio aveva poco interesse per il governo: preferiva studiare medicina e botanica e dedicarsi al giardinaggio. Non aveva figli né altri eredi.",
+  "event": "Alla sua morte, nel 133 a.C., il regno passò per testamento alla Repubblica romana. Si dice che Attalo avesse deciso così perché credeva che, se non l'avesse fatto, Roma se ne sarebbe impadronita comunque, e il lascito avrebbe evitato spargimenti di sangue.",
+  "after": "A Roma Tiberio Gracco chiese di usare il tesoro di Pergamo per la sua riforma agraria, ma il Senato rifiutò. Non tutti a Pergamo accettarono il passaggio a Roma: nel 131 a.C. Aristonico, che si dichiarava figlio di Eumene II e fratello di Attalo, guidò una rivolta popolare, aiutato dal filosofo Blossio, e regnò con il nome di Eumene III; la rivolta fu repressa nel 129 a.C. e il regno fu diviso tra Roma, il Ponto e la Cappadocia.",
   "links": [
     {
       "slug": "caduta-di-numanzia-133-ac",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Le ragioni del testamento sono quelle che Livio attribuisce ad Attalo, scrivendo molto dopo. L'anno, il 133 a.C., è quello della morte del re."
+    "I motivi del testamento sono quelli che le fonti attribuiscono ad Attalo. L'anno, il 133 a.C., è quello della morte del re."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

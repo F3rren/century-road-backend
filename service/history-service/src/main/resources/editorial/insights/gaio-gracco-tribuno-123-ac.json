@@ -1,7 +1,7 @@
 {
   "slug": "gaio-gracco-tribuno-123-ac",
   "title": "Gaio Gracco tribuno: grano, colonie e leggi per la plebe",
-  "summary": "Nel 123 a.C. Gaio Gracco, fratello minore di Tiberio, diventa tribuno della plebe e propone molte riforme: grano a prezzo fisso per i cittadini di Roma, colonie anche fuori d'Italia, riforma dei tribunali e la ripresa della legge agraria del fratello.",
+  "summary": "Nel 123 a.C. Gaio Gracco, fratello minore di Tiberio, diventa tribuno della plebe e propone molte riforme: grano a prezzo ridotto per i cittadini di Roma, colonie anche fuori d'Italia, riforma dei tribunali e la ripresa della legge agraria del fratello.",
   "date": {
     "year": -123,
     "month": 1,
@@ -15,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Dieci anni dopo la morte di Tiberio la legge agraria era stata applicata, ma il Senato e i ricchi continuavano a opporsi. Gaio Gracco, grande oratore, fu eletto tribuno della plebe per il 123 a.C. e presentò subito un programma legislativo molto ampio, pensato per conquistare il sostegno di gruppi diversi: la plebe di Roma, i cavalieri, gli alleati italici.",
-  "event": "Tra le leggi che Gaio fece approvare ci furono una che vietava di condannare a morte un cittadino senza un processo davanti al popolo, una sul grano, che garantiva ai cittadini di Roma frumento a prezzo fisso, acquistato quando costava poco e conservato in magazzini pubblici, nuove colonie, in Italia e a Cartagine, e una sul servizio militare. Riprese anche la legge agraria del fratello. Per attirare i cavalieri affidò agli appaltatori la riscossione delle imposte in Asia e, rieletto per il 122 a.C., diede loro le giurie dei tribunali che giudicavano i governatori corrotti.",
-  "after": "Gaio propose anche di dare la cittadinanza ai Latini e i diritti latini agli Italici, ma la plebe urbana, convinta dal console Fannio che avrebbe dovuto dividere i propri privilegi, non lo seguì e un collega, Marco Livio Druso, mise il veto. Il Senato gli oppose programmi concorrenti, proposti da Druso, che non ebbero seguito. Gran parte delle leggi di Gaio sopravvisse a lui.",
+  "before": "Dieci anni dopo la morte di Tiberio la legge agraria era stata applicata. Gaio Gracco, grande oratore, fu eletto tribuno della plebe per il 123 a.C. e presentò subito un programma legislativo molto ampio, pensato per conquistare il sostegno di gruppi diversi: la plebe di Roma, i cavalieri, gli alleati italici.",
+  "event": "Tra le leggi che Gaio fece approvare ci furono una che vietava di condannare a morte un cittadino senza un processo davanti al popolo, una sul grano, che garantiva ai cittadini di Roma frumento a un prezzo massimo stabilito, acquistato quando costava poco e conservato in magazzini pubblici, nuove colonie, in Italia e, con una legge di un suo alleato, a Cartagine, e una sul servizio militare. Riprese anche la legge agraria del fratello. Per attirare i cavalieri affidò agli appaltatori la riscossione delle imposte in Asia e, rieletto per il 122 a.C., diede loro le giurie dei tribunali che giudicavano i governatori corrotti.",
+  "after": "Gaio propose anche di dare la cittadinanza ai Latini e i diritti latini agli Italici, ma la plebe urbana, convinta dal console Fannio che avrebbe dovuto dividere i propri privilegi, non lo seguì e un collega, Marco Livio Druso, mise il veto. Secondo una fonte, il Senato gli oppose programmi concorrenti, proposti da Druso, che non ebbero seguito. Gran parte delle leggi di Gaio sopravvisse a lui.",
   "links": [
     {
       "slug": "tiberio-gracco-133-ac",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Gaio fu tribuno nel 123 e nel 122 a.C.: il racconto riunisce i due anni. Le fonti sono molto più tarde e per molte leggi non c'è accordo sui particolari né sulle date."
+    "Gaio fu tribuno nel 123 e nel 122 a.C.: il racconto riunisce i due anni. Le fonti sono vaghe su molte leggi e non c'è accordo sui particolari né sulle date."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"
