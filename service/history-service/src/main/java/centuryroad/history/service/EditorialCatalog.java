@@ -1,6 +1,7 @@
 package centuryroad.history.service;
 
 import centuryroad.history.model.Cover;
+import centuryroad.history.model.DatePrecision;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import centuryroad.history.model.InsightLink;
@@ -80,10 +81,12 @@ public class EditorialCatalog {
     public EditorialCatalog(ResourcePatternResolver resolver,
             @Value("${history.editorial.root:" + DEFAULT_ROOT + "}") String root) {
         // Strict on purpose: Spring's own mapper ignores keys it does not know, which is how a
-        // "befor" in a hand-written file would become an insight with no past.
+        // "befor" in a hand-written file would become an insight with no past. A number where an enum
+        // belongs is refused too: it would be read as the value's position in the declaration.
         JsonMapper mapper = JsonMapper.builder()
                 .findAndAddModules()
                 .enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
+                .enable(DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS)
                 .build();
         List<String> problems = new ArrayList<>();
 
@@ -145,9 +148,13 @@ public class EditorialCatalog {
         return Optional.ofNullable(insights.get(slug));
     }
 
-    /** The insights that belong to this day of the year, whatever the year, oldest first. */
+    /**
+     * The insights that belong to this day of the year, whatever the year, oldest first. Only those
+     * known to the day: one with just a year has a placeholder month and day, which belong to no day.
+     */
     public List<Insight> insightsOn(MonthDay day) {
         return insights.values().stream()
+                .filter(insight -> insight.date().precision() == DatePrecision.DAY)
                 .filter(insight -> insight.date().monthDay().filter(day::equals).isPresent())
                 .toList();
     }
@@ -301,6 +308,10 @@ public class EditorialCatalog {
         } else if (in.date().monthDay().isEmpty() || in.date().year() == 0
                 || in.date().year() < -9999 || in.date().year() > 9999) {
             problems.add(at + "date is not a real date (a year other than 0 between -9999 and 9999, a month and a day)");
+        } else if (in.date().precision() == DatePrecision.YEAR && (in.date().month() != 1 || in.date().day() != 1)) {
+            problems.add(at + "a date known only by its year is written as 1 January (month 1, day 1)");
+        } else if (in.date().precision() == DatePrecision.MONTH && in.date().day() != 1) {
+            problems.add(at + "a date known only by its month is written as the 1st of that month (day 1)");
         }
         checkPlace(at, in.place(), problems);
 

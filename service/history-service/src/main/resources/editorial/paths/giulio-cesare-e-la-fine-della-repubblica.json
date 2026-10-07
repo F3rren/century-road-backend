@@ -1,0 +1,45 @@
+{
+  "slug": "giulio-cesare-e-la-fine-della-repubblica",
+  "title": "Giulio Cesare e la fine della Repubblica",
+  "tagline": "Dall'alleanza con Pompeo e Crasso al titolo di Augusto: trentatré anni in cui Cesare conquista la Gallia, vince la guerra civile e muore assassinato, e la Repubblica diventa un principato.",
+  "intro": "La fine della Repubblica non è un solo evento: è una sequenza di scelte, di alleanze e di scontri in cui contano più le persone, Cesare, Pompeo, Antonio, Ottaviano, che le istituzioni. Il percorso va dall'accordo privato del 60 a.C. al primo assetto del 27 a.C., che dà a Ottaviano il titolo di Augusto, passando per la conquista della Gallia, la guerra civile, le Idi di marzo e le battaglie che decidono chi governerà.\n\nMolte fonti sono di parte, di Cesare stesso, dei suoi avversari o di storici vicini ad Augusto, e vanno lette con prudenza: ogni tappa dice che cosa è incerto.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "primo-triumvirato-60-ac",
+      "narrative": "Si parte da un accordo privato: Cesare, Pompeo e Crasso si alleano per aggirare l'opposizione del Senato."
+    },
+    {
+      "insight": "battaglia-di-alesia-52-ac",
+      "narrative": "Cesare va in Gallia, dove grazie all'accordo ha un comando di lunga durata, e dopo anni di guerra vince ad Alesia."
+    },
+    {
+      "insight": "passaggio-del-rubicone-49-ac",
+      "narrative": "Quando il Senato gli ordina di sciogliere l'esercito, Cesare passa il Rubicone: è la guerra civile."
+    },
+    {
+      "insight": "battaglia-di-farsalo-48-ac",
+      "narrative": "La guerra civile si decide in Grecia: a Farsalo Cesare batte Pompeo."
+    },
+    {
+      "insight": "idi-di-marzo-44-ac",
+      "narrative": "Padrone di Roma, Cesare viene assassinato da senatori che vogliono difendere la Repubblica."
+    },
+    {
+      "insight": "secondo-triumvirato-43-ac",
+      "narrative": "Il suo erede Ottaviano si allea con Antonio e Lepido: una legge dà ai tre poteri quasi assoluti."
+    },
+    {
+      "insight": "battaglia-di-filippi-42-ac",
+      "narrative": "I triumviri sconfiggono gli assassini di Cesare a Filippi."
+    },
+    {
+      "insight": "battaglia-di-azio-31-ac",
+      "narrative": "Poi Ottaviano e Antonio si scontrano: ad Azio vince Ottaviano."
+    },
+    {
+      "insight": "ottaviano-diventa-augusto-27-ac",
+      "narrative": "Padrone di tutto il mondo romano, Ottaviano restituisce formalmente i poteri al Senato e riceve il titolo di Augusto: comincia il principato."
+    }
+  ]
+}

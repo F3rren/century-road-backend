@@ -1,0 +1,51 @@
+{
+  "slug": "annibale-attraversa-le-alpi-218-ac",
+  "title": "Annibale attraversa le Alpi",
+  "summary": "Nel 218 a.C., all'inizio della seconda guerra punica, il condottiero cartaginese Annibale porta in Italia un esercito con gli elefanti passando per le Alpi, per colpire Roma dove non se lo aspettava.",
+  "date": {
+    "year": -218,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Alpi occidentali, tra Francia e Italia",
+    "lat": 45.2,
+    "lon": 6.95,
+    "approximate": true,
+    "note": "Il percorso di Annibale è discusso: tra i valichi proposti ci sono il Piccolo San Bernardo, il Clapier, il Monginevro e il Colle delle Traversette. Il punto indica le Alpi occidentali in generale, non un valico."
+  },
+  "before": "Dopo la prima guerra punica Cartagine aveva perso la Sicilia. Annibale, figlio di Amilcare Barca, comandava i suoi territori in Spagna, e la presa di Sagunto, città alleata di Roma, dopo otto mesi di assedio riaccese la guerra tra le due potenze. Annibale aveva progettato di portarla direttamente in Italia, per aggirare le guarnigioni romane e il predominio della flotta di Roma sul mare, e di arrivarci attraverso le Alpi.",
+  "event": "Annibale lasciò la Spagna con un grande esercito e 37 elefanti, attraversò i Pirenei e il Rodano, dove superò i Galli ostili con barche e un aggiramento. Poi salì verso le Alpi, tra gli attacchi delle popolazioni locali, i sentieri ripidi e le nevicate. Sul versante italiano, ancora più ripido, molti uomini scivolarono e morirono; una frana bloccò il sentiero e un tentativo di aggirarla nella neve costò molte bestie da soma, finché l'esercito riparò il passaggio per far passare cavalli ed elefanti. La traversata durò una ventina di giorni.",
+  "after": "L'esercito arrivò in Pianura Padana stremato, ridotto secondo le fonti a circa la metà. Annibale lo fece riposare, conquistò la città dei Taurini, che rifiutavano di allearsi con lui, e si assicurò l'appoggio di molte tribù celtiche della pianura, ostili a Roma. Poi vinse i Romani al Ticino e alla Trebbia: cominciava la guerra in Italia.",
+  "links": [
+    {
+      "slug": "battaglia-delle-egadi-241-ac",
+      "reason": "Ventitré anni dopo la sconfitta di Cartagine, il figlio di Amilcare riprende la guerra contro Roma."
+    },
+    {
+      "slug": "battaglia-del-trasimeno-217-ac",
+      "reason": "L'anno dopo, nel cuore dell'Italia, Annibale tende un'imboscata a un esercito romano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hannibal's crossing of the Alps - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hannibal's_crossing_of_the_Alps",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Passaggio delle Alpi di Annibale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Passaggio_delle_Alpi_di_Annibale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti principali, Polibio e Livio, furono scritte molto dopo e non nominano con certezza il valico: gli studiosi ne propongono diversi, e alcuni ritengono che la domanda non abbia risposta. Si discute anche quando avvenne: le ricostruzioni collocano l'attraversamento tra la fine di settembre e l'ottobre del 218 a.C. Le cifre sull'esercito variano da una fonte all'altra."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

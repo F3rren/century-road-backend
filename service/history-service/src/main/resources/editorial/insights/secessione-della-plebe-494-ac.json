@@ -1,0 +1,52 @@
+{
+  "slug": "secessione-della-plebe-494-ac",
+  "title": "La prima secessione della plebe e la nascita dei tribuni",
+  "summary": "Nel 494 a.C., secondo la tradizione, la plebe romana lascia la città per protesta contro i debiti e l'esclusione dal potere, e ottiene dai patrizi i tribuni della plebe, magistrati che la rappresentano.",
+  "date": {
+    "year": -494,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Monte Sacro, presso l'Aniene, Roma, Italia",
+    "lat": 41.9437,
+    "lon": 12.533,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica il Monte Sacro, sull'Aniene, dove la maggior parte degli storici antichi colloca la secessione; secondo un'altra versione la plebe si ritirò sull'Aventino."
+  },
+  "before": "Nei primi anni della Repubblica tutte le cariche pubbliche erano in mano ai patrizi e i plebei non erano rappresentati. Le leggi sui debiti permettevano di ridurre in schiavitù chi non pagava, e molti plebei, che formavano buona parte dell'esercito, si indebitavano mentre erano impegnati nelle guerre contro Volsci, Equi e Sabini. Nel 495 a.C. la tensione esplose in una rivolta di debitori davanti al Senato.",
+  "event": "Dopo le guerre del 494 a.C. il dittatore Manio Valerio Massimo chiese al Senato di intervenire sui debiti e, rifiutato, si dimise. Il Senato fece allora uscire le legioni da Roma con il pretesto di nuove guerre; secondo Livio la plebe, su proposta di Lucio Sicinio Vellute, lasciò in massa la città e si accampò sul Monte Sacro, oltre l'Aniene, a tre miglia da Roma. Con le botteghe chiuse e nessuna leva possibile la città si fermò: è la forma di lotta che gli storici chiamano secessione.",
+  "after": "Il Senato inviò come messo Menenio Agrippa, che secondo la tradizione convinse i plebei con la favola delle membra del corpo, che devono collaborare per vivere. Si arrivò a un accordo: nacquero i tribuni della plebe, magistrati eletti tra i plebei e dichiarati inviolabili. All'inizio furono cinque, oppure due che ne scelsero altri tre, secondo la versione di Livio. È considerata l'inizio del conflitto degli ordini, che nei decenni seguenti portò ad altre secessioni e a nuove conquiste per la plebe.",
+  "links": [
+    {
+      "slug": "inizio-della-repubblica-509-ac",
+      "reason": "Il conflitto nasce dall'ordinamento della Repubblica appena fondata, con tutte le cariche in mano ai patrizi."
+    },
+    {
+      "slug": "leggi-delle-dodici-tavole-451-ac",
+      "reason": "Una delle richieste della plebe: leggi scritte, uguali per tutti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First secessio plebis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_secessio_plebis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Secessio plebis - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Secessio_plebis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli eventi precedenti il sacco gallico del 390 a.C. sono ricordati con un misto di fatti e tradizioni popolari, anche perché il sacco distrusse l'archivio di Stato. Le fonti collocano la vicenda tra il 495 e il 493 a.C."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

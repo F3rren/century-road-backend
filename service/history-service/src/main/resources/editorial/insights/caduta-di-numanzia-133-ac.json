@@ -1,0 +1,51 @@
+{
+  "slug": "caduta-di-numanzia-133-ac",
+  "title": "La caduta di Numanzia",
+  "summary": "Nel 133 a.C., dopo un assedio di quasi un anno, Scipione Emiliano prende Numanzia, la città dei Celtiberi che resisteva a Roma da anni: gli abitanti, affamati, si danno la morte o si arrendono.",
+  "date": {
+    "year": -133,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Numanzia, Soria, Spagna",
+    "lat": 41.81,
+    "lon": -2.444,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Numanzia era una roccaforte dei Celtiberi Arevaci, alla confluenza dei fiumi Tera e Duero, che da anni resisteva all'espansione romana in Spagna. Nel 153 a.C. un esercito numantino aveva battuto un esercito romano del console Quinto Fulvio Nobiliore, e dopo molti anni di guerra, in cui secondo una fonte Roma aveva tentato cinque volte senza successo di espugnare la città, il comando passò a Publio Cornelio Scipione Emiliano, già vincitore a Cartagine.",
+  "event": "Scipione risollevò il morale di un esercito scoraggiato, in cui c'era anche cavalleria numida comandata dal giovane Giugurta, e decise di prendere la città per fame: fece costruire una doppia cinta di mura con torri e accampamenti, bloccò il fiume Duero e impedì ogni aiuto dall'esterno, costringendo alla sottomissione la vicina Lutia. Dopo quasi un anno di assedio i Numantini, ridotti alla fame, chiesero di trattare, ma Scipione accettò solo una resa senza condizioni.",
+  "after": "I Numantini rifiutarono la resa senza condizioni: la fame provocò cannibalismo e suicidi e, alla fine dell'estate del 133 a.C., i superstiti si arresero dopo aver dato fuoco alla città; secondo la leggenda molti si gettarono tra le fiamme. Alcuni furono ridotti in schiavitù e sfilarono nel trionfo di Scipione; la città fu rasa al suolo, come Cartagine. La guerra numantina segnò l'affermarsi dell'egemonia romana nella Spagna centro-settentrionale. Gli storici romani ammirarono lo spirito di libertà dei Numantini, e Cervantes ne trasse un dramma.",
+  "links": [
+    {
+      "slug": "distruzione-di-cartagine-146-ac",
+      "reason": "Tredici anni prima lo stesso comandante aveva preso Cartagine."
+    },
+    {
+      "slug": "guerra-giugurtina-111-ac",
+      "reason": "Tra i Numidi che combattevano con Scipione c'era il giovane Giugurta, che ventidue anni dopo sfida Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Numantia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Numantia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Numanzia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Numanzia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'assedio durò dal 134 al 133 a.C.; le fonti collocano la resa alla fine dell'estate. Il racconto della distruzione della città da parte dei suoi abitanti è in parte leggendario."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

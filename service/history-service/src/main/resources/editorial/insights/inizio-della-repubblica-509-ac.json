@@ -1,0 +1,51 @@
+{
+  "slug": "inizio-della-repubblica-509-ac",
+  "title": "La cacciata dei re e l'inizio della Repubblica",
+  "summary": "Secondo la tradizione, nel 509 a.C. i Romani cacciano l'ultimo re, Tarquinio il Superbo, e affidano il governo a due consoli eletti ogni anno; gli studiosi moderni discutono quanto di quel racconto sia storico.",
+  "date": {
+    "year": -509,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Foro Romano, Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Per la tradizione Roma ebbe sette re. L'ultimo, Tarquinio il Superbo, di una dinastia etrusca, avrebbe regnato per ventisei anni, prendendo il potere con la forza e governando in modo autoritario, tanto da unire contro di sé patrizi e plebei. Mentre l'esercito romano assediava la città di Ardea, il figlio del re, Sesto Tarquinio, avrebbe fatto violenza a una nobildonna, Lucrezia, che per il dolore si uccise.",
+  "event": "Lucio Giunio Bruto, nipote del re, e Lucio Tarquinio Collatino, marito di Lucrezia, giurarono di non aver pace finché i Tarquini non fossero stati cacciati. Bruto parlò ai cittadini nel Foro, e il re e i suoi figli furono banditi da Roma. Il potere passò a due magistrati eletti ogni anno, i consoli: secondo la tradizione i primi furono Bruto e Collatino, ma l'elenco dei primi consoli è incerto. La tradizione colloca questi fatti nel 509 a.C.",
+  "after": "Secondo la tradizione Tarquinio provò a tornare con l'aiuto di città etrusche e latine, tra cui quella di Porsenna, re di Chiusi, ma non ci riuscì; secondo altre versioni fu invece Porsenna a vincere la nascente Repubblica. Tarquinio morì in esilio a Cuma. A Roma governavano ora le famiglie patrizie, che sceglievano i magistrati fra loro: da questa esclusione nacque il lungo conflitto con la plebe, detto conflitto degli ordini.",
+  "links": [
+    {
+      "slug": "fondazione-di-roma-753-ac",
+      "reason": "Dall'inizio della città, secondo la tradizione, ai sette re."
+    },
+    {
+      "slug": "secessione-della-plebe-494-ac",
+      "reason": "Quindici anni dopo, secondo la tradizione, il primo scontro aperto tra patrizi e plebei."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Overthrow of the Roman monarchy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Overthrow_of_the_Roman_monarchy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tarquinio il Superbo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Tarquinio_il_Superbo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 509 a.C. è la data tradizionale. La maggior parte degli studiosi moderni non considera storico il racconto di Lucrezia e di Bruto, e ne attribuisce personaggi e dettagli a invenzioni letterarie più tarde; alcune ipotesi spostano la fine della monarchia di qualche decennio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

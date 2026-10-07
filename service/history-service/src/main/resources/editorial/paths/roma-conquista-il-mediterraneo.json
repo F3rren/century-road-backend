@@ -1,0 +1,41 @@
+{
+  "slug": "roma-conquista-il-mediterraneo",
+  "title": "Roma conquista il Mediterraneo",
+  "tagline": "Dalla vittoria su Filippo V alla caduta di Numanzia: come in poco più di sessant'anni Roma sottomette Grecia, Asia Minore e Spagna.",
+  "intro": "Dopo aver vinto Annibale, Roma continua a espandersi: tra il 197 e il 133 a.C. sconfigge le grandi monarchie ellenistiche, la Macedonia e l'impero seleucide, distrugge Corinto e, insieme a Cartagine, la sua rivale, sottomette la Spagna e riceve in eredità il regno di Pergamo.\n\nSono quasi tutte guerre, ma portano a Roma ricchezze, schiavi e opere d'arte e pongono alla Repubblica problemi nuovi, che sono la premessa della crisi cominciata con i Gracchi. Le fonti sono quasi tutte romane o vicine a Roma, e vanno lette con questa cautela.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "battaglia-di-cinocefale-197-ac",
+      "narrative": "Dopo Annibale Roma si volge a Oriente: in Tessaglia la legione batte la falange macedone di Filippo V."
+    },
+    {
+      "insight": "battaglia-di-magnesia-190-ac",
+      "narrative": "Poi tocca all'impero seleucide: ad Antioco III, che aveva ospitato Annibale, Roma toglie ciò che stava a ovest dei monti Tauro."
+    },
+    {
+      "insight": "scandalo-dei-baccanali-186-ac",
+      "narrative": "Intanto, in Italia, il Senato mostra la sua autorità vietando un culto che giudica pericoloso."
+    },
+    {
+      "insight": "battaglia-di-pidna-168-ac",
+      "narrative": "Torna la Macedonia: a Pidna cade l'ultimo re e il regno viene sciolto."
+    },
+    {
+      "insight": "distruzione-di-cartagine-146-ac",
+      "narrative": "Nel 146 a.C. cade Cartagine, la grande rivale."
+    },
+    {
+      "insight": "distruzione-di-corinto-146-ac",
+      "narrative": "Nello stesso anno Roma distrugge Corinto e mette fine all'indipendenza della Grecia."
+    },
+    {
+      "insight": "caduta-di-numanzia-133-ac",
+      "narrative": "In Spagna una città resiste per vent'anni: Scipione Emiliano la prende per fame."
+    },
+    {
+      "insight": "testamento-di-attalo-iii-133-ac",
+      "narrative": "Lo stesso anno un re senza eredi lascia per testamento il suo regno a Roma."
+    }
+  ]
+}

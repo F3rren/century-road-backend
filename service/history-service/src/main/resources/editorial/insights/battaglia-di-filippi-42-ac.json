@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-filippi-42-ac",
+  "title": "Filippi: Antonio e Ottaviano sconfiggono Bruto e Cassio",
+  "summary": "Il 3 e il 23 ottobre del 42 a.C., a Filippi, in Macedonia, le legioni di Antonio e Ottaviano sconfiggono quelle di Bruto e Cassio, gli assassini di Cesare: i due si uccidono e i triumviri restano padroni della Repubblica.",
+  "date": {
+    "year": -42,
+    "month": 10,
+    "day": 23
+  },
+  "place": {
+    "name": "Filippi, Macedonia, Grecia",
+    "lat": 41.013,
+    "lon": 24.286,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "Dopo l'assassinio di Cesare i triumviri dichiararono guerra ai «liberatori», ufficialmente per vendicare Cesare; secondo una fonte la causa più profonda era il conflitto tra optimates e populares. Bruto e Cassio avevano organizzato in Oriente un grande esercito; Antonio e Ottaviano, mentre Lepido restava in Occidente, lo affrontarono presso Filippi, in Macedonia, sulla via Egnatia. Secondo una stima i soldati erano in tutto fino a 200 000, in una delle più grandi battaglie delle guerre civili romane; altre stime parlano di 40 000-50 000 legionari per parte.",
+  "event": "Nella prima battaglia, nella prima settimana di ottobre, Bruto respinse Ottaviano ed entrò nel suo accampamento, ma più a sud Antonio batté Cassio, che, credendo sconfitto anche Bruto, si uccise: lo scontro fu quasi alla pari. Il 23 ottobre una seconda battaglia, accanita, distrusse l'esercito di Bruto, che a sua volta si tolse la vita. La seconda battaglia fu combattuta con grande accanimento da legioni veterane; il merito della vittoria andò soprattutto ad Antonio, mentre Ottaviano, malato, ebbe un ruolo minore.",
+  "after": "Secondo Plutarco Antonio coprì il corpo di Bruto con un mantello di porpora in segno di rispetto: ricordava che Bruto, entrando nella congiura, aveva posto come condizione che la sua vita fosse risparmiata. Molti giovani aristocratici morirono in battaglia o si uccisero, e circa 14 000 uomini dell'esercito dei liberatori furono arruolati dai triumviri. Antonio restò in Oriente, mentre Ottaviano tornò in Italia con il compito di trovare terre per i veterani, e alcuni terreni del Cremonese e del Mantovano furono espropriati.",
+  "links": [
+    {
+      "slug": "secondo-triumvirato-43-ac",
+      "reason": "L'alleanza che aveva dichiarato guerra ai liberatori."
+    },
+    {
+      "slug": "idi-di-marzo-44-ac",
+      "reason": "La battaglia chiude la vicenda aperta dalla congiura contro Cesare."
+    },
+    {
+      "slug": "battaglia-di-azio-31-ac",
+      "reason": "Undici anni dopo i due vincitori si scontrano ad Azio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Philippi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Philippi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Filippi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Filippi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "La cifra di 200 000 combattenti è una stima massima, riferita agli eserciti di entrambe le parti insieme."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

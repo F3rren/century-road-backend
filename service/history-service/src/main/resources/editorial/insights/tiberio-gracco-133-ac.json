@@ -1,0 +1,55 @@
+{
+  "slug": "tiberio-gracco-133-ac",
+  "title": "Tiberio Gracco e la riforma agraria",
+  "summary": "Nel 133 a.C. il tribuno Tiberio Gracco fa approvare una legge per distribuire ai contadini poveri la terra pubblica occupata in eccesso dai ricchi: ottiene la destituzione di un collega e viene ucciso in un tumulto sul Campidoglio.",
+  "date": {
+    "year": -133,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Campidoglio, Roma, Italia",
+    "lat": 41.8933,
+    "lon": 12.4828,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Tiberio Gracco, nipote di Scipione l'Africano per parte di madre, aveva combattuto a Cartagine e in Spagna. Come questore a Numanzia aveva negoziato un trattato che salvò, secondo una fonte, 20 000 soldati, ma il Senato lo respinse, e il suo futuro politico ne risentì. Convinto che la popolazione di Roma diminuisse perché le famiglie ricche si compravano la terra d'Italia, nel 133 a.C., da tribuno della plebe, presentò una legge agraria.",
+  "event": "La legge limitava l'occupazione della terra pubblica a 500 iugeri, circa 125 ettari, più 250 per ogni figlio fino a un massimo di 1 000, e distribuiva il resto ai contadini poveri in lotti di 30 iugeri. Il collega Marco Ottavio pose il veto; Tiberio fece allora votare la sua destituzione dall'assemblea della plebe, un atto senza precedenti, e la legge fu approvata. Una commissione, di cui facevano parte Tiberio, il suocero Appio Claudio Pulcro e il fratello Gaio, doveva distribuire le terre. Quando arrivò il lascito di Attalo III, Tiberio propose di destinarne i beni alla riforma, secondo una fonte per l'acquisto di sementi e attrezzi dei nuovi coltivatori.",
+  "after": "Per proteggere la riforma Tiberio si candidò a un secondo tribunato consecutivo, contro la prassi. Sul Campidoglio, il giorno del voto, scoppiò un tumulto: il pontefice massimo Scipione Nasica marciò armato sul Campidoglio con i suoi seguaci e più di trecento cittadini morirono, tra cui Tiberio, ucciso a bastonate; il suo corpo fu gettato nel Tevere. Il Senato non impedì però la distribuzione delle terre, e la commissione, di cui faceva parte anche Gaio, ne distribuì molte negli anni seguenti.",
+  "links": [
+    {
+      "slug": "testamento-di-attalo-iii-133-ac",
+      "reason": "Tiberio vuole usare il tesoro di Pergamo per finanziare la riforma agraria."
+    },
+    {
+      "slug": "gaio-gracco-tribuno-123-ac",
+      "reason": "Dieci anni dopo il fratello Gaio riprende e allarga il suo programma."
+    },
+    {
+      "slug": "leggi-licinie-sestie-367-ac",
+      "reason": "Il limite di 500 iugeri risaliva alle leggi Licinie-Sestie, due secoli prima."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tiberius Gracchus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tiberius_Gracchus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tiberio Sempronio Gracco (tribuno della plebe 133 a.C.) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Tiberio_Sempronio_Gracco_(tribuno_della_plebe_133_a.C.)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti sono più tarde e non concordano su tutto: i particolari della legge e del tumulto sono discussi, e le cifre dei morti sono quelle riferite dalle fonti. L'anno, il 133 a.C., è quello del tribunato e della morte di Tiberio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

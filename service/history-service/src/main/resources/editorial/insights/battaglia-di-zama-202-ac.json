@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-zama-202-ac",
+  "title": "Scipione batte Annibale a Zama",
+  "summary": "Il 19 ottobre del 202 a.C., a Zama, in Africa, l'esercito romano di Scipione sconfigge quello cartaginese di Annibale: è la battaglia decisiva della seconda guerra punica e segna la fine di Cartagine come grande potenza.",
+  "date": {
+    "year": -202,
+    "month": 10,
+    "day": 19
+  },
+  "place": {
+    "name": "Zama, Tunisia",
+    "lat": 36.299,
+    "lon": 9.449,
+    "countryCode": "TN",
+    "approximate": true,
+    "note": "Il luogo della battaglia non è certo: le ipotesi vanno da Naraggara a una pianura presso El Kef. Il punto è indicativo e cade nella Tunisia nord-occidentale."
+  },
+  "before": "Annibale aveva combattuto in Italia per oltre dieci anni. Nel 210 a.C. Publio Cornelio Scipione, poi detto l'Africano, prese il comando delle forze romane in Spagna e in pochi anni ne cacciò i Cartaginesi; console nel 205 a.C., l'anno dopo sbarcò in Africa, presso Utica. Cartagine fu battuta più volte, e Massinissa divenne il principale re dei Numidi, alleato di Roma. Dopo le trattative di pace Cartagine richiamò Annibale dall'Italia; quando arrivò, il trattato fu ripudiato e Annibale marciò verso l'interno contro i Romani.",
+  "event": "Le stime sui Romani vanno da 29 000 a 40 000 uomini, contro 40 000 o 50 000 Cartaginesi; i Romani erano più forti di cavalleria, con i Numidi di Massinissa, e i Cartaginesi avevano 80 elefanti. Dopo scaramucce di cavalleria, la battaglia vera cominciò con la carica degli elefanti: i veliti romani li colpirono con i giavellotti e le trombe dei legionari li spaventarono, e molti animali fuggirono sconvolgendo la cavalleria cartaginese, che Massinissa inseguì. I Romani respinsero le prime due linee cartaginesi, poi la fanteria si scontrò a lungo senza vantaggio; poi la cavalleria romana e numida tornò sul campo e prese alle spalle i fanti cartaginesi: la linea crollò e ne seguì un grande massacro.",
+  "after": "Cartagine chiese la pace. Il trattato, accettato nella primavera del 201 a.C., la privò dei territori d'oltremare e di parte di quelli africani, impose un'indennità di 10 000 talenti d'argento in cinquant'anni, la consegna di ostaggi, il divieto di tenere elefanti da guerra e una flotta ridotta a dieci navi, e le vietò di fare guerra fuori dall'Africa. Scipione ebbe il trionfo e il soprannome di Africano; Annibale dovette andare in esilio. Cartagine era ormai subordinata a Roma.",
+  "links": [
+    {
+      "slug": "battaglia-di-canne-216-ac",
+      "reason": "Quattordici anni prima, la peggiore sconfitta di Roma contro lo stesso comandante."
+    },
+    {
+      "slug": "distruzione-di-cartagine-146-ac",
+      "reason": "Cinquantasei anni dopo Roma distrugge la città."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Zama - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Zama",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Zama - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Zama",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Prima della riforma giuliana il calendario romano non seguiva con precisione le stagioni e non coincideva con il giuliano: il giorno indicato è quello riportato dalle fonti, e nel calendario giuliano potrebbe cadere in un altro giorno.",
+    "Le fonti principali, Polibio e Livio, scrissero dopo gli eventi e ci restano due versioni della battaglia che non coincidono su tutto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

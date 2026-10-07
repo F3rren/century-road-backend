@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-magnesia-190-ac",
+  "title": "Magnesia: Roma sconfigge Antioco III",
+  "summary": "Tra la fine del 190 e l'inizio del 189 a.C., a Magnesia, in Asia Minore, i Romani e il re di Pergamo Eumene II battono il re seleucide Antioco III: con la pace di Apamea finisce il dominio seleucide in Asia Minore.",
+  "date": {
+    "year": -190,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Magnesia al Sipilo (Manisa), Turchia",
+    "lat": 38.617,
+    "lon": 27.433,
+    "countryCode": "TR",
+    "approximate": true,
+    "note": "Il punto indica la città di Magnesia al Sipilo; la battaglia si combatté nella pianura a nord-est della città."
+  },
+  "before": "Antioco III, re dell'impero seleucide, aveva esteso il suo dominio sull'Asia Minore e nel 196 a.C. aveva attraversato l'Ellesponto, in Europa. Smirne e Lampsaco, minacciate, chiesero protezione a Roma; Annibale, fuggito da Cartagine, trovò rifugio alla sua corte. Nel 192 a.C., spinto dagli Etoli, Antioco portò la guerra in Grecia contro Roma. I Romani passarono poi in Asia Minore al comando del console Lucio Cornelio Scipione, con l'alleato Eumene II, re di Pergamo.",
+  "event": "Le due armate si fronteggiarono per giorni nella pianura a nord-est di Magnesia, ciascuna in attesa di scontrarsi in condizioni favorevoli. Quando la battaglia cominciò, Eumene mise in fuga i carri falcati dei Seleucidi, che sconvolsero le file dietro di loro, e la cavalleria romana e pergamena sfondò l'ala sinistra nemica. Antioco, sull'altra ala, ebbe la meglio ma restò impegnato intorno al campo romano, mentre al centro la falange, priva di sostegno sui fianchi, fu bersagliata da arcieri e frombolieri e cedette.",
+  "after": "Secondo Livio i Seleucidi persero 53 000 uomini e i Romani 349; le stime moderne parlano di 10 000 morti seleucidi e 5 000 romani. Antioco si ritirò e nel 188 a.C. firmò la pace di Apamea: rinunciò ai territori a ovest dei monti Tauro e dovette pagare una pesante indennità, e la Grecia entrò nella sfera d'influenza romana. La battaglia segnò la fine del predominio della falange macedone sui campi di battaglia ellenistici.",
+  "links": [
+    {
+      "slug": "battaglia-di-cinocefale-197-ac",
+      "reason": "Sette anni prima Roma aveva sconfitto Filippo V di Macedonia."
+    },
+    {
+      "slug": "battaglia-di-zama-202-ac",
+      "reason": "Annibale, sconfitto a Zama, si era rifugiato proprio alla corte di Antioco."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Magnesia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Magnesia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Magnesia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Magnesia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti collocano la battaglia nel dicembre del 190 o nel gennaio del 189 a.C.; il calendario romano dell'epoca non coincideva con il giuliano. Livio, una delle fonti principali, voleva esaltare le virtù romane e le sue cifre sono ritenute distorte."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

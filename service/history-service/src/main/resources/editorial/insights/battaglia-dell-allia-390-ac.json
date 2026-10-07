@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-dell-allia-390-ac",
+  "title": "I Galli sconfiggono i Romani sull'Allia",
+  "summary": "Il 18 luglio, nel 390 a.C. secondo la cronologia tradizionale, i Galli Senoni guidati da Brenno sbaragliano l'esercito romano sul fiume Allia, poi entrano a Roma e la saccheggiano.",
+  "date": {
+    "year": -390,
+    "month": 7,
+    "day": 18
+  },
+  "place": {
+    "name": "Presso la confluenza dell'Allia con il Tevere, a nord di Roma, Italia",
+    "lat": 42.017,
+    "lon": 12.52,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il torrente Allia non è identificato con certezza: il punto indica la zona a circa undici miglia romane a nord di Roma, dove le fonti antiche collocano la battaglia."
+  },
+  "before": "Intorno al 391 a.C. i Galli Senoni, guidati da Brenno, assediarono Chiusi, in Etruria, e i Chiusini chiesero aiuto a Roma. I Romani mandarono come ambasciatori i tre figli di Marco Fabio Ambusto, ma uno di loro, in uno scontro, uccise un capo gallo, violando la regola che teneva gli ambasciatori fuori dai combattimenti. Roma non li consegnò: furono anzi eletti tribuni militari con potere consolare. I Galli, indignati, marciarono su Roma.",
+  "event": "Lo scontro avvenne a circa undici miglia romane a nord della città, dove il torrente Allia si getta nel Tevere. L'esercito romano era raccogliticcio, formato secondo una fonte da due legioni e dagli alleati latini, e secondo Livio fu schierato senza un campo fortificato e senza i riti di buon augurio. Quando Brenno attaccò le riserve sull'altura, la maggior parte dei Romani si diede alla fuga ancora prima che il combattimento cominciasse: molti annegarono nel Tevere, altri si rifugiarono a Veio. I Galli rimasero sorpresi dalla facilità della vittoria.",
+  "after": "Roma fu occupata e saccheggiata: secondo Livio i soldati e i senatori in grado di combattere si chiusero sul Campidoglio, e i Galli entrarono dalla porta Collina in una città quasi vuota. Se ne andarono dopo aver ottenuto un riscatto; molti storici ritengono un'aggiunta al racconto l'intervento del dittatore Camillo che li caccia, e per alcune fonti furono sconfitti più tardi da un esercito etrusco. Per gli autori romani successivi l'Allia fu un trauma: il 18 luglio era un giorno nefasto, il «dies Alliensis», in cui si evitava ogni attività pubblica, anche se questa tradizione è attestata solo dal primo secolo a.C.",
+  "links": [
+    {
+      "slug": "leggi-delle-dodici-tavole-451-ac",
+      "reason": "Le tavole esposte nel Foro, secondo la tradizione, andarono perdute nel saccheggio."
+    },
+    {
+      "slug": "forche-caudine-321-ac",
+      "reason": "I Romani ricordarono l'Allia insieme a un'altra umiliazione: il giogo imposto dai Sanniti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Allia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Allia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del fiume Allia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_fiume_Allia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 18 luglio è il giorno tradizionale, il «dies Alliensis», ma anche il giorno è discusso: altre fonti indicano il 16 luglio. L'anno varia con la cronologia: il 390 a.C. è quello di Varrone, e molti studiosi moderni ritengono più probabile il 387 a.C. circa.",
+    "I racconti della battaglia e del saccheggio furono scritti secoli dopo e non concordano sui particolari; l'archeologia non ha trovato tracce chiare di una distruzione di quest'epoca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

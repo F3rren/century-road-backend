@@ -1,0 +1,52 @@
+{
+  "slug": "guerra-giugurtina-111-ac",
+  "title": "La guerra giugurtina: Roma contro un re che compra i senatori",
+  "summary": "Nel 111 a.C., dopo anni in cui il re numida Giugurta ha comprato magistrati e senatori, Roma gli dichiara guerra: il conflitto, raccontato da Sallustio, mostra la corruzione della classe dirigente romana e porta all'ascesa di Gaio Mario.",
+  "date": {
+    "year": -111,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Cirta (Costantina), Numidia, Algeria",
+    "lat": 36.365,
+    "lon": 6.615,
+    "countryCode": "DZ",
+    "approximate": true,
+    "note": "Il punto indica Cirta, la capitale numida da cui partì la crisi; la guerra si combatté in tutta la Numidia."
+  },
+  "before": "La Numidia, regno nordafricano alleato di Roma dalle guerre puniche, passò a Micipsa, che alla morte designò eredi i figli Aderbale e Iempsale e il nipote adottivo Giugurta, che aveva combattuto con i Romani a Numanzia. Giugurta fece uccidere Iempsale e sconfisse Aderbale, che si appellò al Senato. Giugurta corruppe i senatori e i commissari romani e ottenne la parte migliore del regno. Nel 113 a.C. attaccò di nuovo il cugino e lo assediò a Cirta; quando la città si arrese lo fece uccidere, insieme ai Romani che l'avevano difesa.",
+  "event": "La morte di cittadini romani provocò una forte reazione popolare e il Senato, sotto la pressione del tribuno Gaio Memmio, dichiarò guerra a Giugurta nel 111 a.C. Il console Lucio Calpurnio Bestia, mandato in Africa, accettò la resa del re a condizioni molto favorevoli, in cambio di tangenti al Senato. Memmio fece aprire un'inchiesta e Giugurta fu convocato a Roma, dove comprò il veto di due tribuni e fece uccidere un rivale. Il Senato, spinto dalla rabbia della folla, lo cacciò da Roma e annullò la pace.",
+  "after": "La guerra continuò per anni con generali incapaci o corrotti: nel 110 a.C. un esercito romano fu sconfitto e fatto passare sotto il giogo. Si concluse nel 105 a.C. con la cattura di Giugurta, dopo l'intervento di Gaio Mario, console dal 107 a.C., che ottenne di arruolare anche i poveri senza i requisiti di proprietà. Lo storico Sallustio, autore di una monografia sulla guerra, la inserì nel declino morale di Roma, cominciato secondo lui con la caduta di Cartagine. Nella guerra si fecero notare Mario e il suo questore Lucio Cornelio Silla, che in seguito diventarono rivali.",
+  "links": [
+    {
+      "slug": "caduta-di-numanzia-133-ac",
+      "reason": "A Numanzia Giugurta aveva conosciuto le amicizie e i metodi dei Romani."
+    },
+    {
+      "slug": "battaglia-di-vercelle-101-ac",
+      "reason": "Dopo l'Africa Mario, il generale della guerra contro Giugurta, deve fermare i Cimbri."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Jugurthine War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Jugurthine_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra giugurtina - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_giugurtina",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno 111 a.C. è quello della dichiarazione di guerra; il conflitto durò fino al 105 a.C. La fonte principale è Sallustio, che scrisse con l'intento di mostrare il declino morale di Roma. L'attacco a Cirta è datato al 113 o al 112 a.C."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-farsalo-48-ac",
+  "title": "Farsalo: Cesare sconfigge Pompeo",
+  "summary": "Il 9 agosto del 48 a.C., a Farsalo, in Grecia, Giulio Cesare sconfigge l'esercito, molto più numeroso, di Pompeo: la battaglia decisiva della guerra civile segna l'inizio del dominio di Cesare.",
+  "date": {
+    "year": -48,
+    "month": 8,
+    "day": 9
+  },
+  "place": {
+    "name": "Farsalo, Tessaglia, Grecia",
+    "lat": 39.3,
+    "lon": 22.383,
+    "countryCode": "GR",
+    "approximate": true,
+    "note": "Il luogo esatto della battaglia è stato a lungo discusso: gli studiosi lo collocano a sud o a nord del fiume Enipeo, a pochi chilometri da Farsalo. Il punto indica la zona della città."
+  },
+  "before": "Scoppiata la guerra civile, Cesare aveva preso Roma, costretto Pompeo e i suoi alleati a lasciare l'Italia e battuto i suoi luogotenenti in Spagna. Nel 48 a.C. passò l'Adriatico e assediò Durazzo, ma fu sconfitto, e si ritirò in Tessaglia. Pompeo lo inseguì: voleva concludere la guerra in Grecia per risparmiare l'Italia, e i suoi alleati, sicuri della vittoria, lo accusavano di prolungare la guerra per restare al comando.",
+  "event": "L'esercito di Pompeo, molto più numeroso, aveva dalla sua la maggioranza dei senatori; quello di Cesare era formato da legioni di veterani. Spinto dai suoi ufficiali, Pompeo accettò la battaglia a malincuore e ordinò ai suoi di non caricare ma di aspettare l'assalto nemico, per stancare la fanteria di Cesare. La battaglia si risolse in una sconfitta schiacciante e Pompeo fuggì dal campo, secondo una fonte travestito da cittadino comune.",
+  "after": "Pompeo riparò in Egitto, dove fu assassinato per ordine di Tolomeo XIII o dei suoi consiglieri; secondo un racconto Cesare, arrivato ad Alessandria il 2 ottobre, pianse davanti alla sua testa. Cesare prese l'accampamento di Pompeo, bruciò la sua corrispondenza e annunciò che avrebbe perdonato chi chiedesse clemenza, come Marco Giunio Bruto. Catone e altri sostenitori di Pompeo si radunarono prima a Corcira e poi in Libia, e la guerra continuò. Da Farsalo cominciò il dominio di Cesare.",
+  "links": [
+    {
+      "slug": "passaggio-del-rubicone-49-ac",
+      "reason": "L'anno prima Cesare aveva attraversato il Rubicone."
+    },
+    {
+      "slug": "idi-di-marzo-44-ac",
+      "reason": "Quattro anni dopo Cesare, padrone di Roma, viene assassinato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Pharsalus - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Pharsalus",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Farsalo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Farsalo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 9 agosto è la data secondo il calendario repubblicano, che non coincide con il giuliano. Il luogo della battaglia è stato a lungo discusso dagli studiosi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

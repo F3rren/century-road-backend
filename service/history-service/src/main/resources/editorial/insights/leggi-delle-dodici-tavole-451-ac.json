@@ -1,0 +1,55 @@
+{
+  "slug": "leggi-delle-dodici-tavole-451-ac",
+  "title": "Le leggi delle Dodici Tavole",
+  "summary": "Intorno al 451 a.C. una commissione di dieci magistrati mette per iscritto le leggi di Roma: le Dodici Tavole, esposte nel Foro, sono la prima codificazione scritta del diritto romano.",
+  "date": {
+    "year": -451,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Foro Romano, Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nei primi decenni della Repubblica le leggi non erano scritte, ma affidate alla consuetudine, e a interpretarle erano i pontefici, un collegio di sacerdoti composto solo da patrizi. I plebei chiedevano leggi scritte che limitassero l'arbitrio dei patrizi nei tribunali e regole meno dure contro i debitori. Secondo la tradizione una prima proposta fu avanzata dal tribuno Gaio Terentilio Arsa nel 462 a.C., e nel 454 a.C. il Senato votò l'invio di una commissione in Grecia a studiare le leggi di Atene e di altre città.",
+  "event": "Nel 451 a.C. furono eletti dieci magistrati, i decemviri, incaricati di scrivere le leggi: le magistrature ordinarie furono sospese. Nel primo anno redassero dieci tavole; l'anno seguente un nuovo collegio, dominato dal patrizio Appio Claudio, ne aggiunse altre due. Le Dodici Tavole trattavano di procedura nei tribunali, debiti, famiglia, eredità, proprietà, reati, funerali e matrimonio.",
+  "after": "Il secondo collegio governò in modo dispotico. Secondo la tradizione, il malcontento e il caso di Verginia, una giovane plebea che il padre preferì uccidere piuttosto che consegnarla ad Appio Claudio, provocarono una rivolta e la deposizione dei decemviri; nel 449 a.C. i consoli fecero incidere le leggi su tavole esposte nel Foro. Per i Romani furono la fonte di tutto il diritto pubblico e privato, e Cicerone diceva di averle imparate a memoria da ragazzo. Il testo ci è giunto incompleto, attraverso le citazioni di autori antichi.",
+  "links": [
+    {
+      "slug": "secessione-della-plebe-494-ac",
+      "reason": "La plebe aveva ottenuto i tribuni: ora chiede leggi scritte."
+    },
+    {
+      "slug": "leggi-licinie-sestie-367-ac",
+      "reason": "Il conflitto continua: la plebe ottiene di accedere al consolato."
+    },
+    {
+      "slug": "battaglia-dell-allia-390-ac",
+      "reason": "Le tavole rimasero esposte nel Foro fino al saccheggio gallico."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Twelve Tables - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Twelve_Tables",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Leggi delle XII tavole - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Leggi_delle_XII_tavole",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti sul processo sono più tarde di circa due secoli e non concordano su tutti i particolari: le tavole sono datate al 451-450 a.C. (la commissione) e al 449 a.C. (la pubblicazione definitiva), e gli storici moderni discutono quanto del racconto sia storico. Secondo alcuni studiosi, l'influenza greca arrivò più probabilmente dalle città greche dell'Italia meridionale e della Sicilia che da Atene."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

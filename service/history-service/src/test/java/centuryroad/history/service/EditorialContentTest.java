@@ -1,6 +1,8 @@
 package centuryroad.history.service;
 
 import centuryroad.history.model.Coordinates;
+import centuryroad.history.model.DatePrecision;
+import centuryroad.history.model.EventDate;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import centuryroad.history.model.PathStop;
@@ -186,20 +188,34 @@ class EditorialContentTest {
     void theStopsOfAPathAreInChronologicalOrder() {
         List<String> wrong = new ArrayList<>();
         for (GuidedPath path : catalog.paths()) {
-            Insight previous = null;
-            for (PathStop stop : path.stops()) {
-                Insight current = catalog.insight(stop.insight()).orElseThrow();
-                if (previous != null && key(current) < key(previous)) {
-                    wrong.add(path.slug() + ": " + current.slug() + " comes after " + previous.slug() + " but is earlier");
+            List<Insight> stops = path.stops().stream().map(stop -> catalog.insight(stop.insight()).orElseThrow()).toList();
+            // Every stop against every earlier one, not only its neighbour: "as far as both know" is not
+            // transitive, so a year-only stop between two dated ones of that year would hide an inversion.
+            for (int i = 0; i < stops.size(); i++) {
+                for (int j = 0; j < i; j++) {
+                    if (isEarlier(stops.get(i).date(), stops.get(j).date())) {
+                        wrong.add(path.slug() + ": " + stops.get(i).slug() + " comes after " + stops.get(j).slug()
+                                + " but is earlier");
+                    }
                 }
-                previous = current;
             }
         }
         assertThat(wrong).isEmpty();
     }
 
-    private static long key(Insight insight) {
-        return (long) insight.date().year() * 10_000 + insight.date().month() * 100L + insight.date().day();
+    /** Earlier as far as both dates know: a year-only date is not earlier than a day of that year. */
+    private static boolean isEarlier(EventDate a, EventDate b) {
+        DatePrecision shared = a.precision().compareTo(b.precision()) <= 0 ? a.precision() : b.precision();
+        return key(a, shared) < key(b, shared);
+    }
+
+    private static long key(EventDate date, DatePrecision precision) {
+        long year = date.year() * 10_000L;
+        return switch (precision) {
+            case YEAR -> year;
+            case MONTH -> year + date.month() * 100L;
+            case DAY -> year + date.month() * 100L + date.day();
+        };
     }
 
     @Test
@@ -228,7 +244,9 @@ class EditorialContentTest {
             for (int j = i + 1; j < all.size(); j++) {
                 Insight a = all.get(i);
                 Insight b = all.get(j);
-                if (a.date().equals(b.date()) && kilometres(a, b) <= NEAR_DUPLICATE_KM) {
+                // Only dates known to the day: two year-only ones share a placeholder, not a day.
+                if (a.date().precision() == DatePrecision.DAY && a.date().equals(b.date())
+                        && kilometres(a, b) <= NEAR_DUPLICATE_KM) {
                     wrong.add(a.slug() + " and " + b.slug() + ": same day, " + Math.round(kilometres(a, b)) + " km apart");
                 }
             }

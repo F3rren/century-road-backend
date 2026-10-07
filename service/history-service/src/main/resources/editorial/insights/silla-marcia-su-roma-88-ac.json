@@ -1,0 +1,51 @@
+{
+  "slug": "silla-marcia-su-roma-88-ac",
+  "title": "Silla marcia su Roma con il suo esercito",
+  "summary": "Nell'88 a.C. il console Lucio Cornelio Silla, privato del comando contro Mitridate, marcia con le sue legioni su Roma e la conquista: è la prima volta che un generale romano attacca la Repubblica con il proprio esercito.",
+  "date": {
+    "year": -88,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nell'88 a.C. Silla, console, ebbe il comando della guerra contro Mitridate, re del Ponto, che aveva occupato la provincia romana d'Asia: un comando ambito, perché prometteva un ricco bottino. Il tribuno Publio Sulpicio voleva distribuire in tutte le tribù i nuovi cittadini italici, ma i due consoli si opposero. Sulpicio chiese allora l'appoggio di Gaio Mario, che accettò in cambio del comando contro Mitridate: con bande armate e l'intimidazione dell'assemblea, Sulpicio fece trasferire il comando a Mario e costrinse Silla a fuggire da Roma.",
+  "event": "Silla raggiunse le sei legioni riunite in Campania e convinse i soldati a seguirlo: senza il comando in Oriente sarebbe sfumato il loro bottino. In agosto marciò su Roma insieme all'altro console, Pompeo Rufo. Il Senato mandò ambascerie a chiedere perché marciasse contro la patria, e lui rispose che voleva liberare Roma dai tiranni. Roma non aveva truppe per difendersi: i soldati di Silla presero la porta Esquilina ed entrarono in città, sconfiggendo le milizie di Mario e di Sulpicio.",
+  "after": "Silla fece dichiarare nemici pubblici Sulpicio, Mario e altri dieci capi: solo Sulpicio fu preso, mentre Mario fuggì in Africa. Poi cambiò la costituzione: indebolì i tribuni della plebe e rafforzò i magistrati e il Senato, di cui prevedeva di raddoppiare i membri; alcuni studiosi dubitano che tutte queste riforme risalgano all'88 a.C. Quando partì per l'Oriente, il console Cinna riprese il programma di Sulpicio e marciò a sua volta su Roma con Mario; Silla tornò nell'83 a.C., vinse la guerra civile e conquistò Roma una seconda volta. Alcuni storici moderni vedono in quella marcia l'inizio della fine della Repubblica.",
+  "links": [
+    {
+      "slug": "guerra-sociale-90-ac",
+      "reason": "La cittadinanza concessa agli Italici due anni prima è all'origine dello scontro."
+    },
+    {
+      "slug": "battaglia-di-porta-collina-82-ac",
+      "reason": "Sei anni dopo Silla riconquista Roma con la guerra civile."
+    }
+  ],
+  "sources": [
+    {
+      "title": "March on Rome (88 BC) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/March_on_Rome_(88_BC)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Publio Sulpicio Rufo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Publio_Sulpicio_Rufo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno è l'88 a.C.; la marcia cominciò in agosto. Le fonti sono tarde e a volte ostili: il quadro, per esempio le ragioni dei soldati o i piani di Mario, è ricostruito dagli storici moderni."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

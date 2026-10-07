@@ -1,0 +1,41 @@
+{
+  "slug": "roma-dalle-origini-alla-conquista-dell-italia",
+  "title": "Roma dalle origini alla conquista dell'Italia",
+  "tagline": "Dalla leggenda di Romolo alla sconfitta di Pirro: come una città del Lazio diventa una repubblica e la potenza dominante della penisola.",
+  "intro": "I primi secoli di Roma sono noti soprattutto da racconti scritti molto dopo, e in parte sono leggenda: le tappe sono datate secondo la cronologia tradizionale, e per ogni evento si dice quanto è certo e quanto no.\n\nIl filo è la nascita di una repubblica e le tensioni che la attraversano, in particolare quella tra patrizi e plebei, e allo stesso tempo l'espansione di una città che da un colle sul Tevere arriva a controllare l'Italia centrale e meridionale, tra sconfitte come quelle dell'Allia e delle Forche Caudine e vittorie come quella su Pirro.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "fondazione-di-roma-753-ac",
+      "narrative": "Si parte dal racconto con cui i Romani spiegavano le proprie origini, e da quello che ne pensano gli studiosi."
+    },
+    {
+      "insight": "inizio-della-repubblica-509-ac",
+      "narrative": "Secondo la tradizione, dopo sette re i Romani cacciano l'ultimo e scelgono due magistrati annuali."
+    },
+    {
+      "insight": "secessione-della-plebe-494-ac",
+      "narrative": "La nuova Repubblica è governata dai patrizi: i plebei, schiacciati dai debiti, lasciano la città e ottengono i tribuni."
+    },
+    {
+      "insight": "leggi-delle-dodici-tavole-451-ac",
+      "narrative": "La lotta continua e porta alle prime leggi scritte, esposte nel Foro perché tutti le conoscano."
+    },
+    {
+      "insight": "battaglia-dell-allia-390-ac",
+      "narrative": "Mentre la città cambia, arriva la sconfitta più dura: i Galli battono l'esercito romano e saccheggiano Roma."
+    },
+    {
+      "insight": "leggi-licinie-sestie-367-ac",
+      "narrative": "Dopo il saccheggio i debiti pesano ancora di più, e i plebei ottengono di poter essere consoli."
+    },
+    {
+      "insight": "forche-caudine-321-ac",
+      "narrative": "Roma si espande verso sud e incontra i Sanniti, che le infliggono un'umiliazione senza combattere."
+    },
+    {
+      "insight": "battaglia-di-benevento-275-ac",
+      "narrative": "Mezzo secolo dopo Roma ha la meglio anche su Pirro, e a quel punto domina l'Italia meridionale."
+    }
+  ]
+}

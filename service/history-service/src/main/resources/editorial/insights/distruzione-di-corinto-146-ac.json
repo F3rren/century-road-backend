@@ -1,0 +1,51 @@
+{
+  "slug": "distruzione-di-corinto-146-ac",
+  "title": "Roma distrugge Corinto",
+  "summary": "Nel 146 a.C., vinta la guerra contro la Lega achea, i Romani del console Mummio conquistano, saccheggiano e distruggono Corinto: la Grecia perde la sua indipendenza e passa sotto il controllo di Roma.",
+  "date": {
+    "year": -146,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Corinto, Grecia",
+    "lat": 37.905,
+    "lon": 22.88,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "La Lega achea, una federazione di città greche, era alleata di Roma. Sparta, costretta anni prima a farne parte, voleva uscirne, e una guerra nel Peloponneso coinvolse Roma, che ordinò alla Lega di rinunciare a Sparta e ad altre città, tra cui Corinto. I Corinzi reagirono con violenza, e nella primavera del 146 a.C. la Lega, guidata dallo stratego antiromano Critolao, dichiarò guerra a Sparta. Il Senato dichiarò allora guerra alla Lega e mandò in Grecia il console Lucio Mummio.",
+  "event": "I Romani sconfissero l'esercito acheo a Scarfea, conquistarono la Beozia e, con il console Mummio, marciarono su Corinto, dove gli Achei si erano riuniti sotto lo stratego Dieo. In poche ore di battaglia gli Achei furono messi in rotta. I Romani, temendo un'imboscata, entrarono in città dopo tre giorni, trovandola quasi deserta: secondo una fonte uccisero gli uomini, vendettero donne e bambini come schiavi, saccheggiarono e incendiarono Corinto e ne portarono via i tesori e le opere d'arte.",
+  "after": "La Lega achea fu sciolta, le mura delle città ribelli furono abbattute e la Grecia, a parte alcune città che mantennero una certa autonomia, passò sotto il controllo del governatore della provincia di Macedonia; il territorio di Corinto divenne terra pubblica romana. Da allora la Grecia non vide più combattimenti fino alla prima guerra mitridatica, sessant'anni dopo. Il saccheggio portò a Roma molte opere d'arte greche, e Corinto non si riprese per oltre un secolo, fino alla rifondazione voluta da Giulio Cesare nel 44 a.C.",
+  "links": [
+    {
+      "slug": "distruzione-di-cartagine-146-ac",
+      "reason": "Nello stesso anno Roma distrugge anche Cartagine."
+    },
+    {
+      "slug": "battaglia-di-pidna-168-ac",
+      "reason": "Ventidue anni prima, a Pidna, era finito il regno di Macedonia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Corinth (146 BC) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Corinth_(146_BC)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Corinto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Corinto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non danno il giorno: la battaglia si combatté nel 146 a.C., poche settimane dopo l'inizio della guerra, e la città fu presa tre giorni dopo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
