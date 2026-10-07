@@ -16,7 +16,7 @@
   },
   "before": "I primi voli con equipaggio duravano da pochi minuti a qualche giorno. Per studiare gli effetti di una permanenza lunga e per fare esperimenti servivano ambienti più grandi di una capsula. Dopo lo sbarco americano sulla Luna del 1969, l'Unione Sovietica diede grande priorità alle stazioni orbitali.",
   "event": "Saljut 1 fu lanciata il 19 aprile 1971 da Baikonur con un razzo Proton. Era un cilindro di circa 18 tonnellate e lungo una ventina di metri. Il primo equipaggio, quello della Sojuz 10, non riuscì a entrare nella stazione per un problema di aggancio. Il secondo, quello della Sojuz 11, vi rimase 23 giorni, a giugno del 1971.",
-  "after": "Il ritorno della Sojuz 11 finì in tragedia: il 30 giugno 1971 una valvola si aprì durante la separazione dei moduli e la cabina si depressurizzò. I tre cosmonauti, Georgij Dobrovol'skij, Vladislav Volkov e Viktor Pacaev, morirono. Sono ancora oggi le sole persone morte oltre il limite convenzionale dello spazio, i 100 chilometri della linea di Kármán. Le stazioni sovietiche proseguirono con la serie Saljut e poi con la Mir; gli Stati Uniti lanciarono la loro, Skylab, nel 1973.",
+  "after": "Il ritorno della Sojuz 11 finì in tragedia: il 30 giugno 1971 una valvola si aprì durante la separazione dei moduli e la cabina si depressurizzò. I tre cosmonauti, Georgij Dobrovol'skij, Vladislav Volkov e Viktor Pacaev, morirono. Sono considerate le uniche persone morte oltre il limite convenzionale dello spazio, i 100 chilometri della linea di Kármán. Le stazioni sovietiche proseguirono con la serie Saljut e poi con la Mir; gli Stati Uniti lanciarono la loro, Skylab, nel 1973.",
   "links": [
     {
       "slug": "apollo-11",
@@ -45,6 +45,6 @@
     "Nel 1971 Baikonur faceva parte della Repubblica Sovietica Kazaka, all'interno dell'URSS."
   ],
   "provenance": {
-    "author": "Century Road"
+    "author": "Century Road, bozza redatta con IA"
   }
 }

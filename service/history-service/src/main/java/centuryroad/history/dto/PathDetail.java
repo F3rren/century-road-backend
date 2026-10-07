@@ -5,6 +5,7 @@ import centuryroad.history.model.EventDate;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.Place;
+import centuryroad.history.model.Topic;
 import centuryroad.history.service.EditorialCatalog;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -25,6 +26,10 @@ public record PathDetail(
         @Schema(description = "The path's title.") String title,
         @Schema(description = "One sentence on what the path is about.") String tagline,
         @Schema(description = "A short introduction: where the path starts and what it follows.") String intro,
+        @Schema(description = "What the path is about, from a closed list.", example = "ESPLORAZIONI_E_SPAZIO") Topic topic,
+        @Schema(description = "The topic's name to show, in Italian.", example = "Esplorazioni e spazio") String topicLabel,
+        @Schema(description = "The year of the path's earliest stop. Negative before the common era.", example = "1957") int startYear,
+        @Schema(description = "The year of the path's latest stop. Negative before the common era.", example = "2023") int endYear,
         @Schema(description = "The cover image. Absent when the path has none.") Cover cover,
         @Schema(description = "Estimated minutes to read the whole path, counted from its words.", example = "9") int readingMinutes,
         @Schema(description = "The stops, in order. Open the first, then step to the previous or the next by position.") List<Stop> stops) {
@@ -48,7 +53,8 @@ public record PathDetail(
             stops.add(new Stop(i + 1, insight.slug(), insight.title(), insight.summary(), insight.date(),
                     insight.place(), stop.narrative()));
         }
-        return new PathDetail(path.slug(), Language.IT, path.title(), path.tagline(), path.intro(), path.cover(),
+        return new PathDetail(path.slug(), Language.IT, path.title(), path.tagline(), path.intro(), path.topic(),
+                path.topic().label(), catalog.startYear(path), catalog.endYear(path), path.cover(),
                 catalog.readingMinutes(path), stops);
     }
 }

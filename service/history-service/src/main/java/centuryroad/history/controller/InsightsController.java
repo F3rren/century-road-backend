@@ -35,10 +35,10 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/history/insights")
-@Tag(name = "Insights", description = "\"Perché conta\": events explained by hand - before, the event, after, where to read next")
+@Tag(name = "Insights", description = "\"Perché conta\": events explained in short pieces, drafts not yet reviewed - before, the event, after, where to read next")
 public class InsightsController {
 
-    private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofHours(1)).cachePublic();
+    private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic();
 
     private final EditorialCatalog catalog;
 
@@ -52,7 +52,7 @@ public class InsightsController {
                     that day of the year, whatever the year: the way to know which of a day's events from
                     /api/history/on-this-day to mark "Approfondimento disponibile". Match them on `date.year`.
                     A day with none is an empty list, not an error.""")
-    @ApiResponse(responseCode = "200", description = "The insights, oldest first. Cached for an hour.")
+    @ApiResponse(responseCode = "200", description = "The insights, oldest first. Cached for five minutes.")
     @ApiResponse(responseCode = "400", description = "`error` is INVALID_DATE: only one of month and day was given, "
             + "or they are not a real day.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @GetMapping
@@ -74,7 +74,7 @@ public class InsightsController {
                     What led up to the event (`before`), what happened (`event`) and what followed
                     (`after`), plus two or three insights to read next (`related`), the paths it belongs
                     to, its sources, caveats about dates and places, and who wrote it. Written in Italian.""")
-    @ApiResponse(responseCode = "200", description = "The insight. Cached for an hour.")
+    @ApiResponse(responseCode = "200", description = "The insight. Cached for five minutes.")
     @ApiResponse(responseCode = "404", description = "No insight has this slug. `error` is INSIGHT_NOT_FOUND.",
             content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @GetMapping("/{slug}")

@@ -863,14 +863,15 @@ table.
 ### Guided paths and insights
 
 Wikipedia's feed says *what* happened on a day. Three endpoints say *why it matters* and
-*where to start*, from content written by hand and kept in this repository. None of them asks
-Wikipedia or the database, so they answer even when Wikipedia does not. Everything is in
-Italian, and cached for an hour: it only changes with a release.
+*where to start*, from content kept in this repository: drafts written with the help of an AI from
+Wikipedia, not yet reviewed by a person (see "Review dates" below). None of them asks Wikipedia
+or the database, so they answer even when Wikipedia does not. Everything is in Italian, and cached
+for five minutes: it only changes with a release.
 
 | Endpoint | Answers |
 |---|---|
 | `GET /api/history/start-here` | "Inizia da qui": a few hand-picked paths and events, each with a sentence on why to open it |
-| `GET /api/history/paths` | every guided path as a card: title, one sentence, cover, reading time, number of stops |
+| `GET /api/history/paths` | every guided path as a card: title, one sentence, topic, the years it spans, cover, reading time, number of stops. Grouped by topic |
 | `GET /api/history/paths/{slug}` | one path: introduction and its stops in order, each with the place for the map to move to |
 | `GET /api/history/insights?month=&day=` | the events that have an insight, optionally those of one day |
 | `GET /api/history/insights/{slug}` | "Perché conta" for one event |
@@ -881,6 +882,16 @@ before. Opening a stop is a second request, `GET /api/history/insights/{slug}` w
 `slug`, so a path stays small. `readingMinutes` is counted from the words at 200 a minute, never
 written by hand. The cover, when there is one, is an image from Wikimedia Commons, with its file
 page to credit.
+
+**A topic** says what a path is about, one per path, from a closed list: the `Topic` enum, whose
+order is the order paths are shown in (the periods first, then regions, then subjects). It is
+required, and a name outside the list stops the service like any other typo. `GET /paths` is
+ordered by topic, then by the year of the path's first stop, then by slug; `startYear` and
+`endYear` are read from the stops' dates, never written, so they cannot drift. `topicLabel` is the
+Italian name; a frontend may translate it. When a path could go in two topics: the world wars and
+the Cold War go to their own period whatever the region; one country's story across several
+periods goes to the country; a subject that crosses two or more periods goes to the subject;
+otherwise the period.
 
 **An insight** is told in three parts, as the product asks: `before` (what prepared the event),
 `event` (what happened) and `after` (what followed - developments, not all direct effects).
@@ -913,6 +924,29 @@ editorial/start-here.json        the "Inizia da qui" proposals (1 to 6)
 
 The file name is the slug. Adding content is a pull request, reviewed like code, and a release.
 
+**Conventions** (the ones a mistake in would not stop the service, so `EditorialContentTest` checks
+them in CI):
+
+- **A slug is a URL and an inbound link: never rename or delete a published one.** A deleted
+  target also stops the service for every insight that links to it.
+- **Years before the common era are negative, and there is no year 0.** The slug ends in
+  `-<year>-ac` (`idi-di-marzo-44-ac`); a slug that ends in a four-digit year must say the year of
+  its date. Before 1583 an insight needs at least one note: the day is conventional or the date
+  is Julian, and the note says which.
+- **A count written in words has to be true**: "nove tappe" in a tagline, an intro or a
+  start-here teaser fails the build when the path has ten stops. Better not to write counts.
+- **An insight is shared by several paths**, so it does not talk about the path it is read in
+  ("in questa tappa", "nel percorso") and avoids phrases that were true on the day they were
+  written ("ancora oggi", "da oltre venticinque anni"). The line that ties an insight to a path
+  is the stop's `narrative`.
+- Stops of a path are in chronological order; two paths do not share most of their stops; two
+  insights are not the same event written twice (same day, within 25 km); an insight is neither a
+  headline nor an essay (about 130 to 230 words in its three parts, now); a `countryCode` agrees
+  with the map's own country shapes (an exception goes in `KNOWN_COARSE_SHAPES` with its reason).
+- Links go to insights that already exist. When content arrives in batches, a batch links to
+  itself and to what is already in `develop`; the links forward are added when the later batch
+  lands.
+
 The service **checks every file at startup and refuses to start** with every problem listed: an
 unknown key (a `"befor"` is an error, not an insight with no past), a stop that opens an insight
 that does not exist, a path of three stops, two or three `links` required per insight, an
@@ -923,10 +957,11 @@ same checks on the real files in CI, so a mistake fails the build and not the de
 read one against its sources, they add `"reviewedAt": "YYYY-MM-DD"` to its `provenance`, in the
 same commit. Nothing generates that date, and the service refuses one in the future.
 
-Every path and insight so far (four paths, thirty-three insights) is a **draft** in exactly that sense:
-they have no review date, and should be read against their sources and corrected before they are
-presented as more than that. The sources are, for now, Wikipedia articles (English and Italian) for
-each insight: a reviewer should add at least one source that is not Wikipedia.
+Every path and insight is a **draft** in exactly that sense: they were written with the help of an
+AI, from Wikipedia, and `provenance.author` says so. They have no review date, and should be read
+against their sources and corrected before they are presented as more than that. The sources are,
+for now, Wikipedia articles (English and Italian) for each insight: a reviewer should add at least
+one source that is not Wikipedia. `/api/history/sources` reports how many have been reviewed.
 
 ### Discovery: a random event and the same years elsewhere
 
@@ -1056,7 +1091,7 @@ which are which.
 ```bash
 cd service/auth-service    && ./mvnw test    #  71 tests
 cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 383 tests
+cd service/history-service && ./mvnw test    # 397 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```

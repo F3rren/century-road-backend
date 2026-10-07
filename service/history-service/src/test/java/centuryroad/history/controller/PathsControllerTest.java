@@ -27,7 +27,7 @@ class PathsControllerTest {
     void startHereListsTheProposals_aPathWithItsCard_anInsightWithItsDate() throws Exception {
         mvc.perform(get("/api/history/start-here"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.success").value(true))
                 .andExpect(jsonPath("$.data.length()").value(2))
                 .andExpect(jsonPath("$.data[0].type").value("PATH"))
@@ -42,11 +42,15 @@ class PathsControllerTest {
     }
 
     @Test
-    void thePathsAreCards_withReadingTimeAndStopCount_andNoCoverWhenThereIsNone() throws Exception {
+    void thePathsAreCards_withTopicYearsReadingTimeAndStopCount_andNoCoverWhenThereIsNone() throws Exception {
         mvc.perform(get("/api/history/paths"))
                 .andExpect(status().isOk())
                 .andExpect(jsonPath("$.data[0].slug").value("test-path"))
                 .andExpect(jsonPath("$.data[0].tagline").value("Una frase."))
+                .andExpect(jsonPath("$.data[0].topic").value("ETA_MODERNA"))
+                .andExpect(jsonPath("$.data[0].topicLabel").value("Assolutismo, Lumi e rivoluzioni"))
+                .andExpect(jsonPath("$.data[0].startYear").value(1901))
+                .andExpect(jsonPath("$.data[0].endYear").value(2020))
                 .andExpect(jsonPath("$.data[0].readingMinutes").value(1))
                 .andExpect(jsonPath("$.data[0].stopCount").value(6))
                 .andExpect(jsonPath("$.data[0].cover").doesNotExist());
@@ -56,9 +60,13 @@ class PathsControllerTest {
     void aPathHasItsStopsInOrder_eachWithPlaceDateAndNarrative() throws Exception {
         mvc.perform(get("/api/history/paths/test-path"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.data.language").value("it"))
                 .andExpect(jsonPath("$.data.intro").value("Una breve introduzione di prova."))
+                .andExpect(jsonPath("$.data.topic").value("ETA_MODERNA"))
+                .andExpect(jsonPath("$.data.topicLabel").value("Assolutismo, Lumi e rivoluzioni"))
+                .andExpect(jsonPath("$.data.startYear").value(1901))
+                .andExpect(jsonPath("$.data.endYear").value(2020))
                 .andExpect(jsonPath("$.data.stops.length()").value(6))
                 .andExpect(jsonPath("$.data.stops[0].position").value(1))
                 .andExpect(jsonPath("$.data.stops[0].slug").value("test-a"))

@@ -27,7 +27,7 @@ class InsightsControllerTest {
     void everyInsightIsListedOldestFirst() throws Exception {
         mvc.perform(get("/api/history/insights"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.data.length()").value(6))
                 .andExpect(jsonPath("$.data[0].slug").value("test-a"))
                 .andExpect(jsonPath("$.data[0].date.year").value(1901))
@@ -69,7 +69,7 @@ class InsightsControllerTest {
     void anInsightIsToldInThreeParts_withWhereToReadNext_andWhereItCameFrom() throws Exception {
         mvc.perform(get("/api/history/insights/test-a"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.data.slug").value("test-a"))
                 .andExpect(jsonPath("$.data.language").value("it"))
                 .andExpect(jsonPath("$.data.before").value("Prima uno due tre."))
