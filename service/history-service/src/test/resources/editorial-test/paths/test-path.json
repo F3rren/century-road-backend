@@ -3,6 +3,7 @@
   "title": "Percorso di prova",
   "tagline": "Una frase.",
   "intro": "Una breve introduzione di prova.",
+  "topic": "ETA_MODERNA",
   "stops": [
     {
       "insight": "test-a",

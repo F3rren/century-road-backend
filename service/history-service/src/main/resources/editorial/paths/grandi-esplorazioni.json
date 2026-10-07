@@ -3,6 +3,7 @@
   "title": "Le grandi esplorazioni",
   "tagline": "Otto viaggi, dal 1492 alla Luna: come gli esseri umani hanno raggiunto i luoghi più lontani e più estremi della Terra.",
   "intro": "Per secoli l'Europa conosceva solo una piccola parte del mondo. Tra la fine del Quattrocento e il Novecento le navi, e poi le slitte, gli alpinisti, i sommergibili e i razzi, hanno raggiunto quasi ogni luogo: l'India, le Americhe, il Pacifico, i Poli, la vetta più alta, il fondo dell'oceano, la Luna.\n\nQuesto percorso segue otto tappe. Le esplorazioni raccontate così sembrano imprese di singoli, ma sono anche la storia di popoli che già vivevano nei luoghi \"scoperti\", e di conseguenze che furono spesso dure per loro: dove serve, la tappa lo dice.",
+  "topic": "ESPLORAZIONI_E_SPAZIO",
   "stops": [
     {
       "insight": "colombo-1492",

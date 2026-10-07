@@ -9,6 +9,7 @@ import centuryroad.history.model.Place;
 import centuryroad.history.model.Source;
 import centuryroad.history.model.StartHere;
 import centuryroad.history.model.StartHerePick;
+import centuryroad.history.model.Topic;
 import centuryroad.history.wikipedia.WikimediaUrls;
 import com.fasterxml.jackson.databind.DeserializationFeature;
 import com.fasterxml.jackson.databind.json.JsonMapper;
@@ -89,6 +90,10 @@ public class EditorialCatalog {
         Map<String, Insight> loadedInsights = new LinkedHashMap<>();
         for (Loaded<Insight> loaded : load(resolver, mapper, root + "/insights/*.json", Insight.class, problems)) {
             Insight insight = loaded.value();
+            // Without this, a file with no "slug" is skipped below and never checked at all.
+            if (insight.slug() == null) {
+                problems.add(loaded.file() + ": the insight has no slug");
+            }
             checkSlugMatchesFile(loaded.file(), insight.slug(), problems);
             if (insight.slug() != null && loadedInsights.putIfAbsent(insight.slug(), insight) != null) {
                 problems.add(loaded.file() + ": the slug " + insight.slug() + " is already used by another insight");
@@ -113,13 +118,16 @@ public class EditorialCatalog {
         }
 
         this.insights = sortedByDate(loadedInsights);
-        this.paths = sortedBySlug(loadedPaths);
+        this.paths = sortedByTopic(loadedPaths, loadedInsights);
         this.startHere = List.copyOf(picks);
     }
 
     // ---- reading ---------------------------------------------------------------------------
 
-    /** Every path, by slug. */
+    /**
+     * Every path, grouped by topic in the order the topics are declared (see {@link Topic}), and
+     * inside a topic from the oldest to the newest, by the year of its first stop, then by slug.
+     */
     public List<GuidedPath> paths() {
         return List.copyOf(paths.values());
     }
@@ -168,6 +176,31 @@ public class EditorialCatalog {
                     + words(insight.event()) + words(insight.after());
         }
         return (int) Math.max(1, Math.ceil(words / (double) WORDS_PER_MINUTE));
+    }
+
+    /** The year of the path's earliest stop: negative before the common era. Read, not written. */
+    public int startYear(GuidedPath path) {
+        return yearsOf(path, insights).min();
+    }
+
+    /** The year of the path's latest stop. */
+    public int endYear(GuidedPath path) {
+        return yearsOf(path, insights).max();
+    }
+
+    private record Years(int min, int max) {
+    }
+
+    /** The span of the stops' dates. Only meaningful once every stop is known to open a real insight. */
+    private static Years yearsOf(GuidedPath path, Map<String, Insight> insights) {
+        int min = Integer.MAX_VALUE;
+        int max = Integer.MIN_VALUE;
+        for (PathStop stop : path.stops()) {
+            int year = insights.get(stop.insight()).date().year();
+            min = Math.min(min, year);
+            max = Math.max(max, year);
+        }
+        return new Years(min, max);
     }
 
     private static long words(String text) {
@@ -334,6 +367,10 @@ public class EditorialCatalog {
         requireText(at, "title", path.title(), problems);
         requireText(at, "tagline", path.tagline(), problems);
         requireText(at, "intro", path.intro(), problems);
+        // A name that is not in the list is already refused when the file is read.
+        if (path.topic() == null) {
+            problems.add(at + "topic is missing: it must be one of " + Arrays.toString(Topic.values()));
+        }
         if (path.stops().size() < MIN_STOPS || path.stops().size() > MAX_STOPS) {
             problems.add(at + "needs " + MIN_STOPS + " to " + MAX_STOPS + " stops, has " + path.stops().size());
         }
@@ -362,8 +399,7 @@ public class EditorialCatalog {
             problems.add(at + "the cover needs a description (alt)");
         }
         // The file page is derived from the image, never written by hand, so the two cannot disagree.
-        return new GuidedPath(path.slug(), path.title(), path.tagline(), path.intro(),
-                new Cover(cover.imageUrl(), filePage.orElse(null), cover.alt()), path.stops());
+        return path.withCover(new Cover(cover.imageUrl(), filePage.orElse(null), cover.alt()));
     }
 
     private static void requireText(String at, String field, String value, List<String> problems) {
@@ -396,9 +432,14 @@ public class EditorialCatalog {
         return sorted;
     }
 
-    private static Map<String, GuidedPath> sortedBySlug(Map<String, GuidedPath> source) {
+    /** Topic as declared, then the year of the first stop, then slug: the order a reader browses in. */
+    private static Map<String, GuidedPath> sortedByTopic(Map<String, GuidedPath> source,
+            Map<String, Insight> insights) {
         Map<String, GuidedPath> sorted = new LinkedHashMap<>();
-        source.values().stream().sorted(Comparator.comparing(GuidedPath::slug))
+        source.values().stream()
+                .sorted(Comparator.comparingInt((GuidedPath p) -> p.topic().ordinal())
+                        .thenComparingInt(p -> yearsOf(p, insights).min())
+                        .thenComparing(GuidedPath::slug))
                 .forEach(path -> sorted.put(path.slug(), path));
         return sorted;
     }

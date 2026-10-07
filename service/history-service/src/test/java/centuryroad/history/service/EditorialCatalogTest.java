@@ -2,6 +2,7 @@ package centuryroad.history.service;
 
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
+import centuryroad.history.model.Topic;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -67,7 +68,8 @@ class EditorialCatalogTest {
 
     private void writePath(String slug, List<String> stops, Consumer<ObjectNode> edit) throws IOException {
         ObjectNode node = JSON.createObjectNode();
-        node.put("slug", slug).put("title", "Percorso").put("tagline", "Una frase.").put("intro", "Una introduzione.");
+        node.put("slug", slug).put("title", "Percorso").put("tagline", "Una frase.").put("intro", "Una introduzione.")
+                .put("topic", "ETA_MODERNA");
         ArrayNode array = node.putArray("stops");
         stops.forEach(s -> array.addObject().put("insight", s).put("narrative", "Perché " + s + "."));
         edit.accept(node);
@@ -242,6 +244,58 @@ class EditorialCatalogTest {
         writeInsight("a", 1900, 3, 5, node -> ((ObjectNode) node.get("sources").get(0)).put("url", "http://example.org"));
 
         assertRefused("insight a: every source needs a title, a publisher and an https url");
+    }
+
+    @Test
+    void aPathWithoutATopicIsRefused_andSoIsOneThatIsNotInTheList() throws IOException {
+        writePath("route", SLUGS, node -> node.remove("topic"));
+        assertRefused("path route: topic is missing");
+
+        writePath("route", SLUGS, node -> node.put("topic", "STORIA_A_CASO"));
+        assertRefused("route.json");
+        assertRefused("STORIA_A_CASO");
+    }
+
+    @Test
+    void anInsightWithNoSlugIsRefused_notSkippedInSilence() throws IOException {
+        writeInsight("a", 1900, 3, 5, node -> node.remove("slug"));
+
+        assertRefused("a.json: the insight has no slug");
+    }
+
+    @Test
+    void aPathKeepsItsTopic_whetherOrNotItHasACover() throws IOException {
+        assertThat(catalog().path("route").orElseThrow().topic()).isEqualTo(Topic.ETA_MODERNA);
+
+        writePath("route", SLUGS, node -> node.putObject("cover")
+                .put("imageUrl", "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg")
+                .put("alt", "La Terra."));
+        assertThat(catalog().path("route").orElseThrow().topic()).isEqualTo(Topic.ETA_MODERNA);
+    }
+
+    @Test
+    void aPathSpansTheYearsOfItsStops_negativeBeforeTheCommonEra() throws IOException {
+        // The stops are a..f in 1900, 1910, ... 1950: the order of the list does not matter, the dates do.
+        assertThat(catalog().startYear(catalog().path("route").orElseThrow())).isEqualTo(1900);
+        assertThat(catalog().endYear(catalog().path("route").orElseThrow())).isEqualTo(1950);
+
+        writeInsight("a", -44, 3, 15, node -> { });
+        assertThat(catalog().startYear(catalog().path("route").orElseThrow())).isEqualTo(-44);
+    }
+
+    @Test
+    void pathsAreGroupedByTopicAsDeclared_thenOldestFirst_thenBySlug() throws IOException {
+        // Declared order: MONDO_ANTICO < ... < ETA_MODERNA (the default here) < ... < SCIENZA.
+        writePath("late-science", SLUGS, node -> node.put("topic", "SCIENZA"));
+        writePath("ancient", SLUGS, node -> node.put("topic", "MONDO_ANTICO"));
+        // Same topic as "route" (first stop 1900): one with a stop in 1800 comes first, one that
+        // starts the same year comes after it by slug.
+        writeInsight("g", 1800, 1, 1, node -> { });
+        writePath("earlier", List.of("b", "c", "d", "e", "f", "g"), node -> { });
+        writePath("zzz-same-start", SLUGS, node -> { });
+
+        assertThat(catalog().paths()).extracting(GuidedPath::slug)
+                .containsExactly("ancient", "earlier", "route", "zzz-same-start", "late-science");
     }
 
     @Test

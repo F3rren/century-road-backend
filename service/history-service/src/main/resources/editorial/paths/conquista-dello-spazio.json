@@ -1,8 +1,9 @@
 {
   "slug": "conquista-dello-spazio",
   "title": "La conquista dello spazio",
-  "tagline": "Da uno Sputnik che fa «bip» alla Luna, alle stazioni, ai telescopi: nove tappe dalla corsa tra due superpotenze a uno spazio con molti protagonisti.",
+  "tagline": "Da uno Sputnik che fa «bip» alla Luna, alle stazioni, ai telescopi: dieci tappe dalla corsa tra due superpotenze a uno spazio con molti protagonisti.",
   "intro": "Il 4 ottobre 1957 una piccola sfera di metallo è diventata il primo oggetto costruito dall'uomo a girare attorno alla Terra. Da lì il percorso segue la corsa tra Stati Uniti e Unione Sovietica fino alla Luna, poi le stazioni abitate e i grandi strumenti scientifici, e arriva ai paesi che oggi, dall'Europa all'India, hanno costruito una propria strada verso lo spazio. Ogni tappa ti porta in un luogo della mappa: un cosmodromo, una zona di atterraggio, una rampa di lancio.",
+  "topic": "ESPLORAZIONI_E_SPAZIO",
   "cover": {
     "imageUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/97/The_Earth_seen_from_Apollo_17.jpg/960px-The_Earth_seen_from_Apollo_17.jpg",
     "alt": "La Terra fotografata dall'equipaggio dell'Apollo 17 nel dicembre 1972, nota come «Blue Marble»."

@@ -41,8 +41,10 @@
       "license": "CC BY-SA 4.0"
     }
   ],
-  "notes": [],
+  "notes": [
+    "La data è quella del calendario giuliano allora in uso: nel calendario gregoriano, introdotto nel 1582, sarebbe il 30 maggio."
+  ],
   "provenance": {
-    "author": "Century Road"
+    "author": "Century Road, bozza redatta con IA"
   }
 }
