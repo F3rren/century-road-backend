@@ -6,7 +6,7 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import java.util.List;
 
 /**
- * One "Perché conta" block, as written in src/main/resources/editorial/insights. Read from
+ * One "Perché conta" block, as written in src/main/resources/editorial/<topic>/insights. Read from
  * JSON, validated once at startup by EditorialCatalog, immutable afterwards.
  *
  * The three texts are the structure the product asks for: what led up to the event, what

@@ -921,10 +921,17 @@ and the on-this-day answer, a faithful copy of Wikipedia's, is left as it is.
 The content is JSON in `service/history-service/src/main/resources/editorial`:
 
 ```
-editorial/insights/<slug>.json   one per event
-editorial/paths/<slug>.json      one per path
-editorial/start-here.json        the "Inizia da qui" proposals (1 to 6)
+editorial/<topic>/insights/<slug>.json   one per event
+editorial/<topic>/paths/<slug>.json      one per path
+editorial/start-here.json                the "Inizia da qui" proposals (1 to 6)
 ```
+
+There is one folder per topic, named after it (`roma-repubblicana`, `medioevo`, `esplorazioni-e-spazio`...:
+the `Topic` constant in lowercase with hyphens), so what a folder holds is what its files tell. A path goes
+in the folder of its own topic. An insight goes in the folder of a topic of one of the paths that open it -
+the earliest topic, when two periods share it (Azio is under `roma-repubblicana`, not `roma-imperiale`) -
+and an insight no path opens only needs some topic folder. A file in the wrong folder stops the service at
+startup, naming it; a new topic is a new folder, created with its first path.
 
 The file name is the slug. Adding content is a pull request, reviewed like code, and a release.
 

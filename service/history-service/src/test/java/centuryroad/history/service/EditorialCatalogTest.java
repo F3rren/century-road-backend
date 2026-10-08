@@ -30,6 +30,8 @@ class EditorialCatalogTest {
 
     private static final ObjectMapper JSON = new ObjectMapper();
     private static final List<String> SLUGS = List.of("a", "b", "c", "d", "e", "f");
+    /** The folder of the topic every test path is about (ETA_MODERNA, see writePath). */
+    private static final String FOLDER = "eta-moderna";
 
     @TempDir
     Path root;
@@ -64,7 +66,7 @@ class EditorialCatalogTest {
                 .put("publisher", "Wikipedia");
         node.putObject("provenance").put("author", "Century Road");
         edit.accept(node);
-        write("insights/" + slug + ".json", node);
+        write(FOLDER + "/insights/" + slug + ".json", node);
     }
 
     private static void precision(ObjectNode insight, String precision) {
@@ -78,7 +80,16 @@ class EditorialCatalogTest {
         ArrayNode array = node.putArray("stops");
         stops.forEach(s -> array.addObject().put("insight", s).put("narrative", "Perché " + s + "."));
         edit.accept(node);
-        write("paths/" + slug + ".json", node);
+        write(folderOfTopic(node) + "/paths/" + slug + ".json", node);
+    }
+
+    /**
+     * A path sits in the folder of its topic. A path with no topic, a number or a name that is not on the list
+     * (which the catalog refuses anyway) goes in the default folder, so the file is never written outside root.
+     */
+    private static String folderOfTopic(ObjectNode path) {
+        String folder = path.path("topic").asText("").toLowerCase().replace('_', '-');
+        return Topic.ofFolder(folder).isPresent() ? folder : FOLDER;
     }
 
     private void writeStartHere(String json) throws IOException {
@@ -183,9 +194,60 @@ class EditorialCatalogTest {
 
     @Test
     void aSlugThatIsNotTheFileNameIsRefused() throws IOException {
-        Files.move(root.resolve("insights/a.json"), root.resolve("insights/renamed.json"));
+        Files.move(root.resolve(FOLDER + "/insights/a.json"), root.resolve(FOLDER + "/insights/renamed.json"));
 
         assertRefused("the file must be called a.json");
+    }
+
+    // ---- one folder per topic --------------------------------------------------------------------
+
+    private void moveTo(String from, String to) throws IOException {
+        Files.createDirectories(root.resolve(to).getParent());
+        Files.move(root.resolve(from), root.resolve(to));
+    }
+
+    @Test
+    void aPathInTheFolderOfAnotherTopicIsRefused() throws IOException {
+        moveTo(FOLDER + "/paths/route.json", "medioevo/paths/route.json");
+
+        assertRefused("medioevo/route.json: the path is about ETA_MODERNA, so the file goes in the folder eta-moderna");
+    }
+
+    @Test
+    void anInsightInAFolderThatIsNotATopicIsRefused() throws IOException {
+        moveTo(FOLDER + "/insights/a.json", "varie/insights/a.json");
+
+        assertRefused("varie/a.json: varie is not a topic folder");
+    }
+
+    @Test
+    void anInsightInTheFolderOfATopicNoneOfItsPathsIsAboutIsRefused() throws IOException {
+        moveTo(FOLDER + "/insights/a.json", "medioevo/insights/a.json");
+
+        assertRefused("medioevo/a.json: the insight is opened by paths about [eta-moderna]");
+    }
+
+    @Test
+    void anInsightSharedByPathsOfTwoTopicsMayLiveWithEither() throws IOException {
+        // The same six stops again, in a path about another period (which sits in its own folder): "a"
+        // stays in its first folder and "b" moves to the second - each is opened by a path of the folder it is in.
+        writePath("other", SLUGS, node -> node.put("topic", "MEDIOEVO"));
+        moveTo(FOLDER + "/insights/b.json", "medioevo/insights/b.json");
+
+        EditorialCatalog catalog = catalog();
+
+        assertThat(catalog.insight("a")).isPresent();
+        assertThat(catalog.insight("b")).isPresent();
+        assertThat(catalog.pathsContaining("b")).hasSize(2);
+    }
+
+    @Test
+    void theSameSlugInTwoFoldersIsRefused() throws IOException {
+        writePath("other", SLUGS, node -> node.put("topic", "MEDIOEVO"));
+        moveTo(FOLDER + "/insights/a.json", "medioevo/insights/a.json");
+        writeInsight("a", 1900, 3, 5, node -> { });
+
+        assertRefused("the slug a is already used by another insight");
     }
 
     @Test

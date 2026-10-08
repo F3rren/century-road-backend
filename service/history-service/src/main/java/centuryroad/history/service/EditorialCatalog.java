@@ -29,12 +29,14 @@ import java.time.ZoneOffset;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
 import java.util.Set;
+import java.util.TreeSet;
 import java.util.regex.Pattern;
 
 /**
@@ -42,6 +44,12 @@ import java.util.regex.Pattern;
  * proposals. It lives as JSON in src/main/resources/editorial, in the repository, next to
  * the code that serves it - reviewed in a pull request like everything else, with no editor
  * and no table to keep in step with it.
+ *
+ * One folder per topic, named after it (roma-repubblicana, medioevo...; see {@link Topic#folder()}),
+ * each with its paths in paths/ and its insights in insights/, so what a folder tells is what
+ * the files in it are about. A path sits in the folder of its own topic; an insight sits in the
+ * folder of a topic of one of the paths that open it (the earliest one, when it serves several).
+ * "Inizia da qui" is a single file at the root. A file in the wrong folder is a startup error.
  *
  * Everything is read and checked once, at startup, and a mistake stops the service with
  * every problem listed (a typo in a key, a stop that opens an insight that does not exist,
@@ -91,7 +99,8 @@ public class EditorialCatalog {
         List<String> problems = new ArrayList<>();
 
         Map<String, Insight> loadedInsights = new LinkedHashMap<>();
-        for (Loaded<Insight> loaded : load(resolver, mapper, root + "/insights/*.json", Insight.class, problems)) {
+        Map<String, String> insightFolders = new HashMap<>();
+        for (Loaded<Insight> loaded : load(resolver, mapper, root + "/*/insights/*.json", Insight.class, problems)) {
             Insight insight = loaded.value();
             // Without this, a file with no "slug" is skipped below and never checked at all.
             if (insight.slug() == null) {
@@ -99,19 +108,26 @@ public class EditorialCatalog {
             }
             checkSlugMatchesFile(loaded.file(), insight.slug(), problems);
             if (insight.slug() != null && loadedInsights.putIfAbsent(insight.slug(), insight) != null) {
-                problems.add(loaded.file() + ": the slug " + insight.slug() + " is already used by another insight");
+                problems.add(loaded.where() + ": the slug " + insight.slug() + " is already used by another insight");
+            } else if (insight.slug() != null) {
+                insightFolders.put(insight.slug(), loaded.folder());
             }
         }
         // Checked once all are in, because an insight's links point at the others.
         loadedInsights.values().forEach(insight -> checkInsight(insight, loadedInsights, problems));
 
         Map<String, GuidedPath> loadedPaths = new LinkedHashMap<>();
-        for (Loaded<GuidedPath> loaded : load(resolver, mapper, root + "/paths/*.json", GuidedPath.class, problems)) {
+        for (Loaded<GuidedPath> loaded : load(resolver, mapper, root + "/*/paths/*.json", GuidedPath.class, problems)) {
             GuidedPath path = checkPath(loaded.file(), loaded.value(), loadedInsights, problems);
+            if (path.topic() != null && !path.topic().folder().equals(loaded.folder())) {
+                problems.add(loaded.where() + ": the path is about " + path.topic() + ", so the file goes in the folder "
+                        + path.topic().folder());
+            }
             if (path.slug() != null && loadedPaths.putIfAbsent(path.slug(), path) != null) {
-                problems.add(loaded.file() + ": the slug " + path.slug() + " is already used by another path");
+                problems.add(loaded.where() + ": the slug " + path.slug() + " is already used by another path");
             }
         }
+        checkInsightFolders(insightFolders, loadedPaths, problems);
 
         List<StartHerePick> picks = loadStartHere(resolver, mapper, root + "/start-here.json", loadedInsights,
                 loadedPaths, problems);
@@ -216,7 +232,23 @@ public class EditorialCatalog {
 
     // ---- loading ---------------------------------------------------------------------------
 
-    private record Loaded<T>(String file, T value) {
+    /** A file read: its name, the topic folder it was found in, and what it holds. */
+    private record Loaded<T>(String file, String folder, T value) {
+
+        /** Where to look for it, for a message: the folder and the name. */
+        String where() {
+            return folder + "/" + file;
+        }
+    }
+
+    /** The topic folder of a file found by "editorial/&#42;/insights/&#42;.json": two levels up. */
+    private static String folderOf(Resource resource) {
+        try {
+            String[] parts = resource.getURL().getPath().split("/");
+            return parts.length >= 3 ? parts[parts.length - 3] : "";
+        } catch (IOException e) {
+            return "";
+        }
     }
 
     private static <T> List<Loaded<T>> load(ResourcePatternResolver resolver, JsonMapper mapper, String pattern,
@@ -229,7 +261,10 @@ public class EditorialCatalog {
             problems.add(pattern + ": cannot be listed (" + e.getMessage() + ")");
             return loaded;
         }
-        Arrays.sort(resources, Comparator.comparing(r -> String.valueOf(r.getFilename())));
+        // By name, then by place: the same name in two folders is a mistake that is reported, and always
+        // in the same order.
+        Arrays.sort(resources, Comparator.comparing((Resource r) -> String.valueOf(r.getFilename()))
+                .thenComparing(EditorialCatalog::folderOf));
         for (Resource resource : resources) {
             String file = String.valueOf(resource.getFilename());
             try (InputStream in = resource.getInputStream()) {
@@ -237,7 +272,7 @@ public class EditorialCatalog {
                 if (value == null) {
                     problems.add(file + ": is empty");
                 } else {
-                    loaded.add(new Loaded<>(file, value));
+                    loaded.add(new Loaded<>(file, folderOf(resource), value));
                 }
             } catch (IOException e) {
                 problems.add(file + ": cannot be read (" + e.getMessage() + ")");
@@ -286,6 +321,37 @@ public class EditorialCatalog {
     }
 
     // ---- checking --------------------------------------------------------------------------
+
+    /**
+     * An insight is filed under a topic folder, and under one of the topics of the paths that open
+     * it - an insight shared by two periods lives with the earlier one, but never in a folder that
+     * none of its paths is about. One that no path opens only needs a topic folder.
+     */
+    private static void checkInsightFolders(Map<String, String> insightFolders, Map<String, GuidedPath> paths,
+            List<String> problems) {
+        Map<String, Set<String>> foldersOfPaths = new HashMap<>();
+        for (GuidedPath path : paths.values()) {
+            if (path.topic() == null) {
+                continue;
+            }
+            for (PathStop stop : path.stops()) {
+                foldersOfPaths.computeIfAbsent(stop.insight(), slug -> new TreeSet<>()).add(path.topic().folder());
+            }
+        }
+        insightFolders.forEach((slug, folder) -> {
+            String where = folder + "/" + slug + ".json";
+            if (Topic.ofFolder(folder).isEmpty()) {
+                problems.add(where + ": " + folder + " is not a topic folder, the insight goes in one of "
+                        + Arrays.stream(Topic.values()).map(Topic::folder).toList());
+                return;
+            }
+            Set<String> wanted = foldersOfPaths.get(slug);
+            if (wanted != null && !wanted.contains(folder)) {
+                problems.add(where + ": the insight is opened by paths about " + wanted + ", so the file goes in the "
+                        + "folder of one of them");
+            }
+        });
+    }
 
     private static void checkSlugMatchesFile(String file, String slug, List<String> problems) {
         if (slug != null && !file.equals(slug + ".json")) {
