@@ -8,11 +8,12 @@
     "day": 5
   },
   "place": {
-    "name": "Reggia di Versailles, Francia",
+    "name": "Hôtel des Menus-Plaisirs, Versailles, Francia",
     "lat": 48.8049,
     "lon": 2.1204,
     "countryCode": "FR",
-    "approximate": false
+    "approximate": true,
+    "note": "L'apertura del 5 maggio 1789 avvenne nella sala predisposta presso l'Hôtel des Menus-Plaisirs, sull'avenue de Paris. Le coordinate sono un riferimento approssimativo a Versailles."
   },
   "before": "Alla fine degli anni Ottanta del Settecento lo Stato francese era in gravi difficoltà finanziarie, anche per le spese di guerra e per il debito accumulato. Le riforme proposte dai ministri del re incontravano l'opposizione dei privilegiati. La società era divisa in tre ordini, clero, nobiltà e terzo stato, e il re si decise a convocare gli Stati generali, che non si riunivano dal 1614, per cercare un accordo sulle nuove imposte.",
   "event": "Il 5 maggio 1789 i deputati, più di mille, si riunirono a Versailles per la cerimonia di apertura. Fin dai primi giorni la discussione si bloccò su una questione di procedura: votare per ordine, dove clero e nobiltà potevano superare il terzo stato, o per testa, dove i deputati del terzo stato, numerosi quanto gli altri due ordini insieme, avrebbero pesato di più.",

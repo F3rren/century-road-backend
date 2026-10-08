@@ -1,7 +1,7 @@
 {
   "slug": "snow-colera-1854",
   "title": "John Snow e la pompa di Broad Street",
-  "summary": "Nel settembre 1854, durante un'epidemia di colera a Londra, il medico John Snow mappa i casi intorno a una pompa dell'acqua e ne fa rimuovere la maniglia: nasce l'epidemiologia moderna.",
+  "summary": "Nel settembre 1854, durante un'epidemia di colera a Londra, John Snow mette in relazione molti casi con l'acqua della pompa di Broad Street e ne ottiene la chiusura. La sua indagine diventa un caso emblematico dell'epidemiologia.",
   "date": {
     "year": 1854,
     "month": 9,
@@ -15,8 +15,8 @@
     "approximate": false
   },
   "before": "Il colera arrivò in Europa dall'India negli anni Trenta dell'Ottocento e uccise decine di migliaia di persone. Si pensava che si trasmettesse attraverso i «miasmi», l'aria cattiva. Snow, medico londinese, sosteneva invece che si propagasse attraverso l'acqua contaminata.",
-  "event": "Alla fine di agosto 1854 un'epidemia colpì il quartiere di Soho. Snow, interrogando gli abitanti e segnando i casi su una mappa, notò che si addensavano intorno alla pompa di Broad Street. L'8 settembre ottenne dalle autorità locali che la maniglia della pompa fosse tolta.",
-  "after": "L'epidemia era già in calo quando la pompa fu chiusa, e il solo gesto non basta a dimostrare la teoria; tuttavia il metodo di Snow, raccogliere i casi e metterli in relazione con un luogo e una causa possibile, è considerato un modello dell'epidemiologia. Negli anni Ottanta Robert Koch identificò il batterio del colera.",
+  "event": "Alla fine di agosto 1854 un'epidemia colpì il quartiere di Soho. Snow indagò sui decessi e sulle abitudini di approvvigionamento dell'acqua, interrogando gli abitanti e raccogliendo gli indirizzi dei casi. Mise così in relazione l'epidemia con la pompa di Broad Street. L'8 settembre fu rimossa la maniglia. La celebre mappa dell'indagine fu elaborata e presentata successivamente, alla fine del 1854, e pubblicata nel 1855: non va descritta come lo strumento che, da solo, portò alla chiusura.",
+  "after": "L'epidemia era già in calo quando la pompa fu chiusa, e il solo gesto non basta a dimostrare la teoria; tuttavia il metodo di Snow, raccogliere i casi e metterli in relazione con un luogo e una causa possibile, è considerato un modello dell'epidemiologia. Filippo Pacini aveva già descritto il vibrione del colera nel 1854, senza ottenere allora un riconoscimento ampio. Le ricerche di Robert Koch del 1883-1884 contribuirono alla successiva affermazione della spiegazione batterica.",
   "links": [
     {
       "slug": "jenner-vaccino-1796",

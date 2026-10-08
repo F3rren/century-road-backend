@@ -8,11 +8,12 @@
     "day": 19
   },
   "place": {
-    "name": "Cosmodromo di Baikonur, Kazakistan",
-    "lat": 45.97,
-    "lon": 63.31,
+    "name": "Cosmodromo di Baikonur, sito 81, Kazakistan",
+    "lat": 46.071,
+    "lon": 62.985,
     "countryCode": "KZ",
-    "approximate": false
+    "approximate": true,
+    "note": "Saljut 1 fu lanciata dal sito 81 di Baikonur. Il punto rappresenta il complesso di lancio, non una misurazione esatta della singola rampa."
   },
   "before": "I primi voli con equipaggio duravano da pochi minuti a qualche giorno. Per studiare gli effetti di una permanenza lunga e per fare esperimenti servivano ambienti più grandi di una capsula. Dopo lo sbarco americano sulla Luna del 1969, l'Unione Sovietica diede grande priorità alle stazioni orbitali.",
   "event": "Saljut 1 fu lanciata il 19 aprile 1971 da Baikonur con un razzo Proton. Era un cilindro di circa 18 tonnellate e lungo una ventina di metri. Il primo equipaggio, quello della Sojuz 10, non riuscì a entrare nella stazione per un problema di aggancio. Il secondo, quello della Sojuz 11, vi rimase 23 giorni, a giugno del 1971.",
