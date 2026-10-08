@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-legnica-1241",
+  "title": "La battaglia di Legnica",
+  "summary": "Il 9 aprile 1241 i Mongoli sconfiggono a Legnickie Pole, in Slesia, l'esercito di Enrico II il Pio, che muore; due giorni dopo vincono gli Ungheresi a Mohi. Per l'articolo italiano è il punto più avanzato raggiunto dai Mongoli in Europa.",
+  "date": {
+    "year": 1241,
+    "month": 4,
+    "day": 9
+  },
+  "place": {
+    "name": "Legnickie Pole, presso Legnica, Polonia",
+    "lat": 51.16,
+    "lon": 16.24,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Il punto indica Legnickie Pole, circa 10 km a sud-est di Legnica, dove l'articolo inglese colloca la battaglia; le coordinate sono stimate."
+  },
+  "before": "I Mongoli consideravano soggetti i Cumani, che erano fuggiti in Ungheria. Quando il re Béla IV rifiutò l'ultimatum di Batu Khan, Subutai preparò l'invasione dell'Ungheria: Batu e Subutai guidavano due eserciti, mentre un terzo, con Baidar, Orda e Kadan, entrò in Polonia come diversivo, per tenere impegnate le forze del nord. Orda devastò la Polonia settentrionale; Baidar e Kadan saccheggiarono Sandomierz, vinsero a Tursko e Chmielnik, bruciarono Cracovia e tentarono invano di prendere Breslavia. Sapendo che re Venceslao I di Boemia, con un esercito più forte di quello di Enrico, era a due giorni di distanza, si volsero a intercettare Enrico.",
+  "event": "Enrico II il Pio, duca di Slesia, guidava Polacchi, Moravi e minatori bavaresi, con pochi cavalieri degli ordini militari, tra cui alcuni Templari. I Mongoli usarono le loro tattiche consuete: finti attacchi e finte ritirate, comunicazioni a bandiere e una cortina di fumo. Quando la cavalleria alleata inseguì la finta fuga dell'avanguardia, si staccò dalla fanteria e fu battuta un reparto alla volta; per l'articolo inglese Mieszko di Opole, confuso da un grido, ordinò la ritirata, e Enrico dovette impegnare le sue riserve. Per l'articolo italiano Enrico e Boleslav di Moravia furono uccisi.",
+  "after": "Venceslao di Boemia si ritirò e fu raggiunto dall'avanguardia mongola a Kłodzko: per l'articolo inglese la cavalleria boema mise in rotta i Mongoli, per quello italiano Venceslao fu travolto, ma la cavalleria boema bloccò l'avanzata del grosso dell'esercito mongolo. Baidar e Kadan, che avevano il compito di fare da diversivo, evitarono l'esercito boemo e si diressero a sud per unirsi a Batu e Subutai, che avevano sconfitto gli Ungheresi a Mohi. Per l'articolo italiano nel 1242 i Mongoli, saputa la morte di Ögedei, tornarono a est per eleggere il nuovo gran khan. Altre incursioni in Polonia ci furono nel 1259-1260, con successo, e nel 1287, senza.",
+  "links": [
+    {
+      "slug": "battaglia-del-kalka-1223",
+      "reason": "Diciotto anni prima i Mongoli avevano sconfitto i principi russi sul fiume Kalka."
+    },
+    {
+      "slug": "sacco-di-baghdad-1258",
+      "reason": "Diciassette anni dopo i Mongoli prendono Baghdad."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Legnica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Legnica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Legnica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Legnica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 9 aprile è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Dettagli e cifre sono incerti: per l'articolo inglese le fonti sono lacunose e talvolta contraddittorie; gli eserciti sono stimati tra 2000 e 25 000 uomini per gli alleati e tra 10 000 e 25 000 per i Mongoli. Anche l'identità di uno dei capi mongoli, Kadan, fu spesso confusa dai cronisti con quella di Kaidu."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

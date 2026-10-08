@@ -1,0 +1,51 @@
+{
+  "slug": "assedio-di-acri-1191",
+  "title": "Acri si arrende ai crociati di Riccardo e Filippo",
+  "summary": "Il 12 luglio 1191, dopo quasi due anni di assedio, la guarnigione musulmana di Acri si arrende ai crociati di Riccardo Cuor di Leone e di Filippo II: è una vittoria chiave della terza crociata, ma a caro prezzo.",
+  "date": {
+    "year": 1191,
+    "month": 7,
+    "day": 12
+  },
+  "place": {
+    "name": "Acri, Israele",
+    "lat": 32.9234,
+    "lon": 35.069,
+    "countryCode": "IL",
+    "approximate": false
+  },
+  "before": "Dopo Hattin, Saladino aveva preso Acri nel luglio 1187. Corrado del Monferrato aveva difeso Tiro e rifiutò due volte di far entrare Guido di Lusignano, rilasciato nel 1188. Guido, che aveva bisogno di una base per un contrattacco, si diresse allora verso Acri, 50 km a sud, e ne cominciò l'assedio alla fine di agosto del 1189 con 7000-9000 fanti e 400-700 cavalieri, secondo l'articolo inglese. Il primo assalto alle mura fallì, e Guido si accampò fuori dalla città; nei mesi seguenti arrivarono dal mare rinforzi di molte nazioni, e Saladino marciò verso Acri con il suo esercito.",
+  "event": "Ogni volta che le macchine d'assedio aprivano una breccia, l'esercito di Saladino attaccava, dando agli assediati il tempo di ripararla. Filippo II arrivò il 20 aprile 1191 e Riccardo I l'8 giugno, dopo avere conquistato Cipro. Il 4 luglio la città offrì la resa, ma Riccardo ne rifiutò le condizioni; l'11 luglio ci fu l'ultima battaglia e il 12 luglio, offerti nuovi termini, i crociati li accettarono. Corrado del Monferrato, richiamato da Tiro, fece da negoziatore. Saladino non partecipò ai negoziati ma accettò la resa. I crociati entrarono in città e la guarnigione musulmana fu presa prigioniera.",
+  "after": "Il 20 agosto, ritenendo che Saladino avesse tardato troppo a pagare il riscatto, Riccardo fece uccidere 2700 prigionieri della guarnigione; Saladino rispose uccidendo i prigionieri cristiani che aveva catturato. Leopoldo d'Austria se ne andò dopo un litigio con Riccardo, e Filippo tornò in Francia il 31 luglio. Riccardo vinse a Arsuf il 7 settembre e prese Giaffa, ma non riuscì a riconquistare Gerusalemme; la terza crociata finì con un trattato con Saladino. Acri divenne la capitale del regno di Gerusalemme. Molti storici considerano la vittoria «di Pirro», per le perdite subite in due anni di assedio.",
+  "links": [
+    {
+      "slug": "battaglia-di-hattin-1187",
+      "reason": "Quattro anni prima la sconfitta di Hattin aveva portato Acri, come Gerusalemme, in mano a Saladino."
+    },
+    {
+      "slug": "caduta-di-acri-1291",
+      "reason": "Cento anni dopo, nel 1291, Acri cade in mano ai Mamelucchi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Acre (1189–1191) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Acre_(1189–1191)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di San Giovanni d'Acri (1189-1191) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_San_Giovanni_d'Acri_(1189-1191)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 12 luglio è il giorno dato da entrambi gli articoli per la fine dell'assedio, che per quello italiano cominciò il 28 agosto 1189. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre degli eserciti sono stime: per l'articolo italiano la guarnigione musulmana potrebbe essere stata il doppio dell'esercito di Guido."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

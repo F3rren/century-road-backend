@@ -1,0 +1,51 @@
+{
+  "slug": "fondazione-di-baghdad-762",
+  "title": "Al-Mansur fonda Baghdad",
+  "summary": "Nel 762 il califfo abbaside al-Mansur comincia a costruire Baghdad, la «Città della Pace», con la sua pianta circolare: diventerà la capitale del califfato e il centro commerciale e culturale dell'età d'oro islamica.",
+  "date": {
+    "year": 762,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Baghdad, Iraq",
+    "lat": 33.347,
+    "lon": 44.335,
+    "countryCode": "IQ",
+    "approximate": false
+  },
+  "before": "Al-Mansur, califfo abbaside, voleva una nuova capitale al posto di Harran come sede del governo califfale. Il luogo, sul Tigri, era quello di un piccolo villaggio già nominato in testi preislamici, a circa 30 chilometri da Ctesifonte, l'antica capitale dei Sasanidi, in mano musulmana dal 637. Al-Mansur lo trovò perfetto: si dice che dicesse «questa è la città che devo fondare, dove devo vivere e dove regneranno poi i miei discendenti».",
+  "event": "Secondo lo storico Ya'qubi i piani erano pronti, ma la costruzione cominciò solo il 2 agosto 762, sotto la direzione di quattro architetti; le cronache arabe parlano di 100 000 operai e artigiani. Il palazzo della Porta d'Oro e la moschea principale furono, a quanto pare, finiti entro il 763, e al-Mansur poté trasferirvisi; il resto della «Città rotonda» fu completato nel 766. Era progettata come un cerchio di circa un chilometro di raggio, con quattro porte (le fonti non concordano sulle dimensioni della città) e al centro il palazzo califfale e la moschea. Per l'articolo inglese il disegno riflette il modello urbanistico persiano dei Sasanidi.",
+  "after": "Baghdad eclissò Ctesifonte, che fu presto abbandonata. Nella Città rotonda sorgeva la Casa della Saggezza, la celebre biblioteca. Della città di al-Mansur non è sopravvissuta alcuna struttura: la conosciamo solo da fonti letterarie. Alcune generazioni dopo la fondazione Baghdad divenne il centro commerciale e culturale dell'età d'oro islamica. Le sue mura furono violate dai Mongoli nel febbraio del 1258.",
+  "links": [
+    {
+      "slug": "battaglia-del-grande-zab-750",
+      "reason": "Gli Abbasidi, saliti al potere dopo il Grande Zab, fanno di Baghdad la loro capitale."
+    },
+    {
+      "slug": "sacco-di-baghdad-1258",
+      "reason": "Nel 1258 i Mongoli violano le mura della città di al-Mansur."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Round City of Baghdad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Round_City_of_Baghdad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Baghdad - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Baghdad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sulla durata dei lavori: quello inglese dice dal 762 al 766, quello italiano che la città fu fondata tra il 762 e il 767. Il 2 agosto 762 è riferito da Ya'qubi, citato dall'articolo inglese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

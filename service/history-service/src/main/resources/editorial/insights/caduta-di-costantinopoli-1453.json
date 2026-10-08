@@ -1,0 +1,55 @@
+{
+  "slug": "caduta-di-costantinopoli-1453",
+  "title": "La caduta di Costantinopoli",
+  "summary": "Il 29 maggio 1453, dopo 53 giorni di assedio, le truppe del sultano ottomano Maometto II conquistano Costantinopoli: cade l'Impero bizantino e la città diventa la capitale ottomana. Alcuni storici vi vedono la fine del Medioevo.",
+  "date": {
+    "year": 1453,
+    "month": 5,
+    "day": 29
+  },
+  "place": {
+    "name": "Costantinopoli (Istanbul), Turchia",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "Costantinopoli, capitale imperiale dal 330, era stata conquistata una sola volta, nel 1204, dai crociati; i Bizantini l'avevano ripresa nel 1261. Tra il 1346 e il 1349 la peste nera ne uccise quasi metà degli abitanti, e nel 1450 l'impero era ridotto a poco più della città, a qualche isola e al Peloponneso. Maometto II salì al trono nel 1451, a 19 anni, e nel 1452 fece costruire la fortezza di Rumeli Hisarı sul Bosforo. L'imperatore Costantino XI chiese aiuto all'Occidente: l'unione tra le Chiese fu proclamata il 12 dicembre 1452 ma divise la città, e arrivarono solo pochi uomini, tra cui il genovese Giustiniani con 700 soldati.",
+  "event": "L'assedio cominciò il 6 aprile 1453. I grandi cannoni ottomani, tra cui quello progettato dall'ingegnere ungherese Urban, battevano le mura teodosiane, ma erano lenti e i Bizantini riparavano i danni. Il 22 aprile Maometto fece trascinare le sue navi su terra, oltre Galata, fino al Corno d'Oro, aggirando la catena. L'ultimo assalto cominciò poco dopo la mezzanotte del 29 maggio, con ondate successive; Giustiniani fu gravemente ferito, e il suo ritiro seminò il panico. Costantino resistette con i suoi, ma i giannizzeri entrarono in città. Si dice che Costantino sia morto combattendo nelle strade.",
+  "after": "Per consuetudine Maometto aveva promesso ai soldati tre giorni di saccheggio, ma per l'articolo inglese lo fece cessare già il primo giorno; in alcuni quartieri il saccheggio fu comunque molto esteso, e il 2 giugno il sultano trovò la città in gran parte deserta e semidistrutta. Santa Sofia fu trasformata in moschea, e Gennadio Scolario fu nominato patriarca. Costantinopoli divenne la capitale ottomana. La notizia sconvolse l'Europa: papa Pio II sostenne una crociata, Niccolò Cusano il dialogo. Per l'articolo inglese la caduta segnò la fine effettiva dell'Impero romano, iniziato intorno al 27 a.C., e per alcuni storici la fine del Medioevo; fu anche una svolta nella storia militare, perché le mura furono superate dalla fanteria con il sostegno dei cannoni.",
+  "links": [
+    {
+      "slug": "fondazione-di-costantinopoli-330",
+      "reason": "Fondata da Costantino nel 330, la città era stata capitale per undici secoli."
+    },
+    {
+      "slug": "sacco-di-costantinopoli-1204",
+      "reason": "Duecentoquarantanove anni prima la quarta crociata aveva saccheggiato Costantinopoli."
+    },
+    {
+      "slug": "ottaviano-diventa-augusto-27-ac",
+      "reason": "Con la caduta della città finiva lo Stato che, per l'articolo inglese, era cominciato intorno al 27 a.C."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Constantinople - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Constantinople",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Costantinopoli (1453) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Costantinopoli_(1453)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 29 maggio è il giorno della caduta dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Il destino di Costantino XI è incerto: per l'articolo inglese la tradizione lo dà morto nella battaglia nelle strade, mentre il veneziano Niccolò Barbaro scrisse che si impiccò. Le cifre degli eserciti variano: l'articolo italiano parla di 50 000-80 000 soldati ottomani. Per la data d'inizio dell'assedio, il 6 aprile, l'articolo italiano nel corpo del testo dà invece il 2 aprile, giorno in cui per l'articolo inglese l'esercito ottomano si accampò sotto le mura."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

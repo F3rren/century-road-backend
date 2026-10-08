@@ -1,0 +1,52 @@
+{
+  "slug": "domesday-book-1086",
+  "title": "Il Domesday Book",
+  "summary": "Nel 1086, per volontà di Guglielmo il Conquistatore, si conclude il grande censimento dell'Inghilterra raccolto nel Domesday Book, un registro dei beni di ogni proprietario terriero e del loro valore.",
+  "date": {
+    "year": 1086,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Winchester, Inghilterra",
+    "lat": 51.0632,
+    "lon": -1.308,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "Il punto indica Winchester, dove il libro fu conservato nel tesoro reale; l'indagine riguardò la maggior parte dell'Inghilterra."
+  },
+  "before": "Nel Natale del 1085, a Gloucester, Guglielmo il Conquistatore ebbe profonde conversazioni con i suoi consiglieri e mandò uomini in ogni contea, per sapere quanto e che cosa possedesse ogni proprietario terriero e quale ne fosse il valore (Cronaca anglosassone). Per l'articolo inglese, dopo la conquista e la confisca delle terre il re aveva bisogno di riaffermare i diritti della Corona, che i suoi seguaci normanni tendevano a eludere; lo scopo principale era registrarne i diritti fiscali.",
+  "event": "Funzionari reali visitarono la maggior parte delle contee e tennero inchieste pubbliche, probabilmente nell'assemblea della contea, con i rappresentanti di ogni villaggio e i signori locali. Il risultato per ogni centena era giurato da dodici abitanti, metà inglesi e metà normanni. I dati furono poi riordinati per signoria, sotto i nomi dei proprietari. Il libro, in latino medievale molto abbreviato, comprende due opere: il Great Domesday, che sembra copiato da una sola persona su pergamena, e il Little Domesday, più dettagliato e relativo a Norfolk, Suffolk ed Essex, per il quale sembrano essersi alternati sei scribi. L'articolo italiano conta 13 418 località.",
+  "after": "Il Dialogus de Scaccario, scritto intorno al 1179, spiega che il libro fu chiamato Domesday perché le sue decisioni erano inappellabili, come quelle del Giudizio universale. Fu conservato a lungo nel tesoro reale a Winchester, poi a Westminster; oggi è agli Archivi nazionali di Kew. Gli storici lo considerano una fonte preziosa, soprattutto per l'economia, anche se contiene errori, omissioni e ambiguità: per l'articolo inglese mancano gran parte delle contee più settentrionali, e per Londra e Winchester fu lasciato spazio ma non fu mai scritto nulla. In Gran Bretagna un'indagine di simile ampiezza non fu tentata di nuovo fino al 1873.",
+  "links": [
+    {
+      "slug": "battaglia-di-hastings-1066",
+      "reason": "Vent'anni prima la vittoria di Hastings aveva dato a Guglielmo il controllo dell'Inghilterra."
+    },
+    {
+      "slug": "magna-carta-1215",
+      "reason": "Nel 1215 la Magna Carta pone limiti ai pagamenti feudali dovuti alla Corona."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Domesday Book - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Domesday_Book",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Domesday Book - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Domesday_Book",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno è quello indicato nel colophon del libro per il completamento dell'indagine. Non si sa quando il libro fu compilato: per l'articolo inglese una ricerca recente indica che potrebbe essere stato completato tra il 1098 e il 1114, per quello italiano la compilazione potrebbe essere stata una fase distinta dall'indagine, completata, se non concepita, da Guglielmo II. Per questo la data è data solo all'anno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

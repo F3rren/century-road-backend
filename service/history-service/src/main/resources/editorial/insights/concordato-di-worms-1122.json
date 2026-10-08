@@ -1,0 +1,51 @@
+{
+  "slug": "concordato-di-worms-1122",
+  "title": "Il concordato di Worms",
+  "summary": "Il 23 settembre 1122 a Worms i delegati di papa Callisto II e dell'imperatore Enrico V sottoscrivono il concordato che pone fine alla lotta per le investiture: l'imperatore rinuncia a investire vescovi e abbati con anello e pastorale.",
+  "date": {
+    "year": 1122,
+    "month": 9,
+    "day": 23
+  },
+  "place": {
+    "name": "Worms, Germania",
+    "lat": 49.6341,
+    "lon": 8.3507,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "La lotta per le investiture, tra l'imperatore e il papato sul diritto di nominare vescovi e abbati, era cominciata, per l'articolo italiano, nel 1073 con Gregorio VII, e continuò dopo la sua morte e l'abdicazione di Enrico IV. Suo figlio Enrico V cercò un compromesso: nel 1111 concordò con Pasquale II un accordo a Sutri, ma, non attuato, fece imprigionare il papa; Pasquale, costretto, concesse l'incoronazione e poi rinnegò le promesse. Dal 1119 Callisto II riprese i negoziati; il vertice di Mouzon fallì e Enrico fu scomunicato. Nel 1121 una parte dei nobili tedeschi, guidata dall'arcivescovo Adalberto di Magonza, lo spinse a cercare la pace; nel febbraio 1122 Callisto gli scrisse in tono conciliante.",
+  "event": "Il 23 settembre 1122, fuori dalle mura di Worms, i delegati del papa e dell'imperatore firmarono i documenti. Enrico rinunciò a investire vescovi e abbati con anello e pastorale e aprì le nomine alle elezioni canoniche. Il papa accettò la presenza dell'imperatore o dei suoi funzionari alle elezioni e il suo diritto di intervenire nei casi contestati; l'imperatore poteva investire gli eletti, con uno scettro, dei beni legati alla carica. In Germania questa cerimonia precedeva la consacrazione; in Italia e in Borgogna la seguiva, entro sei mesi. La delegazione papale era guidata dal cardinale Lamberto Scannabecchi, il futuro Onorio II.",
+  "after": "Il primo Concilio lateranense, che si aprì il 18 marzo 1123, ratificò il concordato; per l'articolo inglese vi erano quasi 300 vescovi e 600 abati. Le sue regole restarono quasi immutate fino allo scioglimento dell'impero, nel 1806. Enrico V morì nel 1125. Per l'articolo inglese il concordato pose fine al sistema della Chiesa imperiale degli Ottoni e dei Salii, e la maggior parte degli storici lo vede come la conclusione di cinquant'anni di scontro; discutono però quanto fosse decisivo, e per Karl Morrison la vittoria del papato fu «di Pirro», perché il re restò in possesso del campo.",
+  "links": [
+    {
+      "slug": "canossa-1077",
+      "reason": "Quarantacinque anni prima, a Canossa, Enrico IV aveva ottenuto l'assoluzione da Gregorio VII."
+    },
+    {
+      "slug": "ottone-i-incoronato-imperatore-962",
+      "reason": "Il concordato pose fine al sistema della Chiesa imperiale avviato dagli Ottoni, come Ottone I, incoronato nel 962."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Concordat of Worms - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Concordat_of_Worms",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Concordato di Worms - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Concordato_di_Worms",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 23 settembre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Gli storici discutono il significato del concordato: l'articolo inglese ricorda che ne discutono la portata (per Morrison la vittoria del papato fu «di Pirro») e che è incerto quanto Callisto II volesse davvero la pace."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

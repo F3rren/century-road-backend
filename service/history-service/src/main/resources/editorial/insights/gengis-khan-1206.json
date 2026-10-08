@@ -1,0 +1,53 @@
+{
+  "slug": "gengis-khan-1206",
+  "title": "Temüjin diventa Gengis Khan",
+  "summary": "Nel 1206 un grande kurultai dei capi mongoli riconosce Temüjin sovrano di tutte le tribù della steppa con il titolo di Gengis Khan: dopo quell'assemblea Gengis Khan riforma lo Stato e l'Impero mongolo prende forma.",
+  "date": {
+    "year": 1206,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Alto corso dell'Onon, Mongolia",
+    "lat": 48.8,
+    "lon": 108.7,
+    "countryCode": "MN",
+    "approximate": true,
+    "note": "Il punto indica la regione dell'alto Onon, in Mongolia. Gli articoli indicano luoghi diversi per l'assemblea: la sorgente dell'Onon per quello inglese, il Lago Blu per quello italiano."
+  },
+  "before": "Temüjin era nato verso il 1162 (l'anno è incerto). Con l'aiuto del suo alleato Toghrul, capo dei Kereit, e poi contro di lui, sconfisse via via i rivali: prima i Tayichiud, poi nel 1202 i Tatari e infine Toghrul stesso; nel maggio 1204, a Chakirmaut, sull'Altai, sconfisse i Naiman, il cui capo Tayang Khan fu ucciso. I Merkit furono decimati nello stesso anno, e Jamukha, ex fratello di sangue di Temüjin e suo rivale, fu tradito dai propri compagni e consegnato a Temüjin. Nel 1206 Temüjin era padrone di tutta la steppa mongola.",
+  "event": "Nel 1206 si riunì un grande kurultai, l'assemblea dei capi tribù, e Temüjin adottò formalmente il titolo di Gengis Khan, di cui gli studiosi discutono l'origine e il significato. Subito dopo avviò riforme per spezzare i legami tribali e sostituirli con la fedeltà al khan: l'esercito fu riorganizzato su base decimale, in unità di mille, cento e dieci uomini che includevano le famiglie, e i guerrieri delle tribù sconfitte furono dispersi in unità diverse. La guardia del khan, il keshig, passò da 1150 a 10 000 uomini. I comandanti furono scelti per merito: per l'articolo inglese Jelme e Subutai erano figli di fabbri (per quello italiano il padre di Subutai era un guardiano di bestiame).",
+  "after": "L'Impero mongolo, sotto Gengis Khan, arrivò dalla Cina settentrionale alla Persia nordorientale. Per l'articolo inglese Gengis si preparava da quell'anno a invadere la Cina dei Jin, per l'instabilità che aveva riscontrato nel loro Stato: li attaccò nel 1211. Morì nel 1227. La riforma militare si rivelò efficace: per l'articolo inglese, anche dopo la divisione dell'impero la frammentazione non avvenne lungo le linee tribali, e i discendenti di Gengis continuarono a regnare, in alcuni casi fino al Settecento.",
+  "links": [
+    {
+      "slug": "battaglia-del-kalka-1223",
+      "reason": "Diciassette anni dopo due generali di Gengis Khan, Jebe e Subutai, sconfiggono sul fiume Kalka i principi russi."
+    },
+    {
+      "slug": "sacco-di-baghdad-1258",
+      "reason": "Cinquantadue anni dopo il nipote di Gengis Khan, Hulegu, conquista Baghdad."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Genghis Khan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Genghis_Khan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Gengis Khan - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Gengis_Khan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli concordano sul 1206 per l'assemblea; non indicano il giorno. Per questo la data è data solo all'anno.",
+    "Gli articoli non concordano su quando Temüjin ricevette il titolo: per quello inglese lo adottò nel 1206; per quello italiano fu eletto Gengis Khan in un primo kurultai, di data dubbia tra il 1185 e il 1189 e più probabilmente intorno al 1200, e nel 1206 il kurultai riunito al completo lo elesse capo della nazione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

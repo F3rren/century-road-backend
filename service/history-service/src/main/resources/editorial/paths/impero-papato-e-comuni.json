@@ -1,0 +1,37 @@
+{
+  "slug": "impero-papato-e-comuni",
+  "title": "Impero, papato e comuni",
+  "tagline": "Da Ottone I alla pace di Costanza: l'impero rinasce con i re di Germania, si scontra con il papa per la nomina dei vescovi e deve riconoscere l'autonomia dei comuni italiani.",
+  "intro": "Il percorso segue il rapporto tra impero e papato dal X al XII secolo: la vittoria del Lechfeld, l'incoronazione imperiale di Ottone I, la rottura tra Roma e Costantinopoli, Canossa, il concordato di Worms e la guerra tra Federico Barbarossa e i comuni lombardi.\n\nMolte fonti sono cronache di parte, e i due articoli da cui sono tratti i testi non sempre concordano; dove accade, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "battaglia-del-lechfeld-955",
+      "narrative": "Si parte dal Lechfeld: nel 955 Ottone I sconfigge i Magiari presso Augusta."
+    },
+    {
+      "insight": "ottone-i-incoronato-imperatore-962",
+      "narrative": "Nel 962 papa Giovanni XII lo incorona imperatore a Roma."
+    },
+    {
+      "insight": "scisma-d-oriente-1054",
+      "narrative": "Nel 1054 le scomuniche reciproche separano Roma e Costantinopoli."
+    },
+    {
+      "insight": "canossa-1077",
+      "narrative": "Nel 1077 Enrico IV ottiene a Canossa l'assoluzione da Gregorio VII."
+    },
+    {
+      "insight": "concordato-di-worms-1122",
+      "narrative": "Nel 1122 il concordato di Worms chiude la lotta per le investiture."
+    },
+    {
+      "insight": "battaglia-di-legnano-1176",
+      "narrative": "Nel 1176 la Lega Lombarda sconfigge Federico Barbarossa a Legnano."
+    },
+    {
+      "insight": "pace-di-costanza-1183",
+      "narrative": "Nel 1183 la pace di Costanza riconosce l'autonomia dei comuni."
+    }
+  ]
+}

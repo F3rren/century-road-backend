@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-kulikovo-1380",
+  "title": "La battaglia di Kulikovo",
+  "summary": "L'8 settembre 1380 il gran principe di Mosca Dmitrij sconfigge sul campo di Kulikovo, presso il Don, le forze di Mamai dell'Orda d'Oro: non pone fine al dominio mongolo, ma è tradizionalmente il punto di svolta dopo cui l'influenza mongola cala e Mosca cresce.",
+  "date": {
+    "year": 1380,
+    "month": 9,
+    "day": 8
+  },
+  "place": {
+    "name": "Campo di Kulikovo, presso il Don, Russia",
+    "lat": 53.65,
+    "lon": 38.68,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Il punto indica la zona di Kulikovo Field, presso la foce del fiume Nepryadva; per l'articolo inglese le fonti medievali non descrivono con precisione il luogo, e una localizzazione dei ricercatori è stata criticata."
+  },
+  "before": "Dopo l'invasione mongola del Duecento i principati russi erano vassalli dell'Orda d'Oro. Dal 1359, con la morte del khan Berdi Beg, l'Orda era in crisi; Mamai, che non discendeva da Gengis Khan, aveva preso il potere nella parte occidentale. Il principato di Mosca cresceva e il conflitto aperto tra Dmitrij e Mamai cominciò nel 1374; nel 1378 le truppe di Dmitrij vinsero alla Vozha. Nel 1380 Mamai si alleò con Jogaila di Lituania, mentre Oleg di Rjazan' era dalla sua parte, anche se talvolta la cosa è contestata. Dmitrij radunò l'esercito a Kolomna, rifiutò di aumentare il tributo e il 6 settembre arrivò sul Don.",
+  "event": "La mattina dell'8 settembre, nella nebbia, l'esercito russo attraversò il Don, tagliandosi la ritirata. La battaglia si aprì con un duello tra due campioni, Aleksandr Peresvet e Temir-Murza, che si uccisero a vicenda. Dmitrij scambiò mantello ed elmo con il boiardo Brenok per combattere senza essere riconosciuto. La mischia durò a lungo e i Tatari cominciarono a prevalere, ma il reggimento di imboscata, nascosto in un querceto, contrattaccò sul fianco e l'Orda si ruppe; i Russi la inseguirono per oltre 50 km. Le fonti non concordano sul ruolo di Dmitrij: per una fu ferito e ritrovato svenuto, per un'altra combatté in prima linea senza un graffio. Le fonti sono scarse: il racconto dettagliato viene da un testo del Cinquecento.",
+  "after": "Jogaila tornò indietro, e Mamai fuggì a Caffa, in Crimea, dove fu ucciso; l'Orda fu riunita da Tokhtamysh. Dmitrij fu detto «Donskoj», «del Don», ma non si rese indipendente: nel 1382 Tokhtamysh bruciò Mosca. Per l'articolo inglese, però, Kulikovo fu un primo segno del declino mongolo: nel secolo seguente Mosca rafforzò il controllo sugli altri principati, e il vassallaggio russo all'Orda terminò ufficialmente nel 1480, dopo il grande scontro sul fiume Ugra.",
+  "links": [
+    {
+      "slug": "gengis-khan-1206",
+      "reason": "Il dominio mongolo che qui comincia a incrinarsi veniva dall'impero fondato da Gengis Khan nel 1206."
+    },
+    {
+      "slug": "battaglia-del-kalka-1223",
+      "reason": "Centocinquantasette anni prima i Mongoli avevano sconfitto per la prima volta i principi russi sul Kalka."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Kulikovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kulikovo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Kulikovo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Kulikovo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'8 settembre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre antiche non sono attendibili: l'articolo inglese ricorda che le cronache parlano di centinaia di migliaia di uomini, mentre le stime degli storici sono scese col tempo da 100 000-150 000 (1881) a un massimo di 36 000 (1966) e a 6000-7000 (2014); l'articolo italiano riporta stime di circa 80 000 Russi e 125 000 Tatari."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "pace-di-costanza-1183",
+  "title": "La pace di Costanza",
+  "summary": "Il 25 giugno 1183 a Costanza l'imperatore Federico Barbarossa e il figlio Enrico VI riconoscono la Lega Lombarda e concedono ai comuni dell'Italia settentrionale ampia autonomia, in cambio del giuramento di fedeltà.",
+  "date": {
+    "year": 1183,
+    "month": 6,
+    "day": 25
+  },
+  "place": {
+    "name": "Costanza, Germania",
+    "lat": 47.6633,
+    "lon": 9.1753,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "La pace di Venezia del 1177 aveva imposto una tregua di sei anni tra Federico e la Lega Lombarda. Con la scadenza vicina, all'inizio del 1183 cominciarono nuovi negoziati, con proposte e controproposte, un accordo a parte sullo status di Alessandria e un'intesa preliminare a Piacenza.",
+  "event": "La pace fu emanata come privilegio imperiale, perché formalmente l'imperatore non poteva firmare un trattato con i suoi sudditi. Le città del regno d'Italia conservarono diritti di giurisdizione locale, la libertà di eleggere i propri consigli e di fare le proprie leggi, e quella di mantenere la Lega. In cambio giurarono fedeltà all'imperatore, e i consoli dovevano essere investiti da lui. I giudici imperiali giudicavano in appello le cause più rilevanti, e i comuni si impegnavano a pagare un tributo annuo di 2000 lire.",
+  "after": "Per l'articolo italiano fu un compromesso: Federico rinunciava al piano di dominio assoluto, mentre i comuni mantenevano larga autonomia. Per l'articolo inglese gli Hohenstaufen non tentarono di violare l'accordo durante i 67 anni del loro regno; dopo la morte di Enrico VI, nel 1197, le città smisero di rispettare gli obblighi, e la pace fu al centro del conflitto con Federico II tra il 1226 e il 1250. Per secoli fu celebrata come l'unico riconoscimento imperiale dell'autonomia di un gruppo ampio di città italiane.",
+  "links": [
+    {
+      "slug": "battaglia-di-legnano-1176",
+      "reason": "Sette anni prima la Lega Lombarda aveva sconfitto Federico a Legnano."
+    },
+    {
+      "slug": "magna-carta-1215",
+      "reason": "Trentadue anni dopo, in Inghilterra, la Magna Carta pone a sua volta limiti al potere del sovrano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peace of Constance - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peace_of_Constance",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pace di Costanza - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Pace_di_Costanza",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 25 giugno è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le somme variano: per l'articolo italiano i comuni pagavano 15 000 lire una tantum e 2000 lire l'anno (le 2000 lire annue sono anche nell'articolo inglese); nel testo del privilegio riportato dall'articolo inglese compaiono invece 2000 marchi d'argento all'anno, come alternativa all'inchiesta sulle regalie."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
