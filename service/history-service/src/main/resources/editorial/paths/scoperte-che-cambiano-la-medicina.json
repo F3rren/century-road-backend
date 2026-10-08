@@ -2,7 +2,7 @@
   "slug": "scoperte-che-cambiano-la-medicina",
   "title": "Le scoperte che hanno cambiato la medicina",
   "tagline": "Otto momenti, da Jenner all'eradicazione del vaiolo: come in due secoli abbiamo imparato a prevenire, osservare e curare.",
-  "intro": "Per gran parte della storia le malattie infettive sono state tra le principali cause di morte, e il dolore faceva parte della chirurgia. Questo percorso ripercorre otto momenti in cui qualcosa è cambiato: il primo vaccino, l'anestesia, la prima analisi epidemiologica, la teoria dei germi, i raggi X, il primo antibiotico, la struttura del DNA e la scomparsa di una malattia dalla Terra.\n\nNon è un elenco dei \"più importanti\": altre scoperte avrebbero meritato un posto. È una scelta, e ogni tappa dice anche dove le storie sono più complicate di come le si racconta di solito.",
+  "intro": "Per gran parte della storia le malattie infettive sono state tra le principali cause di morte, e il dolore faceva parte della chirurgia. Questo percorso ripercorre otto momenti in cui qualcosa è cambiato: il primo vaccino, l'anestesia, un’indagine divenuta emblematica per l’epidemiologia, la teoria dei germi, i raggi X, il primo antibiotico, la struttura del DNA e la scomparsa di una malattia dalla Terra.\n\nNon è un elenco dei \"più importanti\": altre scoperte avrebbero meritato un posto. È una scelta, e ogni tappa dice anche dove le storie sono più complicate di come le si racconta di solito.",
   "topic": "MEDICINA",
   "stops": [
     {
@@ -15,7 +15,7 @@
     },
     {
       "insight": "snow-colera-1854",
-      "narrative": "A Londra, una mappa e una pompa: un modo nuovo di cercare le cause di una malattia."
+      "narrative": "A Londra, un’indagine sui casi e sull’acqua della pompa di Broad Street: la celebre mappa ne renderà visibili i risultati dopo l’intervento."
     },
     {
       "insight": "pasteur-rabbia-1885",

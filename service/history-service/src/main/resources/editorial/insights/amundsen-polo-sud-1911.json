@@ -15,7 +15,7 @@
   },
   "before": "All'inizio del Novecento il Polo Sud era uno degli ultimi luoghi della Terra non raggiunti. Amundsen, esploratore norvegese, aveva preparato la spedizione con attenzione ai metodi di viaggio dei popoli polari, usando slitte con cani e una base nella Baia delle Balene. Scott guidava una spedizione britannica con metodi diversi, che puntava anche su pony e trattori a motore.",
   "event": "Amundsen e altri quattro uomini partirono dalla base nell'ottobre 1911, con cani da slitta, e il 14 dicembre raggiunsero il Polo Sud. Scott lo raggiunse il 17 gennaio 1912 e vi trovò la tenda lasciata dai norvegesi.",
-  "after": "Amundsen e i suoi tornarono alla base senza gravi perdite. Scott e i suoi quattro compagni morirono durante il ritorno, per il freddo, la fame e la fatica, a circa venti chilometri da un deposito di viveri. Nel 1912 la notizia di Amundsen fece il giro del mondo, e la vicenda di Scott fu a lungo raccontata come un'impresa eroica.",
+  "after": "Amundsen e i suoi tornarono alla base. I cinque membri della squadra polare di Scott morirono durante il ritorno, ma non tutti nello stesso luogo: Edgar Evans morì in febbraio e Lawrence Oates in marzo. Scott, Edward Wilson e Henry Bowers morirono nell'ultimo campo, a circa 18 chilometri da One Ton Depot. Nel 1912 la notizia dell'impresa di Amundsen fece il giro del mondo; la vicenda di Scott fu a lungo raccontata come un'impresa eroica.",
   "links": [
     {
       "slug": "cook-botany-bay-1770",
@@ -23,7 +23,7 @@
     },
     {
       "slug": "everest-1953",
-      "reason": "Un’altra conquista di un luogo estremo, quarant’anni dopo."
+      "reason": "Un’altra conquista di un luogo estremo, oltre quarant’anni dopo."
     }
   ],
   "sources": [
@@ -41,7 +41,7 @@
     }
   ],
   "notes": [
-    "Il Polo Sud non appartiene a nessuno Stato: il trattato antartico del 1959 ne vieta lo sfruttamento militare e ne regola l’uso scientifico."
+    "Il Trattato antartico, firmato nel 1959 ed entrato in vigore nel 1961, destina l'Antartide a usi pacifici e tutela la cooperazione scientifica. L'articolo IV preserva le posizioni degli Stati sulle rivendicazioni territoriali e impedisce nuove rivendicazioni o ampliamenti: non stabilisce semplicemente che tutte le rivendicazioni siano annullate."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"
