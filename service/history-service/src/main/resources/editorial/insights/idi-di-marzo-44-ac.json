@@ -16,7 +16,7 @@
   },
   "before": "Dopo aver vinto la guerra civile Cesare accumulò onori e poteri e fu nominato dittatore a vita. Molti senatori temevano che volesse farsi re: secondo la maggior parte degli autori antichi, alla festa dei Lupercali Marco Antonio gli offrì un diadema, simbolo regale. Una congiura di sessanta o ottanta senatori, secondo le fonti, guidata da Marco Giunio Bruto, Gaio Cassio Longino e Decimo Giunio Bruto Albino, si formò per ucciderlo; tra loro c'erano non solo avversari ma anche ex sostenitori di Cesare, mossi da rancore, invidia o delusione.",
   "event": "Il 15 marzo, durante una seduta del Senato nella Curia di Pompeo, i congiurati si strinsero intorno a Cesare e lo pugnalarono: secondo la tradizione i colpi furono circa 23. Giustificarono il gesto come la difesa della Repubblica contro un potere personale che, a loro giudizio, minacciava le tradizioni repubblicane.",
-  "after": "L'assassinio non restaurò la Repubblica. Due giorni dopo Marco Antonio convocò il Senato e ottenne un compromesso: nessuna punizione per gli assassini, ma conferma di tutte le nomine di Cesare. Nel Foro fu esposta una statua di cera di Cesare con le 23 ferite, e la folla, furiosa, incendiò la Curia di Pompeo. Cesare aveva nominato erede Ottaviano, suo pronipote: ne nacque la guerra tra i cesariani e i liberatori, nel 43-42 a.C., e infine l'impero di Augusto.",
+  "after": "L'assassinio non restaurò la Repubblica. Due giorni dopo Marco Antonio convocò il Senato e ottenne un compromesso: nessuna punizione per gli assassini, ma conferma di tutte le nomine di Cesare. Secondo Appiano, durante i funerali fu mostrata un'effigie di cera con le ferite di Cesare, che contribuì a esasperare la folla. Il suo racconto dell'incendio della sede del Senato va letto con cautela: è stata segnalata una possibile confusione con l'incendio della Curia Ostilia del 52 a.C. Cesare aveva nominato erede Ottaviano, suo pronipote: ne nacque la guerra tra i cesariani e i liberatori, nel 43-42 a.C., e infine l'impero di Augusto.",
   "links": [
     {
       "slug": "passaggio-del-rubicone-49-ac",
@@ -43,7 +43,7 @@
   ],
   "notes": [
     "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
-    "Il numero dei congiurati varia secondo le fonti: tra una ventina di senatori, che avrebbero agito, e sessanta o ottanta che avrebbero partecipato al complotto. Il numero dei colpi, circa 23, è quello riferito dalle fonti; un articolo parla di 18 ferite trovate dall'autopsia."
+    "Il numero dei congiurati varia nelle fonti e va distinto dal numero di chi partecipò materialmente all'aggressione. Svetonio riferisce 23 ferite e attribuisce al medico Antistio il giudizio secondo cui una sola, al petto, sarebbe stata mortale. Questi particolari provengono da testimonianze narrative antiche, non da documentazione medico-legale conservata."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

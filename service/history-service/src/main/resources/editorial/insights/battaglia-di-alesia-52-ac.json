@@ -1,7 +1,7 @@
 {
   "slug": "battaglia-di-alesia-52-ac",
   "title": "Alesia: Cesare sconfigge Vercingetorige",
-  "summary": "Nel 52 a.C., ad Alesia, in Gallia, Giulio Cesare assedia e costringe alla resa Vercingetorige e la coalizione gallica: è l'ultimo grande scontro delle guerre galliche e segna la fine della resistenza organizzata dei Galli.",
+  "summary": "Nel 52 a.C., ad Alesia, in Gallia, Giulio Cesare assedia e costringe alla resa Vercingetorige e la coalizione gallica. È uno scontro decisivo delle guerre galliche, ma non pone fine a ogni resistenza: seguiranno altre operazioni nel 51 a.C.",
   "date": {
     "year": -52,
     "month": 1,
@@ -17,8 +17,8 @@
     "note": "La ricerca archeologica indica come luogo più probabile il Mont Auxois, sopra Alise-Sainte-Reine."
   },
   "before": "Cesare era arrivato in Gallia nel 58 a.C., dopo il consolato, come governatore, grazie agli accordi del primo triumvirato. Nel 52 a.C. si ribellò una grande coalizione di tribù galliche, unita sotto il capo degli Arverni Vercingetorige, che scelse di affamare i Romani: evitava le battaglie in campo aperto e attaccava i rifornimenti. A Gergovia ebbe la meglio sui Romani, ma poi dovette ritirarsi con il suo esercito in Alesia, fortezza dei Mandubi su un'altura.",
-  "event": "Cesare, dopo la prova di Gergovia, rinunciò ad attaccare e scelse di affamare la città, dove secondo i suoi racconti c'erano circa 80 000 uomini oltre ai civili. In poche settimane fece costruire quasi 25 miglia di fortificazioni su due linee, una rivolta verso la città, lunga circa 15 chilometri e con 23 fortini, e una verso l'esterno contro i soccorsi. L'esercito gallico di soccorso arrivò e attaccò insieme agli assediati, ma gli attacchi coordinati fallirono e i soccorsi si dispersero.",
-  "after": "Vercingetorige propose al consiglio dei capi di essere ucciso o consegnato ai Romani per salvare gli altri, e si arrese a Cesare. I prigionieri furono dati ai soldati come bottino, tranne gli Edui e gli Arverni, che Cesare voleva guadagnare alla sua causa. Vercingetorige restò in prigione per cinque o sei anni e poi fu strangolato, dopo la sfilata del trionfo di Cesare. Alesia pose fine alla resistenza organizzata dei Galli, e il Senato concesse a Cesare venti giorni di ringraziamenti. L'organizzazione della Gallia in province venne più tardi, dopo le guerre civili.",
+  "event": "Cesare, dopo la prova di Gergovia, rinunciò ad attaccare e scelse di affamare la città, dove secondo i suoi racconti c'erano circa 80 000 uomini oltre ai civili. Fece costruire due linee di fortificazioni: secondo il suo racconto, quella interna era lunga undici miglia romane, circa 16 chilometri, e comprendeva 23 fortini; quella esterna, rivolta contro i soccorsi, era lunga quattordici miglia romane, circa 21 chilometri. L'esercito gallico di soccorso arrivò e attaccò insieme agli assediati, ma gli attacchi coordinati fallirono e i soccorsi si dispersero.",
+  "after": "Vercingetorige propose al consiglio dei capi di essere ucciso o consegnato ai Romani per salvare gli altri, e si arrese a Cesare. I prigionieri furono dati ai soldati come bottino, tranne gli Edui e gli Arverni, che Cesare voleva guadagnare alla sua causa. Vercingetorige restò in prigione per cinque o sei anni e poi fu strangolato, dopo la sfilata del trionfo di Cesare. Alesia spezzò la grande coalizione di Vercingetorige, e il Senato concesse a Cesare venti giorni di ringraziamenti. La resistenza non era però completamente terminata: nel 51 a.C. si combatterono ancora altre campagne, tra cui l'assedio di Uxellodunum. L'organizzazione della Gallia in province venne più tardi, dopo le guerre civili.",
   "links": [
     {
       "slug": "primo-triumvirato-60-ac",

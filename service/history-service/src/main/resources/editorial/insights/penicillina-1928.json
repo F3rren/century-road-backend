@@ -5,7 +5,8 @@
   "date": {
     "year": 1928,
     "month": 9,
-    "day": 28
+    "day": 1,
+    "precision": "MONTH"
   },
   "place": {
     "name": "St Mary's Hospital, Londra, Regno Unito",
@@ -15,7 +16,7 @@
     "approximate": false
   },
   "before": "All'inizio del Novecento le infezioni batteriche erano una delle principali cause di morte, anche per ferite lievi. Fleming, batteriologo, aveva già scoperto nel 1922 il lisozima, una sostanza naturale con effetto antibatterico, e cercava modi di combattere i batteri.",
-  "event": "Tornato da una vacanza, Fleming osservò che in una piastra con colonie di stafilococchi, rimasta aperta, era cresciuta una muffa del genere Penicillium; intorno alla muffa i batteri erano stati distrutti. La data del 28 settembre è quella tradizionale dell'osservazione.",
+  "event": "Tornato da una vacanza, Fleming osservò che in una piastra con colonie di stafilococchi, rimasta aperta, era cresciuta una muffa del genere Penicillium; intorno alla muffa i batteri erano stati distrutti. L'osservazione risale al settembre 1928. Il giorno esatto non è stabilito in modo univoco dalle ricostruzioni: alcune indicano il 3 settembre, altre il 28.",
   "after": "Fleming pubblicò la scoperta nel 1929, ma non riuscì a produrre la sostanza in quantità sufficienti. Alla fine degli anni Trenta Howard Florey e Ernst Chain, a Oxford, la purificarono e ne provarono l'efficacia. Durante la seconda guerra mondiale la penicillina fu prodotta in grandi quantità e salvò molti feriti. Fleming, Florey e Chain ebbero il Nobel nel 1945.",
   "links": [
     {
@@ -42,7 +43,7 @@
     }
   ],
   "notes": [
-    "La data esatta della scoperta non è documentata: 28 settembre 1928 è la più usata dalle fonti, ma i dettagli del racconto sono stati in parte ricostruiti a posteriori."
+    "Le ricostruzioni riportano giorni diversi per l'osservazione, tra cui il 3 e il 28 settembre 1928. La data strutturata usa quindi precisione mensile: il giorno 1 non è il giorno della scoperta."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"
