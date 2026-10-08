@@ -1,0 +1,37 @@
+{
+  "slug": "da-augusto-a-nerone",
+  "title": "Da Augusto a Nerone",
+  "tagline": "Dalla vittoria di Azio alla fine della dinastia giulio-claudia: il potere di Augusto passa ai suoi successori e l'Impero si allarga fino alla Britannia.",
+  "intro": "Con la vittoria di Azio e il titolo di Augusto la Repubblica diventa un impero governato da un solo uomo, che si presenta come il restauratore delle tradizioni di Roma. Il percorso segue la dinastia da lui fondata: i limiti dell'espansione, il passaggio del potere a Tiberio, l'avanzata fino alla Britannia e poi l'incendio di Roma e la caduta di Nerone.\n\nLe vicende ci sono raccontate soprattutto da autori antichi come Tacito e Svetonio, con i loro giudizi: dove le fonti non concordano, il testo lo dice.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "battaglia-di-azio-31-ac",
+      "narrative": "Si parte dalla battaglia che lascia Ottaviano senza rivali: Antonio e Cleopatra sono sconfitti."
+    },
+    {
+      "insight": "ottaviano-diventa-augusto-27-ac",
+      "narrative": "Nel 27 a.C. rimette le cariche al Senato e riceve il titolo di Augusto: nasce il principato."
+    },
+    {
+      "insight": "battaglia-della-foresta-di-teutoburgo-9",
+      "narrative": "Il limite dell'espansione: nel 9 d.C. tre legioni sono distrutte in Germania e Roma rinuncia a conquistare oltre il Reno."
+    },
+    {
+      "insight": "morte-di-augusto-14",
+      "narrative": "Nel 14 d.C. muore dopo oltre quarant'anni di potere: il Senato lo proclama dio e il potere passa al figliastro Tiberio."
+    },
+    {
+      "insight": "conquista-della-britannia-43",
+      "narrative": "Con Claudio l'espansione riprende: nel 43 l'esercito sbarca in Britannia, che diventa provincia."
+    },
+    {
+      "insight": "grande-incendio-di-roma-64",
+      "narrative": "Nel 64, sotto Nerone, un incendio distrugge gran parte di Roma e fa crescere i sospetti sull'imperatore."
+    },
+    {
+      "insight": "morte-di-nerone-68",
+      "narrative": "Nel 68, abbandonato da legioni e pretoriani, Nerone si toglie la vita: finisce la dinastia fondata da Augusto."
+    }
+  ]
+}

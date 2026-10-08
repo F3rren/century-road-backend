@@ -1,0 +1,55 @@
+{
+  "slug": "assedio-di-gerusalemme-70",
+  "title": "L'assedio di Gerusalemme e la distruzione del Tempio",
+  "summary": "Nel 70 d.C. le legioni di Tito conquistano Gerusalemme dopo mesi di assedio, distruggono il Secondo Tempio e radono al suolo gran parte della città: è il momento decisivo della prima rivolta giudaica.",
+  "date": {
+    "year": 70,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Monte del Tempio, Gerusalemme",
+    "lat": 31.778,
+    "lon": 35.2354,
+    "approximate": false
+  },
+  "before": "Nel 66 gli ebrei della Giudea si erano ribellati a Roma e i ribelli avevano occupato Gerusalemme. La repressione fu interrotta dalla guerra civile a Roma: Vespasiano, che comandava in Giudea, fu acclamato imperatore e lasciò la guerra al figlio Tito. Dentro la città fazioni rivali, guidate da Giovanni di Giscala, Simone bar Giora ed Eleazar ben Simone, si combattevano, distruggendo le scorte di cibo e indebolendo le difese.",
+  "event": "Nell'inverno tra il 69 e il 70 Tito tornò in Giudea con quattro legioni e truppe ausiliarie, in tutto almeno 48 200 soldati. In primavera aveva circondato Gerusalemme, piena di profughi e di pellegrini della Pasqua. Le fazioni si unirono e resistettero con ferocia, ma i Romani aprirono brecce nelle mura e spinsero i difensori nell'area del Tempio. Nel mese ebraico di Av, tra luglio e agosto, conquistarono il monte del Tempio e distrussero il Secondo Tempio, ricordato ogni anno dalla ricorrenza di Tisha BeAv. All'inizio di settembre la conquista era completa e, secondo Giuseppe Flavio, la città fu rasa al suolo, salvo tre torri e un tratto di mura.",
+  "after": "Molti abitanti furono uccisi, ridotti in schiavitù o costretti a lasciare la città. Un anno dopo Tito e Vespasiano celebrarono a Roma il trionfo, con i tesori del Tempio, tra cui la menorah, e centinaia di prigionieri; la vittoria fu ricordata dall'arco di Tito e dalle monete Judaea capta. La legione X Fretensis si stanziò tra le rovine. Senza più sacrifici nel Tempio, l'ebraismo si riorientò gradualmente attorno allo studio della Torah e alla preghiera nelle sinagoghe, fino a dare vita all'ebraismo rabbinico. Nel 130 Adriano rifondò la città come Aelia Capitolina.",
+  "links": [
+    {
+      "slug": "anno-dei-quattro-imperatori-69",
+      "reason": "Gli eventi di Roma, con Vespasiano acclamato imperatore, interrompono la repressione della rivolta."
+    },
+    {
+      "slug": "assedio-di-masada-73",
+      "reason": "Dopo la caduta di Gerusalemme resistono ancora alcune fortezze, l'ultima delle quali è Masada."
+    },
+    {
+      "slug": "inaugurazione-del-colosseo-80",
+      "reason": "Il bottino del Tempio finanziò la costruzione del Colosseo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Jerusalem (70 CE) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(70_CE)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Gerusalemme (70) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Gerusalemme_(70)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il Tempio fu distrutto nel mese ebraico di Av (luglio o agosto) e la conquista della città era completa all'inizio di settembre: per questo la data è data solo all'anno.",
+    "La fonte principale è Giuseppe Flavio, che scrive che Tito ordinò di spegnere l'incendio del Tempio e che i soldati non obbedirono; la maggior parte degli studiosi moderni respinge questa versione, e la responsabilità della distruzione è discussa. Giuseppe Flavio parla di 1,1 milioni di morti; in genere gli studiosi moderni considerano la cifra molto esagerata."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

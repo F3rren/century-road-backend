@@ -1,0 +1,51 @@
+{
+  "slug": "aureliano-sconfigge-zenobia-272",
+  "title": "Aureliano sconfigge Zenobia e Palmira",
+  "summary": "Nel 272 d.C. l'imperatore Aureliano batte la regina Zenobia di Palmira, che si era proclamata imperatrice, assedia la sua capitale e la cattura, ponendo fine al suo dominio sull'Oriente romano.",
+  "date": {
+    "year": 272,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Palmira, Siria",
+    "lat": 34.5508,
+    "lon": 38.2692,
+    "countryCode": "SY",
+    "approximate": false
+  },
+  "before": "Dopo l'assassinio del marito Odenato, tra la fine del 267 e l'inizio del 268, Zenobia governò Palmira come reggente del figlio Vaballato. Odenato, re di Palmira dal 260, aveva sconfitto i Persiani e stabilizzato l'Oriente romano. Tra il 269 e il 270 Zenobia lanciò un'invasione che portò gran parte dell'Oriente romano sotto il suo controllo e culminò con l'annessione dell'Egitto: a metà del 271 il suo regno andava da Ancira, in Anatolia, all'Alto Egitto, anche se restava formalmente subordinato a Roma.",
+  "event": "In primavera, probabilmente in reazione alla marcia di Aureliano, Zenobia proclamò imperatore il figlio e assunse il titolo di imperatrice: Palmira era indipendente da Roma. Aureliano, che aveva passato l'inverno a Bisanzio, attraversò l'Asia Minore, che gli aprì le porte quasi ovunque, mentre una spedizione contemporanea raggiungeva l'Egitto e tra maggio e giugno prendeva Alessandria. Presso Antiochia sconfisse l'esercito palmireno nella battaglia di Immae, poi di nuovo a Emesa. Zenobia si ritirò a Palmira, che Aureliano assediò; quando lasciò la città per cercare aiuto in Persia fu catturata prima di attraversare l'Eufrate, e Palmira si arrese nel 272, in agosto secondo l'articolo inglese.",
+  "after": "Aureliano mandò Zenobia e il figlio a Emesa per il processo; fece giustiziare la maggior parte dei prigionieri, ma risparmiò l'imperatrice e il figlio, per far sfilare lei nel suo trionfo. La sorte di Zenobia dopo Emesa è incerta, perché gli storici antichi lasciarono racconti contrastanti. La maggior parte degli storici antichi e moderni concorda che fu esibita nel trionfo del 274; solo Malala parla di decapitazione, mentre per la Historia Augusta ricevette poi una villa a Tivoli. L'immagine di una Zenobia vile nella sconfitta è probabilmente propaganda di Aureliano.",
+  "links": [
+    {
+      "slug": "battaglia-di-edessa-260",
+      "reason": "Odenato, il marito di Zenobia, aveva contrastato l'espansione persiana dopo la cattura di Valeriano."
+    },
+    {
+      "slug": "mura-aureliane-271",
+      "reason": "Negli stessi anni Aureliano fa costruire le mura attorno a Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Zenobia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Zenobia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Zenobia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Zenobia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti danno l'anno, il 272: per l'articolo inglese la ribellione aperta di Zenobia (i titoli imperiali) cominciò tra la fine di marzo e l'inizio di aprile del 272 e finì entro agosto, mentre quello italiano colloca la ribellione contro l'autorità imperiale già dopo la morte di Claudio II nel 270 e la campagna di Aureliano nel 271. Le fonti sono in gran parte romane e ostili a Zenobia, e non ci sono resoconti contemporanei del processo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

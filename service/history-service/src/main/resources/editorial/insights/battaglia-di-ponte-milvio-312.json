@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-ponte-milvio-312",
+  "title": "La battaglia di Ponte Milvio",
+  "summary": "Il 28 ottobre del 312 Costantino sconfigge Massenzio alle porte di Roma e diventa padrone dell'Occidente; secondo i cronisti cristiani, un sogno o una visione segnò l'inizio della sua conversione.",
+  "date": {
+    "year": 312,
+    "month": 10,
+    "day": 28
+  },
+  "place": {
+    "name": "Ponte Milvio, Roma, Italia",
+    "lat": 41.9339,
+    "lon": 12.4698,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo l'abdicazione di Diocleziano, nel 305, i suoi successori cominciarono presto a contendersi il potere. Alla morte di Costanzo, nel 306, le sue truppe proclamarono Augusto il figlio Costantino a Eboracum (York); a Roma Massenzio, figlio di Massimiano, si proclamò imperatore il 28 ottobre del 306 e fu trattato come usurpatore. Nel 312, cognati ma ormai in aperta ostilità, Costantino radunò circa 40 000 soldati, conquistò rapidamente l'Italia settentrionale, vincendo a Torino e a Verona, e marciò su Roma.",
+  "event": "Il 28 ottobre del 312 gli eserciti si scontrarono presso Ponte Milvio, sul Tevere, alle porte di Roma. Massenzio, che risiedeva a Roma con l'appoggio dei pretoriani, morì annegato nel Tevere durante la battaglia. Secondo il cronista cristiano Lattanzio, la notte prima Costantino ebbe un sogno in cui gli fu ordinato di porre sugli scudi dei soldati il segno celeste di Dio, che Lattanzio associa a Cristo. Eusebio di Cesarea, nella Vita di Costantino, racconta una visione, che dice di aver sentito dall'imperatore stesso: una croce di luce sopra il sole e le parole «con questo vinci», di solito tradotte in latino «in hoc signo vinces». Le due versioni differiscono e le fonti non chiariscono quale fosse il segno, forse una X o una croce.",
+  "after": "Il corpo di Massenzio fu estratto dal fiume e decapitato, e la sua testa sfilò per le strade di Roma il giorno dopo, prima di essere mandata in Africa. Costantino entrò a Roma il 29 ottobre e promise al Senato di non perseguitare i sostenitori di Massenzio; sciolse la Guardia pretoriana, fedele allo sconfitto, e la sostituì con truppe scelte alle sue dipendenze. Era ora l'unico sovrano della parte occidentale dell'Impero. L'arco di Costantino, eretto per celebrare la vittoria, la attribuisce a un intervento divino ma non mostra simboli cristiani.",
+  "links": [
+    {
+      "slug": "tetrarchia-293",
+      "reason": "La Tetrarchia di Diocleziano si disfa nelle rivalità tra i suoi successori."
+    },
+    {
+      "slug": "editto-di-milano-313",
+      "reason": "L'anno dopo Costantino e Licinio concordano la tolleranza per i cristiani."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Milvian Bridge - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Milvian_Bridge",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Ponte Milvio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Ponte_Milvio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Il racconto del sogno e della visione ci è giunto da cronisti cristiani, anche se alcune fonti pagane parlano di interventi divini; le versioni sono diverse e in parte contrastanti, e Costantino stesso favorì la diffusione di questi racconti per ragioni politiche."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "mura-aureliane-271",
+  "title": "Aureliano costruisce le mura di Roma",
+  "summary": "Intorno al 271 d.C. l'imperatore Aureliano fa costruire attorno a Roma una nuova cinta di mura di circa 19 chilometri: la città, per secoli senza difese, risponde così alle invasioni del III secolo.",
+  "date": {
+    "year": 271,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Mura aureliane, Roma, Italia",
+    "lat": 41.873,
+    "lon": 12.499,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica un tratto delle mura, che circondavano la città per circa 19 chilometri."
+  },
+  "before": "Nel III secolo la città si estendeva ben oltre le antiche mura serviane, e Roma era rimasta per secoli senza difese: i cittadini erano orgogliosi di non averne bisogno, grazie alla pace e alla protezione dell'esercito. Poi, durante la crisi del III secolo, tribù germaniche passarono la frontiera e l'esercito faticava a fermarle. Nel 270 invasori penetrarono nell'Italia settentrionale e, secondo l'articolo inglese, batterono i Romani a Piacenza, prima di essere respinti.",
+  "event": "Aureliano fece costruire le mura come misura d'emergenza, in reazione all'invasione del 270. I lavori cominciarono probabilmente nel 271 e durarono pochi anni; Aureliano morì prima del completamento, e le rifiniture furono fatte dopo di lui. Il cantiere, il più grande a Roma da decenni, fu lasciato ai cittadini stessi, perché l'imperatore non poteva sottrarre un solo legionario. Per fare in fretta e risparmiare, nelle mura furono inglobati edifici esistenti, come l'Anfiteatro Castrense, i Castra Praetoria, la Piramide di Cestio e un tratto dell'acquedotto dell'Aqua Claudia. La cinta racchiudeva i sette colli, il Campo Marzio e Trastevere.",
+  "after": "Secondo un articolo la costruzione potrebbe essere stata anche un segnale politico: un modo per mostrare la fiducia di Aureliano nella lealtà dei cittadini e la saldezza del suo potere. Tra il IV e l'inizio del V secolo le mura furono rialzate, fino quasi a raddoppiarne l'altezza. Secondo un articolo, nessun nemico le assediò prima del 408. Oggi se ne conservano circa 12,5 chilometri, per la maggior parte in buono stato, tra le cinte murarie antiche più lunghe e meglio conservate al mondo.",
+  "links": [
+    {
+      "slug": "battaglia-di-edessa-260",
+      "reason": "Dopo la cattura di Valeriano l'Impero era sotto pressione su più fronti."
+    },
+    {
+      "slug": "aureliano-sconfigge-zenobia-272",
+      "reason": "Lo stesso Aureliano, l'anno dopo, riporta l'Oriente sotto il controllo di Roma."
+    },
+    {
+      "slug": "sacco-di-roma-410",
+      "reason": "Secondo un articolo nessun nemico assediò le mura prima del 408; nel 410 Roma viene saccheggiata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aurelian Walls - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aurelian_Walls",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Mura aureliane - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Mura_aureliane",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non concordano sulle date: un articolo colloca la costruzione tra il 270 e il 275, l'altro tra il 271 e il 275, e i lavori cominciarono probabilmente nel 271. Per questo la data è data solo all'anno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

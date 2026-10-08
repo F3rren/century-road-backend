@@ -1,0 +1,52 @@
+{
+  "slug": "morte-di-traiano-117",
+  "title": "La morte di Traiano e l'Impero alla sua massima estensione",
+  "summary": "Nell'agosto del 117 d.C. Traiano muore a Selinunte, in Cilicia, mentre torna a Roma dalla guerra contro i Parti: l'Impero ha raggiunto la massima estensione e il successore Adriano rinuncia ai territori conquistati ai Parti.",
+  "date": {
+    "year": 117,
+    "month": 8,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Selinunte di Cilicia, Turchia",
+    "lat": 36.2611,
+    "lon": 32.2847,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "Traiano era diventato imperatore nel 98: Nerva, dopo la rivolta di una parte dei pretoriani, lo aveva adottato come erede perché era più popolare, e morì pochi mesi dopo. Imperatore-soldato, Traiano conquistò la Dacia e annesse il regno dei Nabatei, in Arabia. Poi condusse una guerra contro l'Impero dei Parti, che si concluse con l'annessione di Armenia, Mesopotamia e Assiria come province romane.",
+  "event": "Già malato da mesi, mentre tornava per mare verso Roma Traiano morì nell'agosto del 117 a Selinunte, in Cilicia, per un ictus secondo un articolo, per un edema polmonare o un infarto secondo l'altro. Sotto di lui l'Impero aveva raggiunto la sua massima estensione territoriale. Il Senato lo proclamò dio e secondo la tradizione le sue ceneri furono poste ai piedi della Colonna Traiana. Fu il primo a ottenere il titolo di Parthicus, che mantenne anche dopo la morte, mentre agli altri imperatori il titolo vittorioso veniva tolto dopo l'apoteosi.",
+  "after": "Gli succedette Adriano, ma non era chiaro a tutti quando e se Traiano lo avesse designato erede. Adriano non continuò la politica espansionistica: abbandonò i territori conquistati ai Parti e pose al centro la romanizzazione delle province. La conquista dell'Oriente era già fragile a causa delle rivolte ebraiche scoppiate in varie province orientali. Traiano lasciò una situazione economica fiorente, in particolare nella parte orientale dell'Impero.",
+  "links": [
+    {
+      "slug": "conquista-della-dacia-106",
+      "reason": "La conquista della Dacia è una delle grandi annessioni del suo regno."
+    },
+    {
+      "slug": "vallo-di-adriano-122",
+      "reason": "Pochi anni dopo Adriano ferma l'espansione e fa costruire un muro in Britannia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Trajan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Trajan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Traiano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Traiano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I due articoli danno un giorno diverso per la morte, l'8 e il 9 agosto: per questo la data è data solo al mese. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
+    "La successione di Adriano è discussa: secondo un articolo non fu chiaro a tutti quando e se Traiano lo avesse designato erede."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "editto-di-tessalonica-380",
+  "title": "L'editto di Tessalonica",
+  "summary": "Il 27 febbraio del 380 d.C. gli imperatori Graziano, Valentiniano II e Teodosio I emanano l'editto di Tessalonica, che fa del cristianesimo niceno la religione di Stato dell'Impero romano e condanna le altre dottrine cristiane come eresie.",
+  "date": {
+    "year": 380,
+    "month": 2,
+    "day": 27
+  },
+  "place": {
+    "name": "Tessalonica (Salonicco), Grecia",
+    "lat": 40.6401,
+    "lon": 22.9444,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "Dopo il concilio di Nicea la discordia nella Chiesa non era finita. Costanzo II, successore di Costantino in Oriente, favorì gli ariani ed esiliò vescovi niceni. Giuliano, detto l'Apostata, fu l'unico imperatore dopo Costantino a rifiutare il cristianesimo, e favorì la diversità religiosa; Valente era ariano. Nel 379 gli succedette Teodosio I, nato in Spagna, cristiano niceno e molto devoto: in Oriente l'arianesimo era diffuso, in Occidente prevaleva la fede nicena.",
+  "event": "L'editto fu emanato il 27 febbraio 380 da Teodosio I, Graziano e Valentiniano II, dopo che Teodosio, gravemente malato a Tessalonica, era stato battezzato dal vescovo Ascolio. Era rivolto agli abitanti di Costantinopoli, che Teodosio voleva pacificare per farne la propria residenza. Ordinava che tutti i popoli seguissero la religione trasmessa dall'apostolo Pietro ai Romani e professata dal papa Damaso e dal vescovo Pietro di Alessandria, cioè la fede nella Trinità, e chiamava «cattolici» i seguaci di questa legge; gli altri, giudicati «folli e pazzi», dovevano subire l'infamia di eretici e le punizioni divine e imperiali.",
+  "after": "È la prima legge civile nota che definisce nel preambolo che cosa un sovrano romano cristiano considera ortodossia, e aprì la strada alla repressione di chi dissentiva, qualificato come eretico. L'editto non stabiliva direttive precise: i decreti teodosiani del 391-392 inasprirono i divieti verso i culti pagani. Nel 381 il concilio di Costantinopoli confermò il credo niceno e ne diede la forma definitiva. L'editto fu poi incluso nel Codice teodosiano.",
+  "links": [
+    {
+      "slug": "concilio-di-nicea-325",
+      "reason": "Il credo approvato a Nicea nel 325 diventa ora la fede ufficiale dell'Impero."
+    },
+    {
+      "slug": "editto-di-milano-313",
+      "reason": "L'editto di Milano del 313 non aveva fatto del cristianesimo la religione di Stato."
+    },
+    {
+      "slug": "battaglia-di-adrianopoli-378",
+      "reason": "Teodosio era diventato imperatore d'Oriente dopo la morte di Valente ad Adrianopoli."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edict of Thessalonica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edict_of_Thessalonica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Editto di Tessalonica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Editto_di_Tessalonica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'editto è detto anche Cunctos populos, dalle sue prime parole. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Gli articoli non concordano su un punto: uno dice che l'editto vieta in primo luogo l'arianesimo e poi anche i culti pagani, l'altro che condanna come eresie le altre dottrine cristiane; i divieti verso i culti pagani vengono di solito dai decreti del 391-392."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

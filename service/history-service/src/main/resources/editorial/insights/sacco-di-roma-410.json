@@ -1,0 +1,55 @@
+{
+  "slug": "sacco-di-roma-410",
+  "title": "Il sacco di Roma dei Visigoti",
+  "summary": "Il 24 agosto del 410 d.C. i Visigoti di Alarico entrano a Roma e la saccheggiano per tre giorni: per la prima volta in quasi ottocento anni la città cade in mano a un nemico, e il mondo romano ne è sconvolto.",
+  "date": {
+    "year": 410,
+    "month": 8,
+    "day": 24
+  },
+  "place": {
+    "name": "Porta Salaria, Roma, Italia",
+    "lat": 41.914,
+    "lon": 12.4995,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Roma non era più la capitale amministrativa dell'Impero d'Occidente, sostituita da Milano e poi da Ravenna, ma restava la «città eterna». Alarico aveva partecipato nel 394 alla campagna di Teodosio, ma si era sentito usato e ricompensato male. Nel 408, poche settimane dopo la morte di Stilicone, invase l'Italia e assediò Roma: la città, che forse aveva 800 000 abitanti, fu stremata da fame e malattie e dovette pagare un enorme riscatto in oro, argento, seta e pepe. L'imperatore Onorio, a Ravenna, rifiutò più volte un accordo, e Alarico assediò Roma di nuovo alla fine del 409.",
+  "event": "Dopo il fallimento dei negoziati con Onorio, e dopo un attacco a tradimento contro Alarico vicino a Ravenna, Alarico assediò Roma per la terza volta. Il 24 agosto del 410 i Visigoti entrarono in città dalla Porta Salaria, secondo alcuni aperta con un tradimento, secondo altri per la fame, e la saccheggiarono per tre giorni. Furono razziati molti grandi edifici, compresi i mausolei di Augusto e di Adriano; i Goti risparmiarono invece le due grandi basiliche di Pietro e di Paolo. Molti romani furono presi prigionieri, tra cui Galla Placidia, sorella di Onorio.",
+  "after": "Alarico lasciò Roma dopo tre giorni, con la ricchezza della città e Galla Placidia come ostaggio; devastò la Campania, la Lucania e la Calabria, ma una tempesta distrusse le navi con cui voleva passare in Sicilia, e morì di malattia a Cosenza alla fine del 410. Il sacco sconvolse il mondo romano: a Costantinopoli Teodosio II proclamò tre giorni di lutto, e san Girolamo scrisse che «la città che aveva conquistato il mondo intero era stata conquistata». Pagani e cristiani lo usarono per sostenere le proprie ragioni: per Orosio fu l'ira di Dio contro una città orgogliosa. Il sacco è considerato un passaggio importante della caduta dell'Impero d'Occidente.",
+  "links": [
+    {
+      "slug": "morte-di-teodosio-e-divisione-dell-impero-395",
+      "reason": "Alarico, che aveva servito Teodosio nel 394, si ribellò dopo la sua morte."
+    },
+    {
+      "slug": "mura-aureliane-271",
+      "reason": "Le mura di Aureliano non impedirono ai Visigoti di entrare in città."
+    },
+    {
+      "slug": "sacco-di-roma-455",
+      "reason": "Quarantacinque anni dopo Roma è saccheggiata di nuovo, questa volta dai Vandali."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sack of Rome (410) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(410)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sacco di Roma (410) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sacco_di_Roma_(410)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Il racconto di come i Visigoti entrarono in città varia: l'articolo inglese parla di un tradimento o della fame, quello italiano giudica inattendibile la versione secondo cui 300 giovani goti, lasciati come ostaggi, avrebbero aperto a mezzogiorno la Porta Salaria. Il saccheggio durò tre giorni, dal 24 al 27 agosto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

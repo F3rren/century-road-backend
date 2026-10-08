@@ -1,0 +1,37 @@
+{
+  "slug": "costantino-e-l-impero-cristiano",
+  "title": "Costantino e l'Impero cristiano",
+  "tagline": "Dalla grande persecuzione di Diocleziano all'editto di Tessalonica: in meno di ottant'anni il cristianesimo passa da religione perseguitata a religione di Stato.",
+  "intro": "Il percorso segue la svolta religiosa dell'Impero romano: la persecuzione di Diocleziano, la vittoria di Costantino a Ponte Milvio e la tolleranza concessa ai cristiani, il concilio di Nicea, la fondazione di Costantinopoli e l'editto con cui il cristianesimo niceno diventa religione di Stato. In mezzo, la battaglia di Adrianopoli mette alla prova l'Impero d'Oriente.\n\nMolti racconti vengono da cronisti cristiani e le versioni divergono: dove accade, il testo lo dice.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "persecuzione-di-diocleziano-303",
+      "narrative": "Si parte dall'ultima grande persecuzione: nel 303 Diocleziano fa distruggere chiese e libri sacri dei cristiani."
+    },
+    {
+      "insight": "battaglia-di-ponte-milvio-312",
+      "narrative": "Nel 312 Costantino batte Massenzio a Ponte Milvio e, secondo i cronisti cristiani, comincia la sua conversione."
+    },
+    {
+      "insight": "editto-di-milano-313",
+      "narrative": "Nel 313 Costantino e Licinio concordano la tolleranza per i cristiani e la restituzione dei loro beni."
+    },
+    {
+      "insight": "concilio-di-nicea-325",
+      "narrative": "Nel 325 Costantino riunisce a Nicea i vescovi per risolvere la disputa su Ario."
+    },
+    {
+      "insight": "fondazione-di-costantinopoli-330",
+      "narrative": "Nel 330 inaugura Costantinopoli, la nuova capitale sul Bosforo."
+    },
+    {
+      "insight": "battaglia-di-adrianopoli-378",
+      "narrative": "Nel 378 i Goti sconfiggono e uccidono l'imperatore d'Oriente Valente ad Adrianopoli."
+    },
+    {
+      "insight": "editto-di-tessalonica-380",
+      "narrative": "Nel 380 Teodosio fa del cristianesimo niceno la religione di Stato."
+    }
+  ]
+}
