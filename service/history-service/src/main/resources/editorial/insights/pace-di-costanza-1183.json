@@ -14,7 +14,7 @@
     "countryCode": "DE",
     "approximate": false
   },
-  "before": "La pace di Venezia del 1177 aveva imposto una tregua di sei anni tra Federico e la Lega Lombarda. Con la scadenza vicina, all'inizio del 1183 cominciarono nuovi negoziati, con proposte e controproposte, un accordo a parte sullo status di Alessandria e un'intesa preliminare a Piacenza. Per l'articolo italiano la Lega chiese la completa autonomia delle città e la libertà di costruire mura e fortificazioni, e Federico in un primo tempo si oppose con fermezza. Poco prima, Alessandria si era sottomessa all'impero ed era stata riconosciuta da Federico come città imperiale.",
+  "before": "La pace di Venezia del 1177 aveva imposto una tregua di sei anni tra Federico e la Lega Lombarda. Con la scadenza vicina, all'inizio del 1183 cominciarono nuovi negoziati, con proposte e controproposte, un accordo a parte sullo status di Alessandria e un'intesa preliminare a Piacenza.",
   "event": "La pace fu emanata come privilegio imperiale, perché formalmente l'imperatore non poteva firmare un trattato con i suoi sudditi. Le città del regno d'Italia conservarono diritti di giurisdizione locale, la libertà di eleggere i propri consigli e di fare le proprie leggi, e quella di mantenere la Lega. In cambio giurarono fedeltà all'imperatore, e i consoli dovevano essere investiti da lui. I giudici imperiali giudicavano in appello le cause più rilevanti, e i comuni si impegnavano a pagare un tributo annuo di 2000 lire.",
   "after": "Per l'articolo italiano fu un compromesso: Federico rinunciava al piano di dominio assoluto, mentre i comuni mantenevano larga autonomia. Per l'articolo inglese gli Hohenstaufen non tentarono di violare l'accordo durante i 67 anni del loro regno; dopo la morte di Enrico VI, nel 1197, le città smisero di rispettare gli obblighi, e la pace fu al centro del conflitto con Federico II tra il 1226 e il 1250. Per secoli fu celebrata come l'unico riconoscimento imperiale dell'autonomia di un gruppo ampio di città italiane.",
   "links": [
@@ -43,7 +43,7 @@
   ],
   "notes": [
     "Il 25 giugno è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
-    "Le somme variano da una fonte all'altra: l'articolo italiano parla di un indennizzo una tantum di 15 000 lire e di un tributo annuo di 2000 lire, mentre nel testo del privilegio riportato dall'articolo inglese compaiono 2000 marchi d'argento all'anno."
+    "Le somme variano: per l'articolo italiano i comuni pagavano 15 000 lire una tantum e 2000 lire l'anno (le 2000 lire annue sono anche nell'articolo inglese); nel testo del privilegio riportato dall'articolo inglese compaiono invece 2000 marchi d'argento all'anno, come alternativa all'inchiesta sulle regalie."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

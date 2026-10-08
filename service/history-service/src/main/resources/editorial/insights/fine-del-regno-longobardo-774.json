@@ -1,11 +1,12 @@
 {
   "slug": "fine-del-regno-longobardo-774",
   "title": "Carlo Magno conquista Pavia e il regno longobardo",
-  "summary": "Il 5 giugno del 774, dopo un assedio di dieci mesi, il re longobardo Desiderio si arrende a Carlo Magno a Pavia: finisce il regno longobardo e Carlo si proclama re dei Franchi e dei Longobardi.",
+  "summary": "Nel giugno del 774, dopo mesi di assedio, il re longobardo Desiderio si arrende a Carlo Magno a Pavia: finisce il regno longobardo e Carlo si proclama re dei Franchi e dei Longobardi.",
   "date": {
     "year": 774,
     "month": 6,
-    "day": 5
+    "day": 1,
+    "precision": "MONTH"
   },
   "place": {
     "name": "Pavia, Italia",
@@ -14,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Il re longobardo Desiderio aveva dato la figlia Desiderata in moglie a Carlo, ma entro un anno Carlo la ripudiò, e i Longobardi lo considerarono un insulto. Quando nel 771 morì Carlomanno, fratello di Carlo, la vedova Gerberga fuggì con i figli a Pavia, e Desiderio le diede asilo. Nel 772 il papa Adriano I, ostile ai Longobardi, espulse i loro funzionari dalla curia; Desiderio invase i territori del papa fino a Otricoli, a un giorno di marcia da Roma. Adriano chiese aiuto a Carlo.",
+  "before": "Il re longobardo Desiderio aveva dato la figlia in moglie a Carlo, ma entro un anno Carlo la ripudiò, e i Longobardi lo considerarono un insulto. Quando nel 771 morì Carlomanno, fratello di Carlo, la vedova Gerberga fuggì con i figli a Pavia, e Desiderio le diede asilo. Nel 772 il papa Adriano I, ostile ai Longobardi, espulse i loro funzionari dalla curia; Desiderio invase i territori del papa fino a Otricoli, a un giorno di marcia da Roma. Adriano chiese aiuto a Carlo.",
   "event": "All'inizio dell'estate del 773 Carlo marciò verso l'Italia con un esercito di 10 000-40 000 uomini, diviso in due: lui valicò le Alpi dal Moncenisio, lo zio Bernardo dal Gran San Bernardo. Aggirate le fortificazioni longobarde, i Franchi cinsero d'assedio Pavia a settembre; Adelchi, figlio di Desiderio, si era chiuso a Verona con Gerberga e i figli di Carlomanno, ma Carlo prese anche Verona e Adelchi fuggì a Costantinopoli. Carlo passò la Pasqua del 774 a Roma. Senza soccorsi e con la fame in città, Desiderio si arrese: il 5 giugno 774 per l'articolo italiano, un martedì di giugno per quello inglese. Fu esiliato nel monastero di Corbie.",
-  "after": "Carlo si proclamò re dei Longobardi, e da allora fu detto «re dei Franchi e dei Longobardi»: un caso unico tra i regni germanici dell'alto Medioevo, in cui un sovrano in carica assume il titolo del vinto. Pavia mantenne il ruolo di capitale. Riconoscendo l'autorità temporale del papa nell'Italia centrale, Carlo gettò le basi del potere papale medievale. Il ducato di Benevento, alleato dell'Impero d'Oriente, restò l'ultimo baluardo del vecchio regno longobardo.",
+  "after": "Carlo si proclamò re dei Longobardi, e da allora fu detto «re dei Franchi e dei Longobardi»: un caso unico tra i regni germanici dell'alto Medioevo, in cui un sovrano in carica assume il titolo del vinto. Pavia mantenne il ruolo di capitale. Riconoscendo l'autorità temporale del papa nell'Italia centrale, Carlo contribuì a gettare le basi del potere papale medievale. Il ducato di Benevento, alleato dell'Impero d'Oriente, restò l'ultimo baluardo del vecchio regno longobardo.",
   "links": [
     {
       "slug": "donazione-di-pipino-756",
@@ -42,7 +43,7 @@
     }
   ],
   "notes": [
-    "Gli articoli non concordano sul giorno della resa: quello italiano dà il 5 giugno 774, quello inglese dice solo «un martedì di giugno». Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Gli articoli non concordano sul giorno della resa: quello italiano dà il 5 giugno 774, quello inglese «un martedì di giugno». Per questo la data è data solo al mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
     "Le cifre dell'esercito sono incerte: l'articolo italiano parla di almeno 10 000 uomini, secondo alcuni 40 000."
   ],
   "provenance": {

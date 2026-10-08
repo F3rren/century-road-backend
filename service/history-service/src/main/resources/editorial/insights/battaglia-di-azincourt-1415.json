@@ -1,7 +1,7 @@
 {
   "slug": "battaglia-di-azincourt-1415",
   "title": "La battaglia di Azincourt",
-  "summary": "Il 25 ottobre 1415, giorno di San Crispino, l'esercito inglese di Enrico V, molto inferiore di numero e provato dalle malattie, sconfigge presso Azincourt quello francese: gli arcieri con l'arco lungo sono decisivi.",
+  "summary": "Il 25 ottobre 1415, giorno di San Crispino, l'esercito inglese di Enrico V, molto inferiore di numero e provato dalle malattie, sconfigge presso Azincourt quello francese: l'arco lungo ha un ruolo di primo piano.",
   "date": {
     "year": 1415,
     "month": 10,
@@ -15,7 +15,7 @@
     "approximate": true,
     "note": "Il punto indica il villaggio di Azincourt; per l'articolo inglese la posizione esatta della battaglia non è nota e potrebbe essere a ovest del villaggio."
   },
-  "before": "Falliti i negoziati con i Francesi, Enrico V riprese la guerra nel 1415: il 13 agosto sbarcò in Francia con circa 12 000 uomini e assediò Harfleur, che si arrese il 22 settembre. L'esercito, decimato dalle malattie, partì solo l'8 ottobre, e Enrico decise di marciare con circa 9000 uomini attraverso la Normandia fino a Calais. I Francesi, comandati dal connestabile Charles d'Albret perché Carlo VI era malato di mente, gli sbarrarono la strada. Il 24 ottobre i due eserciti erano di fronte. Gli Inglesi avevano percorso circa 420 km in due settimane e mezza, avevano poco cibo ed erano ammalati di dissenteria.",
+  "before": "Falliti i negoziati con i Francesi, Enrico V riprese la guerra nel 1415: a metà agosto sbarcò in Francia con circa 12 000 uomini e assediò Harfleur, che si arrese il 22 settembre. L'esercito, decimato dalle malattie, partì solo l'8 ottobre, e Enrico decise di marciare con la maggior parte dell'esercito attraverso la Normandia fino a Calais. I Francesi, comandati dal connestabile Charles d'Albret perché Carlo VI era malato di mente, gli sbarrarono la strada. Il 24 ottobre i due eserciti erano di fronte. Per l'articolo inglese gli Inglesi avevano percorso circa 420 km in due settimane e mezza (per quello italiano più di 400 km in una settimana e mezza), avevano poco cibo ed erano provati da malattie come la dissenteria.",
   "event": "La mattina del 25 ottobre i Francesi aspettavano altre truppe e per tre ore dopo l'alba non ci furono combattimenti. Enrico, che avrebbe preferito difendersi, dovette avanzare e trasferire i pali appuntiti che proteggevano gli arcieri. Gli arcieri cominciarono a tirare da circa 270 m di distanza; gli uomini d'arme francesi, con armature pesanti, avanzarono nel fango e giunsero alla linea inglese e la fecero arretrare, ma furono sopraffatti. Enrico, temendo che i Francesi si riorganizzassero, ordinò di uccidere la maggior parte dei prigionieri, forse migliaia, risparmiando i più importanti.",
   "after": "La sconfitta fu catastrofica per i Francesi: circa 6000 morti, tra cui il connestabile, tre duchi, nove conti e un arcivescovo; i prigionieri furono tra 700 e 2200, e tra loro i duchi di Orléans e di Borbone. Dalla parte inglese i morti accertati furono almeno 112. Enrico tornò in Inghilterra il 16 novembre e fu accolto in trionfo a Londra il 23. La tregua fra Armagnacchi e Borgognoni si ruppe presto; per l'articolo inglese questa divisione gli lasciò diciotto mesi per prepararsi a una nuova campagna. Il dominio inglese durò quattordici anni, fino all'assedio di Orléans.",
   "links": [
@@ -44,7 +44,7 @@
   ],
   "notes": [
     "Il 25 ottobre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
-    "Il numero dei combattenti è discusso: l'articolo inglese dedica una sezione alle stime e indica per gli Inglesi circa 1500 uomini d'arme e 7000 arcieri. Per l'uccisione dei prigionieri l'articolo inglese ricorda che i cronisti contemporanei non criticarono Enrico e che John Keegan ritiene l'ordine un modo per terrorizzare i prigionieri e impedire che riprendessero a combattere."
+    "Il numero dei combattenti è discusso: l'articolo inglese dedica una sezione alle stime, che per gli Inglesi vanno da circa 6000 a circa 9000 uomini all'inizio della marcia (quello italiano parla di circa 6000), mentre la descrizione dello schieramento parla di circa 1500 uomini d'arme e 7000 arcieri. Per l'uccisione dei prigionieri l'articolo inglese ricorda che i cronisti contemporanei non criticarono Enrico e che John Keegan ritiene l'ordine un modo per terrorizzare i prigionieri e impedire che riprendessero a combattere."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

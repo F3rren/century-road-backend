@@ -1,7 +1,7 @@
 {
   "slug": "peste-di-giustiniano-541",
   "title": "La peste di Giustiniano",
-  "summary": "Nel 541 una peste arriva in Egitto e si diffonde in tutto il Mediterraneo, colpendo gli Imperi bizantino e sasanide; a Costantinopoli, nel 542, si ammala e guarisce anche l'imperatore Giustiniano.",
+  "summary": "Nel 541 una peste arriva in Egitto e si diffonde in tutto il Mediterraneo, colpendo gli Imperi bizantino e sasanide; a Costantinopoli, nel 542, secondo Procopio si ammala e guarisce anche l'imperatore Giustiniano.",
   "date": {
     "year": 541,
     "month": 1,
@@ -16,9 +16,9 @@
     "approximate": true,
     "note": "Il punto indica Costantinopoli, dove l'epidemia ebbe il suo culmine; la peste arrivò prima in Egitto e si diffuse in tutto il Mediterraneo."
   },
-  "before": "Secondo l'articolo italiano, tra il 536 e il 540 grandi eruzioni oscurarono il sole per oltre un anno e causarono perdita dei raccolti, fame e un raffreddamento del clima. Dal 535 si combatteva in Italia la guerra gotica, con le razzie di altri popoli nel Nord: in queste condizioni di debolezza arrivò un nuovo morbo dall'Oriente.",
+  "before": "Secondo l'articolo italiano, tra il 536 e il 540 grandi eruzioni oscurarono il sole per oltre un anno e causarono perdita dei raccolti, fame e un raffreddamento del clima. Dal 535 si combatteva in Italia la guerra gotica, con le razzie di altri popoli nel Nord: queste condizioni di debolezza favorirono, probabilmente, la diffusione di un nuovo morbo arrivato dall'Oriente.",
   "event": "La peste, causata dal batterio Yersinia pestis, lo stesso della peste nera, arrivò in Egitto nel 541, si diffuse attorno al Mediterraneo fino al 544 e continuò nel Nord Europa e in Arabia fino al 549. Al culmine, a Costantinopoli, secondo Procopio, che racconta come Giustiniano stesso si ammalò e nel 542 guarì, moriva ogni giorno circa 10 000 persone, cifra forse gonfiata: alcuni storici moderni parlano di circa 5 000. Non si trovavano luoghi dove seppellire i morti, spesso lasciati all'aperto, e Giustiniano emanò leggi per snellire le procedure ereditarie.",
-  "after": "Per l'articolo inglese la peste uccise circa un quinto degli abitanti della capitale; per quello italiano alcuni storici parlano del 40% a Costantinopoli e circa del 25% nel Mediterraneo orientale. Influì sulla guerra gotica, dando agli Ostrogoti la possibilità di rafforzarsi. La sua gravità è discussa: per alcuni studiosi ebbe effetti economici, sociali e politici profondi, per altri le fonti la esagerarono e non ebbe un impatto duraturo sulla popolazione del Mediterraneo. Nel 2013 si confermò che la causa fu Yersinia pestis, e nel 2014 che il ceppo era diverso da quello della peste nera, ora estinto.",
+  "after": "Per l'articolo inglese la peste uccise circa un quinto degli abitanti della capitale; ma riporta anche l'opinione secondo cui furono forse il 40% e fino a un quarto della popolazione del Mediterraneo orientale; l'articolo italiano parla di circa il 40% a Costantinopoli e circa il 25% nel Mediterraneo orientale. Influì sulla guerra gotica, dando agli Ostrogoti la possibilità di rafforzarsi. La sua gravità è discussa: per alcuni studiosi ebbe effetti economici, sociali e politici profondi, per altri le fonti la esagerarono e non ebbe un impatto duraturo sulla popolazione del Mediterraneo. Nel 2013 si confermò che la causa fu Yersinia pestis, e nel 2014 che il ceppo era diverso da quello della peste nera, ora estinto.",
   "links": [
     {
       "slug": "rivolta-della-nika-532",
@@ -45,7 +45,7 @@
   ],
   "notes": [
     "L'anno è quello in cui la peste arrivò in Egitto; secondo l'articolo inglese l'epidemia durò fino al 549, secondo quello italiano a Costantinopoli fu tra il 541 e il 542.",
-    "Sull'origine gli articoli divergono: quello italiano parla di Etiopia o Egitto; quello inglese di una zona vicino ai monti Tian Shan, dove si trovano ceppi affini, anche se in Cina la peste non è nominata prima del 610."
+    "Sull'origine gli articoli divergono: quello italiano parla di Etiopia o Egitto; quello inglese indica come più probabile una zona vicino ai monti Tian Shan, dove si trovano ceppi affini, anche se in Cina la peste non è nominata prima del 610, ma riporta anche l'ipotesi di un'origine nell'Africa subsahariana."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"
