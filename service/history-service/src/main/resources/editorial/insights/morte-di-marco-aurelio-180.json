@@ -13,10 +13,10 @@
     "lon": 19.6122,
     "countryCode": "RS",
     "approximate": true,
-    "note": "Le fonti indicano Sirmio, dove secondo un autore contemporaneo morì l'imperatore, oppure Vindobona, l'odierna Vienna: il luogo non è certo."
+    "note": "Le fonti indicano Sirmio, presso la quale, secondo un autore contemporaneo, morì l'imperatore, oppure Vindobona, l'odierna Vienna: il luogo non è certo."
   },
-  "before": "Marco Aurelio regnava dal 161, prima insieme al fratello adottivo Lucio Vero, morto nel 169. Il suo regno fu segnato dalla guerra contro i Parti, dalla peste antonina e dalle guerre marcomanniche sul Danubio, in cui sconfisse Marcomanni, Quadi e Iazigi. Nel 177 aveva associato al potere il figlio Commodo, già nominato Cesare nel 166.",
-  "event": "Marco Aurelio morì il 17 marzo del 180, a 58 anni, nel suo accampamento militare, di cause ignote: le fonti indicano Vindobona, l'odierna Vienna, oppure Sirmio, nell'odierna Serbia. Dopo una vittoria decisiva nel 178 un piano per annettere la Marcomannia, tra Moravia e Slovacchia occidentale, sembrava avviato al successo, ma fu abbandonato quando l'imperatore si ammalò gravemente nel 180, forse anch'egli colpito dalla peste.",
+  "before": "Marco Aurelio regnava dal 161, prima insieme al fratello adottivo Lucio Vero, morto nel 169. Il suo regno fu segnato dalla guerra contro i Parti, dalla peste antonina e dalle guerre marcomanniche sul Danubio, in cui sconfisse Marcomanni, Quadi e Iazigi. Tra il 176 e il 177 aveva associato al potere il figlio Commodo, già nominato Cesare nel 166.",
+  "event": "Marco Aurelio morì il 17 marzo del 180, a 58 anni, nel suo accampamento militare, di cause ignote: le fonti indicano Vindobona, l'odierna Vienna, oppure un luogo presso Sirmio, nell'odierna Serbia. Dopo una vittoria decisiva nel 178 un piano per annettere la Marcomannia, tra Moravia e Slovacchia occidentale, sembrava avviato al successo, ma fu abbandonato quando l'imperatore si ammalò gravemente nel 180, forse anch'egli colpito dalla peste.",
   "after": "Fu subito divinizzato e le sue ceneri tornarono a Roma, dove restarono nel mausoleo di Adriano fino al sacco visigoto del 410. Gli succedette il figlio Commodo: era solo la seconda volta che un figlio non adottivo succedeva al padre, dopo Tito con Vespasiano. Gli storici hanno criticato questa successione per il comportamento instabile di Commodo; Cassio Dione scrisse che la storia passava da un regno d'oro a uno di ferro e ruggine. Per alcuni studiosi la sua morte segna la fine della Pax Romana. Le sue Meditazioni sono una delle fonti più importanti per conoscere lo stoicismo antico.",
   "links": [
     {
@@ -25,7 +25,7 @@
     },
     {
       "slug": "anno-dei-cinque-imperatori-193",
-      "reason": "Pochi anni dopo, l'assassinio di Commodo apre una nuova guerra civile."
+      "reason": "Una dozzina di anni dopo, l'assassinio di Commodo apre una nuova guerra civile."
     },
     {
       "slug": "sacco-di-roma-410",

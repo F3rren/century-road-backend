@@ -15,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "La valle tra il Palatino, l'Esquilino e il Celio era stata devastata dal grande incendio del 64; Nerone se n'era impadronito per la Domus Aurea, creando davanti alla reggia un lago artificiale. Vespasiano decise di costruirvi l'anfiteatro: riempì il lago e restituì al popolo un'area che Nerone aveva usato per sé, un gesto che segnava la differenza tra il vecchio e il nuovo principato. I lavori cominciarono tra il 70 e il 72 e furono pagati con il bottino del Tempio di Gerusalemme. Era il primo grande anfiteatro stabile di Roma.",
-  "event": "Vespasiano vide costruire i primi due piani e dedicò l'edificio prima di morire, nel 79. Il figlio Tito aggiunse il terzo e il quarto ordine di posti e lo inaugurò nell'80 con cento giorni di giochi. Secondo Cassio Dione nei giochi inaugurali furono uccisi oltre 9 000 animali selvatici; un resoconto racconta che l'arena fu allagata per uno spettacolo di cavalli e tori addestrati a nuotare. L'anfiteatro, il più grande mai costruito, poteva ospitare decine di migliaia di spettatori.",
-  "after": "Domiziano, fratello di Tito, completò l'opera e costruì i sotterranei dell'arena: da allora non fu più possibile allagarla per le battaglie navali. Accanto sorsero le caserme dei gladiatori e gli edifici di servizio. Il Colosseo ospitò combattimenti di gladiatori, cacce, esecuzioni e rievocazioni di battaglie; smise di servire per gli spettacoli all'inizio del Medioevo e fu poi riusato come abitazione, laboratorio, fortezza e cava. Nel 1980 è stato inserito nella lista dell'UNESCO insieme al centro storico di Roma.",
+  "before": "La valle tra il Palatino, l'Esquilino e il Celio era stata devastata dal grande incendio del 64; Nerone se n'era impadronito per la Domus Aurea, creando davanti alla reggia un lago artificiale. Vespasiano decise di costruirvi l'anfiteatro: riempì il lago e restituì al popolo un'area che Nerone aveva usato per sé, un gesto che segnava la differenza tra il vecchio e il nuovo principato. I lavori cominciarono tra il 70 e il 72 e furono pagati con il bottino del Tempio di Gerusalemme e, secondo l'articolo italiano, con le tasse provinciali. Era il primo grande anfiteatro stabile di Roma.",
+  "event": "Alla morte di Vespasiano, nel 79, l'edificio era costruito fino al secondo piano per l'articolo italiano, fino al terzo per quello inglese; secondo l'articolo italiano Vespasiano era riuscito a dedicarlo prima di morire. Il figlio Tito aggiunse il terzo e il quarto ordine di posti e lo inaugurò nell'80 con cento giorni di giochi. Secondo Cassio Dione nei giochi inaugurali furono uccisi oltre 9 000 animali selvatici; un resoconto racconta che l'arena fu allagata per uno spettacolo di cavalli e tori addestrati a nuotare. L'anfiteatro, il più grande dell'antichità, poteva ospitare decine di migliaia di spettatori.",
+  "after": "Domiziano, fratello di Tito, completò l'opera e costruì i sotterranei dell'arena: secondo le fonti antiche da allora non fu più possibile allagarla per le battaglie navali, anche se gli storici discutono se l'arena sia mai stata allagabile. Accanto sorsero le caserme dei gladiatori e gli edifici di servizio. Il Colosseo ospitò combattimenti di gladiatori, cacce, esecuzioni e rievocazioni di battaglie; smise di servire per gli spettacoli all'inizio del Medioevo e fu poi riusato come abitazione, laboratorio, fortezza e cava. Nel 1980 è stato inserito nella lista dell'UNESCO insieme al centro storico di Roma.",
   "links": [
     {
       "slug": "assedio-di-gerusalemme-70",
@@ -25,7 +25,7 @@
     },
     {
       "slug": "eruzione-del-vesuvio-79",
-      "reason": "L'anno prima, mentre l'edificio era quasi finito, il Vesuvio aveva seppellito Pompei."
+      "reason": "L'anno prima, mentre l'edificio era ancora in costruzione, il Vesuvio aveva seppellito Pompei."
     },
     {
       "slug": "grande-incendio-di-roma-64",

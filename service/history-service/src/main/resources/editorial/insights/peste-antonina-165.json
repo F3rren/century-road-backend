@@ -1,7 +1,7 @@
 {
   "slug": "peste-antonina-165",
   "title": "La peste antonina",
-  "summary": "Nel 165 d.C. un'epidemia, portata dai soldati di ritorno dalla campagna contro i Parti, comincia a diffondersi nell'Impero romano: dura fino al 180 e secondo le stime più diffuse uccide circa un decimo degli abitanti.",
+  "summary": "Nel 165 d.C. un'epidemia, forse portata dai soldati di ritorno dalla campagna contro i Parti, comincia a diffondersi nell'Impero romano: dura fino al 180 e secondo una stima diffusa uccide circa un decimo degli abitanti.",
   "date": {
     "year": 165,
     "month": 1,
@@ -9,7 +9,7 @@
     "precision": "YEAR"
   },
   "place": {
-    "name": "Seleucia sul Tigri, Mesopotamia (Iraq)",
+    "name": "Seleucia, Mesopotamia (Iraq)",
     "lat": 33.137,
     "lon": 44.5172,
     "countryCode": "IQ",
@@ -18,7 +18,7 @@
   },
   "before": "La peste scoppiò verso la fine della Pax Romana, l'età di massima influenza, estensione e popolazione dell'Impero. Lucio Vero, co-imperatore con Marco Aurelio, conduceva una campagna contro i Parti nel Vicino Oriente.",
   "event": "Secondo le fonti antiche l'epidemia comparve durante l'assedio romano di Seleucia, in Mesopotamia, nell'inverno 165-166. La tradizione romana l'attribuiva alla violazione di un tempio della città da parte dei soldati, che l'avrebbero portata nell'Impero all'inizio del 166; il primo caso documentato è però a Smirne, nel 165, dove l'oratore Elio Aristide quasi morì. Da Oriente la peste si diffuse verso ovest: raggiunse Roma nel 166 e quasi ogni angolo dell'Impero entro il 172. Lucio Vero morì nel 169, forse per l'epidemia. Il medico Galeno la descrisse, e per questo è detta anche peste di Galeno.",
-  "after": "La malattia durò fino al 180 circa. Le stime dei morti vanno dal 2 al 33% della popolazione, ma la maggior parte indica circa il 10%, con punte fino al 15% nelle città e nell'esercito. Secondo Cassio Dione una nuova epidemia colpì Roma nel 189, con fino a 2 000 morti in un giorno. L'esercito, già impegnato nelle guerre marcomanniche, fu decimato: Marco Aurelio dovette arruolare gladiatori, schiavi e briganti. Gli storici discutono l'effetto della peste: per alcuni segnò l'inizio del declino dell'Impero, per altri fu un evento minore.",
+  "after": "La malattia durò fino al 180 circa. Per l'articolo inglese le stime dei morti vanno dal 2 al 33% della popolazione, ma la maggior parte indica circa il 10%, con punte fino al 15% nelle città e nell'esercito; per quello italiano i morti sono tra 5 e 30 milioni, e in alcune zone circa un terzo degli abitanti. Secondo Cassio Dione una nuova epidemia colpì Roma nel 189, con fino a 2 000 morti in un giorno. L'esercito, già impegnato nelle guerre marcomanniche, fu decimato: Marco Aurelio dovette arruolare gladiatori, schiavi e briganti. Gli storici discutono l'effetto della peste: per alcuni segnò l'inizio del declino dell'Impero, per altri fu un evento minore.",
   "links": [
     {
       "slug": "morte-di-marco-aurelio-180",
@@ -26,7 +26,7 @@
     },
     {
       "slug": "morte-di-traiano-117",
-      "reason": "Le campagne contro i Parti, che Traiano aveva portato fino alla Mesopotamia, riprendono nel II secolo con Lucio Vero."
+      "reason": "La peste comparve in Mesopotamia, dove Traiano aveva condotto la sua guerra contro i Parti."
     }
   ],
   "sources": [

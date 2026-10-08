@@ -14,11 +14,11 @@
     "lon": 12.4853,
     "countryCode": "IT",
     "approximate": true,
-    "note": "Il punto indica Roma, dove i quattro imperatori si succedettero; la guerra si combatté anche nelle province e a Bedriaco, dove i due eserciti si scontrarono due volte."
+    "note": "Il punto indica Roma, dove i quattro imperatori si succedettero; la guerra si combatté anche nelle province e a Bedriaco, dove si svolsero due battaglie."
   },
-  "before": "Alla morte di Nerone, il 9 giugno del 68, il Senato fece di Galba, governatore della Spagna, il nuovo imperatore. Galba non riuscì a farsi riconoscere da tutti: molti sostenitori furono delusi dalla sua mancanza di gratitudine, e adottò come erede Pisone Liciniano invece di Otone, che molti si aspettavano di vedere scelto. Fu l'inizio della prima guerra civile dell'Impero, in cui ogni imperatore fu acclamato da truppe diverse.",
-  "event": "Il 1° gennaio del 69 le legioni del Reno acclamarono Vitellio; il 15 gennaio Otone, con l'aiuto dei pretoriani, uccise Galba e prese il potere. Vitellio vinse la prima battaglia di Bedriaco il 14 aprile, Otone si tolse la vita il giorno dopo e il Senato riconobbe Vitellio. Intanto Vespasiano, che comandava in Giudea la guerra contro i ribelli ebrei, fu acclamato ad Alessandria il 1° luglio e poi dalle legioni del Danubio. A ottobre le sue truppe, guidate da Antonio Primo, batterono Vitellio nella seconda battaglia di Bedriaco, e il 20 dicembre Vitellio fu ucciso a Roma.",
-  "after": "Il 21 dicembre il Senato proclamò Vespasiano imperatore. Nella presa di Roma fu bruciato il tempio di Giove Capitolino. Vespasiano non ebbe più rivali: arrivò a Roma nel 70, mentre il figlio Tito restava in Giudea a concludere la guerra. Con lui cominciò la dinastia dei Flavi, che governò dal 69 al 96: dopo Vespasiano, che morì di morte naturale nel 79, vennero i figli Tito e Domiziano.",
+  "before": "Alla morte di Nerone, il 9 giugno del 68, il Senato fece di Galba, governatore della Spagna, il nuovo imperatore. Galba non riuscì a farsi riconoscere da tutti: alcuni sostenitori furono delusi dalla sua mancanza di gratitudine, e adottò come erede Pisone Liciniano invece di Otone, che molti si aspettavano di vedere scelto. Seguì la prima guerra civile dell'Impero, in cui ogni imperatore fu acclamato da truppe diverse.",
+  "event": "Il 1° gennaio del 69 le legioni del Reno rifiutarono di giurare fedeltà a Galba e il giorno dopo acclamarono Vitellio; il 15 gennaio Otone, con l'aiuto dei pretoriani, uccise Galba e prese il potere. Vitellio vinse la prima battaglia di Bedriaco il 14 aprile, Otone si tolse la vita pochi giorni dopo e il Senato riconobbe Vitellio. Intanto Vespasiano, che comandava in Giudea la guerra contro i ribelli ebrei, fu acclamato ad Alessandria il 1° luglio e poi dalle legioni del Danubio. A ottobre le sue truppe, guidate da Antonio Primo, batterono Vitellio nella seconda battaglia di Bedriaco, e il 20 dicembre Vitellio fu ucciso a Roma.",
+  "after": "Il 21 dicembre il Senato proclamò Vespasiano imperatore. Negli scontri di quei giorni a Roma fu bruciato il tempio di Giove Capitolino. Vespasiano non ebbe altri pretendenti, anche se le legioni del Reno rifiutarono ancora il suo governo e si arresero solo nel 70: arrivò a Roma nel 70, mentre il figlio Tito restava in Giudea a concludere la guerra. Con lui cominciò la dinastia dei Flavi, che governò dal 69 al 96: dopo Vespasiano, che morì di morte naturale nel 79, vennero i figli Tito e Domiziano.",
   "links": [
     {
       "slug": "morte-di-nerone-68",
@@ -48,7 +48,7 @@
     }
   ],
   "notes": [
-    "Il 69 è l'anno che dà il nome al periodo; la crisi cominciò nel giugno del 68, con la morte di Nerone, e si chiuse il 21 dicembre del 69. I giorni citati sono quelli riportati dalle fonti: il calendario giuliano non coincide con quello gregoriano."
+    "Il 69 è l'anno che dà il nome al periodo; la crisi cominciò nel giugno del 68, con la morte di Nerone, e si chiuse con la proclamazione di Vespasiano il 21 dicembre del 69, anche se la resa delle legioni del Reno arrivò nel 70. I giorni citati sono quelli riportati dalle fonti: il calendario giuliano non coincide con quello gregoriano."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

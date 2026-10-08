@@ -16,8 +16,8 @@
     "approximate": false
   },
   "before": "Roma era una delle maggiori città del mondo antico, con strade strette e tortuose, case con molte parti in legno e fiamme libere per cucinare e per illuminare: gli incendi erano frequenti. A spegnerli erano sette coorti di vigili, i vigiles, che si occupavano anche di ordine pubblico, e il lavoro era ostacolato dagli spazi stretti e dalla difficoltà di portare l'acqua dove serviva.",
-  "event": "L'incendio scoppiò di notte tra le botteghe vicine al Circo Massimo e si estese in fretta; i soccorsi furono rallentati dalla folla in fuga e dai vicoli. Secondo Tacito, Nerone si trovava ad Anzio e tornò quando le fiamme raggiungevano la sua residenza, la Domus Transitoria: fece arrivare viveri e aprì edifici pubblici e giardini ai senzatetto. Il fuoco infuriò per sei giorni e poi si riaccese per altri tre. Su quattordici quartieri tre furono distrutti del tutto, sette ridotti a pochi ruderi, e solo quattro si salvarono.",
-  "after": "Per la ricostruzione Nerone dettò nuove regole: tra l'altro, edifici senza muri in comune e parti in pietra resistente al fuoco. Costruì anche la Domus Aurea, un'enorme residenza, e per finanziare i lavori aumentò le tasse e svalutò la moneta. Girava voce che l'imperatore fosse il colpevole: secondo Tacito, per allontanare i sospetti accusò i cristiani, che furono arrestati e uccisi con supplizi crudeli. Gli storici discutono se il fuoco fu doloso o accidentale e quale parte ebbe Nerone; gli storici concordano che la città era troppo affollata e impreparata a un disastro simile.",
+  "event": "Secondo Tacito l'incendio scoppiò di notte tra le botteghe vicine al Circo Massimo e si estese in fretta; i soccorsi furono rallentati dalla folla in fuga e dai vicoli, e Nerone si trovava ad Anzio e tornò quando le fiamme raggiungevano la sua residenza, la Domus Transitoria: fece arrivare viveri e aprì edifici pubblici e giardini ai senzatetto. Il fuoco infuriò per sei giorni e poi si riaccese per altri tre. Su quattordici quartieri tre furono distrutti del tutto, sette ridotti a pochi ruderi, e solo quattro si salvarono.",
+  "after": "Per la ricostruzione Nerone dettò nuove regole: tra l'altro, edifici senza muri in comune e parti in pietra resistente al fuoco. Costruì anche la Domus Aurea, un'enorme residenza, e per finanziare i lavori aumentò le tasse e svalutò la moneta. Girava voce che l'imperatore fosse il colpevole: secondo Tacito, per allontanare i sospetti accusò i cristiani, che furono arrestati e uccisi con supplizi crudeli. Gli storici discutono se il fuoco fu doloso o accidentale e quale parte ebbe Nerone; per l'articolo inglese oggi gli storici concordano che la città era troppo affollata e impreparata a un disastro simile.",
   "links": [
     {
       "slug": "morte-di-augusto-14",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Le fonti dicono che l'incendio scoppiò nella notte tra il 18 e il 19 luglio: per questo la data è data solo al mese. undefined",
+    "Le fonti parlano di una notte a cavallo tra il 18 e il 19 luglio: per questo la data è data solo al mese. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
     "Le cause e le responsabilità sono discusse: gli autori antichi lo ritenevano quasi unanimemente doloso, ma gli storici moderni osservano che un incendio così grande in una città costruita in quel modo poteva essere accidentale. Il racconto della persecuzione dei cristiani viene soprattutto da Tacito."
   ],
   "provenance": {

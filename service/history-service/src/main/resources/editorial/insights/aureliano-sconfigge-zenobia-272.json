@@ -15,13 +15,13 @@
     "countryCode": "SY",
     "approximate": false
   },
-  "before": "Dopo l'assassinio del marito Odenato, nel 267, Zenobia governò Palmira come reggente del figlio Vaballato. Odenato, re di Palmira dal 260, aveva sconfitto i Persiani e stabilizzato l'Oriente romano. Nel 270 Zenobia lanciò un'invasione che portò gran parte dell'Oriente romano sotto il suo controllo e culminò con l'annessione dell'Egitto: a metà del 271 il suo regno andava da Ancira, in Anatolia, all'Alto Egitto, anche se restava formalmente subordinato a Roma.",
-  "event": "In primavera, davanti alla marcia di Aureliano, Zenobia proclamò imperatore il figlio e assunse il titolo di imperatrice: Palmira era indipendente da Roma. Aureliano, che aveva passato l'inverno a Bisanzio, attraversò l'Asia Minore, che gli aprì le porte quasi ovunque, mentre una spedizione contemporanea raggiungeva l'Egitto e tra maggio e giugno prendeva Alessandria. Presso Antiochia sconfisse l'esercito palmireno nella battaglia di Immae, poi di nuovo a Emesa. Zenobia si ritirò a Palmira, che Aureliano assediò; quando lasciò la città per cercare aiuto in Persia fu catturata prima di attraversare l'Eufrate, e Palmira si arrese nell'agosto del 272.",
-  "after": "Aureliano mandò Zenobia e il figlio a Emesa per il processo; fece giustiziare la maggior parte dei prigionieri, ma risparmiò l'imperatrice e il figlio per farli sfilare nel suo trionfo. La sorte di Zenobia dopo Emesa è incerta, perché gli storici antichi lasciarono racconti contrastanti. La maggior parte degli storici antichi e moderni concorda che fu esibita nel trionfo del 274; solo Malala parla di decapitazione, mentre per la Historia Augusta ricevette poi una villa a Tivoli. L'immagine di una Zenobia vile nella sconfitta è probabilmente propaganda di Aureliano.",
+  "before": "Dopo l'assassinio del marito Odenato, tra la fine del 267 e l'inizio del 268, Zenobia governò Palmira come reggente del figlio Vaballato. Odenato, re di Palmira dal 260, aveva sconfitto i Persiani e stabilizzato l'Oriente romano. Tra il 269 e il 270 Zenobia lanciò un'invasione che portò gran parte dell'Oriente romano sotto il suo controllo e culminò con l'annessione dell'Egitto: a metà del 271 il suo regno andava da Ancira, in Anatolia, all'Alto Egitto, anche se restava formalmente subordinato a Roma.",
+  "event": "In primavera, probabilmente in reazione alla marcia di Aureliano, Zenobia proclamò imperatore il figlio e assunse il titolo di imperatrice: Palmira era indipendente da Roma. Aureliano, che aveva passato l'inverno a Bisanzio, attraversò l'Asia Minore, che gli aprì le porte quasi ovunque, mentre una spedizione contemporanea raggiungeva l'Egitto e tra maggio e giugno prendeva Alessandria. Presso Antiochia sconfisse l'esercito palmireno nella battaglia di Immae, poi di nuovo a Emesa. Zenobia si ritirò a Palmira, che Aureliano assediò; quando lasciò la città per cercare aiuto in Persia fu catturata prima di attraversare l'Eufrate, e Palmira si arrese nel 272, in agosto secondo l'articolo inglese.",
+  "after": "Aureliano mandò Zenobia e il figlio a Emesa per il processo; fece giustiziare la maggior parte dei prigionieri, ma risparmiò l'imperatrice e il figlio, per far sfilare lei nel suo trionfo. La sorte di Zenobia dopo Emesa è incerta, perché gli storici antichi lasciarono racconti contrastanti. La maggior parte degli storici antichi e moderni concorda che fu esibita nel trionfo del 274; solo Malala parla di decapitazione, mentre per la Historia Augusta ricevette poi una villa a Tivoli. L'immagine di una Zenobia vile nella sconfitta è probabilmente propaganda di Aureliano.",
   "links": [
     {
       "slug": "battaglia-di-edessa-260",
-      "reason": "Odenato, il marito di Zenobia, aveva fermato l'espansione persiana dopo la cattura di Valeriano."
+      "reason": "Odenato, il marito di Zenobia, aveva contrastato l'espansione persiana dopo la cattura di Valeriano."
     },
     {
       "slug": "mura-aureliane-271",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Le fonti danno l'anno, il 272: la ribellione di Zenobia cominciò tra la fine di marzo e l'inizio di aprile e finì entro agosto. Le fonti sono in gran parte romane e ostili a Zenobia, e non ci sono resoconti contemporanei del processo."
+    "Le fonti danno l'anno, il 272: per l'articolo inglese la ribellione di Zenobia cominciò tra la fine di marzo e l'inizio di aprile e finì entro agosto, mentre quello italiano fa cominciare l'espansione di Palmira già nel 269-270. Le fonti sono in gran parte romane e ostili a Zenobia, e non ci sono resoconti contemporanei del processo."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

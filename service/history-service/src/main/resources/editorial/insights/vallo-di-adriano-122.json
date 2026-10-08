@@ -1,7 +1,7 @@
 {
   "slug": "vallo-di-adriano-122",
   "title": "L'inizio del Vallo di Adriano",
-  "summary": "Nel 122 d.C. l'imperatore Adriano fa iniziare un muro di pietra con fossati e fortini attraverso la Britannia: il Vallo di Adriano segna per gran parte del dominio romano il confine settentrionale dell'isola.",
+  "summary": "Nel 122 d.C. l'imperatore Adriano fa iniziare un muro di pietra con fossati e fortini attraverso la Britannia: il Vallo di Adriano segna per gran parte del dominio romano il confine settentrionale della provincia.",
   "date": {
     "year": 122,
     "month": 1,
@@ -17,12 +17,12 @@
     "note": "Il punto indica un tratto centrale del Vallo, che corre per circa 117 chilometri da Wallsend, sul Tyne, a Bowness-on-Solway."
   },
   "before": "Quando Adriano divenne imperatore, nel 117, ci furono agitazioni e rivolte in Britannia e in vari paesi conquistati, tra cui Egitto, Giudea, Libia e Mauretania. Adriano pose fine alla politica di espansione di Traiano e si concentrò sulla difesa dei confini. Come Augusto, riteneva giusto usare confini naturali come il Reno, il Danubio e l'Eufrate; in Britannia, però, non ce n'erano.",
-  "event": "Il muro fu probabilmente progettato prima della visita di Adriano in Britannia, nel 122. La costruzione cominciò quell'anno sotto il governatore Aulo Platorio Nepote. Fu costruito dai soldati di tre legioni, la II Augusta, la VI Victrix e la XX Valeria Victrix, in sei o sette anni. Era un muro di pietra, con grandi fossati davanti e dietro, lungo il quale sorgevano grandi forti, piccoli fortini detti milecastles e torri di guardia.",
+  "event": "Il muro fu probabilmente progettato prima della visita di Adriano in Britannia, nel 122. La costruzione cominciò quell'anno sotto il governatore Aulo Platorio Nepote. Fu costruito dai soldati di tre legioni, la II Augusta, la VI Victrix e la XX Valeria Victrix, in sei o sette anni. Era un muro di pietra (nel tratto occidentale in origine di zolle, poi rifatto in pietra), con grandi fossati davanti e dietro, lungo il quale sorgevano grandi forti, piccoli fortini detti milecastles e torri di guardia.",
   "after": "Il Vallo serviva soprattutto come barriera per rallentare chi voleva entrare per razziare animali, tesori o schiavi, e come punto di osservazione; le sue porte potevano servire anche da dogane. Per gran parte del dominio romano fu il confine più settentrionale della Britannia. Nel 142 il Vallo Antonino, in Scozia, lo sostituì per breve tempo prima di essere abbandonato. Con il declino dell'Impero il muro cadde in disuso; in età moderna quasi tutta la muratura rimasta fu riutilizzata per strade e fattorie. Nel 1987 è stato inserito nella lista UNESCO.",
   "links": [
     {
       "slug": "conquista-della-britannia-43",
-      "reason": "La provincia che il Vallo difende era nata con l'invasione di Claudio."
+      "reason": "La provincia che il Vallo difende era nata con l'invasione romana della Britannia."
     },
     {
       "slug": "morte-di-traiano-117",
