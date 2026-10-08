@@ -1,5 +1,9 @@
 package centuryroad.history.model;
 
+import java.util.Arrays;
+import java.util.Locale;
+import java.util.Optional;
+
 /**
  * What a guided path is about: one per path, from a closed list. The order of the constants is
  * the order the paths are shown in - the periods first, oldest to newest, then regions, then
@@ -51,5 +55,18 @@ public enum Topic {
     /** The name to show, in Italian. */
     public String label() {
         return label;
+    }
+
+    /**
+     * The folder of src/main/resources/editorial that holds this topic's paths and insights:
+     * the constant's name in lowercase, with hyphens (ROMA_REPUBBLICANA becomes roma-repubblicana).
+     */
+    public String folder() {
+        return name().toLowerCase(Locale.ROOT).replace('_', '-');
+    }
+
+    /** The topic whose folder this is, if it is the folder of one. */
+    public static Optional<Topic> ofFolder(String folder) {
+        return Arrays.stream(values()).filter(topic -> topic.folder().equals(folder)).findFirst();
     }
 }
