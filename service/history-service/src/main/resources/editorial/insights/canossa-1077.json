@@ -1,0 +1,51 @@
+{
+  "slug": "canossa-1077",
+  "title": "Enrico IV a Canossa",
+  "summary": "Il 28 gennaio 1077 papa Gregorio VII, ospite del castello di Canossa, assolve il re Enrico IV dalla scomunica dopo tre giorni di attesa penitenziale in pieno inverno: un episodio simbolo della lotta per le investiture.",
+  "date": {
+    "year": 1077,
+    "month": 1,
+    "day": 28
+  },
+  "place": {
+    "name": "Castello di Canossa, Emilia, Italia",
+    "lat": 44.575,
+    "lon": 10.448,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Eletto papa nel 1073, Gregorio VII proclamò con il Dictatus papae norme per rafforzare l'autorità del papato e vietò ai sovrani di nominare i titolari di cariche ecclesiastiche; Enrico IV difese il diritto, tradizionale, di investire vescovi e abbati. Nel 1075 Enrico nominò un nuovo vescovo di Milano. Il 24 gennaio 1076, a Worms, i vescovi tedeschi gli tolsero la loro obbedienza al papa; Gregorio scomunicò e depose Enrico e sciolse i sudditi dal giuramento. In ottobre i principi tedeschi gli imposero di ottenere la riconciliazione entro un anno. Enrico attraversò le Alpi in pieno inverno, dal Moncenisio; Gregorio, diretto in Germania, si rifugiò a Canossa, ospite della marchesa Matilde.",
+  "event": "Enrico arrivò a Canossa il 25 gennaio 1077. Il papa ordinò che gli fosse negato l'ingresso, e il re rimase davanti al portone per tre giorni: vestito da penitente, con un cilicio e, secondo la tradizione, a piedi scalzi, digiunando. Il 28 gennaio le porte furono aperte, per l'articolo italiano grazie all'intercessione dell'abate di Cluny Ugo e di Matilde. Secondo i racconti dell'epoca Enrico si inginocchiò davanti al papa e chiese perdono; Gregorio lo assolse, e la sera il papa, Enrico e Matilde condivisero la comunione nella cappella di Sant'Apollonio, dentro il castello.",
+  "after": "Gli effetti immediati furono limitati. In Germania, a Forchheim, i principi deposero Enrico ed elessero Rodolfo di Svevia, e il re fu trascinato in una guerra civile. Gregorio scomunicò di nuovo Enrico; questi vinse la guerra, prese Roma e costrinse il papa a fuggire, mettendo al suo posto l'antipapa Clemente III. Gli storici discutono se la camminata a Canossa fu una sconfitta umiliante o «un colpo da maestro». Dall'episodio nasce l'espressione «andare a Canossa», che indica un atto di penitenza o di sottomissione, spesso forzata.",
+  "links": [
+    {
+      "slug": "ottone-i-incoronato-imperatore-962",
+      "reason": "Centoquindici anni prima il privilegio di Ottone I prevedeva che il papa eletto giurasse fedeltà all'imperatore prima di essere consacrato."
+    },
+    {
+      "slug": "concordato-di-worms-1122",
+      "reason": "Il conflitto sulle investiture finisce quarantacinque anni dopo con il concordato di Worms."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Road to Canossa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Road_to_Canossa",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Umiliazione di Canossa - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Umiliazione_di_Canossa",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 28 gennaio è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Per l'articolo inglese non è accertato che Enrico abbia fatto una vera penitenza formale; i dettagli sull'attesa, come il cilicio e i piedi scalzi, vengono da cronache come quella di Lamberto di Hersfeld e da lettere dei due protagonisti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

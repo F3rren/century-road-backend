@@ -1,0 +1,54 @@
+{
+  "slug": "conquista-islamica-di-gerusalemme-637",
+  "title": "I musulmani conquistano Gerusalemme",
+  "summary": "Tra il 636 e il 637 o 638 il califfato dei Rashidun toglie Gerusalemme ai Bizantini: dopo un lungo assedio il patriarca Sofronio si arrende al califfo Umar, che garantisce libertà civile e religiosa a cristiani ed ebrei in cambio di un tributo.",
+  "date": {
+    "year": 637,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Gerusalemme",
+    "lat": 31.783,
+    "lon": 35.217,
+    "approximate": false
+  },
+  "before": "Gerusalemme, città della provincia bizantina di Palestina Prima, era caduta nel 614 in mano a un esercito sasanide che la saccheggiò: la chiesa del Santo Sepolcro fu distrutta e la Vera Croce portata a Ctesifonte, e secondo il racconto i Persiani massacrarono i 90 000 abitanti cristiani. Eraclio la riportò dopo la sua vittoria sui Persiani del 628. Dopo la vittoria dello Yarmuk, nell'ottobre del 636 il comandante arabo Abu Ubayda tenne un consiglio di guerra: il califfo Umar ordinò di conquistare Gerusalemme. Il patriarca Sofronio ne aveva riparato le difese.",
+  "event": "I musulmani arrivarono a Gerusalemme all'inizio di novembre del 636; la guarnigione bizantina si ritirò nella città fortificata, e Sofronio mandò in segreto le reliquie, compresa la Vera Croce, verso la costa. I musulmani scelsero di stringere l'assedio finché i Bizantini finissero i rifornimenti, per ottenere una resa senza sangue; l'assedio fu, a quanto pare, incruento, e durò quattro mesi per l'articolo inglese, sei per quello italiano. Sofronio offrì di arrendersi e di pagare la jizya, a condizione che il califfo venisse di persona. Umar arrivò, per l'articolo italiano nell'aprile 637, e fu composto un patto, il Patto di Umar, che garantiva libertà civile e religiosa a cristiani ed ebrei in cambio del tributo.",
+  "after": "Umar permise agli ebrei di tornare a risiedere in città, dopo quasi cinquecento anni di dominio e oppressione romani. Secondo le cronache musulmane, Sofronio lo invitò a pregare nella chiesa del Santo Sepolcro, ma Umar rifiutò, temendo che i musulmani potessero poi trasformarla in moschea. Dopo dieci giorni tornò a Medina. Visitò il Monte del Tempio e fece costruire una moschea di legno dopo averlo fatto ripulire. La conquista consolidò il controllo arabo sulla Palestina, che per l'articolo inglese rimase a califfati sunniti fino ai Fatimidi, sciiti, nel 969, poi ai Selgiuchidi nel 1073, e a sovrani cristiani dal 1099, con la prima crociata.",
+  "links": [
+    {
+      "slug": "battaglia-dello-yarmuk-636",
+      "reason": "La vittoria dello Yarmuk, nell'agosto del 636, aveva isolato Gerusalemme dal resto della Siria."
+    },
+    {
+      "slug": "rivolta-di-bar-kokhba-132",
+      "reason": "Agli ebrei, esclusi da Gerusalemme dopo la rivolta di Bar Kokhba, fu permesso di tornare a risiedervi."
+    },
+    {
+      "slug": "conquista-crociata-di-gerusalemme-1099",
+      "reason": "Nel 1099 i crociati riprendono la città ai musulmani."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Muslim conquest of Jerusalem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Muslim_conquest_of_Jerusalem",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Gerusalemme (637) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Gerusalemme_(637)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno della resa è discusso: le fonti antiche indicano il 636, il 637 o il 638, e per l'articolo inglese le fonti accademiche preferiscono il 638, mentre quello italiano parla dell'aprile 637. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

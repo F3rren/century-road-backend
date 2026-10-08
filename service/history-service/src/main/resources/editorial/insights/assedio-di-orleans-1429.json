@@ -1,0 +1,51 @@
+{
+  "slug": "assedio-di-orleans-1429",
+  "title": "Giovanna d'Arco libera Orléans",
+  "summary": "L'8 maggio 1429, nove giorni dopo l'arrivo di Giovanna d'Arco, gli Inglesi tolgono l'assedio di Orléans, cominciato il 12 ottobre 1428: è un punto di svolta della guerra dei Cent'anni.",
+  "date": {
+    "year": 1429,
+    "month": 5,
+    "day": 8
+  },
+  "place": {
+    "name": "Orléans, Francia",
+    "lat": 47.9029,
+    "lon": 1.9093,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dopo Azincourt gli Inglesi avevano occupato gran parte della Francia settentrionale; con il trattato di Troyes del 1420 Enrico V era diventato reggente di Francia ed erede al trono, e il Delfino Carlo era stato diseredato. Orléans, sulla Loira, era l'ultima grande città del nord fedele ai Valois, e il suo duca, capo degli Armagnacchi, era prigioniero degli Inglesi dalla battaglia di Azincourt. Nel 1428 Thomas Montagu, conte di Salisbury, arrivò con 2700 uomini di rinforzo; il 7 ottobre era a Olivet, a un miglio dalla città, e l'assedio cominciò formalmente il 12 ottobre. Dunois organizzò la difesa.",
+  "event": "Gli Inglesi presero Les Tourelles, la fortezza all'ingresso del ponte, il 24 ottobre. Nove giorni prima della fine dell'assedio era arrivata Giovanna d'Arco. Il 7 maggio i Francesi attaccarono Les Tourelles; Giovanna fu colpita da una freccia tra il collo e la spalla, ma tornò a combattere la sera e convinse Dunois a non rinviare l'assalto. I Francesi attaccarono da due lati, con il ponte riparato; il ponte levatoio cedette e il comandante inglese Glasdale annegò, e la fortezza fu presa a sera. Gli Inglesi ebbero quasi mille morti e 600 prigionieri. L'8 maggio le truppe inglesi si ritirarono.",
+  "after": "Gli Inglesi non si considerarono sconfitti, ma i Francesi ripresero l'iniziativa: nella campagna della Loira presero Jargeau, Meung e Beaugency e vinsero a Patay il 18 giugno, la prima vittoria campale importante da anni, catturando Suffolk e Talbot. Poi il Delfino marciò su Reims, con Giovanna al fianco, e il 17 luglio 1429 fu consacrato re Carlo VII. La guerra durò ancora a lungo, ma l'assedio di Orléans, scrive l'articolo italiano, fu il primo grande successo militare francese dopo Azincourt.",
+  "links": [
+    {
+      "slug": "battaglia-di-azincourt-1415",
+      "reason": "Quattordici anni prima la vittoria inglese di Azincourt aveva dato inizio al periodo di dominio inglese."
+    },
+    {
+      "slug": "inizio-della-guerra-dei-cent-anni-1337",
+      "reason": "La guerra era cominciata novantadue anni prima, con la confisca della Guienna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Orléans (1428–1429) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Orléans_(1428–1429)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Orléans - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Orléans",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'8 maggio 1429 è il giorno della fine dell'assedio dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "La premonizione di Giovanna sulla sua ferita viene dalla testimonianza resa dal suo confessore Jean Pasquerel anni dopo; l'articolo italiano precisa che la raccontò durante il processo di riabilitazione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

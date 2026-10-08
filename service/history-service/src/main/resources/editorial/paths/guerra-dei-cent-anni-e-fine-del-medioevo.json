@@ -1,0 +1,37 @@
+{
+  "slug": "guerra-dei-cent-anni-e-fine-del-medioevo",
+  "title": "La guerra dei Cent'anni e la fine del Medioevo",
+  "tagline": "Da Crécy alla caduta di Costantinopoli: la guerra tra Francia e Inghilterra, la peste nera, la rivolta dei contadini inglesi e la fine dell'Impero bizantino.",
+  "intro": "Il percorso segue gli ultimi due secoli del Medioevo: la guerra dei Cent'anni tra Francia e Inghilterra, con Crécy, Azincourt e l'assedio di Orléans, la peste nera, la rivolta dei contadini inglesi del 1381 e la fine dell'Impero bizantino nel 1453.\n\nLe cifre di eserciti e morti sono quasi sempre stime, e i due articoli da cui sono tratti i testi non sempre concordano; dove accade, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "inizio-della-guerra-dei-cent-anni-1337",
+      "narrative": "Si parte dal 1337: la confisca della Guienna dà inizio alla guerra dei Cent'anni."
+    },
+    {
+      "insight": "battaglia-di-crecy-1346",
+      "narrative": "Nel 1346 gli arcieri inglesi vincono a Crécy."
+    },
+    {
+      "insight": "peste-nera-1347",
+      "narrative": "Nel 1347 la peste nera arriva in Europa."
+    },
+    {
+      "insight": "rivolta-dei-contadini-1381",
+      "narrative": "Nel 1381 una rivolta scuote l'Inghilterra: i ribelli entrano a Londra."
+    },
+    {
+      "insight": "battaglia-di-azincourt-1415",
+      "narrative": "Nel 1415 Enrico V vince ad Azincourt."
+    },
+    {
+      "insight": "assedio-di-orleans-1429",
+      "narrative": "Nel 1429 Giovanna d'Arco libera Orléans."
+    },
+    {
+      "insight": "caduta-di-costantinopoli-1453",
+      "narrative": "Nel 1453 gli Ottomani conquistano Costantinopoli."
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "teodorico-diventa-re-d-italia-493",
+  "title": "Teodorico uccide Odoacre e diventa re d'Italia",
+  "summary": "Il 15 marzo del 493 Teodorico, re degli Ostrogoti, uccide a un banchetto Odoacre, con cui aveva appena concordato di regnare insieme: da allora governa l'Italia, formalmente per conto dell'Impero d'Oriente.",
+  "date": {
+    "year": 493,
+    "month": 3,
+    "day": 15
+  },
+  "place": {
+    "name": "Ravenna, Italia",
+    "lat": 44.4184,
+    "lon": 12.2035,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Odoacre era re d'Italia, formalmente viceré dell'imperatore Zenone ma di lealtà dubbia. Teodorico, nato intorno al 454 e portato bambino a Costantinopoli come ostaggio, comandava gli Ostrogoti: Zenone lo aveva fatto comandante delle forze romane nel 483 e console designato per il 484, ma i suoi Goti continuavano a saccheggiare le province dell'Impero, e nel 487 assediarono Costantinopoli. Per risolvere il problema Zenone gli offrì di governare l'Italia come patrizio: gli Ostrogoti avrebbero avuto terre in cui vivere, e Zenone si sarebbe liberato di Odoacre.",
+  "event": "Nel 489 Teodorico guidò gli Ostrogoti in Italia, sconfisse Odoacre sull'Isonzo e a Verona e lo assediò a Ravenna. Una sortita di Odoacre nel luglio del 491 fallì, e l'anno dopo la flotta ostrogota isolò la città dal mare. Si arrivò a un accordo per cui i due re avrebbero regnato insieme, firmato il 2 febbraio 493 secondo l'articolo inglese, il 25 febbraio secondo quello italiano. Teodorico entrò a Ravenna il 5 marzo; il 15 marzo, a un banchetto per festeggiare l'accordo, uccise Odoacre colpendolo con la spada alla clavicola. Esiste anche una versione leggendaria, in cui Odoacre fu invitato a cena e fatto uccidere a tradimento da un servo.",
+  "after": "Con Odoacre morto e le sue truppe disperse, Teodorico governò l'Italia fino al 526, con il titolo di patrizio e formalmente sottoposto all'Impero d'Oriente: nacque il Regno ostrogoto d'Italia. Doveva ora sistemare il proprio popolo. Dal 511 fu anche reggente dei Visigoti. Morì nel 526 e fu sepolto in un grande mausoleo a Ravenna.",
+  "links": [
+    {
+      "slug": "deposizione-di-romolo-augustolo-476",
+      "reason": "Odoacre, l'avversario di Teodorico, era il re d'Italia dopo la fine dell'Impero d'Occidente."
+    },
+    {
+      "slug": "battaglia-di-vouille-507",
+      "reason": "Qualche anno dopo i Visigoti sono sconfitti dai Franchi a Vouillé, e dal 511 Teodorico ne è reggente."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Theodoric the Great - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Theodoric_the_Great",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Teodorico - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Teodorico",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano su alcune date: l'accordo con Odoacre è del 2 febbraio 493 per quello inglese e del 25 febbraio per quello italiano. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

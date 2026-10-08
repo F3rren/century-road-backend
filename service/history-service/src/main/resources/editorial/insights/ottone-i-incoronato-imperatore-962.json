@@ -1,0 +1,56 @@
+{
+  "slug": "ottone-i-incoronato-imperatore-962",
+  "title": "Ottone I incoronato imperatore",
+  "summary": "Nel febbraio del 962 papa Giovanni XII incorona a Roma imperatore Ottone I, re dei Franchi orientali e d'Italia: i regni di Germania e d'Italia si uniscono in un'unica realtà, che sarà poi detta Sacro Romano Impero.",
+  "date": {
+    "year": 962,
+    "month": 2,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Basilica di San Pietro, Roma, Italia",
+    "lat": 41.9022,
+    "lon": 12.4539,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Ottone era re dei Franchi orientali dal 936 e nel 955 aveva sconfitto i Magiari al Lechfeld. Nel 951 era sceso in Italia, chiamato dalla regina Adelaide, e l'aveva sposata. Berengario II, suo vassallo per il regno d'Italia, si rivelò un subordinato ribelle e attaccò anche lo Stato della Chiesa: nell'autunno del 960 papa Giovanni XII chiese aiuto a Ottone, e acconsentì a incoronarlo imperatore. Nel maggio 961 Ottone fece di suo figlio Ottone II, di sei anni, il suo erede e co-reggente; in agosto valicò il Brennero e a Natale era a Pavia, dove assunse il titolo di re d'Italia.",
+  "event": "Ottone raggiunse Roma il 31 gennaio 962 e fu incoronato imperatore da Giovanni XII nell'antica basilica di San Pietro; il papa unse imperatrice anche Adelaide, e per l'articolo italiano era una novità, perché nessuna moglie di un Carolingio era stata incoronata imperatrice. L'incoronazione, scrive lo stesso articolo, stabilì una tradizione per tutte quelle imperiali del Medioevo. Il 12 febbraio un sinodo approvò l'arcidiocesi di Magdeburgo, e poco dopo Ottone e il papa ratificarono il privilegio ottoniano: confermava i possedimenti del papa e prevedeva che il papa eletto giurasse fedeltà all'imperatore prima della consacrazione.",
+  "after": "Nella primavera del 963 Giovanni XII, preoccupato dal potere di Ottone, si alleò con Adalberto, figlio di Berengario; Ottone tornò a Roma e un sinodo depose il papa, innalzando Leone VIII, cosa mai accaduta prima. Dopo la partenza di Ottone i Romani riportarono Giovanni in città. L'articolo inglese osserva che con l'incoronazione il regno di Germania e il regno d'Italia furono uniti in un solo dominio, poi chiamato Sacro Romano Impero. Secondo l'articolo italiano gli storici discutono se Ottone puntasse a rinnovare l'impero carolingio o si limitasse a rispondere all'iniziativa di un papa in difficoltà.",
+  "links": [
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "Ottone si rifà all'esempio di Carlo Magno, incoronato a Roma centosessantadue anni prima."
+    },
+    {
+      "slug": "battaglia-del-lechfeld-955",
+      "reason": "Sette anni prima la vittoria del Lechfeld aveva rafforzato la posizione di Ottone."
+    },
+    {
+      "slug": "donazione-di-pipino-756",
+      "reason": "Nel privilegio Ottone riconosce la donazione di Pipino a favore del papa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Otto the Great - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Otto_the_Great",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ottone I di Sassonia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ottone_I_di_Sassonia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sul giorno: per quello italiano Ottone fu incoronato il 2 febbraio, per quello inglese arrivò a Roma il 31 gennaio e fu incoronato tre giorni dopo. Per questo la data è data solo al mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
+    "Secondo l'articolo italiano, il racconto di Vitichindo di Corvey su un'acclamazione di Ottone a imperatore sul campo del Lechfeld è contestato, e la cancelleria non cambiò il suo titolo fino al febbraio del 962."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

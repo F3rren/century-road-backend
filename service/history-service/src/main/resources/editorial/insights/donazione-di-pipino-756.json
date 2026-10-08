@@ -1,0 +1,51 @@
+{
+  "slug": "donazione-di-pipino-756",
+  "title": "La donazione di Pipino e gli inizi dello Stato della Chiesa",
+  "summary": "Nel 756 Pipino il Breve, re dei Franchi, sconfigge i Longobardi e cede al papa Stefano II i territori dell'Italia centrale: è l'atto da cui nasce lo Stato della Chiesa.",
+  "date": {
+    "year": 756,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Basilica di San Pietro, Roma, Italia",
+    "lat": 41.9022,
+    "lon": 12.4539,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nel 751 il re longobardo Astolfo conquistò Ravenna, ultimo resto dell'esarcato bizantino; nel 752 chiese la sottomissione di Roma e un tributo. Il papa Stefano II cercò invano di trattare e si rivolse senza successo all'imperatore bizantino Costantino V; poi andò in Francia, dal re Pipino il Breve: fu la prima volta che un papa attraversava le Alpi. Lo incontrò a Ponthion il 6 gennaio 754, e Pipino promise di restituire l'esarcato di Ravenna e i diritti e i territori della repubblica romana. Il 28 luglio 754, a Saint-Denis, il papa unse Pipino e i suoi figli Carlo e Carlomanno come re dei Franchi e patrizi dei Romani.",
+  "event": "Nella primavera del 755 Pipino sconfisse i Longobardi vicino a Susa e Astolfo promise di restituire Ravenna e le altre città; ma quando i Franchi se ne andarono, il 1° gennaio 756, Astolfo assediò Roma. Pipino tornò in Italia e lo sconfisse di nuovo, imponendogli la seconda pace di Pavia, nel 756. Per l'articolo italiano Astolfo dovette consegnare un terzo del tesoro della corona, pagare un tributo annuo ai Franchi e cedere Ravenna e le altre città. Un documento con l'elenco delle città, la «Confessione di San Pietro», fu posto sull'altare dell'antica basilica di San Pietro a Roma, con le chiavi delle città.",
+  "after": "La donazione estese il dominio temporale dei papi oltre il ducato di Roma e diede una base giuridica allo Stato della Chiesa. Fu confermata dai successori di Pipino, Carlo Magno nel 778 e Ludovico il Pio nell'817. Riguardava territori che tecnicamente non erano di Pipino, ma l'impero bizantino non riusciva a controllarli: la sua presenza nell'Italia centrale era finita. Gli storici discutono anche l'attendibilità del manoscritto che la cita e il fatto che l'atto non corrispondesse esattamente alla promessa di Quierzy; il regno longobardo, per l'articolo italiano, conservò l'indipendenza per altri vent'anni.",
+  "links": [
+    {
+      "slug": "invasione-longobarda-dell-italia-568",
+      "reason": "Il regno nato con l'invasione di Alboino, quasi due secoli prima, subisce qui una grave sconfitta."
+    },
+    {
+      "slug": "fine-del-regno-longobardo-774",
+      "reason": "Diciotto anni dopo Carlo Magno, successore di Pipino, pone fine al regno longobardo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Donation of Pepin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Donation_of_Pepin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Promissio Carisiaca - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Promissio_Carisiaca",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli collocano la promessa di Pipino nel 754, a Quierzy, e la donazione nel 756: per questo la data è data solo all'anno. Per l'articolo italiano la promessa di Quierzy è un documento sottoscritto da Pipino; per quello inglese potrebbe essere stata solo verbale e non esiste in forma scritta."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

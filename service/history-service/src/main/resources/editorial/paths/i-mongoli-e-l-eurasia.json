@@ -1,0 +1,37 @@
+{
+  "slug": "i-mongoli-e-l-eurasia",
+  "title": "I Mongoli e l'Eurasia",
+  "tagline": "Da Gengis Khan al Don: l'impero delle steppe, le sconfitte dei Russi e degli Europei, la caduta di Baghdad, la sconfitta di Ain Jalut, il viaggio di Marco Polo e il declino dell'Orda d'Oro.",
+  "intro": "Il percorso segue l'espansione mongola, dal kurultai del 1206 alla battaglia di Kulikovo: le campagne in Russia, in Polonia e in Mesopotamia, il primo grande arresto di Ain Jalut e il viaggio di Marco Polo alla corte del Gran Khan.\n\nLe fonti mongole sono scarse e molti racconti vengono da cronisti dei popoli sconfitti; dove i due articoli da cui sono tratti i testi non concordano, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "gengis-khan-1206",
+      "narrative": "Si parte dal 1206: Temüjin è proclamato Gengis Khan."
+    },
+    {
+      "insight": "battaglia-del-kalka-1223",
+      "narrative": "Nel 1223 i Mongoli sconfiggono i principi russi sul Kalka."
+    },
+    {
+      "insight": "battaglia-di-legnica-1241",
+      "narrative": "Nel 1241 vincono a Legnica, in Polonia."
+    },
+    {
+      "insight": "sacco-di-baghdad-1258",
+      "narrative": "Nel 1258 Hulegu prende Baghdad e finisce il califfato abbaside."
+    },
+    {
+      "insight": "battaglia-di-ain-jalut-1260",
+      "narrative": "Nel 1260 i Mamelucchi li fermano a Ain Jalut."
+    },
+    {
+      "insight": "marco-polo-parte-per-la-cina-1271",
+      "narrative": "Nel 1271 Marco Polo parte per la corte del Gran Khan."
+    },
+    {
+      "insight": "battaglia-di-kulikovo-1380",
+      "narrative": "Nel 1380 Dmitrij di Mosca batte Mamai a Kulikovo."
+    }
+  ]
+}

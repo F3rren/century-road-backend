@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-hastings-1066",
+  "title": "La battaglia di Hastings",
+  "summary": "Il 14 ottobre del 1066 l'esercito normanno del duca Guglielmo sconfigge presso Hastings quello inglese del re Aroldo Godwinson, che muore in battaglia: è l'inizio della conquista normanna dell'Inghilterra.",
+  "date": {
+    "year": 1066,
+    "month": 10,
+    "day": 14
+  },
+  "place": {
+    "name": "Battle, East Sussex, Inghilterra",
+    "lat": 50.912,
+    "lon": 0.487,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Edoardo il Confessore era cresciuto in esilio in Normandia e, una volta re, aveva portato in Inghilterra cortigiani, soldati e chierici normanni. Alla sua morte, nel gennaio 1066, Aroldo Godwinson fu incoronato re ma si trovò di fronte a più invasori: Guglielmo, duca di Normandia, il fratello Tostig e il re norvegese Harald Hardrada. Aroldo sconfisse questi ultimi a Stamford Bridge il 25 settembre, mentre il 28 Guglielmo sbarcava a Pevensey e stabiliva una testa di ponte. Aroldo dovette marciare in fretta verso sud, radunando uomini lungo la strada.",
+  "event": "L'unico fatto non contestato, scrive l'articolo inglese, è che i combattimenti cominciarono alle 9 di sabato 14 ottobre e durarono fino al tramonto, a circa 11 km da Hastings, dove oggi sorge Battle. L'esercito inglese era quasi tutto di fanteria, con pochi arcieri; quello normanno comprendeva fanti, cavalleria e arcieri. I primi assalti normanni ebbero poco effetto, e i Normanni adottarono allora la tattica di fingere la fuga per poi voltarsi contro gli inseguitori. Aroldo morì probabilmente verso la fine: la tradizione della freccia nell'occhio compare per la prima volta intorno al 1080, in una storia dei Normanni scritta da un monaco italiano, Amato di Montecassino.",
+  "after": "La morte di Aroldo lasciò senza comandante l'esercito inglese, che si disperse. Il giorno dopo il suo corpo fu identificato dall'armatura o da segni sul corpo. Le perdite non sono note: Marren ipotizza circa 2000 Normanni e 4000 Inglesi uccisi. Il Witenagemot proclamò re Edgardo Ætheling, ma Guglielmo avanzò su Londra, i capi inglesi si arresero a Berkhamsted ed egli fu incoronato nell'abbazia di Westminster il giorno di Natale del 1066. La resistenza continuò per anni, con rivolte a Exeter, in Northumbria e altrove. Guglielmo fondò un monastero sul luogo della battaglia.",
+  "links": [
+    {
+      "slug": "battaglia-di-stamford-bridge-1066",
+      "reason": "Meno di tre settimane prima Aroldo aveva sconfitto a Stamford Bridge gli invasori norvegesi."
+    },
+    {
+      "slug": "domesday-book-1086",
+      "reason": "Vent'anni dopo Guglielmo completa il grande censimento del Domesday Book."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Hastings - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Hastings",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Hastings - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Hastings",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 14 ottobre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le fonti principali si contraddicono: per l'articolo inglese non è possibile darne una descrizione autorevole, e restano discussi il numero dei combattenti e il modo in cui morì Aroldo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

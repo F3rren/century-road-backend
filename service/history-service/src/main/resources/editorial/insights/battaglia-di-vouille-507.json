@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-vouille-507",
+  "title": "La battaglia di Vouillé",
+  "summary": "Nella primavera del 507 i Franchi di Clodoveo sconfiggono a Vouillé, presso Poitiers, i Visigoti di re Alarico II, che muore in battaglia: i Franchi conquistano gran parte dell'Aquitania.",
+  "date": {
+    "year": 507,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Vouillé, presso Poitiers, Francia",
+    "lat": 46.583,
+    "lon": 0.333,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Il punto indica Vouillé, presso Poitiers; l'articolo inglese colloca lo scontro a sud del villaggio, e gli articoli consultati non indicano il campo di battaglia con più precisione."
+  },
+  "before": "Dopo le vittorie sugli Alemanni a est del Reno e sui Burgundi nella valle del Rodano, i Franchi di Clodoveo erano diventati una minaccia per il regno visigoto di Alarico II in Aquitania e in Hispania. Teodorico il Grande, re degli Ostrogoti e suocero di Alarico, cercò di mediare, ma Clodoveo cominciò una campagna per prendere l'Aquitania e Tolosa, il centro del potere di Alarico. Alarico marciò verso nord con il suo esercito e con una milizia dell'Alvernia.",
+  "event": "Nella primavera del 507 i due eserciti si scontrarono presso Vouillé, vicino a Poitiers. I Franchi, rallentati dalla piena del fiume Vienne, attaccarono i Visigoti a sud del villaggio con una lotta corpo a corpo, mentre le loro truppe da lancio restavano alle spalle. Secondo l'articolo inglese i Visigoti, più numerosi e meglio equipaggiati, cominciarono a cedere quando furono uccisi tutti i comandanti alverniati tranne uno. Il re Alarico fu ucciso, a quanto sembra da Clodoveo in persona, e l'esercito visigoto si sbandò. Secondo l'articolo italiano i Visigoti avevano atteso invano l'aiuto degli Ostrogoti.",
+  "after": "Clodoveo avanzò verso sud e saccheggiò il tesoro di Alarico a Tolosa. I Franchi conquistarono l'Aquitania, e secondo l'articolo italiano anche la Guascogna, l'Alvernia e il Limosino; i Visigoti si ritirarono nella Settimania, che continuarono a tenere. L'imperatore d'Oriente Anastasio nominò Clodoveo console onorario e patrizio. Gesaleico, figlio illegittimo di Alarico, tentò un contrattacco a Narbona, ma fu deposto e poi ucciso quando la città fu presa dai Burgundi, alleati dei Franchi.",
+  "links": [
+    {
+      "slug": "teodorico-diventa-re-d-italia-493",
+      "reason": "Teodorico il Grande, re d'Italia dal 493, era suocero di Alarico II e tentò invano di mediare."
+    },
+    {
+      "slug": "battaglia-di-poitiers-732",
+      "reason": "Oltre due secoli dopo, ancora presso Poitiers, i Franchi affrontano un altro esercito invasore."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Vouillé - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Vouillé",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Vouillé - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Vouillé",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli dicono che lo scontro avvenne «nella primavera del 507» o «intorno alla primavera del 507»: per questo la data è data solo all'anno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

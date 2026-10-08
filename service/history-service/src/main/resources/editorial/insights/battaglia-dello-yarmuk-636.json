@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-dello-yarmuk-636",
+  "title": "La battaglia dello Yarmuk",
+  "summary": "Nell'agosto del 636, dopo sei giorni di scontri presso il fiume Yarmuk, gli Arabi del califfato dei Rashidun sconfiggono l'esercito bizantino, più numeroso, e pongono di fatto fine al dominio di Bisanzio in Siria.",
+  "date": {
+    "year": 636,
+    "month": 8,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Fiume Yarmuk, tra Siria e Giordania",
+    "lat": 32.814,
+    "lon": 35.955,
+    "approximate": true,
+    "note": "Il punto indica la zona del fiume Yarmuk, oggi sul confine tra Siria e Giordania; il campo di battaglia esatto non è indicato dagli articoli consultati."
+  },
+  "before": "Nel 610 Eraclio era diventato imperatore bizantino; dopo una lunga guerra contro i Persiani, che avevano conquistato la Siria, la Palestina e l'Egitto, li aveva sconfitti e nel 629 aveva riportato la Vera Croce a Gerusalemme. Intanto in Arabia Abu Bakr, dopo la morte di Maometto, aveva vinto le guerre della ridda e aveva iniziato una guerra di conquista, prima in Iraq e dal 634 in Siria, con vittorie ad Ajnadayn e a Damasco. Il suo successore Umar continuò: all'inizio del 636 i musulmani presero Emesa.",
+  "event": "Nel maggio del 636 Eraclio mandò in Levante una grande spedizione per fermare gli Arabi e riprendersi il territorio perduto. All'avvicinarsi dei Bizantini gli Arabi si ritirarono dalla Siria e si riunirono nella piana dello Yarmuk, vicina all'Arabia, dove ebbero rinforzi. Gli scontri durarono sei giorni, nell'agosto del 636, lungo il fiume che oggi segna in parte il confine tra Siria e Giordania, a sud-est del lago di Tiberiade. Gli Arabi, comandati da Khalid ibn al-Walid, sconfissero l'esercito bizantino, che era più numeroso.",
+  "after": "La battaglia è considerata una delle più decisive della storia militare e il culmine della prima grande ondata di conquiste musulmane dopo la morte di Maometto. Khalid inseguì i Bizantini fino a Damasco, dove, secondo il racconto, fu accolto dalla popolazione. Eraclio, ad Antiochia, accettò la sconfitta come decisione divina, dovuta ai peccati degli abitanti, suoi compresi; non aveva più uomini né denaro per riconquistare la provincia, e lasciò la Siria portando con sé la Vera Croce. L'Armenia bizantina cadde nel 638-639 e dal 639 i musulmani conquistarono l'Egitto.",
+  "links": [
+    {
+      "slug": "morte-di-maometto-632",
+      "reason": "Quattro anni prima la morte di Maometto aveva aperto la successione ad Abu Bakr e le conquiste."
+    },
+    {
+      "slug": "conquista-islamica-di-gerusalemme-637",
+      "reason": "Pochi mesi dopo, i musulmani assediano Gerusalemme."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Yarmuk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Yarmuk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia dello Yarmuk - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_dello_Yarmuk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli parlano di sei giorni di scontri nell'agosto del 636, e Wikidata indica dal 15 al 20 agosto: per questo la data è data solo al mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

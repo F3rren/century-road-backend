@@ -1,0 +1,50 @@
+{
+  "slug": "sesta-crociata-1229",
+  "title": "Federico II entra a Gerusalemme",
+  "summary": "Il 17 marzo 1229 Federico II, scomunicato, entra a Gerusalemme, che il sultano d'Egitto al-Kamil gli ha ceduto con un trattato diplomatico, senza battaglie: la sesta crociata è la più pacifica e ottiene grandi risultati territoriali.",
+  "date": {
+    "year": 1229,
+    "month": 3,
+    "day": 17
+  },
+  "place": {
+    "name": "Gerusalemme",
+    "lat": 31.7769,
+    "lon": 35.23,
+    "approximate": false
+  },
+  "before": "Dopo il fallimento della quinta crociata, nel 1221, Federico II rimandò più volte la partenza che aveva giurato; nel 1225, con l'accordo di San Germano, promise di partire entro il 15 agosto 1227 e sposò per procura Isabella II, erede del regno di Gerusalemme, di cui si proclamò re. Nel settembre 1227 un'epidemia tra le sue truppe lo fermò a Otranto, e papa Gregorio IX lo scomunicò. Il sultano ayyubide al-Kamil, in guerra con i parenti, aveva già offerto territori in cambio della pace. Federico partì da Brindisi il 28 giugno 1228 con un piccolo esercito e arrivò ad Acri il 7 settembre, ma i Templari e il patriarca seguivano la linea ostile del papa.",
+  "event": "Senza forze sufficienti per combattere, Federico negoziò con al-Kamil; per l'articolo italiano parlava correntemente l'arabo. Il trattato, noto come pace di Giaffa, prevedeva una tregua di dieci anni e la cessione di Gerusalemme, tranne la spianata del Tempio con la moschea di al-Aqsa e la Cupola della Roccia, che restavano ai musulmani; Federico ottenne anche Betlemme, Nazaret, Giaffa e altri luoghi. Il patriarca si sentì tradito e, per l'articolo italiano, lanciò l'interdetto su Gerusalemme. Federico entrò in città il 17 marzo 1229 e il giorno dopo, nella chiesa del Santo Sepolcro, si pose la corona sul capo.",
+  "after": "Federico lasciò Acri il 1° maggio 1229, per tornare in Italia dove il papa minacciava il suo regno. Per l'articolo italiano il papa fu deluso dall'accordo, che lasciava Gerusalemme senza mura e indifendibile, e dall'incoronazione di uno scomunicato; la scomunica fu tolta solo nel 1230. Anche al-Kamil dovette giustificarsi con i suoi sudditi, ricordando di aver ceduto solo chiese e case in rovina. Per l'articolo inglese il regno di Gerusalemme ottenne un controllo parziale della città per buona parte dei quindici anni seguenti, con un governo condiviso tra cristiani e musulmani che rese questa crociata diversa dalle altre.",
+  "links": [
+    {
+      "slug": "battaglia-di-hattin-1187",
+      "reason": "Quarantadue anni prima Gerusalemme era passata a Saladino dopo la vittoria di Hattin."
+    },
+    {
+      "slug": "pace-di-costanza-1183",
+      "reason": "La Lega Lombarda che si ricostituisce contro Federico II era quella con cui il nonno di Federico, il Barbarossa, aveva fatto la pace di Costanza nel 1183."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sixth Crusade - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sixth_Crusade",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sesta crociata - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sesta_crociata",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 17 marzo è il giorno dell'ingresso a Gerusalemme dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Gli articoli non concordano sulle date: il trattato fu concluso l'11 febbraio 1229 per quello italiano, il 18 febbraio per quello inglese, e la scomunica è del 27 settembre 1227 per il primo, del 29 per il secondo. Per l'articolo inglese non è sopravvissuta alcuna copia completa del trattato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

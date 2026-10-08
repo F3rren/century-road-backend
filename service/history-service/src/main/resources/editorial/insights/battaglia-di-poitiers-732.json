@@ -1,0 +1,53 @@
+{
+  "slug": "battaglia-di-poitiers-732",
+  "title": "La battaglia di Poitiers, o di Tours",
+  "summary": "Nell'ottobre del 732 i Franchi di Carlo Martello fermano tra Poitiers e Tours un esercito musulmano venuto dalla Spagna; sulla battaglia le fonti dicono poco, e il suo significato è discusso.",
+  "date": {
+    "year": 732,
+    "month": 10,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Tra Poitiers e Tours, Francia",
+    "lat": 46.988,
+    "lon": 0.534,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Il punto indica la zona tra Poitiers e Tours dove gli storici collocano lo scontro, per lo più alla confluenza dei fiumi Clain e Vienne; il luogo esatto non è noto."
+  },
+  "before": "Dal 711, con l'invasione del regno visigoto in Spagna, gli Omayyadi avevano conquistato la penisola iberica e lanciato spedizioni nella Gallia dei Franchi, in direzione dell'Aquitania e della Borgogna, con uno scontro importante a Bordeaux. Le fonti non concordano su come si arrivò alla battaglia: secondo la Cronaca mozarabica del 754 Carlo Martello, maestro di palazzo dei re merovingi, fu chiamato dal duca Odo d'Aquitania; secondo la Cronaca di Fredegario fu Odo, sconfitto da Carlo, a chiamare i Saraceni.",
+  "event": "Nell'ottobre del 732 l'esercito musulmano, comandato da Abd al-Rahman al-Ghafiqi, governatore di al-Andalus, affrontò le forze dei Franchi e degli Aquitani guidate da Carlo Martello. Secondo la Cronaca mozarabica i Franchi rimasero immobili come un muro e uccisero Abd al-Rahman; l'indomani scoprirono che i musulmani si erano ritirati nella notte. Il numero dei combattenti non è noto, e le stime moderne per i musulmani vanno da 20 000 a 80 000 uomini. I Franchi, a quanto pare, combatterono senza cavalleria pesante.",
+  "after": "Carlo ne uscì rafforzato e Odo indebolito; la vittoria contribuì a gettare le basi dell'Impero carolingio. Molti storici, tra cui Edward Gibbon, la considerano un fattore importante nel frenare l'espansione dell'Islam nell'Europa occidentale; per Henri Pirenne invece segnò la fine di un'incursione senza fermare nulla, e secondo l'articolo italiano pochi anni dopo gli Arabi conquistarono Avignone e Arles. In ambienti cristiani della Spagna la battaglia ebbe un forte valore simbolico: una cronaca iberica di pochi anni dopo usa per la prima volta l'aggettivo «europei» per i guerrieri che avevano fermato gli invasori.",
+  "links": [
+    {
+      "slug": "battaglia-di-vouille-507",
+      "reason": "Oltre due secoli prima, presso Poitiers, i Franchi di Clodoveo avevano battuto i Visigoti."
+    },
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "Il nipote di Carlo Martello, Carlo Magno, sarà incoronato imperatore nell'800."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Tours - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Tours",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Poitiers (732) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Poitiers_(732)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sul giorno: quello inglese dà il 10 ottobre 732, quello italiano dice che la data esatta è incerta e che la maggioranza degli storici propende per il 25 ottobre. Per questo la data è data solo al mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
+    "Le fonti disponibili dicono poco: pochi autori arabi ne parlano, e le fonti latine dell'VIII e del IX secolo sono numerose ma imprecise."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

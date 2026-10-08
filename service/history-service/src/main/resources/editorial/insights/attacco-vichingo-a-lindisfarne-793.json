@@ -1,0 +1,50 @@
+{
+  "slug": "attacco-vichingo-a-lindisfarne-793",
+  "title": "L'attacco vichingo al monastero di Lindisfarne",
+  "summary": "L'8 giugno del 793 predoni scandinavi sbarcano a Lindisfarne, isola al largo della costa nordorientale dell'Inghilterra, e saccheggiano il monastero: è la prima incursione vichinga registrata nei documenti, spesso indicata come l'inizio dell'epoca vichinga.",
+  "date": {
+    "year": 793,
+    "month": 6,
+    "day": 8
+  },
+  "place": {
+    "name": "Isola di Lindisfarne, Northumberland, Inghilterra",
+    "lat": 55.68,
+    "lon": -1.802,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Il monastero era stato fondato intorno al 635 da sant'Aidano. Per l'articolo inglese era un importante centro di cultura cristiana nella Northumbria; per quello italiano fu la base dell'evangelizzazione dell'Inghilterra settentrionale. Nella Scandinavia della fine dell'VIII secolo, scrive l'articolo inglese, si erano sviluppate navi lunghe, veloci e manovrabili, adatte ad attacchi di sorpresa lungo le coste. Nessun documento descrive i preparativi dell'incursione e non si conosce il nome di un capo; secondo l'articolo, i predoni puntavano probabilmente a monasteri ricchi e senza difese.",
+  "event": "I predoni arrivarono su navi lunghe a scafo poco profondo e sbarcarono sull'isola l'8 giugno 793, cogliendo impreparata la comunità. I monaci furono uccisi, gettati in mare o portati via come schiavi; la chiesa fu saccheggiata e le reliquie furono profanate. Alcuino, studioso della Northumbria, scrisse che mai prima di allora in Britannia era apparso un terrore simile a quello portato da un popolo pagano. Secondo l'articolo inglese la Cronaca anglosassone registra, prima dell'attacco, presagi come enormi fasci di luce nell'aria e draghi di fuoco nel cielo.",
+  "after": "L'incursione scosse l'Europa cristiana: i contemporanei la lessero come un castigo divino, e un luogo ritenuto sacro si rivelò esposto alla violenza. L'articolo inglese la considera l'inizio dell'epoca vichinga, con incursioni sempre più frequenti e più grandi nelle isole britanniche. La comunità sopravvisse; secondo l'articolo inglese nell'875 i monaci lasciarono l'isola portando con sé le reliquie di san Cuthbert, mentre per quello italiano il vescovado fu trasferito a Durham nel 1000. Il priorato fu poi ristabilito in età normanna e soppresso da Enrico VIII nel 1536.",
+  "links": [
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "Sette anni dopo, nell'800, Carlo Magno è incoronato imperatore."
+    },
+    {
+      "slug": "battaglia-di-stamford-bridge-1066",
+      "reason": "Oltre due secoli e mezzo dopo, la battaglia di Stamford Bridge è tradizionalmente considerata la fine simbolica dell'epoca vichinga."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sack of Lindisfarne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Lindisfarne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lindisfarne - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lindisfarne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'8 giugno è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

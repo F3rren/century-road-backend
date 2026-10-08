@@ -1,0 +1,53 @@
+{
+  "slug": "egira-622",
+  "title": "L'Egira: Maometto dalla Mecca a Medina",
+  "summary": "Nel 622 Maometto e i suoi primi seguaci lasciano la Mecca per l'oasi di Yathrib, poi Medina: l'Egira segna la nascita del primo nucleo di uno Stato islamico e l'inizio del calendario islamico.",
+  "date": {
+    "year": 622,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Medina, Arabia Saudita",
+    "lat": 24.4672,
+    "lon": 39.6111,
+    "countryCode": "SA",
+    "approximate": true,
+    "note": "Il punto indica Medina, dove Maometto arrivò; la partenza fu dalla Mecca."
+  },
+  "before": "All'inizio la predicazione di Maometto raggiunse solo amici e parenti; poi lui e i suoi seguaci incontrarono a la Mecca ostilità, un boicottaggio del suo clan, torture e uccisioni. Già nel 614 un piccolo gruppo di fedeli era emigrato in Etiopia, la «piccola Egira». A Yathrib due tribù arabe, gli Aws e i Khazraj, si combattevano da quasi un secolo; nel 620 Maometto incontrò sei Khazraj in pellegrinaggio e gli abitanti dell'oasi gli proposero di fare da arbitro tra le comunità. Nel 622 settantacinque convertiti di Yathrib gli giurarono, ad al-Aqaba, di proteggerlo.",
+  "event": "Maometto ordinò ai suoi seguaci di trasferirsi a Medina, un po' alla volta: la partenza durò circa tre mesi, e lui restò per ultimo. Secondo la tradizione islamica un capo dei Quraysh propose di ucciderlo con una congiura in cui ogni clan avrebbe fornito un uomo; avvertito, Maometto lasciò il proprio letto al cugino Ali e partì con l'amico Abu Bakr, nascondendosi tre giorni in una grotta sul monte Thawr. Poi i due, con una guida pagana, raggiunsero l'oasi in sella a cammelli. Secondo l'articolo italiano arrivarono il 24 settembre 622, dopo una sosta a Quba.",
+  "after": "Più che una fuga, l'Egira segnò la nascita del primo nucleo di uno Stato islamico: la Costituzione di Medina riconobbe Maometto come massima autorità giudiziaria e unì le tribù, comprese quelle ebraiche. Dal gennaio 623 Maometto guidò incursioni contro le carovane meccane. Il 622 fu scelto come inizio del calendario islamico, un calendario lunare, si dice all'epoca del secondo califfo, Omar: il 1° muharram dell'anno 1 corrisponde al 16 luglio 622.",
+  "links": [
+    {
+      "slug": "morte-di-maometto-632",
+      "reason": "Dieci anni dopo Maometto muore a Medina, la città dell'Egira."
+    },
+    {
+      "slug": "battaglia-dello-yarmuk-636",
+      "reason": "Quattordici anni dopo i suoi successori sconfiggono i Bizantini sullo Yarmuk."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hijrah - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hijrah",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Egira - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Egira",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti non concordano sulle date: l'articolo italiano dice che l'Egira si svolse tra il 9 e il 24 settembre 622, quello inglese che Maometto lasciò la Mecca di nascosto nel maggio 622, e dà il 16 luglio 622 come data dell'inizio del calendario islamico. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "I racconti dell'attentato, della grotta e della fuga vengono dalla tradizione islamica."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

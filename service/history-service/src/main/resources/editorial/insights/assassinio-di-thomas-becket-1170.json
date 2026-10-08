@@ -1,0 +1,51 @@
+{
+  "slug": "assassinio-di-thomas-becket-1170",
+  "title": "L'assassinio di Thomas Becket nella cattedrale di Canterbury",
+  "summary": "Il 29 dicembre del 1170 quattro cavalieri del re Enrico II uccidono nella cattedrale di Canterbury l'arcivescovo Thomas Becket, in conflitto col sovrano sui privilegi della Chiesa; sarà canonizzato nel 1173.",
+  "date": {
+    "year": 1170,
+    "month": 12,
+    "day": 29
+  },
+  "place": {
+    "name": "Cattedrale di Canterbury, Inghilterra",
+    "lat": 51.2799,
+    "lon": 1.0828,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Becket, già cancelliere del re, fu nominato arcivescovo di Canterbury nel 1162 e da allora difese i diritti della Chiesa. Il conflitto con Enrico II riguardava in particolare la giurisdizione dei tribunali laici sul clero. Nel 1164 le Costituzioni di Clarendon, in sedici articoli, cercarono di ridurre l'indipendenza del clero e i suoi legami con Roma; Becket rifiutò di firmarle. Convocato a Northampton e condannato, fuggì sul continente e visse sei anni in esilio sotto la protezione di Luigi VII di Francia. Nel 1170, grazie alla mediazione del papa, si trovò un compromesso e Becket tornò in Inghilterra.",
+  "event": "Nel giugno 1170 l'arcivescovo di York, con i vescovi di Londra e di Salisbury, aveva incoronato Enrico il Giovane, erede al trono, violando un privilegio di Canterbury; per l'articolo inglese Becket li scomunicò a novembre. Enrico II avrebbe pronunciato parole che i suoi uomini interpretarono come il desiderio di vedere Becket morto; la frase più citata, che parla di un «prete turbolento», è però probabilmente apocrifa, e di quelle parole furono riferite versioni diverse. Quattro cavalieri, Reginald FitzUrse, Hugh de Morville, William de Tracy e Richard le Breton, arrivarono a Canterbury il 29 dicembre e uccisero Becket a colpi di spada nella cattedrale, durante i vespri.",
+  "after": "Il culto di Becket come martire si diffuse presto in Europa: papa Alessandro III lo canonizzò il 21 febbraio 1173, poco più di due anni dopo. Il 12 luglio 1174 Enrico II fece pubblica penitenza davanti alla tomba. Secondo l'articolo inglese i quattro cavalieri furono scomunicati e Alessandro III li mandò a servire come cavalieri in Terra Santa per quattordici anni. La tomba di Canterbury divenne meta di pellegrinaggi, evocati da Chaucer nei «Racconti di Canterbury»; il santuario fu distrutto nel 1538 per ordine di Enrico VIII.",
+  "links": [
+    {
+      "slug": "concordato-di-worms-1122",
+      "reason": "Quarantotto anni prima il concordato di Worms aveva regolato un altro conflitto tra potere laico e Chiesa."
+    },
+    {
+      "slug": "magna-carta-1215",
+      "reason": "Quarantacinque anni dopo la Magna Carta promette, tra l'altro, la tutela dei diritti della Chiesa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thomas Becket - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thomas_Becket",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tommaso Becket - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Tommaso_Becket",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 29 dicembre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le parole di Enrico II non sono note con certezza: per l'articolo inglese la versione più diffusa fu inventata nel 1740 e tramandata a voce, e ne esistono altre."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

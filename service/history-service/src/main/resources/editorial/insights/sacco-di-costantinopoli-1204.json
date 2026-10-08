@@ -1,0 +1,51 @@
+{
+  "slug": "sacco-di-costantinopoli-1204",
+  "title": "Il sacco di Costantinopoli durante la quarta crociata",
+  "summary": "Il 12 aprile 1204 i crociati della quarta crociata e i Veneziani entrano a Costantinopoli e per tre giorni la saccheggiano: nasce l'Impero latino, e i rapporti tra Chiesa cattolica e Chiesa ortodossa ne escono gravemente feriti.",
+  "date": {
+    "year": 1204,
+    "month": 4,
+    "day": 12
+  },
+  "place": {
+    "name": "Costantinopoli (Istanbul), Turchia",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "Alessio IV Angelo, figlio dell'imperatore deposto Isacco II, convinse Bonifacio di Monferrato e i Veneziani a deviare la quarta crociata su Costantinopoli, promettendo 200 000 marchi d'argento e la sottomissione della Chiesa ortodossa a Roma. Incoronato il 1° agosto 1203, non riuscì a pagare. Il 25 gennaio 1204, alla morte di Isacco, i Bizantini lo deposero; Alessio Ducas si proclamò imperatore come Alessio V e fece strangolare Alessio IV. Propose ai crociati di andarsene senza pagare, ma essi rifiutarono; in marzo i capi crociati e veneziani decisero la conquista e firmarono un accordo per spartirsi l'impero. Il 9 aprile un primo assalto fu respinto.",
+  "event": "Il 12 aprile, con un forte vento da nord che spingeva le navi veneziane vicino alle mura, i crociati conquistarono alcune torri; una settantina entrò in città e altri aprirono varchi nelle mura. Presero il quartiere delle Blacherne, e il fuoco acceso per difendersi bruciò altre parti della città. Alessio V fuggì nella notte. Per tre giorni i crociati saccheggiarono Costantinopoli: i cavalli di bronzo dell'Ippodromo furono mandati a Venezia, per ornare la basilica di San Marco, opere d'arte furono fuse per il metallo, e persino le tombe degli imperatori furono saccheggiate. Si stima che furono uccisi circa 2000 civili, secondo l'articolo inglese.",
+  "after": "Il bottino fu stimato in circa 900 000 marchi d'argento. Baldovino di Fiandra fu incoronato imperatore a Santa Sofia: nacque l'Impero latino; Bonifacio fondò il regno di Tessalonica e Venezia il ducato dell'Arcipelago. Nobili bizantini fondarono Stati come l'Impero di Nicea, che nel 1261 riconquistò Costantinopoli. L'Impero ne uscì più povero e debole, e cadde in mano agli Ottomani nel 1453. Papa Innocenzo III, secondo l'articolo italiano, ne fu sconvolto. Nel 2001 e nel 2004 Giovanni Paolo II espresse rammarico, e il patriarca Bartolomeo I accolse le scuse.",
+  "links": [
+    {
+      "slug": "scisma-d-oriente-1054",
+      "reason": "Centocinquant'anni prima le reciproche scomuniche avevano separato Roma e Costantinopoli."
+    },
+    {
+      "slug": "caduta-di-costantinopoli-1453",
+      "reason": "Nel 1453 Costantinopoli cade in mano agli Ottomani."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sack of Constantinople - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Constantinople",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Costantinopoli (1204) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Costantinopoli_(1204)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 12 aprile è il giorno in cui, per entrambi gli articoli, i crociati penetrarono in città; l'articolo inglese data il sacco soltanto ad aprile e quello italiano indica l'assedio dal 9 al 13 aprile. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le descrizioni delle violenze divergono: l'articolo inglese stima circa 2000 civili uccisi, quello italiano parla di massacri diffusi senza dare cifre. Gli storici discutono anche se Costantinopoli fosse l'obiettivo originario della crociata: l'articolo inglese ricorda che la tesi tradizionale è stata messa in dubbio da Donald Queller e Thomas Madden nel 1997."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

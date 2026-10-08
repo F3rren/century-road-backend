@@ -1,0 +1,51 @@
+{
+  "slug": "concilio-di-clermont-1095",
+  "title": "Il discorso di Urbano II a Clermont",
+  "summary": "Il 27 novembre 1095, a conclusione del concilio di Clermont, papa Urbano II pronuncia il discorso che dà inizio alla prima crociata, rispondendo alla richiesta di aiuto dell'imperatore bizantino Alessio I contro i Turchi selgiuchidi.",
+  "date": {
+    "year": 1095,
+    "month": 11,
+    "day": 27
+  },
+  "place": {
+    "name": "Clermont, Alvernia, Francia",
+    "lat": 45.7772,
+    "lon": 3.087,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Il concilio, convocato da Urbano II, si tenne a Clermont, nell'Alvernia, allora parte del ducato d'Aquitania, con circa trecento ecclesiastici. Era soprattutto un sinodo dedicato a riforme e decreti: per l'articolo inglese rinnovò la Tregua di Dio, un tentativo della Chiesa di ridurre le faide tra i nobili franchi, ed estese la scomunica a Filippo I di Francia per il suo nuovo matrimonio adulterino; per quello italiano confermò anche i decreti contro l'investitura laica e la simonia. L'imperatore bizantino Alessio I Comneno aveva chiesto aiuto militare contro i Turchi selgiuchidi: per l'articolo inglese con inviati al concilio di Piacenza, per quello italiano con una lettera.",
+  "event": "Il 27 novembre, ultimo giorno del concilio, Urbano II pronunciò il discorso con l'appello alle armi. Il testo più attendibile, per l'articolo inglese, è quello di Fulcherio di Chartres, che era presente. Secondo Fulcherio, Urbano chiese ai Franchi di ristabilire la pace nelle loro terre e poi di andare in aiuto dei cristiani d'Oriente, attaccati dai Turchi; concluse con «Cristo lo comanda» e promise l'assoluzione immediata a chi fosse morto nel viaggio o in battaglia contro i musulmani. La lettera che Urbano scrisse nel dicembre 1095 chiede di «liberare le chiese d'Oriente», affida la guida a Ademaro di Le Puy e fissa la partenza al 15 agosto 1096.",
+  "after": "L'appello portò alla prima crociata, alla conquista di Gerusalemme e alla fondazione del regno di Gerusalemme. Secondo la Gesta Francorum la notizia si diffuse a voce in tutte le regioni della Gallia, e i Franchi si fecero cucire croci sulla spalla destra. Per l'articolo inglese gli storici discutono da tempo quanto la pacificazione dei territori franchi fosse pensata insieme all'«esportazione della violenza» verso i nemici d'Oriente. Nella versione di Roberto il Monaco, del 1107, la folla risponde con il grido «Deus vult», Dio lo vuole.",
+  "links": [
+    {
+      "slug": "scisma-d-oriente-1054",
+      "reason": "Quarantun anni prima le reciproche scomuniche avevano separato Roma e Costantinopoli; ora il papa risponde alla richiesta di aiuto dell'imperatore bizantino."
+    },
+    {
+      "slug": "conquista-crociata-di-gerusalemme-1099",
+      "reason": "Quattro anni dopo i crociati prendono Gerusalemme."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Council of Clermont - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Council_of_Clermont",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Concilio di Clermont - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Concilio_di_Clermont",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 27 novembre è il giorno del discorso per entrambi gli articoli; sulle date del concilio non concordano: dal 17 al 27 novembre per quello inglese, dal 18 al 28 per quello italiano. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Non esiste un testo ufficiale del discorso: l'articolo inglese ricorda che le versioni sopravvissute, scritte anni dopo, differiscono molto nei particolari."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

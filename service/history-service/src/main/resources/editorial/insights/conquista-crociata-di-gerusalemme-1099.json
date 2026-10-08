@@ -1,0 +1,50 @@
+{
+  "slug": "conquista-crociata-di-gerusalemme-1099",
+  "title": "I crociati conquistano Gerusalemme",
+  "summary": "Il 15 luglio 1099, dopo un assedio cominciato il 7 giugno, i crociati della prima crociata prendono Gerusalemme ai Fatimidi e massacrano migliaia di musulmani e di ebrei; Goffredo di Buglione ne diventa il primo governante.",
+  "date": {
+    "year": 1099,
+    "month": 7,
+    "day": 15
+  },
+  "place": {
+    "name": "Gerusalemme",
+    "lat": 31.7769,
+    "lon": 35.23,
+    "approximate": false
+  },
+  "before": "Dopo Clermont i crociati lasciarono Costantinopoli nell'aprile 1097 e nell'ottobre assediarono Antiochia, che cadde nel giugno 1098. Le rivalità tra i capi, in particolare Boemondo di Taranto e Raimondo IV di Tolosa, le epidemie e la scarsità di viveri ritardarono l'avanzata; nel gennaio 1099 Raimondo riprese la marcia verso sud. Il 7 giugno i crociati arrivarono davanti a Gerusalemme, che dal 637 non era in mano cristiana e che i Fatimidi avevano ripreso ai Selgiuchidi l'anno prima. Il governatore preparò la città all'assedio: per l'articolo inglese espulse i cristiani orientali, avvelenò i pozzi e fece abbattere gli alberi fuori dalle mura.",
+  "event": "I crociati si divisero in due gruppi, uno a nord e uno a sud delle mura. Il primo assalto, il 13 giugno, fallì, anche perché mancava il legname per le macchine d'assedio. Con l'arrivo di navi inglesi e genovesi a Giaffa, in circa tre settimane furono costruite due torri d'assedio, un ariete e scale. Per l'articolo italiano l'8 luglio i crociati fecero una processione a piedi nudi attorno alle mura. Il 14 luglio cominciò l'assalto, e il 15 luglio i crociati entrarono in città. Il governatore fatimide si ritirò nella Torre di Davide e si arrese a Raimondo.",
+  "after": "Il massacro fece migliaia di morti tra i musulmani e gli ebrei. Il numero è discusso: i 70 000 della cronaca di Ibn al-Athir sono considerati esagerati, e per lo storico Conor Kostick 40 000 sono plausibili. Le moschee al-Aqsa e la Cupola della Roccia diventarono santuari cristiani. Goffredo di Buglione fu il primo governante; il 22 luglio, per l'articolo italiano, assunse il titolo di Difensore del Santo Sepolcro, rifiutando quello di re, e alla sua morte, nel 1100, il fratello Baldovino divenne il primo re di Gerusalemme. Il 12 agosto i crociati vinsero a Ascalona l'esercito fatimide.",
+  "links": [
+    {
+      "slug": "conquista-islamica-di-gerusalemme-637",
+      "reason": "La città era in mano musulmana dalla conquista del 637."
+    },
+    {
+      "slug": "concilio-di-clermont-1095",
+      "reason": "Quattro anni prima il papa aveva lanciato l'appello alla crociata a Clermont."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Jerusalem (1099) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Jerusalem_(1099)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Gerusalemme (1099) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Gerusalemme_(1099)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 15 luglio è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Il racconto del massacro viene da cronache come la Gesta Francorum, di un testimone oculare, e da Raimondo di Aguilers; Fulcherio di Chartres, che parla di 10 000 morti sul Monte del Tempio, non era presente. Per l'articolo italiano, le cifre variano: 10 000 morti secondo le fonti cristiane, 70 000 secondo quelle musulmane."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

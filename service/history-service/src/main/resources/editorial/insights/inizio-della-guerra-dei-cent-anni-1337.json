@@ -1,0 +1,51 @@
+{
+  "slug": "inizio-della-guerra-dei-cent-anni-1337",
+  "title": "Filippo VI confisca la Guienna: comincia la guerra dei Cent'anni",
+  "summary": "Il 24 maggio 1337 Filippo VI di Francia confisca il ducato di Guienna a Edoardo III d'Inghilterra, suo vassallo: comincia il conflitto che, con interruzioni, durerà fino al 1453 e che si chiama guerra dei Cent'anni.",
+  "date": {
+    "year": 1337,
+    "month": 5,
+    "day": 24
+  },
+  "place": {
+    "name": "Parigi, Francia",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Alla morte di Carlo IV di Francia, nel 1328, il parente maschio più prossimo era suo nipote Edoardo III d'Inghilterra, figlio di Isabella, sorella di Carlo; fu invece incoronato Filippo VI di Valois. Edoardo gli rese omaggio, di mala voglia, nel 1329 per il ducato di Aquitania, o Guienna, riservandosi di rivendicare i territori sottratti. Restava aperta la questione di chi avesse la sovranità sulla Guienna. Le tensioni crebbero: Filippo proteggeva il re di Scozia David II, esiliato da Edoardo, mentre Edoardo cercava alleati nelle Fiandre e dava rifugio a Roberto d'Artois, «nemico mortale» di Filippo.",
+  "event": "Alla fine di aprile 1337 Filippo rifiutò di incontrare una delegazione inglese e fece proclamare l'arrière-ban, la chiamata alle armi. A maggio il Gran Consiglio di Parigi decise di riprendere il ducato di Aquitania nelle mani del re, perché Edoardo, vassallo, non aveva rispettato i suoi obblighi e aveva dato rifugio a Roberto d'Artois. Edoardo rispose contestando il diritto di Filippo al trono francese; per l'articolo italiano il 7 ottobre rivendicò pubblicamente la corona di Francia, rinnegando l'omaggio feudale. Nel 1340 assunse formalmente il titolo di re di Francia.",
+  "after": "Il conflitto si divide in tre fasi separate da tregue: la guerra edoardiana (1337-1360), quella carolina (1369-1389) e quella dei Lancaster (1415-1453). Gli Inglesi vinsero le prime grandi battaglie, a Crécy (1346) e a Poitiers (1356), dove fu catturato il re Giovanni II. Con il trattato di Brétigny del 1360 Edoardo rinunciò alla pretesa sulla corona francese, assicurandosi l'Aquitania e Calais. La guerra finì con l'ultima battaglia, a Castillon nel 1453; l'articolo inglese ricorda che la pace formale arrivò nel 1475, a Picquigny.",
+  "links": [
+    {
+      "slug": "magna-carta-1215",
+      "reason": "Nel 1204 il re Giovanni, della Magna Carta, aveva perso gran parte delle terre inglesi in Francia; restava il ducato di Aquitania, oggetto di questa disputa."
+    },
+    {
+      "slug": "battaglia-di-crecy-1346",
+      "reason": "Nove anni dopo Edoardo III vince a Crécy contro l'esercito di Filippo VI."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hundred Years' War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hundred_Years'_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra dei cent'anni - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_dei_cent'anni",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 24 maggio è il giorno della confisca dato dall'articolo italiano; quello inglese dice soltanto maggio 1337. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cause sono discusse: l'articolo italiano osserva che la storiografia ha a lungo ridotto tutto alla rivalità tra le dinastie, mentre oggi dà più peso alla questione della Guienna, il cui possesso sarebbe stato il vero obiettivo di Edoardo III."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
