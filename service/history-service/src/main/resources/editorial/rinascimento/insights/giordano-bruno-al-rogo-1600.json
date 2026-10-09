@@ -1,7 +1,7 @@
 {
   "slug": "giordano-bruno-al-rogo-1600",
   "title": "Giordano Bruno sul rogo",
-  "summary": "Il 17 febbraio 1600 a Roma, in Campo de' Fiori, il filosofo Giordano Bruno è bruciato vivo dopo un processo per eresia durato sette anni: sosteneva, fra l'altro, un universo infinito con innumerevoli mondi.",
+  "summary": "Il 17 febbraio 1600 a Roma, in Campo de' Fiori, il filosofo Giordano Bruno è bruciato vivo dopo un processo per eresia che a Roma durò sette anni: sosteneva, fra l'altro, un universo infinito con innumerevoli mondi.",
   "date": {
     "year": 1600,
     "month": 2,
@@ -14,9 +14,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Bruno, nato a Nola nel 1548, era entrato nell'ordine domenicano; accusato di eresia, lasciò l'abito e fuggì da Napoli, poi viaggiò per Ginevra, la Francia, l'Inghilterra e la Germania. A Londra, tra il 1584 e il 1585, pubblicò i «dialoghi italiani», in cui difendeva la teoria di Copernico e presentava un universo infinito, senza centro, con mondi innumerevoli. Nel 1592 accettò l'invito del patrizio veneziano Giovanni Mocenigo e tornò a Venezia, ma Mocenigo lo denunciò all'Inquisizione e Bruno fu arrestato il 22 maggio 1592.",
-  "event": "L'Inquisizione romana ottenne il suo trasferimento a Roma nel gennaio 1593. Durante il processo, durato sette anni, Bruno fu tenuto prigioniero, da ultimo nella Torre di Nona. Le accuse, tratte da alcuni suoi libri e da testimoni, riguardavano blasfemia, condotta immorale ed eresia: fra le dottrine contestate c'era la pluralità dei mondi, a cui Bruno rimase fedele. Il cardinale Bellarmino chiese una ritrattazione completa, che alla fine Bruno rifiutò. Il 20 gennaio 1600 papa Clemente VIII lo dichiarò eretico e fu emessa la condanna a morte. Il 17 febbraio 1600 fu bruciato vivo in Campo de' Fiori.",
-  "after": "Gli storici non concordano sul motivo del processo: per alcuni la condanna non riguardò la cosmologia ma le opinioni di Bruno sulla religione e sull'aldilà, altri lo negano. Per l'articolo inglese non fu il primo a proporre un universo infinito: l'inglese Thomas Digges lo aveva fatto nel 1576 e Niccolò Cusano nel 1440. Bruno è oggi un simbolo di libertà di pensiero e di parola: ogni anno a Roma, vicino al luogo dell'esecuzione, si tiene una commemorazione.",
+  "before": "Bruno, nato a Nola nel 1548, era entrato nell'ordine domenicano; accusato di eresia, lasciò per un periodo l'abito e fuggì da Napoli, poi viaggiò per Ginevra, la Francia, l'Inghilterra e la Germania. A Londra, tra il 1584 e il 1585, pubblicò i «dialoghi italiani», in cui difendeva la teoria di Copernico e presentava un universo infinito, senza centro, con mondi innumerevoli. Nel 1592 accettò l'invito del patrizio veneziano Giovanni Mocenigo e tornò a Venezia, ma Mocenigo lo denunciò all'Inquisizione e Bruno fu arrestato in maggio, il 22 per l'articolo inglese e il 23 per quello italiano.",
+  "event": "L'Inquisizione romana ottenne il suo trasferimento a Roma nel gennaio 1593 per l'articolo inglese (per quello italiano il 27 febbraio fu rinchiuso nel carcere del Sant'Uffizio). Durante i sette anni del processo a Roma Bruno fu tenuto prigioniero, da ultimo nella Torre di Nona. Le accuse, tratte da alcuni suoi libri e da testimoni, riguardavano blasfemia, condotta immorale ed eresia: fra le dottrine contestate c'era la pluralità dei mondi, a cui Bruno rimase fedele. Il cardinale Bellarmino chiese una ritrattazione completa, che alla fine Bruno rifiutò. Per l'articolo inglese, il 20 gennaio 1600 papa Clemente VIII lo dichiarò eretico e fu emessa la condanna a morte; per quello italiano la sentenza gli fu letta l'8 febbraio. Il 17 febbraio 1600 fu bruciato vivo in Campo de' Fiori.",
+  "after": "Gli storici non concordano sul motivo del processo: per alcuni la condanna non riguardò la cosmologia ma le opinioni di Bruno sulla religione e sull'aldilà, altri lo respingono in gran parte. Per l'articolo inglese non fu il primo a proporre un universo infinito: l'inglese Thomas Digges lo aveva fatto nel 1576 e Niccolò Cusano nel 1440. Bruno è oggi un simbolo di libertà di pensiero e di parola: ogni anno a Roma, vicino al luogo dell'esecuzione, si tiene una commemorazione.",
   "links": [
     {
       "slug": "de-revolutionibus-di-copernico-1543",
@@ -42,7 +42,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 17 febbraio 1600. Sul motivo della condanna gli storici sono divisi, come scrive l'articolo inglese."
+    "Entrambi gli articoli danno il 17 febbraio 1600. Sul motivo della condanna gli storici sono divisi, come scrive l'articolo inglese. Gli articoli differiscono su alcune date del processo (l'arresto a Venezia, il trasferimento a Roma, la sentenza): il testo le attribuisce a ciascuno."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

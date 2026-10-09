@@ -15,9 +15,9 @@
     "countryCode": "IT",
     "approximate": false
   },
-  "before": "Il Duomo di Firenze, cominciato nel 1296 da Arnolfo di Cambio, aveva la navata finita già nel 1380; restava da coprire la crociera con una cupola ottagonale più alta e più larga di ogni altra, su un tamburo senza contrafforti. Per l'articolo inglese in Toscana non c'era legname sufficiente per le impalcature. Nel 1418 l'Opera del Duomo bandì un concorso: ufficialmente non ebbe vincitori, ma Brunelleschi e Ghiberti furono nominati capomastri.",
+  "before": "Il Duomo di Firenze, cominciato nel 1296 da Arnolfo di Cambio, aveva la navata finita già nel 1380; restava da coprire la crociera con una cupola ottagonale più alta e più larga di ogni altra, su un tamburo senza contrafforti. Per l'articolo inglese in Toscana non c'era legname sufficiente per le impalcature. Nel 1418 fu bandito un concorso: per l'articolo italiano ufficialmente non ebbe vincitori e Brunelleschi e Ghiberti furono nominati capomastri; per quello inglese vinse Brunelleschi, con Ghiberti come coadiutore.",
   "event": "Il cantiere cominciò il 7 agosto 1420. Brunelleschi costruì una doppia calotta con costoloni, usò catene di pietra e dispose i mattoni a spina di pesce; l'articolo italiano riporta più spiegazioni della funzione di quella disposizione. Dal 1423 il cantiere fu interamente in mano sua: Ghiberti, a detta di Vasari, era stato estromesso. Per l'articolo inglese la cattedrale fu consacrata da papa Eugenio IV il 25 marzo 1436, con il mottetto di Dufay «Nuper rosarum flores»; per quello italiano la cupola fu completata fino alla base della lanterna il 30 agosto 1436.",
-  "after": "Un nuovo concorso per la lanterna fu vinto ancora da Brunelleschi: i lavori cominciarono nel 1446, pochi mesi prima della sua morte, e furono diretti da Michelozzo. Per l'articolo italiano furono terminati da Antonio Manetti il 23 aprile 1461; per quello inglese, da Michelozzo nel 1461. Sopra la lanterna fu poi posta la palla di rame dorato di Verrocchio, che per l'articolo inglese completò la cattedrale nel 1469.",
+  "after": "Un nuovo concorso per la lanterna fu vinto ancora da Brunelleschi: i lavori cominciarono nel 1446, pochi mesi prima della sua morte, e furono diretti da Michelozzo. Per l'articolo italiano furono terminati da Antonio Manetti il 23 aprile 1461; per quello inglese, da Michelozzo nel 1461. Sopra la lanterna fu poi posta la palla di Verrocchio, di rame dorato e del 1469 per l'articolo inglese (che con essa dà per completata la cattedrale), di bronzo e del 1472 per quello italiano.",
   "links": [
     {
       "slug": "ritorno-di-cosimo-de-medici-1434",
@@ -25,7 +25,7 @@
     },
     {
       "slug": "david-di-michelangelo-1504",
-      "reason": "Nel 1504 il David, pensato per il tetto del Duomo, finisce invece in piazza della Signoria."
+      "reason": "Nel 1504 il David, pensato per un contrafforte del Duomo, è completato e finisce invece in piazza della Signoria."
     }
   ],
   "sources": [
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Gli articoli non concordano sul momento: quello inglese dà la consacrazione da parte di Eugenio IV il 25 marzo 1436, primo giorno dell'anno secondo il calendario fiorentino; quello italiano il completamento fino alla base della lanterna il 30 agosto 1436, con la cerimonia ufficiale nell'agosto 1436. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+    "Gli articoli non concordano sul momento: quello inglese dà la consacrazione da parte di Eugenio IV il 25 marzo 1436, primo giorno dell'anno secondo il calendario fiorentino; quello italiano il completamento fino alla base della lanterna il 30 agosto 1436, con la cerimonia ufficiale nell'agosto 1436. Per questo la data è data solo all'anno. Gli articoli differiscono anche sull'esito del concorso del 1418 e sulla palla di Verrocchio. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

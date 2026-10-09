@@ -1,7 +1,7 @@
 {
   "slug": "de-humani-corporis-fabrica-1543",
   "title": "Vesalio pubblica la «Fabrica»",
-  "summary": "Nel giugno 1543 esce a Basilea il «De humani corporis fabrica» di Andrea Vesalio, trattato di anatomia fondato sulla dissezione diretta dei cadaveri: corregge molti errori di Galeno ed è considerato la prima vera opera di medicina moderna.",
+  "summary": "Nel giugno 1543 esce a Basilea il «De humani corporis fabrica» di Andrea Vesalio, trattato di anatomia fondato sulla dissezione diretta dei cadaveri: corregge molti errori di Galeno ed è spesso citato come la prima vera opera di medicina moderna.",
   "date": {
     "year": 1543,
     "month": 6,
@@ -15,8 +15,8 @@
     "countryCode": "CH",
     "approximate": false
   },
-  "before": "Vesalio, nato a Bruxelles, era professore di medicina a Padova. Nelle sue lezioni si discostava dalla pratica comune: anziché lasciare la dissezione a un barbiere-chirurgo guidato da un medico, sezionava personalmente un cadavere per illustrare ciò che spiegava. Il trattato si basa su quelle lezioni; per l'articolo italiano fu completato nel 1542. Le ossa erano state raccolte nei cimiteri.",
-  "event": "I blocchi delle xilografie furono portati a Basilea, perché l'opera fosse stampata da uno dei maggiori stampatori del tempo, Johannes Oporinus; il libro uscì nel giugno 1543, per l'articolo italiano. I sette libri trattano di ossa, muscoli, vene e arterie, nervi, organi dell'addome, cuore e cervello. Le oltre 250 illustrazioni, per l'articolo inglese attribuite alla bottega di Tiziano, erano molto superiori a quelle degli atlanti anatomici dell'epoca. L'opera è dedicata all'imperatore Carlo V.",
+  "before": "Vesalio, di Bruxelles, era professore di medicina a Padova. Nelle sue lezioni si discostava dalla pratica comune: anziché lasciare la dissezione a un barbiere-chirurgo guidato da un medico, sezionava personalmente un cadavere per illustrare ciò che spiegava. Il trattato si basa su quelle lezioni; per l'articolo italiano fu completato nel 1542. Le ossa erano state raccolte nei cimiteri.",
+  "event": "I blocchi delle xilografie furono portati a Basilea, perché l'opera fosse stampata da uno dei maggiori stampatori del tempo, Johannes Oporinus; il libro uscì nel giugno 1543. I sette libri trattano di ossa, muscoli, vene e arterie, nervi, organi dell'addome, cuore e cervello. Le oltre 250 illustrazioni, per l'articolo inglese generalmente attribuite dagli studiosi moderni alla bottega di Tiziano, erano molto superiori a quelle degli atlanti anatomici dell'epoca. L'opera è dedicata all'imperatore Carlo V.",
   "after": "Vesalio corresse molti errori di Galeno, che si era basato su animali e non su esseri umani: circa 220 per l'articolo italiano, circa 300 per quello inglese. Conservò però alcuni errori, come l'idea che vene e arterie portassero sangue di tipo diverso, corretta solo da William Harvey nel 1628. Pubblicò anche una versione ridotta e meno costosa, l'«Epitome», fu nominato medico di Carlo V, e nel 1555 uscì una seconda edizione.",
   "links": [
     {
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Il mese, giugno, è dato dall'articolo italiano; quello inglese dice solo 1543. Gli articoli non concordano sul numero di errori di Galeno corretti, circa 220 o circa 300. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti."
+    "Entrambi gli articoli danno giugno 1543 solo nella trascrizione del frontespizio fra i collegamenti esterni; nel testo parlano solo del 1543. Gli articoli non concordano sul numero di errori di Galeno corretti, circa 220 o circa 300. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

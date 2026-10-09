@@ -14,9 +14,9 @@
     "lon": 4.4025,
     "countryCode": "BE",
     "approximate": true,
-    "note": "Il punto indica Anversa, dove nel racconto Moro incontra Raffaele Itlodeo; gli articoli non danno il luogo della stampa."
+    "note": "Il punto indica Anversa, dove nel racconto Moro incontra Raffaele Itlodeo; per l'articolo inglese l'opera fu stampata a Lovanio nel 1516 e a Basilea nel 1518."
   },
-  "before": "Moro, umanista e giurista inglese, aveva tradotto con Erasmo alcuni scritti di Luciano; nel 1515, durante un'ambasciata nei Paesi Bassi, conobbe ad Anversa Pieter Gillis, umanista e funzionario della città. Per l'articolo italiano si ispirò soprattutto alla «Repubblica» di Platone. Il racconto è presentato come la conversazione fra Moro, Gillis e un viaggiatore immaginario, Raffaele Itlodeo.",
+  "before": "Moro, umanista inglese, aveva tradotto con Erasmo alcuni scritti di Luciano; nel 1515, durante un'ambasciata nei Paesi Bassi, conobbe ad Anversa Pieter Gillis, umanista e funzionario della città. Per l'articolo italiano si ispirò soprattutto alla «Repubblica» di Platone. Il racconto è presentato come la conversazione fra Moro, Gillis e un viaggiatore immaginario, Raffaele Itlodeo.",
   "event": "L'opera, in latino, è in due libri. Nel primo Itlodeo critica l'Inghilterra, a partire dalla pena di morte per furto, e sostiene che nessuno Stato può essere ben governato finché esiste la proprietà privata. Nel secondo descrive l'isola di Utopia, a forma di mezzaluna e con cinquantaquattro città, dove i beni sono in comune e convivono più religioni che si tollerano a vicenda. Il nome, coniato da Moro, può intendersi come «luogo che non esiste» o come «luogo ottimo».",
   "after": "Il libro fu rivisto nel 1518 e arrivò alla quarta edizione nel 1519; fu tradotto in tedesco nel 1524, in fiorentino nel 1548, in francese nel 1550 e in inglese nel 1551. Per l'articolo inglese molti studiosi lo leggono come una critica del cattolicesimo del Cinquecento, mentre altri notano che molte soluzioni del secondo libro contraddicono ciò in cui Moro credeva: egli non sostenne mai la verità di una società perfetta.",
   "links": [
@@ -26,7 +26,7 @@
     },
     {
       "slug": "atto-di-supremazia-1534",
-      "reason": "Diciotto anni dopo Moro, oppositore dell'Atto sul tradimento, è condannato e decapitato."
+      "reason": "Diciotto anni dopo, con l'Atto di Supremazia, Enrico VIII diventa capo della Chiesa d'Inghilterra: Moro sarà giustiziato nel 1535."
     }
   ],
   "sources": [

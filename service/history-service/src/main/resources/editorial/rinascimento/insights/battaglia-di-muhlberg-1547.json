@@ -14,13 +14,13 @@
     "countryCode": "DE",
     "approximate": false
   },
-  "before": "Dal 1531 i principi protestanti, guidati dall'elettore Giovanni Federico di Sassonia e dal langravio Filippo d'Assia, erano uniti nella Lega di Smalcalda, un'alleanza difensiva anti-asburgica. Carlo V non la attaccò subito, perché aveva bisogno dell'appoggio dei tedeschi contro i turchi. Le condizioni cambiarono con il trattato di Crépy del 1544, che tolse alla Lega l'appoggio francese, la morte di Lutero nel 1546 e la fine temporanea della minaccia turca. L'occasione fu la rivalità fra Giovanni Federico e il cugino Maurizio, di fede protestante ma schierato con l'imperatore.",
-  "event": "Carlo V marciò verso la Sassonia nella primavera del 1547. Giovanni Federico divise le sue forze e si accampò a Mühlberg, lasciando poche truppe a guardia dell'Elba, che riteneva troppo larga per essere attraversata. La sera del 23 aprile Carlo arrivò sul fiume; all'alba del 24 reparti dei tercios, aiutati da un contadino del posto, trovarono un guado, secondo un piano del duca d'Alba. Carlo, malato di gotta, assistette alla battaglia dalle retrovie. L'esercito protestante fu sbaragliato e Giovanni Federico, ferito al volto, fu catturato.",
+  "before": "Dal 1531 i principi protestanti, guidati dall'elettore Giovanni Federico di Sassonia e dal langravio Filippo d'Assia, erano uniti nella Lega di Smalcalda, un'alleanza difensiva anti-asburgica. Carlo V, bisognoso dell'appoggio dei tedeschi contro i turchi, non attaccò subito la Lega (per l'articolo italiano non riuscì a stroncarla e fu costretto ad accettare il fatto compiuto). Le condizioni cambiarono con il trattato di Crépy del 1544, che tolse alla Lega l'appoggio francese, la morte di Lutero nel 1546 e la fine temporanea della minaccia turca. L'occasione fu la rivalità fra Giovanni Federico e il cugino Maurizio, di fede protestante ma schierato con l'imperatore.",
+  "event": "Carlo V marciò verso la Sassonia nella primavera del 1547. Giovanni Federico divise le sue forze e si accampò a Mühlberg, lasciando poche truppe a guardia dell'Elba, che riteneva troppo larga per essere attraversata facilmente. La sera del 23 aprile Carlo arrivò sul fiume; all'alba del 24 reparti dei tercios, aiutati da un contadino del posto, trovarono un guado, secondo un piano del duca d'Alba. Carlo, malato di gotta, assistette alla battaglia dalle retrovie. L'esercito protestante fu sbaragliato e Giovanni Federico, ferito al volto, fu catturato.",
   "after": "Giovanni Federico ebbe salva la vita in cambio della resa di Wittenberg, ma fu condannato come eretico alla prigionia e perse la dignità elettorale, che andò al cugino Maurizio. Poco dopo si arrese anche Filippo d'Assia, e la guerra smalcaldica finì. A Carlo V è attribuita la frase «Venni, vidi e vinse Dio». Il compromesso del 1548, l'Interim di Augusta, non bastò a placare l'Impero: solo la pace di Augusta del 1555 permise a ogni principe di scegliere fra cattolicesimo e luteranesimo.",
   "links": [
     {
       "slug": "dieta-di-worms-1521",
-      "reason": "Il tentativo di riproporre l'editto di Worms del 1521 aveva portato, nel 1531, alla nascita della Lega."
+      "reason": "L'opposizione al tentativo di riproporre l'editto di Worms portò, nel 1531, alla nascita della Lega."
     },
     {
       "slug": "pace-di-augusta-1555",
