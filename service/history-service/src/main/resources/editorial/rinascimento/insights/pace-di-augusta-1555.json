@@ -1,0 +1,54 @@
+{
+  "slug": "pace-di-augusta-1555",
+  "title": "La pace di Augusta",
+  "summary": "Il 25 settembre 1555 ad Augusta si conclude la pace con i principi protestanti, negoziata da Ferdinando d'Asburgo per conto del fratello Carlo V: luterani e cattolici sono riconosciuti nell'Impero, secondo il principio «cuius regio, eius religio».",
+  "date": {
+    "year": 1555,
+    "month": 9,
+    "day": 25
+  },
+  "place": {
+    "name": "Augusta, Germania",
+    "lat": 48.3705,
+    "lon": 10.8978,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Dopo le 95 tesi la Germania si divise fra cattolici e luterani, che dal 1531 formarono la Lega di Smalcalda. Carlo V la sconfisse in parte nel 1547 e nel 1548 impose l'Interim di Augusta, un accordo provvisorio che i territori protestanti rifiutarono. Nel 1552 la rivolta dell'elettore Maurizio di Sassonia lo rovesciò; nei negoziati di Passau perfino i principi cattolici chiesero una pace duratura, e Carlo concesse una pace valida fino alla dieta successiva, convocata nel 1555.",
+  "event": "Il trattato fu negoziato da Ferdinando per conto del fratello. Stabilì il principio «cuius regio, eius religio»: i principi dell'Impero potevano scegliere il luteranesimo o il cattolicesimo per i loro Stati, e i sudditi dovevano adeguarsi o emigrare conservando i beni. Una riserva ecclesiastica impediva che il principio valesse se si convertiva un principe ecclesiastico; la Declaratio Ferdinandei, inserita da Ferdinando all'ultimo momento, esentava cavalieri e alcune città luterani. Le altre confessioni, in particolare il calvinismo, non erano riconosciute.",
+  "after": "La pace sancì la divisione di fatto della Germania fra cattolici e protestanti. L'articolo inglese la cita come «il primo passo verso un sistema europeo di Stati sovrani» e come la fine della prima ondata di scontri armati fra protestanti e cattolici. Sempre per l'articolo inglese, il mancato riconoscimento del calvinismo e la revoca della Declaratio Ferdinandei contribuirono alla guerra dei Trent'anni (1618-1648).",
+  "links": [
+    {
+      "slug": "dieta-di-worms-1521",
+      "reason": "Trentaquattro anni prima Lutero aveva rifiutato di ritrattare davanti a Carlo V a Worms."
+    },
+    {
+      "slug": "battaglia-di-muhlberg-1547",
+      "reason": "Otto anni prima Carlo V aveva sconfitto i principi protestanti a Mühlberg."
+    },
+    {
+      "slug": "institutio-di-calvino-1536",
+      "reason": "Diciannove anni prima Calvino pubblicava l'Istituzione: il calvinismo resta però escluso dalla pace."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peace of Augsburg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peace_of_Augsburg",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pace di Augusta - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Pace_di_Augusta",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 25 settembre 1555. Per l'articolo inglese il trattato fu fra Carlo V e la Lega di Smalcalda, per quello italiano fra Ferdinando e la Lega: entrambi dicono che lo negoziò Ferdinando per conto del fratello. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

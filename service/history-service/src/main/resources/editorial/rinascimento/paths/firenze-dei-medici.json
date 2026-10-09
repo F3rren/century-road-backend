@@ -1,0 +1,37 @@
+{
+  "slug": "firenze-dei-medici",
+  "title": "Firenze dei Medici",
+  "tagline": "Da Cosimo a Michelangelo, settant'anni di Firenze fra banche, congiure, una cupola, un frate sul rogo e un gigante di marmo.",
+  "intro": "Il percorso segue la Firenze dei Medici nel Quattrocento: il ritorno di Cosimo, la cupola di Brunelleschi, la pace di Lodi che diede un equilibrio all'Italia, la congiura dei Pazzi, la morte di Lorenzo il Magnifico, Savonarola e il David di Michelangelo.\n\nLe fonti non sempre concordano su date e particolari; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "ritorno-di-cosimo-de-medici-1434",
+      "narrative": "Si parte dal 1434: Cosimo rientra dall'esilio e comincia il governo dei Medici."
+    },
+    {
+      "insight": "cupola-del-brunelleschi-1436",
+      "narrative": "Nel 1436 Brunelleschi porta a termine la cupola del Duomo."
+    },
+    {
+      "insight": "pace-di-lodi-1454",
+      "narrative": "Nel 1454 la pace di Lodi apre quarant'anni di equilibrio fra gli Stati italiani."
+    },
+    {
+      "insight": "congiura-dei-pazzi-1478",
+      "narrative": "Nel 1478 i Pazzi tentano di eliminare Lorenzo e Giuliano durante la messa."
+    },
+    {
+      "insight": "morte-di-lorenzo-il-magnifico-1492",
+      "narrative": "Nel 1492 muore Lorenzo, garante dell'equilibrio italiano."
+    },
+    {
+      "insight": "savonarola-al-rogo-1498",
+      "narrative": "Nel 1498 il frate che aveva dominato Firenze finisce sul rogo."
+    },
+    {
+      "insight": "david-di-michelangelo-1504",
+      "narrative": "Nel 1504 il David di Michelangelo è scoperto davanti a Palazzo della Signoria."
+    }
+  ]
+}

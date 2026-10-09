@@ -1,0 +1,50 @@
+{
+  "slug": "battaglia-di-frankenhausen-1525",
+  "title": "Il massacro di Frankenhausen",
+  "summary": "Il 15 maggio 1525 a Frankenhausen, in Turingia, le truppe dei principi sconfiggono i contadini ribelli guidati da Thomas Müntzer, in un massacro che segna la fine della rivolta in Turingia.",
+  "date": {
+    "year": 1525,
+    "month": 5,
+    "day": 15
+  },
+  "place": {
+    "name": "Bad Frankenhausen, Germania",
+    "lat": 51.3567,
+    "lon": 11.1,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Nel 1524 le comunità riformate, per impulso del predicatore Thomas Müntzer, avevano proclamato il diritto di scegliere liberamente il proprio pastore. Il 29 aprile 1525 a Frankenhausen la rivolta esplose: i cittadini occuparono il municipio e assaltarono il castello dei conti di Schwarzburg. L'11 maggio Müntzer arrivò da Mühlhausen con 300 uomini e trovò accampati diverse migliaia di contadini. Il langravio Filippo I d'Assia e il duca Giorgio di Sassonia, suo suocero, cambiarono rotta e mossero contro Frankenhausen i loro lanzichenecchi.",
+  "event": "Il 14 maggio i contadini, male armati, respinsero una ricognizione e si ritirarono in una fortezza di carri su una collina. Una tregua, decisa per trattare, diede ai principi il tempo di riunire gli eserciti. Verso mezzogiorno del 15 la tregua fu rotta, quando fu chiaro che Müntzer non sarebbe stato consegnato. Un cannoneggiamento e ondate di cavalieri e fanti gettarono nel panico i contadini, che fuggirono in città, dove i lanzichenecchi li massacrarono. Le cifre sono inaffidabili: i contadini morti sarebbero più di settemila, i lanzichenecchi forse solo sei.",
+  "after": "Müntzer fu catturato in città, torturato e giustiziato a Mühlhausen il 27 maggio 1525. Per l'articolo italiano la battaglia pose fine alla guerra dei contadini tedeschi, per quello inglese all'ultimo atto della guerra in Turingia. Fu raffigurata nel grande dipinto di Werner Tübke, realizzato fra il 1975 e il 1987 su ordine della Germania Est, che vedeva in Müntzer un precursore.",
+  "links": [
+    {
+      "slug": "dieta-di-worms-1521",
+      "reason": "Quattro anni prima Lutero aveva sfidato imperatore e papa a Worms."
+    },
+    {
+      "slug": "pace-di-augusta-1555",
+      "reason": "Trent'anni dopo la pace di Augusta regola il rapporto fra principi e confessioni."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Frankenhausen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Frankenhausen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Frankenhausen - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Frankenhausen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 14 e 15 maggio 1525: la data è quella dello scontro finale, il 15. Gli articoli non concordano sulla portata della battaglia: per quello italiano pose fine alla guerra dei contadini tedeschi, per quello inglese fu l'ultimo atto della guerra in Turingia. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

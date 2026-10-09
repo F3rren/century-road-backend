@@ -1,0 +1,50 @@
+{
+  "slug": "congiura-dei-pazzi-1478",
+  "title": "La congiura dei Pazzi",
+  "summary": "Il 26 aprile 1478, durante la messa nel Duomo di Firenze, i Pazzi e i loro alleati aggrediscono Lorenzo e Giuliano de' Medici: Giuliano muore, Lorenzo è ferito ma si salva, e la congiura fallisce.",
+  "date": {
+    "year": 1478,
+    "month": 4,
+    "day": 26
+  },
+  "place": {
+    "name": "Duomo di Firenze",
+    "lat": 43.7731,
+    "lon": 11.256,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Papa Sisto IV, che favoriva i propri nipoti, era in contrasto con i Medici: Lorenzo aveva rifiutato di finanziare l'acquisto di Imola per un nipote del papa, e i Medici avevano perso l'incarico di banchieri pontifici, passato anche ai Pazzi. Poi ci fu lo scontro sull'arcivescovato di Pisa, dato a Francesco Salviati, parente dei Pazzi. Per l'articolo italiano la scintilla è di solito individuata nella legge del 1477 con cui Lorenzo impedì ai Pazzi di ereditare i beni dei Borromei.",
+  "event": "Domenica 26 aprile 1478, durante la messa solenne nel Duomo, Giuliano fu ucciso da Bernardo Bandini Baroncelli e Francesco de' Pazzi. Lorenzo fu ferito leggermente e si salvò rifugiandosi in sacrestia; il banchiere Francesco Nori morì difendendolo. L'arcivescovo Salviati tentò di prendere il Palazzo della Signoria, ma i fiorentini non insorsero contro i Medici come i congiurati speravano: Salviati e Francesco de' Pazzi furono impiccati alle finestre del palazzo. Per l'articolo inglese già nel giorno dell'attacco morirono più di trenta persone.",
+  "after": "Il papa scomunicò Lorenzo e i suoi sostenitori e mise Firenze sotto interdetto; truppe di Napoli e di Urbino attaccarono il territorio fiorentino. Lorenzo andò a Napoli e si mise nelle mani del re Ferdinando I, che intercedette presso il papa senza successo. Le operazioni militari durarono fino agli accordi del 13 marzo 1480. I Pazzi superstiti furono banditi, e il loro nome e il loro stemma cancellati. Per l'articolo italiano il fallimento della congiura rafforzò il potere e la popolarità dei Medici.",
+  "links": [
+    {
+      "slug": "pace-di-lodi-1454",
+      "reason": "Ventiquattro anni prima la pace di Lodi aveva creato l'equilibrio che la congiura mette in crisi."
+    },
+    {
+      "slug": "morte-di-lorenzo-il-magnifico-1492",
+      "reason": "Quattordici anni dopo muore Lorenzo, sopravvissuto alla congiura."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pazzi conspiracy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pazzi_conspiracy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Congiura dei Pazzi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Congiura_dei_Pazzi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli differiscono su alcuni particolari: chi attaccò Lorenzo e dove fu ferito, e il numero dei giustiziati (l'articolo inglese dice in apertura più di ottanta, nel testo ottanta). Il testo evita di scegliere. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

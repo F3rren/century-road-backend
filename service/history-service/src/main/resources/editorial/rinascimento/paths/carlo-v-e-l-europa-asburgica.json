@@ -1,0 +1,37 @@
+{
+  "slug": "carlo-v-e-l-europa-asburgica",
+  "title": "Carlo V e l'Europa asburgica",
+  "tagline": "Dalla caduta di Granada a Lepanto: Spagna, impero e Mediterraneo nel secolo degli Asburgo.",
+  "intro": "Il percorso segue l'ascesa degli Asburgo in Europa: la caduta di Granada e l'arrivo di Colombo nelle Americhe, il trattato che divide il mondo fuori dall'Europa fra Spagna e Portogallo, l'elezione di Carlo V, l'assedio ottomano di Vienna, la sconfitta della Lega di Smalcalda e la battaglia di Lepanto.\n\nSu date e cifre gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "caduta-di-granada-1492",
+      "narrative": "Si parte dal 1492: cade Granada, l'ultimo regno musulmano della penisola iberica."
+    },
+    {
+      "insight": "colombo-1492",
+      "narrative": "Nello stesso anno Colombo, partito dalla Spagna, raggiunge le Americhe."
+    },
+    {
+      "insight": "trattato-di-tordesillas-1494",
+      "narrative": "Nel 1494 Spagna e Portogallo si dividono le terre fuori dall'Europa."
+    },
+    {
+      "insight": "elezione-di-carlo-v-1519",
+      "narrative": "Nel 1519 Carlo d'Asburgo è eletto imperatore."
+    },
+    {
+      "insight": "assedio-di-vienna-1529",
+      "narrative": "Nel 1529 i difensori di Vienna resistono all'esercito di Solimano."
+    },
+    {
+      "insight": "battaglia-di-muhlberg-1547",
+      "narrative": "Nel 1547 Carlo V sconfigge i principi protestanti a Mühlberg."
+    },
+    {
+      "insight": "battaglia-di-lepanto-1571",
+      "narrative": "Nel 1571 la Lega Santa distrugge la flotta ottomana a Lepanto."
+    }
+  ]
+}

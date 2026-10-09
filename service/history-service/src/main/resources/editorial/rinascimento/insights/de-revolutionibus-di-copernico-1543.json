@@ -1,0 +1,51 @@
+{
+  "slug": "de-revolutionibus-di-copernico-1543",
+  "title": "Copernico pubblica il «De revolutionibus»",
+  "summary": "Nel 1543 esce a Norimberga il «De revolutionibus orbium coelestium» di Niccolò Copernico, che descrive un sistema del mondo con il Sole al centro e la Terra in movimento come un pianeta, alternativo a quello di Tolomeo.",
+  "date": {
+    "year": 1543,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Norimberga, Germania",
+    "lat": 49.4521,
+    "lon": 11.0767,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Copernico aveva delineato il suo sistema in un breve manoscritto anonimo, il «Commentariolus», che faceva circolare fra gli amici: un elenco di libri del 1514 ne attesta l'esistenza. Negli anni trenta gran parte del libro era scritta, ma esitava a pubblicarlo. Nel 1536 il cardinale Nikolaus von Schönberg lo esortò a farlo; nel 1539 arrivò a Frombork il giovane matematico Georg Joachim Rheticus, che ne scrisse un riassunto, la «Narratio prima», pubblicata nel 1540.",
+  "event": "Spinto da Rheticus e dopo l'accoglienza non sfavorevole della «Narratio», Copernico accettò di far stampare l'opera a Norimberga da Johannes Petreius. Il libro, in sei libri sul modello dell'Almagesto di Tolomeo, è dedicato a papa Paolo III. Uscì poco prima della morte dell'autore; per l'articolo italiano sicuramente prima del 20 aprile 1543. Il teologo luterano Andreas Osiander, che curò la stampa, vi premise un'avvertenza anonima: il sistema era solo uno strumento di calcolo, non una descrizione vera del cosmo.",
+  "after": "Per l'articolo italiano l'avvertenza di Osiander fece evitare all'opera l'Indice dei libri proibiti almeno fino al 1616. Il libro divenne un testo fondamentale per gli astronomi, qualunque fosse la loro idea del cosmo. Copernico restava legato all'astronomia antica e usava ancora epicicli; per l'articolo inglese il passaggio dal geocentrismo all'eliocentrismo fu un duro colpo per la scienza di Aristotele e aiutò ad avviare la rivoluzione scientifica.",
+  "links": [
+    {
+      "slug": "de-humani-corporis-fabrica-1543",
+      "reason": "Nello stesso 1543 esce a Basilea il «De humani corporis fabrica» di Vesalio."
+    },
+    {
+      "slug": "concilio-di-trento-1545",
+      "reason": "L'opera è dedicata a papa Paolo III, che due anni dopo apre il Concilio di Trento."
+    }
+  ],
+  "sources": [
+    {
+      "title": "De revolutionibus orbium coelestium - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "De revolutionibus orbium coelestium - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/De_revolutionibus_orbium_coelestium",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 1543. Il giorno non è noto: quello italiano scrive solo che la stampa avvenne «sicuramente prima del 20 aprile». Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

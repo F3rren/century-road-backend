@@ -1,0 +1,51 @@
+{
+  "slug": "bibbia-di-gutenberg-1455",
+  "title": "La Bibbia di Gutenberg",
+  "summary": "Intorno al 1455 Johannes Gutenberg completa a Magonza la Bibbia a 42 linee, il primo grande libro stampato in Europa con caratteri metallici mobili: comincia l'età del libro a stampa in Occidente.",
+  "date": {
+    "year": 1455,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Magonza, Germania",
+    "lat": 49.9929,
+    "lon": 8.2473,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Gutenberg cominciò a sperimentare la stampa con caratteri mobili intorno al 1450, con testi più redditizi di una Bibbia, come la grammatica latina di Donato. La Bibbia fu preparata probabilmente dopo il 1450; per l'articolo inglese la data certa più antica di una sua stampa è quella di un'indulgenza di 31 righe, che esisteva già il 22 ottobre 1454.",
+  "event": "La Bibbia riproduce il testo della Vulgata di san Girolamo. Gutenberg usò caratteri che imitavano la scrittura gotica e un inchiostro a base d'olio; ogni foglio era inumidito prima della stampa. Dopo le prime pagine le righe per pagina passarono da 40 a 42, per l'articolo inglese per risparmiare carta. Le copie furono 180 per l'articolo italiano; quello inglese dice 158 o 180, circa tre quarti su carta e gli altri su pergamena. Nel marzo 1455 il futuro papa Pio II scrisse di averne visto pagine a Francoforte.",
+  "after": "Si sono conservate 49 copie, di cui 21 complete per l'articolo inglese e 22 per quello italiano. L'articolo inglese scrive che la Bibbia segnò l'inizio della «rivoluzione di Gutenberg» e dell'età del libro a stampa in Occidente. Nel 2001 l'UNESCO l'ha inserita nell'elenco della Memoria del mondo.",
+  "links": [
+    {
+      "slug": "donazione-di-costantino-smascherata-1440",
+      "reason": "Quindici anni prima Valla criticava la Vulgata e smascherava la Donazione di Costantino."
+    },
+    {
+      "slug": "aldo-manuzio-e-la-stampa-aldina-1494",
+      "reason": "Trentanove anni dopo Aldo Manuzio apre a Venezia la sua tipografia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gutenberg Bible - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gutenberg_Bible",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bibbia di Gutenberg - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Bibbia_di_Gutenberg",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sui tempi: quello italiano dice che i lavori cominciarono il 23 febbraio 1453 e finirono nel 1455, quello inglese che la preparazione cominciò dopo il 1450 e che le prime copie erano pronte nel 1454 o nel 1455. Anche il numero delle copie e delle pagine varia. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

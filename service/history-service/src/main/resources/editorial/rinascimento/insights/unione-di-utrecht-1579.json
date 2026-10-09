@@ -1,0 +1,50 @@
+{
+  "slug": "unione-di-utrecht-1579",
+  "title": "L'Unione di Utrecht",
+  "summary": "Il 23 gennaio 1579 Olanda, Zelanda e alcune altre province dei Paesi Bassi firmano a Utrecht un'alleanza contro Filippo II di Spagna: l'Unione di Utrecht è considerata il fondamento della Repubblica delle Province Unite.",
+  "date": {
+    "year": 1579,
+    "month": 1,
+    "day": 23
+  },
+  "place": {
+    "name": "Utrecht, Paesi Bassi",
+    "lat": 52.0907,
+    "lon": 5.1214,
+    "countryCode": "NL",
+    "approximate": false
+  },
+  "before": "Dal 1568 i Paesi Bassi erano in guerra con la Spagna. Dopo il saccheggio spagnolo di Anversa, il 4 novembre 1576, le province, in gran parte cattoliche, e l'Olanda e la Zelanda, dove prevalevano i calvinisti, firmarono la Pacificazione di Gand: si impegnavano a resistere agli interventi di Filippo II, restando a lui obbedienti, ma il problema religioso non fu risolto. Guglielmo d'Orange pensava a una «seconda linea di difesa», un'unione più stretta, che la Gheldria, a prevalenza cattolica, non volle. Il 6 gennaio 1579 due province del sud e una città dichiararono il loro sostegno alla Spagna con l'Unione di Arras.",
+  "event": "Il trattato fu firmato il 23 gennaio 1579 da Olanda, Zelanda, Utrecht (ma non tutta) e dalla provincia, ma non dalla città, di Groninga: fu la risposta delle province protestanti all'Unione di Arras. Prevedeva un impegno comune contro Filippo II e regolava difesa, tasse e religione; per questo è visto come un precursore di una costituzione. Nei mesi seguenti aderirono altre città e province: Gand, città della Frisia, parte della Gheldria; in estate Anversa, Bruxelles, Ypres, Breda e Amersfoort; nell'aprile 1580 Overijssel e Drenthe.",
+  "after": "Le Province Unite riconoscevano ancora il re, ma nel 1581, con l'Atto di Abiura, dichiararono la propria indipendenza da lui. L'Unione di Utrecht garantiva a ciascuno piena libertà personale di religione, ed è considerata una delle prime norme di tolleranza religiosa senza limiti. La Spagna riconobbe la Repubblica nel 1609 con la tregua dei dodici anni, per l'articolo inglese; per quello italiano l'indipendenza fu riconosciuta nel 1648 con la pace di Vestfalia.",
+  "links": [
+    {
+      "slug": "notte-di-san-bartolomeo-1572",
+      "reason": "Sette anni prima la notte di San Bartolomeo uccide Coligny, che voleva appoggiare la rivolta dei Paesi Bassi."
+    },
+    {
+      "slug": "invincibile-armada-1588",
+      "reason": "Nove anni dopo la Spagna manda l'Armata anche per fermare l'appoggio inglese ai Paesi Bassi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Union of Utrecht - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Union_of_Utrecht",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Unione di Utrecht - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Unione_di_Utrecht",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 23 gennaio 1579. Sul riconoscimento dell'indipendenza i due articoli non concordano: 1609 per quello inglese, 1648 per quello italiano. L'articolo italiano è molto breve e il testo si appoggia soprattutto su quello inglese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

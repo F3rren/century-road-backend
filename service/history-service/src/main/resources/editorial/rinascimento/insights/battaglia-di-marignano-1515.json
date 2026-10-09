@@ -1,0 +1,50 @@
+{
+  "slug": "battaglia-di-marignano-1515",
+  "title": "La battaglia di Marignano",
+  "summary": "Il 13 e 14 settembre 1515 a Marignano, oggi Melegnano, il giovane re Francesco I di Francia sconfigge gli svizzeri che difendevano il ducato di Milano: la «battaglia dei giganti» chiude le ambizioni svizzere in Lombardia.",
+  "date": {
+    "year": 1515,
+    "month": 9,
+    "day": 13
+  },
+  "place": {
+    "name": "Melegnano",
+    "lat": 45.3589,
+    "lon": 9.3228,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Gli svizzeri controllavano di fatto il ducato di Milano, dove sostenevano il duca Massimiliano Sforza. Francesco I, da poco incoronato, passò le Alpi con un grande esercito e decine di cannoni per un percorso mai usato prima, presso il colle dell'Argentera, e a Villafranca i suoi uomini catturarono il comandante pontificio Prospero Colonna. Dopo un accordo a Gallarate parte degli svizzeri tornò a casa; il cardinale Matthäus Schiner, nemico del re, convinse gli altri a dar battaglia.",
+  "event": "Gli svizzeri uscirono da Milano il 13 settembre e attaccarono i francesi; il combattimento continuò di notte, con furiose cariche di cavalleria guidate spesso dal re. Il 14 l'artiglieria francese e l'arrivo dei veneziani di Bartolomeo d'Alviano, alleati dei francesi, decisero lo scontro: gli svizzeri si ritirarono in ordine verso Milano. Il maresciallo Gian Giacomo Trivulzio, che aveva visto molte battaglie, disse che quella non era stata una battaglia di uomini ma di giganti. Il re si fece nominare cavaliere sul campo da Baiardo.",
+  "after": "I francesi ripresero Milano: il Castello Sforzesco si arrese quando i guastatori ne avevano minato le fondamenta, e Massimiliano Sforza andò in esilio con una pensione francese. Il 29 novembre 1516 a Friburgo gli svizzeri rinunciarono a ogni pretesa su Milano con la «pace perpetua», rimasta in vigore fino alla fine del Settecento. Per l'articolo italiano Marignano fu la fine dell'avventura espansionistica svizzera.",
+  "links": [
+    {
+      "slug": "battaglia-di-agnadello-1509",
+      "reason": "Sei anni prima i francesi avevano vinto ad Agnadello contro Venezia, ora loro alleata."
+    },
+    {
+      "slug": "battaglia-di-pavia-1525",
+      "reason": "Dieci anni dopo, a Pavia, Francesco I perde la battaglia e la libertà."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Marignano - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Marignano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Marignano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Marignano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 13 e 14 settembre 1515: la data è quella del primo giorno. Sulle forze in campo e sul numero dei cannoni francesi i due articoli non concordano, e il testo non dà cifre. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

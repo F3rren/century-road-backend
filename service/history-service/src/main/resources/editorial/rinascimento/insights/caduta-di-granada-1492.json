@@ -1,0 +1,54 @@
+{
+  "slug": "caduta-di-granada-1492",
+  "title": "Cade Granada, l'ultimo regno musulmano di Spagna",
+  "summary": "Il 2 gennaio 1492 Boabdil consegna Granada e l'Alhambra ai Re Cattolici Isabella e Ferdinando: finisce la guerra di Granada e con essa l'ultimo dominio islamico nella penisola iberica.",
+  "date": {
+    "year": 1492,
+    "month": 1,
+    "day": 2
+  },
+  "place": {
+    "name": "Granada, Spagna",
+    "lat": 37.1773,
+    "lon": -3.5986,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Il sultanato di Granada, ultimo Stato musulmano della penisola, era dilaniato dalle lotte fra i Nasridi, mentre i regni cristiani erano uniti: Isabella di Castiglia e Ferdinando d'Aragona, sposati dal 1469, regnavano insieme. La guerra cominciò dopo l'attacco granadino a Zahara e durò circa dieci anni, in campagne stagionali, con un uso efficace dell'artiglieria. Boabdil, catturato a Lucena nel 1483, fu liberato da Ferdinando perché continuasse la guerra civile granadina.",
+  "event": "Nel 1491 i Re Cattolici assediarono Granada, l'ultima città rimasta a Boabdil, e costruirono l'accampamento fortificato di Santa Fe. Il 25 novembre 1491, per l'articolo italiano, il futuro Gran Capitán Gonzalo Fernández de Córdoba concluse con Boabdil il Trattato di Granada, che dava due mesi per consegnare la città e garantiva ai musulmani che restavano persone, beni, legge e religione. Boabdil consegnò la città prima del previsto: il 2 gennaio 1492 i sovrani entrarono nell'Alhambra.",
+  "after": "La notizia della caduta di Granada fu festeggiata in tutta Europa, e nel 1496 papa Alessandro VI diede a Isabella e Ferdinando il titolo di «Cattolici». Per l'articolo inglese la fine della guerra pose fine alla convivenza religiosa nella penisola: nel 1492 gli ebrei furono costretti a convertirsi o a partire, e nel 1501 tutti i musulmani di Granada dovettero convertirsi, essere schiavi o andarsene. Il Comune di Granada commemora ogni anno la presa dell'Alhambra.",
+  "links": [
+    {
+      "slug": "colombo-1492",
+      "reason": "Nello stesso anno Colombo, partito per conto della Corona di Castiglia, raggiunge le Americhe."
+    },
+    {
+      "slug": "trattato-di-tordesillas-1494",
+      "reason": "Due anni dopo Spagna e Portogallo si dividono il mondo fuori dall'Europa con il trattato di Tordesillas."
+    },
+    {
+      "slug": "battaglia-di-pavia-1525",
+      "reason": "Trentatré anni dopo a Pavia vincono i tercios, la formazione sperimentata nella guerra di Granada."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Granada War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Granada_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Granada - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Granada",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 2 gennaio 1492 come giorno della consegna. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

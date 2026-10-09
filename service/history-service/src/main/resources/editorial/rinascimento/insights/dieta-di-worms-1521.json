@@ -1,0 +1,56 @@
+{
+  "slug": "dieta-di-worms-1521",
+  "title": "Lutero alla Dieta di Worms",
+  "summary": "Il 18 aprile 1521, davanti all'imperatore Carlo V e alla Dieta di Worms, Martin Lutero rifiuta di ritrattare i suoi scritti; l'editto del 25 maggio lo condanna come eretico, ma il principe elettore di Sassonia lo mette al sicuro.",
+  "date": {
+    "year": 1521,
+    "month": 4,
+    "day": 18
+  },
+  "place": {
+    "name": "Worms, Germania",
+    "lat": 49.633,
+    "lon": 8.359,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Nel giugno 1520 Leone X, con la bolla «Exsurge Domine», aveva condannato 41 presunti errori di Lutero, e nel gennaio 1521 lo scomunicò. Carlo V lo convocò alla dieta imperiale. Federico il Saggio, principe elettore di Sassonia, ottenne per lui un salvacondotto, essenziale dopo la fine di Jan Hus, giustiziato a Costanza nel 1415 nonostante una promessa simile. Lutero arrivò a Worms il 16 aprile.",
+  "event": "Il 17 aprile, davanti all'imperatore e ai principi, gli fu chiesto se i libri sul tavolo fossero suoi e se li ritrattasse: li riconobbe e chiese tempo per rispondere. Il 18 aprile divise i suoi scritti in tre gruppi e rifiutò di ritrattare quelli contro gli abusi del papato, perché sarebbe stato come rafforzare la tirannia; disse che avrebbe ritrattato solo se convinto dalla Scrittura o da chiare ragioni, perché la sua coscienza era prigioniera della parola di Dio. Secondo la tradizione concluse con «Qui io sto, non posso fare altrimenti».",
+  "after": "Il 25 maggio 1521 Carlo V emanò l'editto di Worms, che condannava Lutero come «eretico notorio» e vietava di diffondere le sue idee. Lutero non fu arrestato: Federico il Saggio lo fece rapire da finti assalitori e lo nascose nel castello di Wartburg, dove rimase per quasi un anno. Per l'articolo inglese l'editto non fu mai applicato in Germania, per il crescente sostegno a Lutero e la protezione di alcuni principi.",
+  "links": [
+    {
+      "slug": "novantacinque-tesi-di-lutero-1517",
+      "reason": "Quattro anni prima le 95 tesi avevano aperto la controversia."
+    },
+    {
+      "slug": "battaglia-di-frankenhausen-1525",
+      "reason": "Quattro anni dopo la Riforma si intreccia con la guerra dei contadini tedeschi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Diet of Worms - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Diet_of_Worms",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dieta di Worms - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dieta_di_Worms",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "95 tesi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/95_tesi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli concordano sul 17 e 18 aprile 1521. La voce italiana sulla Dieta di Worms è solo un elenco delle diete tenute nella città: per questo il testo si appoggia anche all'articolo italiano sulle 95 tesi. La frase «Qui io sto» è riferita dall'articolo inglese come tradizione. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

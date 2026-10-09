@@ -1,0 +1,54 @@
+{
+  "slug": "assedio-di-vienna-1529",
+  "title": "L'assedio di Vienna del 1529",
+  "summary": "Dal 27 settembre alla metà di ottobre del 1529 Solimano il Magnifico assedia Vienna con un grande esercito, ma i difensori guidati da Niklas Salm resistono e gli ottomani si ritirano: è il primo tentativo ottomano di prendere la città.",
+  "date": {
+    "year": 1529,
+    "month": 9,
+    "day": 27
+  },
+  "place": {
+    "name": "Vienna",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "countryCode": "AT",
+    "approximate": false
+  },
+  "before": "Nel 1526 Solimano aveva sconfitto a Mohács il re d'Ungheria Luigi II, morto nello scontro. Il trono fu rivendicato dall'arciduca Ferdinando d'Asburgo, fratello di Carlo V, e da János Szapolyai, riconosciuto re da Solimano in cambio del vassallaggio. Ferdinando prese Buda nel 1527, ma la perse nel 1529 per un contrattacco ottomano. Solimano partì il 10 maggio 1529 con un grande esercito, fra piogge e inondazioni che costarono cannoni e cammelli; Buda cadde l'8 settembre.",
+  "event": "L'esercito ottomano arrivò a Vienna alla fine di settembre, ridotto dalla lunga avanzata. La difesa era affidata a Niklas Salm, mercenario tedesco di settant'anni già distintosi a Pavia, con lanzichenecchi e archibugieri spagnoli mandati da Carlo V: rinforzò le mura, vecchie di trecento anni. Per l'articolo inglese i difensori erano al massimo 21 000 contro oltre 100 000 ottomani; le stime sulle forze ottomane variano molto. I difensori fecero sortite e fecero esplodere diverse mine. Il 14 ottobre l'ultimo assalto ottomano fu respinto.",
+  "after": "Per l'articolo inglese Solimano tolse l'assedio il 15 ottobre; per quello italiano a convincerlo fu una forte nevicata del 14. La ritirata fu un disastro, fra neve e fango. Per l'articolo italiano l'assedio segnò il punto più alto dell'espansione ottomana in Europa centrale, ma l'ostilità con gli Asburgo durò ancora 150 anni, fino al secondo assedio di Vienna del 1683. Alcuni storici pensano che l'ultimo assalto mirasse non a prendere la città, ma a danneggiarla.",
+  "links": [
+    {
+      "slug": "battaglia-di-pavia-1525",
+      "reason": "Quattro anni prima Salm si era distinto nella battaglia di Pavia."
+    },
+    {
+      "slug": "elezione-di-carlo-v-1519",
+      "reason": "Dieci anni prima il fratello di Ferdinando, Carlo V, era stato eletto imperatore."
+    },
+    {
+      "slug": "battaglia-di-lepanto-1571",
+      "reason": "Quarantadue anni dopo la Lega Santa batte la flotta ottomana a Lepanto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Vienna (1529) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Vienna_(1529)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Vienna - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Vienna",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Per l'articolo inglese l'assedio durò dal 27 settembre al 15 ottobre 1529; quello italiano dice che l'esercito arrivò verso la fine di settembre e che il 14 ottobre la nevicata convinse Solimano a ritirarsi. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

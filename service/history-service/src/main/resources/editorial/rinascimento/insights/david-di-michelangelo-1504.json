@@ -1,0 +1,50 @@
+{
+  "slug": "david-di-michelangelo-1504",
+  "title": "Il David di Michelangelo",
+  "summary": "L'8 settembre 1504 il David di Michelangelo, ricavato da un blocco di marmo già sbozzato e abbandonato da decenni, è scoperto davanti a Palazzo Vecchio, a Firenze, come simbolo della Repubblica fiorentina.",
+  "date": {
+    "year": 1504,
+    "month": 9,
+    "day": 8
+  },
+  "place": {
+    "name": "Piazza della Signoria, Firenze",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il Duomo doveva avere una serie di grandi statue di profeti. Nel 1464 l'Opera del Duomo affidò ad Agostino di Duccio un David in marmo: il lavoro si fermò e un nuovo incarico ad Antonio Rossellino, nel 1476, non diede frutti. Il blocco, chiamato «il Gigante», restò per decenni esposto alle intemperie; nel 1500 un inventario lo descriveva come mal sbozzato. Il 16 agosto 1501 fu affidato a Michelangelo, allora ventiseienne secondo l'articolo inglese.",
+  "event": "Michelangelo cominciò a lavorare nel settembre del 1501, riparato da un recinto di tavole. Rinunciò alla testa di Golia ai piedi del giovane, come nei David di Donatello e di Verrocchio: l'eroe è mostrato prima dello scontro. Alla fine di gennaio del 1504, con la statua quasi finita, una commissione di artisti, fra cui Leonardo da Vinci e Botticelli, scelse dove collocarla: non sul tetto del Duomo, ma davanti a Palazzo della Signoria, al posto della Giuditta di Donatello. Il trasporto durò quattro giorni. L'8 settembre 1504 la statua fu scoperta.",
+  "after": "Il David diventò il simbolo della Repubblica fiorentina, per l'articolo inglese della difesa delle libertà civili garantite dalla costituzione del 1494. Nel 1873 fu trasferito nella Galleria dell'Accademia per proteggerlo dai danni; la sistemazione definitiva, l'attuale tribuna, arrivò nel 1882. Nel 1910 una copia fu collocata in piazza della Signoria.",
+  "links": [
+    {
+      "slug": "cupola-del-brunelleschi-1436",
+      "reason": "Il blocco era destinato al Duomo di Firenze, la cattedrale della cupola di Brunelleschi."
+    },
+    {
+      "slug": "savonarola-al-rogo-1498",
+      "reason": "Sei anni prima, nella stessa piazza, Savonarola era stato impiccato e bruciato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "David (Michelangelo) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/David_(Michelangelo)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "David (Michelangelo) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/David_(Michelangelo)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli danno l'8 settembre 1504 come giorno in cui la statua fu scoperta, ma divergono sul resto del 1504: quello inglese dice che fu installata in giugno, quello italiano che il trasporto si concluse il 18 maggio. Per la commissione l'articolo inglese dà il 25 gennaio, quello italiano il 26. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

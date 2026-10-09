@@ -1,0 +1,52 @@
+{
+  "slug": "utopia-di-tommaso-moro-1516",
+  "title": "Esce «Utopia» di Tommaso Moro",
+  "summary": "Nel 1516 Tommaso Moro pubblica in latino «Utopia», il racconto di un'isola immaginaria dove non esiste la proprietà privata: una satira sociale e politica dell'Europa del suo tempo, che inventa la parola «utopia».",
+  "date": {
+    "year": 1516,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Anversa, Belgio",
+    "lat": 51.2194,
+    "lon": 4.4025,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "Il punto indica Anversa, dove nel racconto Moro incontra Raffaele Itlodeo; gli articoli non danno il luogo della stampa."
+  },
+  "before": "Moro, umanista e giurista inglese, aveva tradotto con Erasmo alcuni scritti di Luciano; nel 1515, durante un'ambasciata nei Paesi Bassi, conobbe ad Anversa Pieter Gillis, umanista e funzionario della città. Per l'articolo italiano si ispirò soprattutto alla «Repubblica» di Platone. Il racconto è presentato come la conversazione fra Moro, Gillis e un viaggiatore immaginario, Raffaele Itlodeo.",
+  "event": "L'opera, in latino, è in due libri. Nel primo Itlodeo critica l'Inghilterra, a partire dalla pena di morte per furto, e sostiene che nessuno Stato può essere ben governato finché esiste la proprietà privata. Nel secondo descrive l'isola di Utopia, a forma di mezzaluna e con cinquantaquattro città, dove i beni sono in comune e convivono più religioni che si tollerano a vicenda. Il nome, coniato da Moro, può intendersi come «luogo che non esiste» o come «luogo ottimo».",
+  "after": "Il libro fu rivisto nel 1518 e arrivò alla quarta edizione nel 1519; fu tradotto in tedesco nel 1524, in fiorentino nel 1548, in francese nel 1550 e in inglese nel 1551. Per l'articolo inglese molti studiosi lo leggono come una critica del cattolicesimo del Cinquecento, mentre altri notano che molte soluzioni del secondo libro contraddicono ciò in cui Moro credeva: egli non sostenne mai la verità di una società perfetta.",
+  "links": [
+    {
+      "slug": "elogio-della-follia-1511",
+      "reason": "Cinque anni prima Erasmo dedicava a Moro l'Elogio della follia."
+    },
+    {
+      "slug": "atto-di-supremazia-1534",
+      "reason": "Diciotto anni dopo Moro, oppositore dell'Atto sul tradimento, è condannato e decapitato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Utopia (book) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Utopia_(book)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Utopia (Tommaso Moro) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Utopia_(Tommaso_Moro)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 1516; per l'articolo inglese l'opera fu rivista nel 1518. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

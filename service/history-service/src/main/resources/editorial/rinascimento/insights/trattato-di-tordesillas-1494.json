@@ -1,0 +1,54 @@
+{
+  "slug": "trattato-di-tordesillas-1494",
+  "title": "Il trattato di Tordesillas",
+  "summary": "Il 7 giugno 1494 Spagna e Portogallo firmano a Tordesillas il trattato che divide fra loro le terre scoperte fuori dall'Europa lungo un meridiano posto a 370 leghe a ovest delle isole di Capo Verde.",
+  "date": {
+    "year": 1494,
+    "month": 6,
+    "day": 7
+  },
+  "place": {
+    "name": "Tordesillas, Spagna",
+    "lat": 41.5036,
+    "lon": -4.9932,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Dopo il ritorno di Colombo nel 1493 il re Giovanni II del Portogallo rivendicò le terre scoperte, in base al trattato di Alcáçovas del 1479 e alla bolla del 1481 che dava al Portogallo le terre a sud delle Canarie. Il 4 maggio 1493 papa Alessandro VI, con la bolla «Inter caetera», assegnò alla Castiglia le terre a ovest di una linea a 100 leghe da Capo Verde o dalle Azzorre. Giovanni II non fu contento: la linea gli impediva di raggiungere l'India.",
+  "event": "Dopo trattative dirette fra le due Corone, il trattato fu firmato il 7 giugno 1494 a Tordesillas, in Castiglia. La linea fu spostata a 370 leghe a ovest di Capo Verde: le terre a est andavano al Portogallo, quelle a ovest alla Castiglia. Per l'articolo inglese il Portogallo ottenne così di proteggere la rotta lungo la costa africana e diritti su quello che sarebbe stato il quarto orientale del Brasile. Il trattato fu negoziato senza consultare il papa, e ratificato dalla Spagna il 2 luglio e dal Portogallo il 5 settembre 1494.",
+  "after": "Giulio II sancì il trattato con la bolla del 24 gennaio 1506. La parte più orientale del Brasile, raggiunta nel 1500 da Pedro Álvares Cabral, fu assegnata al Portogallo. La linea non fu applicata con rigore: gli spagnoli non si opposero all'espansione portoghese in Brasile oltre il meridiano. Per l'articolo italiano alle altre potenze, come Francia, Inghilterra e Paesi Bassi, fu negato l'accesso alle nuove terre. Il trattato di Saragozza del 1529 fissò la linea dall'altra parte del mondo. Nel 2007 l'UNESCO ha inserito il trattato nella Memoria del mondo.",
+  "links": [
+    {
+      "slug": "colombo-1492",
+      "reason": "Due anni prima Colombo raggiunge le Americhe: dal suo viaggio nasce la disputa."
+    },
+    {
+      "slug": "vasco-da-gama-calicut-1498",
+      "reason": "Quattro anni dopo Vasco da Gama raggiunge l'India dal mare, la meta che il Portogallo voleva proteggersi."
+    },
+    {
+      "slug": "circumnavigazione-1522",
+      "reason": "Nel 1522 conclude il giro del mondo la spedizione di Magellano, che aveva raggiunto le Molucche nel 1521."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Tordesillas - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Tordesillas",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Tordesillas - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Tordesillas",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 7 giugno 1494 e le date di ratifica. La distanza in chilometri è data in modo diverso (1 770 o 2 100 km), e il testo non la riporta. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

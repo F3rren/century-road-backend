@@ -1,0 +1,55 @@
+{
+  "slug": "atto-di-supremazia-1534",
+  "title": "L'Atto di Supremazia di Enrico VIII",
+  "summary": "Il 3 novembre 1534 il Parlamento inglese approva l'Atto di Supremazia: Enrico VIII e i suoi successori sono «unico capo supremo sulla terra della Chiesa d'Inghilterra», al posto del papa.",
+  "date": {
+    "year": 1534,
+    "month": 11,
+    "day": 3
+  },
+  "place": {
+    "name": "Londra",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "Il punto indica Londra, dove il Parlamento d'Inghilterra aveva sede; gli articoli non danno un luogo preciso."
+  },
+  "before": "Enrico VIII voleva un erede maschio. Caterina d'Aragona non glielo dava, e per anni cercò di far annullare il matrimonio, convinto che Dio lo punisse per aver sposato la vedova del fratello. Il papa Clemente VII rifiutò l'annullamento: Caterina era zia dell'imperatore Carlo V, e dichiarare nullo il matrimonio avrebbe allontanato il papa dall'imperatore. Per l'articolo italiano pesava anche la paura causata dal sacco di Roma del 1527.",
+  "event": "Il 3 novembre 1534 il Parlamento approvò l'atto, che dichiarava il re «unico capo supremo sulla terra della Chiesa d'Inghilterra» e attribuiva alla Corona onori, giurisdizioni e profitti connessi a quella dignità. Il testo presentava la supremazia come il riconoscimento di un fatto, non come una concessione del Parlamento. Enrico VIII ritirava così il sostegno all'autorità del papa e affermava l'indipendenza della Chiesa d'Inghilterra. Una legge sul tradimento, dello stesso anno, punì come tradimento il rifiuto dell'atto.",
+  "after": "L'atto è spesso considerato l'inizio della Riforma anglicana; per l'articolo italiano permise lo scioglimento dei monasteri cattolici. Il suo più celebre oppositore, Tommaso Moro, fu condannato per tradimento e decapitato. Maria I, cattolica, abrogò l'atto nel 1554; la sorellastra Elisabetta I, protestante, lo reintrodusse dopo la salita al trono con il titolo di «governatore supremo».",
+  "links": [
+    {
+      "slug": "sacco-di-roma-1527",
+      "reason": "Sette anni prima il sacco di Roma, per l'articolo italiano, aveva reso il papa timoroso di Carlo V."
+    },
+    {
+      "slug": "institutio-di-calvino-1536",
+      "reason": "Due anni dopo Calvino pubblica l'Istituzione, nello stesso periodo della dissoluzione dei monasteri inglesi."
+    },
+    {
+      "slug": "incoronazione-di-elisabetta-i-1559",
+      "reason": "Venticinque anni dopo Elisabetta I sale al trono e reintroduce la supremazia regale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Acts of Supremacy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Acts_of_Supremacy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Atto di Supremazia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Atto_di_Supremazia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 3 novembre 1534. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

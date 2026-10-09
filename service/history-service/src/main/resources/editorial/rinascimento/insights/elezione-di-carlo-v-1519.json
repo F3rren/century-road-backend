@@ -1,0 +1,50 @@
+{
+  "slug": "elezione-di-carlo-v-1519",
+  "title": "Carlo V è eletto imperatore",
+  "summary": "Il 28 giugno 1519 a Francoforte i sette principi elettori scelgono all'unanimità Carlo d'Asburgo, già re di Spagna, come imperatore del Sacro Romano Impero, davanti a Francesco I di Francia: il suo sarà un impero «sul quale non tramontava mai il sole».",
+  "date": {
+    "year": 1519,
+    "month": 6,
+    "day": 28
+  },
+  "place": {
+    "name": "Francoforte sul Meno, Germania",
+    "lat": 50.1109,
+    "lon": 8.6821,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Alla morte di Massimiliano I, il 12 gennaio 1519, i candidati principali furono suo nipote Carlo, duca di Borgogna, re di Spagna e arciduca d'Austria, e Francesco I di Francia; si presentò anche Enrico VIII d'Inghilterra. Carlo era nato nei Paesi Bassi, era cresciuto parlando francese e olandese, era in Spagna all'epoca dell'elezione e non era mai stato in Germania. Lui e Francesco gareggiarono nel corrompere gli elettori; per l'articolo italiano Carlo si fece finanziare da banchieri italiani e tedeschi, fra cui i Fugger di Augusta.",
+  "event": "Il 28 giugno 1519 a Francoforte i sette principi elettori elessero Carlo all'unanimità. Per l'articolo inglese Carlo aveva condotto una campagna di propaganda: si dichiarò «tedesco di sangue e di stirpe», presentò Francesco come uno straniero avventuriero e promise di garantire le «libertà tedesche». Pesarono anche il denaro e la minaccia militare della Lega sveva; sempre per quell'articolo, forse gli elettori pensarono di eleggere Federico III di Sassonia, che rifiutò.",
+  "after": "Carlo fu incoronato ad Aquisgrana nell'ottobre 1520, e poi dal papa Clemente VII a Bologna il 22 febbraio 1530: fu l'ultimo imperatore a ricevere l'incoronazione papale. Il suo impero comprendeva, per l'articolo italiano, i Paesi Bassi, la Spagna, i regni aragonesi di Sardegna, Napoli e Sicilia, i territori austriaci, la Germania e il Nord Italia, e le colonie americane. Lo stesso articolo indica tre ostacoli: la Francia, la Riforma protestante e l'espansione ottomana.",
+  "links": [
+    {
+      "slug": "dieta-di-worms-1521",
+      "reason": "Due anni dopo Carlo V presiede a Worms la dieta in cui Lutero rifiuta di ritrattare."
+    },
+    {
+      "slug": "battaglia-di-pavia-1525",
+      "reason": "Sei anni dopo i suoi soldati catturano a Pavia Francesco I, il rivale dell'elezione."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1519 imperial election - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1519_imperial_election",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Carlo V d'Asburgo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Carlo_V_d'Asburgo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 28 giugno 1519. Sulla data dell'incoronazione ad Aquisgrana i due articoli non concordano (26 o 23 ottobre 1520): il testo dà solo il mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

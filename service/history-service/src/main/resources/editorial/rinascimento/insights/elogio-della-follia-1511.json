@@ -1,0 +1,56 @@
+{
+  "slug": "elogio-della-follia-1511",
+  "title": "Esce l'Elogio della follia di Erasmo",
+  "summary": "Nel giugno 1511 viene stampato per la prima volta l'«Elogio della follia», la satira in latino scritta da Erasmo da Rotterdam nel 1509, in cui la Follia fa il proprio elogio e prende in giro principi, pedanti e uomini di Chiesa.",
+  "date": {
+    "year": 1511,
+    "month": 6,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Londra",
+    "lat": 51.5155,
+    "lon": -0.0922,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "Il punto indica la City di Londra, dove Erasmo, ospite di Tommaso Moro, scrisse l'opera; gli articoli non danno il luogo della stampa."
+  },
+  "before": "Nel 1509 Erasmo da Rotterdam tornava da un deludente viaggio a Roma, dove per l'articolo italiano aveva rifiutato una promozione nella curia papale. Ospite a Londra dell'amico Tommaso Moro, scrisse in circa una settimana la prima stesura, durante un periodo di malattia e riposo forzato, e la dedicò a Moro: il titolo «Moriae encomium» si può leggere anche come «Elogio di Moro».",
+  "event": "L'opera fu stampata per la prima volta nel giugno 1511. In essa la Follia loda se stessa, come nelle opere del satirico greco Luciano, e passa in rassegna ogni parte della società, dagli innamorati ai principi. Poi il tono si fa più cupo, con la critica degli abusi della dottrina cattolica e delle pratiche corrotte del clero, e dei pedanti. Per l'articolo italiano non era destinata alla pubblicazione: furono gli amici di Erasmo a farla stampare, ed Erasmo rimase sbalordito dal successo.",
+  "after": "Il libro fu ristampato subito più volte; prima della morte di Erasmo era stato tradotto in ceco, francese e tedesco. Si dice che papa Leone X e il cardinale Cisneros lo trovassero divertente; i guai di Erasmo vennero da certi teologi. L'articolo inglese lo considera una delle opere più importanti del Rinascimento, con un ruolo nell'inizio della Riforma protestante. Un'edizione di Basilea del 1515-16 fu illustrata con disegni a penna da Hans Holbein il Giovane.",
+  "links": [
+    {
+      "slug": "aldo-manuzio-e-la-stampa-aldina-1494",
+      "reason": "Erasmo era amico dello stampatore Aldo Manuzio."
+    },
+    {
+      "slug": "utopia-di-tommaso-moro-1516",
+      "reason": "Cinque anni dopo l'amico Tommaso Moro, a cui è dedicata l'opera, pubblica Utopia."
+    },
+    {
+      "slug": "novantacinque-tesi-di-lutero-1517",
+      "reason": "Sei anni dopo Lutero invia le 95 tesi contro le indulgenze, che Erasmo criticava a sua volta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "In Praise of Folly - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/In_Praise_of_Folly",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Elogio della follia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Elogio_della_follia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il mese, giugno, è dato dall'articolo inglese; quello italiano dice solo 1511. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

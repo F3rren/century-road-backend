@@ -1,0 +1,55 @@
+{
+  "slug": "aldo-manuzio-e-la-stampa-aldina-1494",
+  "title": "Aldo Manuzio apre la sua tipografia a Venezia",
+  "summary": "Nel 1494 l'umanista Aldo Manuzio apre a Venezia la tipografia da cui usciranno le edizioni aldine dei classici greci e latini: introdurrà il corsivo e il formato in ottavo, piccolo e portatile.",
+  "date": {
+    "year": 1494,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Venezia",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Manuzio era un umanista e insegnante: aveva studiato latino a Roma e greco a Ferrara, ed era stato precettore dei nipoti di Pico della Mirandola, signori di Carpi. Voleva salvare dall'oblio la letteratura e la filosofia greca e diffondere i capolavori latini in edizioni stampate. Scelse Venezia, allora al culmine del suo splendore, dove si stabilì intorno al 1490 e frequentò gli studiosi greci rifugiati dopo la caduta di Costantinopoli.",
+  "event": "Per l'articolo italiano, nel 1494 aprì la tipografia nella contrada di Sant'Agostin. La prima edizione datata con il suo nome, la grammatica greca di Costantino Lascaris, fu finita il 28 febbraio 1495. Tra il 1495 e il 1498 pubblicò per la prima volta l'opera completa di Aristotele, in cinque volumi, e poi altri classici greci.",
+  "after": "Dal 1501 le edizioni aldine usarono il corsivo, disegnato da Francesco Griffo, e il formato in ottavo, piccolo e portatile: il Virgilio del 1501 è il primo libro stampato in corsivo. Manuzio ottenne da Venezia il privilegio esclusivo sul corsivo. Morì il 6 febbraio 1515, dopo circa centotrenta edizioni, 132 per l'articolo inglese, in vent'anni di attività.",
+  "links": [
+    {
+      "slug": "bibbia-di-gutenberg-1455",
+      "reason": "Trentanove anni prima Gutenberg stampava la sua Bibbia a Magonza."
+    },
+    {
+      "slug": "battaglia-di-agnadello-1509",
+      "reason": "Nel 1509 la sconfitta di Venezia ad Agnadello interrompe l'attività della tipografia."
+    },
+    {
+      "slug": "elogio-della-follia-1511",
+      "reason": "Erasmo, amico di Manuzio, pubblica nel 1511 l'Elogio della follia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Aldine Press - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Aldine_Press",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Aldo Manuzio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Aldo_Manuzio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sulla sede: quello italiano dice che la tipografia aprì nel 1494 a Sant'Agostin, quello inglese che l'attività cominciò nel 1494 ma che la sede propria fu stabilita nel 1496. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

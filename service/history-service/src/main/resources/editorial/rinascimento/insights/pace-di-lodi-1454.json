@@ -1,0 +1,54 @@
+{
+  "slug": "pace-di-lodi-1454",
+  "title": "La pace di Lodi e l'equilibrio fra gli Stati italiani",
+  "summary": "Il 9 aprile 1454 Venezia e Milano firmano a Lodi la pace che chiude le guerre di Lombardia, riconosce Francesco Sforza duca di Milano e apre quarant'anni di equilibrio fra gli Stati italiani.",
+  "date": {
+    "year": 1454,
+    "month": 4,
+    "day": 9
+  },
+  "place": {
+    "name": "Lodi",
+    "lat": 45.314,
+    "lon": 9.503,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nel 1447 morì senza eredi maschi il duca di Milano Filippo Maria Visconti, e a Milano nacque la Repubblica Ambrosiana, che affidò la difesa a Francesco Sforza; nel 1450 Sforza divenne duca. Venezia, che non aveva rinunciato a espandersi in Lombardia, si alleò con Alfonso d'Aragona, re di Napoli, e con l'imperatore Federico III; Firenze stava con Milano, per i rapporti fra Cosimo de' Medici e Sforza. Nel 1453 la caduta di Costantinopoli mise in pericolo i possedimenti veneziani nell'Egeo e spinse Venezia a chiudere le guerre in Italia.",
+  "event": "Venezia e Milano conclusero la pace il 9 aprile 1454 nella residenza di Francesco Sforza a Lodi; per Venezia firmarono Simone da Camerino e Paolo Barbo. Il trattato fu ratificato dai principali Stati, primo fra tutti Firenze. Stabilì la successione di Sforza nel ducato di Milano e portò la frontiera sull'Adda; Asola, Lonato e Peschiera restarono a Venezia, deludendo i Gonzaga. L'Italia settentrionale risultava in pratica divisa fra i due Stati, con qualche altra potenza: Savoia, Genova, Gonzaga ed Este.",
+  "after": "Nell'agosto 1454, con l'adesione di papa Niccolò V, di Alfonso d'Aragona e di altri Stati minori, nacque la Lega Italica. Per l'articolo italiano garantì per quarant'anni la pace fra le potenze italiane e permise lo sviluppo del Rinascimento, con Firenze e Cosimo de' Medici come «ago della bilancia». L'equilibrio entrò in crisi con la congiura dei Pazzi (1478) e la guerra del Sale (1482), e finì con la discesa di Carlo VIII nel 1494.",
+  "links": [
+    {
+      "slug": "caduta-di-costantinopoli-1453",
+      "reason": "Un anno prima la caduta di Costantinopoli aveva messo in pericolo i possedimenti veneziani nell'Egeo."
+    },
+    {
+      "slug": "congiura-dei-pazzi-1478",
+      "reason": "Nel 1478 la congiura dei Pazzi mette in crisi la Lega Italica."
+    },
+    {
+      "slug": "discesa-di-carlo-viii-1494",
+      "reason": "Nel 1494 la discesa di Carlo VIII chiude i quarant'anni di equilibrio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Lodi - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Lodi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pace di Lodi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Pace_di_Lodi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 9 aprile 1454; i nomi dei firmatari veneziani sono quelli dell'articolo inglese, e l'adesione di Niccolò V e di Alfonso d'Aragona nell'agosto 1454 è quella dell'articolo italiano. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
