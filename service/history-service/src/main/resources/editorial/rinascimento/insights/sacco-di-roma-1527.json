@@ -1,0 +1,54 @@
+{
+  "slug": "sacco-di-roma-1527",
+  "title": "Il sacco di Roma",
+  "summary": "Il 6 maggio 1527 le truppe di Carlo V, ammutinate e senza paga, prendono d'assalto Roma e la saccheggiano per mesi: papa Clemente VII si rifugia in Castel Sant'Angelo.",
+  "date": {
+    "year": 1527,
+    "month": 5,
+    "day": 6
+  },
+  "place": {
+    "name": "Roma",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il papa Clemente VII, preoccupato dal potere di Carlo V, si era alleato con Francesco I nella Lega di Cognac, a cui aderivano anche Milano, Venezia, Genova e la Firenze dei Medici. L'esercito imperiale, composto da circa quattordicimila lanzichenecchi, in parte luterani, e seimila spagnoli, non riceveva la paga da mesi e si ammutinò: il duca di Borbone, il comandante, la guidò verso Roma, sostenendo di non poterla fermare. Carlo V voleva solo minacciare il papa, per costringerlo a patti.",
+  "event": "La mattina del 6 maggio gli imperiali assalirono le mura sul Gianicolo e sui colli vaticani; il duca di Borbone fu ferito a morte. Nonostante l'ordine di non attaccare, i soldati entrarono in una città poco difesa e cominciarono a saccheggiare, uccidere e prendere ostaggi da riscattare. La guardia svizzera fu in gran parte annientata mentre il papa raggiungeva Castel Sant'Angelo. All'inizio di giugno (il 6 per l'articolo inglese, il 5 per quello italiano) Clemente VII si arrese e accettò di pagare un riscatto di 400 000 ducati.",
+  "after": "Il saccheggio finì nel febbraio 1528, con la peste e la fame; le cifre dei morti variano molto da una fonte all'altra. Carlo V negò ogni responsabilità e si accordò di nuovo con il papa. Per l'articolo italiano il sacco sembrò confermare il declino dell'Italia in balia di eserciti stranieri e accrebbe l'astio fra cattolici e luterani; quello inglese lo cita come la fine dell'Alto Rinascimento italiano.",
+  "links": [
+    {
+      "slug": "novantacinque-tesi-di-lutero-1517",
+      "reason": "Dieci anni prima le tesi di Lutero avevano aperto la Riforma, che divide cattolici e luterani."
+    },
+    {
+      "slug": "battaglia-di-pavia-1525",
+      "reason": "Due anni prima, a Pavia, l'esercito di Carlo V aveva sconfitto la Francia."
+    },
+    {
+      "slug": "pace-di-cateau-cambresis-1559",
+      "reason": "Trentadue anni dopo la pace di Cateau-Cambrésis chiude i conflitti fra Asburgo e Francia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sack of Rome (1527) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(1527)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sacco di Roma (1527) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sacco_di_Roma_(1527)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 6 maggio 1527. Le fonti non concordano sulle perdite: l'articolo italiano scrive di circa ventimila cittadini uccisi, diecimila fuggiti e trentamila morti di peste; quello inglese che la popolazione scese da 55 000 a 10 000 abitanti. Il testo non dà cifre. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "discesa-di-carlo-viii-1494",
+  "title": "Carlo VIII scende in Italia",
+  "summary": "L'11 settembre 1494 Carlo VIII di Francia si accampa ad Asti alla testa di un grande esercito con artiglieria moderna: è una tappa della discesa in Italia che apre le guerre d'Italia, il lungo periodo di guerre fra Francia, Spagna e Impero.",
+  "date": {
+    "year": 1494,
+    "month": 9,
+    "day": 11
+  },
+  "place": {
+    "name": "Asti",
+    "lat": 44.9008,
+    "lon": 8.2064,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Carlo VIII, poco più che ventenne, vantava per via della nonna Maria d'Angiò un diritto al trono di Napoli e, secondo una tesi riportata dall'articolo italiano, voleva farne la base di una crociata. Lo incoraggiava Ludovico Sforza detto il Moro, che di fatto governava Milano e voleva che le forze aragonesi non potessero marciare contro di lui. A spingerlo c'era anche Antonello Sanseverino, principe di Salerno, rifugiato in Francia dal 1486 dopo la congiura dei baroni.",
+  "event": "L'esercito, di circa 30 000 uomini con 5000 mercenari svizzeri e una moderna artiglieria per l'articolo italiano, passò il Monginevro il 3 settembre; l'11 si accampò ad Asti, dove Carlo ricevette l'omaggio di Ludovico Sforza. Poi scese per la Toscana, dove Fivizzano fu saccheggiata. A Firenze Piero de' Medici aveva ceduto fortezze e città, e a novembre fu cacciato dai fiorentini. Il 31 dicembre il re entrò a Roma; il 22 febbraio 1495 occupò Napoli senza combattere.",
+  "after": "La rapidità della conquista spinse Venezia, il papa, Milano, la Spagna e l'impero a formare il 31 marzo 1495 la Lega di Venezia. Carlo tornò in Francia dopo la battaglia di Fornovo, e Napoli fu ripresa dagli Aragonesi. Per l'articolo italiano la guerra segnò un cambiamento epocale: in pochi decenni l'Italia divenne campo di battaglia di Francia, Spagna e Impero. Secondo quello inglese, fra le truppe francesi a Napoli scoppiò probabilmente la prima epidemia di sifilide documentata.",
+  "links": [
+    {
+      "slug": "pace-di-lodi-1454",
+      "reason": "Quarant'anni prima la pace di Lodi aveva dato all'Italia l'equilibrio che questa discesa spezza."
+    },
+    {
+      "slug": "battaglia-di-fornovo-1495",
+      "reason": "L'anno dopo, nella ritirata, i francesi affrontano la Lega a Fornovo."
+    },
+    {
+      "slug": "savonarola-al-rogo-1498",
+      "reason": "Quattro anni dopo Savonarola, che era intervenuto presso il re, finisce sul rogo a Firenze."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Italian War of 1494–1495 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Italian_War_of_1494–1495",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Discesa di Carlo VIII in Italia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Discesa_di_Carlo_VIII_in_Italia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 3 settembre per il passaggio del Monginevro e l'11 settembre per l'arrivo ad Asti. Sulla data della partenza di Carlo da Napoli l'articolo inglese dà il 30 maggio nella cronologia e il 20 maggio nel testo, quello italiano il 20 maggio: il testo non la dà. Anche la consistenza dell'esercito varia: l'articolo italiano e un passo di quello inglese danno circa 30 000 uomini con 5000 svizzeri, un altro passo dell'articolo inglese 25 000 con 8000 svizzeri; il testo riporta la prima cifra. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

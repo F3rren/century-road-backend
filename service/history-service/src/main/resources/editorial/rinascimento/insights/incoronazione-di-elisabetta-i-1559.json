@@ -1,0 +1,54 @@
+{
+  "slug": "incoronazione-di-elisabetta-i-1559",
+  "title": "Elisabetta I è incoronata regina d'Inghilterra",
+  "summary": "Il 15 gennaio 1559, nell'abbazia di Westminster, Elisabetta I è incoronata regina d'Inghilterra: gli storici vi vedono la volontà di riportare il paese al protestantesimo, con un compromesso che conserva alcuni costumi cattolici.",
+  "date": {
+    "year": 1559,
+    "month": 1,
+    "day": 15
+  },
+  "place": {
+    "name": "Abbazia di Westminster, Londra",
+    "lat": 51.4994,
+    "lon": -0.1273,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Maria I aveva riportato l'Inghilterra al cattolicesimo e fatto bruciare circa trecento protestanti. Elisabetta, protestante, si era adeguata solo in apparenza ed era diventata il punto di riferimento dell'opposizione. Maria morì il 17 novembre 1558 e Elisabetta ne fu informata a Hatfield House. La data dell'incoronazione, domenica 15 gennaio, fu scelta con il consiglio dell'astrologo John Dee e non coincideva con una festa cristiana. La fretta dipendeva anche dalla sua posizione legale: leggi del 1533 e del 1536 l'avevano dichiarata illegittima. Il consigliere Nicholas Bacon la rassicurò: la corona, una volta indossata, cancella ogni difetto.",
+  "event": "Il 14 gennaio Elisabetta attraversò Londra in corteo, dalla Torre a Westminster, fra archi trionfali di tono apertamente protestante: l'allegoria della Verità, figlia del Tempo, le consegnò un Nuovo Testamento in inglese, allora proibito. L'arcivescovo di Canterbury, Reginald Pole, era morto lo stesso giorno di Maria, e molti vescovi anziani non vollero o non poterono officiare: toccò a Owen Oglethorpe, vescovo di Carlisle, di grado modesto, costretto ad accettare. Il 15 gennaio il rito seguì il «Liber Regalis», in latino, come l'ultima volta prima della traduzione in inglese.",
+  "after": "Dopo l'incoronazione Elisabetta rimise in vigore la supremazia regale, con il titolo di «governatore supremo» e non di capo supremo della Chiesa d'Inghilterra, e con l'Atto di uniformità del 1559 rese obbligatorio il «Book of Common Prayer», una sintesi fra tradizione cattolica e innovazioni protestanti. Molti vescovi che si opposero furono rimossi. L'articolo inglese chiama «Elizabethan Settlement» il compromesso fra protestantesimo e alcuni costumi cattolici di cui l'incoronazione è segno.",
+  "links": [
+    {
+      "slug": "atto-di-supremazia-1534",
+      "reason": "Venticinque anni prima Enrico VIII aveva assunto il titolo di capo della Chiesa d'Inghilterra."
+    },
+    {
+      "slug": "pace-di-cateau-cambresis-1559",
+      "reason": "Nello stesso anno la pace di Cateau-Cambrésis riconosce Elisabetta regina d'Inghilterra."
+    },
+    {
+      "slug": "esecuzione-di-maria-stuarda-1587",
+      "reason": "Ventotto anni dopo Elisabetta fa giustiziare Maria Stuarda, che rivendicava il suo trono."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Coronation of Elizabeth I - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Coronation_of_Elizabeth_I",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Elisabetta I d'Inghilterra - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Elisabetta_I_d'Inghilterra",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 gennaio 1559. Sull'età di Elisabetta i due articoli non concordano (25 o 26 anni): il testo non la dà. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "il-principe-di-machiavelli-1513",
+  "title": "Machiavelli scrive «Il Principe»",
+  "summary": "Nel 1513, pochi mesi dopo l'arresto, la tortura e il bando decisi dai Medici tornati al potere a Firenze, Niccolò Machiavelli scrive «Il Principe», trattato su come si conquista e si conserva uno Stato: sarà stampato solo nel 1532.",
+  "date": {
+    "year": 1513,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Firenze",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Firenze, la città di Machiavelli e dei Medici a cui l'opera era dedicata; gli articoli non dicono dove fu scritta."
+  },
+  "before": "Nel 1512 i Medici avevano ripreso il controllo di Firenze, e pochi mesi prima Machiavelli, già diplomatico, era stato arrestato, torturato e bandito dal nuovo regime. La carriera di Cesare Borgia si era svolta durante l'attività di diplomatico di Machiavelli. Egli discusse a lungo l'opera con l'amico Francesco Vettori, a cui voleva affidarla perché la presentasse ai Medici.",
+  "event": "Le lettere di Machiavelli mostrano che nel 1513 una versione era in preparazione, con il titolo latino «De principatibus»; per l'articolo italiano fu scritta probabilmente fra la seconda metà del 1513 e l'inizio del 1514. Si compone di una dedica a Lorenzo di Piero de' Medici e di ventisei capitoli sui tipi di principato e sui modi di conquistarli e mantenerli. L'ultimo capitolo è un appello ai Medici perché liberino l'Italia dai «barbari».",
+  "after": "Machiavelli si distaccava dalla tradizione degli «specchi dei principi»: per l'articolo inglese si sostiene talvolta che vi conti più l'effetto pratico che l'ideale astratto, e l'opera è, fra quelle di Machiavelli, la più responsabile del successivo uso negativo dell'aggettivo «machiavellico». La stampa uscì solo nel 1532, cinque anni dopo la morte dell'autore, con il permesso del papa Clemente VII; per l'articolo italiano il titolo «Il Principe» fu dato dall'edizione postuma di Antonio Blado.",
+  "links": [
+    {
+      "slug": "morte-di-lorenzo-il-magnifico-1492",
+      "reason": "Il destinatario era nipote di Lorenzo il Magnifico, morto ventuno anni prima."
+    },
+    {
+      "slug": "battaglia-di-agnadello-1509",
+      "reason": "Quattro anni prima: la battaglia di Agnadello, che Machiavelli ricorda nel «Principe»."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Prince - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Prince",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Il principe - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Il_principe",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli la collocano a partire dal 1513; quello italiano parla di un periodo probabile fra la seconda metà del 1513 e l'inizio del 1514, quello inglese ricorda che la data è discussa. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

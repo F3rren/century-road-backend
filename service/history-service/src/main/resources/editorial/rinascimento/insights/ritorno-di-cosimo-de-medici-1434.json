@@ -1,0 +1,50 @@
+{
+  "slug": "ritorno-di-cosimo-de-medici-1434",
+  "title": "Cosimo de' Medici torna a Firenze dall'esilio",
+  "summary": "Il 6 ottobre 1434 Cosimo de' Medici rientra a Firenze dopo un anno di esilio, acclamato dal popolo: comincia il governo di Cosimo, che senza ricoprire cariche di rilievo controllerà la città per trent'anni.",
+  "date": {
+    "year": 1434,
+    "month": 10,
+    "day": 6
+  },
+  "place": {
+    "name": "Firenze",
+    "lat": 43.7696,
+    "lon": 11.2558,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nel 1433 il potere del ricchissimo banchiere Cosimo sembrò una minaccia alla fazione guidata da Rinaldo degli Albizzi e da Palla Strozzi. Il 5 settembre 1433 fu imprigionato nel Palazzo dei Priori. Per l'articolo italiano era accusato di aspirare alla dittatura, per quello inglese di aver avuto parte nel fallimento della guerra contro Lucca del 1429-30. La pena fu mutata in esilio: Cosimo andò prima a Padova, poi a Venezia, dove il Banco mediceo aveva una filiale importante.",
+  "event": "Dall'esilio Cosimo influenzò, per quanto da lontano, le decisioni della Signoria. Nell'agosto del 1434 Firenze nominò una balìa interamente filomedicea, che poco dopo lo richiamò. Per l'articolo inglese l'esilio fu revocato perché in meno di un anno la fuga di capitali da Firenze era stata enorme. Per quello italiano Cosimo entrò in città il 6 ottobre, acclamato dal popolo, e fu il primo trionfo della casata; poi mandò a sua volta gli avversari in esilio.",
+  "after": "Cosimo ricoprì solo raramente cariche, ma con il controllo delle elezioni, del sistema fiscale e di nuove magistrature, come il Consiglio dei Cento, affidate a uomini di fiducia, gettò le basi del potere dei Medici, vivendo da privato cittadino. Molti storici lo hanno definito un «criptosignore». In politica estera fece alleare Firenze con Milano di Francesco Sforza contro Venezia. Dopo la sua morte, nel 1464, la Signoria lo proclamò Pater Patriae, «Padre della Patria».",
+  "links": [
+    {
+      "slug": "cupola-del-brunelleschi-1436",
+      "reason": "Due anni dopo è completata la cupola di Brunelleschi, che Cosimo aveva sostenuto con il suo mecenatismo."
+    },
+    {
+      "slug": "pace-di-lodi-1454",
+      "reason": "Vent'anni dopo, con la mediazione di Cosimo, Venezia e Milano firmano la pace di Lodi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cosimo de' Medici - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cosimo_de'_Medici",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Cosimo de' Medici - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Cosimo_de'_Medici",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli non concordano sul motivo dell'arresto: dittatura per quello italiano, guerra di Lucca per quello inglese. Il giorno del ritorno, il 6 ottobre, è dato solo dall'articolo italiano; quello inglese dice soltanto «nel 1434». Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

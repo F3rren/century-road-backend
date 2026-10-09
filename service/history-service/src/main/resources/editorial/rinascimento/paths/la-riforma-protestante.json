@@ -1,0 +1,37 @@
+{
+  "slug": "la-riforma-protestante",
+  "title": "La Riforma protestante",
+  "tagline": "Da Wittenberg ad Augusta, quasi quarant'anni in cui l'Europa cristiana si divide: Lutero, i contadini, Enrico VIII, Calvino e il Concilio di Trento.",
+  "intro": "Il percorso segue la Riforma protestante: le 95 tesi di Lutero, la Dieta di Worms, il massacro di Frankenhausen nella guerra dei contadini, l'Atto di Supremazia di Enrico VIII, l'Istituzione di Calvino, il Concilio di Trento e la pace di Augusta.\n\nSu date e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "novantacinque-tesi-di-lutero-1517",
+      "narrative": "Si parte dal 1517: Lutero invia le 95 tesi contro le indulgenze."
+    },
+    {
+      "insight": "dieta-di-worms-1521",
+      "narrative": "Nel 1521 Lutero rifiuta di ritrattare davanti a Carlo V."
+    },
+    {
+      "insight": "battaglia-di-frankenhausen-1525",
+      "narrative": "Nel 1525 i principi schiacciano a Frankenhausen la rivolta dei contadini."
+    },
+    {
+      "insight": "atto-di-supremazia-1534",
+      "narrative": "Nel 1534 Enrico VIII si fa capo della Chiesa d'Inghilterra."
+    },
+    {
+      "insight": "institutio-di-calvino-1536",
+      "narrative": "Nel 1536 Calvino pubblica l'Istituzione della religione cristiana."
+    },
+    {
+      "insight": "concilio-di-trento-1545",
+      "narrative": "Nel 1545 si apre il Concilio di Trento."
+    },
+    {
+      "insight": "pace-di-augusta-1555",
+      "narrative": "Nel 1555 la pace di Augusta riconosce luterani e cattolici nell'Impero."
+    }
+  ]
+}

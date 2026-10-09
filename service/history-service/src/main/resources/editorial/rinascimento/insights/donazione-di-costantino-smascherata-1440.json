@@ -1,0 +1,52 @@
+{
+  "slug": "donazione-di-costantino-smascherata-1440",
+  "title": "Lorenzo Valla smaschera la Donazione di Costantino",
+  "summary": "Nel 1440 l'umanista Lorenzo Valla dimostra, con argomenti storici e linguistici, che la Donazione di Costantino, con cui la Chiesa giustificava la propria aspirazione al potere temporale, è un falso: un esempio di filologia critica applicata a un documento.",
+  "date": {
+    "year": 1440,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Napoli",
+    "lat": 40.8518,
+    "lon": 14.2681,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Napoli, dove Valla era alla corte di Alfonso V d'Aragona; gli articoli non dicono dove scrisse il testo."
+  },
+  "before": "Valla, nato a Roma, aveva studiato latino e greco e insegnato a Pavia, dove le sue polemiche gli avevano creato problemi. Dal 1435 era al servizio di Alfonso V d'Aragona, in conflitto territoriale con lo Stato pontificio, allora sotto Eugenio IV. La Donazione di Costantino era un documento in base al quale la Chiesa giustificava la propria aspirazione al potere temporale: sarebbe stato Costantino, trasferendo la capitale a Costantinopoli, a lasciarle il resto dell'Impero romano.",
+  "event": "Fra il 1439 e il 1440 Valla scrisse il «De falso credita et ementita Constantini donatione». Mostrò che il documento non poteva risalire al IV secolo: il suo latino era scorretto e cambiava tempo verbale, e per l'articolo inglese si poteva datare all'VIII secolo; conteneva anacronismi, come la parola «satrapo»; e non c'erano testimonianze dell'epoca di un cambiamento così grande nell'amministrazione dell'Impero. Valla dubitava persino che Costantino avesse dato qualcosa a papa Silvestro.",
+  "after": "Lo scritto fu pubblicato solo nel 1517, per l'articolo italiano. Per l'articolo inglese, nel 1444 Valla fu processato dall'Inquisizione, ma l'intervento di Alfonso V lo salvò dal carcere. Oggi, scrive l'articolo italiano, la sua dimostrazione è universalmente accettata. Lutero aveva di lui un'alta opinione e Roberto Bellarmino lo definì «precursore di Lutero»; anche Erasmo ne apprezzò il lavoro critico sulla Vulgata.",
+  "links": [
+    {
+      "slug": "bibbia-di-gutenberg-1455",
+      "reason": "Quindici anni dopo esce a Magonza la Bibbia di Gutenberg, edizione della Vulgata di cui Valla criticò il latino, per l'articolo italiano, dal 1449."
+    },
+    {
+      "slug": "novantacinque-tesi-di-lutero-1517",
+      "reason": "Nel 1517, anno in cui lo scritto di Valla viene pubblicato, Lutero invia le 95 tesi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lorenzo Valla - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lorenzo_Valla",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lorenzo Valla - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lorenzo_Valla",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli concordano sul 1440: quello inglese dice che Valla scrisse il testo fra il 1439 e il 1440. Per questo la data è data solo all'anno. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-fornovo-1495",
+  "title": "La battaglia di Fornovo",
+  "summary": "Il 6 luglio 1495 a Fornovo di Taro l'esercito francese di Carlo VIII, in ritirata da Napoli, si apre la strada contro la Lega, più numerosa: entrambe le parti si proclamano vincitrici.",
+  "date": {
+    "year": 1495,
+    "month": 7,
+    "day": 6
+  },
+  "place": {
+    "name": "Fornovo di Taro",
+    "lat": 44.6833,
+    "lon": 10.1,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica la zona di Fornovo di Taro, a sud-ovest di Parma; gli articoli non danno il luogo esatto dello scontro."
+  },
+  "before": "Dopo l'ingresso di Carlo VIII a Napoli, il 31 marzo 1495 fu proclamata a Venezia una lega antifrancese, che assoldò come comandante il veterano Francesco II Gonzaga, marchese di Mantova. Carlo lasciò una guarnigione a Napoli e marciò verso nord con il resto dell'esercito, l'artiglieria e il bottino. Il 27 giugno gli alleati si accamparono presso Fornovo di Taro, ad aspettarlo.",
+  "event": "Il 6 luglio la battaglia cominciò con il fuoco dell'artiglieria. Per l'articolo italiano i francesi, che avevano meno uomini ma più artiglieria, resistettero all'assalto della cavalleria della Lega, il fiume ingrossato ostacolò le manovre italiane e lo scontro durò circa un'ora; per quello inglese la cavalleria pesante francese sbaragliò in pochi minuti le file italiane. Sempre per l'articolo italiano i morti furono circa tremila, due terzi italiani. I collegati si diedero a depredare le salmerie e si impadronirono del bottino di Carlo, valutato più di 300 000 ducati per l'articolo italiano, ma non riuscirono a catturare il re.",
+  "after": "Carlo VIII proseguì verso Asti e uscì dall'Italia. Le due parti rivendicarono la vittoria: per l'articolo inglese vinsero i francesi, ma senza alcun risultato strategico, perché Carlo abbandonò tutte le conquiste italiane; per quello italiano l'esito fu incerto. Il giorno dopo la battaglia Ferdinando II rientrò a Napoli, accolto con gioia dai napoletani, ai quali i francesi si erano resi odiosi.",
+  "links": [
+    {
+      "slug": "discesa-di-carlo-viii-1494",
+      "reason": "Un anno prima Carlo VIII era sceso in Italia."
+    },
+    {
+      "slug": "battaglia-di-agnadello-1509",
+      "reason": "Quattordici anni dopo, ad Agnadello, la Francia sconfigge Venezia, che a Fornovo combatteva contro di lei."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Fornovo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Fornovo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Fornovo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Fornovo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 6 luglio 1495. Non concordano sull'esito: quello inglese dà la vittoria ai francesi, quello italiano parla di esito incerto. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
