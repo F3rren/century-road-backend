@@ -1,0 +1,50 @@
+{
+  "slug": "trattato-di-versailles-1919",
+  "title": "Il trattato di Versailles",
+  "summary": "Il 28 giugno 1919, nella Galleria degli specchi del palazzo di Versailles, la Germania firma il trattato di pace con gli Alleati: disarmo, concessioni territoriali e riparazioni. L'articolo 231, la «clausola della colpa di guerra», diventa il punto più controverso.",
+  "date": {
+    "year": 1919,
+    "month": 6,
+    "day": 28
+  },
+  "place": {
+    "name": "Versailles, Francia",
+    "lat": 48.8049,
+    "lon": 2.1204,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese l'armistizio aveva fermato i combattimenti, ma servirono sei mesi di negoziati a Parigi per il trattato; la Germania non poté partecipare. Per l'articolo italiano Clemenceau voleva riparazioni per ricostruire, con 750 000 case e 23 000 fabbriche distrutte, e la smilitarizzazione della Renania; Lloyd George, pur volendo riparazioni severe, ne chiese molte meno dei francesi.",
+  "event": "Il trattato fu firmato il 28 giugno 1919, esattamente cinque anni dopo l'attentato all'arciduca Francesco Ferdinando, nel palazzo di Versailles. Per l'articolo italiano lo firmarono 44 Stati e la Germania lo accettò dopo le minacce dei vincitori di riprendere la guerra; era composto di 440 articoli. Per l'articolo inglese imponeva alla Germania di disarmare, cedere territori, consegnare presunti criminali di guerra, accettare un processo al Kaiser, riconoscere l'indipendenza di Stati già parte dell'impero tedesco e pagare riparazioni.",
+  "after": "Per l'articolo inglese l'articolo 231 attribuiva alla Germania e ai suoi alleati la responsabilità dei danni della guerra; Keynes definì il trattato troppo duro, una «pace cartaginese», mentre Foch lo giudicò troppo indulgente. Gli Stati Uniti non lo ratificarono mai: per l'articolo italiano il Senato repubblicano bloccò due volte la ratifica, la seconda il 19 marzo 1920, e nel 1921 gli Stati Uniti fecero con la Germania una pace separata, il trattato di Berlino.",
+  "links": [
+    {
+      "slug": "conferenza-di-pace-di-parigi-1919",
+      "reason": "Il trattato è il risultato principale della conferenza di pace di Parigi, aperta il 18 gennaio."
+    },
+    {
+      "slug": "attentato-di-sarajevo-1914",
+      "reason": "Esattamente cinque anni prima, a Sarajevo, era stato ucciso l'arciduca Francesco Ferdinando."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Versailles - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Versailles",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Versailles - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Versailles",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 28 giugno 1919. Per l'articolo italiano l'accordo era in 16 parti e 440 articoli e fu firmato da 44 Stati; l'articolo inglese dice che pose fine allo stato di guerra tra la Germania e la maggior parte delle potenze alleate. L'entrata in vigore non è datata con precisione in nessuno dei due articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

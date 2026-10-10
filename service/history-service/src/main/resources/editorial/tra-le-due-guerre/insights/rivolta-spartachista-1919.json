@@ -1,0 +1,50 @@
+{
+  "slug": "rivolta-spartachista-1919",
+  "title": "La rivolta spartachista",
+  "summary": "Tra il 5 e il 12 gennaio 1919 a Berlino scoppia una rivolta della sinistra radicale contro il governo socialdemocratico di Friedrich Ebert. Le truppe governative e i corpi paramilitari la reprimono; muoiono circa 150-200 persone, e il 15 gennaio vengono uccisi Karl Liebknecht e Rosa Luxemburg.",
+  "date": {
+    "year": 1919,
+    "month": 1,
+    "day": 5
+  },
+  "place": {
+    "name": "Berlino, Germania",
+    "lat": 52.52,
+    "lon": 13.405,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Per l'articolo italiano la Germania era nel mezzo di una rivoluzione postbellica, scoppiata in seguito alla sconfitta; per quello inglese la rivoluzione tedesca era scoppiata poco prima della fine della guerra. Lo scontro era fra i socialdemocratici moderati di Ebert e la sinistra radicale: per l'articolo inglese il Partito comunista (KPD), fondato il 1º gennaio 1919 e guidato da Liebknecht e Luxemburg, voleva una repubblica dei consigli come quella bolscevica in Russia; per quello italiano la sinistra radicale comprendeva anche i Revolutionäre Obleute e il Partito socialdemocratico indipendente.",
+  "event": "Per l'articolo italiano fu uno sciopero generale sfociato in scontri armati, tra il 5 e il 12 gennaio. La rivolta fu improvvisata, su piccola scala, e rapidamente repressa dalla forza superiore del governo e delle truppe paramilitari. Per l'articolo inglese alcuni storici, come Winkler e Haffner, ritengono fuorviante il nome «spartachista», perché la Lega di Spartaco non aveva voluto, pianificato né guidato la rivolta.",
+  "after": "Per entrambi gli articoli i morti furono circa 150-200, per lo più fra gli insorti. Liebknecht e Luxemburg furono uccisi in modo extragiudiziale; per l'articolo inglese l'uccisione avvenne il 15 gennaio e quasi certamente con l'approvazione almeno tacita del governo. Sempre per l'articolo inglese, la repressione permise di tenere le elezioni per l'Assemblea nazionale, previste per il 19 gennaio.",
+  "links": [
+    {
+      "slug": "costituzione-di-weimar-1919",
+      "reason": "Più di sette mesi dopo, l'11 agosto, il presidente Ebert firma la Costituzione di Weimar."
+    },
+    {
+      "slug": "putsch-di-monaco-1923",
+      "reason": "Quasi cinque anni dopo, nel novembre 1923, un altro tentativo di rovesciare la Repubblica, questa volta dalla destra: il putsch di Monaco."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spartacist uprising - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spartacist_uprising",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolta spartachista - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolta_spartachista",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la rivolta dal 5 al 12 gennaio 1919. Il giorno scelto è il primo. Le cifre dei morti sono quelle che i due articoli riportano in modo uguale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

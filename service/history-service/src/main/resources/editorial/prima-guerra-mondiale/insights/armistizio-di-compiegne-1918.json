@@ -1,0 +1,51 @@
+{
+  "slug": "armistizio-di-compiegne-1918",
+  "title": "L'armistizio di Compiègne",
+  "summary": "L'11 novembre 1918, alle 5 del mattino, in un vagone ferroviario nella foresta di Compiègne, la Germania e gli Alleati concordano l'armistizio. Entra in vigore alle 11, ora di Parigi, e pone fine ai combattimenti sul fronte occidentale.",
+  "date": {
+    "year": 1918,
+    "month": 11,
+    "day": 11
+  },
+  "place": {
+    "name": "Foresta di Compiègne, Francia",
+    "lat": 49.42,
+    "lon": 2.917,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Le fonti dicono solo che il vagone si trovava nella foresta di Compiègne, vicino alla città: il pin è approssimativo."
+  },
+  "before": "Per l'articolo inglese, dopo la battaglia di Amiens la situazione degli Imperi centrali peggiorò in fretta e la penuria di cibo causata dal blocco alleato portava malcontento in Germania. Per l'articolo italiano il 29 settembre il comando supremo informò il Kaiser che la situazione era senza speranza. Il governo tedesco chiese a Wilson di negoziare sulla base dei quattordici punti; Wilson, il 23 ottobre, chiese il ritiro dai territori occupati, la fine dell'attività sottomarina e l'abdicazione del Kaiser. Per l'articolo italiano, una rivolta dei marinai la notte fra il 29 e il 30 ottobre portò il 9 novembre alla proclamazione della repubblica e all'annuncio dell'abdicazione di Guglielmo II.",
+  "event": "L'armistizio fu concordato alle 5 dell'11 novembre; le firme, per l'articolo italiano tra le 5.12 e le 5.20, per quello inglese tra le 5.00 e le 5.45, furono apposte da Foch e dall'ammiraglio Wemyss per gli Alleati e dalla delegazione tedesca guidata da Matthias Erzberger. I termini, in gran parte scritti da Foch, prevedevano la cessazione delle ostilità sul fronte occidentale, il ritiro tedesco a ovest del Reno, l'occupazione alleata della Renania, la resa di aerei, navi e materiale militare, il rilascio dei prigionieri alleati e nessun allentamento del blocco navale.",
+  "after": "I combattimenti continuarono fino alle 11 dell'11 novembre, con 2738 morti nell'ultimo giorno di guerra. L'armistizio fu prorogato tre volte mentre proseguivano i negoziati. Il trattato di Versailles, firmato il 28 giugno 1919, entrò in vigore il 10 gennaio 1920.",
+  "links": [
+    {
+      "slug": "battaglia-di-amiens-1918",
+      "reason": "Tre mesi prima, l'8 agosto, la battaglia di Amiens aveva aperto l'offensiva alleata dei cento giorni."
+    },
+    {
+      "slug": "trattato-di-versailles-1919",
+      "reason": "Più di sette mesi dopo, il 28 giugno 1919, la Germania firma il trattato di Versailles."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armistice of 11 November 1918 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_11_November_1918",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Armistizio di Compiègne - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Armistizio_di_Compiègne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'11 novembre 1918, l'accordo alle 5 e l'entrata in vigore alle 11. Le cifre dei morti dell'ultimo giorno sono quelle comuni a entrambi. Il pin è approssimativo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

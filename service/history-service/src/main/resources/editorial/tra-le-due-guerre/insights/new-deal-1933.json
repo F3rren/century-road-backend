@@ -1,0 +1,50 @@
+{
+  "slug": "new-deal-1933",
+  "title": "Il New Deal",
+  "summary": "Il 4 marzo 1933 Franklin D. Roosevelt giura come presidente degli Stati Uniti, con le banche chiuse o con i prelievi limitati in gran parte degli Stati. Nei primi cento giorni vara le riforme del New Deal, per risollevare il paese dalla Grande depressione.",
+  "date": {
+    "year": 1933,
+    "month": 3,
+    "day": 4
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Roosevelt aveva usato la frase «New Deal» accettando la nomina democratica del 1932, e batté Hoover in modo schiacciante. Per l'articolo inglese la disoccupazione era al 25% quando prese il potere; per quello italiano raggiunse punte del 20%. Quando giurò a mezzogiorno del 4 marzo, tutti i governatori avevano autorizzato chiusure o limiti ai prelievi dalle banche; per l'articolo italiano la maggior parte degli Stati aveva chiuso le banche a tempo indeterminato.",
+  "event": "Nei primi cento giorni, da marzo a giugno, Roosevelt fece approvare i primi provvedimenti di quello che gli storici chiamano «primo New Deal», incentrato su tre obiettivi: sollievo per i disoccupati e i poveri, ripresa dell'economia e riforma del sistema finanziario. Tra questi, la legge bancaria di emergenza, la Federal Deposit Insurance Corporation, la National Recovery Administration e la Agricultural Adjustment Administration, oltre al Civilian Conservation Corps e alla Tennessee Valley Authority per dare lavoro.",
+  "after": "Dal 1935 al 1938 seguì il «secondo New Deal», con la Works Progress Administration, il National Labor Relations Act e il Social Security Act. Nel 1938 i repubblicani guadagnarono seggi al Congresso e, insieme ai democratici conservatori, bloccarono nuove leggi, e alcune furono dichiarate incostituzionali dalla Corte suprema. Per l'articolo inglese la piena occupazione non fu raggiunta fino all'ingresso in guerra nel 1941; per l'articolo italiano il New Deal durò dal 1933 al 1943.",
+  "links": [
+    {
+      "slug": "crollo-di-wall-street-1929",
+      "reason": "Più di tre anni prima, in ottobre 1929, il crollo di Wall Street aveva aperto la crisi."
+    },
+    {
+      "slug": "social-security-act-1935",
+      "reason": "Due anni e cinque mesi dopo, il 14 agosto 1935, il Social Security Act."
+    }
+  ],
+  "sources": [
+    {
+      "title": "New Deal - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/New_Deal",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "New Deal - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/New_Deal",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 4 marzo 1933 come giorno del giuramento di Roosevelt. Il New Deal non è un singolo evento: il giorno scelto è il suo inizio. Le percentuali di disoccupazione sono quelle indicate da ciascun articolo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

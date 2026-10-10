@@ -1,0 +1,50 @@
+{
+  "slug": "barone-rosso-1918",
+  "title": "La morte del Barone Rosso",
+  "summary": "Il 21 aprile 1918 il pilota tedesco Manfred von Richthofen, il «Barone Rosso», con 80 vittorie aeree ufficialmente accreditate l'asso degli assi della guerra, viene abbattuto e muore sopra la Somme, in Francia.",
+  "date": {
+    "year": 1918,
+    "month": 4,
+    "day": 21
+  },
+  "place": {
+    "name": "Vaux-sur-Somme, Francia",
+    "lat": 49.9322,
+    "lon": 2.5378,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Nato a Breslavia il 2 maggio 1892, Richthofen passò dalla cavalleria al servizio aereo nel 1915 e nel 1916 fu tra i primi membri della Jagdstaffel 2. Per l'articolo italiano fu decorato con il Pour le Mérite alla sedicesima vittoria e ebbe il comando della Jasta 11, poi diventata il «Circo volante». Per l'articolo inglese il 6 luglio 1917 subì una grave ferita alla testa; dall'agosto 1917 volò sul triplano Fokker Dr.I, anche se solo 19 delle sue 80 vittorie furono ottenute con quell'aereo.",
+  "event": "Il 21 aprile 1918, poco dopo le 11 per l'articolo inglese, Richthofen inseguiva il canadese Wilfrid May quando fu colpito. Per l'articolo italiano il suo triplano atterrò intatto in una zona controllata dagli australiani appena a nord di Vaux-sur-Somme; per l'articolo inglese entrò in stallo e picchiò, urtò il suolo rimbalzando con forza e il carrello cedette, in un campo a nord del villaggio, in un settore difeso dagli australiani. Chi lo abbatté è discusso: la RAF accreditò il capitano canadese Roy Brown, ma per l'articolo inglese è ormai generalmente accettato da storici, medici ed esperti di balistica che fu un mitragliere antiaereo da terra; per quello italiano recenti ricerche indicano uno dei mitraglieri australiani, Popkin, Buie o più probabilmente «Snowy» Evans.",
+  "after": "Per l'articolo inglese il 3º squadrone dell'Australian Flying Corps si occupò delle spoglie. Per l'articolo italiano furono ospitate nel cimitero di Bertangles, vicino ad Amiens, e il 16 novembre 1925 la bara attraversò il Reno e fu sepolta con funerali di Stato all'Invalidenfriedhof di Berlino.",
+  "links": [
+    {
+      "slug": "offensiva-di-primavera-1918",
+      "reason": "Un mese prima, il 21 marzo, la Germania aveva lanciato l'offensiva di primavera."
+    },
+    {
+      "slug": "battaglia-di-flers-courcelette-1916",
+      "reason": "Nel 1916 la Jagdstaffel 2, di cui Richthofen fu tra i primi membri, entrò in azione sulla Somme."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Manfred von Richthofen - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Manfred_von_Richthofen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Manfred von Richthofen - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Manfred_von_Richthofen",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 21 aprile 1918. Le circostanze della morte sono discusse e il testo attribuisce a ciascun articolo la sua versione. Il pin è il punto di caduta indicato dall'articolo inglese, con le sue coordinate."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-gorlice-tarnow-1915",
+  "title": "L'offensiva di Gorlice-Tarnów",
+  "summary": "Il 2 maggio 1915, dopo un forte bombardamento, l'11ª Armata tedesca del generale Mackensen e le truppe austro-ungariche attaccano in Galizia, tra Gorlice e Tarnów. Il fronte russo crolla e le forze zariste si ritirano fin oltre i confini prebellici, nella cosiddetta Grande Ritirata.",
+  "date": {
+    "year": 1915,
+    "month": 5,
+    "day": 2
+  },
+  "place": {
+    "name": "Gorlice, Polonia",
+    "lat": 49.6544,
+    "lon": 21.16,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "L'offensiva si svolse su un fronte lungo decine di chilometri, per l'articolo inglese 42 chilometri nel settore dello sfondamento: il pin è su Gorlice e non indica un punto preciso."
+  },
+  "before": "L'offensiva fu concepita per alleggerire la pressione russa sulle forze austro-ungariche. Per l'articolo inglese a metà dell'esercito austro-ungherese che era entrato in guerra era già fuori combattimento, e in aprile Conrad minacciò una pace separata se i tedeschi non avessero aiutato; Falkenhayn, che aveva rifiutato, fece creare l'11ª Armata agli ordini di Mackensen, che per l'articolo inglese era di otto divisioni; nel settore dello sfondamento Mackensen schierava dieci divisioni di fanteria e una di cavalleria (126 000 uomini); per l'articolo italiano l'11ª Armata aveva dieci divisioni di fanteria. Per l'articolo italiano Falkenhayn riteneva che le sorti della guerra si giocassero solo sul fronte occidentale.",
+  "event": "Il 2 maggio, dopo un pesante bombardamento di artiglieria, Mackensen lanciò l'attacco, che prese i russi di sorpresa. Per l'articolo inglese il bombardamento cominciò alle 6, con i mortai dalle 9, e il 6 maggio Mackensen annotò che il nemico si ritirava su tutta la linea dalla Vistola ai Carpazi. Per l'articolo italiano la 3ª Armata russa lasciò nelle mani del nemico circa 140 000 prigionieri, cessando di essere operativa.",
+  "after": "Per l'articolo italiano Przemyśl fu riconquistata il 3 giugno e Leopoli il 22; i russi evacuarono gradualmente la Galizia e il saliente polacco, e alla fine furono catturati 750 000 prigionieri. Per l'articolo inglese il 21 giugno il granduca Nicola ordinò l'abbandono della Galizia, e i pozzi di petrolio galiziani tornarono presto in produzione. L'offensiva terminò in ottobre per il maltempo, con la maggiore operazione del fronte orientale nel 1915.",
+  "links": [
+    {
+      "slug": "battaglia-di-tannenberg-1914",
+      "reason": "Otto mesi prima, in Prussia Orientale, i russi erano stati sconfitti a Tannenberg."
+    },
+    {
+      "slug": "offensiva-brusilov-1916",
+      "reason": "Più di un anno dopo, nel giugno 1916, i russi lanciano l'offensiva Brusilov."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gorlice–Tarnów offensive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gorlice–Tarnów_offensive",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva di Gorlice-Tarnów - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_di_Gorlice-Tarnów",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà il 2 maggio 1915; quello inglese dice «all'inizio di maggio» e descrive il bombardamento la mattina dopo il 1º maggio, quando l'artiglieria era pronta. L'articolo italiano è breve. Le cifre sono attribuite a ciascun articolo. Fino al 1918 la Russia usava il calendario giuliano, in ritardo di tredici giorni su quello gregoriano: il giorno indicato è quello riportato dalle fonti, e secondo l'altro calendario cadrebbe in un giorno diverso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

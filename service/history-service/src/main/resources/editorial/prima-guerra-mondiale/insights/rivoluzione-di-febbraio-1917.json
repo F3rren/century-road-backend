@@ -1,0 +1,50 @@
+{
+  "slug": "rivoluzione-di-febbraio-1917",
+  "title": "La rivoluzione di febbraio",
+  "summary": "Il 12 marzo 1917, il 27 febbraio nel calendario giuliano allora in uso in Russia, la guarnigione di Pietrogrado passa con i rivoltosi e la Duma costituisce un comitato provvisorio, da cui uscirà il governo provvisorio russo. Tre giorni dopo lo zar Nicola II è costretto ad abdicare e finisce la dinastia dei Romanov.",
+  "date": {
+    "year": 1917,
+    "month": 3,
+    "day": 12
+  },
+  "place": {
+    "name": "Pietrogrado (San Pietroburgo), Russia",
+    "lat": 59.9343,
+    "lon": 30.3351,
+    "countryCode": "RU",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese l'esercito russo aveva subito perdite catastrofiche: circa 1,7 milioni di morti, 4,95 milioni di feriti e circa 2,5 milioni tra dispersi e prigionieri. Il 23 febbraio (8 marzo nel calendario gregoriano), Giornata internazionale della donna, ci furono a Pietrogrado scioperi e manifestazioni contro la guerra, l'autocrazia e il carovita; per l'articolo inglese erano proteste di massa contro il razionamento del cibo.",
+  "event": "Per circa otto giorni, per l'articolo inglese, ci furono manifestazioni e scontri con polizia e gendarmi. Molti soldati della guarnigione, composta in buona parte da coscritti, si unirono ai manifestanti. Il 27 febbraio (12 marzo) la maggior parte della guarnigione passò dalla parte dei rivoluzionari e la Duma costituì un comitato provvisorio. Per l'introduzione dell'articolo inglese lo stesso giorno nacque il governo provvisorio, formato da membri di sinistra della Duma; per il corpo dell'articolo inglese fu annunciato il 3 marzo (16 marzo gregoriano) e per quello italiano i ministri furono scelti il 2 marzo (15).",
+  "after": "Tre giorni dopo Nicola II, bloccato sul suo treno a Pskov, fu costretto ad abdicare. Il governo provvisorio, guidato da Georgij L'vov e poi da Kerenskij, volle mantenere il paese in guerra e non risolse i problemi; per l'articolo inglese dovette dividere il potere con il Soviet di Pietrogrado. Sempre per l'articolo inglese, durante le proteste di febbraio furono uccise oltre 1300 persone.",
+  "links": [
+    {
+      "slug": "ingresso-degli-stati-uniti-in-guerra-1917",
+      "reason": "Meno di un mese dopo, il 6 aprile, gli Stati Uniti dichiarano guerra alla Germania."
+    },
+    {
+      "slug": "rivoluzione-d-ottobre-1917",
+      "reason": "Quasi otto mesi dopo, il 7 novembre, i bolscevichi prendono il potere."
+    }
+  ],
+  "sources": [
+    {
+      "title": "February Revolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/February_Revolution",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione di febbraio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_di_febbraio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno gli eventi dal 23 al 27 febbraio nel calendario giuliano allora in vigore in Russia, che corrispondono all'8-12 marzo nel calendario gregoriano. Il giorno indicato qui, il 12 marzo, è quello gregoriano del 27 febbraio giuliano, quando la guarnigione passò ai rivoluzionari e la Duma costituì il suo comitato provvisorio (per l'introduzione dell'articolo inglese, nello stesso giorno, nacque anche il governo provvisorio)."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

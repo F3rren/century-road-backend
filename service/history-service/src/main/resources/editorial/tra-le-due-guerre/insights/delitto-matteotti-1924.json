@@ -1,0 +1,50 @@
+{
+  "slug": "delitto-matteotti-1924",
+  "title": "Il delitto Matteotti",
+  "summary": "Il 10 giugno 1924 a Roma il deputato socialista Giacomo Matteotti, che undici giorni prima aveva denunciato in Parlamento brogli e violenze fasciste, viene rapito e ucciso da una squadra fascista capeggiata da Amerigo Dumini.",
+  "date": {
+    "year": 1924,
+    "month": 6,
+    "day": 10
+  },
+  "place": {
+    "name": "Lungotevere Arnaldo da Brescia, Roma",
+    "lat": 41.9115,
+    "lon": 12.4735,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Le elezioni del 6 aprile 1924 furono segnate, per l'articolo italiano, da brogli. Il 30 maggio 1924 Matteotti parlò in Parlamento: accusò il Partito Nazionale Fascista e i suoi sostenitori di brogli elettorali e denunciò le violenze usate per ottenere voti. Per l'articolo italiano, dopo il discorso Mussolini avrebbe detto «è un pezzo che quest'uomo non dovrebbe più circolare...», frase sentita da Emilio Lussu a Montecitorio.",
+  "event": "Il 10 giugno, intorno alle 16.15 (per l'articolo inglese il rapimento avvenne verso le 16), Matteotti uscì a piedi dalla sua casa di via Pisanelli e scelse di percorrere il lungotevere Arnaldo da Brescia. Lì c'era ferma un'auto con a bordo membri della «Ceka fascista», fra cui Dumini, Volpi e Viola. Due degli aggressori gli balzarono addosso. La squadra girò per la campagna romana fino alla Macchia della Quartarella, nel comune di Riano, a 25 chilometri da Roma per l'articolo italiano (circa 23 chilometri a nord per quello inglese), dove seppellì il corpo.",
+  "after": "Il corpo fu ritrovato il 16 agosto 1924. Il 3 gennaio 1925, in un discorso alla Camera, Mussolini si assunse la «responsabilità politica, morale, e storica» del clima in cui l'assassinio era avvenuto. Poi, nel giro di due anni per l'articolo italiano, e entro il 1926 per quello inglese, furono approvate le leggi «fascistissime», e i deputati dell'Aventino furono dichiarati decaduti. Per l'articolo inglese alcuni storici discutono se l'omicidio fu ordinato da Mussolini.",
+  "links": [
+    {
+      "slug": "marcia-su-roma-1922",
+      "reason": "Un anno e sette mesi prima, con la marcia su Roma, Mussolini aveva ottenuto il governo."
+    },
+    {
+      "slug": "notte-dei-lunghi-coltelli-1934",
+      "reason": "Dieci anni dopo, in Germania, la notte dei lunghi coltelli."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Giacomo Matteotti - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Giacomo_Matteotti",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Delitto Matteotti - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Delitto_Matteotti",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 10 giugno 1924. Il luogo è quello indicato dall'articolo italiano. Il testo non indica i mandanti: i due articoli ricordano che gli storici ne discutono."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

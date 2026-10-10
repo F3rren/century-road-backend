@@ -1,0 +1,51 @@
+{
+  "slug": "genocidio-armeno-1915",
+  "title": "Il genocidio armeno",
+  "summary": "Il 24 aprile 1915 le autorità ottomane arrestano a Costantinopoli centinaia di intellettuali e capi armeni. È la data in cui gli armeni commemorano il genocidio, fatto di deportazioni e uccisioni di massa fra il 1915 e gli anni seguenti.",
+  "date": {
+    "year": 1915,
+    "month": 4,
+    "day": 24
+  },
+  "place": {
+    "name": "Costantinopoli (Istanbul), Impero ottomano",
+    "lat": 41.0082,
+    "lon": 28.9784,
+    "countryCode": "TR",
+    "approximate": true,
+    "note": "Le deportazioni e le uccisioni coinvolsero tutta l'Anatolia e arrivarono fino al deserto siriano: il pin è sulla capitale, dove cominciarono gli arresti, e non indica il luogo del genocidio."
+  },
+  "before": "Per l'articolo inglese gli armeni avevano un posto protetto ma subordinato nella società ottomana e c'erano stati grandi massacri negli anni 1890 e nel 1909. Dopo le sconfitte delle guerre balcaniche i dirigenti del Comitato Unione e Progresso si volsero a un nazionalismo turco radicale; durante l'invasione del territorio russo e persiano nel 1914 paramilitari ottomani massacrarono armeni locali. Le autorità, scrive l'articolo inglese, presero episodi isolati di resistenza come prova di una ribellione diffusa.",
+  "event": "Per l'articolo italiano i primi arresti dell'élite armena di Costantinopoli ebbero luogo nella notte tra il 23 e il 24 aprile 1915; per l'articolo inglese in quella notte centinaia di intellettuali e capi armeni furono arrestati a Costantinopoli e in altre parti dell'impero (la sua introduzione parla di arresti e deportazioni il 24 aprile). Per l'articolo inglese, per ordine di Talaat Pasha, da 800 000 a 1,2 milioni di armeni furono mandati nel 1915 e 1916 nelle marce della morte verso il deserto siriano; per quello italiano le marce coinvolsero 1 200 000 persone, e il genocidio vero e proprio fu scatenato dalla legge Tehcir del 29 maggio 1915, che autorizzò la deportazione.",
+  "after": "Le cifre dei morti divergono: circa un milione per l'articolo inglese, con stime da 600 000 a 1,5 milioni, e circa 1,5 milioni per quello italiano, che estende il genocidio al periodo 1915-1923 e dà stime da 1,2 a 2 milioni. Per l'articolo inglese le uccisioni organizzate dallo Stato cessarono in gran parte all'inizio del 1917. Il riconoscimento è di 36 Paesi per l'articolo inglese, in linea con il consenso accademico, e di 30 Stati per l'introduzione di quello italiano (31 Paesi nel suo testo); per l'articolo italiano il governo turco rifiuta di riconoscerlo e alcuni storici, tra cui Bernard Lewis, negano che si possa usare il termine genocidio.",
+  "links": [
+    {
+      "slug": "campagna-di-gallipoli-1915",
+      "reason": "Il giorno dopo, il 25 aprile, gli Alleati sbarcano a Gallipoli."
+    },
+    {
+      "slug": "armistizio-di-mudros-1918",
+      "reason": "Nel 1918 l'armistizio di Mudros mette fine alle ostilità fra l'Impero ottomano e gli Alleati."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armenian genocide - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armenian_genocide",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Genocidio armeno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Genocidio_armeno",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 24 aprile 1915 è il giorno degli arresti degli intellettuali armeni di Costantinopoli secondo l'articolo inglese ed è la data in cui gli armeni commemorano il genocidio secondo l'articolo italiano; per l'articolo italiano i primi arresti, per quello inglese le retate, furono nella notte fra il 23 e il 24. Il genocidio durò mesi e anni e non ha un solo giorno. Il testo attribuisce a ciascun articolo le sue cifre e i suoi riconoscimenti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

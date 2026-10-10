@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-vittorio-veneto-1918",
+  "title": "La battaglia di Vittorio Veneto",
+  "summary": "Il 24 ottobre 1918 l'esercito italiano lancia l'offensiva finale, cominciando dal Grappa; la piena del Piave rinvia l'attraversamento. Dopo una fase dura la difesa austro-ungarica crolla; l'armistizio di Villa Giusti, firmato il 3 novembre, mette fine alla guerra sul fronte italiano.",
+  "date": {
+    "year": 1918,
+    "month": 10,
+    "day": 24
+  },
+  "place": {
+    "name": "Vittorio Veneto, Italia",
+    "lat": 45.9936,
+    "lon": 12.3003,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "La battaglia si estese dal Piave al Grappa, al Trentino e al Friuli: il pin è su Vittorio Veneto, che le diede il nome, e non indica un punto preciso."
+  },
+  "before": "Dopo la battaglia del Piave, Diaz evitò azioni offensive finché non fosse certo del successo, per l'articolo inglese. Per l'articolo italiano Foch lo sollecitava ad attaccare e Diaz era cauto; il 15 ottobre Orlando gli scrisse di «preferire all'inazione la sconfitta». Per l'articolo inglese l'Austria-Ungheria era in una situazione interna drammatica, per la guerra e il blocco dell'Adriatico.",
+  "event": "L'attraversamento del Piave da parte di tre delle cinque armate schierate dal Grappa all'Adriatico, verso Vittorio Veneto, per tagliare le comunicazioni fra le due armate austriache, previsto per il 24 ottobre, fu rinviato dalla piena del fiume. Per l'articolo italiano la fase iniziale fu dura, poi ci furono un crollo improvviso della difesa, defezioni fra le minoranze nazionali e la rapida avanzata fino a Trento e Trieste. Il 1º novembre, per l'articolo inglese, il nuovo governo ungherese di Károlyi richiamò le truppe del Regno d'Ungheria.",
+  "after": "L'armistizio di Villa Giusti fu firmato il 3 novembre, alle 15.20 per l'articolo inglese e alle 18.20 per quello italiano, ed entrò in vigore alle 15 del 4 novembre. Per l'articolo inglese la battaglia portò alla cattura di oltre 5000 pezzi d'artiglieria e di 448 000 soldati austro-ungarici, e la vittoria segnò la dissoluzione dell'Impero austro-ungarico e contribuì alla fine della guerra una settimana dopo.",
+  "links": [
+    {
+      "slug": "battaglia-del-solstizio-1918",
+      "reason": "Quattro mesi prima, in giugno, l'ultima offensiva austro-ungarica era stata respinta sul Piave."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1918",
+      "reason": "L'11 novembre, una settimana dopo la fine della battaglia, l'armistizio di Compiègne ferma la guerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Vittorio Veneto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Vittorio_Veneto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Vittorio Veneto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Vittorio_Veneto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 24 ottobre al 4 novembre 1918. Il pin è su Vittorio Veneto. Sull'ora della firma dell'armistizio di Villa Giusti gli articoli divergono (15.20 per l'inglese, 18.20 per l'italiano); entrambi danno l'efficacia alle 15 del 4 novembre."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

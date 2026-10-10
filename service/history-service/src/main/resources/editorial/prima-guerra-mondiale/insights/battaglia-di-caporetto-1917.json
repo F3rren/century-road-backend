@@ -1,0 +1,49 @@
+{
+  "slug": "battaglia-di-caporetto-1917",
+  "title": "La battaglia di Caporetto",
+  "summary": "Il 24 ottobre 1917 gli austro-ungarici, rinforzati da reparti tedeschi, sfondano le linee della 2ª Armata italiana tra Tolmino e Caporetto. L'esercito italiano ripiega per 150 chilometri fino al Piave: per l'articolo italiano è la più grave disfatta della sua storia.",
+  "date": {
+    "year": 1917,
+    "month": 10,
+    "day": 24
+  },
+  "place": {
+    "name": "Kobarid (Caporetto), Slovenia",
+    "lat": 46.2447,
+    "lon": 13.5792,
+    "approximate": false
+  },
+  "before": "Dopo undici battaglie dell'Isonzo senza risultati decisivi, per l'articolo italiano la crisi della Russia permise a Austria-Ungheria e Germania di spostare truppe dal fronte orientale. Per l'articolo inglese in settembre tre esperti guidati dal chimico Otto Hahn andarono sull'Isonzo a cercare un luogo adatto a un attacco con i gas.",
+  "event": "L'attacco cominciò alle 2 del 24 ottobre. Per l'articolo inglese, nella zona di Plezzo 894 tubi lanciagas spararono una nuvola di cloro-arsenico e difosgene sulle trincee italiane: 500-600 italiani morirono e gli altri fuggirono. Per l'articolo inglese il comandante della 2ª Armata, Capello, a letto con la febbre, chiese di ritirarsi sul Tagliamento ma Cadorna rifiutò, e solo il 30 ottobre ordinò alla maggior parte delle forze di ripiegare oltre il fiume; per l'articolo italiano Cadorna decise la ritirata al Tagliamento il 26 ottobre e il fonogramma alla 2ª e alla 3ª Armata è del 27.",
+  "after": "Gli italiani si fermarono sul Piave. Per l'articolo inglese la forza effettiva dell'esercito scese da 1 800 000 a 1 000 000 uomini; per l'articolo italiano la rotta produsse quasi 300 000 prigionieri e 350 000 sbandati. Il governo Boselli cadde e fu sostituito da Orlando; Diaz prese il posto di Cadorna.",
+  "links": [
+    {
+      "slug": "battaglia-di-passchendaele-1917",
+      "reason": "Nelle stesse settimane, nelle Fiandre, i britannici combattono la battaglia di Passchendaele."
+    },
+    {
+      "slug": "battaglia-del-solstizio-1918",
+      "reason": "Quasi otto mesi dopo, in giugno, l'offensiva austro-ungarica sul Piave viene respinta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Caporetto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Caporetto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Caporetto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Caporetto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 24 ottobre 1917; l'articolo inglese la dà fino al 19 novembre. Il pin è su Kobarid, il nome sloveno di Caporetto. Le cifre delle perdite sono attribuite a ciascun articolo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

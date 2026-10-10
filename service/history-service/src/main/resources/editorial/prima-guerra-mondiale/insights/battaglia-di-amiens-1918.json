@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-amiens-1918",
+  "title": "La battaglia di Amiens",
+  "summary": "L'8 agosto 1918 la 4ª Armata britannica, con i corpi australiano e canadese e la 1ª Armata francese, attacca nei pressi di Amiens con un uso massiccio di carri armati e avanza di oltre 11 chilometri in un giorno. Ludendorff lo chiamerà «il giorno nero dell'esercito tedesco»: è l'inizio dell'offensiva dei cento giorni.",
+  "date": {
+    "year": 1918,
+    "month": 8,
+    "day": 8
+  },
+  "place": {
+    "name": "Amiens, Francia",
+    "lat": 49.8942,
+    "lon": 2.2957,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "La battaglia fu combattuta nei dintorni di Amiens: il pin è sulla città e non su un punto preciso."
+  },
+  "before": "In aprile a Villers-Bretonneux l'ultimo sforzo tedesco verso Amiens, nodo ferroviario vitale, fu fermato dalle truppe britanniche e australiane per l'articolo inglese, dalle truppe australiane per quello italiano. Il piano di Rawlinson e Monash dipendeva dai carri armati, ormai disponibili in gran numero, per sorprendere i tedeschi senza un bombardamento preliminare. Per l'articolo italiano l'assalto fu spostato dal 10 all'8 agosto, per colpire prima che i tedeschi completassero la ritirata dal saliente della Marna; australiani e canadesi attaccavano per la prima volta fianco a fianco.",
+  "event": "L'8 agosto gli Alleati avanzarono di oltre sette miglia, circa 11 chilometri, una delle avanzate maggiori della guerra. Per l'articolo italiano la 4ª Armata britannica catturò 13 000 prigionieri e i francesi circa 3 000, e i tedeschi persero circa 30 000 uomini; le perdite della 4ª Armata furono circa 8 800, per quello inglese circa 8 000. Il morale tedesco ne fu colpito, e Ludendorff definì il giorno «il giorno nero dell'esercito tedesco».",
+  "after": "Per l'articolo italiano Amiens fu una delle prime grandi battaglie tra mezzi corazzati e segnò la fine della guerra di trincea sul fronte occidentale, che tornò per poco tempo una guerra di manovra. I tedeschi si ritirarono lentamente da vari punti della linea Hindenburg fino all'armistizio dell'11 novembre 1918. Secondo i rapporti ufficiali, entro il 27 agosto gli Alleati avevano catturato circa 50 000 prigionieri e 500 cannoni.",
+  "links": [
+    {
+      "slug": "offensiva-di-primavera-1918",
+      "reason": "Meno di cinque mesi prima, in marzo, la Germania aveva lanciato l'offensiva di primavera."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1918",
+      "reason": "Tre mesi dopo, l'11 novembre, l'armistizio di Compiègne ferma la guerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Amiens (1918) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Amiens_(1918)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Amiens (1918) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Amiens_(1918)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'8 agosto 1918 e la distanza avanzata il primo giorno (oltre sette miglia). Le perdite della 4ª Armata sono diverse nei due articoli e il testo le attribuisce a ciascuno. Il pin è su Amiens."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

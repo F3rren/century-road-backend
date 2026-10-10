@@ -1,0 +1,50 @@
+{
+  "slug": "armistizio-di-mudros-1918",
+  "title": "L'armistizio di Mudros",
+  "summary": "Il 30 ottobre 1918 l'Impero ottomano firma a bordo della HMS Agamemnon, nel porto di Moudros sull'isola greca di Lemno, l'armistizio con gli Alleati, che pone fine alle ostilità nel Vicino Oriente. Entra in vigore a mezzogiorno del giorno dopo.",
+  "date": {
+    "year": 1918,
+    "month": 10,
+    "day": 30
+  },
+  "place": {
+    "name": "Moudros, Lemno, Grecia",
+    "lat": 39.8808,
+    "lon": 25.2706,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "L'armistizio fu concluso fra l'Impero ottomano e gli Alleati. Per entrambi gli articoli lo firmarono il ministro della Marina ottomano Rauf Bey e l'ammiraglio britannico Gough-Calthorpe, che per l'articolo inglese comandava la flotta britannica del Mediterraneo.",
+  "event": "L'armistizio fu firmato il 30 ottobre 1918 e, per l'articolo inglese, entrò in vigore a mezzogiorno del giorno dopo. Per l'articolo inglese gli ottomani consegnarono le guarnigioni rimaste fuori dall'Anatolia (per quello italiano furono richiamate) e concessero agli Alleati il diritto di occupare i forti dei Dardanelli e del Bosforo e qualsiasi territorio ottomano «in caso di disordini» (per l'articolo italiano «in caso di evenienza») che minacciasse la loro sicurezza. L'esercito ottomano fu smobilitato e porti e ferrovie furono messi a disposizione degli Alleati. Nel Caucaso gli ottomani dovettero ritirarsi entro i confini prebellici.",
+  "after": "All'armistizio seguirono l'occupazione di Costantinopoli e la spartizione dell'Impero ottomano. Il trattato di Sèvres del 10 agosto 1920 non fu mai ratificato dal parlamento ottomano; seguì la guerra d'indipendenza turca. Per l'articolo inglese l'armistizio fu sostituito dal trattato di Losanna, firmato il 24 luglio 1923.",
+  "links": [
+    {
+      "slug": "armistizio-di-salonicco-1918",
+      "reason": "Un mese prima, il 29 settembre, la Bulgaria aveva firmato l'armistizio di Salonicco."
+    },
+    {
+      "slug": "trattato-di-sevres-1920",
+      "reason": "Il 10 agosto 1920 il trattato di Sèvres impone condizioni durissime all'Impero ottomano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armistice of Mudros - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_Mudros",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Armistizio di Mudros - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Armistizio_di_Mudros",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 30 ottobre 1918; l'entrata in vigore a mezzogiorno del 31 è indicata solo dall'articolo inglese. L'articolo italiano è breve. Il nome Mudros/Moudros e Lemno sono quelli degli articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

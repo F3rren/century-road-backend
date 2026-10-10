@@ -1,0 +1,51 @@
+{
+  "slug": "notte-dei-lunghi-coltelli-1934",
+  "title": "La notte dei lunghi coltelli",
+  "summary": "Dal 30 giugno al 2 luglio 1934 (per l'introduzione italiana nella notte fra il 30 giugno e il 1º luglio) Hitler fa eliminare con esecuzioni extragiudiziali i vertici delle SA, tra cui Ernst Röhm, e altri avversari. L'epurazione consolida il suo potere e rassicura l'esercito.",
+  "date": {
+    "year": 1934,
+    "month": 6,
+    "day": 30
+  },
+  "place": {
+    "name": "Bad Wiessee, Germania",
+    "lat": 47.7167,
+    "lon": 11.7167,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Per l'articolo italiano i vertici delle SA erano riuniti a Bad Wiessee, ma le uccisioni avvennero in molti luoghi: il pin è su Bad Wiessee e non indica un punto unico."
+  },
+  "before": "Per l'articolo inglese Hitler considerava l'indipendenza delle SA e la tendenza dei loro membri alla violenza di strada una minaccia al suo potere appena acquisito, e voleva rassicurare i vertici della Reichswehr, che temevano le SA come rivali, soprattutto per l'ambizione di Röhm di fondere esercito e SA sotto il proprio comando. Per Röhm la nomina di Hitler a cancelliere aveva portato il partito al potere ma lasciato incompiuti gli obiettivi più ampi del partito.",
+  "event": "Per l'articolo inglese Hitler, spinto da Göring e Himmler, ordinò una serie di esecuzioni extragiudiziali dal 30 giugno al 2 luglio; la propaganda le presentò come misura preventiva contro un colpo di Stato delle SA, il «Röhm-Putsch». Per l'articolo italiano SS e Gestapo uccisero nella notte fra il 30 giugno e il 1º luglio Röhm e i vertici delle SA riuniti a Bad Wiessee, oltre a nemici di Hitler e a militari. Furono uccisi anche Gregor Strasser, l'ex cancelliere Kurt von Schleicher e Gustav von Kahr.",
+  "after": "Per l'articolo inglese morirono almeno 85 persone, con stime che arrivano a 700-1000; per l'articolo italiano almeno un centinaio, 71 secondo Hitler il 13 luglio, con stime di 150-200 e 85 nomi noti. Nel discorso al Reichstag del 13 luglio 1934 Hitler si definì «amministratore di giustizia del popolo tedesco». Per l'articolo inglese usò l'epurazione anche per colpire i critici del suo regime, soprattutto quelli fedeli al vicecancelliere von Papen.",
+  "links": [
+    {
+      "slug": "hitler-cancelliere-1933",
+      "reason": "Un anno e cinque mesi prima, il 30 gennaio 1933, Hitler era diventato cancelliere."
+    },
+    {
+      "slug": "leggi-di-norimberga-1935",
+      "reason": "Più di un anno dopo, il 15 settembre 1935, le leggi di Norimberga."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Night of the Long Knives - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Night_of_the_Long_Knives",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Notte dei lunghi coltelli - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Notte_dei_lunghi_coltelli",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 30 giugno 1934 è l'inizio dell'epurazione per entrambi gli articoli; l'introduzione italiana parla della notte fra il 30 giugno e il 1º luglio, ma il corpo dell'articolo italiano dice che le esecuzioni durarono fino alle 4 del 2 luglio, come dice l'inglese. Le cifre delle vittime sono molto diverse e il testo le attribuisce a ciascun articolo. Il pin è approssimato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

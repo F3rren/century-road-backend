@@ -1,0 +1,51 @@
+{
+  "slug": "anschluss-1938",
+  "title": "L'Anschluss",
+  "summary": "Il 12 marzo 1938 le truppe tedesche entrano in Austria senza incontrare resistenza, dopo che il cancelliere Schuschnigg è stato costretto a dimettersi. L'Austria viene annessa alla Germania nazista: è l'Anschluss.",
+  "date": {
+    "year": 1938,
+    "month": 3,
+    "day": 12
+  },
+  "place": {
+    "name": "Vienna, Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "countryCode": "AT",
+    "approximate": true,
+    "note": "L'esercito tedesco varcò il confine il 12 marzo e Hitler attraversò il paese fino a Vienna: il pin è sulla capitale e non indica il punto in cui le truppe entrarono."
+  },
+  "before": "I trattati di Saint-Germain e di Versailles avevano vietato l'unione fra Austria e Germania. Per l'articolo inglese il 5 novembre 1937 Hitler disse ai suoi collaboratori militari che avrebbe annesso Austria e Cecoslovacchia e impose un incontro al cancelliere austriaco Schuschnigg; sotto la minaccia di un'invasione, Schuschnigg accettò di nominare ministro dell'Interno il nazionalsocialista Seyss-Inquart. Annunciò poi un referendum sull'indipendenza dell'Austria per il 13 marzo.",
+  "event": "L'11 marzo Hitler, di nuovo minacciando l'occupazione, chiese l'annullamento del referendum e le dimissioni immediate di Schuschnigg. Schuschnigg si dimise la sera dell'11 marzo, ma il presidente Miklas rifiutò di nominare Seyss-Inquart; Hitler ordinò comunque l'invasione per l'alba del 12 e verso le 22 fu inviato un falso telegramma a nome di Seyss-Inquart che chiedeva truppe tedesche; Seyss-Inquart fu nominato cancelliere solo dopo la mezzanotte, quando il presidente Miklas cedette (l'introduzione dell'articolo inglese dice invece che Seyss-Inquart, poche ore dopo l'insediamento, «invitò» Hitler a varcare il confine). Per entrambi gli articoli l'esercito austriaco non si oppose.",
+  "after": "Il 10 aprile si tenne un plebiscito con il 99,7% di approvazione; per l'articolo italiano il voto non era segreto e furono usate minacce e coercizione; per l'articolo inglese non fu né libero né segreto, ma gli storici concordano che i voti furono contati correttamente. Entrambi gli articoli dicono che la legge di annessione ebbe effetto il 13 marzo 1938.",
+  "links": [
+    {
+      "slug": "rimilitarizzazione-della-renania-1936",
+      "reason": "Due anni prima, il 7 marzo 1936, la Germania aveva rimilitarizzato la Renania."
+    },
+    {
+      "slug": "accordo-di-monaco-1938",
+      "reason": "Meno di sette mesi dopo, il 30 settembre, a Monaco, le potenze concedono alla Germania i Sudeti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Anschluss - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anschluss",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anschluss - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Anschluss",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 12 marzo 1938 come giorno in cui l'esercito tedesco varcò il confine; nelle introduzioni l'annessione è datata 12 marzo (inglese) e 13 marzo (italiano), ma nel corpo entrambi dicono che la legge di annessione ebbe effetto il 13 marzo. Il pin è su Vienna."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-delle-frontiere-1914",
+  "title": "La battaglia delle Frontiere",
+  "summary": "Nell'agosto 1914 francesi e britannici affrontano i tedeschi in una serie di scontri lungo la frontiera francese e nel Belgio meridionale, dalla Lorena alle Ardenne, alla Sambre e a Mons. Gli attacchi francesi falliscono con perdite enormi e gli Alleati ripiegano verso sud.",
+  "date": {
+    "year": 1914,
+    "month": 8,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Charleroi, Belgio",
+    "lat": 50.4108,
+    "lon": 4.4446,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "Le battaglie si estesero lungo tutta la frontiera, dall'Alsazia al Belgio meridionale: il pin è su Charleroi, dove si combatté sulla Sambre, ed è solo un segnaposto."
+  },
+  "before": "Il piano XVII del generale Joseph Joffre prevedeva che l'esercito francese passasse all'attacco; il piano tedesco portava invece il grosso delle forze sull'ala destra, per attraversare il Belgio e colpire i francesi alle spalle. Per rispettare l'alleanza con la Russia, Joffre ordinò l'invasione dell'Alsazia-Lorena per il 14 agosto.",
+  "event": "I francesi attaccarono in Alsazia già dal 7 agosto (Mulhouse; per l'articolo italiano nel testo, mentre la sua introduzione parte dal 14) e in Lorena dal 14; tra il 21 e il 23 agosto furono battuti nelle Ardenne e, con la 5ª Armata, sulla Sambre. Il 23 agosto il corpo di spedizione britannico combatté a Mons. Per l'articolo italiano gli attacchi francesi all'arma bianca, allo scoperto, furono respinti dall'artiglieria e dalle mitragliatrici tedesche. Entrambi gli articoli danno 27 000 morti francesi il 22 agosto.",
+  "after": "Il 24 agosto la battaglia era perduta per i franco-britannici, che cominciarono una lunga ritirata verso sud. Entro fine agosto i morti francesi erano 75 000 per l'articolo inglese, 80 000 per quello italiano; per entrambi 140 000 perdite caddero negli ultimi quattro giorni della battaglia. Per l'articolo italiano gli Alleati non furono distrutti e riuscirono a ripiegare in ordine.",
+  "links": [
+    {
+      "slug": "invasione-del-belgio-1914",
+      "reason": "Il 4 agosto la Germania aveva invaso il Belgio neutrale."
+    },
+    {
+      "slug": "battaglia-della-marna-1914",
+      "reason": "Dopo la lunga ritirata cominciata il 24 agosto, il 5 settembre i francesi contrattaccano sulla Marna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Frontiers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Frontiers",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia delle Frontiere - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_delle_Frontiere",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è data al mese perché le fonti non concordano sull'estensione: l'articolo italiano dà dal 14 al 24 agosto (25 nel bilancio), mentre quello inglese distingue battaglie dal 7 agosto (Mulhouse) al 25 agosto (Lorena; Mons il 23). Anche le cifre divergono: l'articolo inglese dà circa 260 000 perdite francesi nel primo mese di guerra, quello italiano 300 000. Il pin è un segnaposto sulla Sambre."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

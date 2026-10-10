@@ -1,0 +1,33 @@
+{
+  "slug": "il-fronte-orientale-e-i-balcani",
+  "title": "Il fronte orientale e i Balcani",
+  "tagline": "Da Tannenberg al crollo della Bulgaria: la guerra mobile a est, la Serbia invasa, la pace separata di Brest-Litovsk.",
+  "intro": "Il percorso segue la guerra a est e nei Balcani: Tannenberg, l'offensiva di Gorlice-Tarnów, la conquista della Serbia, l'offensiva Brusilov, il trattato di Brest-Litovsk e l'armistizio di Salonicco con la Bulgaria.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "battaglia-di-tannenberg-1914",
+      "narrative": "Si parte dall'agosto 1914: a Tannenberg i tedeschi distruggono la 2ª Armata russa."
+    },
+    {
+      "insight": "battaglia-di-gorlice-tarnow-1915",
+      "narrative": "Nel maggio 1915 l'offensiva di Gorlice-Tarnów fa crollare il fronte russo in Galizia."
+    },
+    {
+      "insight": "conquista-della-serbia-1915",
+      "narrative": "Nell'ottobre 1915 gli Imperi centrali e la Bulgaria invadono la Serbia."
+    },
+    {
+      "insight": "offensiva-brusilov-1916",
+      "narrative": "Nel giugno 1916 la Russia attacca con l'offensiva Brusilov."
+    },
+    {
+      "insight": "trattato-di-brest-litovsk-1918",
+      "narrative": "Nel marzo 1918 la Russia bolscevica firma la pace separata di Brest-Litovsk."
+    },
+    {
+      "insight": "armistizio-di-salonicco-1918",
+      "narrative": "Nel settembre 1918 la Bulgaria firma l'armistizio di Salonicco."
+    }
+  ]
+}

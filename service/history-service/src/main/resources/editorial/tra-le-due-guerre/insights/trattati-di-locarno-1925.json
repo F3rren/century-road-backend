@@ -1,0 +1,50 @@
+{
+  "slug": "trattati-di-locarno-1925",
+  "title": "I trattati di Locarno",
+  "summary": "Il 16 ottobre 1925 si conclude a Locarno, in Svizzera, la conferenza in cui Germania, Francia, Regno Unito, Belgio, Italia, Polonia e Cecoslovacchia elaborano sette accordi: garantiscono i confini occidentali della Germania e prevedono la soluzione pacifica delle controversie. Aprono la strada all'ingresso della Germania nella Società delle Nazioni.",
+  "date": {
+    "year": 1925,
+    "month": 10,
+    "day": 16
+  },
+  "place": {
+    "name": "Locarno, Svizzera",
+    "lat": 46.1708,
+    "lon": 8.7995,
+    "countryCode": "CH",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese il ministro degli Esteri tedesco Stresemann inviò al Regno Unito, in gennaio, e alla Francia, in febbraio, memorandum segreti in cui proponeva un trattato che obbligasse tutte le parti interessate ai confini del Reno a risolvere pacificamente le controversie. In patria incontrò forte opposizione, soprattutto per la rinuncia all'Alsazia-Lorena. Dopo discussioni a Londra all'inizio di settembre, le parti decisero di incontrarsi a Locarno in ottobre.",
+  "event": "La conferenza si tenne dal 5 al 16 ottobre 1925. Nel trattato principale i cinque Stati dell'Europa occidentale garantirono l'inviolabilità dei confini fra Germania e Francia e fra Germania e Belgio fissati a Versailles, si impegnarono a rispettare la zona smilitarizzata della Renania e a risolvere le controversie in modo pacifico sotto l'egida della Società delle Nazioni. Con Polonia e Cecoslovacchia la Germania accettò trattati di arbitrato, senza alcuna garanzia per il confine orientale. Per entrambi gli articoli i trattati furono firmati a Londra il 1º dicembre; per l'articolo italiano furono garanti del patto l'Italia e la Gran Bretagna.",
+  "after": "Per l'articolo inglese i trattati migliorarono il clima politico dell'Europa occidentale dal 1925 al 1930 e alimentarono aspettative di soluzioni pacifiche, il cosiddetto «spirito di Locarno»; il risultato più notevole fu l'ingresso della Germania nella Società delle Nazioni nel 1926. Per l'articolo italiano a Briand, Stresemann e Chamberlain fu conferito il premio Nobel per la pace. Per l'articolo inglese i trattati cessarono di fatto il 7 marzo 1936, quando le truppe tedesche entrarono nella Renania smilitarizzata; per quello italiano Hitler li denunciò quel giorno con la rimilitarizzazione.",
+  "links": [
+    {
+      "slug": "societa-delle-nazioni-1920",
+      "reason": "Nel 1926 la Germania entra nella Società delle Nazioni, fondata nel 1920."
+    },
+    {
+      "slug": "rimilitarizzazione-della-renania-1936",
+      "reason": "Il 7 marzo 1936 le truppe tedesche entrano nella Renania smilitarizzata: i trattati cessano di fatto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Locarno Treaties - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Locarno_Treaties",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Patto di Locarno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Patto_di_Locarno",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 16 ottobre 1925 è il giorno in cui si conclude la conferenza, secondo entrambi gli articoli; per entrambi gli articoli i trattati furono firmati formalmente a Londra il 1º dicembre."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
