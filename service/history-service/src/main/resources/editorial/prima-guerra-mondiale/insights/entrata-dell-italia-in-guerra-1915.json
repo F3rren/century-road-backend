@@ -16,7 +16,7 @@
   },
   "before": "Allo scoppio della guerra l'Italia si dichiarò neutrale. Per l'articolo italiano il 3 maggio 1915 la Triplice alleanza fu denunciata. A metà maggio, per l'articolo inglese, Giolitti e la maggioranza neutralista del Parlamento si opponevano alla guerra, mentre folle nazionaliste manifestavano a favore: il 13 maggio Salandra offrì le dimissioni, ma Giolitti, saputo che il patto di Londra era già firmato, accettò il fatto compiuto e le dimissioni non furono accolte.",
   "event": "Il 20 maggio, per l'articolo italiano, la Camera votò i crediti di guerra. Il 23 maggio l'Italia dichiarò guerra all'Austria-Ungheria, ma non alla Germania, con cui il governo Salandra sperava di non rompere del tutto; le operazioni belliche cominciarono il 24 maggio. D'Annunzio chiamò «radiose giornate di maggio» quelle settimane, definite dagli oppositori «sud americane giornate di maggio».",
-  "after": "L'Italia aprì un lungo fronte sulle Alpi Orientali e sull'Isonzo. Dichiarò guerra all'Impero ottomano il 21 agosto 1915 e alla Bulgaria il 19 ottobre 1915. Alla Germania la dichiarò solo nel 1916: il 27 agosto per l'articolo italiano, il 28 per quello inglese, che aggiunge che l'attesa di un anno irritò Francia e Regno Unito.",
+  "after": "L'Italia aprì un lungo fronte sulle Alpi Orientali e sull'Isonzo. Dichiarò guerra all'Impero ottomano il 21 agosto 1915 e alla Bulgaria il 19 ottobre 1915. Alla Germania la dichiarò solo nel 1916: il 27 agosto per l'articolo italiano, il 28 per quello inglese.",
   "links": [
     {
       "slug": "patto-di-londra-1915",
@@ -24,7 +24,7 @@
     },
     {
       "slug": "strafexpedition-1916",
-      "reason": "Un anno dopo, il 15 maggio 1916, l'offensiva austro-ungarica degli Altipiani attacca l'Italia dal Trentino."
+      "reason": "Poco meno di un anno dopo, il 15 maggio 1916, l'offensiva austro-ungarica degli Altipiani attacca l'Italia dal Trentino."
     }
   ],
   "sources": [
@@ -42,7 +42,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno la dichiarazione di guerra il 23 maggio 1915; per l'articolo italiano la partecipazione ebbe inizio il 24 maggio. L'articolo italiano sul tema è la voce generale sull'Italia nella prima guerra mondiale, molto lunga; il testo si appoggia anche all'articolo inglese sulla storia militare italiana. La dichiarazione di guerra alla Germania è il 27 agosto 1916 per l'articolo italiano e il 28 per quello inglese."
+    "L'articolo italiano dà la dichiarazione di guerra il 23 maggio e l'inizio delle operazioni il 24; l'articolo inglese dà il 23 maggio nella sezione sulla neutralità, ma in quella sulle operazioni del 1915 scrive che il governo dichiarò guerra il 24 maggio, giorno in cui cominciarono le ostilità. L'articolo italiano sul tema è la voce generale sull'Italia nella prima guerra mondiale, molto lunga; il testo si appoggia anche all'articolo inglese sulla storia militare italiana. La dichiarazione di guerra alla Germania è il 27 agosto 1916 per l'articolo italiano e il 28 per quello inglese."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

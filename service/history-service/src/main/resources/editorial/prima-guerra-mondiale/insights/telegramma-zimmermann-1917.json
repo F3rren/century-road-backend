@@ -15,9 +15,9 @@
     "countryCode": "DE",
     "approximate": false
   },
-  "before": "Per l'articolo italiano Wilson, che nella campagna elettorale del 1916 aveva promesso la pace, era ancora neutrale. Il telegramma istruiva l'ambasciatore Heinrich von Eckardt: se gli Stati Uniti sembravano destinati a entrare in guerra, doveva proporre al governo messicano un'alleanza militare, con un sostegno finanziario tedesco.",
-  "event": "Il telegramma fu inviato il 16 gennaio 1917 per l'articolo italiano, il 17 per quello inglese. Prevedeva che il Messico riconquistasse Texas, Nuovo Messico e Arizona, perduti nella guerra messicano-statunitense, e invitava a convincere anche il Giappone ad aderire. Fu intercettato dalla Room 40 britannica; per l'articolo inglese la decifrazione fu possibile grazie a un libro di codici che Wassmuss abbandonò dopo il fallimento della spedizione Niedermayer-Hentig in Afghanistan. Per l'articolo italiano l'ammiraglio Hall lo consegnò all'ambasciatore statunitense a Londra.",
-  "after": "Il 3 marzo 1917 Zimmermann ammise pubblicamente che il telegramma era autentico, e la notizia aumentò il sostegno americano all'ingresso in guerra. Per l'articolo italiano Wilson convocò il Congresso il 2 aprile e il 6 gli Stati Uniti erano in guerra; Carranza, presidente del Messico, declinò la proposta il 14 aprile.",
+  "before": "Per l'articolo italiano Wilson aveva promesso la pace nella campagna elettorale del 1916. Il telegramma istruiva l'ambasciatore Heinrich von Eckardt: se gli Stati Uniti sembravano destinati a entrare in guerra, doveva proporre al governo messicano un'alleanza militare, con un sostegno finanziario tedesco.",
+  "event": "Il telegramma fu inviato il 16 gennaio 1917 per l'articolo italiano; quello inglese dice che Zimmermann lo spedì il 17, ma anche che fu trasmesso il 16 tramite l'ambasciata americana. Prevedeva che il Messico riconquistasse Texas, Nuovo Messico e Arizona, perduti nella guerra messicano-statunitense, e invitava a convincere anche il Giappone ad aderire. Fu intercettato dalla Room 40 britannica; per l'articolo inglese la decifrazione fu possibile grazie a un libro di codici che Wassmuss abbandonò dopo il fallimento della spedizione Niedermayer-Hentig in Afghanistan. Per l'articolo italiano l'ammiraglio Hall lo consegnò al ministro degli Esteri Balfour, che lo passò all'ambasciatore statunitense a Londra, Walter Page.",
+  "after": "Il 3 marzo 1917 Zimmermann ammise pubblicamente che il telegramma era autentico, e la notizia aumentò il sostegno americano all'ingresso in guerra. Per l'articolo italiano Wilson convocò il Congresso il 2 aprile e il 6 gli Stati Uniti erano in guerra; per lo stesso articolo Carranza, presidente del Messico, declinò la proposta il 14 aprile.",
   "links": [
     {
       "slug": "ingresso-degli-stati-uniti-in-guerra-1917",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "La data è data al mese perché i due articoli non concordano sul giorno: 16 gennaio per l'articolo italiano, 17 gennaio per quello inglese. Il pin è su Berlino, dove aveva sede il ministero degli Esteri tedesco."
+    "La data è data al mese perché i due articoli non concordano sul giorno: 16 gennaio per l'articolo italiano; per quello inglese il 17 per la spedizione di Zimmermann e il 16 per la trasmissione tramite l'ambasciata americana. Il pin è su Berlino, dove aveva sede il ministero degli Esteri tedesco."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

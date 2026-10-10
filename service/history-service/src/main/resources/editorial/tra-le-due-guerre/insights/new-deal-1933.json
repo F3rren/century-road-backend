@@ -1,7 +1,7 @@
 {
   "slug": "new-deal-1933",
   "title": "Il New Deal",
-  "summary": "Il 4 marzo 1933 Franklin D. Roosevelt giura come presidente degli Stati Uniti, con le banche chiuse o limitate in tutti gli Stati. Nei primi cento giorni vara le riforme del New Deal, per risollevare il paese dalla Grande depressione.",
+  "summary": "Il 4 marzo 1933 Franklin D. Roosevelt giura come presidente degli Stati Uniti, con le banche chiuse o con i prelievi limitati in gran parte degli Stati. Nei primi cento giorni vara le riforme del New Deal, per risollevare il paese dalla Grande depressione.",
   "date": {
     "year": 1933,
     "month": 3,
@@ -15,8 +15,8 @@
     "approximate": false
   },
   "before": "Roosevelt aveva usato la frase «New Deal» accettando la nomina democratica del 1932, e batté Hoover in modo schiacciante. Per l'articolo inglese la disoccupazione era al 25% quando prese il potere; per quello italiano raggiunse punte del 20%. Quando giurò a mezzogiorno del 4 marzo, tutti i governatori avevano autorizzato chiusure o limiti ai prelievi dalle banche; per l'articolo italiano la maggior parte degli Stati aveva chiuso le banche a tempo indeterminato.",
-  "event": "Nei primi cento giorni, da marzo a giugno, Roosevelt fece approvare la serie di provvedimenti detta «primo New Deal», incentrata su tre obiettivi: sollievo per i disoccupati e i poveri, ripresa dell'economia e riforma del sistema finanziario. Tra questi, la legge bancaria di emergenza, la Federal Deposit Insurance Corporation, la National Recovery Administration e la Agricultural Adjustment Administration, oltre al Civilian Conservation Corps e alla Tennessee Valley Authority per dare lavoro.",
-  "after": "Dal 1935 al 1938 seguì il «secondo New Deal», con la Works Progress Administration, il National Labor Relations Act e il Social Security Act. Nel 1938 i repubblicani guadagnarono seggi al Congresso e bloccarono nuove leggi, e alcune furono dichiarate incostituzionali dalla Corte suprema. Per l'articolo inglese la piena occupazione non fu raggiunta fino all'ingresso in guerra nel 1941; per l'articolo italiano il New Deal durò dal 1933 al 1943.",
+  "event": "Nei primi cento giorni, da marzo a giugno, Roosevelt fece approvare i primi provvedimenti di quello che gli storici chiamano «primo New Deal» (1933-34), incentrato su tre obiettivi: sollievo per i disoccupati e i poveri, ripresa dell'economia e riforma del sistema finanziario. Tra questi, la legge bancaria di emergenza, la Federal Deposit Insurance Corporation, la National Recovery Administration e la Agricultural Adjustment Administration, oltre al Civilian Conservation Corps e alla Tennessee Valley Authority per dare lavoro.",
+  "after": "Dal 1935 al 1938 seguì il «secondo New Deal», con la Works Progress Administration, il National Labor Relations Act e il Social Security Act. Nel 1938 i repubblicani guadagnarono seggi al Congresso e, insieme ai democratici conservatori, bloccarono nuove leggi, e alcune furono dichiarate incostituzionali dalla Corte suprema. Per l'articolo inglese la piena occupazione non fu raggiunta fino all'ingresso in guerra nel 1941; per l'articolo italiano il New Deal durò dal 1933 al 1943.",
   "links": [
     {
       "slug": "crollo-di-wall-street-1929",
@@ -24,7 +24,7 @@
     },
     {
       "slug": "social-security-act-1935",
-      "reason": "Due anni e mezzo dopo, il 14 agosto 1935, il Social Security Act."
+      "reason": "Due anni e cinque mesi dopo, il 14 agosto 1935, il Social Security Act."
     }
   ],
   "sources": [

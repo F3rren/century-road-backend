@@ -13,11 +13,11 @@
     "lon": 2.6523,
     "countryCode": "FR",
     "approximate": true,
-    "note": "Il fronte dell'attacco era lungo circa sessanta chilometri, secondo l'articolo italiano: il pin è sulla zona di Albert, ricordata dall'articolo inglese per la strada Albert-Bapaume, e non indica un punto preciso."
+    "note": "Il settore dell'offensiva era lungo circa sessanta chilometri per l'articolo italiano (che dà 40 chilometri per l'attacco del 1º luglio): il pin è sulla zona di Albert, ricordata dall'articolo inglese per la strada Albert-Bapaume, e non indica un punto preciso."
   },
-  "before": "L'offensiva sulla Somme era stata concordata da Joffre e Haig una settimana prima che cominciasse Verdun. Con Verdun, per l'articolo inglese i francesi dovettero ridurre il proprio contributo a 13 divisioni contro 20 britanniche: lo sforzo principale passò agli inglesi. Per l'articolo italiano l'attacco fu rinviato al 1º luglio a causa del maltempo.",
-  "event": "Il 1º luglio, dopo una settimana di bombardamento e lo scoppio di dieci grandi mine, la fanteria britannica avanzò in massa e i tedeschi, protetti dai rifugi sotterranei, la fermarono. Per l'articolo inglese il BEF ebbe 57 470 perdite, di cui 19 240 morti, le peggiori della storia dell'esercito britannico; per quello italiano oltre 59 000 perdite e 20 000 morti. Sul fronte francese, per l'articolo inglese, fu invece una grave sconfitta per la 2ª Armata tedesca.",
-  "after": "Per l'articolo inglese la battaglia finì il 18 novembre, per quello italiano il 19, con la pioggia che aveva trasformato il campo in un pantano. In settembre comparvero i primi carri armati. Per l'articolo inglese gli Alleati avanzarono di circa 10 chilometri; l'articolo italiano parla di 620 000 perdite alleate e circa 450 000 tedesche, quello inglese di 419 654-432 000 britanniche e circa 200 000 francesi contro 465 181-600 000 tedesche.",
+  "before": "Per l'articolo inglese l'offensiva sulla Somme era stata concordata da Joffre e Haig una settimana prima dell'inizio di Verdun. Con Verdun, per l'articolo inglese i francesi dovettero ridurre il proprio contributo a 13 divisioni contro 20 britanniche: lo sforzo principale passò agli inglesi. Per l'articolo italiano l'attacco fu rinviato al 1º luglio a causa del maltempo.",
+  "event": "Il 1º luglio, dopo una settimana di bombardamento e lo scoppio di dieci grandi mine, la fanteria britannica avanzò in massa e, a nord della strada Albert-Bapaume, i tedeschi, protetti dai rifugi sotterranei, la fermarono; più a sud gli obiettivi del giorno furono in gran parte raggiunti. Per l'articolo inglese il BEF ebbe 57 470 perdite, di cui 19 240 morti, le peggiori della storia dell'esercito britannico; l'articolo italiano nell'introduzione parla di «oltre cinquantanovemila» perdite e ventimila caduti, ma nel testo dà gli stessi 57 470 e 19 240. Sul fronte francese, per l'articolo inglese, fu invece una grave sconfitta per la 2ª Armata tedesca.",
+  "after": "Per l'articolo inglese la battaglia finì il 18 novembre, per quello italiano il 19, con la pioggia che aveva trasformato il campo in un pantano. In settembre comparvero i primi carri armati. Per l'articolo inglese gli Alleati avanzarono di circa 10 chilometri; l'articolo italiano parla nell'introduzione di 620 000 perdite alleate e circa 450 000 tedesche, nel testo di 623 907 alleate e fra 465 000 e 600 000 tedesche; quello inglese di 419 654-432 000 britanniche e circa 200 000 francesi contro 465 181-500 000, forse 600 000, tedesche.",
   "links": [
     {
       "slug": "battaglia-di-verdun-1916",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 1º luglio 1916. Gli articoli divergono sulle cifre del primo giorno e sulla data di fine (18 novembre per l'inglese, 19 per l'italiano), e il testo le attribuisce a ciascun articolo. L'articolo inglese dà intervalli molto ampi per le perdite tedesche."
+    "Entrambi gli articoli danno il 1º luglio 1916. L'articolo italiano è incoerente sulle cifre del primo giorno (introduzione e testo); i due articoli divergono sulla data di fine (18 novembre per l'inglese, 19 per l'italiano). L'articolo inglese dà intervalli molto ampi per le perdite tedesche."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

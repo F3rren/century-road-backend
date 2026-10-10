@@ -1,7 +1,7 @@
 {
   "slug": "conferenza-di-pace-di-parigi-1919",
   "title": "La conferenza di pace di Parigi",
-  "summary": "Il 18 gennaio 1919 si apre a Parigi la conferenza di pace in cui i vincitori della prima guerra mondiale definiscono i trattati con gli Stati sconfitti. Dominata da Stati Uniti, Francia e Gran Bretagna, ridisegna la carta d'Europa e crea la Società delle Nazioni.",
+  "summary": "Il 18 gennaio 1919 si apre a Parigi la conferenza di pace in cui i vincitori della prima guerra mondiale definiscono i trattati con gli Stati sconfitti. Dominata dalle grandi potenze vincitrici (per l'articolo italiano Stati Uniti, Francia e Gran Bretagna), ridisegna la carta d'Europa e crea la Società delle Nazioni.",
   "date": {
     "year": 1919,
     "month": 1,
@@ -15,8 +15,8 @@
     "approximate": false
   },
   "before": "Per l'articolo inglese Wilson aveva incaricato un gruppo di circa 150 studiosi di preparare i principi per i negoziati. Il risultato, i quattordici punti, fu la base dei termini della resa tedesca alla conferenza, come lo era stata nei negoziati dell'armistizio dell'11 novembre 1918.",
-  "event": "La conferenza si aprì il 18 gennaio 1919 e durò fino al 21 gennaio 1920, con alcuni intervalli (articolo italiano). Per l'articolo inglese vi presero parte diplomatici di 32 paesi e nazionalità, ma Germania, Austria-Ungheria, Turchia e Bulgaria non ebbero voce; per quello italiano parteciparono solo i vincitori, e la Russia si era ritirata. L'Italia, pur tra le quattro grandi, ebbe un ruolo marginale.",
-  "after": "Per l'articolo inglese la conferenza portò alla Società delle Nazioni e a cinque trattati di pace; i possedimenti coloniali tedeschi e ottomani passarono come mandati soprattutto a Gran Bretagna e Francia, furono imposte riparazioni alla Germania e furono tracciati nuovi confini. Per l'articolo italiano nacquero Stati come la Cecoslovacchia e la Jugoslavia. Il risultato principale fu il trattato di Versailles, con l'articolo 231 sulla responsabilità tedesca.",
+  "event": "La conferenza si aprì il 18 gennaio 1919 e durò fino al 21 gennaio 1920, con alcuni intervalli (articolo italiano). Per l'articolo inglese vi presero parte diplomatici di 32 paesi e nazionalità, ma Germania, Austria-Ungheria, Turchia e Bulgaria non ebbero voce; per quello italiano parteciparono solo i vincitori, e la Russia si era ritirata. Per l'articolo italiano l'Italia, pur tra le quattro grandi, ebbe un ruolo marginale; per quello inglese Orlando era uno dei quattro leader che presero tutte le decisioni principali.",
+  "after": "Per l'articolo inglese la conferenza portò alla Società delle Nazioni e a cinque trattati di pace; i possedimenti coloniali tedeschi e ottomani passarono come mandati soprattutto a Gran Bretagna e Francia, furono imposte riparazioni alla Germania e furono tracciati nuovi confini. Per l'articolo italiano furono riconosciuti Stati di recente formazione come la Cecoslovacchia e la Jugoslavia. Il risultato principale fu il trattato di Versailles, con l'articolo 231 sulla responsabilità tedesca.",
   "links": [
     {
       "slug": "quattordici-punti-di-wilson-1918",
@@ -42,7 +42,7 @@
     }
   ],
   "notes": [
-    "L'articolo italiano dà l'apertura il 18 gennaio 1919 e la fine il 21 gennaio 1920; quello inglese parla di incontri formali e informali nel 1919 e nel 1920. Sui partecipanti i due articoli divergono, e il testo attribuisce a ciascuno la sua versione."
+    "Entrambi gli articoli danno l'apertura il 18 gennaio 1919; la fine è il 21 gennaio 1920 per l'articolo italiano e per il corpo di quello inglese, mentre l'introduzione inglese cita uno storico per cui il processo formale di pace si chiuse solo nel luglio 1923. Sui partecipanti e su chi dominò la conferenza i due articoli divergono, e il testo attribuisce a ciascuno la sua versione."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

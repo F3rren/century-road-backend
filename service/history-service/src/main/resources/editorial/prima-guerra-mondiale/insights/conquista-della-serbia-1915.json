@@ -1,7 +1,7 @@
 {
   "slug": "conquista-della-serbia-1915",
   "title": "La conquista della Serbia",
-  "summary": "Il 6 ottobre 1915 truppe tedesche e austro-ungariche, guidate dal feldmaresciallo Mackensen, invadono la Serbia da nord; poco dopo si aggiungono i bulgari da est. L'esercito serbo si ritira verso l'Albania e a fine novembre il paese è occupato.",
+  "summary": "Il 6 ottobre 1915 truppe tedesche e austro-ungariche, guidate da Mackensen, invadono la Serbia da nord; per l'articolo italiano i bulgari attaccano da est l'11 ottobre, per quello inglese l'invasione avviene da tre lati con i bulgari. L'esercito serbo si ritira verso l'Albania e il paese è occupato.",
   "date": {
     "year": 1915,
     "month": 10,
@@ -15,8 +15,8 @@
     "approximate": true,
     "note": "L'invasione partì dal nord, dal Danubio e dalla Sava, e si estese a tutto il paese: il pin è sulla capitale e non indica un luogo preciso."
   },
-  "before": "Nel 1914 gli austro-ungarici avevano tentato più volte di invadere la Serbia e ogni volta erano stati respinti: per entrambi gli articoli la vittoria serba al Cer fu il primo successo campale degli Alleati. Secondo l'articolo italiano, l'entrata in guerra della Bulgaria a fianco degli Imperi centrali segnò il destino della Serbia. Per l'articolo inglese l'invasione anticipò un'avanzata alleata da Salonicco in aiuto dei serbi.",
-  "event": "Il 6 ottobre le forze tedesche e austro-ungariche attaccarono da nord. Per l'articolo italiano i bulgari mossero l'11 ottobre da est, occupando la Macedonia e tagliando i collegamenti fra i serbi e le forze dell'Intesa sbarcate a Salonicco; il 5 novembre i bulgari occuparono Niš. Per l'articolo inglese Mackensen dichiarò conclusa la campagna il 24 novembre.",
+  "before": "Nel 1914 gli austro-ungarici avevano tentato più volte di invadere la Serbia e ogni volta erano stati respinti: per l'articolo italiano la vittoria serba al Cer fu il primo successo campale degli Alleati, per quello inglese è considerata la prima vittoria alleata. Secondo l'articolo italiano, l'entrata in guerra della Bulgaria a fianco degli Imperi centrali segnò il destino della Serbia. Per l'articolo inglese l'invasione anticipò un'avanzata alleata da Salonicco in aiuto dei serbi.",
+  "event": "Il 6 ottobre le forze tedesche e austro-ungariche attaccarono da nord (per l'articolo inglese l'invasione, con anche i bulgari, avvenne da tre lati). Per l'articolo italiano i bulgari mossero l'11 ottobre da est, occupando la Macedonia e tagliando i collegamenti fra i serbi e le forze dell'Intesa sbarcate a Salonicco; il 5 novembre i bulgari occuparono Niš. Per l'articolo inglese Mackensen dichiarò conclusa la campagna il 24 novembre.",
   "after": "Per l'articolo italiano la ritirata dell'esercito serbo in Albania cominciò il 25 novembre: più di 200 000 soldati, 23 000 prigionieri austro-ungarici e decine di migliaia di profughi attraversarono i monti innevati, perdendo migliaia di uomini; i superstiti furono portati in salvo dalle navi alleate, con il contributo determinante della Regia Marina italiana. La Serbia fu divisa fra Austria-Ungheria e Bulgaria. La sconfitta aprì una via di terra da Berlino a Costantinopoli (articolo inglese).",
   "links": [
     {
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno l'invasione il 6 ottobre 1915. Per la fine, l'articolo inglese dà il 24 novembre, quello italiano parla di fine novembre; sull'ingresso dei bulgari l'articolo italiano dà l'11 ottobre mentre per l'articolo inglese la Bulgaria entrò in guerra il 14 ottobre, e il testo dà solo la data italiana, attribuita. Il pin è su Belgrado."
+    "Entrambi gli articoli danno l'invasione il 6 ottobre 1915. Per la fine, l'articolo inglese dà il 24 novembre, quello italiano parla di fine novembre nell'introduzione e di fine dicembre nel testo; sull'ingresso dei bulgari l'articolo italiano dà l'11 ottobre, mentre per quello inglese partecipano già all'invasione del 6 ottobre, e il testo dà solo la data italiana, attribuita. Il pin è su Belgrado."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

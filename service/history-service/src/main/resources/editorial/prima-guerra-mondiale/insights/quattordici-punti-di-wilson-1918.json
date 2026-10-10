@@ -1,7 +1,7 @@
 {
   "slug": "quattordici-punti-di-wilson-1918",
   "title": "I quattordici punti di Wilson",
-  "summary": "L'8 gennaio 1918 il presidente americano Woodrow Wilson espone al Congresso quattordici punti come base per una pace duratura: fra questi la fine della diplomazia segreta, la libertà dei mari, la riduzione degli armamenti e l'autodeterminazione dei popoli.",
+  "summary": "L'8 gennaio 1918 il presidente americano Woodrow Wilson espone al Congresso quattordici punti come base per una pace duratura: fra questi la fine della diplomazia segreta, la libertà dei mari, la riduzione degli armamenti e lo sviluppo autonomo dei popoli.",
   "date": {
     "year": 1918,
     "month": 1,
@@ -15,7 +15,7 @@
     "approximate": false
   },
   "before": "Per l'articolo italiano Wilson voleva una «pace senza vincitori», basata sull'uguaglianza delle nazioni e sull'autogoverno dei popoli. I bolscevichi, appena al potere, avevano pubblicato i patti segreti tra lo zar e le altre potenze dell'Intesa, fra cui il patto di Londra. Per l'articolo inglese il discorso rispondeva anche al decreto sulla pace di Lenin del novembre 1917; tre giorni prima Lloyd George aveva esposto gli scopi bellici britannici.",
-  "event": "Nel discorso dell'8 gennaio Wilson chiese l'abolizione dei trattati segreti, la riduzione degli armamenti, un riesame delle rivendicazioni coloniali e la libertà dei mari (articolo inglese). Per l'articolo italiano i punti comprendevano trattati di pace pubblici, la libertà di navigazione, l'eliminazione delle barriere economiche, la riduzione degli armamenti, l'evacuazione dei territori russi, il ripristino del Belgio e il ritorno dell'Alsazia-Lorena alla Francia. I punti si basavano sulle ricerche dell'Inquiry, gruppo di circa 150 esperti guidato da House (articolo inglese) o da Walter Lippmann (articolo italiano).",
+  "event": "Nel discorso dell'8 gennaio Wilson chiese l'abolizione dei trattati segreti, la riduzione degli armamenti, un riesame delle rivendicazioni coloniali e la libertà dei mari (articolo inglese). Per l'articolo italiano i punti comprendevano trattati di pace pubblici, la libertà di navigazione, la soppressione, per quanto possibile, delle barriere economiche, la riduzione degli armamenti, l'evacuazione dei territori russi, il ripristino del Belgio e la riparazione del torto fatto alla Francia nel 1871 a proposito dell'Alsazia-Lorena. I punti si basavano sulle ricerche dell'Inquiry, gruppo di circa 150 consiglieri guidato da House (articolo inglese); per l'articolo italiano era una commissione guidata da Walter Lippmann.",
   "after": "Per l'articolo inglese Clemenceau, Lloyd George e Orlando erano scettici sull'idealismo di Wilson. I quattordici punti furono la base della richiesta di armistizio della Germania e dei termini della resa alla Conferenza di pace di Parigi. Per l'articolo italiano il principio di nazionalità non fu gradito all'Italia, che vi vide il tradimento del patto di Londra e la nascita della «vittoria mutilata».",
   "links": [
     {
@@ -24,7 +24,7 @@
     },
     {
       "slug": "armistizio-di-compiegne-1918",
-      "reason": "Dieci mesi dopo, l'armistizio dell'11 novembre si fonda su questi punti."
+      "reason": "Dieci mesi dopo, l'11 novembre, l'armistizio chiude una trattativa che la Germania aveva chiesto sulla base di questi punti."
     }
   ],
   "sources": [
@@ -42,7 +42,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno l'8 gennaio 1918. I due articoli divergono su chi guidava l'Inquiry, e il testo attribuisce a ciascuno la sua versione. Il pin è su Washington, dove ebbe sede il Congresso."
+    "Entrambi gli articoli danno l'8 gennaio 1918. I due articoli divergono su chi guidava l'Inquiry, e il testo attribuisce a ciascuno la sua versione. Il pin è su Washington, sede del Congresso (le fonti dicono solo «davanti al Congresso»)."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

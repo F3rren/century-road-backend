@@ -1,7 +1,7 @@
 {
   "slug": "affondamento-del-lusitania-1915",
   "title": "L'affondamento del Lusitania",
-  "summary": "Il 7 maggio 1915 il sommergibile tedesco U-20 silura al largo dell'Irlanda il transatlantico britannico Lusitania, che affonda in circa diciotto minuti. Muoiono 1197 persone, tra cui 128 cittadini statunitensi, e cresce l'ostilità americana verso la Germania.",
+  "summary": "Il 7 maggio 1915 il sommergibile tedesco U-20 silura al largo dell'Irlanda il transatlantico britannico Lusitania, che affonda in circa diciotto minuti. Per l'articolo inglese muoiono 1197 persone, tra cui 128 cittadini statunitensi, e cresce l'ostilità americana verso la Germania.",
   "date": {
     "year": 1915,
     "month": 5,
@@ -16,8 +16,8 @@
     "note": "La nave affondò in mare, a circa 20 chilometri al largo della costa irlandese: il pin è sul promontorio di Old Head of Kinsale, davanti al luogo dell'affondamento."
   },
   "before": "Il 4 febbraio 1915 la Germania dichiarò zona di guerra i mari attorno a Gran Bretagna e Irlanda e avvertì che le navi alleate vi sarebbero state affondate senza preavviso dal 18 febbraio. Il 22 aprile l'ambasciata tedesca fece pubblicare un avviso sui pericoli di viaggiare su navi britanniche in 50 giornali americani, che comparve proprio mentre il Lusitania partiva da New York, il 1º maggio. Per l'articolo italiano circa mille cittadini statunitensi si imbarcarono nonostante l'avviso.",
-  "event": "Il 7 maggio alle 14.10 l'U-20 lanciò un siluro contro il Lusitania, a 11 miglia nautiche dall'Old Head of Kinsale per l'articolo inglese, a 10 miglia a sud per quello italiano. Dopo l'impatto ci fu una seconda esplosione, per l'articolo italiano a quanto pare non provocata dal siluro. Per l'articolo inglese la nave affondò in circa 18 minuti e solo sei fra decine di scialuppe e zattere furono calate: 763 sopravvissuti su 1960 persone a bordo.",
-  "after": "Per l'articolo inglese l'affondamento uccise 128 cittadini statunitensi e accrebbe in modo significativo il sostegno americano all'ingresso in guerra. Per l'articolo italiano Wilson, l'8 maggio, respinse la richiesta dell'ambasciatore Page di un intervento armato. Sul carico i due articoli divergono: per l'articolo inglese i governi britannici sostennero dopo la guerra che a bordo non c'erano munizioni, a parte cartucce per armi leggere; per quello italiano altre 2000 casse di munizioni furono caricate all'ultimo momento.",
+  "event": "Il 7 maggio alle 14.10 l'U-20 lanciò un siluro contro il Lusitania, a 11 miglia nautiche dall'Old Head of Kinsale per l'articolo inglese, a 10 miglia a sud per quello italiano. Dopo l'impatto ci fu una seconda esplosione, per l'articolo italiano a quanto pare non provocata dal siluro. Per l'articolo inglese la nave affondò in circa 18 minuti e solo sei fra decine di scialuppe e zattere furono calate con successo: 763 sopravvissuti su 1960 persone a bordo.",
+  "after": "Per l'articolo inglese l'affondamento uccise 128 cittadini statunitensi e accrebbe in modo significativo il sostegno americano all'ingresso in guerra. Per l'articolo italiano, l'8 maggio l'ambasciatore Page telegrafò che l'Inghilterra era pronta a chiedere l'intervento armato americano, ma Wilson lo respinse. Sul carico: per l'articolo inglese i governi britannici sostennero dopo la guerra che a bordo non c'erano munizioni, a parte cartucce per armi leggere, ma lo stesso articolo riporta 173 tonnellate di materiale bellico, compresi proiettili a shrapnel; per quello italiano altre 2000 casse di munizioni furono caricate all'ultimo momento.",
   "links": [
     {
       "slug": "seconda-battaglia-di-ypres-1915",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 7 maggio 1915 alle 14.10. I numeri delle persone a bordo e dei morti sono quelli dell'articolo inglese (l'italiano parla di 1964 persone a bordo); la posizione dell'affondamento è diversa nei due articoli. Il pin è sul promontorio più vicino."
+    "Entrambi gli articoli danno il 7 maggio 1915 alle 14.10. I numeri delle persone a bordo e dei morti sono quelli dell'introduzione dell'articolo inglese (nel suo testo i morti sono 1199); l'articolo italiano parla di 1964 persone a bordo, di 1198 morti contati (123 statunitensi) e di 1201 effettivi; la posizione dell'affondamento è diversa nei due articoli. Il pin è sul promontorio più vicino."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

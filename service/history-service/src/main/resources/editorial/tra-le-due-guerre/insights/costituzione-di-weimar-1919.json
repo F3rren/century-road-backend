@@ -1,7 +1,7 @@
 {
   "slug": "costituzione-di-weimar-1919",
   "title": "La Costituzione di Weimar",
-  "summary": "L'11 agosto 1919 il presidente Friedrich Ebert firma la Costituzione di Weimar, approvata dall'Assemblea nazionale il 31 luglio. Crea una repubblica federale semipresidenziale con suffragio universale anche femminile e sistema proporzionale; resta formalmente in vigore fino al 1945.",
+  "summary": "L'11 agosto 1919 il presidente Friedrich Ebert firma la Costituzione di Weimar, approvata dall'Assemblea nazionale il 31 luglio. Crea una repubblica federale semipresidenziale con suffragio universale anche femminile e sistema proporzionale; per l'articolo inglese resta formalmente in vigore durante il periodo nazista e fino al 1949.",
   "date": {
     "year": 1919,
     "month": 8,
@@ -15,13 +15,13 @@
     "approximate": true,
     "note": "L'Assemblea nazionale si riunì e approvò il testo a Weimar; per l'articolo italiano la costituzione fu promulgata a Schwarzburg, dove si trovava il presidente: il pin è su Weimar, che dà il nome alla costituzione."
   },
-  "before": "Ebert e i partiti vincitori fissarono per il 19 gennaio 1919 le elezioni di un'assemblea nazionale, in cui per la prima volta le donne ebbero pari diritti di voto, con il compito di fare da parlamento provvisorio e di scrivere la nuova costituzione. Per l'articolo inglese Ebert volle Weimar per ricordare agli Alleati, mentre decidevano i termini di Versailles, il classicismo di Goethe e Schiller; per quello italiano la città fu scelta per le sue tradizioni culturali, ma non divenne capitale. Il 7 maggio 1919 la Germania ricevette i termini del trattato di Versailles.",
+  "before": "Ebert e i partiti vincitori fissarono per il 19 gennaio 1919 le elezioni di un'assemblea nazionale, in cui per la prima volta le donne ebbero pari diritti di voto, con il compito di fare da parlamento provvisorio e di scrivere la nuova costituzione. Per l'articolo inglese i delegati si riunirono a Weimar perché la situazione a Berlino era ancora instabile, ed Ebert voleva ricordare agli Alleati, mentre decidevano i termini di Versailles, il classicismo di Goethe e Schiller; per quello italiano la città fu scelta per le sue tradizioni culturali, ma non divenne capitale. Il 7 maggio 1919 la Germania ricevette i termini del trattato di Versailles.",
   "event": "Nel luglio 1919 l'Assemblea esaminò rapidamente il progetto e il 31 luglio lo adottò con 262 voti contro 75 e un astenuto. Ebert firmò la costituzione l'11 agosto; entrò in vigore il 14. Creava una repubblica federale semipresidenziale: un Reichstag eletto a suffragio universale con sistema proporzionale, e un presidente con il comando supremo dell'esercito, ampi poteri di emergenza e il potere di nominare e revocare il cancelliere.",
-  "after": "Per l'articolo inglese la costituzione aveva punti deboli che non impedirono a Hitler di instaurare una dittatura usandola come copertura: fu di fatto accantonata dalla legge dei pieni poteri del 1933, ma restò formalmente in vigore fino al 1945, quando fu sostituita dalla Legge fondamentale. Per l'articolo italiano guidò la Germania dalla fine della guerra all'ascesa di Hitler nel 1933.",
+  "after": "Per l'articolo inglese la costituzione aveva punti deboli che non impedirono a Hitler di instaurare una dittatura usandola come copertura: fu di fatto accantonata dalla legge dei pieni poteri del 1933, ma restò formalmente in vigore durante il periodo nazista e, per l'articolo inglese, anche durante l'occupazione alleata fino al 1949, quando fu sostituita dalla Legge fondamentale. Per l'articolo italiano guidò la Germania dalla fine della guerra all'ascesa di Hitler nel 1933.",
   "links": [
     {
       "slug": "rivolta-spartachista-1919",
-      "reason": "Più di sette mesi prima, in gennaio, la rivolta spartachista era stata repressa a Berlino."
+      "reason": "Circa sette mesi prima, in gennaio, la rivolta spartachista era stata repressa a Berlino."
     },
     {
       "slug": "trattato-di-versailles-1919",

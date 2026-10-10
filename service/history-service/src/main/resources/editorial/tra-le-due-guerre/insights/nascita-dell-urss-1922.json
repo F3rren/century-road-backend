@@ -15,9 +15,9 @@
     "approximate": true,
     "note": "Il nuovo governo federale ebbe i compiti principali centralizzati a Mosca; le fonti non indicano il luogo preciso dell'approvazione, quindi il pin è su Mosca."
   },
-  "before": "Le repubbliche sovietiche erano già unite di fatto dal 1919. Per l'articolo inglese Lenin all'inizio non pensava che la rivoluzione d'ottobre avrebbe cancellato tutte le frontiere, mentre Stalin perseguiva un'agenda diversa. Il trattato legalizzò l'unione e creò un governo federale.",
-  "event": "Il trattato e la dichiarazione furono firmati il 30 dicembre 1922 dai capi delle delegazioni: Michail Kalinin, Michail Cchakaja, Grigorij Petrovskij e Aleksandr Červjakov; per l'articolo italiano anche Michail Frunze. Il governo federale aveva un Congresso dei Soviet e un Comitato esecutivo centrale con il potere legislativo e il Consiglio dei commissari del popolo con l'esecutivo; il trattato permetteva di ammettere nuovi membri.",
-  "after": "Per l'articolo inglese entro il 1940 l'Unione passò dai quattro (o sei, a seconda della definizione) membri fondatori a 16 repubbliche. L'8 dicembre 1991 i presidenti di Russia, Ucraina e Bielorussia firmarono gli accordi di Belaveža, con cui gli Stati fondatori dichiararono sciolta l'Unione Sovietica.",
+  "before": "Le repubbliche sovietiche erano già unite di fatto dal 1919. Per l'articolo inglese Lenin all'inizio non pensava che la rivoluzione d'ottobre avrebbe cancellato tutte le frontiere estere, mentre Stalin perseguiva un'agenda diversa. Il trattato legalizzò l'unione e creò un governo federale.",
+  "event": "Per l'introduzione di entrambi gli articoli il trattato e la dichiarazione furono firmati il 30 dicembre 1922 dai capi delle delegazioni: Michail Kalinin, Michail Cchakaja, Grigorij Petrovskij e Aleksandr Červjakov; per l'articolo italiano anche Michail Frunze; la cronologia in fondo a entrambi gli articoli data però la firma al 21 dicembre e la ratifica al 30. Il governo federale aveva un Congresso dei Soviet e un Comitato esecutivo centrale con il potere legislativo e il Consiglio dei commissari del popolo con l'esecutivo; il trattato permetteva di ammettere nuovi membri.",
+  "after": "Per l'articolo inglese entro il 1940 l'Unione passò dai quattro (o sei, a seconda della definizione) membri fondatori a 16 repubbliche. L'8 dicembre 1991 i presidenti di Russia, Ucraina e Bielorussia firmarono gli accordi di Belaveža, con cui tre dei quattro Stati fondatori (la RSFS Transcaucasica non esisteva più dal 1936) dichiararono sciolta l'Unione Sovietica.",
   "links": [
     {
       "slug": "trattato-di-brest-litovsk-1918",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 30 dicembre 1922. I due articoli divergono sull'elenco dei firmatari: l'italiano aggiunge Frunze. Il numero dei membri fondatori è quello dell'articolo inglese."
+    "Le introduzioni di entrambi gli articoli danno il 30 dicembre 1922 per approvazione e firma; la cronologia finale di entrambi indica invece la firma il 21 dicembre e la ratifica il 30. I due articoli divergono sull'elenco dei firmatari: l'italiano aggiunge Frunze. Il numero dei membri fondatori è quello dell'articolo inglese."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

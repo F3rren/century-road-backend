@@ -13,15 +13,15 @@
     "lon": 3.027,
     "countryCode": "BE",
     "approximate": true,
-    "note": "La battaglia prende il nome dal villaggio di Passchendaele, sull'ultimo crinale a est di Ypres, ma cominciò il 31 luglio più a ovest, a Pilckem Ridge: il pin è sul villaggio."
+    "note": "La battaglia prende il nome dal villaggio di Passchendaele, sull'ultimo crinale a est di Ypres, ma cominciò il 31 luglio con la battaglia di Pilckem Ridge: il pin è sul villaggio."
   },
-  "before": "Per l'articolo inglese la strategia fu decisa dall'Intesa nelle conferenze del novembre 1916 e del maggio 1917, ma il gabinetto di guerra approvò l'operazione nelle Fiandre del maresciallo Haig solo il 25 luglio, dopo la battaglia di Messines (7-14 giugno). Per l'articolo italiano l'obiettivo era controllare le Fiandre, con anche uno sbarco sulla costa belga presso Nieuwpoort.",
-  "event": "Il 31 luglio cominciò la battaglia di Pilckem Ridge. Per l'articolo italiano le forti piogge intralciarono i movimenti e trasformarono il campo in una palude quasi intransitabile, e Haig si accontentò del nuovo posizionamento per trascorrervi l'inverno. Dal 26 ottobre al 10 novembre il corpo canadese condusse la seconda battaglia di Passchendaele.",
-  "after": "La campagna finì a novembre, quando i canadesi catturarono Passchendaele: per l'articolo inglese l'ultimo grande attacco britannico fu il 10 novembre, per quello italiano la battaglia finì il 6 novembre. Caporetto, il 24 ottobre, costrinse britannici e francesi a inviare truppe in Italia e tolse risorse al BEF. Per l'articolo inglese le perdite britanniche furono stimate fra circa 245 000 e 300 000 uomini, quelle tedesche fra circa 200 000 e 400 000.",
+  "before": "Per l'articolo inglese la strategia fu decisa dall'Intesa nelle conferenze del novembre 1916 e del maggio 1917, ma il gabinetto di guerra non diede l'approvazione all'operazione nelle Fiandre del maresciallo Haig fino al 25 luglio (altrove lo stesso articolo parla del 21 giugno), dopo la battaglia di Messines (7-14 giugno). Per l'articolo italiano l'obiettivo era controllare le Fiandre, con anche uno sbarco sulla costa belga presso Nieuwpoort.",
+  "event": "Il 31 luglio cominciò la battaglia di Pilckem Ridge. Per l'articolo italiano, nell'attacco del 26 settembre le forti piogge intralciarono i movimenti e trasformarono il campo in una palude quasi intransitabile, e Haig si accontentò del nuovo posizionamento per trascorrervi l'inverno. Dal 26 ottobre al 10 novembre il corpo canadese condusse la seconda battaglia di Passchendaele.",
+  "after": "La campagna finì a novembre, quando i canadesi catturarono Passchendaele: per l'articolo inglese l'ultimo grande attacco britannico fu il 10 novembre, per quello italiano la battaglia finì il 6 novembre. Caporetto, il 24 ottobre, costrinse britannici e francesi a inviare truppe in Italia e tolse risorse al BEF. Per l'articolo inglese le stime sono molto discordanti: per i britannici da circa 240 000 a 300 000 (una cifra di 448 688 è stata confutata), per i tedeschi da poco meno di 200 000 a 400 000, anche se le stime più alte sembrano screditate.",
   "links": [
     {
       "slug": "offensiva-nivelle-1917",
-      "reason": "A fine aprile l'offensiva Nivelle sull'Aisne era fallita."
+      "reason": "Nella primavera del 1917 l'offensiva Nivelle sull'Aisne era fallita."
     },
     {
       "slug": "battaglia-di-caporetto-1917",
@@ -43,7 +43,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 31 luglio 1917 come inizio. La fine è diversa: 6 novembre per l'articolo italiano, 10 novembre (ultimo grande attacco britannico) per quello inglese. Le stime delle perdite sono molto discordanti e il testo dà solo l'intervallo dell'articolo inglese. Il pin è sul villaggio che dà il nome alla battaglia."
+    "Entrambi gli articoli danno il 31 luglio 1917 come inizio. L'articolo italiano indica come fine il 6 novembre nell'introduzione, ma più avanti dà anche il 10 novembre per l'azione finale; per l'inglese l'ultimo grande attacco britannico fu il 10 novembre. Le stime delle perdite sono molto discordanti e il testo riporta quelle dell'articolo inglese. Il pin è sul villaggio che dà il nome alla battaglia."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"

@@ -1,7 +1,7 @@
 {
   "slug": "rivolta-araba-1916",
   "title": "La rivolta araba",
-  "summary": "Nel giugno 1916 lo sceriffo della Mecca, Hussein ibn Ali, guida una rivolta contro l'Impero ottomano, con l'appoggio britannico, sulla base della promessa alleata di un'indipendenza araba. La rivolta, che non ebbe un ruolo militare decisivo, durò fino al 1918.",
+  "summary": "Nel giugno 1916 lo sceriffo della Mecca, Hussein ibn Ali, guida una rivolta contro l'Impero ottomano, con l'appoggio britannico, sulla base della promessa alleata di un'indipendenza araba. La rivolta durò fino al 1918; per l'articolo inglese non ebbe un ruolo militare decisivo.",
   "date": {
     "year": 1916,
     "month": 6,
@@ -15,9 +15,9 @@
     "countryCode": "SA",
     "approximate": false
   },
-  "before": "Per entrambi gli articoli molti nazionalisti arabi di Damasco e di Beirut furono arrestati e giustiziati dagli ottomani quando questi si allearono con gli Imperi centrali nel 1914. Per l'articolo inglese la rivolta si fondava sulla corrispondenza McMahon-Hussein fra il britannico Henry McMahon e Hussein ibn Ali, e l'obiettivo era uno Stato arabo indipendente e unito da Aleppo ad Aden, che il governo britannico aveva promesso di riconoscere.",
+  "before": "Per l'articolo italiano, quando gli ottomani si allearono con gli Imperi centrali nel 1914, molti nazionalisti arabi di Damasco e di Beirut furono arrestati, torturati e giustiziati; per l'articolo inglese furono arrestati e torturati, e i capi nazionalisti di Damasco giustiziati. Per l'articolo inglese la rivolta si fondava sulla corrispondenza McMahon-Hussein fra il britannico Henry McMahon e Hussein ibn Ali, e l'obiettivo era uno Stato arabo indipendente e unito da Aleppo ad Aden, che il governo britannico aveva promesso di riconoscere.",
   "event": "Per l'articolo inglese la rivolta fu avviata ufficialmente alla Mecca il 10 giugno 1916; per quello italiano Hussein concluse l'alleanza con Regno Unito e Francia verso l'8 giugno, e la data precisa è ancora dibattuta. L'esercito sharifiano, guidato da Hussein e dagli hascemiti con l'appoggio britannico, espulse i turchi da gran parte dell'Hegiaz e della Transgiordania. Per l'articolo italiano Lawrence convinse Faysal e Abd Allah a coordinare gli sforzi e ad attaccare la ferrovia dell'Hegiaz; nel 1917 Aqaba cadde in mano agli arabi, il 6 luglio.",
-  "after": "Per l'articolo inglese nel 1918 i ribelli presero Damasco e proclamarono il Regno arabo di Siria di Faysal I, che durò poco; i territori arabi ottomani furono poi divisi in mandati della Società delle Nazioni, affidati a britannici e francesi. La maggior parte degli arabi restò fedele alle autorità ottomane e l'esercito della rivolta non ebbe un ruolo militare decisivo: la liberazione fu guidata soprattutto da forze britanniche e francesi.",
+  "after": "Per l'articolo inglese nel 1918 i ribelli presero Damasco e proclamarono il Regno arabo di Siria di Faysal I, che durò poco; i territori arabi ottomani furono poi divisi in mandati della Società delle Nazioni, affidati a britannici e francesi. Sempre per l'articolo inglese la maggior parte degli arabi restò fedele alle autorità ottomane e l'esercito della rivolta non ebbe un ruolo militare decisivo: la liberazione fu guidata soprattutto da forze britanniche e francesi.",
   "links": [
     {
       "slug": "accordo-sykes-picot-1916",

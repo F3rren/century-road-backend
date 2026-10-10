@@ -14,9 +14,9 @@
     "countryCode": "GB",
     "approximate": false
   },
-  "before": "Allo scoppio della guerra l'Italia, ancora formalmente nella Triplice alleanza, dichiarò la neutralità. Per l'articolo inglese il governo di Salandra e il ministro degli Esteri Sonnino trattarono con entrambi gli schieramenti: le offerte degli Imperi centrali prevedevano il Trentino ma non l'Alto Adige, e parte del Litorale austriaco ma non Trieste. Per l'articolo italiano il patto fu firmato contro le potenze della stessa Triplice alleanza.",
-  "event": "Il 26 aprile 1915 il patto fu firmato, secondo l'articolo inglese da Sonnino e senza l'approvazione del Parlamento italiano. Per l'articolo italiano, composto di 16 articoli, prevedeva che l'Italia entrasse in guerra entro un mese; in cambio, in caso di vittoria, avrebbe ottenuto il Tirolo meridionale fino al Brennero, Trieste, le contee di Gorizia e Gradisca, l'Istria fino al Quarnaro, le isole di Cherso e Lussino e una parte della Dalmazia con Zara e Sebenico.",
-  "after": "Il patto restò segreto fino al novembre 1917, quando fu pubblicato dai bolscevichi; il governo italiano lo rese noto solo il 13 febbraio 1918 (articolo italiano). Alla Conferenza di pace di Parigi, per l'articolo inglese, gli Stati Uniti spinsero perché fosse annullato in nome dell'autodeterminazione: l'Italia ottenne Trentino-Alto Adige e Venezia Giulia, ma non le colonie e la parte di Asia Minore promesse, e il risultato alimentò il mito della «vittoria mutilata» di D'Annunzio.",
+  "before": "Allo scoppio della guerra l'Italia, ancora formalmente nella Triplice alleanza, dichiarò la neutralità. Per l'articolo inglese Salandra e il ministro degli Esteri Sonnino trattarono anche con gli Imperi centrali, in un apparente tentativo di tenerli a bada; i colloqui fallirono il 15 febbraio 1915. Per l'articolo italiano il patto fu firmato contro le potenze della stessa Triplice alleanza.",
+  "event": "Il 26 aprile 1915 il patto fu firmato a Londra dall'ambasciatore italiano Imperiali e da Grey, Cambon e Benckendorff per Regno Unito, Francia e Russia (articolo inglese); per l'articolo italiano il governo Salandra lo firmò in segreto, senza che il Parlamento ne fosse informato. Per l'articolo italiano, composto di 16 articoli, prevedeva che l'Italia entrasse in guerra entro un mese; in cambio, in caso di vittoria, avrebbe ottenuto il Tirolo meridionale fino al Brennero, Trieste, le contee di Gorizia e Gradisca, l'Istria fino al Quarnaro, le isole di Cherso e Lussino e una parte della Dalmazia con Zara e Sebenico.",
+  "after": "Per l'articolo italiano il patto restò segreto fino alla pubblicazione da parte dei bolscevichi nel novembre 1917 e il governo italiano lo rese noto solo il 13 febbraio 1918; per quello inglese una sintesi delle clausole era trapelata già alla fine di aprile 1915. Alla Conferenza di pace di Parigi, per l'articolo inglese, gli Stati Uniti spinsero perché fosse annullato in nome dell'autodeterminazione: l'Italia ottenne Trentino-Alto Adige e Venezia Giulia, ma non le colonie e la parte di Asia Minore promesse, e il risultato alimentò il mito della «vittoria mutilata» di D'Annunzio.",
   "links": [
     {
       "slug": "entrata-dell-italia-in-guerra-1915",
@@ -42,7 +42,7 @@
     }
   ],
   "notes": [
-    "Entrambi gli articoli danno il 26 aprile 1915. L'articolo inglese indica come parti il Regno Unito, la Francia e la Russia, quello italiano parla di rappresentanti della Triplice Intesa. Le promesse territoriali sono quelle dell'articolo italiano; quello inglese riassume l'esito finale."
+    "Entrambi gli articoli danno il 26 aprile 1915. L'articolo inglese indica come parti il Regno Unito, la Francia e la Russia, quello italiano parla di rappresentanti della Triplice Intesa. Le promesse territoriali sono quelle dell'articolo italiano, più dettagliato; l'articolo inglese le descrive in modo diverso e più sintetico e riassume anche l'esito finale."
   ],
   "provenance": {
     "author": "Century Road, bozza redatta con IA"
