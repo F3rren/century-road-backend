@@ -1,0 +1,50 @@
+{
+  "slug": "presa-di-gorizia-1916",
+  "title": "La presa di Gorizia",
+  "summary": "Il 6 agosto 1916 l'esercito italiano attacca sull'Isonzo la città di Gorizia e le alture che la difendono; l'8 agosto i primi reparti entrano in città. È il primo grande successo italiano della guerra, accolto con entusiasmo, ma senza grandi effetti strategici.",
+  "date": {
+    "year": 1916,
+    "month": 8,
+    "day": 8
+  },
+  "place": {
+    "name": "Gorizia, Italia",
+    "lat": 45.9408,
+    "lon": 13.6205,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Cadorna dovette rimandare la sesta battaglia dell'Isonzo, prevista per metà giugno, a causa dell'offensiva austro-ungarica degli Altipiani. Dopo averla fermata, concentrò i suoi sforzi sul campo trincerato di Gorizia e sulle alture del Sabotino, del monte San Michele e del Calvario. Per l'articolo italiano la 3ª Armata del Duca d'Aosta contava sedici divisioni, 1250 cannoni e 770 mortai.",
+  "event": "L'offensiva cominciò il 4 agosto per l'articolo italiano, il 6 per quello inglese. Il Sabotino e il San Michele furono presi e le difese attorno a Gorizia crollarono; l'8 agosto gli austro-ungarici si ritirarono sulla riva sinistra dell'Isonzo e i primi reparti italiani entrarono in città. Per l'articolo italiano una pattuglia del 28º fanteria entrò verso le 10 dell'8 agosto, il primo reparto organico occupò la periferia alle 14.30 del 9 e all'alba del 9 in città non c'erano più austro-ungarici.",
+  "after": "Per l'articolo italiano la battaglia finì il 17 agosto; gli italiani persero 51 222 uomini, gli austro-ungarici 37 458 più circa 8000 prigionieri. Fu accolta in tutta Italia come la prima vera vittoria della guerra, ma gli austro-ungarici si ritirarono su una nuova linea ben difesa, e per l'articolo italiano non ebbe effetti significativi sulla situazione strategica. L'articolo inglese ricorda che l'Italia dichiarò guerra alla Germania il 28 agosto.",
+  "links": [
+    {
+      "slug": "strafexpedition-1916",
+      "reason": "Pochi mesi prima, in maggio, l'offensiva austro-ungarica degli Altipiani aveva fatto rinviare l'attacco."
+    },
+    {
+      "slug": "battaglia-di-caporetto-1917",
+      "reason": "Nell'ottobre 1917 Caporetto ricaccia l'esercito italiano molto indietro."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Gorizia (1916) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Gorizia_(1916)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sesta battaglia dell'Isonzo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sesta_battaglia_dell'Isonzo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno 8 agosto è quello in cui i due articoli collocano l'ingresso dei primi reparti italiani a Gorizia; per l'articolo italiano il primo reparto organico occupò la periferia alle 14.30 del 9 e all'alba del 9 gli austro-ungarici avevano lasciato la città. I due articoli divergono sull'inizio (4 o 6 agosto). Le cifre delle perdite sono quelle dell'articolo italiano; quello inglese non ne dà."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

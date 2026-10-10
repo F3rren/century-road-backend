@@ -1,0 +1,50 @@
+{
+  "slug": "conferenza-di-pace-di-parigi-1919",
+  "title": "La conferenza di pace di Parigi",
+  "summary": "Il 18 gennaio 1919 si apre a Parigi la conferenza di pace in cui i vincitori della prima guerra mondiale definiscono i trattati con gli Stati sconfitti. Dominata da Stati Uniti, Francia e Gran Bretagna, ridisegna la carta d'Europa e crea la Società delle Nazioni.",
+  "date": {
+    "year": 1919,
+    "month": 1,
+    "day": 18
+  },
+  "place": {
+    "name": "Parigi, Francia",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese Wilson aveva incaricato un gruppo di circa 150 studiosi di preparare i principi per i negoziati. Il risultato, i quattordici punti, fu la base dei termini della resa tedesca alla conferenza, come lo era stata nei negoziati dell'armistizio dell'11 novembre 1918.",
+  "event": "La conferenza si aprì il 18 gennaio 1919 e durò fino al 21 gennaio 1920, con alcuni intervalli (articolo italiano). Per l'articolo inglese vi presero parte diplomatici di 32 paesi e nazionalità, ma Germania, Austria-Ungheria, Turchia e Bulgaria non ebbero voce; per quello italiano parteciparono solo i vincitori, e la Russia si era ritirata. L'Italia, pur tra le quattro grandi, ebbe un ruolo marginale.",
+  "after": "Per l'articolo inglese la conferenza portò alla Società delle Nazioni e a cinque trattati di pace; i possedimenti coloniali tedeschi e ottomani passarono come mandati soprattutto a Gran Bretagna e Francia, furono imposte riparazioni alla Germania e furono tracciati nuovi confini. Per l'articolo italiano nacquero Stati come la Cecoslovacchia e la Jugoslavia. Il risultato principale fu il trattato di Versailles, con l'articolo 231 sulla responsabilità tedesca.",
+  "links": [
+    {
+      "slug": "quattordici-punti-di-wilson-1918",
+      "reason": "Un anno prima, nel gennaio 1918, Wilson aveva esposto i quattordici punti."
+    },
+    {
+      "slug": "trattato-di-versailles-1919",
+      "reason": "Cinque mesi dopo, il 28 giugno, la Germania firma il trattato di Versailles."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Paris Peace Conference (1919–1920) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paris_Peace_Conference_(1919–1920)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di pace di Parigi (1919) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_pace_di_Parigi_(1919)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà l'apertura il 18 gennaio 1919 e la fine il 21 gennaio 1920; quello inglese parla di incontri formali e informali nel 1919 e nel 1920. Sui partecipanti i due articoli divergono, e il testo attribuisce a ciascuno la sua versione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

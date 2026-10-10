@@ -1,0 +1,51 @@
+{
+  "slug": "offensiva-nivelle-1917",
+  "title": "L'offensiva Nivelle",
+  "summary": "Il 16 aprile 1917 l'esercito francese, guidato dal generale Nivelle, attacca sullo Chemin des Dames, in Francia, con l'obiettivo di sfondare in 48 ore e chiudere la guerra. L'offensiva fallisce con perdite pesanti: seguono ammutinamenti nell'esercito e la destituzione di Nivelle.",
+  "date": {
+    "year": 1917,
+    "month": 4,
+    "day": 16
+  },
+  "place": {
+    "name": "Chemin des Dames, Francia",
+    "lat": 49.44,
+    "lon": 3.72,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Il Chemin des Dames è un crinale e l'offensiva si svolse su un fronte molto più ampio: il pin è un punto sul crinale e non indica dove avvennero i singoli attacchi."
+  },
+  "before": "Nel dicembre 1916 Nivelle sostituì Joffre alla guida delle armate francesi, dopo Verdun e la Somme. Sostenne che un grande assalto avrebbe vinto la guerra in 48 ore, con perdite previste attorno a 10 000 uomini. Per l'articolo italiano il piano ebbe l'approvazione del primo ministro Ribot nonostante la forte disapprovazione degli altri alti ufficiali, e quando fu attuato i tedeschi ne erano ormai a conoscenza.",
+  "event": "L'attacco principale cominciò il 16 aprile con un grande bombardamento, seguito da fanteria e carri armati. Per l'articolo italiano le mitragliatrici tedesche fermarono la fanteria in campo aperto e i carri furono in gran parte distrutti; per l'articolo inglese l'offensiva ebbe un notevole successo tattico, ma il tentativo di imporre ai tedeschi una battaglia decisiva fallì e il 25 aprile era sospesa. Le perdite francesi dal 16 al 25 aprile furono 118 000 secondo Pierrefeu (1919) e 134 000 secondo Doughty (2005), citati dall'articolo inglese.",
+  "after": "Per l'articolo inglese il fallimento e le perdite portarono a ammutinamenti nell'esercito francese, alla destituzione di Nivelle e alla sua sostituzione con Philippe Pétain, e a una strategia difensiva; entro il 28 maggio ci furono ammutinamenti in quattro divisioni. Per l'articolo italiano le perdite causarono una vasta diserzione. Più a nord, gli attacchi preliminari degli inglesi ad Arras avevano ottenuto la più profonda avanzata dall'inizio della guerra di trincea.",
+  "links": [
+    {
+      "slug": "battaglia-di-verdun-1916",
+      "reason": "Nel 1916 Verdun e la Somme avevano portato Nivelle al comando dell'esercito francese."
+    },
+    {
+      "slug": "battaglia-di-passchendaele-1917",
+      "reason": "Il 31 luglio gli inglesi attaccano nelle Fiandre, nella battaglia di Passchendaele."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nivelle offensive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nivelle_offensive",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva Nivelle - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_Nivelle",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 16 aprile 1917 per l'attacco principale sull'Aisne; gli attacchi preliminari di Saint-Quentin e di Arras erano cominciati prima. L'articolo inglese dà come durata dell'offensiva dal 16 aprile al 9 maggio. L'articolo italiano è breve: il testo si appoggia soprattutto a quello inglese per gli ammutinamenti e le cifre."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

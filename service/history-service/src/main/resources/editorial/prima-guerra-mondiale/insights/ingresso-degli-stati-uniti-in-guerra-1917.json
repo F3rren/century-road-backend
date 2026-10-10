@@ -1,0 +1,50 @@
+{
+  "slug": "ingresso-degli-stati-uniti-in-guerra-1917",
+  "title": "Gli Stati Uniti entrano in guerra",
+  "summary": "Il 6 aprile 1917 il Congresso degli Stati Uniti dichiara guerra alla Germania, dopo la ripresa della guerra sottomarina indiscriminata e la pubblicazione del telegramma Zimmermann. Wilson aveva chiesto «una guerra per porre fine a tutte le guerre» e per «rendere il mondo sicuro per la democrazia».",
+  "date": {
+    "year": 1917,
+    "month": 4,
+    "day": 6
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese l'opinione pubblica americana voleva restare fuori dalla guerra, ma dopo le notizie sulle atrocità in Belgio e l'affondamento del Lusitania cresceva l'ostilità verso la Germania. Le banche americane avevano concesso grandi prestiti agli Alleati, e le esportazioni verso i paesi in guerra erano salite da 824,8 milioni di dollari nel 1913 a 2,25 miliardi nel 1917. Wilson fu rieletto nel 1916 su un programma contrario alla guerra. A gennaio 1917 la Germania decise di riprendere la guerra sottomarina indiscriminata, comunicata agli americani il 31 gennaio per l'articolo inglese; per l'articolo italiano gli Stati Uniti ruppero le relazioni diplomatiche pochi giorni dopo.",
+  "event": "Wilson chiese al Congresso «una guerra per porre fine a tutte le guerre», per «rendere il mondo sicuro per la democrazia», e il 6 aprile 1917 il Congresso votò la dichiarazione di guerra alla Germania. Per l'articolo inglese la pubblicazione del telegramma Zimmermann aveva indignato gli americani proprio mentre i sommergibili tedeschi cominciavano a affondare navi mercantili statunitensi.",
+  "after": "Per l'articolo inglese le truppe statunitensi cominciarono ad arrivare in Europa più tardi nello stesso anno. Per l'articolo italiano, il presidente Wilson rimasto fino allora fedele alla neutralità aveva «rotto gli indugi» dopo l'affondamento deliberato di navi statunitensi e il tentativo tedesco di istigare il Messico.",
+  "links": [
+    {
+      "slug": "telegramma-zimmermann-1917",
+      "reason": "Meno di tre mesi prima, nel gennaio 1917, il telegramma Zimmermann proponeva un'alleanza tra Germania e Messico."
+    },
+    {
+      "slug": "quattordici-punti-di-wilson-1918",
+      "reason": "Nove mesi dopo, nel gennaio 1918, Wilson presenta i quattordici punti per la pace."
+    }
+  ],
+  "sources": [
+    {
+      "title": "American entry into World War I - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/American_entry_into_World_War_I",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Prima guerra mondiale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Prima_guerra_mondiale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà il 6 aprile 1917 come giorno del voto del Congresso; quello italiano dedicato al tema è la voce generale sulla prima guerra mondiale, per cui il testo si appoggia anche all'articolo sul telegramma Zimmermann per la sequenza dei giorni. La data della ripresa della guerra sottomarina è diversa nei due articoli: 31 gennaio per l'inglese (data della comunicazione), 1º febbraio per l'italiano. Il pin è su Washington."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

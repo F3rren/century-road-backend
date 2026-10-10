@@ -1,0 +1,50 @@
+{
+  "slug": "crisi-del-creditanstalt-1931",
+  "title": "La crisi del Creditanstalt",
+  "summary": "L'11 maggio 1931 il Creditanstalt, la maggiore banca austriaca, dichiara di non poter pubblicare il bilancio del 1930: ne nasce un panico che porta al suo crollo, uno dei primi grandi crolli bancari della Grande depressione per l'articolo inglese.",
+  "date": {
+    "year": 1931,
+    "month": 5,
+    "day": 11
+  },
+  "place": {
+    "name": "Vienna, Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "countryCode": "AT",
+    "approximate": false
+  },
+  "before": "La banca era stata fondata nel 1855 da Salomon Mayer von Rothschild e dal figlio Anselm, e fino al 1931 fu guidata da membri della famiglia Rothschild. Nel 1929, per l'articolo inglese, su pressione del governo austriaco guidato da Johann Schober rilevò la Bodencreditanstalt, in difficoltà, ereditandone i problemi.",
+  "event": "L'11 maggio 1931 la banca dichiarò di non poter pubblicare i conti del 1930, scatenando il panico. Rappresentava il 27% del totale degli attivi del sistema bancario austriaco, pari al 16% del prodotto interno lordo, e perciò non si poteva farla assorbire da un'altra banca. Il cancelliere Otto Ender organizzò un salvataggio con costi ripartiti fra governo, Banca nazionale austriaca e famiglia Rothschild, rifiutando la nazionalizzazione proposta dai socialdemocratici.",
+  "after": "Nel 1934 il governo austriaco ne organizzò la fusione con il Wiener Bankverein; dopo l'Anschluss del 1938 la banca fu subito presa di mira per ragioni finanziarie e razziali e passò sotto il controllo della Deutsche Bank. Fu nazionalizzata nel 1945 e acquisita nel 1997 da Bank Austria. Per l'articolo italiano l'istituto operò dal 1855 al 2002.",
+  "links": [
+    {
+      "slug": "crollo-di-wall-street-1929",
+      "reason": "Circa un anno e mezzo prima, in ottobre 1929, il crollo di Wall Street."
+    },
+    {
+      "slug": "anschluss-1938",
+      "reason": "Nel 1938 l'Anschluss: la banca è subito presa di mira."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Creditanstalt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Creditanstalt",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Creditanstalt - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Creditanstalt",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'11 maggio 1931 è dato dall'articolo inglese; l'articolo italiano, molto breve, non indica il giorno. Il testo si appoggia soprattutto all'articolo inglese. Il pin è su Vienna, dove aveva sede la banca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

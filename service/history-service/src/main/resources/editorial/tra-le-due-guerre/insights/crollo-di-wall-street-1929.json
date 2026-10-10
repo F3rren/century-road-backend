@@ -1,0 +1,50 @@
+{
+  "slug": "crollo-di-wall-street-1929",
+  "title": "Il crollo di Wall Street",
+  "summary": "Il 24 ottobre 1929, il «giovedì nero», alla Borsa di New York i prezzi delle azioni crollano e si scambia un record di 12,9 milioni di titoli. Il 29 ottobre, «martedì nero», il crollo continua: la fiducia nel sistema bancario americano si incrina e comincia la Grande depressione.",
+  "date": {
+    "year": 1929,
+    "month": 10,
+    "day": 24
+  },
+  "place": {
+    "name": "Wall Street, New York",
+    "lat": 40.7069,
+    "lon": -74.0113,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Negli anni Venti, per l'articolo inglese, molti profitti industriali erano stati investiti in speculazione; l'indice Dow Jones era decuplicato in nove anni e raggiunse il massimo di 381,17 il 3 settembre 1929. Nel 1929 l'agricoltura era in crisi per sovrapproduzione e le fabbriche riducevano la produzione, ma gli investitori continuavano a comprare azioni. Per l'articolo italiano non erano stati posti limiti alle attività speculative di banche e borsa. A settembre gli azionisti più esperti cominciarono a vendere.",
+  "event": "Un calo improvviso dei prezzi cominciò nel pomeriggio del 23 ottobre. Il 24 ottobre, il «giovedì nero», furono scambiati 12,9 milioni di titoli. Dopo quel giorno i principali banchieri si unirono per comprare azioni a prezzi superiori al mercato, e per un breve periodo ci fu una ripresa. Il 29 ottobre, il «martedì nero», furono scambiati 16,4 milioni di titoli; per l'articolo italiano fu quello il giorno del vero crollo.",
+  "after": "Per l'articolo italiano il panico spinse i piccoli risparmiatori a correre alle banche, provocando una crisi di liquidità e l'insolvenza di molte banche. Per l'articolo inglese il calo continuò fino all'8 luglio 1932, quando il mercato aveva perso circa il 90% del valore precedente; per quello italiano il Dow Jones non tornò ai livelli del 1929 prima della fine del 1954. Il Congresso rispose nel 1933 con la legge Glass-Steagall, che separò banche commerciali e d'investimento, e con le leggi del 1933 e 1934 sui titoli, che crearono la SEC.",
+  "links": [
+    {
+      "slug": "tariffe-smoot-hawley-1930",
+      "reason": "Quasi otto mesi dopo, il 17 giugno 1930, gli Stati Uniti aumentano i dazi con la legge Smoot-Hawley."
+    },
+    {
+      "slug": "new-deal-1933",
+      "reason": "Più di tre anni dopo, il 4 marzo 1933, Roosevelt assume la presidenza e avvia il New Deal."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wall Street crash of 1929 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wall_Street_crash_of_1929",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Grande depressione - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Grande_depressione",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il giovedì 24 ottobre 1929 come primo crollo e il 29 ottobre per il martedì nero. L'articolo italiano è la voce generale sulla Grande depressione; le cifre degli scambi sono quelle dell'articolo inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

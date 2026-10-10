@@ -1,0 +1,50 @@
+{
+  "slug": "attentato-di-sarajevo-1914",
+  "title": "L'attentato di Sarajevo",
+  "summary": "Il 28 giugno 1914 a Sarajevo Gavrilo Princip, giovane del gruppo Giovane Bosnia, spara all'arciduca Francesco Ferdinando, erede al trono austro-ungarico, e alla moglie Sofia: muoiono entrambi. L'omicidio innesca la crisi diplomatica che nel giro di poche settimane porta alla guerra in Europa.",
+  "date": {
+    "year": 1914,
+    "month": 6,
+    "day": 28
+  },
+  "place": {
+    "name": "Ponte Latino, Sarajevo",
+    "lat": 43.858,
+    "lon": 18.4294,
+    "countryCode": "BA",
+    "approximate": false
+  },
+  "before": "Dal 1878, in base al trattato di Berlino, l'Austria-Ungheria amministrava la Bosnia-Erzegovina, ancora formalmente sotto la sovranità ottomana, e nel 1908 la annesse: per l'articolo italiano, mortificando le ambizioni nazionali serbe. Il 28 giugno era l'anniversario di matrimonio dell'arciduca e di Sofia, ed era anche la festa serba di san Vito, il Vidovdan, che ricorda la battaglia del Kosovo del 1389 contro gli ottomani. Un gruppo di giovani, tra cui Princip, preparò l'attentato; i due articoli lo collegano alla Mano nera, società segreta nazionalista serba.",
+  "event": "Quella mattina Nedeljko Čabrinović lanciò una bomba contro l'auto dell'arciduca: rimbalzò sulla capote ripiegata ed esplose sotto la vettura seguente. Per l'articolo inglese ferì da 16 a 20 persone, per quello italiano due occupanti di quell'auto e alcuni spettatori. Dopo il ricevimento in municipio, all'altezza del Ponte Latino l'autista sbagliò strada e l'auto si fermò: Princip sparò due colpi da distanza ravvicinata. Sofia morì per prima, Francesco Ferdinando poco dopo.",
+  "after": "Princip fu arrestato e processato nell'ottobre 1914: per l'articolo inglese, troppo giovane per essere giustiziato, fu condannato a vent'anni di carcere e morì di tubercolosi in prigione. Il 5 e 6 luglio la Germania garantì il proprio appoggio incondizionato all'Austria-Ungheria, il cosiddetto «assegno in bianco» dell'articolo italiano, e la crisi si avviò verso l'ultimatum alla Serbia.",
+  "links": [
+    {
+      "slug": "ultimatum-austriaco-alla-serbia-1914",
+      "reason": "Venticinque giorni dopo, il 23 luglio, l'Austria-Ungheria presenta alla Serbia un ultimatum."
+    },
+    {
+      "slug": "dichiarazione-di-guerra-alla-serbia-1914",
+      "reason": "Un mese dopo, il 28 luglio, l'Austria-Ungheria dichiara guerra alla Serbia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Assassination of Archduke Franz Ferdinand - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Assassination_of_Archduke_Franz_Ferdinand",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Attentato di Sarajevo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Attentato_di_Sarajevo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 28 giugno 1914. Sui particolari i due articoli non concordano: feriti dalla prima bomba, ora e ordine delle morti, ordine delle auto. Il testo attribuisce a ciascun articolo le sue cifre e non riporta gli orari. Il pin è sul Ponte Latino, dove l'auto si fermò."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

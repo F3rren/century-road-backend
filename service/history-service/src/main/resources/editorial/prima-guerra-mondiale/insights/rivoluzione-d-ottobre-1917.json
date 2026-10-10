@@ -1,0 +1,50 @@
+{
+  "slug": "rivoluzione-d-ottobre-1917",
+  "title": "La rivoluzione d'ottobre",
+  "summary": "Il 7 novembre 1917, il 25 ottobre nel calendario giuliano, a Pietrogrado i bolscevichi di Lenin e Trockij, con le guardie rosse e i marinai, rovesciano il governo provvisorio di Kerenskij. Nasce il governo sovietico e comincia la guerra civile russa.",
+  "date": {
+    "year": 1917,
+    "month": 11,
+    "day": 7
+  },
+  "place": {
+    "name": "Pietrogrado (San Pietroburgo), Russia",
+    "lat": 59.9343,
+    "lon": 30.3351,
+    "countryCode": "RU",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, dopo il suo arrivo a Pietrogrado il 3 aprile 1917 Lenin pubblicò le Tesi di aprile, che chiedevano ai bolscevichi di prendere il potere e di porre fine alla guerra. Il governo provvisorio restava impopolare perché continuava la guerra; a luglio aveva ucciso centinaia di manifestanti. Sul voto per l'insurrezione i due articoli indicano organi diversi: per l'articolo inglese il 23 ottobre gregoriano (10 giuliano) il Soviet di Pietrogrado, guidato da Trockij, votò a favore; per quello italiano fu il Comitato centrale del partito bolscevico, con un voto di 10 a 2.",
+  "event": "Il 24 ottobre giuliano il governo chiuse alcuni giornali e Pietrogrado; il giorno dopo, per l'articolo inglese, scoppiò l'insurrezione: marinai bolscevichi entrarono nel porto, decine di migliaia di soldati si sollevarono e le guardie rosse del Comitato militare rivoluzionario occuparono gli edifici del governo. Per l'articolo italiano Lenin proclamò alle 10 il rovesciamento del governo e il passaggio del potere al Comitato militare rivoluzionario; la sera gli insorti occuparono il Palazzo d'Inverno e arrestarono i ministri, mentre Kerenskij era già riuscito a lasciare la città. La fase iniziale ebbe, per l'articolo inglese, quasi nessuna vittima.",
+  "after": "Per l'articolo italiano il Congresso dei Soviet, riunito allo Smol'nyj, ricevette formalmente il potere, e i bolscevichi formarono un governo presieduto da Lenin, estendendo progressivamente il loro potere sul territorio del vecchio impero zarista. La reazione armata dei controrivoluzionari e l'intervento di potenze straniere portarono alla guerra civile, che per l'articolo italiano si concluse con la vittoria bolscevica nel 1922.",
+  "links": [
+    {
+      "slug": "rivoluzione-di-febbraio-1917",
+      "reason": "Quasi otto mesi prima, in marzo, la rivoluzione di febbraio aveva rovesciato lo zar."
+    },
+    {
+      "slug": "trattato-di-brest-litovsk-1918",
+      "reason": "Meno di quattro mesi dopo, il 3 marzo 1918, la Russia bolscevica firma la pace di Brest-Litovsk."
+    }
+  ],
+  "sources": [
+    {
+      "title": "October Revolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/October_Revolution",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione d'ottobre - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_d'ottobre",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 7 novembre 1917 (25 ottobre giuliano) come inizio dell'insurrezione; per l'articolo italiano l'azione partì nella notte fra il 6 e il 7. Il Palazzo d'Inverno fu occupato la sera, secondo l'articolo italiano, e l'8 novembre secondo quello inglese. Il giorno indicato è il gregoriano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

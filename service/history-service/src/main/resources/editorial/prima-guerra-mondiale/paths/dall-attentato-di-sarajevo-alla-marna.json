@@ -1,0 +1,33 @@
+{
+  "slug": "dall-attentato-di-sarajevo-alla-marna",
+  "title": "Dall'attentato di Sarajevo alla Marna",
+  "tagline": "Da un colpo di pistola a Sarajevo alla guerra europea in pochi mesi: l'ultimatum, le dichiarazioni di guerra, il Belgio, le Frontiere e la Marna.",
+  "intro": "Il percorso segue i primi mesi della prima guerra mondiale: l'attentato di Sarajevo, l'ultimatum e la dichiarazione di guerra alla Serbia, l'invasione tedesca del Belgio, la battaglia delle Frontiere e la prima battaglia della Marna.\n\nSu date e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "attentato-di-sarajevo-1914",
+      "narrative": "Si parte dal 28 giugno 1914: a Sarajevo Princip uccide l'arciduca Francesco Ferdinando e la moglie Sofia."
+    },
+    {
+      "insight": "ultimatum-austriaco-alla-serbia-1914",
+      "narrative": "Il 23 luglio l'Austria-Ungheria presenta alla Serbia un ultimatum in dieci punti."
+    },
+    {
+      "insight": "dichiarazione-di-guerra-alla-serbia-1914",
+      "narrative": "Il 28 luglio Vienna dichiara guerra a Belgrado e le alleanze si mettono in moto."
+    },
+    {
+      "insight": "invasione-del-belgio-1914",
+      "narrative": "Il 4 agosto la Germania invade il Belgio neutrale e la Gran Bretagna entra in guerra."
+    },
+    {
+      "insight": "battaglia-delle-frontiere-1914",
+      "narrative": "In agosto i francesi attaccano alle frontiere e sono sconfitti con perdite enormi."
+    },
+    {
+      "insight": "battaglia-della-marna-1914",
+      "narrative": "A settembre il contrattacco sulla Marna ferma l'avanzata tedesca verso Parigi."
+    }
+  ]
+}

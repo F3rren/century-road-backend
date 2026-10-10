@@ -1,0 +1,50 @@
+{
+  "slug": "battaglia-di-verdun-1916",
+  "title": "La battaglia di Verdun",
+  "summary": "Il 21 febbraio 1916 la Germania attacca le difese francesi di Verdun. Per l'articolo italiano l'idea era «dissanguare goccia a goccia» l'esercito francese. La battaglia dura fino al 18 dicembre ed è, per l'articolo inglese, la più lunga della guerra.",
+  "date": {
+    "year": 1916,
+    "month": 2,
+    "day": 21
+  },
+  "place": {
+    "name": "Verdun, Francia",
+    "lat": 49.16,
+    "lon": 5.382,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Il capo di stato maggiore tedesco, Erich von Falkenhayn, voleva spingere i francesi a impegnare le riserve nella difesa di una posizione che non avrebbero abbandonato, subendo perdite enormi. Per l'articolo italiano i francesi avevano smobilitato in parte i forti: Douaumont, che allo scoppio della guerra aveva 500 uomini, ne contava 56 quando cominciò la battaglia. Il maltempo ritardò l'attacco fino al 21 febbraio.",
+  "event": "Il 21 febbraio, dopo un bombardamento, la 5ª Armata tedesca attaccò le difese francesi sulla riva destra della Mosa. Il 25 febbraio, dopo quattro giorni, i tedeschi conquistarono Fort Douaumont. Per l'articolo inglese, entro il 6 marzo 20 divisioni e mezza francesi erano nella regione fortificata e Philippe Pétain ordinò di non ritirarsi e di rispondere con contrattacchi ai tedeschi.",
+  "after": "Per l'articolo inglese i tedeschi presero Fort Vaux in giugno e arrivarono a 4 chilometri dalla cittadella; in luglio l'offensiva fu limitata per rifornire la battaglia della Somme, e fra settembre e dicembre i francesi riconquistarono molto terreno, tornando a Douaumont e Vaux. Le stime delle perdite variano: per l'articolo inglese 377 231 francesi e 337 000 tedeschi (Heer e Naumann, 2000); per quello italiano, a fine battaglia, circa 315 000 francesi e 281 333 tedeschi.",
+  "links": [
+    {
+      "slug": "battaglia-della-somme-1916",
+      "reason": "Il 1º luglio, mentre a Verdun si combatte ancora, gli Alleati attaccano sulla Somme."
+    },
+    {
+      "slug": "offensiva-nivelle-1917",
+      "reason": "Nel 1917 il generale Nivelle, che dopo Verdun e la Somme aveva sostituito Joffre, lancia la sua offensiva."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Verdun - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Verdun",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Verdun - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Verdun",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio il 21 febbraio 1916 e la fine il 18 dicembre; l'articolo inglese sulla battaglia della Somme dà il 16 dicembre. Le stime delle perdite sono diverse e il testo le attribuisce a ciascun articolo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "armistizio-di-salonicco-1918",
+  "title": "L'armistizio di Salonicco",
+  "summary": "Il 29 settembre 1918 la Bulgaria firma a Salonicco un armistizio con gli Alleati, dopo il crollo di parte del suo esercito davanti all'offensiva alleata del Vardar. L'armistizio pone fine, di fatto, alla partecipazione bulgara alla guerra.",
+  "date": {
+    "year": 1918,
+    "month": 9,
+    "day": 29
+  },
+  "place": {
+    "name": "Salonicco, Grecia",
+    "lat": 40.6401,
+    "lon": 22.9444,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "La Bulgaria era entrata in guerra a fianco degli Imperi centrali il 14 ottobre 1915 (articolo inglese), occupando parti della Serbia. Nel settembre 1918 l'offensiva alleata del Vardar fece crollare parte dell'esercito bulgaro: per l'articolo inglese truppe in rivolta proclamarono una repubblica a Radomir, e il governo chiese il cessate il fuoco il 24 settembre.",
+  "event": "L'armistizio fu firmato il 29 settembre, alle 22.50 per l'articolo inglese, al quartier generale dell'Armata alleata d'Oriente a Salonicco. Per l'articolo italiano firmarono il generale francese Franchet d'Espèrey per l'Intesa e, per la Bulgaria, Ivan Lukov, Andrej Ljapčev e Simeon Radev. Entrò in vigore a mezzogiorno del 30 settembre.",
+  "after": "I termini prevedevano la smobilitazione immediata, lo sgombero dei territori serbi e greci occupati, limiti alla consistenza dell'esercito bulgaro e la restituzione dell'equipaggiamento militare sottratto ai greci nel 1916. L'armistizio restò in vigore fino al trattato di Neuilly. Per l'articolo inglese i francesi avrebbero inviato truppe in Romania e britannici e greci nella Turchia europea, ancora in guerra con gli Alleati.",
+  "links": [
+    {
+      "slug": "conquista-della-serbia-1915",
+      "reason": "Quasi tre anni prima, nell'ottobre 1915, la Bulgaria aveva invaso la Serbia con gli Imperi centrali."
+    },
+    {
+      "slug": "armistizio-di-mudros-1918",
+      "reason": "Un mese dopo, il 30 ottobre, l'Impero ottomano firma l'armistizio di Mudros."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armistice of Salonica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_Salonica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Armistizio di Salonicco - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Armistizio_di_Salonicco",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 29 settembre 1918 per la firma; per l'articolo inglese entrò in vigore a mezzogiorno del 30. L'articolo italiano è molto breve e tratta solo i termini: il testo si appoggia soprattutto a quello inglese per la cronologia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

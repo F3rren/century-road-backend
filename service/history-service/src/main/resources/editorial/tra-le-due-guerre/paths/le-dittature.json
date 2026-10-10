@@ -1,0 +1,37 @@
+{
+  "slug": "le-dittature",
+  "title": "Le dittature",
+  "tagline": "Dal 1922 al 1935: la marcia su Roma, la nascita dell'URSS, il delitto Matteotti e la costruzione della dittatura nazista.",
+  "intro": "Il percorso segue la nascita dei regimi autoritari in Europa: la marcia su Roma, la nascita dell'Unione Sovietica, il delitto Matteotti, Hitler cancelliere, l'incendio del Reichstag, la notte dei lunghi coltelli e le leggi di Norimberga.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "TRA_LE_DUE_GUERRE",
+  "stops": [
+    {
+      "insight": "marcia-su-roma-1922",
+      "narrative": "Si parte dall'ottobre 1922: i fascisti marciano su Roma e Mussolini ottiene il governo."
+    },
+    {
+      "insight": "nascita-dell-urss-1922",
+      "narrative": "Nel dicembre 1922 nasce l'Unione Sovietica."
+    },
+    {
+      "insight": "delitto-matteotti-1924",
+      "narrative": "Nel giugno 1924 viene ucciso il deputato Giacomo Matteotti."
+    },
+    {
+      "insight": "hitler-cancelliere-1933",
+      "narrative": "Il 30 gennaio 1933 Hitler diventa cancelliere."
+    },
+    {
+      "insight": "incendio-del-reichstag-1933",
+      "narrative": "Il 27 febbraio 1933 brucia il Reichstag."
+    },
+    {
+      "insight": "notte-dei-lunghi-coltelli-1934",
+      "narrative": "Nel giugno 1934 Hitler elimina i vertici delle SA."
+    },
+    {
+      "insight": "leggi-di-norimberga-1935",
+      "narrative": "Nel settembre 1935 le leggi di Norimberga."
+    }
+  ]
+}

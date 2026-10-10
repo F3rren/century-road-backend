@@ -1,0 +1,50 @@
+{
+  "slug": "trattato-di-sevres-1920",
+  "title": "Il trattato di Sèvres",
+  "summary": "Il 10 agosto 1920 a Sèvres, in Francia, le potenze alleate e l'Impero ottomano firmano il trattato di pace, che riduce l'impero a uno Stato modesto in Anatolia. Non viene mai ratificato e provoca la reazione dei nazionalisti turchi di Mustafa Kemal e la guerra d'indipendenza.",
+  "date": {
+    "year": 1920,
+    "month": 8,
+    "day": 10
+  },
+  "place": {
+    "name": "Sèvres, Francia",
+    "lat": 48.8238,
+    "lon": 2.2204,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese le ostilità erano già finite con l'armistizio di Mudros. Per l'articolo italiano, dopo l'occupazione di Smirne il 21 maggio 1919 la Grecia aveva il controllo dell'area.",
+  "event": "Il trattato fu firmato il 10 agosto 1920 in un'ala della Manifattura nazionale di Sèvres. Per l'articolo inglese avrebbe obbligato a cedere grandi parti del territorio ottomano a Francia, Regno Unito, Grecia e Italia, con ampie zone di occupazione; firmarono George Dixon Grahame per il Regno Unito, Alexandre Millerand per la Francia e Lelio Longare per l'Italia. Per l'articolo italiano l'impero fu ridotto all'Anatolia, privato dei territori arabi e della sovranità sugli Stretti, e la Grecia ebbe Smirne e gran parte della Tracia.",
+  "after": "Il trattato non fu mai ratificato: per l'articolo italiano per l'opposizione dei nazionalisti turchi, per quello inglese anche la Grecia non lo ratificò. Per l'articolo inglese la Grande Assemblea nazionale di Mustafa Kemal tolse la cittadinanza ai firmatari e avviò la guerra d'indipendenza; il trattato fu sostituito dal trattato di Losanna del 1923, che portò alla Repubblica di Turchia.",
+  "links": [
+    {
+      "slug": "armistizio-di-mudros-1918",
+      "reason": "Le ostilità erano già finite con l'armistizio di Mudros del 30 ottobre 1918."
+    },
+    {
+      "slug": "trattato-di-versailles-1919",
+      "reason": "Oltre un anno dopo il trattato di Versailles con la Germania, il 28 giugno 1919."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Sèvres - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Sèvres",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Sèvres - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Sèvres",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 10 agosto 1920. Sul perché non fu ratificato i due articoli indicano ragioni diverse, e il testo le attribuisce a ciascuno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

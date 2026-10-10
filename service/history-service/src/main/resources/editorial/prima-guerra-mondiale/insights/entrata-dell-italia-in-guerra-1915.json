@@ -1,0 +1,50 @@
+{
+  "slug": "entrata-dell-italia-in-guerra-1915",
+  "title": "L'Italia entra in guerra",
+  "summary": "Il 23 maggio 1915 l'Italia dichiara guerra all'Austria-Ungheria; le operazioni cominciano il giorno dopo. La decisione arriva dopo dieci mesi di neutralità e settimane di scontro fra interventisti e neutralisti.",
+  "date": {
+    "year": 1915,
+    "month": 5,
+    "day": 23
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Allo scoppio della guerra l'Italia si dichiarò neutrale. Per l'articolo italiano il 3 maggio 1915 la Triplice alleanza fu denunciata. A metà maggio, per l'articolo inglese, Giolitti e la maggioranza neutralista del Parlamento si opponevano alla guerra, mentre folle nazionaliste manifestavano a favore: il 13 maggio Salandra offrì le dimissioni, ma Giolitti, saputo che il patto di Londra era già firmato, accettò il fatto compiuto e le dimissioni non furono accolte.",
+  "event": "Il 20 maggio, per l'articolo italiano, la Camera votò i crediti di guerra. Il 23 maggio l'Italia dichiarò guerra all'Austria-Ungheria, ma non alla Germania, con cui il governo Salandra sperava di non rompere del tutto; le operazioni belliche cominciarono il 24 maggio. D'Annunzio chiamò «radiose giornate di maggio» quelle settimane, definite dagli oppositori «sud americane giornate di maggio».",
+  "after": "L'Italia aprì un lungo fronte sulle Alpi Orientali e sull'Isonzo. Dichiarò guerra all'Impero ottomano il 21 agosto 1915 e alla Bulgaria il 19 ottobre 1915. Alla Germania la dichiarò solo nel 1916: il 27 agosto per l'articolo italiano, il 28 per quello inglese, che aggiunge che l'attesa di un anno irritò Francia e Regno Unito.",
+  "links": [
+    {
+      "slug": "patto-di-londra-1915",
+      "reason": "Meno di un mese prima, il 26 aprile, l'Italia aveva firmato il patto di Londra."
+    },
+    {
+      "slug": "strafexpedition-1916",
+      "reason": "Un anno dopo, il 15 maggio 1916, l'offensiva austro-ungarica degli Altipiani attacca l'Italia dal Trentino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Military history of Italy during World War I - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Military_history_of_Italy_during_World_War_I",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Italia nella prima guerra mondiale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Italia_nella_prima_guerra_mondiale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la dichiarazione di guerra il 23 maggio 1915; per l'articolo italiano la partecipazione ebbe inizio il 24 maggio. L'articolo italiano sul tema è la voce generale sull'Italia nella prima guerra mondiale, molto lunga; il testo si appoggia anche all'articolo inglese sulla storia militare italiana. La dichiarazione di guerra alla Germania è il 27 agosto 1916 per l'articolo italiano e il 28 per quello inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

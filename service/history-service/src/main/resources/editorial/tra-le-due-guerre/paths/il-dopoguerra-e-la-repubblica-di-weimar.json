@@ -1,0 +1,33 @@
+{
+  "slug": "il-dopoguerra-e-la-repubblica-di-weimar",
+  "title": "Il dopoguerra e la Repubblica di Weimar",
+  "tagline": "Dal 1919 al 1925: la rivolta di Berlino, la Costituzione di Weimar, la Società delle Nazioni, l'occupazione della Ruhr, il putsch di Hitler e la distensione di Locarno.",
+  "intro": "Il percorso segue i primi anni della Repubblica di Weimar e del dopoguerra europeo: la rivolta spartachista, la Costituzione di Weimar, la nascita della Società delle Nazioni, l'occupazione della Ruhr, il putsch di Monaco e i trattati di Locarno.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "TRA_LE_DUE_GUERRE",
+  "stops": [
+    {
+      "insight": "rivolta-spartachista-1919",
+      "narrative": "Si parte dal gennaio 1919: a Berlino la rivolta della sinistra radicale viene repressa."
+    },
+    {
+      "insight": "costituzione-di-weimar-1919",
+      "narrative": "Nell'agosto 1919 Ebert firma la Costituzione di Weimar."
+    },
+    {
+      "insight": "societa-delle-nazioni-1920",
+      "narrative": "Nel gennaio 1920 entra in vigore il Patto della Società delle Nazioni."
+    },
+    {
+      "insight": "occupazione-della-ruhr-1923",
+      "narrative": "Nel gennaio 1923 Francia e Belgio occupano la Ruhr."
+    },
+    {
+      "insight": "putsch-di-monaco-1923",
+      "narrative": "Nel novembre 1923 il putsch di Monaco di Hitler fallisce."
+    },
+    {
+      "insight": "trattati-di-locarno-1925",
+      "narrative": "Nell'ottobre 1925 Locarno: la distensione in Europa occidentale."
+    }
+  ]
+}

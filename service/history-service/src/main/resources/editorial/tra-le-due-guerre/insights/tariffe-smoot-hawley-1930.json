@@ -1,0 +1,50 @@
+{
+  "slug": "tariffe-smoot-hawley-1930",
+  "title": "La legge Smoot-Hawley sui dazi",
+  "summary": "Il 17 giugno 1930 il presidente Hoover firma lo Smoot-Hawley Tariff Act, che aumenta i dazi su oltre 20 000 prodotti importati per proteggere l'industria americana. I partner commerciali rispondono con dazi propri e il commercio mondiale crolla, aggravando la Depressione.",
+  "date": {
+    "year": 1930,
+    "month": 6,
+    "day": 17
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, nella campagna elettorale del 1928 Hoover promise di aiutare gli agricoltori aumentando i dazi sui prodotti agricoli, e i repubblicani avevano solide maggioranze alla Camera e al Senato. La Camera approvò una versione nel maggio 1929, con 264 voti contro 147. Il Senato la discusse fino a marzo 1930, con scambi di voti fra senatori secondo le industrie dei loro Stati.",
+  "event": "Il 17 giugno 1930 Hoover firmò la legge, contro il parere di molti economisti di primo piano e cedendo alle pressioni del suo partito e degli ambienti d'affari. Prendeva il nome dal senatore Reed Smoot, repubblicano dello Utah e presidente della Commissione finanze del Senato, e dal deputato Willis C. Hawley. La legge aumentava i dazi su oltre 20 000 prodotti importati.",
+  "after": "Per l'articolo inglese i partner commerciali risposero con dazi propri, le esportazioni statunitensi e il commercio mondiale crollarono, e economisti e storici considerano la legge un errore di politica; seguirono accordi più liberali, come il Reciprocal Trade Agreements Act del 1934. Per l'articolo italiano la legge suscitò forti reazioni internazionali e aggravò il declino del commercio mondiale.",
+  "links": [
+    {
+      "slug": "crollo-di-wall-street-1929",
+      "reason": "Quasi otto mesi prima, in ottobre, il crollo di Wall Street."
+    },
+    {
+      "slug": "crisi-del-creditanstalt-1931",
+      "reason": "Quasi undici mesi dopo, l'11 maggio 1931, la crisi del Creditanstalt a Vienna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Smoot–Hawley Tariff Act - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Smoot–Hawley_Tariff_Act",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Leggi sui dazi statunitensi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Leggi_sui_dazi_statunitensi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma il 17 giugno 1930. L'articolo italiano è una lunga voce sulle leggi tariffarie statunitensi: il testo usa solo la parte sullo Smoot-Hawley. Il pin è su Washington, dove ebbe sede il Congresso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

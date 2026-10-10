@@ -1,0 +1,37 @@
+{
+  "slug": "genocidio-armeno-e-medio-oriente",
+  "title": "Genocidio armeno e Medio Oriente",
+  "tagline": "Dal 1915 al 1918, dalla Turchia alla Palestina: il genocidio armeno, Gallipoli, gli accordi segreti, la rivolta araba e la fine dell'Impero ottomano.",
+  "intro": "Il percorso segue la guerra nel Vicino Oriente: il genocidio armeno, lo sbarco di Gallipoli, l'accordo Sykes-Picot, la rivolta araba, la dichiarazione Balfour, la presa di Gerusalemme e l'armistizio di Mudros.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "genocidio-armeno-1915",
+      "narrative": "Si parte dal 24 aprile 1915: a Costantinopoli gli arresti dell'élite armena."
+    },
+    {
+      "insight": "campagna-di-gallipoli-1915",
+      "narrative": "Il 25 aprile 1915 gli Alleati sbarcano a Gallipoli."
+    },
+    {
+      "insight": "accordo-sykes-picot-1916",
+      "narrative": "Nel maggio 1916 Regno Unito e Francia si spartiscono in segreto il Medio Oriente ottomano."
+    },
+    {
+      "insight": "rivolta-araba-1916",
+      "narrative": "Nel giugno 1916 comincia la rivolta araba."
+    },
+    {
+      "insight": "dichiarazione-balfour-1917",
+      "narrative": "Il 2 novembre 1917 la dichiarazione Balfour sulla Palestina."
+    },
+    {
+      "insight": "presa-di-gerusalemme-1917",
+      "narrative": "Il 9 dicembre 1917 Gerusalemme si arrende agli inglesi."
+    },
+    {
+      "insight": "armistizio-di-mudros-1918",
+      "narrative": "Il 30 ottobre 1918 l'Impero ottomano firma l'armistizio di Mudros."
+    }
+  ]
+}

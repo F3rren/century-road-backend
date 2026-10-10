@@ -1,0 +1,51 @@
+{
+  "slug": "dichiarazione-di-guerra-alla-serbia-1914",
+  "title": "L'Austria-Ungheria dichiara guerra alla Serbia",
+  "summary": "Il 28 luglio 1914, un mese dopo l'attentato di Sarajevo, l'Austria-Ungheria dichiara guerra alla Serbia. La mossa mette in moto il gioco delle alleanze: la Russia mobilita l'esercito e, entro il 4 agosto, anche Germania, Francia e Gran Bretagna sono in guerra.",
+  "date": {
+    "year": 1914,
+    "month": 7,
+    "day": 28
+  },
+  "place": {
+    "name": "Vienna, Austria",
+    "lat": 48.2082,
+    "lon": 16.3738,
+    "countryCode": "AT",
+    "approximate": true,
+    "note": "La dichiarazione fu telegrafata a Belgrado dal governo di Vienna: il pin è sulla capitale dello Stato che dichiarò guerra, non sul luogo preciso da cui partì il telegramma."
+  },
+  "before": "Dopo la risposta serba del 25 luglio, l'Austria-Ungheria aveva rotto le relazioni diplomatiche con Belgrado. Berchtold voleva la guerra subito e per l'articolo italiano propose di attaccare la Serbia senza neppure dichiararla; la Germania si aspettava che Vienna agisse in fretta, perché ogni ritardo faceva temere l'intervento di altre potenze. Il Kaiser, per l'articolo italiano, giudicò la risposta serba una «capitolazione oltremodo umiliante» e propose di occupare solo Belgrado.",
+  "event": "Il 28 luglio l'Austria-Ungheria dichiarò guerra al Regno di Serbia. Il giorno prima, nel suo promemoria a Francesco Giuseppe, Berchtold aveva citato un presunto scontro a fuoco nei pressi di Temes-Kubin; per l'articolo inglese in realtà si era trattato di un'operazione austro-ungarica per impadronirsi di due piroscafi serbi, senza vittime, e per quello italiano la circostanza era stata inventata. Il riferimento fu tolto all'ultimo momento dal testo inviato.",
+  "after": "La dichiarazione fece precipitare la crisi, perché la Russia iniziò a mobilitare l'esercito. Per l'articolo italiano la Germania, allarmata, le dichiarò guerra il 1º agosto e due giorni dopo attaccò la Francia; la Gran Bretagna dichiarò guerra alla Germania il 4 agosto.",
+  "links": [
+    {
+      "slug": "ultimatum-austriaco-alla-serbia-1914",
+      "reason": "Cinque giorni prima, il 23 luglio, Vienna aveva presentato alla Serbia l'ultimatum."
+    },
+    {
+      "slug": "invasione-del-belgio-1914",
+      "reason": "Una settimana dopo, il 4 agosto, la Germania invade il Belgio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "July Crisis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/July_Crisis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Crisi di luglio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Crisi_di_luglio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 28 luglio 1914. Le tappe che dalla dichiarazione portano alla guerra generale sono tratte dall'articolo italiano sulla crisi di luglio; l'articolo inglese ne tratta con più dettaglio la diplomazia. Il pin è sulla capitale dell'Austria-Ungheria perché la fonte non indica da dove partì il telegramma."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

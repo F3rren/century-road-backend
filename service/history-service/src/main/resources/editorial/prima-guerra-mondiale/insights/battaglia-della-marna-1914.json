@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-della-marna-1914",
+  "title": "La prima battaglia della Marna",
+  "summary": "Dal 5 al 12 settembre 1914, a est di Parigi, le armate francesi e il corpo di spedizione britannico contrattaccano i tedeschi lungo la Marna e li costringono a ripiegare sull'Aisne. Il piano tedesco di vincere la guerra in poche settimane fallisce e inizia la guerra di trincea.",
+  "date": {
+    "year": 1914,
+    "month": 9,
+    "day": 5
+  },
+  "place": {
+    "name": "Marna e Ourcq, Francia",
+    "lat": 49,
+    "lon": 3,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "La battaglia si estese da Parigi a Verdun: il pin è su un punto tra la Marna e l'Ourcq, a est di Parigi, dove si combatté lo scontro decisivo, ed è solo un segnaposto."
+  },
+  "before": "Dopo la Grande Ritirata i tedeschi erano a circa 40 chilometri da Parigi. Joffre aveva rinforzato l'esercito con truppe del fianco orientale e con unità di riserva. Il 3 settembre il governatore militare di Parigi, Joseph Gallieni, capì che il fianco destro tedesco era vulnerabile; il 4 settembre Joffre ordinò il contrattacco, che per l'articolo inglese cominciò il 6.",
+  "event": "Il 5 settembre francesi e tedeschi si scontrarono sul fianco destro della 1ª Armata di Kluck. Nei giorni seguenti la 6ª Armata di Maunoury attaccò sull'Ourcq, mentre la 5ª Armata francese e il corpo di spedizione britannico avanzarono nel varco che si era aperto fra le armate tedesche di Kluck e Bülow, largo 50 chilometri per l'articolo inglese. Il 7 settembre Gallieni fece portare truppe al fronte con circa 1 200 taxi di Parigi, secondo l'articolo italiano: un episodio simbolico, ma di scarsa importanza militare per entrambi gli articoli.",
+  "after": "Il 9 settembre la 2ª Armata di Bülow cominciò a ripiegare, dopo la visita del tenente colonnello Hentsch, inviato da Moltke; le armate tedesche si fermarono a nord dell'Aisne e si trincerarono. Per l'articolo inglese le perdite dal 5 al 12 settembre furono stimate in 250 000 francesi, 12 733 britannici e 298 000 tedeschi. Moltke avrebbe detto al Kaiser «Maestà, abbiamo perso la guerra», ma l'articolo inglese precisa che non sappiamo se lo disse davvero.",
+  "links": [
+    {
+      "slug": "battaglia-delle-frontiere-1914",
+      "reason": "Poche settimane prima, in agosto, gli eserciti alleati erano stati sconfitti alle frontiere."
+    },
+    {
+      "slug": "tregua-di-natale-1914",
+      "reason": "Nel dicembre dello stesso anno, tra le trincee scavate sul fronte occidentale, la tregua di Natale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Battle of the Marne - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Battle_of_the_Marne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Prima battaglia della Marna - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Prima_battaglia_della_Marna",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 5 al 12 settembre 1914; il giorno scelto è il primo. Per l'articolo inglese l'offensiva generale di Joffre cominciò il 6 settembre. Il testo attribuisce a ciascun articolo ciò che dice solo quello. Il pin è un segnaposto tra la Marna e l'Ourcq."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

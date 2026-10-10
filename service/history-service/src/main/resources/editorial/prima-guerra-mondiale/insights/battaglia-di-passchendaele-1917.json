@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-passchendaele-1917",
+  "title": "La battaglia di Passchendaele",
+  "summary": "Il 31 luglio 1917 i britannici e i loro alleati lanciano nelle Fiandre la terza battaglia di Ypres, per conquistare i crinali a sud e a est della città belga. La pioggia trasforma il campo in un pantano; la campagna finisce a novembre, quando i canadesi prendono Passchendaele.",
+  "date": {
+    "year": 1917,
+    "month": 7,
+    "day": 31
+  },
+  "place": {
+    "name": "Passchendaele, Belgio",
+    "lat": 50.9,
+    "lon": 3.027,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "La battaglia prende il nome dal villaggio di Passchendaele, sull'ultimo crinale a est di Ypres, ma cominciò il 31 luglio più a ovest, a Pilckem Ridge: il pin è sul villaggio."
+  },
+  "before": "Per l'articolo inglese la strategia fu decisa dall'Intesa nelle conferenze del novembre 1916 e del maggio 1917, ma il gabinetto di guerra approvò l'operazione nelle Fiandre del maresciallo Haig solo il 25 luglio, dopo la battaglia di Messines (7-14 giugno). Per l'articolo italiano l'obiettivo era controllare le Fiandre, con anche uno sbarco sulla costa belga presso Nieuwpoort.",
+  "event": "Il 31 luglio cominciò la battaglia di Pilckem Ridge. Per l'articolo italiano le forti piogge intralciarono i movimenti e trasformarono il campo in una palude quasi intransitabile, e Haig si accontentò del nuovo posizionamento per trascorrervi l'inverno. Dal 26 ottobre al 10 novembre il corpo canadese condusse la seconda battaglia di Passchendaele.",
+  "after": "La campagna finì a novembre, quando i canadesi catturarono Passchendaele: per l'articolo inglese l'ultimo grande attacco britannico fu il 10 novembre, per quello italiano la battaglia finì il 6 novembre. Caporetto, il 24 ottobre, costrinse britannici e francesi a inviare truppe in Italia e tolse risorse al BEF. Per l'articolo inglese le perdite britanniche furono stimate fra circa 245 000 e 300 000 uomini, quelle tedesche fra circa 200 000 e 400 000.",
+  "links": [
+    {
+      "slug": "offensiva-nivelle-1917",
+      "reason": "A fine aprile l'offensiva Nivelle sull'Aisne era fallita."
+    },
+    {
+      "slug": "battaglia-di-caporetto-1917",
+      "reason": "Il 24 ottobre, in Italia, la battaglia di Caporetto costringe a mandare rinforzi dal fronte occidentale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Passchendaele - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Passchendaele",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Passchendaele - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Passchendaele",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 31 luglio 1917 come inizio. La fine è diversa: 6 novembre per l'articolo italiano, 10 novembre (ultimo grande attacco britannico) per quello inglese. Le stime delle perdite sono molto discordanti e il testo dà solo l'intervallo dell'articolo inglese. Il pin è sul villaggio che dà il nome alla battaglia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

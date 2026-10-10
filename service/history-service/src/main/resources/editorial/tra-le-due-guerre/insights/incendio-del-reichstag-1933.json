@@ -1,0 +1,50 @@
+{
+  "slug": "incendio-del-reichstag-1933",
+  "title": "L'incendio del Reichstag",
+  "summary": "Il 27 febbraio 1933, quattro settimane dopo la nomina di Hitler a cancelliere, un incendio doloso avvolge l'edificio del Reichstag a Berlino. I nazisti accusano i comunisti e ottengono dal presidente Hindenburg il decreto che sospende le libertà civili.",
+  "date": {
+    "year": 1933,
+    "month": 2,
+    "day": 27
+  },
+  "place": {
+    "name": "Reichstag, Berlino",
+    "lat": 52.5186,
+    "lon": 13.3762,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Hitler era stato nominato cancelliere il 30 gennaio 1933, quattro settimane prima. Le elezioni successive erano fissate per il 5 marzo.",
+  "event": "Il primo allarme arrivò poco dopo le 21, quando una stazione dei vigili del fuoco di Berlino ricevette una chiamata. All'arrivo di polizia e pompieri l'edificio era avvolto dalle fiamme; la polizia perquisì l'interno e arrestò Marinus van der Lubbe, un comunista olandese consiliarista. I nazisti attribuirono l'incendio a un gruppo di agitatori comunisti e lo usarono come pretesto per sostenere che i comunisti complottavano contro il governo.",
+  "after": "Hindenburg firmò il decreto dell'incendio del Reichstag, che sospese le libertà civili. La polizia, ormai controllata dai nazisti, arrestò in massa i comunisti, compresi tutti i deputati comunisti: questo limitò gravemente la loro partecipazione alle elezioni del 5 marzo, dopo le quali i nazisti ampliarono la loro pluralità nel Reichstag. Il processo, iniziato a settembre 1933, si concluse per l'articolo inglese con l'assoluzione di quattro comunisti e la condanna di Van der Lubbe.",
+  "links": [
+    {
+      "slug": "hitler-cancelliere-1933",
+      "reason": "Ventotto giorni prima, il 30 gennaio, Hitler era stato nominato cancelliere."
+    },
+    {
+      "slug": "notte-dei-lunghi-coltelli-1934",
+      "reason": "Sedici mesi dopo, il 30 giugno 1934, la notte dei lunghi coltelli."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Reichstag fire - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Reichstag_fire",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Incendio del Reichstag - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Incendio_del_Reichstag",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 27 febbraio 1933. I due articoli concordano sui fatti riportati."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

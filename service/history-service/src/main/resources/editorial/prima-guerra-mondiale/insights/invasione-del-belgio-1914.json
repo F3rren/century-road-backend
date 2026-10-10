@@ -1,0 +1,51 @@
+{
+  "slug": "invasione-del-belgio-1914",
+  "title": "L'invasione tedesca del Belgio",
+  "summary": "Il 4 agosto 1914 le truppe tedesche entrano nel Belgio neutrale, dopo il rifiuto belga di lasciarle passare, per colpire la Francia da nord. La violazione del trattato di Londra del 1839 è il motivo per cui la Gran Bretagna entra in guerra.",
+  "date": {
+    "year": 1914,
+    "month": 8,
+    "day": 4
+  },
+  "place": {
+    "name": "Liegi, Belgio",
+    "lat": 50.6326,
+    "lon": 5.5797,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "Il pin è su Liegi, dove si combatté la prima grande battaglia dell'invasione, e non indica il punto in cui il confine fu varcato."
+  },
+  "before": "Il 24 luglio il Belgio annunciò la propria neutralità e il 31 mobilitò l'esercito. Il 2 agosto la Germania presentò un ultimatum con cui chiedeva il libero passaggio delle sue truppe attraverso il paese. Il piano tedesco prevedeva infatti di aggirare le difese francesi passando dal Belgio.",
+  "event": "Il 4 agosto il Belgio rifiutò, la Gran Bretagna gli garantì il proprio sostegno e la Germania gli dichiarò guerra: le truppe tedesche varcarono il confine. Il primo grande scontro fu la battaglia di Liegi, dal 5 al 16 agosto; per l'articolo inglese la città cadde il 7 agosto. L'avanzata fu accompagnata da massacri di civili, prese di ostaggi e incendi di città, chiamati «stupro del Belgio»; per l'articolo italiano nel corso del 1914 i tedeschi uccisero 5 500 civili belgi.",
+  "after": "Bruxelles fu abbandonata il 17 agosto e occupata il 20; il 19 l'esercito belga si era ritirato su Anversa. L'assedio di Anversa durò dal 28 settembre al 10 ottobre. Per l'articolo inglese la violazione dell'articolo VII del trattato di Londra del 1839 fu il casus belli della Gran Bretagna.",
+  "links": [
+    {
+      "slug": "dichiarazione-di-guerra-alla-serbia-1914",
+      "reason": "Una settimana prima, il 28 luglio, l'Austria-Ungheria aveva dichiarato guerra alla Serbia."
+    },
+    {
+      "slug": "battaglia-delle-frontiere-1914",
+      "reason": "Nello stesso mese di agosto, sul confine francese e nel Belgio meridionale, la battaglia delle Frontiere."
+    }
+  ],
+  "sources": [
+    {
+      "title": "German invasion of Belgium (1914) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/German_invasion_of_Belgium_(1914)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Invasione tedesca del Belgio (1914) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Invasione_tedesca_del_Belgio_(1914)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà il 4 agosto 1914 per il rifiuto belga e il passaggio del confine; l'articolo italiano sulla battaglia delle Frontiere dice che i tedeschi erano entrati in Belgio fin dal 4 agosto. L'articolo italiano sull'invasione è molto breve: il testo si appoggia soprattutto a quello inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

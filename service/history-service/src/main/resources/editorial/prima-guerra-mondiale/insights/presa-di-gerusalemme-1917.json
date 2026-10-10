@@ -1,0 +1,49 @@
+{
+  "slug": "presa-di-gerusalemme-1917",
+  "title": "La presa di Gerusalemme",
+  "summary": "Il 9 dicembre 1917 Gerusalemme si arrende alle forze britanniche del generale Allenby, dopo la ritirata dell'esercito ottomano. L'11 dicembre Allenby entra nella Città Vecchia a piedi, in segno di rispetto per la città santa.",
+  "date": {
+    "year": 1917,
+    "month": 12,
+    "day": 9
+  },
+  "place": {
+    "name": "Gerusalemme",
+    "lat": 31.7683,
+    "lon": 35.2137,
+    "approximate": false
+  },
+  "before": "Allenby, comandante dell'Egyptian Expeditionary Force, aveva ottenuto il 13 novembre una vittoria decisiva a Mughar Ridge contro le forze ottomane guidate dal generale tedesco Falkenhayn. Per entrambi gli articoli il combattimento per la città si sviluppò dal 17 novembre. Il gabinetto di guerra britannico aveva avvertito Allenby di non impegnarsi in operazioni insostenibili a lungo termine.",
+  "event": "L'8 dicembre, con pioggia quasi continua, il XX Corps britannico lanciò l'avanzata finale prendendo le alture a ovest di Gerusalemme; la 7ª Armata ottomana si ritirò nella sera e la città si arrese il giorno dopo. La mattina del 9 dicembre il sindaco Hussein Salim al-Husseini tentò di consegnare la lettera con cui il governatore ottomano cedeva la città a due sergenti britannici, James Sedgewick e Frederick Hurcomb.",
+  "after": "L'11 dicembre Allenby entrò nella Città Vecchia a piedi dalla Porta di Giaffa. Il primo ministro Lloyd George descrisse la conquista come «un regalo di Natale per il popolo britannico». I combattimenti proseguirono fino al 30 dicembre con la difesa di Gerusalemme; la perdita di Giaffa e di Gerusalemme fu una grave sconfitta per l'Impero ottomano.",
+  "links": [
+    {
+      "slug": "dichiarazione-balfour-1917",
+      "reason": "Poco più di cinque settimane prima, il 2 novembre, la dichiarazione Balfour sulla Palestina."
+    },
+    {
+      "slug": "armistizio-di-mudros-1918",
+      "reason": "Meno di undici mesi dopo, il 30 ottobre 1918, l'Impero ottomano firma l'armistizio di Mudros."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Jerusalem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Jerusalem",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Gerusalemme - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Gerusalemme",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la resa della città il 9 dicembre 1917 e l'ingresso di Allenby l'11. Gli articoli collocano l'intera serie di combattimenti dal 17 novembre al 30 dicembre. Il pin è su Gerusalemme, senza indicazione di Stato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

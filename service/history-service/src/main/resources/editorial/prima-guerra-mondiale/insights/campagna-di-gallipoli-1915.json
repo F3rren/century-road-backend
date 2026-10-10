@@ -1,0 +1,51 @@
+{
+  "slug": "campagna-di-gallipoli-1915",
+  "title": "Lo sbarco di Gallipoli",
+  "summary": "Il 25 aprile 1915 truppe britanniche, francesi, australiane e neozelandesi sbarcano sulla penisola di Gallipoli, nel tentativo di aprire gli Stretti e minacciare Costantinopoli. L'operazione fallisce e le truppe si ritirano entro il gennaio 1916; il 25 aprile è l'Anzac Day.",
+  "date": {
+    "year": 1915,
+    "month": 4,
+    "day": 25
+  },
+  "place": {
+    "name": "Anzac Cove, Gallipoli, Turchia",
+    "lat": 40.2477,
+    "lon": 26.2827,
+    "countryCode": "TR",
+    "approximate": true,
+    "note": "Lo sbarco avvenne in più punti della penisola di Gallipoli: il pin è su Anzac Cove, dove sbarcarono le truppe australiane e neozelandesi, e non indica un punto unico."
+  },
+  "before": "Dal 19 febbraio al 18 marzo 1915 gli Alleati tentarono di forzare i Dardanelli con la flotta, senza riuscirvi. Per l'articolo inglese a comandare la Mediterranean Expeditionary Force, di 78 000 uomini, fu nominato Sir Ian Hamilton; per quello italiano il corpo di spedizione contava circa 75 000 uomini il giorno dello sbarco. La difesa ottomana era affidata alla 5ª armata del generale tedesco Liman von Sanders, giunto sulla penisola il 26 marzo, con circa 80 000 uomini in sei divisioni.",
+  "event": "Il 25 aprile 1915 tre divisioni alleate sbarcarono sulla penisola, mentre altre due furono usate in azioni diversive. Le truppe australiane e neozelandesi formavano l'ANZAC, comandato dal generale Birdwood. Per l'articolo italiano l'improvvisata catena di comando, la confusione negli sbarchi, le carenze logistiche e l'inaspettata resistenza ottomana, aiutata da reparti tedeschi, impedirono la vittoria e trasformarono la campagna in una serie di battaglie sterili vicino alle spiagge.",
+  "after": "Per l'articolo inglese, dopo otto mesi di combattimenti e circa 250 000 perdite per parte, la campagna di terra fu abbandonata: terminò il 9 gennaio 1916 con una vittoria ottomana. Per l'articolo italiano l'evacuazione delle teste di ponte avvenne fra novembre 1915 e gennaio 1916 e costò al corpo di spedizione circa 250 000 morti e feriti. Mustafa Kemal, emerso come comandante a Gallipoli, fondò nel 1923 la Repubblica di Turchia.",
+  "links": [
+    {
+      "slug": "genocidio-armeno-1915",
+      "reason": "Il giorno prima, il 24 aprile, erano cominciati a Costantinopoli gli arresti degli intellettuali armeni."
+    },
+    {
+      "slug": "armistizio-di-mudros-1918",
+      "reason": "Nel porto di Moudros, usato dagli Alleati come base della campagna, il 30 ottobre 1918 l'Impero ottomano firma l'armistizio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gallipoli campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gallipoli_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campagna di Gallipoli - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campagna_di_Gallipoli",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno lo sbarco il 25 aprile 1915; l'articolo inglese dà l'intera campagna dal 19 febbraio 1915 al 9 gennaio 1916. Le forze e le perdite sono quelle degli articoli, attribuite a ciascuno. Il pin è su Anzac Cove, uno dei punti di sbarco."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

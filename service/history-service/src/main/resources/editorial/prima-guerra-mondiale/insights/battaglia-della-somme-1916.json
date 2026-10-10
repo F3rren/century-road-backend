@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-della-somme-1916",
+  "title": "La battaglia della Somme",
+  "summary": "Il 1º luglio 1916 britannici e francesi attaccano le linee tedesche lungo la Somme, nel nord della Francia. Nel primo giorno l'esercito britannico subisce le perdite più gravi della sua storia; la battaglia dura fino a novembre e non produce lo sfondamento sperato.",
+  "date": {
+    "year": 1916,
+    "month": 7,
+    "day": 1
+  },
+  "place": {
+    "name": "Albert, Somme, Francia",
+    "lat": 49.9697,
+    "lon": 2.6523,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Il fronte dell'attacco era lungo circa sessanta chilometri, secondo l'articolo italiano: il pin è sulla zona di Albert, ricordata dall'articolo inglese per la strada Albert-Bapaume, e non indica un punto preciso."
+  },
+  "before": "L'offensiva sulla Somme era stata concordata da Joffre e Haig una settimana prima che cominciasse Verdun. Con Verdun, per l'articolo inglese i francesi dovettero ridurre il proprio contributo a 13 divisioni contro 20 britanniche: lo sforzo principale passò agli inglesi. Per l'articolo italiano l'attacco fu rinviato al 1º luglio a causa del maltempo.",
+  "event": "Il 1º luglio, dopo una settimana di bombardamento e lo scoppio di dieci grandi mine, la fanteria britannica avanzò in massa e i tedeschi, protetti dai rifugi sotterranei, la fermarono. Per l'articolo inglese il BEF ebbe 57 470 perdite, di cui 19 240 morti, le peggiori della storia dell'esercito britannico; per quello italiano oltre 59 000 perdite e 20 000 morti. Sul fronte francese, per l'articolo inglese, fu invece una grave sconfitta per la 2ª Armata tedesca.",
+  "after": "Per l'articolo inglese la battaglia finì il 18 novembre, per quello italiano il 19, con la pioggia che aveva trasformato il campo in un pantano. In settembre comparvero i primi carri armati. Per l'articolo inglese gli Alleati avanzarono di circa 10 chilometri; l'articolo italiano parla di 620 000 perdite alleate e circa 450 000 tedesche, quello inglese di 419 654-432 000 britanniche e circa 200 000 francesi contro 465 181-600 000 tedesche.",
+  "links": [
+    {
+      "slug": "battaglia-di-verdun-1916",
+      "reason": "Da febbraio la Germania attaccava i francesi a Verdun, e questo condizionò il piano sulla Somme."
+    },
+    {
+      "slug": "battaglia-di-flers-courcelette-1916",
+      "reason": "Il 15 settembre, nella stessa battaglia, i carri armati compaiono per la prima volta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Somme - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Somme",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia della Somme - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_della_Somme",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 1º luglio 1916. Gli articoli divergono sulle cifre del primo giorno e sulla data di fine (18 novembre per l'inglese, 19 per l'italiano), e il testo le attribuisce a ciascun articolo. L'articolo inglese dà intervalli molto ampi per le perdite tedesche."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

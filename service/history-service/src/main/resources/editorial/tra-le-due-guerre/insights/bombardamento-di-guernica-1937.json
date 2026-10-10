@@ -1,0 +1,50 @@
+{
+  "slug": "bombardamento-di-guernica-1937",
+  "title": "Il bombardamento di Guernica",
+  "summary": "Il 26 aprile 1937, durante la guerra civile spagnola, la Legione Condor tedesca e l'Aviazione Legionaria italiana bombardano la città basca di Guernica per favorire i nazionalisti di Franco. L'attacco, che colpì anche i civili, divenne un simbolo dell'orrore dei bombardamenti aerei e ispirò il dipinto di Picasso.",
+  "date": {
+    "year": 1937,
+    "month": 4,
+    "day": 26
+  },
+  "place": {
+    "name": "Guernica, Paesi Baschi, Spagna",
+    "lat": 43.3167,
+    "lon": -2.6794,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Per l'articolo italiano nel marzo 1937 il generale Mola impartì gli ordini per una campagna di terra in Biscaglia, con l'obiettivo di conquistare i porti di Bilbao, Santander e Gijón. Per l'articolo inglese Guernica, 30 chilometri a est di Bilbao, aveva un grande significato per i baschi e si trovava tra i nazionalisti e la conquista di Bilbao. Lunedì 26 aprile era giorno di mercato, con più di 10 000 persone, ma è dibattuto se il mercato si tenesse davvero, perché il governo basco ne aveva ordinato la sospensione.",
+  "event": "L'incursione, con il nome in codice Operazione Rügen, fu compiuta il 26 aprile. Per l'articolo inglese la città era usata dai repubblicani come centro di comunicazioni dietro il fronte e il raid doveva distruggere ponti e strade. Per l'articolo italiano le forze italo-tedesche dichiararono di aver mirato al ponte Rentería e che il vento deviò le bombe sulla città, ma l'articolo sostiene che in realtà fu un bombardamento terroristico contro la popolazione civile.",
+  "after": "Il numero delle vittime è ancora discusso: per l'articolo inglese il governo basco parlò di 1654 morti, gli storici locali ne identificarono 126, poi 153, una fonte britannica 400 e gli archivi sovietici 800. Per l'articolo inglese secondo le norme del 1937 Guernica era un bersaglio legittimo, ma alcuni storici lo considerano un crimine di guerra. L'attacco aprì la strada alla conquista di Bilbao e ispirò il dipinto Guernica di Pablo Picasso, commissionato dalla Repubblica spagnola.",
+  "links": [
+    {
+      "slug": "guerra-civile-spagnola-1936",
+      "reason": "Nove mesi prima, il 17 luglio 1936, era cominciata la guerra civile spagnola."
+    },
+    {
+      "slug": "anschluss-1938",
+      "reason": "Meno di undici mesi dopo, il 12 marzo 1938, l'Anschluss."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bombing of Guernica - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bombing_of_Guernica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bombardamento di Guernica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Bombardamento_di_Guernica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 26 aprile 1937. Il numero delle vittime e la natura dell'attacco sono discussi, e il testo attribuisce a ciascun articolo la sua versione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

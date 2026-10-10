@@ -1,0 +1,50 @@
+{
+  "slug": "leggi-di-norimberga-1935",
+  "title": "Le leggi di Norimberga",
+  "summary": "Il 15 settembre 1935, durante il raduno annuale del partito nazista a Norimberga, il Reichstag approva le leggi razziali antisemite: vietano matrimoni e rapporti fra ebrei e tedeschi e riservano la cittadinanza a chi ha «sangue tedesco o affine».",
+  "date": {
+    "year": 1935,
+    "month": 9,
+    "day": 15
+  },
+  "place": {
+    "name": "Norimberga, Germania",
+    "lat": 49.4521,
+    "lon": 11.0767,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Nel 1933 il governo di Hitler aveva proclamato il boicottaggio dei negozi ebraici, il 1º aprile, escluso gli ebrei dal pubblico impiego con la legge per la restaurazione del servizio civile e organizzato roghi di libri. Per l'articolo inglese il 25 luglio 1935 il ministro dell'Interno Frick annunciò una legge sui matrimoni; l'8 agosto Hitler ordinò di fermare le «azioni individuali» contro gli ebrei, e voleva nuove leggi per accontentare i radicali del partito.",
+  "event": "Il 15 settembre 1935, in una sessione speciale del Reichstag convocata a Norimberga durante il raduno del partito, furono approvate le leggi. La legge per la protezione del sangue e dell'onore tedeschi vietava i matrimoni e i rapporti tra ebrei e tedeschi e agli ebrei di assumere domestiche tedesche sotto i 45 anni; la legge sulla cittadinanza del Reich riservava la cittadinanza a persone di «sangue tedesco o affine». Per l'articolo inglese le misure erano due, per quello italiano tre, con la legge sulla bandiera del Reich.",
+  "after": "Per l'articolo inglese un decreto supplementare del 14 novembre 1935 definì chi era ebreo per legge e rese efficace la legge sulla cittadinanza; il 26 novembre le norme furono estese a «zingari, neri e loro bastardi». I procedimenti furono rinviati fino a dopo le Olimpiadi di Berlino del 1936, per evitare critiche internazionali. Le leggi furono abrogate il 20 settembre 1945, per l'articolo italiano.",
+  "links": [
+    {
+      "slug": "notte-dei-lunghi-coltelli-1934",
+      "reason": "Più di un anno prima, il 30 giugno 1934, la notte dei lunghi coltelli."
+    },
+    {
+      "slug": "notte-dei-cristalli-1938",
+      "reason": "Più di tre anni dopo, il 9 novembre 1938, la notte dei cristalli."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nuremberg Laws - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nuremberg_Laws",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Leggi di Norimberga - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Leggi_di_Norimberga",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 settembre 1935. Sul numero delle leggi i due articoli divergono: due per l'inglese, tre per l'italiano, che include la legge sulla bandiera."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

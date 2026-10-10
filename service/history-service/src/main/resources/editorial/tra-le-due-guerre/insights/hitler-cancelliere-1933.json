@@ -1,0 +1,50 @@
+{
+  "slug": "hitler-cancelliere-1933",
+  "title": "Hitler cancelliere",
+  "summary": "Il 30 gennaio 1933 il presidente Hindenburg nomina Adolf Hitler cancelliere della Germania, dopo trattative riservate con industriali e con l'ex cancelliere von Papen. Entro l'agosto 1934 Hitler concentrerà nelle sue mani tutti i poteri.",
+  "date": {
+    "year": 1933,
+    "month": 1,
+    "day": 30
+  },
+  "place": {
+    "name": "Berlino, Germania",
+    "lat": 52.52,
+    "lon": 13.405,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese Hitler si candidò alla presidenza nel 1932 e fu sconfitto da Hindenburg, ma arrivò secondo in entrambi i turni; nel luglio 1932 i nazisti divennero il primo partito del Reichstag, senza la maggioranza assoluta. Hindenburg era titubante nell'affidargli l'incarico. Per l'articolo italiano il cancelliere Schleicher chiese pieni poteri a Hindenburg, che glieli rifiutò, e si dimise il 28 gennaio 1933.",
+  "event": "Dopo trattative tenute riservate fra industriali, l'ex cancelliere von Papen, il figlio di Hindenburg e Hitler, il presidente Hindenburg cedette e il 30 gennaio 1933 nominò formalmente Hitler cancelliere.",
+  "after": "L'incendio del Reichstag servì da pretesto per il decreto che limitò le libertà dei cittadini. Hitler propose poi la legge dei pieni poteri del 1933, che permetteva al governo di scavalcare i diritti previsti dalla costituzione. Per l'articolo inglese con la Gleichschaltung eliminò i partiti rivali, e a metà del 1933 il paese era uno Stato a partito unico. Dopo la morte di Hindenburg, il 2 agosto 1934 per l'articolo italiano, riunì la cancelleria e la presidenza nel titolo di Führer.",
+  "links": [
+    {
+      "slug": "putsch-di-monaco-1923",
+      "reason": "Più di nove anni prima, nel novembre 1923, Hitler aveva tentato a Monaco un colpo di Stato."
+    },
+    {
+      "slug": "incendio-del-reichstag-1933",
+      "reason": "Ventotto giorni dopo, il 27 febbraio, l'incendio del Reichstag."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Adolf Hitler's rise to power - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Adolf_Hitler's_rise_to_power",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ascesa al potere di Adolf Hitler - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ascesa_al_potere_di_Adolf_Hitler",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 30 gennaio 1933 per la nomina. Il testo non dà il giorno della legge dei pieni poteri."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

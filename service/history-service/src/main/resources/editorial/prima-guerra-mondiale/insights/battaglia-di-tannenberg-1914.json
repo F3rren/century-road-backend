@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-tannenberg-1914",
+  "title": "La battaglia di Tannenberg",
+  "summary": "Tra il 26 e il 30 agosto 1914, in Prussia Orientale, l'8ª Armata tedesca di Hindenburg e Ludendorff circonda e distrugge quasi del tutto la 2ª Armata russa; il suo comandante, Samsonov, si toglie la vita. È il primo grande scontro sul fronte orientale.",
+  "date": {
+    "year": 1914,
+    "month": 8,
+    "day": 26
+  },
+  "place": {
+    "name": "Olsztyn (Allenstein), Polonia",
+    "lat": 53.7784,
+    "lon": 20.4801,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Per l'articolo inglese la battaglia si svolse nei dintorni di Allenstein, oggi Olsztyn, e non a Tannenberg, che si trova circa 30 chilometri a ovest: il pin è su Olsztyn e indica la zona dello scontro, non un punto preciso."
+  },
+  "before": "Il 16 agosto la 1ª Armata russa di Rennenkampf entrò in Prussia Orientale; il 20 agosto la 2ª Armata di Samsonov varcò la frontiera meridionale. Per entrambi gli articoli i comandi russi non andavano d'accordo: Samsonov e Žilinskij, comandante del Fronte Nord-occidentale, divergevano sulla direzione di marcia della 2ª Armata. Per l'articolo inglese i russi trasmettevano gli ordini di marcia senza cifrarli, e i tedeschi spostarono le truppe rapidamente in ferrovia.",
+  "event": "Dal 26 agosto l'8ª Armata tedesca attaccò la 2ª Armata russa e la circondò. Per l'articolo italiano circa 30 000 soldati russi con il generale Kljuev si arresero e in tutto circa 70 000 caddero prigionieri. Nella notte del 30 agosto Samsonov si uccise. Per l'articolo inglese la 2ª Armata perse circa 120 000 uomini e i tedeschi 12 000 su 150 000; per quello italiano i tedeschi dichiararono 92 000 prigionieri russi e perdettero circa 37 000 uomini.",
+  "after": "La vittoria diede grande fama a Hindenburg e Ludendorff. Per l'articolo inglese Hindenburg chiamò la battaglia Tannenberg per vendicare la sconfitta dei cavalieri teutonici a Grunwald cinquecento anni prima. La prima battaglia dei laghi Masuri si concluse, per l'articolo italiano, il 14 settembre con la sconfitta della 1ª Armata russa, costretta a lasciare la Prussia Orientale.",
+  "links": [
+    {
+      "slug": "battaglia-della-marna-1914",
+      "reason": "Pochi giorni dopo, sul fronte occidentale, comincia la prima battaglia della Marna."
+    },
+    {
+      "slug": "battaglia-di-gorlice-tarnow-1915",
+      "reason": "Otto mesi dopo, nel maggio 1915, l'offensiva di Gorlice-Tarnów sfonda il fronte russo in Galizia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Tannenberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Tannenberg",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Tannenberg (1914) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Tannenberg_(1914)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 26 al 30 agosto 1914; il giorno scelto è il primo. Le cifre delle perdite sono diverse nei due articoli e il testo le attribuisce a ciascuno. Fino al 1918 la Russia usava il calendario giuliano, in ritardo di tredici giorni su quello gregoriano: il giorno indicato è quello riportato dalle fonti, e secondo l'altro calendario cadrebbe in un giorno diverso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

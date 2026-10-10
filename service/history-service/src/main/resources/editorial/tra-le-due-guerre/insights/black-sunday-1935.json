@@ -1,0 +1,51 @@
+{
+  "slug": "black-sunday-1935",
+  "title": "La Domenica nera e il Dust Bowl",
+  "summary": "Il 14 aprile 1935, la «Domenica nera», una tempesta di polvere eccezionalmente violenta investe le pianure centrali degli Stati Uniti: sposta circa 300 000 tonnellate di terreno fertile e trasforma il giorno in notte. Da questo episodio la regione prese il nome di Dust Bowl.",
+  "date": {
+    "year": 1935,
+    "month": 4,
+    "day": 14
+  },
+  "place": {
+    "name": "Boise City, Oklahoma, Stati Uniti",
+    "lat": 36.7306,
+    "lon": -102.5136,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "La tempesta attraversò l'Oklahoma e il Texas settentrionale e si fece sentire in una vasta area: il pin è su Boise City, una delle località colpite, e non indica un punto preciso."
+  },
+  "before": "Per l'articolo inglese le «tempeste nere» cominciarono nel 1930 negli Stati orientali e nel 1934 raggiunsero le Grandi Pianure. Fra le cause, l'allevamento e l'eccessivo sfruttamento del suolo avevano lasciato il terreno senza l'erba che lo ancorava, e negli anni Trenta una siccità lo disseccò. Per l'articolo italiano la sovrapproduzione agricola seguita alla prima guerra mondiale aveva spinto a coltivare terre marginali.",
+  "event": "Nel pomeriggio del 14 aprile 1935 gli abitanti di diversi Stati delle pianure dovettero ripararsi da una tempesta di polvere. Per l'articolo inglese colpì per prima la zona nord-occidentale dell'Oklahoma, raggiunse Beaver verso le 16, Boise City alle 17.15 e Amarillo, in Texas, alle 19.20. Per l'articolo italiano i testimoni riferirono che in certi punti non si vedeva a due metri di distanza.",
+  "after": "Per l'articolo inglese la regione prese il nome di «Dust Bowl» dopo questa tempesta, quando il giornalista Robert Geiger la chiamò così nel suo resoconto. Nel 1935 il Congresso approvò il Soil Conservation Act, che creò il Soil Conservation Service. Per l'articolo italiano il fenomeno raggiunse il picco nel 1935, e le stime degli americani costretti a spostarsi vanno da 300-400 000 a 2,5 milioni.",
+  "links": [
+    {
+      "slug": "new-deal-1933",
+      "reason": "Nei primi cento giorni del New Deal furono avviati programmi per ripristinare l'equilibrio ecologico delle pianure."
+    },
+    {
+      "slug": "social-security-act-1935",
+      "reason": "Quattro mesi dopo, il 14 agosto, il Social Security Act."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Black Sunday (storm) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Black_Sunday_(storm)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dust Bowl - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dust_Bowl",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà il 14 aprile 1935 per la tempesta; l'articolo italiano è la voce generale sul Dust Bowl e dà lo stesso giorno. La stima del terreno spostato è solo dell'articolo inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

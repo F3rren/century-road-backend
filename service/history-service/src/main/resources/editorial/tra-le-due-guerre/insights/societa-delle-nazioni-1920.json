@@ -1,0 +1,50 @@
+{
+  "slug": "societa-delle-nazioni-1920",
+  "title": "La Società delle Nazioni",
+  "summary": "Il 10 gennaio 1920 entra in vigore il Patto della Società delle Nazioni, la prima organizzazione intergovernativa mondiale con il compito di mantenere la pace. Nata nel quadro della conferenza di pace di Parigi, non ha l'adesione degli Stati Uniti e non dispone di un esercito proprio.",
+  "date": {
+    "year": 1920,
+    "month": 1,
+    "day": 10
+  },
+  "place": {
+    "name": "Ginevra, Svizzera",
+    "lat": 46.2044,
+    "lon": 6.1432,
+    "approximate": true,
+    "note": "La Società ebbe sede a Ginevra dal 1º novembre 1920, secondo l'articolo inglese; nei primi mesi la sede fu a Londra. Il pin è su Ginevra."
+  },
+  "before": "Per l'articolo italiano Wilson fu il maggior promotore dell'idea, che inserì nei quattordici punti. Il Patto fu firmato il 28 giugno 1919 come parte I del trattato di Versailles e divenne efficace con il resto del trattato il 10 gennaio 1920 (articolo inglese). Wilson ottenne il premio Nobel per la pace nel 1919, ma per l'articolo inglese il Senato, con i repubblicani guidati da Lodge, votò la ratifica il 19 marzo 1920 con 49 voti contro 35, sotto i due terzi necessari.",
+  "event": "Per l'articolo inglese il Consiglio si riunì la prima volta il 16 gennaio 1920 e l'Assemblea il 15 novembre 1920; il 1º novembre la sede era stata spostata da Londra a Ginevra. L'obiettivo era prevenire le guerre con la sicurezza collettiva e il disarmo e risolvere le controversie con il negoziato e l'arbitrato. Gran Bretagna, Francia, Italia e Giappone furono i primi membri permanenti del Consiglio.",
+  "after": "Priva di un esercito, la Società dipendeva dalle potenze vincitrici per far rispettare le risoluzioni e le sanzioni. Per l'articolo inglese ebbe al massimo 58 membri, dal 28 settembre 1934 al 23 febbraio 1935; Giappone e Germania uscirono nel 1933, l'Italia nel 1937, la Spagna nel 1939; l'Unione Sovietica vi entrò nel 1934 e fu espulsa nel 1939. Cessò di operare il 18 aprile 1946 per l'articolo inglese, il 19 aprile per quello italiano, a vantaggio delle Nazioni Unite.",
+  "links": [
+    {
+      "slug": "trattato-di-versailles-1919",
+      "reason": "Il Patto della Società era la parte I del trattato di Versailles, firmato il 28 giugno 1919."
+    },
+    {
+      "slug": "trattati-di-locarno-1925",
+      "reason": "Nel 1925 i trattati di Locarno aprono la strada all'ingresso della Germania nella Società, nel 1926."
+    }
+  ],
+  "sources": [
+    {
+      "title": "League of Nations - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/League_of_Nations",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Società delle Nazioni - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Società_delle_Nazioni",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è quella dell'entrata in vigore del Patto, 10 gennaio 1920, secondo l'articolo inglese; per l'articolo italiano la Società fu fondata formalmente il 28 giugno 1919, con la firma del trattato di Versailles. Anche la fine è diversa: 18 aprile per l'inglese, 19 per l'italiano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

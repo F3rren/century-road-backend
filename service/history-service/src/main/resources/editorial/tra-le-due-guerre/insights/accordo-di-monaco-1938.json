@@ -1,0 +1,50 @@
+{
+  "slug": "accordo-di-monaco-1938",
+  "title": "L'accordo di Monaco",
+  "summary": "Il 30 settembre 1938 a Monaco Germania, Regno Unito, Francia e Italia concordano la cessione alla Germania dei Sudeti, regione della Cecoslovacchia con circa tre milioni di abitanti, per lo più di lingua tedesca. La Cecoslovacchia non partecipa e l'accordo è detto a Praga «diktat di Monaco».",
+  "date": {
+    "year": 1938,
+    "month": 9,
+    "day": 30
+  },
+  "place": {
+    "name": "Monaco di Baviera, Germania",
+    "lat": 48.1351,
+    "lon": 11.582,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, dopo l'Anschluss, il 28 marzo 1938 Hitler incontrò Henlein, capo del partito dei tedeschi dei Sudeti, e gli ordinò di fare richieste inaccettabili per il governo cecoslovacco. Il 17 settembre la Germania cominciò una guerra non dichiarata a bassa intensità; il 20 settembre Gran Bretagna e Francia chiesero alla Cecoslovacchia di cedere i Sudeti. L'Unione Sovietica si disse pronta ad aiutarla, a condizione di poter attraversare il territorio di Polonia e Romania, che rifiutarono.",
+  "event": "La conferenza si tenne il 29 e 30 settembre fra Chamberlain, Daladier, Hitler e Mussolini. Per l'articolo inglese si raggiunse rapidamente un accordo alle condizioni di Hitler, senza la Cecoslovacchia, i cui rappresentanti erano però presenti in città, né l'Unione Sovietica. Il 30 settembre il presidente Beneš, sotto pressioni militari e diplomatiche, accettò di cedere il territorio.",
+  "after": "Per l'articolo italiano le potenze democratiche, fedeli all'appeasement, credettero di aver raggiunto un compromesso per una pace duratura; a Praga fu chiamato «diktat» e «tradimento di Monaco». Per l'articolo inglese il 2 novembre 1938 il primo arbitrato di Vienna staccò dalla Cecoslovacchia territori abitati in prevalenza da ungheresi; lo stesso articolo definisce l'accordo un fallimento dell'appeasement.",
+  "links": [
+    {
+      "slug": "anschluss-1938",
+      "reason": "Meno di sette mesi prima, il 12 marzo, la Germania aveva annesso l'Austria."
+    },
+    {
+      "slug": "patto-molotov-ribbentrop-1939",
+      "reason": "Meno di undici mesi dopo, il 23 agosto 1939, l'Unione Sovietica, esclusa da Monaco, firma un patto con la Germania."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Munich Agreement - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Munich_Agreement",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di Monaco - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_Monaco",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la conferenza il 29 e 30 settembre 1938; il giorno scelto è il 30, in cui per l'articolo inglese fu raggiunto l'accordo. Gli abitanti dei Sudeti sono circa tre milioni per l'articolo inglese e 3,25 milioni per quello italiano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "guerra-civile-spagnola-1936",
+  "title": "La guerra civile spagnola",
+  "summary": "Il 17 luglio 1936 la guarnigione militare del Marocco spagnolo si ribella al governo della Repubblica e comincia un colpo di Stato che si trasforma in guerra civile fra repubblicani e nazionalisti. La guerra dura fino al 1939 e porta alla lunga dittatura di Franco.",
+  "date": {
+    "year": 1936,
+    "month": 7,
+    "day": 17
+  },
+  "place": {
+    "name": "Madrid, Spagna",
+    "lat": 40.4168,
+    "lon": -3.7038,
+    "countryCode": "ES",
+    "approximate": true,
+    "note": "La guerra si estese a tutto il paese: il pin è su Madrid, capitale della Repubblica, e non indica un luogo preciso."
+  },
+  "before": "Il Fronte popolare aveva vinto le elezioni del febbraio 1936. Per l'articolo italiano il colpo di Stato obbediva a un piano prestabilito; per l'articolo inglese fu opera di un gruppo di generali dell'esercito della Repubblica, sostenuti da gruppi di destra come la CEDA, i monarchici e la Falange.",
+  "event": "Il 17 luglio la guarnigione del Marocco spagnolo si ribellò e nei tre giorni seguenti molte unità militari sul territorio metropolitano si sollevarono. Il colpo di Stato fallì in parte: Madrid, Barcellona, Bilbao, Valencia e Malaga rimasero fedeli al governo, mentre i nazionalisti controllarono le zone rurali della Castiglia, la Navarra e gran parte dell'Andalusia con Siviglia (articolo italiano). Per l'articolo inglese Franco fu nominato capo supremo il 1º ottobre 1936.",
+  "after": "Per l'articolo inglese i nazionalisti ricevettero aiuti dall'Italia fascista e dalla Germania nazista, che inviò la Legione Condor, mentre la Repubblica ebbe il sostegno dell'Unione Sovietica e del Messico; Regno Unito, Francia e Stati Uniti seguirono una politica di non intervento. Migliaia di volontari combatterono con le Brigate internazionali. Per l'articolo inglese Franco entrò a Madrid e dichiarò la vittoria il 1º aprile 1939; per quello italiano la guerra finì nel marzo 1939, con l'ingresso di Franco a Madrid. La dittatura di Franco durò fino al 1975.",
+  "links": [
+    {
+      "slug": "rimilitarizzazione-della-renania-1936",
+      "reason": "Quattro mesi prima, in marzo, la Germania aveva rimilitarizzato la Renania."
+    },
+    {
+      "slug": "bombardamento-di-guernica-1937",
+      "reason": "Nove mesi dopo, il 26 aprile 1937, il bombardamento di Guernica."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spanish Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile spagnola - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_spagnola",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà il colpo di Stato il 17 luglio 1936; quello inglese parla di luglio 1936. I due articoli divergono sulla fine: il 1º aprile 1939 per l'inglese, marzo 1939 per l'italiano. Il pin è su Madrid."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

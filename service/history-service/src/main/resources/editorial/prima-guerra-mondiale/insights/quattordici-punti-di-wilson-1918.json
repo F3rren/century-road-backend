@@ -1,0 +1,50 @@
+{
+  "slug": "quattordici-punti-di-wilson-1918",
+  "title": "I quattordici punti di Wilson",
+  "summary": "L'8 gennaio 1918 il presidente americano Woodrow Wilson espone al Congresso quattordici punti come base per una pace duratura: fra questi la fine della diplomazia segreta, la libertà dei mari, la riduzione degli armamenti e l'autodeterminazione dei popoli.",
+  "date": {
+    "year": 1918,
+    "month": 1,
+    "day": 8
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo italiano Wilson voleva una «pace senza vincitori», basata sull'uguaglianza delle nazioni e sull'autogoverno dei popoli. I bolscevichi, appena al potere, avevano pubblicato i patti segreti tra lo zar e le altre potenze dell'Intesa, fra cui il patto di Londra. Per l'articolo inglese il discorso rispondeva anche al decreto sulla pace di Lenin del novembre 1917; tre giorni prima Lloyd George aveva esposto gli scopi bellici britannici.",
+  "event": "Nel discorso dell'8 gennaio Wilson chiese l'abolizione dei trattati segreti, la riduzione degli armamenti, un riesame delle rivendicazioni coloniali e la libertà dei mari (articolo inglese). Per l'articolo italiano i punti comprendevano trattati di pace pubblici, la libertà di navigazione, l'eliminazione delle barriere economiche, la riduzione degli armamenti, l'evacuazione dei territori russi, il ripristino del Belgio e il ritorno dell'Alsazia-Lorena alla Francia. I punti si basavano sulle ricerche dell'Inquiry, gruppo di circa 150 esperti guidato da House (articolo inglese) o da Walter Lippmann (articolo italiano).",
+  "after": "Per l'articolo inglese Clemenceau, Lloyd George e Orlando erano scettici sull'idealismo di Wilson. I quattordici punti furono la base della richiesta di armistizio della Germania e dei termini della resa alla Conferenza di pace di Parigi. Per l'articolo italiano il principio di nazionalità non fu gradito all'Italia, che vi vide il tradimento del patto di Londra e la nascita della «vittoria mutilata».",
+  "links": [
+    {
+      "slug": "ingresso-degli-stati-uniti-in-guerra-1917",
+      "reason": "Nove mesi prima, il 6 aprile 1917, gli Stati Uniti erano entrati in guerra."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1918",
+      "reason": "Dieci mesi dopo, l'armistizio dell'11 novembre si fonda su questi punti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fourteen Points - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fourteen_Points",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Quattordici punti - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Quattordici_punti",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'8 gennaio 1918. I due articoli divergono su chi guidava l'Inquiry, e il testo attribuisce a ciascuno la sua versione. Il pin è su Washington, dove ebbe sede il Congresso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

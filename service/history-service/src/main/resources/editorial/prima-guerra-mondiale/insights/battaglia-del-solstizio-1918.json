@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-del-solstizio-1918",
+  "title": "La battaglia del solstizio",
+  "summary": "Il 15 giugno 1918 l'esercito austro-ungarico lancia la sua ultima grande offensiva, sul Piave, sull'altopiano di Asiago e sul Grappa. Gli italiani, con reparti britannici e francesi, la respingono. Ludendorff, saputa la notizia, avrebbe detto di aver avuto per la prima volta la sensazione della sconfitta.",
+  "date": {
+    "year": 1918,
+    "month": 6,
+    "day": 15
+  },
+  "place": {
+    "name": "Nervesa della Battaglia, Italia",
+    "lat": 45.818,
+    "lon": 12.23,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "La battaglia si estese dall'altopiano di Asiago al Piave e al Grappa: il pin è sul Piave a Nervesa e non indica un punto preciso."
+  },
+  "before": "Dopo Caporetto gli italiani si attestarono sul Piave e ricevettero rinforzi da sei divisioni francesi e cinque britanniche, per l'articolo inglese. Diaz organizzò una difesa solida. Per entrambi gli articoli Conrad e Boroević non erano d'accordo sul punto d'attacco: Conrad voleva puntare dall'altopiano di Asiago verso Vicenza, Boroević attaccare sul Piave.",
+  "event": "Diaz seppe l'ora dell'attacco, le 3 del 15 giugno, e alle 2.30 l'artiglieria italiana aprì il fuoco sulle trincee affollate; per l'articolo inglese gli austro-ungarici passarono comunque il Piave e conquistarono una testa di ponte larga 24 chilometri e profonda 8. Le piene del Piave e il fuoco italiano distrussero molti ponti e isolarono le unità sulla riva ovest; il 19 giugno Diaz contrattaccò. Per l'articolo inglese il 23 giugno gli italiani avevano ripreso tutto il terreno perduto.",
+  "after": "Per l'articolo italiano gli austro-ungarici persero quasi 120 000 uomini e gli italiani circa 90 000; Conrad fu destituito il 14 luglio. Per entrambi gli articoli la battaglia fu l'inizio della fine dell'Impero asburgico. Il 15 giugno è celebrato in Italia come giornata dell'artiglieria.",
+  "links": [
+    {
+      "slug": "battaglia-di-caporetto-1917",
+      "reason": "Quasi otto mesi prima, nell'ottobre 1917, Caporetto aveva costretto gli italiani al Piave."
+    },
+    {
+      "slug": "battaglia-di-vittorio-veneto-1918",
+      "reason": "Quattro mesi dopo, il 24 ottobre, l'offensiva italiana di Vittorio Veneto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Second Battle of the Piave River - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_the_Piave_River",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del solstizio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_solstizio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 giugno 1918. Per la fine l'articolo inglese dà il 23 giugno, quello italiano il 24. Il nome «battaglia del solstizio» fu dato dal poeta Gabriele D'Annunzio, per l'articolo italiano. Il pin è un segnaposto sul Piave."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

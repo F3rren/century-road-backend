@@ -1,0 +1,50 @@
+{
+  "slug": "dichiarazione-balfour-1917",
+  "title": "La dichiarazione Balfour",
+  "summary": "Il 2 novembre 1917 il ministro degli Esteri britannico Arthur Balfour scrive a Lord Rothschild che il governo vede con favore la creazione in Palestina di una «sede nazionale per il popolo ebraico». Il testo fu pubblicato sulla stampa il 9 novembre.",
+  "date": {
+    "year": 1917,
+    "month": 11,
+    "day": 2
+  },
+  "place": {
+    "name": "Londra, Regno Unito",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, dopo la dichiarazione di guerra britannica all'Impero ottomano nel novembre 1914, il governo cominciò a considerare il futuro della Palestina. I primi negoziati fra i britannici e gli ambienti sionisti si tennero il 7 febbraio 1917, e il 19 giugno Balfour chiese a Rothschild e a Chaim Weizmann di redigere una dichiarazione pubblica. Le bozze furono discusse dal gabinetto in settembre e ottobre, con il contributo di ebrei sionisti e antisionisti ma senza alcuna rappresentanza della numerosa popolazione araba della Palestina.",
+  "event": "La dichiarazione era contenuta in una lettera del 2 novembre 1917 di Balfour a Lord Rothschild, per la trasmissione alla Federazione sionista di Gran Bretagna e Irlanda. Per l'articolo inglese prevedeva anche la salvaguardia dei diritti civili e religiosi dei palestinesi arabi, che formavano la grande maggioranza della popolazione locale, e dei diritti e dello status politico delle comunità ebraiche degli altri paesi.",
+  "after": "Per l'articolo inglese il testo fu pubblicato sulla stampa il 9 novembre 1917 e divenne parte del mandato britannico per la Palestina, il documento fondativo della Palestina mandataria. Per l'articolo italiano la lettera dichiarava che il governo vedeva con favore la creazione in Palestina di una nazione per il popolo ebraico.",
+  "links": [
+    {
+      "slug": "accordo-sykes-picot-1916",
+      "reason": "Nel 1916 l'accordo Sykes-Picot aveva previsto per la Palestina un'amministrazione internazionale."
+    },
+    {
+      "slug": "presa-di-gerusalemme-1917",
+      "reason": "Poco più di cinque settimane dopo, il 9 dicembre, i britannici prendono Gerusalemme."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Balfour Declaration - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Balfour_Declaration",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dichiarazione Balfour - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dichiarazione_Balfour",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà il 2 novembre 1917 come data della lettera; l'articolo italiano, molto breve, parla solo del 1917. Il pin è su Londra, dove Balfour scrisse come ministro degli Esteri britannico."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
