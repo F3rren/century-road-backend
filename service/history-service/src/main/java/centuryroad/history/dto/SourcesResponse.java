@@ -74,7 +74,7 @@ public record SourcesResponse(
                     "https://www.naturalearthdata.com/", "Pubblico dominio",
                     "https://www.naturalearthdata.com/about/terms-of-use/", false),
             new DataSource("century-road-editorial", "Century Road - percorsi e approfondimenti",
-                    "I percorsi guidati e i blocchi «Perché conta», scritti a mano a partire dalle fonti elencate in ciascuno.",
+                    "I percorsi guidati e i blocchi «Perché conta»: bozze redatte con l'aiuto di un'intelligenza artificiale a partire dalle fonti elencate in ciascuno, non ancora riviste da una persona.",
                     null, null, null, false));
 
     static final List<Limit> LIMITS = List.of(

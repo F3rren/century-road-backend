@@ -1,0 +1,51 @@
+{
+  "slug": "notte-dei-cristalli-1938",
+  "title": "La notte dei cristalli",
+  "summary": "Tra il 9 e il 10 novembre 1938, in tutta la Germania nazista, SA, SS e civili devastano negozi, case e sinagoghe degli ebrei, e circa 30 000 uomini ebrei vengono arrestati e internati nei campi di concentramento. Il pretesto fu la morte a Parigi del diplomatico tedesco Ernst vom Rath, colpito da un giovane ebreo polacco.",
+  "date": {
+    "year": 1938,
+    "month": 11,
+    "day": 9
+  },
+  "place": {
+    "name": "Berlino, Germania",
+    "lat": 52.52,
+    "lon": 13.405,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Il pogrom ebbe luogo in tutta la Germania nazista: il pin è su Berlino e non indica un luogo preciso."
+  },
+  "before": "Per l'articolo italiano nel 1938 le persecuzioni degli ebrei si erano intensificate. L'attentato di Herschel Grynszpan al diplomatico Ernst vom Rath, a Parigi, avvenne il 7 novembre per entrambi gli articoli (nel corpo del testo inglese); vom Rath morì il 9 e l'introduzione inglese data al 9 «l'assassinio». Il 28 ottobre, per l'articolo inglese, più di 12 000 ebrei polacchi erano stati espulsi dalla Germania.",
+  "event": "Per l'articolo inglese la sera del 9 novembre la notizia della morte di vom Rath raggiunse Hitler a una cena in ricordo del putsch del 1923 e Goebbels parlò al suo posto; per quello italiano la notizia era nota dal tardo pomeriggio e verso le 22 Goebbels parlò ai Gauleiter. Per l'articolo italiano l'attacco fu coordinato e ordinato da Goebbels e la polizia ebbe ordine di non reprimere i disordini. Parteciparono SA, SS e civili, per l'articolo inglese anche la Hitler Youth. Per l'articolo inglese oltre 1400 sinagoghe e luoghi di preghiera furono distrutti in Germania, Austria e Sudeti secondo l'introduzione (nel corpo: oltre 1668 devastati, di cui 95 distrutti) e oltre 7000 attività ebraiche danneggiate o distrutte; per quello italiano almeno 520 sinagoghe furono bruciate o distrutte, ma il totale supera il migliaio.",
+  "after": "I rapporti ufficiali parlarono di 91 ebrei morti. Per l'articolo inglese le stime moderne, includendo i maltrattamenti dopo l'arresto e i suicidi, arrivano a centinaia di morti, e Richard J. Evans indica un totale fra mille e duemila; per quello italiano il numero fu probabilmente fra 1000 e 2000. Circa 30 000 ebrei furono arrestati e condotti a Dachau, Buchenwald e Sachsenhausen. Per l'articolo italiano il 12 novembre una riunione ministeriale decise decreti per l'esproprio dei beni ebraici.",
+  "links": [
+    {
+      "slug": "leggi-di-norimberga-1935",
+      "reason": "Più di tre anni prima, il 15 settembre 1935, le leggi di Norimberga."
+    },
+    {
+      "slug": "accordo-di-monaco-1938",
+      "reason": "Quaranta giorni dopo l'accordo di Monaco, la Germania scatena il pogrom."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kristallnacht - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kristallnacht",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Notte dei cristalli - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Notte_dei_cristalli",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il pogrom il 9-10 novembre 1938. I due articoli divergono sulle cifre (sinagoghe, morti) e sul momento in cui Hitler seppe della morte di vom Rath; sul giorno dell'attentato (7 novembre) concordano nel corpo del testo, mentre l'introduzione inglese chiama «assassinio» del 9 la morte di vom Rath. Il pin è su Berlino."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

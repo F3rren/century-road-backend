@@ -1,0 +1,54 @@
+{
+  "slug": "concilio-di-trento-1545",
+  "title": "Si apre il Concilio di Trento",
+  "summary": "Il 13 dicembre 1545 si apre a Trento il concilio ecumenico convocato da Paolo III per rispondere alla Riforma protestante: dopo tre fasi si chiuderà nel 1563 con decreti che fissano la dottrina cattolica.",
+  "date": {
+    "year": 1545,
+    "month": 12,
+    "day": 13
+  },
+  "place": {
+    "name": "Trento",
+    "lat": 46.067,
+    "lon": 11.121,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Già nel 1520 Lutero aveva chiesto un concilio, e Carlo V lo voleva per ricomporre la divisione religiosa. Il concilio tardò una generazione: il papato temeva un ritorno del conciliarismo, i luterani chiedevano di escludere il papato, e pesavano le rivalità fra Francia e Impero e il pericolo turco. Paolo III lo volle e, dopo il fallimento dei colloqui di Ratisbona nel 1541, lo convocò a Trento, città italiana entro i confini dell'Impero e governata da un principe-vescovo.",
+  "event": "Il concilio si aprì solennemente il 13 dicembre 1545, terza domenica di Avvento, nella cattedrale di San Vigilio, con il principe-vescovo Cristoforo Madruzzo a fare gli onori di casa. Nelle prime otto sessioni riaffermò il Credo niceno-costantinopolitano e il canone biblico, adottò la Vulgata come testo ufficiale, e affrontò il peccato originale, la giustificazione e i sacramenti, condannando per l'articolo italiano la tesi luterana della salvezza con la sola fede.",
+  "after": "Il concilio si riunì in tre fasi e si chiuse il 4 dicembre 1563, dopo venticinque sessioni. Non riuscì a ricomporre la divisione con i protestanti, ma diede una risposta dottrinale alle questioni di Lutero e dei riformatori: per l'articolo italiano impose ai vescovi di risiedere nelle diocesi e previde un seminario in ogni diocesi. Pio V pubblicò poi il Catechismo Romano e rivide il breviario e il messale.",
+  "links": [
+    {
+      "slug": "novantacinque-tesi-di-lutero-1517",
+      "reason": "Ventotto anni prima le 95 tesi di Lutero avevano aperto la controversia."
+    },
+    {
+      "slug": "pace-di-augusta-1555",
+      "reason": "Dieci anni dopo la pace di Augusta divide l'Impero fra luterani e cattolici."
+    },
+    {
+      "slug": "pace-di-cateau-cambresis-1559",
+      "reason": "Per l'articolo italiano sulla pace del 1559, il papato ne approfittò per portare a compimento il concilio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Council of Trent - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Council_of_Trent",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Concilio di Trento - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Concilio_di_Trento",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 13 dicembre 1545 e le tre fasi del concilio, ma non concordano su altri dettagli: per l'articolo inglese le fasi sono 1545-1549, 1551-1552 e 1562-1563, ma le prime otto sessioni sono datate 1545-1547; per quello italiano durante il concilio si succedettero cinque papi, per quello inglese tre. Il testo non dà questi particolari. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

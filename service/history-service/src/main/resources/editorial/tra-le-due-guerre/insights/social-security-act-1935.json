@@ -1,0 +1,50 @@
+{
+  "slug": "social-security-act-1935",
+  "title": "Il Social Security Act",
+  "summary": "Il 14 agosto 1935 il presidente Roosevelt firma il Social Security Act, che crea il programma di previdenza sociale con le pensioni di vecchiaia e un'assicurazione contro la disoccupazione. Faceva parte del New Deal, in un paese che non aveva un sistema nazionale di sicurezza sociale.",
+  "date": {
+    "year": 1935,
+    "month": 8,
+    "day": 14
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese negli anni Trenta gli Stati Uniti erano uno dei pochi paesi industrializzati in cui non c'era alcun sistema nazionale di sicurezza sociale, e in passato più di una dozzina di progetti per pensioni nazionali di vecchiaia non erano stati approvati. Il medico Francis Townsend raccolse consenso su una proposta di pagamenti diretti agli anziani; Roosevelt formò un comitato guidato dalla ministra del Lavoro Frances Perkins.",
+  "event": "Roosevelt presentò il piano all'inizio del 1935 e firmò la legge il 14 agosto 1935. Per l'articolo inglese le pensioni di vecchiaia erano finanziate da imposte sui salari; la legge creava anche un'assicurazione contro la disoccupazione, gestita dagli Stati, e il programma di aiuto ai figli a carico, per le famiglie con madri sole. Per l'articolo italiano l'assicurazione di malattia, inizialmente prevista, fu tolta per l'opposizione dei medici, e restavano escluse categorie come collaboratori domestici e braccianti.",
+  "after": "La Corte suprema confermò la legge in due casi del 1937. Per l'articolo inglese, nei decenni seguenti il programma contribuì a un forte calo della povertà fra gli anziani. Per entrambi gli articoli gli emendamenti del 1965 crearono Medicare e Medicaid; per quello italiano la legge introdusse anche il numero di previdenza sociale.",
+  "links": [
+    {
+      "slug": "new-deal-1933",
+      "reason": "La legge faceva parte del New Deal, avviato il 4 marzo 1933."
+    },
+    {
+      "slug": "black-sunday-1935",
+      "reason": "Quattro mesi prima, il 14 aprile, la Domenica nera aveva investito le pianure."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Social Security Act - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Social_Security_Act",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Social Security Act - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Social_Security_Act",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 14 agosto 1935. L'articolo italiano è breve. Il pin è su Washington."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

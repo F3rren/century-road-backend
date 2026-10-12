@@ -1,0 +1,51 @@
+{
+  "slug": "leggi-licinie-sestie-367-ac",
+  "title": "Le leggi Licinie-Sestie aprono il consolato ai plebei",
+  "summary": "Intorno al 367 a.C., dopo anni di scontro, i tribuni Licinio Stolone e Sestio Laterano ottengono leggi sui debiti e sulla terra e la regola per cui uno dei due consoli può essere plebeo.",
+  "date": {
+    "year": -367,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Foro Romano, Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo il sacco gallico molti plebei si erano indebitati per ricostruire le case, e le leggi permettevano al creditore di ridurre il debitore in schiavitù. I tribuni della plebe Gaio Licinio Stolone e Lucio Sestio Laterano proposero allora tre misure, su debiti, terra e consolato. Secondo Livio la lotta fu lunga: i due vennero rieletti tribuni più volte e per anni impedirono l'elezione dei magistrati patrizi.",
+  "event": "Le tre proposte stabilivano che gli interessi già pagati si sottraessero dal capitale e il resto si restituisse in tre rate annuali; che nessuno potesse possedere più di 500 iugeri, circa 125 ettari, di terreno pubblico; e che uno dei due consoli potesse essere scelto tra i plebei. Quest'ultima è considerata la più importante, perché apriva ai plebei la magistratura più alta, fino ad allora tipicamente patrizia.",
+  "after": "Secondo una fonte, in cambio ai patrizi fu riservata la nuova carica di pretore, che amministrava la giustizia, e furono istituiti gli edili curuli. Le fonti non concordano sul valore di queste leggi: la regola sui consoli permetteva un console plebeo senza escludere che entrambi fossero patrizi, e per uno storico fu forse solo un aggiustamento amministrativo; il limite alla terra ebbe fortune alterne, e più tardi la materia fu regolata di nuovo dalla lex Sempronia agraria. Alla data delle leggi si fa convenzionalmente risalire la fine del periodo arcaico della storia di Roma.",
+  "links": [
+    {
+      "slug": "leggi-delle-dodici-tavole-451-ac",
+      "reason": "Le leggi scritte erano già una conquista della plebe, ma le norme sui debiti restavano dure."
+    },
+    {
+      "slug": "tiberio-gracco-133-ac",
+      "reason": "I limiti al possesso della terra pubblica tornano al centro della politica con i Gracchi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Licinio-Sextian rogations - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Licinio-Sextian_rogations",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Leges Liciniae Sextiae - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Leges_Liciniae_Sextiae",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Livio chiama le proposte rogationes, perché l'assemblea della plebe non aveva ancora il potere di fare leggi (leges). Alcuni particolari del loro iter, e persino l'anno, sono discussi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

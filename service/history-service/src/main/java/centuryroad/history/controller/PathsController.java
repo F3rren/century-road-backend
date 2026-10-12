@@ -34,12 +34,12 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/api/history")
-@Tag(name = "Paths", description = "Guided paths and the \"Inizia da qui\" proposals: small narrative itineraries written by hand")
+@Tag(name = "Paths", description = "Guided paths and the \"Inizia da qui\" proposals: small narrative itineraries drafted for the project, not yet reviewed by a person")
 public class PathsController {
 
-    // Changes only when a new version is deployed; an hour is long enough to matter and short
-    // enough that a release is seen the same day.
-    private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofHours(1)).cachePublic();
+    // Changes only when a new version is deployed; five minutes is long enough to spare the
+    // service and short enough that a release, or a correction, is seen almost at once.
+    private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic();
 
     private final EditorialCatalog catalog;
 
@@ -52,7 +52,7 @@ public class PathsController {
                     For a visitor who does not know where to begin: a short list of paths and events
                     chosen by the editor, each with a sentence on why to open it. Open a PATH at
                     /api/history/paths/{slug} and an INSIGHT at /api/history/insights/{slug}.""")
-    @ApiResponse(responseCode = "200", description = "The proposals, in the order to show them. Cached for an hour.")
+    @ApiResponse(responseCode = "200", description = "The proposals, in the order to show them. Cached for five minutes.")
     @GetMapping("/start-here")
     public ResponseEntity<ApiEnvelope<List<StartHereItem>>> startHere() {
         List<StartHereItem> items = catalog.startHere().stream().map(this::item).toList();
@@ -63,19 +63,20 @@ public class PathsController {
     private StartHereItem item(StartHerePick pick) {
         if (pick.type() == StartHerePick.Type.PATH) {
             GuidedPath path = catalog.path(pick.slug()).orElseThrow();
-            return StartHereItem.ofPath(pick, PathSummary.from(path, catalog.readingMinutes(path)));
+            return StartHereItem.ofPath(pick, PathSummary.from(path, catalog));
         }
         return StartHereItem.ofInsight(pick, InsightSummary.from(catalog.insight(pick.slug()).orElseThrow()));
     }
 
     @Operation(summary = "The guided paths",
-            description = "Every path as a card: title, one sentence, cover, reading time and number of stops. "
-                    + "Ordered by slug.")
-    @ApiResponse(responseCode = "200", description = "The paths. Cached for an hour.")
+            description = "Every path as a card: title, one sentence, topic, the years it spans, cover, reading "
+                    + "time and number of stops. Grouped by topic in the order the topics are declared, and "
+                    + "inside a topic from the oldest to the newest.")
+    @ApiResponse(responseCode = "200", description = "The paths. Cached for five minutes.")
     @GetMapping("/paths")
     public ResponseEntity<ApiEnvelope<List<PathSummary>>> paths() {
         List<PathSummary> paths = catalog.paths().stream()
-                .map(path -> PathSummary.from(path, catalog.readingMinutes(path)))
+                .map(path -> PathSummary.from(path, catalog))
                 .toList();
         return ResponseEntity.ok().cacheControl(CACHE)
                 .body(ApiEnvelope.success(null, paths, RequestCorrelationFilter.current()));
@@ -86,7 +87,7 @@ public class PathsController {
                     The introduction and every stop: its place (for the map to move to), its date and the
                     line that ties it to the path. A stop's full explanation is the insight with the stop's
                     slug, asked for when the stop is opened.""")
-    @ApiResponse(responseCode = "200", description = "The path. Cached for an hour.")
+    @ApiResponse(responseCode = "200", description = "The path. Cached for five minutes.")
     @ApiResponse(responseCode = "404", description = "No path has this slug. `error` is PATH_NOT_FOUND.",
             content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
     @GetMapping("/paths/{slug}")

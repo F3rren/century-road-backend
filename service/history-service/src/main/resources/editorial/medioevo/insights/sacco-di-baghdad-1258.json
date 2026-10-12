@@ -1,0 +1,51 @@
+{
+  "slug": "sacco-di-baghdad-1258",
+  "title": "La caduta di Baghdad",
+  "summary": "Il 10 febbraio 1258 il califfo abbaside al-Musta'sim si arrende all'esercito mongolo di Hulegu, che saccheggia Baghdad: finisce il califfato abbaside, e il califfo è giustiziato.",
+  "date": {
+    "year": 1258,
+    "month": 2,
+    "day": 10
+  },
+  "place": {
+    "name": "Baghdad, Iraq",
+    "lat": 33.3152,
+    "lon": 44.3661,
+    "countryCode": "IQ",
+    "approximate": false
+  },
+  "before": "Baghdad era stata fondata nel 762 da al-Mansur, capitale della dinastia abbaside, e restava una delle città più grandi del mondo. Il gran khan Möngke mandò in Persia il fratello Hulegu, con una parte rilevante degli uomini dell'impero (da 138 000 a 300 000 secondo le stime moderne), per distruggere gli Ismailiti, o Assassini, e imporre la sottomissione al califfo: gli Assassini si arresero nel 1256. Il califfo al-Musta'sim, che avrebbe dovuto dare truppe, rifiutò. Dopo uno scambio di lettere cominciato nel settembre 1257, l'esercito mongolo invase la Mesopotamia; il 17 gennaio 1258 fece fallire una sortita inondando il campo avversario e assediò una città che aveva circa 30 000 soldati.",
+  "event": "L'assalto cominciò alla fine di gennaio. Le macchine d'assedio aprirono varchi in un paio di giorni e il 4 febbraio le truppe di Hulegu controllavano il muro orientale. Il califfo cercò di trattare, ma Hulegu voleva la vittoria totale. Il 10 febbraio al-Musta'sim consegnò la città; il 13 cominciò il saccheggio, che per una settimana colpì quasi tutti gli abitanti, risparmiando, secondo l'articolo inglese, le persone ritenute degne, come i cristiani per cui aveva interceduto la moglie di Hulegu. Il 20 febbraio, fermato il saccheggio, Hulegu fece giustiziare il califfo con la sua famiglia: fu avvolto in un tappeto e calpestato dai cavalli.",
+  "after": "La caduta di Baghdad segnò la fine di cinquecento anni di califfato abbaside. Il numero dei morti non è noto. La tradizione musulmana ha visto nell'evento la fine dell'età dell'oro dell'Islam, ma per l'articolo inglese gli storici moderni giudicano la tesi semplicistica: grandi biblioteche riaprirono entro due anni, secondo Michal Biran, e Baghdad prosperò sotto l'Ilkhanato, anche se perse peso rispetto a Tabriz. Un discendente degli Abbasidi fu poi insediato al Cairo dai Mamelucchi, ma senza poteri reali.",
+  "links": [
+    {
+      "slug": "fondazione-di-baghdad-762",
+      "reason": "Fondata nel 762, Baghdad fu la capitale storica degli Abbasidi, il cui califfato durò circa cinquecento anni."
+    },
+    {
+      "slug": "battaglia-del-grande-zab-750",
+      "reason": "Gli Abbasidi erano saliti al potere nel 750 con la vittoria del Grande Zab."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Baghdad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Baghdad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Presa di Baghdad - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Presa_di_Baghdad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 10 febbraio è il giorno della resa dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le stime dei morti divergono: per l'articolo italiano le fonti occidentali parlano di 200 000-800 000 persone e quelle arabe di circa due milioni; per quello inglese scrittori musulmani posteriori dicono tra 800 000 e due milioni, e la cifra di due milioni attribuita a Hulegu è «evidentemente gonfiata»."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

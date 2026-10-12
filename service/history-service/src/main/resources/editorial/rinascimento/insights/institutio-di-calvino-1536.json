@@ -1,0 +1,51 @@
+{
+  "slug": "institutio-di-calvino-1536",
+  "title": "Calvino pubblica l'Istituzione della religione cristiana",
+  "summary": "Nel marzo 1536 Giovanni Calvino pubblica a Basilea, in latino, l'Istituzione della religione cristiana, un'introduzione alla fede protestante dedicata a Francesco I di Francia: diventerà un riferimento per le Chiese riformate.",
+  "date": {
+    "year": 1536,
+    "month": 3,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Basilea, Svizzera",
+    "lat": 47.5596,
+    "lon": 7.5886,
+    "countryCode": "CH",
+    "approximate": false
+  },
+  "before": "Calvino aveva studiato diritto e lettere a Parigi e intorno al 1533 si era convertito alla Riforma, perseguitata in Francia. Nel 1535 si rifugiò a Basilea e, probabilmente in quel periodo, cominciò a scrivere un compendio di teologia. I suoi avversari cattolici accostavano i protestanti francesi, detti ugonotti, agli anabattisti radicali; Calvino decise di usare l'opera per difenderli da queste accuse.",
+  "event": "L'opera uscì a Basilea nel marzo del 1536 con una lettera di dedica a Francesco I, re di Francia, in cui Calvino lo pregava di ascoltare i protestanti invece di perseguitarli. Era lunga solo sei capitoli e seguiva la struttura del catechismo: i Dieci comandamenti, il Credo apostolico, il Padre nostro e i sacramenti, con un capitolo sulla libertà cristiana e sulla teologia politica. Poco dopo la pubblicazione Calvino cominciò il suo ministero a Ginevra.",
+  "after": "Il libro ebbe subito successo e fu ampliato: diciassette capitoli nel 1539, ventuno nel 1543 e, nell'edizione definitiva del 1559, a Ginevra, quattro libri e ottanta capitoli. Fu tradotto in francese a partire dal 1541, poi in molte altre lingue. Per l'articolo inglese è un riferimento fondamentale per il sistema dottrinale delle Chiese riformate, detto calvinismo; quello italiano la definisce una «fonte di riferimento secondario».",
+  "links": [
+    {
+      "slug": "atto-di-supremazia-1534",
+      "reason": "Due anni prima Enrico VIII rompeva con Roma con l'Atto di Supremazia."
+    },
+    {
+      "slug": "pace-di-augusta-1555",
+      "reason": "Diciannove anni dopo la pace di Augusta riconosce solo luterani e cattolici, non i calvinisti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Institutes of the Christian Religion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Institutes_of_the_Christian_Religion",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Institutio christianae religionis - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Institutio_christianae_religionis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il marzo 1536, e per questo la data è data solo al mese; per l'articolo italiano Calvino finì di scrivere la prima edizione nell'agosto 1535. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

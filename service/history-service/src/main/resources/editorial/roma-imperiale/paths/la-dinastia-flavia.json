@@ -1,0 +1,37 @@
+{
+  "slug": "la-dinastia-flavia",
+  "title": "La dinastia flavia",
+  "tagline": "Dalla guerra civile del 69 alla morte di Domiziano: i Flavi vincono la rivolta giudaica, costruiscono il Colosseo e governano un Impero scosso dall'eruzione del Vesuvio.",
+  "intro": "Dopo l'anno dei quattro imperatori, Vespasiano fonda una nuova dinastia, che governa dal 69 al 96. Il percorso va dalla fine di Nerone alla caduta di Domiziano, passando per la guerra in Giudea, l'eruzione del Vesuvio e il Colosseo.\n\nLa memoria di alcuni protagonisti, come Domiziano, ci è stata consegnata da autori ostili; dove le fonti divergono, il testo lo segnala.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "morte-di-nerone-68",
+      "narrative": "Si riparte dalla morte di Nerone, che chiude la dinastia di Augusto e apre un periodo di caos."
+    },
+    {
+      "insight": "anno-dei-quattro-imperatori-69",
+      "narrative": "Nel 69 quattro imperatori si succedono in un anno: ne esce vincitore Vespasiano, acclamato in Oriente."
+    },
+    {
+      "insight": "assedio-di-gerusalemme-70",
+      "narrative": "Mentre il padre conquista l'Impero, Tito conclude la guerra in Giudea e distrugge il Tempio di Gerusalemme."
+    },
+    {
+      "insight": "assedio-di-masada-73",
+      "narrative": "Nel 73 cade l'ultima fortezza dei ribelli: secondo il racconto di Giuseppe Flavio i difensori si danno la morte."
+    },
+    {
+      "insight": "eruzione-del-vesuvio-79",
+      "narrative": "Nel 79, l'anno in cui Tito diventa imperatore, il Vesuvio seppellisce Pompei e Ercolano."
+    },
+    {
+      "insight": "inaugurazione-del-colosseo-80",
+      "narrative": "Nell'80 Tito inaugura il Colosseo, costruito con il bottino di Gerusalemme sul lago di Nerone."
+    },
+    {
+      "insight": "assassinio-di-domiziano-96",
+      "narrative": "Nel 96 Domiziano, ultimo dei Flavi, è assassinato dai suoi funzionari e il Senato ne condanna la memoria."
+    }
+  ]
+}

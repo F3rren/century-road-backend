@@ -1,0 +1,37 @@
+{
+  "slug": "il-fronte-occidentale",
+  "title": "Il fronte occidentale",
+  "tagline": "Dalla tregua di Natale del 1914 all'offensiva alleata dell'estate 1918: Verdun, la Somme, lo Chemin des Dames, le Fiandre e il ritorno alla guerra di movimento.",
+  "intro": "Il percorso segue la guerra di trincea sul fronte occidentale: la tregua di Natale del 1914, Verdun, la Somme, l'offensiva Nivelle, Passchendaele, l'offensiva tedesca di primavera e la battaglia di Amiens.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "tregua-di-natale-1914",
+      "narrative": "Si parte dal Natale 1914: soldati dei due schieramenti escono dalle trincee per fraternizzare."
+    },
+    {
+      "insight": "battaglia-di-verdun-1916",
+      "narrative": "Nel 1916 i tedeschi attaccano Verdun e cominciano la battaglia più lunga della guerra."
+    },
+    {
+      "insight": "battaglia-della-somme-1916",
+      "narrative": "Il 1º luglio 1916 comincia la Somme: il primo giorno costa ai britannici le perdite più gravi della loro storia."
+    },
+    {
+      "insight": "offensiva-nivelle-1917",
+      "narrative": "Nel 1917 l'offensiva Nivelle fallisce e l'esercito francese si ammutina."
+    },
+    {
+      "insight": "battaglia-di-passchendaele-1917",
+      "narrative": "Nell'estate 1917 i britannici attaccano nelle Fiandre, nel fango di Passchendaele."
+    },
+    {
+      "insight": "offensiva-di-primavera-1918",
+      "narrative": "Nel marzo 1918 la Germania tenta l'ultimo grande sfondamento."
+    },
+    {
+      "insight": "battaglia-di-amiens-1918",
+      "narrative": "L'8 agosto 1918 la battaglia di Amiens apre l'offensiva dei cento giorni."
+    }
+  ]
+}

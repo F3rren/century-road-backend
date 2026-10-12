@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-azio-31-ac",
+  "title": "Azio: Ottaviano sconfigge Antonio e Cleopatra",
+  "summary": "Il 2 settembre del 31 a.C. la flotta di Ottaviano, guidata da Agrippa, vince al largo di Azio, in Grecia, quella di Antonio e Cleopatra: Ottaviano resta padrone del mondo romano.",
+  "date": {
+    "year": -31,
+    "month": 9,
+    "day": 2
+  },
+  "place": {
+    "name": "Capo Azio, Grecia",
+    "lat": 38.925,
+    "lon": 20.725,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "Dopo l'accordo dei triumviri, Antonio governava l'Oriente insieme a Cleopatra, regina d'Egitto, e i rapporti con Ottaviano si deteriorarono fino alla rottura. All'inizio del 31 a.C. Antonio, con circa 500 navi e 70 000 fanti, si accampò ad Azio, in Grecia; Ottaviano, con 400 navi e 80 000 fanti, arrivò da nord e, grazie ad Agrippa, tagliò le comunicazioni di Antonio con l'Egitto.",
+  "event": "Intrappolato per terra e per mare, con parte dell'esercito che disertava, Antonio tentò di rompere il blocco navale uscendo dallo stretto di Azio, il 2 settembre. La flotta di Ottaviano, formata da navi più piccole e manovrabili, ebbe la meglio. Mentre l'esito era ancora incerto, Cleopatra con parte delle navi fuggì verso l'Egitto e Antonio la seguì, secondo il racconto più diffuso. Secondo una fonte, subito dopo la battaglia 19 legioni e 12 000 cavalieri abbandonarono Antonio nottetempo.",
+  "after": "Ottaviano passò l'inverno a Samo e inseguì i rivali in Egitto: dopo la sconfitta di Alessandria, il 1° agosto del 30 a.C., Antonio si tolse la vita, e il 12 agosto lo fece anche Cleopatra. Ottaviano fece ingrandire il tempio di Apollo ad Azio e istituì i Ludi Actiaci. Azio fu l'ultima guerra civile della Repubblica e aprì la strada al principato: quattro anni dopo il Senato conferì a Ottaviano il titolo di Augusto.",
+  "links": [
+    {
+      "slug": "battaglia-di-filippi-42-ac",
+      "reason": "Undici anni prima i due avversari avevano vinto insieme a Filippi."
+    },
+    {
+      "slug": "ottaviano-diventa-augusto-27-ac",
+      "reason": "Quattro anni dopo il Senato dà a Ottaviano il nome di Augusto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Actium - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Actium",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Azio - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Azio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre di navi e soldati sono quelle riferite dalle fonti e variano da un autore all'altro. Anche il racconto della fuga di Antonio e Cleopatra è discusso: secondo una ricostruzione era stata preparata in anticipo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

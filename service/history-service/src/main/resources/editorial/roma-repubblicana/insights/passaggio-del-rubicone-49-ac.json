@@ -1,0 +1,52 @@
+{
+  "slug": "passaggio-del-rubicone-49-ac",
+  "title": "Cesare passa il Rubicone",
+  "summary": "Nel gennaio del 49 a.C. Giulio Cesare attraversa con una legione il Rubicone, il confine tra la Gallia Cisalpina e l'Italia, violando la legge che vietava ai governatori di entrare in Italia con un esercito: comincia la guerra civile.",
+  "date": {
+    "year": -49,
+    "month": 1,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Rubicone, presso Rimini, Italia",
+    "lat": 44.093,
+    "lon": 12.396,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica la zona del Rubicone, vicino a Rimini, dove la Gallia Cisalpina confinava con l'Italia."
+  },
+  "before": "Cesare era governatore di una regione che andava dalla Gallia meridionale all'Illirico. Il Rubicone, un piccolo fiume che sfocia nell'Adriatico, segnava il confine tra la Gallia Cisalpina e l'Italia governata direttamente da Roma: la legge vietava ai governatori di entrare in Italia alla testa di un esercito, e chi lo faceva perdeva il comando ed era condannato a morte, insieme ai suoi soldati. Quando il suo mandato stava per finire, il Senato gli ordinò di sciogliere l'esercito e di tornare a Roma come privato cittadino; Cesare temeva di essere processato dai suoi avversari, tra cui Pompeo.",
+  "event": "Cesare rifiutò di obbedire. Nel gennaio del 49 a.C. portò verso sud la XIII legione, attraversando il Rubicone, dopo che il suo luogotenente Quinto Ortensio aveva occupato Rimini. Svetonio lo descrive indeciso mentre si avvicinava al fiume e attribuisce il passo a un'apparizione soprannaturale; la frase «alea iacta est», «il dado è tratto», che avrebbe pronunciato prima di attraversare, deriva da questo episodio.",
+  "after": "Il passaggio rese inevitabile la guerra civile: davanti alla rapidità di Cesare, Pompeo, i consoli e gran parte del Senato fuggirono da Roma. «Passare il Rubicone» è diventato un modo di dire per indicare un punto di non ritorno. Il conflitto portò Cesare a diventare dittatore a vita.",
+  "links": [
+    {
+      "slug": "battaglia-di-alesia-52-ac",
+      "reason": "Tre anni prima Cesare aveva vinto la guerra in Gallia."
+    },
+    {
+      "slug": "battaglia-di-farsalo-48-ac",
+      "reason": "Un anno dopo la guerra civile si decide a Farsalo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Crossing the Rubicon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Crossing_the_Rubicon",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Passaggio del Rubicone - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Passaggio_del_Rubicone",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno esatto non è noto: gli studiosi collocano di solito il passaggio nella notte tra il 10 e l'11 gennaio, per i tempi con cui viaggiavano i messaggeri. Prima della riforma giuliana il calendario romano non seguiva con precisione le stagioni e non coincideva con il giuliano: il mese indicato è quello riportato dalle fonti, e nel calendario giuliano potrebbe essere un altro."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

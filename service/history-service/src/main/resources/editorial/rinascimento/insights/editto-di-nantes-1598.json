@@ -1,0 +1,51 @@
+{
+  "slug": "editto-di-nantes-1598",
+  "title": "L'Editto di Nantes",
+  "summary": "Nell'aprile 1598 Enrico IV di Francia emana a Nantes l'editto che concede agli ugonotti libertà di coscienza e di culto in molti luoghi e pone fine alle guerre di religione francesi, mantenendo il cattolicesimo religione di Stato.",
+  "date": {
+    "year": 1598,
+    "month": 4,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Nantes, Francia",
+    "lat": 47.2184,
+    "lon": -1.5536,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dal 1562 le guerre di religione avevano devastato la Francia. Enrico IV, protestante prima di salire al trono nel 1589, si era convertito al cattolicesimo nel 1593: si credeva che l'avesse fatto solo per assicurarsi la corona. Il suo scopo principale era l'unità civile e la pace interna; l'editto separò l'unità civile da quella religiosa.",
+  "event": "L'editto, firmato nell'aprile 1598, aveva quattro testi: uno principale di 92 articoli, 56 articoli «particolari» segreti e due brevetti con le clausole militari e pastorali. Riconosceva la libertà di coscienza in tutto il regno e la libertà di culto protestante nei territori dove i protestanti si erano già insediati prima del 1597, con eccezioni come Parigi; concedeva ai protestanti amnistia, diritti civili, accesso alle cariche pubbliche e piazzeforti. Il cattolicesimo restava la religione ufficiale. Per l'articolo italiano la parola «tolleranza» non compare mai nell'editto. Papa Clemente VIII commentò: «Questo mi crocifigge».",
+  "after": "L'editto non contentò nessuna delle due parti. I parlamenti provinciali resistettero: quello di Rouen lo registrò senza riserve solo nel 1609. I brevetti furono ritirati nel 1629 da Luigi XIII, dopo l'assedio di La Rochelle. Nel 1685 Luigi XIV lo revocò con l'editto di Fontainebleau, e ne seguì l'esodo di molti protestanti, circa 200 000 per l'articolo italiano, a vantaggio dell'economia dei paesi che li accolsero.",
+  "links": [
+    {
+      "slug": "pace-di-augusta-1555",
+      "reason": "Quarantatré anni prima la pace di Augusta aveva regolato la convivenza fra luterani e cattolici nell'Impero."
+    },
+    {
+      "slug": "notte-di-san-bartolomeo-1572",
+      "reason": "Ventisei anni prima la notte di San Bartolomeo aveva insanguinato le guerre di religione."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Edict of Nantes - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Edict_of_Nantes",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Editto di Nantes - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Editto_di_Nantes",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'aprile 1598, e per questo la data è data solo al mese: secondo l'articolo inglese l'editto dice soltanto «dato a Nantes, nel mese di aprile 1598». Sulle piazzeforti i due articoli danno cifre non confrontabili (un centinaio per l'italiano; per l'inglese 150 «luoghi di rifugio» in più), e il testo non le riporta."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

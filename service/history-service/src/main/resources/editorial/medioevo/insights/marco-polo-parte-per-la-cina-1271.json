@@ -1,0 +1,53 @@
+{
+  "slug": "marco-polo-parte-per-la-cina-1271",
+  "title": "Marco Polo parte per l'Asia",
+  "summary": "Nel 1271 il diciassettenne Marco Polo parte con il padre Niccolò e lo zio Matteo per l'Asia, lungo la Via della seta: arriverà alla corte del Gran Khan Kublai e tornerà a Venezia dopo ventiquattro anni.",
+  "date": {
+    "year": 1271,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Venezia, Italia",
+    "lat": 45.4408,
+    "lon": 12.3155,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Venezia, città d'origine della famiglia Polo; gli articoli non indicano il porto di partenza."
+  },
+  "before": "Niccolò e Matteo Polo, mercanti veneziani, erano già stati in Asia e avevano incontrato Kublai Khan, che aveva dato loro una lettera per il papa. Nel 1269 tornarono a Venezia e conobbero per la prima volta Marco, di cui la madre era morta. Per l'articolo inglese la famiglia gli diede un'educazione da mercante, con poco o nessun latino.",
+  "event": "Nel 1271, sotto il doge Lorenzo Tiepolo, Marco partì con il padre e lo zio. Per l'articolo italiano la sua età è indicata da dodici a diciannove anni, ma probabilmente era di diciassette. Si imbarcarono per Acri, dove si fermarono alcuni mesi e parlarono con l'arcidiacono Tedaldo Visconti, che durante il viaggio fu eletto papa; tornati da lui, ricevettero lettere per il Gran Khan e due frati domenicani come legati. Proseguirono via terra, e dopo tre anni e mezzo, secondo l'articolo italiano, arrivarono alla corte di Kublai.",
+  "after": "Kublai Khan, colpito dall'intelligenza di Marco, lo nominò suo inviato; per l'articolo inglese visse in Cina per diciassette anni. Intorno al 1291 i Polo ottennero di partire con la principessa Kököchin, destinata al sovrano persiano. Tornarono a Venezia nel 1295, dopo ventiquattro anni. Marco fu catturato dai Genovesi, probabilmente nel 1296, e in prigionia dettò il racconto del viaggio a Rustichello da Pisa: il «Milione». Per l'articolo italiano ne restano almeno centocinquanta manoscritti anteriori alla stampa, e il libro ispirò viaggiatori come Cristoforo Colombo.",
+  "links": [
+    {
+      "slug": "gengis-khan-1206",
+      "reason": "Il viaggio si svolge nell'Impero mongolo fondato da Gengis Khan."
+    },
+    {
+      "slug": "caduta-di-acri-1291",
+      "reason": "I Polo si fermano ad Acri nel 1271, vent'anni prima che la città cada in mano ai Mamelucchi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marco Polo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marco_Polo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Marco Polo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Marco_Polo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli concordano sul 1271 per la partenza; non indicano il giorno. Per questo la data è data solo all'anno.",
+    "Alcuni studiosi, come Frances Wood, hanno dubitato che Marco Polo sia davvero arrivato in Cina; entrambi gli articoli riportano però anche studi che ne sostengono la sostanziale autenticità, per esempio quelli di Hans Ulrich Vogel."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "morte-di-lorenzo-il-magnifico-1492",
+  "title": "Muore Lorenzo il Magnifico",
+  "summary": "Nella notte dell'8 aprile 1492 muore nella villa di Careggi, a 43 anni, Lorenzo de' Medici detto il Magnifico, che per oltre vent'anni aveva governato Firenze e, dagli anni ottanta, tenuto in equilibrio gli Stati italiani.",
+  "date": {
+    "year": 1492,
+    "month": 4,
+    "day": 8
+  },
+  "place": {
+    "name": "Villa medicea di Careggi, Firenze",
+    "lat": 43.8008,
+    "lon": 11.2414,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica la villa di Careggi, alla periferia di Firenze; la posizione è approssimata."
+  },
+  "before": "Alla morte del padre Piero, nel 1469, Lorenzo prese il comando di Firenze a vent'anni. Si circondò di umanisti, come Ficino, Poliziano e Pico della Mirandola, e di artisti come Botticelli; sopravvisse alla congiura dei Pazzi. Dagli anni ottanta fu l'«ago della bilancia» della politica italiana, trattato come un sovrano dai monarchi stranieri. Verso la fine della sua vita a Firenze crebbe l'influenza di Savonarola, che Lorenzo aveva contribuito a far venire in città.",
+  "event": "Nella primavera del 1492 la salute di Lorenzo crollò. Per l'articolo italiano morì per la cancrena di un'ulcera alla gamba, sottovalutata dai medici l'anno prima: fu portato a Careggi, cercò di indicare al figlio Piero le misure da prendere e si spense nella notte dell'8 aprile. Per l'articolo inglese, in base alle lettere dei testimoni, morì serenamente dopo aver ascoltato il Vangelo del giorno; Savonarola andò a trovarlo, ma la voce che lo avesse condannato sul letto di morte è stata smentita. Fu sepolto con il fratello Giuliano nella basilica di San Lorenzo.",
+  "after": "Gli succedette il figlio Piero. L'articolo inglese scrive che la pace di Lodi, da lui sostenuta, crollò con la sua morte. Per quello italiano, senza la sua diplomazia la rivalità fra i signori italiani degenerò fino alla discesa di Carlo VIII, anche se lo stesso articolo giudica in gran parte infondata l'idea che la sua morte sia stata la causa diretta delle guerre d'Italia; nello stesso periodo fu eletto papa Rodrigo Borgia.",
+  "links": [
+    {
+      "slug": "pace-di-lodi-1454",
+      "reason": "Nel 1454 la pace di Lodi aveva creato l'equilibrio che Lorenzo difese fino alla morte."
+    },
+    {
+      "slug": "discesa-di-carlo-viii-1494",
+      "reason": "Due anni dopo Carlo VIII scende in Italia."
+    },
+    {
+      "slug": "savonarola-al-rogo-1498",
+      "reason": "Sei anni dopo Savonarola muore sul rogo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lorenzo de' Medici - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lorenzo_de'_Medici",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lorenzo de' Medici - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lorenzo_de'_Medici",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la notte dell'8 aprile 1492. La causa della morte è quella indicata dall'articolo italiano. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

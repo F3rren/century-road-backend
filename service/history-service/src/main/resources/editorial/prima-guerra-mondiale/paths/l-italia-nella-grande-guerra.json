@@ -1,0 +1,37 @@
+{
+  "slug": "l-italia-nella-grande-guerra",
+  "title": "L'Italia nella Grande Guerra",
+  "tagline": "Dal patto di Londra a Vittorio Veneto: la neutralità, l'Isonzo, gli Altipiani, Caporetto e il Piave.",
+  "intro": "Il percorso segue la partecipazione italiana alla prima guerra mondiale: il patto di Londra, l'ingresso in guerra, la Strafexpedition, la presa di Gorizia, Caporetto, la battaglia del solstizio e Vittorio Veneto.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "patto-di-londra-1915",
+      "narrative": "Si parte dall'aprile 1915: l'Italia firma in segreto il patto di Londra."
+    },
+    {
+      "insight": "entrata-dell-italia-in-guerra-1915",
+      "narrative": "Il 23 maggio 1915 l'Italia dichiara guerra all'Austria-Ungheria."
+    },
+    {
+      "insight": "strafexpedition-1916",
+      "narrative": "Nel maggio 1916 gli austro-ungarici attaccano dal Trentino, sugli Altipiani."
+    },
+    {
+      "insight": "presa-di-gorizia-1916",
+      "narrative": "Nell'agosto 1916 gli italiani prendono Gorizia."
+    },
+    {
+      "insight": "battaglia-di-caporetto-1917",
+      "narrative": "Nell'ottobre 1917 Caporetto: lo sfondamento e la ritirata fino al Piave."
+    },
+    {
+      "insight": "battaglia-del-solstizio-1918",
+      "narrative": "Nel giugno 1918 l'esercito italiano respinge l'ultima offensiva austro-ungarica."
+    },
+    {
+      "insight": "battaglia-di-vittorio-veneto-1918",
+      "narrative": "Nell'ottobre 1918 l'offensiva finale di Vittorio Veneto porta all'armistizio."
+    }
+  ]
+}

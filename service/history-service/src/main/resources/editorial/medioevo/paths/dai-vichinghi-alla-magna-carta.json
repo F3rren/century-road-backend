@@ -1,0 +1,37 @@
+{
+  "slug": "dai-vichinghi-alla-magna-carta",
+  "title": "Dai Vichinghi alla Magna Carta",
+  "tagline": "Dall'incursione di Lindisfarne al sigillo di Runnymede: le incursioni vichinghe, la conquista normanna dell'Inghilterra, il regno di Sicilia e i primi limiti al potere del re.",
+  "intro": "Il percorso va dalle prime incursioni vichinghe in Britannia alla Magna Carta, passando per la battaglia di Hastings, il Domesday Book, il regno normanno di Sicilia e l'assassinio di Thomas Becket.\n\nLe fonti dell'epoca sono scarse e spesso discordanti, e anche i due articoli da cui sono tratti i testi non sempre concordano; dove accade, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "attacco-vichingo-a-lindisfarne-793",
+      "narrative": "Si parte da Lindisfarne: nel 793 predoni scandinavi saccheggiano il monastero."
+    },
+    {
+      "insight": "battaglia-di-stamford-bridge-1066",
+      "narrative": "Nel 1066 Aroldo sconfigge a Stamford Bridge il re di Norvegia Harald Hardrada."
+    },
+    {
+      "insight": "battaglia-di-hastings-1066",
+      "narrative": "Meno di tre settimane dopo Aroldo è sconfitto e ucciso a Hastings da Guglielmo di Normandia."
+    },
+    {
+      "insight": "domesday-book-1086",
+      "narrative": "Nel 1086 si conclude il censimento dell'Inghilterra raccolto nel Domesday Book."
+    },
+    {
+      "insight": "ruggero-ii-re-di-sicilia-1130",
+      "narrative": "Nel 1130 Ruggero II è incoronato a Palermo primo re di Sicilia."
+    },
+    {
+      "insight": "assassinio-di-thomas-becket-1170",
+      "narrative": "Nel 1170 l'arcivescovo Thomas Becket è ucciso nella cattedrale di Canterbury."
+    },
+    {
+      "insight": "magna-carta-1215",
+      "narrative": "Nel 1215, a Runnymede, Giovanni accetta la Magna Carta."
+    }
+  ]
+}

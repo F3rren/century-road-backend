@@ -1,0 +1,37 @@
+{
+  "slug": "dalla-rivoluzione-russa-alla-pace",
+  "title": "Dalla rivoluzione russa alla pace",
+  "tagline": "Dalla caduta dello zar ai trattati di Parigi: le due rivoluzioni russe, i quattordici punti di Wilson, l'armistizio di Compiègne e i trattati di Versailles e di Sèvres.",
+  "intro": "Il percorso segue la fine della prima guerra mondiale: la rivoluzione di febbraio e quella d'ottobre in Russia, i quattordici punti di Wilson, l'armistizio di Compiègne, la conferenza di pace di Parigi e i trattati di Versailles e di Sèvres.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "rivoluzione-di-febbraio-1917",
+      "narrative": "Si parte dal marzo 1917: a Pietrogrado la rivoluzione di febbraio rovescia lo zar."
+    },
+    {
+      "insight": "rivoluzione-d-ottobre-1917",
+      "narrative": "Nel novembre 1917 i bolscevichi prendono il potere."
+    },
+    {
+      "insight": "quattordici-punti-di-wilson-1918",
+      "narrative": "Nel gennaio 1918 Wilson espone i quattordici punti."
+    },
+    {
+      "insight": "armistizio-di-compiegne-1918",
+      "narrative": "L'11 novembre 1918 la Germania firma l'armistizio di Compiègne."
+    },
+    {
+      "insight": "conferenza-di-pace-di-parigi-1919",
+      "narrative": "Nel gennaio 1919 si apre la conferenza di pace di Parigi."
+    },
+    {
+      "insight": "trattato-di-versailles-1919",
+      "narrative": "Il 28 giugno 1919 viene firmato il trattato di Versailles."
+    },
+    {
+      "insight": "trattato-di-sevres-1920",
+      "narrative": "Il 10 agosto 1920 il trattato di Sèvres divide l'Impero ottomano."
+    }
+  ]
+}

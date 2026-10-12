@@ -1,0 +1,33 @@
+{
+  "slug": "silla-spartaco-e-catilina",
+  "title": "Silla, Spartaco e Catilina",
+  "tagline": "Dalla guerra sociale alla congiura di Catilina: quasi trent'anni di guerre civili e di crisi in cui la Repubblica rischia più volte di spezzarsi.",
+  "intro": "Tra la guerra sociale e la congiura di Catilina la Repubblica vive alcuni dei momenti più violenti della sua storia: i generali usano le legioni nella politica, gli schiavi si ribellano, il Senato ricorre a poteri eccezionali.\n\nNon è il racconto di una caduta inevitabile: ogni tappa ha le sue ragioni e i suoi protagonisti, e le fonti, in particolare per Catilina, sono spesso schierate.",
+  "topic": "ROMA_REPUBBLICANA",
+  "stops": [
+    {
+      "insight": "guerra-sociale-90-ac",
+      "narrative": "Si parte dalla rivolta degli alleati italici: la guerra finisce con la cittadinanza romana estesa all'Italia."
+    },
+    {
+      "insight": "silla-marcia-su-roma-88-ac",
+      "narrative": "Pochi anni dopo i diritti dei nuovi cittadini diventano un pretesto per lo scontro tra generali: Silla marcia su Roma."
+    },
+    {
+      "insight": "battaglia-di-porta-collina-82-ac",
+      "narrative": "Sei anni dopo la guerra civile si decide alle porte di Roma: Silla vince e comincia le proscrizioni."
+    },
+    {
+      "insight": "rivolta-di-spartaco-73-ac",
+      "narrative": "Un'altra crisi, lontana dalle lotte politiche: schiavi in armi mettono in difficoltà le legioni."
+    },
+    {
+      "insight": "lex-gabinia-pirati-67-ac",
+      "narrative": "Intanto Pompeo, che aveva contribuito a vincere Spartaco, ottiene poteri straordinari contro i pirati."
+    },
+    {
+      "insight": "congiura-di-catilina-63-ac",
+      "narrative": "Nel 63 a.C. una nuova crisi: Cicerone, console, smaschera una congiura e il Senato usa i poteri di emergenza."
+    }
+  ]
+}

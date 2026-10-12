@@ -1,0 +1,37 @@
+{
+  "slug": "le-guerre-d-italia",
+  "title": "Le guerre d'Italia",
+  "tagline": "Da Carlo VIII a Cateau-Cambrésis, sessantacinque anni in cui l'Italia diventa il campo di battaglia d'Europa.",
+  "intro": "Il percorso segue le guerre d'Italia: la discesa di Carlo VIII, Fornovo, la sconfitta di Venezia ad Agnadello, Marignano, la cattura di Francesco I a Pavia, il sacco di Roma e la pace di Cateau-Cambrésis che le chiude.\n\nGli articoli non sempre concordano su esiti e cifre; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "discesa-di-carlo-viii-1494",
+      "narrative": "Si parte dal 1494: Carlo VIII scende in Italia con un esercito moderno."
+    },
+    {
+      "insight": "battaglia-di-fornovo-1495",
+      "narrative": "Nel 1495 a Fornovo la Lega prova a fermare il ritorno del re."
+    },
+    {
+      "insight": "battaglia-di-agnadello-1509",
+      "narrative": "Nel 1509 la Francia sconfigge Venezia ad Agnadello."
+    },
+    {
+      "insight": "battaglia-di-marignano-1515",
+      "narrative": "Nel 1515 Francesco I batte gli svizzeri e conquista Milano."
+    },
+    {
+      "insight": "battaglia-di-pavia-1525",
+      "narrative": "Nel 1525 a Pavia gli imperiali catturano Francesco I."
+    },
+    {
+      "insight": "sacco-di-roma-1527",
+      "narrative": "Nel 1527 le truppe di Carlo V saccheggiano Roma."
+    },
+    {
+      "insight": "pace-di-cateau-cambresis-1559",
+      "narrative": "Nel 1559 la pace di Cateau-Cambrésis chiude le guerre d'Italia."
+    }
+  ]
+}

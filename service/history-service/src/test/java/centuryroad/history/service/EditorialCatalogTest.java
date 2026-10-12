@@ -1,7 +1,9 @@
 package centuryroad.history.service;
 
+import centuryroad.history.model.DatePrecision;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
+import centuryroad.history.model.Topic;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ArrayNode;
 import com.fasterxml.jackson.databind.node.ObjectNode;
@@ -28,6 +30,8 @@ class EditorialCatalogTest {
 
     private static final ObjectMapper JSON = new ObjectMapper();
     private static final List<String> SLUGS = List.of("a", "b", "c", "d", "e", "f");
+    /** The folder of the topic every test path is about (ETA_MODERNA, see writePath). */
+    private static final String FOLDER = "eta-moderna";
 
     @TempDir
     Path root;
@@ -62,16 +66,30 @@ class EditorialCatalogTest {
                 .put("publisher", "Wikipedia");
         node.putObject("provenance").put("author", "Century Road");
         edit.accept(node);
-        write("insights/" + slug + ".json", node);
+        write(FOLDER + "/insights/" + slug + ".json", node);
+    }
+
+    private static void precision(ObjectNode insight, String precision) {
+        ((ObjectNode) insight.get("date")).put("precision", precision);
     }
 
     private void writePath(String slug, List<String> stops, Consumer<ObjectNode> edit) throws IOException {
         ObjectNode node = JSON.createObjectNode();
-        node.put("slug", slug).put("title", "Percorso").put("tagline", "Una frase.").put("intro", "Una introduzione.");
+        node.put("slug", slug).put("title", "Percorso").put("tagline", "Una frase.").put("intro", "Una introduzione.")
+                .put("topic", "ETA_MODERNA");
         ArrayNode array = node.putArray("stops");
         stops.forEach(s -> array.addObject().put("insight", s).put("narrative", "Perché " + s + "."));
         edit.accept(node);
-        write("paths/" + slug + ".json", node);
+        write(folderOfTopic(node) + "/paths/" + slug + ".json", node);
+    }
+
+    /**
+     * A path sits in the folder of its topic. A path with no topic, a number or a name that is not on the list
+     * (which the catalog refuses anyway) goes in the default folder, so the file is never written outside root.
+     */
+    private static String folderOfTopic(ObjectNode path) {
+        String folder = path.path("topic").asText("").toLowerCase().replace('_', '-');
+        return Topic.ofFolder(folder).isPresent() ? folder : FOLDER;
     }
 
     private void writeStartHere(String json) throws IOException {
@@ -122,6 +140,28 @@ class EditorialCatalogTest {
     }
 
     @Test
+    void aDateWithNoPrecisionIsKnownToTheDay_andOneThatSaysOtherwiseKeepsIt() throws IOException {
+        writeInsight("b", -133, 1, 1, node -> precision(node, "YEAR"));
+        writeInsight("c", 1900, 7, 1, node -> precision(node, "MONTH"));
+
+        EditorialCatalog catalog = catalog();
+
+        assertThat(catalog.insight("a").orElseThrow().date().precision()).isEqualTo(DatePrecision.DAY);
+        assertThat(catalog.insight("b").orElseThrow().date().precision()).isEqualTo(DatePrecision.YEAR);
+        assertThat(catalog.insight("c").orElseThrow().date().precision()).isEqualTo(DatePrecision.MONTH);
+    }
+
+    @Test
+    void aDayDoesNotFindTheInsightsThatKnowOnlyTheYearOrTheMonth() throws IOException {
+        writeInsight("a", -133, 1, 1, node -> precision(node, "YEAR"));
+        writeInsight("b", 1900, 7, 1, node -> precision(node, "MONTH"));
+        writeInsight("c", 1969, 1, 1, node -> { });
+
+        assertThat(catalog().insightsOn(MonthDay.of(1, 1))).extracting(Insight::slug).containsExactly("c");
+        assertThat(catalog().insightsOn(MonthDay.of(7, 1))).isEmpty();
+    }
+
+    @Test
     void anInsightKnowsWhichPathsHaveAStopOnIt() throws IOException {
         writePath("short", SLUGS.subList(0, 6), node -> { });
 
@@ -154,9 +194,60 @@ class EditorialCatalogTest {
 
     @Test
     void aSlugThatIsNotTheFileNameIsRefused() throws IOException {
-        Files.move(root.resolve("insights/a.json"), root.resolve("insights/renamed.json"));
+        Files.move(root.resolve(FOLDER + "/insights/a.json"), root.resolve(FOLDER + "/insights/renamed.json"));
 
         assertRefused("the file must be called a.json");
+    }
+
+    // ---- one folder per topic --------------------------------------------------------------------
+
+    private void moveTo(String from, String to) throws IOException {
+        Files.createDirectories(root.resolve(to).getParent());
+        Files.move(root.resolve(from), root.resolve(to));
+    }
+
+    @Test
+    void aPathInTheFolderOfAnotherTopicIsRefused() throws IOException {
+        moveTo(FOLDER + "/paths/route.json", "medioevo/paths/route.json");
+
+        assertRefused("medioevo/route.json: the path is about ETA_MODERNA, so the file goes in the folder eta-moderna");
+    }
+
+    @Test
+    void anInsightInAFolderThatIsNotATopicIsRefused() throws IOException {
+        moveTo(FOLDER + "/insights/a.json", "varie/insights/a.json");
+
+        assertRefused("varie/a.json: varie is not a topic folder");
+    }
+
+    @Test
+    void anInsightInTheFolderOfATopicNoneOfItsPathsIsAboutIsRefused() throws IOException {
+        moveTo(FOLDER + "/insights/a.json", "medioevo/insights/a.json");
+
+        assertRefused("medioevo/a.json: the insight is opened by paths about [eta-moderna]");
+    }
+
+    @Test
+    void anInsightSharedByPathsOfTwoTopicsMayLiveWithEither() throws IOException {
+        // The same six stops again, in a path about another period (which sits in its own folder): "a"
+        // stays in its first folder and "b" moves to the second - each is opened by a path of the folder it is in.
+        writePath("other", SLUGS, node -> node.put("topic", "MEDIOEVO"));
+        moveTo(FOLDER + "/insights/b.json", "medioevo/insights/b.json");
+
+        EditorialCatalog catalog = catalog();
+
+        assertThat(catalog.insight("a")).isPresent();
+        assertThat(catalog.insight("b")).isPresent();
+        assertThat(catalog.pathsContaining("b")).hasSize(2);
+    }
+
+    @Test
+    void theSameSlugInTwoFoldersIsRefused() throws IOException {
+        writePath("other", SLUGS, node -> node.put("topic", "MEDIOEVO"));
+        moveTo(FOLDER + "/insights/a.json", "medioevo/insights/a.json");
+        writeInsight("a", 1900, 3, 5, node -> { });
+
+        assertRefused("the slug a is already used by another insight");
     }
 
     @Test
@@ -178,6 +269,41 @@ class EditorialCatalogTest {
         writeInsight("a", 0, 3, 5, node -> { });
 
         assertRefused("insight a: date is not a real date");
+    }
+
+    @Test
+    void aDateKnownOnlyByItsYearIsWrittenAsTheFirstOfJanuary_andOneKnownByItsMonthAsTheFirst() throws IOException {
+        writeInsight("a", -133, 7, 14, node -> precision(node, "YEAR"));
+        writeInsight("b", 1900, 7, 14, node -> precision(node, "MONTH"));
+
+        assertRefused("insight a: a date known only by its year is written as 1 January");
+        assertRefused("insight b: a date known only by its month is written as the 1st of that month");
+    }
+
+    @Test
+    void aPrecisionItDoesNotKnowIsAMistake() throws IOException {
+        writeInsight("a", 1900, 1, 1, node -> precision(node, "SEASON"));
+
+        assertRefused("a.json");
+        assertRefused("SEASON");
+    }
+
+    @Test
+    void aNumberWhereAnEnumBelongsIsAMistake_notThePositionOfAValue() throws IOException {
+        writeInsight("a", 1900, 1, 1, node -> ((ObjectNode) node.get("date")).put("precision", 0));
+        writePath("route", SLUGS, node -> node.put("topic", 1));
+
+        assertRefused("a.json");
+        assertRefused("route.json");
+    }
+
+    @Test
+    void aYearOnlyDateIsRefusedWhenEitherPlaceholderIsOff_theMonthOrTheDay() throws IOException {
+        writeInsight("a", -133, 6, 1, node -> precision(node, "YEAR"));
+        writeInsight("b", -133, 1, 2, node -> precision(node, "YEAR"));
+
+        assertRefused("insight a: a date known only by its year is written as 1 January");
+        assertRefused("insight b: a date known only by its year is written as 1 January");
     }
 
     @Test
@@ -242,6 +368,58 @@ class EditorialCatalogTest {
         writeInsight("a", 1900, 3, 5, node -> ((ObjectNode) node.get("sources").get(0)).put("url", "http://example.org"));
 
         assertRefused("insight a: every source needs a title, a publisher and an https url");
+    }
+
+    @Test
+    void aPathWithoutATopicIsRefused_andSoIsOneThatIsNotInTheList() throws IOException {
+        writePath("route", SLUGS, node -> node.remove("topic"));
+        assertRefused("path route: topic is missing");
+
+        writePath("route", SLUGS, node -> node.put("topic", "STORIA_A_CASO"));
+        assertRefused("route.json");
+        assertRefused("STORIA_A_CASO");
+    }
+
+    @Test
+    void anInsightWithNoSlugIsRefused_notSkippedInSilence() throws IOException {
+        writeInsight("a", 1900, 3, 5, node -> node.remove("slug"));
+
+        assertRefused("a.json: the insight has no slug");
+    }
+
+    @Test
+    void aPathKeepsItsTopic_whetherOrNotItHasACover() throws IOException {
+        assertThat(catalog().path("route").orElseThrow().topic()).isEqualTo(Topic.ETA_MODERNA);
+
+        writePath("route", SLUGS, node -> node.putObject("cover")
+                .put("imageUrl", "https://upload.wikimedia.org/wikipedia/commons/9/97/The_Earth_seen_from_Apollo_17.jpg")
+                .put("alt", "La Terra."));
+        assertThat(catalog().path("route").orElseThrow().topic()).isEqualTo(Topic.ETA_MODERNA);
+    }
+
+    @Test
+    void aPathSpansTheYearsOfItsStops_negativeBeforeTheCommonEra() throws IOException {
+        // The stops are a..f in 1900, 1910, ... 1950: the order of the list does not matter, the dates do.
+        assertThat(catalog().startYear(catalog().path("route").orElseThrow())).isEqualTo(1900);
+        assertThat(catalog().endYear(catalog().path("route").orElseThrow())).isEqualTo(1950);
+
+        writeInsight("a", -44, 3, 15, node -> { });
+        assertThat(catalog().startYear(catalog().path("route").orElseThrow())).isEqualTo(-44);
+    }
+
+    @Test
+    void pathsAreGroupedByTopicAsDeclared_thenOldestFirst_thenBySlug() throws IOException {
+        // Declared order: MONDO_ANTICO < ... < ETA_MODERNA (the default here) < ... < SCIENZA.
+        writePath("late-science", SLUGS, node -> node.put("topic", "SCIENZA"));
+        writePath("ancient", SLUGS, node -> node.put("topic", "MONDO_ANTICO"));
+        // Same topic as "route" (first stop 1900): one with a stop in 1800 comes first, one that
+        // starts the same year comes after it by slug.
+        writeInsight("g", 1800, 1, 1, node -> { });
+        writePath("earlier", List.of("b", "c", "d", "e", "f", "g"), node -> { });
+        writePath("zzz-same-start", SLUGS, node -> { });
+
+        assertThat(catalog().paths()).extracting(GuidedPath::slug)
+                .containsExactly("ancient", "earlier", "route", "zzz-same-start", "late-science");
     }
 
     @Test

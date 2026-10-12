@@ -1,0 +1,51 @@
+{
+  "slug": "fondazione-di-roma-753-ac",
+  "title": "La fondazione di Roma, secondo la tradizione",
+  "summary": "Secondo la tradizione fissata dallo scrittore latino Varrone, Roma fu fondata da Romolo il 21 aprile del 753 a.C.; la maggior parte degli studiosi moderni la vede invece nascere dall'unione graduale di villaggi sui colli.",
+  "date": {
+    "year": -753,
+    "month": 4,
+    "day": 21
+  },
+  "place": {
+    "name": "Colle Palatino, Roma, Italia",
+    "lat": 41.8892,
+    "lon": 12.4876,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "I Romani raccontavano che la loro città discendeva da Enea, l'eroe troiano approdato nel Lazio dopo la caduta di Troia, e che i suoi discendenti avevano regnato su Alba Longa. Da quella famiglia sarebbero nati i gemelli Romolo e Remo, figli del dio Marte e di Rea Silvia: abbandonati sulla riva del Tevere, furono allattati da una lupa e cresciuti da un pastore. Questo racconto ci è arrivato soprattutto da autori vissuti nell'età di Augusto, come Tito Livio, Virgilio e Ovidio, che lo rielaborarono.",
+  "event": "Secondo la versione più diffusa i gemelli decisero di fondare una nuova città nel luogo in cui erano stati salvati, ma litigarono: Remo fu ucciso e Romolo tracciò con l'aratro il solco sacro dei confini sul colle Palatino. Lo scrittore Varrone fissò la data al 21 aprile del 753 a.C., usando i calcoli di un astrologo, Lucio Taruzio. Quel giorno si celebrava la festa dei Parilia, che nella tarda Repubblica era considerata l'anniversario della città. Altri autori antichi proposero altri anni, come il 752 a.C.",
+  "after": "La maggior parte degli studiosi moderni non crede a un singolo fondatore: come altri centri dell'Italia centrale, Roma nacque dall'unione graduale di villaggi sui colli, tra la tarda età del bronzo e la prima età del ferro, e probabilmente verso la fine dell'ottavo secolo a.C. quei villaggi formavano un'unica comunità. La data di Varrone, pur basata su calcoli che si sanno inesatti, è rimasta la base del conteggio degli anni dalla fondazione, ab urbe condita.",
+  "links": [
+    {
+      "slug": "inizio-della-repubblica-509-ac",
+      "reason": "Secondo la tradizione, dopo sette re Roma diventa una repubblica."
+    },
+    {
+      "slug": "battaglia-dell-allia-390-ac",
+      "reason": "Secondo alcuni storici il saccheggio gallico distrusse dei documenti: i primi secoli sono noti soprattutto da racconti più tardi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Founding of Rome - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Founding_of_Rome",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Fondazione di Roma - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Fondazione_di_Roma",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 21 aprile 753 a.C. è una data tradizionale, calcolata dagli antichi, e non un dato storico: altri autori proposero anni diversi, come il 752 a.C.",
+    "Romolo e Remo appartengono al racconto tradizionale: la maggior parte degli studiosi moderni non considera storica la figura di un unico fondatore."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

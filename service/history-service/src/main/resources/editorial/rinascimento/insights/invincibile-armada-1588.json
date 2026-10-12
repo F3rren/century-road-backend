@@ -1,0 +1,50 @@
+{
+  "slug": "invincibile-armada-1588",
+  "title": "L'Invincibile Armata a Gravelines",
+  "summary": "Dopo l'attacco notturno dei brulotti inglesi davanti a Calais, l'8 agosto 1588 l'Invincibile Armata di Filippo II subisce nuove perdite a Gravelines e rinuncia a sbarcare in Inghilterra.",
+  "date": {
+    "year": 1588,
+    "month": 8,
+    "day": 8
+  },
+  "place": {
+    "name": "Gravelines, Francia",
+    "lat": 50.9867,
+    "lon": 2.1286,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dopo l'esecuzione di Maria Stuarda, Filippo II preparò una spedizione per rovesciare Elisabetta I, ristabilire il cattolicesimo in Inghilterra, far cessare l'appoggio inglese ai Paesi Bassi e fermare i corsari inglesi contro le colonie spagnole. Una flotta partita dalla Spagna avrebbe dovuto trasportare in Inghilterra l'esercito del duca di Parma, nei Paesi Bassi. Nell'aprile 1587 Francis Drake aveva distrutto o catturato circa trenta navi a Cadice, ritardando di un anno i preparativi. Il comando fu dato al duca di Medina Sidonia, privo di esperienza navale.",
+  "event": "La flotta fu avvistata al largo del Lizard, in Cornovaglia, il 29 luglio (nuovo stile). Gli inglesi, con navi più veloci e manovrabili, la attaccarono lungo la Manica; Medina Sidonia, che doveva unirsi a Parma, rifiutò i consigli di attaccare Plymouth o occupare l'isola di Wight. L'Armata ancorò davanti a Calais (il 7 agosto per l'articolo inglese, il 6 per quello italiano); nella notte fra il 7 e l'8 gli inglesi lanciarono contro di lei navi incendiarie e la costrinsero a disperdersi. L'8 agosto, nella battaglia di Gravelines, subì nuove perdite; per l'articolo inglese il giorno dopo rischiò di finire sui banchi della Zelanda, finché il vento non cambiò.",
+  "after": "Con il vento che la spingeva a nord, gli inglesi all'inseguimento e senza che l'esercito di Parma fosse imbarcato, l'Armata tornò in Spagna passando a nord della Scozia e a ovest dell'Irlanda; per l'articolo inglese fino a 24 navi naufragarono nel viaggio, e le perdite complessive sono dibattute (44-51 navi secondo vari storici); per quello italiano andarono perdute 45 navi e circa 10 000 uomini. Elisabetta aveva passato in rassegna le truppe a Tilbury il 18 agosto. Altre tre armate spagnole furono mandate contro Inghilterra e Irlanda nel 1596, 1597 e 1601, e fallirono tutte. Fra le cause della sconfitta l'articolo inglese cita il maltempo e il miglior uso dei cannoni e delle tattiche da parte degli inglesi.",
+  "links": [
+    {
+      "slug": "esecuzione-di-maria-stuarda-1587",
+      "reason": "L'anno prima l'esecuzione di Maria Stuarda aveva spinto Filippo II, per l'articolo inglese, a mettere in atto l'invasione."
+    },
+    {
+      "slug": "battaglia-di-lepanto-1571",
+      "reason": "Diciassette anni prima, a Lepanto, la Lega Santa sconfiggeva la flotta ottomana."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Spanish Armada - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Spanish_Armada",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Invincibile Armata - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Invincibile_Armata",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà le date nel calendario gregoriano («nuovo stile») e colloca la battaglia di Gravelines l'8 agosto; quello italiano la notte dei brulotti il 7 agosto. Gli articoli non concordano sul giorno dell'arrivo a Calais (6 o 7 agosto), e il testo attribuisce a ciascuno le cifre delle perdite. Dopo la riforma del 1582 il calendario gregoriano si diffuse a poco a poco, e l'Inghilterra e molti paesi protestanti usarono ancora a lungo quello giuliano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
