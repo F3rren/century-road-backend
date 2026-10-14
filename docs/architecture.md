@@ -137,12 +137,18 @@ provide, and Grafana's contact points reach Discord/Slack over an outbound webho
 that loopback-only constraint without opening anything new. See
 `infra/grafana/provisioning/alerting/`.
 
-**Published container images are scanned with Trivy in CI** (`publish-images` in `ci.yml`),
-gating the moving tag (`latest`/branch) but never the immutable SHA tag, with results uploaded
-as SARIF to the same Security tab CodeQL already uses. Chosen over Snyk Container (needs an
-account/token) or Docker Scout (tied to Docker Hub's auth model) for needing neither against a
-GHCR-only setup. `ignore-unfixed: true` is deliberate: a HIGH/CRITICAL CVE in a base image with
-no available fix should not keep the job red indefinitely.
+**Published container images are scanned with Trivy in CI, as an advisory check, not a gate** (`publish-images` in `ci.yml`).
+The scan runs on the image just pushed, by its immutable SHA tag, so what is scanned is exactly what was published; its
+results are uploaded as SARIF to the same Security tab CodeQL already uses, and a finding at HIGH/CRITICAL adds a warning
+annotation to the run. The step is `continue-on-error`, and the moving tag (`latest`/branch) is pointed at the image
+whether or not the scan found anything. This replaced an earlier version that failed the job: that also failed
+`release.sh`'s "CI passed for this commit" check (`release.yml`), which blocks releasing *every* future version, including
+ones that touch none of the flagged libraries, until the scan is fully clean. A finding with its own tracked place in the
+Security tab does not need to also hold every release hostage. Chosen over Snyk Container (needs an account/token) or
+Docker Scout (tied to Docker Hub's auth model) for needing neither against a GHCR-only setup. `ignore-unfixed: true` is
+deliberate: a HIGH/CRITICAL CVE in a base image with no available fix should not even be reported as a finding.
+The cost of not gating is that nothing stops a vulnerable image from being published; the Security tab is the control,
+and it has to be looked at.
 
 **`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`.
 
@@ -178,4 +184,4 @@ Two fully isolated environments, deliberately sharing nothing at runtime (own pr
 
 **Railway** is the actual production target: one Railway project holds Postgres + the 3 backend services (pulled as pre-built GHCR images, not built on Railway) + the frontend (from its own repo, built there). Since Railway terminates TLS itself, there is no Caddy in front there — the gateway instead runs with `SPRING_PROFILES_INCLUDE=railway`, which hides everything but `/actuator/health` and adds the same security headers (`Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) Caddy would otherwise add.
 
-**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`) — each image is scanned with Trivy first, gating the moving tag (see Key technical decisions). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).
+**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`) — each image is scanned with Trivy, advisory only: findings go to the Security tab and a warning, and do not hold back the moving tag (see Key technical decisions). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).
