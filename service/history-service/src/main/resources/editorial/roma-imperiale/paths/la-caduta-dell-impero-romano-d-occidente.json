@@ -1,0 +1,33 @@
+{
+  "slug": "la-caduta-dell-impero-romano-d-occidente",
+  "title": "La caduta dell'Impero romano d'Occidente",
+  "tagline": "Da Adrianopoli alla deposizione di Romolo Augustolo: un secolo di invasioni, saccheggi e imperatori deboli che porta alla fine dell'Impero in Occidente.",
+  "intro": "Il percorso segue gli eventi che gli storici associano alla fine dell'Impero romano d'Occidente: la sconfitta di Adrianopoli, la divisione dell'Impero alla morte di Teodosio, i saccheggi di Roma da parte di Visigoti e Vandali, la battaglia contro Attila e la deposizione dell'ultimo imperatore. Gli storici discutono quanto pesò ciascuno di questi eventi, e il 476 resta una data convenzionale.\n\nDove le fonti divergono il testo lo dice.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "battaglia-di-adrianopoli-378",
+      "narrative": "Si parte dalla sconfitta dell'esercito d'Oriente contro i Goti, spesso considerata l'inizio della fine."
+    },
+    {
+      "insight": "morte-di-teodosio-e-divisione-dell-impero-395",
+      "narrative": "Nel 395 muore Teodosio, l'ultimo imperatore a governare tutto l'Impero: i figli si dividono Oriente e Occidente."
+    },
+    {
+      "insight": "sacco-di-roma-410",
+      "narrative": "Nel 410 i Visigoti di Alarico saccheggiano Roma, per la prima volta in quasi ottocento anni."
+    },
+    {
+      "insight": "battaglia-dei-campi-catalaunici-451",
+      "narrative": "Nel 451 un'alleanza di Romani e Visigoti ferma gli Unni di Attila in Gallia."
+    },
+    {
+      "insight": "sacco-di-roma-455",
+      "narrative": "Nel 455 Roma è saccheggiata di nuovo, questa volta dai Vandali."
+    },
+    {
+      "insight": "deposizione-di-romolo-augustolo-476",
+      "narrative": "Nel 476 Odoacre depone Romolo Augustolo: finisce l'Impero d'Occidente."
+    }
+  ]
+}

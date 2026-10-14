@@ -1,0 +1,51 @@
+{
+  "slug": "congiura-di-catilina-63-ac",
+  "title": "Cicerone smaschera Catilina in Senato",
+  "summary": "L'8 novembre del 63 a.C. il console Cicerone pronuncia in Senato la prima Catilinaria, davanti a Catilina, che accusa di tramare un colpo di Stato: Catilina lascia Roma e la congiura finisce con la sua morte in battaglia nel 62 a.C.",
+  "date": {
+    "year": -63,
+    "month": 11,
+    "day": 8
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Lucio Sergio Catilina, aristocratico che era stato un seguace di Silla, fu sconfitto nelle elezioni consolari per il 62 a.C. Nell'autunno del 63 a.C. mise insieme una coalizione di scontenti: aristocratici esclusi dalle cariche, contadini senza terra e veterani di Silla indebitati, e progettò di prendere il consolato con la forza al posto di Cicerone e di Gaio Antonio Ibrida. Il Senato, ricevute notizie di uomini armati in Etruria, approvò il decreto ultimo e il 27 ottobre seppe che Gaio Manlio, un ex centurione, aveva preso le armi presso Fiesole.",
+  "event": "L'8 novembre Cicerone, console, tenne in Senato la prima delle orazioni Catilinarie, davanti a Catilina in persona, e lo accusò di cospirare contro la Repubblica. L'ultima riunione dei congiurati si era tenuta, secondo la tradizione, il 6-7 novembre in casa del senatore Marco Porcio Leca: Cicerone sarebbe stato informato da Fulvia, amante di uno di loro. Catilina lasciò Roma e raggiunse in Etruria l'esercito di Manlio.",
+  "after": "In dicembre Cicerone scoprì altri congiurati che a Roma lavoravano per Catilina e, su consiglio del Senato, ne fece giustiziare cinque senza processo: la decisione gli fu rimproverata, e nel 58 a.C. una legge bandì chi avesse messo a morte cittadini senza processo. All'inizio di gennaio del 62 a.C. l'esercito di Catilina fu sconfitto in battaglia, sotto il comando di fatto di Marco Petreio, perché Antonio si dichiarò malato. La maggior parte degli studiosi moderni considera le fonti, Cicerone e Sallustio, molto ostili a Catilina: ritiene che la congiura avvenne più o meno come raccontata, ma che il pericolo reale fu probabilmente esagerato.",
+  "links": [
+    {
+      "slug": "morte-di-gaio-gracco-121-ac",
+      "reason": "Contro Catilina il Senato usa il «decreto ultimo» già usato contro Gaio Gracco."
+    },
+    {
+      "slug": "primo-triumvirato-60-ac",
+      "reason": "Tre anni dopo Cesare, Pompeo e Crasso si alleano per governare Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Catilinarian conspiracy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Catilinarian_conspiracy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lucio Sergio Catilina - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lucio_Sergio_Catilina",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Prima della riforma giuliana il calendario romano non seguiva con precisione le stagioni e non coincideva con il giuliano: il giorno indicato è quello riportato dalle fonti, e nel calendario giuliano potrebbe cadere in un altro giorno.",
+    "L'8 novembre è il giorno della prima Catilinaria; l'ultima riunione dei congiurati è datata al 6-7 novembre. Le fonti principali, Cicerone e Sallustio, sono entrambe ostili a Catilina."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

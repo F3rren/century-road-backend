@@ -1,0 +1,56 @@
+{
+  "slug": "assassinio-di-domiziano-96",
+  "title": "L'assassinio di Domiziano",
+  "summary": "Il 18 settembre del 96 d.C. l'imperatore Domiziano è ucciso in una congiura di corte; gli succede lo stesso giorno Nerva, e il Senato condanna la memoria dell'ultimo dei Flavi.",
+  "date": {
+    "year": 96,
+    "month": 9,
+    "day": 18
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Roma, dove l'imperatore fu ucciso; le fonti consultate non indicano il luogo preciso."
+  },
+  "before": "Domiziano divenne imperatore nell'81, dopo la morte del fratello Tito, acclamato dai pretoriani. Era popolare tra il popolo e l'esercito, ma i senatori lo consideravano un tiranno, perché aveva ridotto drasticamente i poteri del Senato. Dopo la rivolta del governatore Saturnino, nell'89, e altre congiure, aumentò la repressione e visse nella paura e nell'insicurezza.",
+  "event": "Domiziano fu ucciso il 18 settembre del 96 in una congiura di corte: per l'articolo inglese di funzionari, per quello italiano ispirata da senatori. Svetonio ne dà un racconto molto dettagliato: la parte principale l'avrebbe avuta il ciambellano Partenio. L'imperatore, che per un presagio credeva di dover morire a mezzogiorno, quel giorno chiese più volte l'ora, e un servo, complice dei congiurati, gli disse che era già tardo pomeriggio. Poco dopo Stefano, amministratore della nipote dell'imperatore, che da giorni portava un braccio fasciato per nascondere un pugnale, lo colpì all'inguine; Domiziano si difese, ma morì dopo altre sette pugnalate. Per Cassio Dione l'attentato fu improvvisato; per Svetonio era ben organizzato.",
+  "after": "Successe a Domiziano, lo stesso giorno, il suo consigliere Nerva. Il Senato condannò la memoria dell'imperatore, e autori senatori ed equestri come Tacito, Plinio il Giovane e Svetonio lo descrissero come un tiranno crudele e paranoico; i soldati, che lo apprezzavano, furono gli unici a ribellarsi al suo assassinio. Con lui finì la dinastia flavia, che aveva governato dal 69 al 96. Alcuni storici moderni rivedono il giudizio degli autori antichi.",
+  "links": [
+    {
+      "slug": "anno-dei-quattro-imperatori-69",
+      "reason": "La dinastia nata dalla guerra civile del 69 finisce con la sua morte."
+    },
+    {
+      "slug": "inaugurazione-del-colosseo-80",
+      "reason": "Domiziano aveva terminato la costruzione del Colosseo."
+    },
+    {
+      "slug": "conquista-della-dacia-106",
+      "reason": "Alle guerre daciche di Domiziano seguirono quelle di Traiano, che conquistò la Dacia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Domitian - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Domitian",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Domiziano - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Domiziano",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I giorni citati sono quelli riportati dalle fonti: il calendario giuliano non coincide con quello gregoriano.",
+    "Il racconto dettagliato dell'attentato viene da Svetonio, mentre Cassio Dione, che scrisse quasi cent'anni dopo, lo descrive come improvvisato; non è chiaro quale parte ebbero i pretoriani."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

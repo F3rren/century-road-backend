@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-agnadello-1509",
+  "title": "La battaglia di Agnadello",
+  "summary": "Il 14 maggio 1509 ad Agnadello l'esercito francese di Luigi XII sconfigge quello veneziano: per Machiavelli, in un solo giorno Venezia perde ciò che aveva conquistato in otto secoli.",
+  "date": {
+    "year": 1509,
+    "month": 5,
+    "day": 14
+  },
+  "place": {
+    "name": "Agnadello, Cremona",
+    "lat": 45.44,
+    "lon": 9.53,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica la zona di Agnadello, fra l'Adda e Pandino; gli articoli non danno il luogo esatto dello scontro."
+  },
+  "before": "Alla fine del 1508 fu firmata in segreto la Lega di Cambrai, che riuniva molte potenze europee contro Venezia, allora al culmine della sua potenza. Il 15 aprile 1509 l'esercito francese, sotto il comando diretto di Luigi XII per l'articolo italiano, invase il territorio veneziano. Venezia aveva un esercito di mercenari al comando congiunto dei cugini Niccolò Orsini, conte di Pitigliano, e Bartolomeo d'Alviano: entrambi avevano l'ordine di evitare lo scontro diretto, ma Pitigliano era prudente e d'Alviano voleva attaccare.",
+  "event": "Il 14 maggio, mentre l'esercito veneziano marciava verso sud, la retroguardia di d'Alviano fu attaccata dai francesi presso Agnadello. D'Alviano tornò indietro e schierò i suoi, per l'articolo inglese su un'altura; la pioggia e i fossati pieni di fango frenarono l'attacco. Pitigliano, già avanti, rispose alla richiesta di aiuto consigliando di evitare la battaglia. Arrivato il resto dell'esercito francese, circa 30 000 uomini per l'articolo inglese, d'Alviano fu circondato; per l'articolo inglese le sue linee crollarono quando lui fu ferito e catturato. Per l'articolo inglese i veneziani persero oltre quattromila uomini; per quello italiano la cifra di quattromila fanti non dovrebbe essere lontana dal vero.",
+  "after": "Pitigliano seppe della sconfitta la sera e la mattina dopo la maggior parte dei suoi soldati era fuggita: si ritirò verso Venezia, abbandonando i territori occidentali di terraferma. Luigi XII occupò il resto della Lombardia veneziana e si fermò a Peschiera. Nel «Principe» Machiavelli scrisse che i veneziani persero in un giorno ciò che avevano impiegato ottocento anni a conquistare.",
+  "links": [
+    {
+      "slug": "battaglia-di-fornovo-1495",
+      "reason": "Quattordici anni prima, a Fornovo, Venezia combatteva contro i francesi."
+    },
+    {
+      "slug": "battaglia-di-marignano-1515",
+      "reason": "Sei anni dopo i francesi vincono un'altra battaglia in Lombardia, a Marignano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Agnadello - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Agnadello",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Agnadello - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Agnadello",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 14 maggio 1509. Sul numero dei caduti i due articoli concordano solo in parte: quello italiano scrive che quattromila fanti veneziani non dovrebbe essere lontano dal vero, quello inglese parla di oltre quattromila uomini. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

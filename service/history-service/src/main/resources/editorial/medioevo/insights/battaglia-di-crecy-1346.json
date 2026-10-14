@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-crecy-1346",
+  "title": "La battaglia di Crécy",
+  "summary": "Il 26 agosto 1346 a Crécy, nella Francia settentrionale, l'esercito inglese di Edoardo III, molto inferiore di numero, sconfigge quello francese di Filippo VI: gli arcieri con l'arco lungo spezzano le cariche della cavalleria.",
+  "date": {
+    "year": 1346,
+    "month": 8,
+    "day": 26
+  },
+  "place": {
+    "name": "Crécy-en-Ponthieu, Francia",
+    "lat": 50.2531,
+    "lon": 1.8806,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Gli Inglesi, sbarcati nel Cotentin il 12 luglio 1346, devastarono le terre più ricche della Francia fino a 3 km da Parigi, prendendo Caen il 26 luglio e uccidendovi più di 5000 soldati e civili. L'esercito francese principale era impegnato in Guascogna, all'assedio di Aiguillon. Edoardo marciò verso nord sperando di unirsi a un esercito fiammingo; saputo che i Fiamminghi si erano ritirati e avendo distanziato i Francesi, che lo inseguivano, scelse una posizione difensiva su un colle presso Crécy-en-Ponthieu. Gli Inglesi erano provati da giorni di marcia, ma dopo il guado della Somme si rifornirono saccheggiando la zona; per l'articolo inglese il giorno della battaglia erano riposati e ben nutriti, mentre i Francesi, più numerosi, arrivavano stanchi da una marcia.",
+  "event": "Nel tardo pomeriggio del 26 agosto i Francesi attaccarono. Balestrieri mercenari genovesi si scontrarono con gli arcieri inglesi e gallesi, che avevano gittata maggiore e una cadenza di tiro più di tre volte superiore: furono messi in fuga. Seguirono cariche di cavalleria, improvvisate, che dovettero farsi strada tra i balestrieri in rotta, su terreno fangoso e in salita e tra buche scavate dagli Inglesi, e furono spezzate dal tiro degli arcieri. Gli uomini d'arme inglesi, scesi da cavallo, combatterono corpo a corpo. Le cariche continuarono fino a notte, sempre con lo stesso esito.",
+  "after": "Le perdite inglesi furono bassissime: per un appello fatto dopo la battaglia una quarantina di morti (per alcuni storici moderni circa 300; l'articolo italiano parla di 150-1000). Quelle francesi furono molto alte: gli araldi inglesi contarono 1542 nobili uomini d'arme morti, e tra gli uccisi c'erano il re Giovanni di Boemia, nove principi e dieci conti. Edoardo assediò Calais, che cadde dopo undici mesi e rimase inglese per oltre due secoli, fino al 1558. Per l'articolo inglese la battaglia stabilì l'efficacia dell'arco lungo sui campi di battaglia dell'Europa occidentale; per quello italiano molti storici la considerano l'inizio della fine dell'età della cavalleria.",
+  "links": [
+    {
+      "slug": "inizio-della-guerra-dei-cent-anni-1337",
+      "reason": "Nove anni prima Filippo VI aveva confiscato la Guienna a Edoardo III: era cominciata la guerra dei Cent'anni."
+    },
+    {
+      "slug": "peste-nera-1347",
+      "reason": "Un anno dopo la peste nera arriva in Europa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Crécy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Crécy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Crécy - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Crécy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 26 agosto è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre sono stime: l'articolo inglese dà per gli Inglesi tra 7000 e 15 000 uomini e per i Francesi almeno il doppio, forse il triplo, e osserva che le cifre delle cronache sono esagerate; quello italiano parla di circa 12 000 Inglesi contro 50 000-60 000 Francesi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

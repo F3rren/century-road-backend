@@ -27,10 +27,11 @@ class InsightsControllerTest {
     void everyInsightIsListedOldestFirst() throws Exception {
         mvc.perform(get("/api/history/insights"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.data.length()").value(6))
                 .andExpect(jsonPath("$.data[0].slug").value("test-a"))
                 .andExpect(jsonPath("$.data[0].date.year").value(1901))
+                .andExpect(jsonPath("$.data[0].date.precision").value("DAY"))
                 .andExpect(jsonPath("$.data[5].slug").value("test-f"));
     }
 
@@ -43,6 +44,19 @@ class InsightsControllerTest {
                 .andExpect(jsonPath("$.data[0].date.year").value(1901))
                 .andExpect(jsonPath("$.data[1].date.year").value(1950))
                 .andExpect(jsonPath("$.data[2].date.year").value(2020));
+    }
+
+    @Test
+    void aDateKnownOnlyByItsMonthSaysSo_andBelongsToNoDay() throws Exception {
+        // test-d is November 1989, written as the 1st: that placeholder day must not find it.
+        mvc.perform(get("/api/history/insights"))
+                .andExpect(jsonPath("$.data[3].slug").value("test-d"))
+                .andExpect(jsonPath("$.data[3].date.precision").value("MONTH"));
+        mvc.perform(get("/api/history/insights/test-d"))
+                .andExpect(jsonPath("$.data.date.precision").value("MONTH"));
+        mvc.perform(get("/api/history/insights").param("month", "11").param("day", "1"))
+                .andExpect(status().isOk())
+                .andExpect(jsonPath("$.data").isEmpty());
     }
 
     @Test
@@ -69,7 +83,7 @@ class InsightsControllerTest {
     void anInsightIsToldInThreeParts_withWhereToReadNext_andWhereItCameFrom() throws Exception {
         mvc.perform(get("/api/history/insights/test-a"))
                 .andExpect(status().isOk())
-                .andExpect(header().string("Cache-Control", "max-age=3600, public"))
+                .andExpect(header().string("Cache-Control", "max-age=300, public"))
                 .andExpect(jsonPath("$.data.slug").value("test-a"))
                 .andExpect(jsonPath("$.data.language").value("it"))
                 .andExpect(jsonPath("$.data.before").value("Prima uno due tre."))

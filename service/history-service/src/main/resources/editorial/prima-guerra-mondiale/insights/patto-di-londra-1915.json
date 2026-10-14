@@ -1,0 +1,50 @@
+{
+  "slug": "patto-di-londra-1915",
+  "title": "Il patto di Londra",
+  "summary": "Il 26 aprile 1915 l'Italia firma a Londra un accordo segreto con Regno Unito, Francia e Russia: si impegna a entrare in guerra entro un mese contro gli Imperi centrali, in cambio di compensi territoriali. Le promesse saranno in parte disattese alla fine della guerra.",
+  "date": {
+    "year": 1915,
+    "month": 4,
+    "day": 26
+  },
+  "place": {
+    "name": "Londra, Regno Unito",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Allo scoppio della guerra l'Italia, ancora formalmente nella Triplice alleanza, dichiarò la neutralità. Per l'articolo inglese Salandra e il ministro degli Esteri Sonnino trattarono anche con gli Imperi centrali, in un apparente tentativo di tenerli a bada; i colloqui fallirono il 15 febbraio 1915. Per l'articolo italiano il patto fu firmato contro le potenze della stessa Triplice alleanza.",
+  "event": "Il 26 aprile 1915 il patto fu firmato a Londra dall'ambasciatore italiano Imperiali e da Grey, Cambon e Benckendorff per Regno Unito, Francia e Russia (entrambi gli articoli); per l'articolo italiano il governo Salandra lo firmò in segreto, senza che il Parlamento ne fosse informato. Per l'articolo italiano, composto di 16 articoli, prevedeva che l'Italia entrasse in guerra entro un mese; in cambio, in caso di vittoria, avrebbe ottenuto il Tirolo meridionale fino al Brennero, Trieste, le contee di Gorizia e Gradisca, l'Istria fino al Quarnaro, le isole di Cherso e Lussino e una parte della Dalmazia con Zara e Sebenico.",
+  "after": "Per l'articolo italiano il patto restò segreto fino alla pubblicazione da parte dei bolscevichi nel novembre 1917 e il governo italiano lo rese noto solo il 13 febbraio 1918; per quello inglese una sintesi delle clausole era giunta già alla fine di aprile 1915 a conoscenza del Comitato jugoslavo e dei suoi sostenitori a Londra. Alla Conferenza di pace di Parigi, per l'articolo inglese, gli Stati Uniti spinsero perché fosse annullato in nome dell'autodeterminazione: l'Italia ottenne Trentino-Alto Adige e Venezia Giulia, ma non le colonie e la parte di Asia Minore promesse, e il risultato alimentò il mito della «vittoria mutilata» di D'Annunzio.",
+  "links": [
+    {
+      "slug": "entrata-dell-italia-in-guerra-1915",
+      "reason": "Meno di un mese dopo, il 23 maggio, l'Italia dichiara guerra all'Austria-Ungheria."
+    },
+    {
+      "slug": "conferenza-di-pace-di-parigi-1919",
+      "reason": "Nel 1919 la Conferenza di pace di Parigi ridimensiona le promesse del patto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of London (1915) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_London_(1915)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Patto di Londra - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Patto_di_Londra",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 26 aprile 1915. L'articolo inglese indica come parti il Regno Unito, la Francia e la Russia, quello italiano parla di rappresentanti della Triplice Intesa. Le promesse territoriali sono quelle dell'articolo italiano; l'articolo inglese le elenca articolo per articolo, con alcune differenze di dettaglio, e riassume anche l'esito finale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

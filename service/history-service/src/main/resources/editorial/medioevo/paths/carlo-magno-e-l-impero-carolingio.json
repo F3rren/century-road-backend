@@ -1,0 +1,33 @@
+{
+  "slug": "carlo-magno-e-l-impero-carolingio",
+  "title": "Carlo Magno e l'Impero carolingio",
+  "tagline": "Dai Franchi di Carlo Martello alla spartizione di Verdun: come una famiglia di maestri di palazzo diventa dinastia, conquista l'Italia e riporta in Occidente il titolo di imperatore.",
+  "intro": "Il percorso segue l'ascesa dei Carolingi: la battaglia di Poitiers, l'alleanza con il papa, la conquista del regno longobardo, la sconfitta nei Pirenei, l'incoronazione imperiale e la divisione dell'Impero tra i figli di Ludovico il Pio.\n\nMolti racconti vengono da cronache scritte dagli stessi Franchi o dalla Chiesa, e le fonti non sempre concordano; dove accade, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "battaglia-di-poitiers-732",
+      "narrative": "Si parte da Poitiers: nel 732 Carlo Martello ferma un esercito musulmano venuto dalla Spagna."
+    },
+    {
+      "insight": "donazione-di-pipino-756",
+      "narrative": "Nel 756 Pipino il Breve sconfigge i Longobardi e cede al papa i territori dell'Italia centrale."
+    },
+    {
+      "insight": "fine-del-regno-longobardo-774",
+      "narrative": "Nel 774 Carlo Magno prende Pavia e pone fine al regno longobardo."
+    },
+    {
+      "insight": "battaglia-di-roncisvalle-778",
+      "narrative": "Nel 778 la retroguardia del suo esercito è annientata nei Pirenei: muore Rolando."
+    },
+    {
+      "insight": "incoronazione-di-carlo-magno-800",
+      "narrative": "Il Natale dell'800 Leone III lo incorona imperatore dei Romani."
+    },
+    {
+      "insight": "trattato-di-verdun-843",
+      "narrative": "Nell'843 l'Impero è diviso tra i tre figli di Ludovico il Pio."
+    }
+  ]
+}

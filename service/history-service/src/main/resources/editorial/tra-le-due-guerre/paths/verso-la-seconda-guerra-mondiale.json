@@ -1,0 +1,37 @@
+{
+  "slug": "verso-la-seconda-guerra-mondiale",
+  "title": "Verso la seconda guerra mondiale",
+  "tagline": "Dal 1936 al 1939: la Renania, la guerra di Spagna, Guernica, l'Anschluss, Monaco, la notte dei cristalli e il patto fra Hitler e Stalin.",
+  "intro": "Il percorso segue gli anni che portano alla seconda guerra mondiale: la rimilitarizzazione della Renania, la guerra civile spagnola, il bombardamento di Guernica, l'Anschluss, l'accordo di Monaco, la notte dei cristalli e il patto Molotov-Ribbentrop.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "TRA_LE_DUE_GUERRE",
+  "stops": [
+    {
+      "insight": "rimilitarizzazione-della-renania-1936",
+      "narrative": "Si parte dal marzo 1936: la Germania rimilitarizza la Renania."
+    },
+    {
+      "insight": "guerra-civile-spagnola-1936",
+      "narrative": "Nel luglio 1936 comincia la guerra civile spagnola."
+    },
+    {
+      "insight": "bombardamento-di-guernica-1937",
+      "narrative": "Nell'aprile 1937 viene bombardata Guernica."
+    },
+    {
+      "insight": "anschluss-1938",
+      "narrative": "Nel marzo 1938 la Germania annette l'Austria."
+    },
+    {
+      "insight": "accordo-di-monaco-1938",
+      "narrative": "Nel settembre 1938 l'accordo di Monaco concede i Sudeti a Hitler."
+    },
+    {
+      "insight": "notte-dei-cristalli-1938",
+      "narrative": "Nel novembre 1938 il pogrom della notte dei cristalli."
+    },
+    {
+      "insight": "patto-molotov-ribbentrop-1939",
+      "narrative": "Nell'agosto 1939 il patto fra Germania e Unione Sovietica."
+    }
+  ]
+}

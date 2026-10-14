@@ -1,0 +1,37 @@
+{
+  "slug": "le-crociate",
+  "title": "Le crociate",
+  "tagline": "Da Clermont ad Acri: l'appello del papa, la conquista di Gerusalemme, la riscossa di Saladino, il sacco di Costantinopoli e la perdita dell'ultimo bastione crociato.",
+  "intro": "Il percorso segue le crociate in Terra Santa: dall'appello di Urbano II alla presa di Gerusalemme, dalla battaglia di Hattin alla terza crociata, dal sacco di Costantinopoli alla crociata diplomatica di Federico II, fino alla caduta di Acri.\n\nMolti racconti vengono da cronache scritte da un solo schieramento, e i due articoli da cui sono tratti i testi non sempre concordano su date e cifre; dove accade, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "concilio-di-clermont-1095",
+      "narrative": "Si parte da Clermont: nel 1095 papa Urbano II lancia l'appello alla crociata."
+    },
+    {
+      "insight": "conquista-crociata-di-gerusalemme-1099",
+      "narrative": "Nel 1099 i crociati prendono Gerusalemme."
+    },
+    {
+      "insight": "battaglia-di-hattin-1187",
+      "narrative": "Nel 1187 Saladino distrugge l'esercito crociato a Hattin."
+    },
+    {
+      "insight": "assedio-di-acri-1191",
+      "narrative": "Nel 1191, nella terza crociata, i crociati riprendono Acri."
+    },
+    {
+      "insight": "sacco-di-costantinopoli-1204",
+      "narrative": "Nel 1204 la quarta crociata saccheggia Costantinopoli."
+    },
+    {
+      "insight": "sesta-crociata-1229",
+      "narrative": "Nel 1229 Federico II ottiene Gerusalemme per via diplomatica."
+    },
+    {
+      "insight": "caduta-di-acri-1291",
+      "narrative": "Nel 1291 Acri cade in mano ai Mamelucchi: finisce la presenza crociata in Terra Santa."
+    }
+  ]
+}

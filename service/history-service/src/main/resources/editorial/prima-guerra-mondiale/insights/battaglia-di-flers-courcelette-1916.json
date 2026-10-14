@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-flers-courcelette-1916",
+  "title": "I primi carri armati a Flers-Courcelette",
+  "summary": "Il 15 settembre 1916, nella battaglia della Somme, l'esercito britannico usa per la prima volta in battaglia i carri armati, i Mark I, nell'attacco ai villaggi di Flers e Courcelette. Il debutto non porta allo sfondamento sperato.",
+  "date": {
+    "year": 1916,
+    "month": 9,
+    "day": 15
+  },
+  "place": {
+    "name": "Flers, Somme, Francia",
+    "lat": 50.0333,
+    "lon": 2.8167,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "L'attacco si svolse su un fronte di 11 chilometri (articolo italiano): il pin è su Flers, uno dei villaggi dell'attacco, e non indica un punto preciso."
+  },
+  "before": "Per l'articolo italiano, dopo mesi di assalti di fanteria sulla Somme, Haig cercava di aprire un varco per la cavalleria. A metà settembre 60 dei 150 carri Mark I costruiti erano già al fronte e Haig ne aveva chiesto l'impiego fin dal 1º luglio; per l'articolo inglese ne erano pronti solo 49. Sempre per quest'ultimo Haig sperava che il ritardo nella produzione fosse stato superato e che i carri bastassero per la battaglia di metà settembre.",
+  "event": "Il 15 settembre, per l'articolo italiano, otto divisioni di fanteria attaccarono con altre due in riserva, appoggiate da una cinquantina di carri Mark I (49 pronti, ma per l'articolo inglese solo 18 contribuirono alla battaglia), schierati in piccoli gruppi di due o tre mezzi, con numerosi difetti meccanici. Al centro il XV Corpo avanzò rapidamente: Flers cadde nelle mani della 41ª Divisione entro le 10, e per l'articolo italiano Martinpuich fu espugnata dalla 15ª Divisione scozzese. Per la prima volta combatterono sulla Somme il corpo canadese e la divisione neozelandese.",
+  "after": "Per l'articolo italiano i britannici guadagnarono da 2,3 a 3,2 chilometri di profondità su un fronte di 11, senza sfondare. Per l'articolo inglese settembre fu il mese più costoso per l'esercito tedesco sulla Somme, con circa 130 000 perdite; la battaglia finì il 22 settembre.",
+  "links": [
+    {
+      "slug": "battaglia-della-somme-1916",
+      "reason": "La battaglia fa parte della Somme, cominciata due mesi e mezzo prima, il 1º luglio."
+    },
+    {
+      "slug": "barone-rosso-1918",
+      "reason": "Nella Jagdstaffel 2, che entra in azione sulla Somme in settembre, era entrato nel 1916 Manfred von Richthofen."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Flers–Courcelette - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Flers–Courcelette",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Flers-Courcelette - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Flers-Courcelette",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 15 al 22 settembre 1916. Le cifre dei carri differiscono: l'italiano dice 49 inviati e 32 partiti all'assalto, l'inglese 49 pronti e 18 effettivamente utili. Il pin è su Flers."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

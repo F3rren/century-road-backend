@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-del-lechfeld-955",
+  "title": "La battaglia del Lechfeld",
+  "summary": "Dal 10 al 12 agosto 955 il re di Germania Ottone I sconfigge i Magiari presso Augusta: le grandi incursioni ungare in Europa occidentale finiscono, e la vittoria rafforza il prestigio di Ottone fino all'incoronazione imperiale.",
+  "date": {
+    "year": 955,
+    "month": 8,
+    "day": 10
+  },
+  "place": {
+    "name": "Lechfeld, a sud di Augusta, Germania",
+    "lat": 48.2,
+    "lon": 10.85,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Il punto indica la pianura del Lechfeld, a sud di Augusta; gli articoli non indicano il luogo esatto degli scontri."
+  },
+  "before": "Nel 954 Liudolfo, figlio di Ottone, e Corrado di Lorena, suo genero, in rivolta contro il re avevano chiamato i Magiari, che avevano saccheggiato la Renania e la Francia. Il 955 cominciò male per Ottone, con una ribellione in Baviera. Alla fine di giugno o all'inizio di luglio gli Ungari invasero la Baviera con 8000-10 000 uomini, per l'articolo inglese, e assediarono Augusta, difesa dal vescovo Ulrico. L'articolo italiano osserva che l'uso di macchine d'assedio contro le mura, l'8 e il 9 agosto, mostra che gli invasori avevano adottato tecniche occidentali, e che la caduta della città avrebbe aperto una fase più violenta delle loro scorrerie.",
+  "event": "Il 10 agosto Ottone avanzò per liberare Augusta. Gli Ungari colpirono di sorpresa la retroguardia, formata dai Boemi, e si fermarono a saccheggiare le salmerie; Corrado, che era tornato a combattere per Ottone, ne approfittò per contrattaccare con la cavalleria pesante. Ottone portò poi l'esercito contro il grosso dei Magiari: i cavalieri tedeschi ebbero la meglio sugli avversari, armati alla leggera, che si ritirarono in buon ordine. L'11 e il 12 agosto la pioggia e le inondazioni rallentarono la ritirata e le truppe tedesche diedero la caccia ai fuggiaschi. I capi magiari furono catturati e impiccati; Corrado morì in battaglia.",
+  "after": "Per l'articolo inglese la vittoria preservò il regno di Germania e pose fine alle incursioni dei nomadi nell'Europa occidentale: un alleato di Ottone, il vescovo di Cremona, scrisse che gli Ungari ne erano usciti così intimiditi da non «osare mormorare». Secondo l'articolo inglese l'esercito proclamò Ottone imperatore e «padre della patria»; nel 962 fu incoronato a Roma, in gran parte grazie alla posizione rafforzata dopo il Lechfeld. Molti lo considerarono un «nuovo Carlo Magno».",
+  "links": [
+    {
+      "slug": "trattato-di-verdun-843",
+      "reason": "Centododici anni prima il trattato di Verdun aveva creato il regno dei Franchi orientali, di cui Ottone è re."
+    },
+    {
+      "slug": "ottone-i-incoronato-imperatore-962",
+      "reason": "Sette anni dopo Ottone I è incoronato imperatore a Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Lechfeld - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Lechfeld",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Lechfeld - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Lechfeld",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 10 agosto è il giorno dato da entrambi gli articoli; per quello inglese gli scontri durarono fino al 12. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le cifre sono incerte e discordano: l'articolo inglese parla di circa 8000 uomini per Ottone e di 8000-10 000 arcieri a cavallo magiari, quello italiano di almeno 10 000 cavalieri tedeschi contro almeno 50 000 magiari. La fonte più importante è un testo commissionato dal vescovo Ulrico, che racconta i fatti dal punto di vista tedesco."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "dalla-caduta-di-roma-a-giustiniano",
+  "title": "Dalla caduta di Roma a Giustiniano",
+  "tagline": "Da Teodorico a Giustiniano: come, dopo la fine dell'Impero d'Occidente, Italia e Gallia passano a re germanici mentre a Oriente un imperatore riordina le leggi e tenta di riconquistare l'Italia.",
+  "intro": "Dopo la deposizione dell'ultimo imperatore d'Occidente, l'Italia e la Gallia sono governate da re germanici. Il percorso segue Teodorico, che regna a Ravenna formalmente per conto dell'Impero d'Oriente, la vittoria dei Franchi sui Visigoti e Giustiniano, che a Costantinopoli riordina le leggi, sopravvive a una rivolta e a una pestilenza, mentre i Longobardi si preparano a entrare in Italia.\n\nMolti racconti vengono da cronisti come Procopio di Cesarea, con i loro giudizi; dove le fonti o i due articoli divergono, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "deposizione-di-romolo-augustolo-476",
+      "narrative": "Si parte dalla fine dell'Impero d'Occidente: Odoacre depone Romolo Augustolo e governa l'Italia."
+    },
+    {
+      "insight": "teodorico-diventa-re-d-italia-493",
+      "narrative": "Teodorico, mandato dall'imperatore Zenone, vince Odoacre e regna sull'Italia dal 493."
+    },
+    {
+      "insight": "battaglia-di-vouille-507",
+      "narrative": "Più a nord i Franchi di Clodoveo battono i Visigoti a Vouillé e conquistano gran parte dell'Aquitania."
+    },
+    {
+      "insight": "corpus-iuris-civilis-529",
+      "narrative": "A Costantinopoli Giustiniano fa raccogliere il diritto romano nel Corpus iuris civilis."
+    },
+    {
+      "insight": "rivolta-della-nika-532",
+      "narrative": "Nel 532 una rivolta quasi lo rovescia e finisce in un massacro."
+    },
+    {
+      "insight": "peste-di-giustiniano-541",
+      "narrative": "Nel 541 la peste arriva dall'Egitto e dilaga in tutto l'Impero."
+    },
+    {
+      "insight": "invasione-longobarda-dell-italia-568",
+      "narrative": "Nel 568 i Longobardi di Alboino entrano in un'Italia indebolita: comincia un dominio che dura secoli."
+    }
+  ]
+}

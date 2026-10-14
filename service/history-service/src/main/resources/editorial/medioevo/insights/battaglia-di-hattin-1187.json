@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-di-hattin-1187",
+  "title": "La battaglia di Hattin",
+  "summary": "Il 4 luglio 1187 Saladino distrugge presso Tiberiade l'esercito crociato guidato da Guido di Lusignano: la sconfitta porta alla riconquista musulmana di Gerusalemme e di gran parte della Terra Santa e provoca la terza crociata.",
+  "date": {
+    "year": 1187,
+    "month": 7,
+    "day": 4
+  },
+  "place": {
+    "name": "Corni di Hattin, presso Tiberiade, Israele",
+    "lat": 32.8,
+    "lon": 35.45,
+    "countryCode": "IL",
+    "approximate": false
+  },
+  "before": "Nel 1186 Guido di Lusignano divenne re di Gerusalemme grazie alla moglie Sibilla; il regno era diviso tra la fazione di corte e quella dei nobili, guidata da Raimondo III di Tripoli. Saladino aveva preso Damasco nel 1174 e Aleppo nel 1183 (1176 per l'articolo italiano) e controllava i fianchi sud ed est degli Stati crociati. Nel 1187, per l'articolo inglese, Rinaldo di Châtillon assalì una carovana musulmana mentre la tregua era in vigore (l'articolo italiano colloca l'aggressione nell'estate del 1181), e Saladino giurò di ucciderlo; a maggio i Templari furono battuti a Cresson. In luglio Saladino assediò Tiberiade, dove era chiusa la moglie di Raimondo. Raimondo sconsigliò di dare battaglia, ma Gerardo di Ridefort consigliò di avanzare, e Guido lo seguì.",
+  "event": "Il 3 luglio l'esercito crociato si mise in marcia verso Tiberiade, tormentato dagli arcieri musulmani e senza acqua sufficiente, e dovette accamparsi su un altopiano arido; durante la notte i musulmani incendiarono l'erba secca. La mattina del 4 luglio i crociati, accecati dal fumo, furono attaccati da ogni lato; Raimondo tentò due cariche per aprirsi un varco e con la seconda riuscì ad allontanarsi, mentre gran parte della fanteria fuggì sui Corni di Hattin. I cavalieri, circondati, lanciarono tre cariche disperate e furono sconfitti; secondo il racconto del figlio di Saladino, al-Afdal, la battaglia fu decisa quando la tenda di Guido cadde. Furono presi prigionieri Guido e Rinaldo; Saladino fece giustiziare Rinaldo, accusandolo di avere violato la tregua.",
+  "after": "Saladino fece giustiziare i Templari e gli Ospedalieri catturati (per l'articolo inglese, con l'eccezione del Gran Maestro del Tempio); la Vera Croce fu presa. Guido fu portato a Damasco e rilasciato nel 1188. Tiberiade si arrese il 5 luglio. Per l'articolo inglese, in seguito alla sconfitta Saladino conquistò cinquantadue città e fortezze; entro metà settembre aveva preso Acri, Nablus, Giaffa, Sidone, Beirut e Ascalona, e Gerusalemme si arrese il 2 ottobre. Tiro fu salvata dall'arrivo di Corrado del Monferrato. Papa Gregorio VIII lanciò con la bolla Audita tremendi una nuova crociata, che cominciò nel 1189.",
+  "links": [
+    {
+      "slug": "conquista-crociata-di-gerusalemme-1099",
+      "reason": "Ottantotto anni prima i crociati avevano preso Gerusalemme; ora la città passa a Saladino."
+    },
+    {
+      "slug": "assedio-di-acri-1191",
+      "reason": "Quattro anni dopo i crociati riprendono Acri, il primo grande scontro della terza crociata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Hattin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Hattin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Hattin - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Hattin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 4 luglio è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Le fonti discordano su come morì Rinaldo di Châtillon: per l'articolo inglese, alcune dicono che lo uccise Saladino stesso con la spada, altre che lo colpì per dare il segnale alle guardie. Anche i numeri sono incerti: l'articolo inglese parla di 18 000-20 000 crociati contro circa 40 000 uomini di Saladino, e di circa 200 cavalieri scampati, mentre per quello italiano si salvarono 3000 cristiani."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

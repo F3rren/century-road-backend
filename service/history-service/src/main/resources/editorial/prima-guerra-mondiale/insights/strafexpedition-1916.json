@@ -1,0 +1,51 @@
+{
+  "slug": "strafexpedition-1916",
+  "title": "La Strafexpedition e la battaglia degli Altipiani",
+  "summary": "Il 15 maggio 1916 l'esercito austro-ungarico di Conrad attacca dal Trentino l'Italia sugli Altipiani, in direzione della pianura veneta. L'offensiva, chiamata in Italia Strafexpedition, avanza ma si ferma dopo un mese; segue la controffensiva italiana.",
+  "date": {
+    "year": 1916,
+    "month": 5,
+    "day": 15
+  },
+  "place": {
+    "name": "Asiago, Italia",
+    "lat": 45.877,
+    "lon": 11.509,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "La battaglia si estese su tutto il settore delle Prealpi Vicentine, dalla Vallarsa all'Altopiano di Asiago: il pin è su Asiago, città che diede il nome alla battaglia, e non indica un punto preciso."
+  },
+  "before": "Conrad proponeva da tempo un'offensiva dal Trentino contro l'Italia, che riteneva colpevole di aver tradito la Triplice alleanza. Falkenhayn rifiutò di dare divisioni, e Conrad decise di agire da solo. Per l'articolo inglese gli italiani avevano schierato circa 250 000 uomini ben trincerati; i servizi segreti italiani raccoglievano da circa un mese informazioni su un'offensiva imminente, ma Cadorna scartò quei rapporti; per l'articolo italiano gli austro-ungarici avevano 14 divisioni, circa 300 000 uomini compresi i servizi, e 1200 pezzi di artiglieria.",
+  "event": "Il 15 maggio gli austro-ungarici attaccarono; per l'articolo inglese dopo il fuoco di 2000 cannoni la fanteria attaccò su un fronte di 50 chilometri; per quello italiano il fuoco di artiglieria si concentrò su circa sei chilometri tra Lavarone e Folgaria: il centro italiano cedette. Per l'articolo italiano tra il 15 e il 20 maggio si contarono circa 16 000 perdite italiane. Il 20 maggio gli austro-ungarici salirono sull'altopiano di Asiago; Asiago e Arsiero furono occupate il 28 maggio.",
+  "after": "L'offensiva si esaurì: per l'articolo italiano durò fino al 16 giugno, poi seguì la controffensiva italiana fino al 27 luglio; per l'articolo inglese, a fine maggio gli austro-ungarici erano esausti, a corto di munizioni e con linee di rifornimento deboli. Le difficoltà logistiche, l'offensiva Brusilov e i rinforzi italiani fecero fallire i piani di Conrad, secondo l'articolo italiano. L'articolo inglese precisa che il nome Strafexpedition, «spedizione punitiva», non compare nei documenti ufficiali austriaci ed è considerato di origine popolare.",
+  "links": [
+    {
+      "slug": "presa-di-gorizia-1916",
+      "reason": "Ad agosto, sull'Isonzo, gli italiani attaccano e prendono Gorizia."
+    },
+    {
+      "slug": "offensiva-brusilov-1916",
+      "reason": "Il 4 giugno, sul fronte orientale, l'offensiva Brusilov costringe a spostare truppe austro-ungariche."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Asiago - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Asiago",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia degli Altipiani - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_degli_Altipiani",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 maggio 1916 per l'inizio. L'articolo italiano dà come fine il 27 luglio (16 giugno per l'offensiva austro-ungarica); quello inglese non dà una data di fine. Le forze in campo sono diverse nei due articoli e il testo le attribuisce a ciascuno. Il pin è su Asiago."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

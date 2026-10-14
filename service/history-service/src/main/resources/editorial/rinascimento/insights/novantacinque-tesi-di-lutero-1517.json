@@ -1,0 +1,50 @@
+{
+  "slug": "novantacinque-tesi-di-lutero-1517",
+  "title": "Le 95 tesi di Lutero",
+  "summary": "Il 31 ottobre 1517 Martin Lutero, professore a Wittenberg, invia all'arcivescovo di Magonza le 95 tesi contro le indulgenze; secondo la tradizione le affigge anche alla porta della chiesa del castello, gesto che segna per convenzione l'inizio della Riforma protestante.",
+  "date": {
+    "year": 1517,
+    "month": 10,
+    "day": 31
+  },
+  "place": {
+    "name": "Wittenberg, Germania",
+    "lat": 51.8667,
+    "lon": 12.65,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Nel 1515 papa Leone X aveva concesso un'indulgenza plenaria per finanziare la costruzione della basilica di San Pietro. Il domenicano Johann Tetzel la predicava nelle città vicine a Wittenberg e molti wittenberghesi andavano ad acquistarla, perché per l'articolo inglese a Wittenberg e in altre città sassoni la vendita era vietata. Lutero, professore di teologia morale e predicatore, già dal 1514 aveva predicato contro gli abusi delle indulgenze; nel 1517 si preoccupò quando i suoi parrocchiani, tornati da Tetzel, dissero di non aver più bisogno di pentirsi per essere perdonati.",
+  "event": "Le tesi sono proposte per una discussione accademica e criticano la teoria e la pratica delle indulgenze, il loro rapporto con il pentimento e l'autorità del papa. Il 31 ottobre Lutero le mandò all'arcivescovo Alberto di Magonza. Secondo la tradizione le affisse anche alla porta della chiesa del castello di Wittenberg, ma per l'articolo italiano non c'è alcuna testimonianza dell'epoca: il racconto compare nel 1546, in Melantone, che quel giorno non era a Wittenberg.",
+  "after": "Nel giugno 1520 la bolla «Exsurge Domine» di Leone X lo minacciò di scomunica se non avesse desistito; nel gennaio 1521 Lutero fu scomunicato e, per ritrattare, convocato alla Dieta di Worms. Per convenzione storica l'invio, o l'affissione, delle 95 tesi è considerato l'inizio della Riforma protestante.",
+  "links": [
+    {
+      "slug": "dieta-di-worms-1521",
+      "reason": "Quattro anni dopo Lutero è chiamato a ritrattare le sue idee alla Dieta di Worms."
+    },
+    {
+      "slug": "concilio-di-trento-1545",
+      "reason": "Nel 1545 si apre il Concilio di Trento, la risposta cattolica alla Riforma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ninety-five Theses - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ninety-five_Theses",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "95 tesi di Lutero - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/95_tesi_di_Lutero",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 31 ottobre 1517. Sull'affissione le fonti non concordano: per l'articolo italiano è solo una tradizione, non documentata da testimonianze dell'epoca, e la maggior parte degli storici ritiene che quel giorno Lutero abbia spedito le tesi ai vescovi. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

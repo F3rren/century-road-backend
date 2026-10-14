@@ -1,0 +1,37 @@
+{
+  "slug": "le-guerre-di-religione",
+  "title": "Le guerre di religione",
+  "tagline": "Da Elisabetta I a Giordano Bruno: oltre quarant'anni di massacri, alleanze e flotte in un'Europa divisa dalla fede.",
+  "intro": "Il percorso segue le guerre di religione della seconda metà del Cinquecento: l'incoronazione di Elisabetta I, la notte di San Bartolomeo, l'Unione di Utrecht, l'esecuzione di Maria Stuarda, l'Invincibile Armata, l'Editto di Nantes e il rogo di Giordano Bruno.\n\nSu date e cifre gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "incoronazione-di-elisabetta-i-1559",
+      "narrative": "Si parte dal 1559: Elisabetta I è incoronata regina d'Inghilterra."
+    },
+    {
+      "insight": "notte-di-san-bartolomeo-1572",
+      "narrative": "Nel 1572 Parigi è teatro del massacro degli ugonotti."
+    },
+    {
+      "insight": "unione-di-utrecht-1579",
+      "narrative": "Nel 1579 le province dei Paesi Bassi si uniscono contro Filippo II."
+    },
+    {
+      "insight": "esecuzione-di-maria-stuarda-1587",
+      "narrative": "Nel 1587 Elisabetta I fa giustiziare Maria Stuarda."
+    },
+    {
+      "insight": "invincibile-armada-1588",
+      "narrative": "Nel 1588 l'Invincibile Armata fallisce davanti alle coste inglesi."
+    },
+    {
+      "insight": "editto-di-nantes-1598",
+      "narrative": "Nel 1598 Enrico IV pone fine alle guerre di religione francesi."
+    },
+    {
+      "insight": "giordano-bruno-al-rogo-1600",
+      "narrative": "Nel 1600 Giordano Bruno muore sul rogo a Roma."
+    }
+  ]
+}

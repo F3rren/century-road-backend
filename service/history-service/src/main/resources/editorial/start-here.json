@@ -3,7 +3,17 @@
     {
       "type": "PATH",
       "slug": "conquista-dello-spazio",
-      "teaser": "Un viaggio in nove tappe, dal primo satellite artificiale all'ultimo atterraggio sulla Luna: la mappa ti porta di luogo in luogo."
+      "teaser": "Un viaggio dal primo satellite artificiale all’allunaggio di Chandrayaan-3: la mappa ti porta di luogo in luogo."
+    },
+    {
+      "type": "PATH",
+      "slug": "scoperte-che-cambiano-la-medicina",
+      "teaser": "Dal primo vaccino all'eradicazione del vaiolo: otto scoperte che hanno cambiato come ci curiamo."
+    },
+    {
+      "type": "PATH",
+      "slug": "rivoluzione-francese",
+      "teaser": "Otto date, dagli Stati generali a Napoleone: come in dieci anni un regno diventa una repubblica."
     },
     {
       "type": "INSIGHT",

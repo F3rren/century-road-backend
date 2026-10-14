@@ -1,0 +1,33 @@
+{
+  "slug": "la-crisi-del-iii-secolo",
+  "title": "La crisi del III secolo",
+  "tagline": "Dalla guerra civile del 193 alla Tetrarchia di Diocleziano: un secolo di usurpatori, invasioni e peste in cui l'Impero rischia di spezzarsi, e poi si riorganizza.",
+  "intro": "Il III secolo è ricordato come il periodo della crisi: guerre civili, invasioni di tribù germaniche, la minaccia dei Persiani e una peste. Il percorso va dalla guerra civile del 193 alla Tetrarchia di Diocleziano, e tocca l'editto che rende cittadini tutti gli uomini liberi dell'Impero, la cattura di un imperatore da parte dei Persiani, le mura di Roma e la rivolta di Palmira.\n\nMolti racconti vengono da fonti romane ostili ai vinti, e dove le versioni divergono il testo lo dice.",
+  "topic": "ROMA_IMPERIALE",
+  "stops": [
+    {
+      "insight": "anno-dei-cinque-imperatori-193",
+      "narrative": "Nel 193, dopo l'assassinio di Commodo, più pretendenti si contendono il trono: vince Settimio Severo."
+    },
+    {
+      "insight": "constitutio-antoniniana-212",
+      "narrative": "Nel 212 Caracalla concede la cittadinanza a tutti gli uomini liberi dell'Impero."
+    },
+    {
+      "insight": "battaglia-di-edessa-260",
+      "narrative": "Nel 260 l'imperatore Valeriano è catturato dai Persiani: per la prima volta un imperatore romano finisce prigioniero."
+    },
+    {
+      "insight": "mura-aureliane-271",
+      "narrative": "Intorno al 271 Aureliano fa costruire le mura attorno a Roma, che per secoli non ne aveva avute."
+    },
+    {
+      "insight": "aureliano-sconfigge-zenobia-272",
+      "narrative": "Nel 272 Aureliano sconfigge Zenobia, la regina di Palmira che si era staccata da Roma."
+    },
+    {
+      "insight": "tetrarchia-293",
+      "narrative": "Nel 293 Diocleziano divide il governo tra quattro imperatori: la risposta alla crisi."
+    }
+  ]
+}

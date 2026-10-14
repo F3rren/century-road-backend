@@ -1,0 +1,33 @@
+{
+  "slug": "la-grande-crisi",
+  "title": "La grande crisi",
+  "tagline": "Dal crollo di Wall Street del 1929 al New Deal: i dazi, il fallimento di una banca austriaca, le tempeste di polvere e la nascita della previdenza sociale americana.",
+  "intro": "Il percorso segue la Grande depressione: il crollo di Wall Street, la legge Smoot-Hawley, la crisi del Creditanstalt, il New Deal, la Domenica nera del Dust Bowl e il Social Security Act.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "TRA_LE_DUE_GUERRE",
+  "stops": [
+    {
+      "insight": "crollo-di-wall-street-1929",
+      "narrative": "Si parte dall'ottobre 1929: il crollo della Borsa di New York."
+    },
+    {
+      "insight": "tariffe-smoot-hawley-1930",
+      "narrative": "Nel giugno 1930 gli Stati Uniti alzano i dazi con la legge Smoot-Hawley."
+    },
+    {
+      "insight": "crisi-del-creditanstalt-1931",
+      "narrative": "Nel maggio 1931 la crisi del Creditanstalt a Vienna."
+    },
+    {
+      "insight": "new-deal-1933",
+      "narrative": "Nel marzo 1933 Roosevelt avvia il New Deal."
+    },
+    {
+      "insight": "black-sunday-1935",
+      "narrative": "Nell'aprile 1935 la Domenica nera: la tempesta di polvere nelle pianure."
+    },
+    {
+      "insight": "social-security-act-1935",
+      "narrative": "Nell'agosto 1935 nasce la previdenza sociale americana."
+    }
+  ]
+}
