@@ -191,6 +191,40 @@ class ReportServiceUnitTest {
     }
 
     @Test
+    void aControlCharacterInAnyTextIsRefused_NulAboveAll() {
+        // Postgres refuses NUL in text; the insert would fail after the quota was spent, as a 500.
+        for (String bad : new String[]{"descrizione\u0000con NUL", "descrizione\u001bcon escape", "descrizione\u0007con bell"}) {
+            assertRefused(new ReportRequest(insight("test-a").target(), Category.OTHER, bad, null), "INVALID_REPORT");
+        }
+        assertRefused(new ReportRequest(insight("test-a").target(), Category.OTHER, MESSAGE, "nome@exa\u0000mple.org"),
+                "INVALID_REPORT");
+        assertRefused(new ReportRequest(new Target(Type.EVENT, null, 1957, 10, 4, "it", "testo\u0000con NUL"),
+                Category.WRONG_DATE, MESSAGE, null), "INVALID_REPORT");
+        assertRefused(new ReportRequest(new Target(Type.INSIGHT, "test-a\u0000", null, null, null, null, null),
+                Category.OTHER, MESSAGE, null), "INVALID_REPORT");
+    }
+
+    @Test
+    void lineBreaksAndTabsAreAllowedWhereAPersonWritesMoreThanOneLine() {
+        service.submit(new ReportRequest(insight("test-a").target(), Category.OTHER,
+                "Prima riga dell'errore.\r\n\tSeconda riga, rientrata.", null), "1.1.1.1");
+
+        assertThat(stored().getMessage()).contains("Seconda riga");
+    }
+
+    @Test
+    void aLongTextIsCutWithoutSplittingACharacterMadeOfTwoUtf16Units() {
+        // 499 letters and an emoji (a surrogate pair): cutting at 500 would keep half of it.
+        String text = "a".repeat(499) + "\uD83D\uDE00 e il resto";
+
+        service.submit(event(1957, 10, 4, "it", text), "1.1.1.1");
+
+        String kept = stored().getTargetText();
+        assertThat(kept).hasSize(499);
+        assertThat(Character.isHighSurrogate(kept.charAt(kept.length() - 1))).isFalse();
+    }
+
+    @Test
     void aReportAboutSomethingThatDoesNotExistIsRefused() {
         assertRefused(insight("ghost"), "INVALID_REPORT");
         assertRefused(insight(null), "INVALID_REPORT");

@@ -76,4 +76,55 @@ class ReportRateLimiterUnitTest {
 
         assertThatCode(() -> limiter.acquire("1.1.1.1")).doesNotThrowAnyException();
     }
+
+    @Test
+    void everyAddressOfOneIpv6Slash64IsOneVisitor() {
+        ReportRateLimiter limiter = limiter(1, 100);
+        limiter.acquire("2001:db8:1:2::1");
+
+        // A household or a phone holds a whole /64 and can write from any address in it: a fresh
+        // quota per address would be no limit at all.
+        assertThatThrownBy(() -> limiter.acquire("2001:db8:1:2:ffff:ffff:ffff:ffff"))
+                .isInstanceOf(TooManyRequestsException.class);
+        assertThatThrownBy(() -> limiter.acquire("2001:0db8:0001:0002:abcd::9"))
+                .isInstanceOf(TooManyRequestsException.class);
+    }
+
+    @Test
+    void anotherIpv6Slash64IsAnotherVisitor() {
+        ReportRateLimiter limiter = limiter(1, 100);
+        limiter.acquire("2001:db8:1:2::1");
+
+        assertThatCode(() -> limiter.acquire("2001:db8:1:3::1")).doesNotThrowAnyException();
+    }
+
+    @Test
+    void anIpv4AddressWrittenInIpv6IsTheSameVisitorAsTheIpv4Address() {
+        ReportRateLimiter limiter = limiter(1, 100);
+        limiter.acquire("203.0.113.5");
+
+        assertThatThrownBy(() -> limiter.acquire("::ffff:203.0.113.5")).isInstanceOf(TooManyRequestsException.class);
+    }
+
+    @Test
+    void clientKeysAreWhatTheyAreDocumentedToBe() {
+        assertThat(ReportRateLimiter.clientKey("203.0.113.5")).isEqualTo("203.0.113.5");
+        assertThat(ReportRateLimiter.clientKey("2001:db8:1:2::1")).isEqualTo("2001:0db8:0001:0002::/64");
+        assertThat(ReportRateLimiter.clientKey("fe80::1%eth0")).isEqualTo("fe80:0000:0000:0000::/64");
+        // As a header writes it: in brackets, with or without a port.
+        assertThat(ReportRateLimiter.clientKey("[2001:db8:1:2::1]")).isEqualTo("2001:0db8:0001:0002::/64");
+        assertThat(ReportRateLimiter.clientKey("[2001:db8:1:2::1]:443")).isEqualTo("2001:0db8:0001:0002::/64");
+        assertThat(ReportRateLimiter.clientKey(null)).isEqualTo("unknown");
+        assertThat(ReportRateLimiter.clientKey("  ")).isEqualTo("unknown");
+    }
+
+    @Test
+    void whatIsNotAnIpLiteralIsUsedAsItIs_andNeverLookedUp() {
+        // It has colons, so it looks like a candidate; it has letters outside hex, so it is a host
+        // name, and parsing it would be a DNS lookup on a value that came through headers.
+        assertThat(ReportRateLimiter.clientKey("evil.example.com:8080")).isEqualTo("evil.example.com:8080");
+        assertThat(ReportRateLimiter.clientKey("not:an:address:at:all:zzz")).isEqualTo("not:an:address:at:all:zzz");
+        // Hex digits and colons only, but not a valid address either.
+        assertThat(ReportRateLimiter.clientKey("1:2:3:4:5:6:7:8:9:a")).isEqualTo("1:2:3:4:5:6:7:8:9:a");
+    }
 }

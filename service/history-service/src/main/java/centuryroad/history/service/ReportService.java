@@ -72,8 +72,13 @@ public class ReportService {
             throw invalid("message must be " + MIN_MESSAGE + " to " + MAX_MESSAGE + " characters",
                     "Descrivi l'errore in modo che si capisca: da " + MIN_MESSAGE + " a " + MAX_MESSAGE + " caratteri.");
         }
+        if (hasControlCharacters(message, true)) {
+            throw invalid("message contains control characters",
+                    "Il messaggio contiene caratteri non consentiti.");
+        }
         String contact = clean(request.contact());
-        if (contact != null && (contact.length() > MAX_CONTACT || !EMAIL.matcher(contact).matches())) {
+        if (contact != null && (contact.length() > MAX_CONTACT || !EMAIL.matcher(contact).matches()
+                || hasControlCharacters(contact, false))) {
             throw invalid("contact is not an email address", "L'indirizzo email non sembra valido: puoi anche lasciarlo vuoto.");
         }
 
@@ -94,20 +99,53 @@ public class ReportService {
             var day = OnThisDayQuery.parseDay(target.month(), target.day());
             Language language = OnThisDayQuery.parseLanguage(target.language() == null ? "it" : target.language());
             String text = clean(target.text());
-            if (text != null && text.length() > MAX_TEXT) {
-                text = text.substring(0, MAX_TEXT);
+            if (hasControlCharacters(text, true)) {
+                throw invalid("text contains control characters", "Il testo contiene caratteri non consentiti.");
             }
+            text = truncate(text, MAX_TEXT);
             return new ErrorReport(null, type, null, target.year(), (short) day.getMonthValue(),
                     (short) day.getDayOfMonth(), language.code(), text, category, message, contact, now, null);
         }
 
         String slug = clean(target.slug());
+        if (hasControlCharacters(slug, false)) {
+            throw invalid("slug contains control characters", "Non trovo l'elemento che vuoi segnalare.");
+        }
         boolean exists = slug != null && (target.type() == ReportRequest.Type.INSIGHT
                 ? catalog.insight(slug).isPresent() : catalog.path(slug).isPresent());
         if (!exists) {
             throw invalid("no " + type + " with slug " + slug, "Non trovo l'elemento che vuoi segnalare.");
         }
         return new ErrorReport(null, type, slug, null, null, null, null, null, category, message, contact, now, null);
+    }
+
+    /**
+     * True if the value holds a control character. Postgres refuses NUL in text outright - the
+     * insert fails after the rate limit has been spent, as a 500 - and the rest (escape
+     * sequences, bells) have no place in a sentence a person typed. Line breaks and tabs are
+     * allowed where a person writes more than one line.
+     */
+    static boolean hasControlCharacters(String value, boolean allowLineBreaks) {
+        if (value == null) {
+            return false;
+        }
+        for (int i = 0; i < value.length(); i++) {
+            char c = value.charAt(i);
+            boolean lineBreak = c == '\n' || c == '\r' || c == '\t';
+            if (Character.isISOControl(c) && !(allowLineBreaks && lineBreak)) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    /** At most max characters, never ending in the first half of a surrogate pair. */
+    static String truncate(String value, int max) {
+        if (value == null || value.length() <= max) {
+            return value;
+        }
+        int end = Character.isHighSurrogate(value.charAt(max - 1)) ? max - 1 : max;
+        return value.substring(0, end);
     }
 
     /** Trimmed; null when nothing is left. */
