@@ -1,10 +1,12 @@
 package centuryroad.auth.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import java.util.function.LongSupplier;
 
 /**
  * A simple in-memory rate limiter on login attempts, keyed by "ip|email" so one
@@ -21,22 +23,40 @@ import java.util.concurrent.atomic.AtomicInteger;
 @Component
 public class LoginAttemptLimiter {
 
+    /**
+     * The key contains what the caller typed, so the number of keys is theirs to choose. Past
+     * this many, the counters whose window is over are dropped; without it each distinct
+     * address-and-email pair would stay in memory until the process restarts.
+     */
+    static final int PRUNE_ABOVE = 10_000;
+
     private final int maxAttempts;
     private final long windowMs;
+    private final LongSupplier clock;
     private final ConcurrentHashMap<String, Attempts> attemptsByKey = new ConcurrentHashMap<>();
 
+    @Autowired
     public LoginAttemptLimiter(
             @Value("${auth.rate-limit.max-attempts:5}") int maxAttempts,
             @Value("${auth.rate-limit.window-ms:60000}") long windowMs) {
+        this(maxAttempts, windowMs, System::currentTimeMillis);
+    }
+
+    /** The clock is a parameter so a test can let a window pass without sleeping. */
+    LoginAttemptLimiter(int maxAttempts, long windowMs, LongSupplier clock) {
         this.maxAttempts = maxAttempts;
         this.windowMs = windowMs;
+        this.clock = clock;
     }
 
     /**
      * Returns the seconds to wait before retrying, or 0 if the attempt may proceed.
      */
     public long checkAndRecord(String key) {
-        long now = System.currentTimeMillis();
+        long now = clock.getAsLong();
+        if (attemptsByKey.size() > PRUNE_ABOVE) {
+            attemptsByKey.values().removeIf(existing -> now - existing.windowStart > windowMs);
+        }
         Attempts attempts = attemptsByKey.compute(key, (k, existing) -> {
             if (existing == null || now - existing.windowStart > windowMs) {
                 return new Attempts(now, new AtomicInteger(1));
@@ -65,6 +85,11 @@ public class LoginAttemptLimiter {
      */
     public void clear() {
         attemptsByKey.clear();
+    }
+
+    /** How many keys are being counted: for the pruning test, nothing else. */
+    int trackedKeys() {
+        return attemptsByKey.size();
     }
 
     private record Attempts(long windowStart, AtomicInteger count) {

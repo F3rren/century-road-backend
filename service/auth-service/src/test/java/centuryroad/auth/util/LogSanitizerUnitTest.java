@@ -58,4 +58,19 @@ class LogSanitizerUnitTest {
         // charAt(0) would be the '@' itself here, so there is no first letter to keep.
         assertThat(LogSanitizer.maskEmail("@example.it")).isEqualTo("***");
     }
+
+    @Test
+    void aLineBreakInTheDomainCannotStartALineOfItsOwn() {
+        String masked = LogSanitizer.maskEmail("a@example.it\r\n2026-01-01 INFO Login ok | admin");
+
+        assertThat(masked).doesNotContain("\r").doesNotContain("\n");
+        assertThat(masked).startsWith("a***@example.it");
+    }
+
+    @Test
+    void aVeryLongValueIsCutToOneReasonableLine() {
+        String masked = LogSanitizer.maskEmail("a@" + "x".repeat(5_000));
+
+        assertThat(masked).hasSize(100);
+    }
 }

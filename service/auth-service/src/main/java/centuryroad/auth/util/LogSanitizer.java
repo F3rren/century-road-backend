@@ -12,6 +12,8 @@ package centuryroad.auth.util;
  */
 public final class LogSanitizer {
 
+    private static final int MAX_LOGGED = 100;
+
     private LogSanitizer() {
     }
 
@@ -29,6 +31,21 @@ public final class LogSanitizer {
         if (atIndex <= 0) {
             return "***";
         }
-        return email.charAt(0) + "***" + email.substring(atIndex);
+        return oneLine(email.charAt(0) + "***" + email.substring(atIndex));
+    }
+
+    /**
+     * What is kept of the address (its domain) is still whatever the caller typed, and a log
+     * is read line by line: a line break in it would let a caller write a line of their own, and
+     * an unbounded value would let them write a very long one. Control characters become "_",
+     * and the result is cut at {@value #MAX_LOGGED}.
+     */
+    private static String oneLine(String value) {
+        StringBuilder out = new StringBuilder(Math.min(value.length(), MAX_LOGGED));
+        for (int i = 0; i < value.length() && out.length() < MAX_LOGGED; i++) {
+            char c = value.charAt(i);
+            out.append(Character.isISOControl(c) ? '_' : c);
+        }
+        return out.toString();
     }
 }
