@@ -62,6 +62,9 @@ rclone copy "$HISTORY_DUMP" "$RCLONE_REMOTE"
 # Local retention is short: this host's disk is not the durable copy. Remote retention is
 # longer, on purpose - it is what survives a problem with this host itself, not just a bad dump.
 find "$BACKUP_DIR" -name '*.sql.gz' -mtime "+${BACKUP_RETENTION_DAYS}" -delete
-rclone delete "$RCLONE_REMOTE" --min-age "${BACKUP_REMOTE_RETENTION_DAYS}d"
+# --include is the safety: without it, "delete" removes EVERY file older than the limit under
+# the remote path, not only these dumps - and RCLONE_REMOTE may well be a bucket or a folder
+# that holds other things. Only files that look like this script's own output can go.
+rclone delete "$RCLONE_REMOTE" --include '*.sql.gz' --min-age "${BACKUP_REMOTE_RETENTION_DAYS}d"
 
 echo "backup.sh: done - $MAIN_DUMP and $HISTORY_DUMP copied to $RCLONE_REMOTE"

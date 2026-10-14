@@ -15,6 +15,31 @@
 # can pull what CI verified instead of building anything. IMAGE_PREFIX and IMAGE_TAG are set
 # by CI only; on a machine they fall back to a ":local" tag, which is never a published one.
 # ═══════════════════════════════════════════════════════════════════════════════
+# Container logs are kept by Docker without a limit unless told otherwise, and a busy day of
+# access logs on a small VPS disk is how a host fills up. Rotated, a service keeps its last
+# ~30 MB and Docker drops the rest. (docker logs / the log driver only: nothing here changes
+# what the services write.)
+x-logging: &default-logging
+  driver: json-file
+  options:
+    max-size: "10m"
+    max-file: "3"
+
+# What the three Spring services get on top, none of which they need to do their work:
+# - they run as an unprivileged user already, and need no Linux capability at all;
+# - no-new-privileges stops a process from gaining more than it started with;
+# - ExitOnOutOfMemoryError makes a JVM that has run out of memory exit instead of limping on
+#   half-alive, so "restart: unless-stopped" actually restarts it.
+# Postgres and Caddy are left out on purpose: both start as root and drop privileges (or bind
+# 80/443) in their entrypoints, which a capability drop would break, and this has not been
+# run against them.
+x-spring-hardening: &spring-hardening
+  cap_drop:
+    - ALL
+  security_opt:
+    - no-new-privileges:true
+  logging: *default-logging
+
 services:
 
   # ─── Database ────────────────────────────────────────────────────────────────
@@ -23,6 +48,7 @@ services:
   db:
     image: postgis/postgis:16-3.5-alpine
     restart: unless-stopped
+    logging: *default-logging
     environment:
       POSTGRES_DB:       ${POSTGRES_DB}
       POSTGRES_USER:     ${POSTGRES_USER}
@@ -46,8 +72,10 @@ services:
       dockerfile: Dockerfile
       target: prod
     restart: unless-stopped
+    <<: *spring-hardening
     environment:
       SPRING_PROFILES_ACTIVE:     prod
+      JAVA_TOOL_OPTIONS:          -XX:+ExitOnOutOfMemoryError
       # The port it listens on inside the Compose network. Everything that talks to it (the
       # gateway, Prometheus, the healthcheck below) reads the same variable, so it is set in
       # .env and nowhere else.
@@ -86,8 +114,10 @@ services:
       dockerfile: Dockerfile
       target: prod
     restart: unless-stopped
+    <<: *spring-hardening
     environment:
       SPRING_PROFILES_ACTIVE: prod
+      JAVA_TOOL_OPTIONS:      -XX:+ExitOnOutOfMemoryError
       HISTORY_PORT: ${HISTORY_PORT:?set HISTORY_PORT in .env}
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}_history
@@ -113,8 +143,10 @@ services:
       dockerfile: Dockerfile
       target: prod
     restart: unless-stopped
+    <<: *spring-hardening
     environment:
       SPRING_PROFILES_ACTIVE: prod
+      JAVA_TOOL_OPTIONS:      -XX:+ExitOnOutOfMemoryError
       GATEWAY_PORT:           ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
       AUTH_SERVICE_URI:       http://auth-service:${AUTH_PORT:?set AUTH_PORT in .env}
       HISTORY_SERVICE_URI: http://history-service:${HISTORY_PORT:?set HISTORY_PORT in .env}
@@ -138,6 +170,7 @@ services:
   proxy:
     image: caddy:2-alpine
     restart: unless-stopped
+    logging: *default-logging
     environment:
       PUBLIC_DOMAIN: ${PUBLIC_DOMAIN:?set PUBLIC_DOMAIN in .env}
       HSTS_MAX_AGE:  ${HSTS_MAX_AGE:-300}
@@ -165,14 +198,16 @@ services:
   prometheus:
     image: prom/prometheus:v3.15.0
     restart: unless-stopped
+    logging: *default-logging
     environment:
       AUTH_PORT:    ${AUTH_PORT:?set AUTH_PORT in .env}
+      HISTORY_PORT: ${HISTORY_PORT:?set HISTORY_PORT in .env}
       GATEWAY_PORT: ${GATEWAY_PORT:?set GATEWAY_PORT in .env}
     volumes:
       - ./infra/prometheus/prometheus.yml.tpl:/etc/prometheus/prometheus.yml.tpl:ro
       - prometheus_data:/prometheus
     # Prometheus cannot read environment variables in its own configuration, and the ports it
-    # scrapes are configurable, so the file is a template: this fills in the two ports and
+    # scrapes are configurable, so the file is a template: this fills in the three ports and
     # then starts Prometheus as the image would have (exec, so it is PID 1 and gets signals).
     # The "prometheus" after the script is $0; the flags below become "$@".
     entrypoint:
@@ -181,7 +216,8 @@ services:
       - |
         set -e
         sed -e "s/@AUTH_PORT@/$${AUTH_PORT}/g" /etc/prometheus/prometheus.yml.tpl > /tmp/step1.yml
-        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step1.yml > /tmp/prometheus.yml
+        sed -e "s/@HISTORY_PORT@/$${HISTORY_PORT}/g" /tmp/step1.yml > /tmp/step2.yml
+        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step2.yml > /tmp/prometheus.yml
         exec /bin/prometheus "$$@"
       - prometheus
     command:
@@ -201,6 +237,7 @@ services:
   grafana:
     image: grafana/grafana:13.2.2
     restart: unless-stopped
+    logging: *default-logging
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
