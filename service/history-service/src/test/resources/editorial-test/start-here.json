@@ -1,0 +1,14 @@
+{
+  "picks": [
+    {
+      "type": "PATH",
+      "slug": "test-path",
+      "teaser": "Comincia dal percorso."
+    },
+    {
+      "type": "INSIGHT",
+      "slug": "test-c",
+      "teaser": "Oppure da qui."
+    }
+  ]
+}

@@ -30,7 +30,7 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | `/api/auth/**` | login, token refresh, logout |
 | `/api/me/**` | the caller's own profile |
 | `/api/admin/users/**` | user administration, admin only |
-| `/api/history/**` | [historical events for a date](#history-api), public |
+| `/api/history/**` | [historical events for a date](#history-api), [guided paths and insights](#guided-paths-and-insights), [discovery](#discovery-a-random-event-and-the-same-years-elsewhere), [sources and error reports](#sources-and-reporting-a-mistake), public |
 | `/actuator/health` | liveness, public. Every other `/actuator/*` path is a 404 at the proxy |
 
 ## Contents
@@ -860,6 +860,220 @@ migration `V2`, which only adds the table, and then builds the index. Going back
 safe: Flyway leaves alone a migration newer than the ones it knows, and 0.4.x never reads the
 table.
 
+### Guided paths and insights
+
+Wikipedia's feed says *what* happened on a day. Three endpoints say *why it matters* and
+*where to start*, from content kept in this repository: drafts written with the help of an AI from
+Wikipedia, not yet reviewed by a person (see "Review dates" below). None of them asks Wikipedia
+or the database, so they answer even when Wikipedia does not. Everything is in Italian, and cached
+for five minutes: it only changes with a release.
+
+| Endpoint | Answers |
+|---|---|
+| `GET /api/history/start-here` | "Inizia da qui": a few hand-picked paths and events, each with a sentence on why to open it |
+| `GET /api/history/paths` | every guided path as a card: title, one sentence, topic, the years it spans, cover, reading time, number of stops. Grouped by topic |
+| `GET /api/history/paths/{slug}` | one path: introduction and its stops in order, each with the place for the map to move to |
+| `GET /api/history/insights?month=&day=` | the events that have an insight, optionally those of one day |
+| `GET /api/history/insights/{slug}` | "Perché conta" for one event |
+
+**A path** is a small itinerary of 6 to 10 stops, not a category. A stop carries its `place`
+(`lat`, `lon`, for the map), its `date`, and `narrative`: the line that ties it to the stop
+before. Opening a stop is a second request, `GET /api/history/insights/{slug}` with the stop's
+`slug`, so a path stays small. `readingMinutes` is counted from the words at 200 a minute, never
+written by hand. The cover, when there is one, is an image from Wikimedia Commons, with its file
+page to credit.
+
+**A topic** says what a path is about, one per path, from a closed list: the `Topic` enum, whose
+order is the order paths are shown in (the periods first, then regions, then subjects). It is
+required, and a name outside the list stops the service like any other typo. `GET /paths` is
+ordered by topic, then by the year of the path's first stop, then by slug; `startYear` and
+`endYear` are read from the stops' dates, never written, so they cannot drift. `topicLabel` is the
+Italian name; a frontend may translate it. When a path could go in two topics: the world wars and
+the Cold War go to their own period whatever the region; one country's story across several
+periods goes to the country; a subject that crosses two or more periods goes to the subject;
+otherwise the period.
+
+**An insight** is told in three parts, as the product asks: `before` (what prepared the event),
+`event` (what happened) and `after` (what followed - developments, not all direct effects).
+Around them: `related`, two or three insights to read next (the data for "Continua a
+esplorare"); `inPaths`, the paths that have a stop on it; `sources`, links where each claim can
+be checked; `notes`, caveats about dates and places; and `provenance`.
+
+To mark "Approfondimento disponibile" on a day's events, ask `GET
+/api/history/insights?month=10&day=4` next to the day's own request and match on `date.year`.
+Events carry no identifier, so the match is by date: that is why the insight is its own resource
+and the on-this-day answer, a faithful copy of Wikipedia's, is left as it is.
+
+**What the frontend must show, not drop:**
+
+- `place.approximate: true` means the pin is a stand-in - a launch site for an event on the Moon
+  or in orbit - and `place.note` says so. Show the note.
+- `provenance.reviewedAt` is the day somebody really checked the text against its sources. It is
+  **absent when nobody did**: show no date then, and do not call such an insight "verified".
+- `notes` are caveats (a date that depends on the time zone). Show them when there are any.
+- `date.precision` says how much of the date is known: `YEAR`, `MONTH` or `DAY` (`DAY` when the
+  content does not say). Show no more than that - "133 a.C.", "settembre 52 a.C." - because the
+  month and day of a coarser date are placeholders (1 January, the 1st), not facts. Such an insight
+  is never returned for a day: `?month=&day=` only has those known to the day.
+
+#### Writing content
+
+The content is JSON in `service/history-service/src/main/resources/editorial`:
+
+```
+editorial/<topic>/insights/<slug>.json   one per event
+editorial/<topic>/paths/<slug>.json      one per path
+editorial/start-here.json                the "Inizia da qui" proposals (1 to 6)
+```
+
+There is one folder per topic, named after it (`roma-repubblicana`, `medioevo`, `esplorazioni-e-spazio`...:
+the `Topic` constant in lowercase with hyphens), so what a folder holds is what its files tell. A path goes
+in the folder of its own topic. An insight goes in the folder of a topic of one of the paths that open it -
+the earliest topic, when two periods share it (Azio is under `roma-repubblicana`, not `roma-imperiale`) -
+and an insight no path opens only needs some topic folder. A file in the wrong folder stops the service at
+startup, naming it; a new topic is a new folder, created with its first path.
+
+The file name is the slug. Adding content is a pull request, reviewed like code, and a release.
+
+**Conventions** (the ones a mistake in would not stop the service, so `EditorialContentTest` checks
+them in CI):
+
+- **A slug is a URL and an inbound link: never rename or delete a published one.** A deleted
+  target also stops the service for every insight that links to it.
+- **Years before the common era are negative, and there is no year 0.** The slug ends in
+  `-<year>-ac` (`idi-di-marzo-44-ac`); a slug that ends in a four-digit year must say the year of
+  its date. Before 1583 an insight needs at least one note: the date is in the Julian (or the
+  Roman republican) calendar, or only partly known, and the note says which.
+- **Never write a day the sources do not give.** A date known only by its year has
+  `"precision": "YEAR"` with month 1 and day 1; one known by its month, `"MONTH"` with day 1
+  (anything else is refused at startup, see below). Stops are in order only as far as both dates
+  know: a year-only stop is not "earlier" than a day of the same year.
+- **A count written in words has to be true**: "nove tappe" in a tagline, an intro or a
+  start-here teaser fails the build when the path has ten stops. Better not to write counts.
+- **An insight is shared by several paths**, so it does not talk about the path it is read in
+  ("in questa tappa", "nel percorso") and avoids phrases that were true on the day they were
+  written ("ancora oggi", "da oltre venticinque anni"). The line that ties an insight to a path
+  is the stop's `narrative`.
+- Stops of a path are in chronological order; two paths do not share most of their stops; two
+  insights are not the same event written twice (known to the same day, within 25 km); an insight is neither a
+  headline nor an essay (about 130 to 230 words in its three parts, now); a `countryCode` agrees
+  with the map's own country shapes (an exception goes in `KNOWN_COARSE_SHAPES` with its reason).
+- Links go to insights that already exist. When content arrives in batches, a batch links to
+  itself and to what is already in `develop`; the links forward are added when the later batch
+  lands.
+
+The service **checks every file at startup and refuses to start** with every problem listed: an
+unknown key (a `"befor"` is an error, not an insight with no past), a `precision` that is not one
+of `YEAR`, `MONTH`, `DAY` (a number is refused too), a year-only date that is not 1 January, a stop that opens an insight
+that does not exist, a path of three stops, two or three `links` required per insight, an
+approximate pin with no note, a cover that is not on Commons. `EditorialContentTest` runs the
+same checks on the real files in CI, so a mistake fails the build and not the deploy.
+
+**Review dates.** Texts are first written as drafts, with no `reviewedAt`. When a person has
+read one against its sources, they add `"reviewedAt": "YYYY-MM-DD"` to its `provenance`, in the
+same commit. Nothing generates that date, and the service refuses one in the future.
+
+Every path and insight is a **draft** in exactly that sense: they were written with the help of an
+AI, from Wikipedia, and `provenance.author` says so. They have no review date, and should be read
+against their sources and corrected before they are presented as more than that. The sources are,
+for now, Wikipedia articles (English and Italian) for each insight: a reviewer should add at least
+one source that is not Wikipedia. `/api/history/sources` reports how many have been reviewed.
+
+### Discovery: a random event and the same years elsewhere
+
+Two ways into the data that are not a search. Both read the [country index](#events-by-country),
+so neither asks Wikipedia, and both are only as complete as the index.
+
+`GET /api/history/random` - "Sorprendimi". One event picked at random, from those that match the
+filters the visitor has active: `country` (ISO code), `fromYear`, `toYear`, `lang`. It carries its
+date and country, so the frontend can open that day and select that country. Never cached. When
+nothing matches it is a `200` with no `event`.
+
+`GET /api/history/same-period?year=1969` - "Nello stesso periodo". The index's events in the
+years around `year` (`span`, 0 to 25, default 5), by country, leaving out `excludeCountry` (the one
+the visitor is looking at), at most `perCountry` (default 3) each, the closest to the year kept.
+
+It is a comparison in time and says so (`comparison: "TEMPORAL"`, and a `notice` to show): the
+events were contemporary, not connected. And it says how thin the data is: `coverage.level` is
+`NONE`, `SPARSE` (under 5 events or under 3 countries) or `OK`, with a `note` to show at every
+level, because even `OK` is a selection. The index holds only what Wikipedia lists on its day pages
+and the map can place, about half of it, so an empty window is far more often a gap in the data
+than a quiet world. A frontend should show `SPARSE` as "poco materiale", not as "nothing happened".
+
+"Near this place" has no endpoint of its own: the map selects countries, and a country's events
+across the year are [`/countries/{code}/timeline`](#events-by-country).
+
+### Sources, and reporting a mistake
+
+`GET /api/history/sources` is the data behind a "Il progetto e le fonti" page: every source of
+content with its licence and whether it must be credited; how much there is (the index per
+edition - events, countries, oldest and newest year, when last written - and how many paths and
+insights, of which how many were reviewed); and `limits`, what the content is not, in Italian.
+It is computed from the real state of the service, so it cannot go stale. The prose of the page -
+what the project wants to tell, how contents are chosen - is the frontend's to write.
+
+It is **provenance, not a seal**: nothing in it says "verified". The one source that is the
+project's own, its editorial content, declares no licence, because none has been chosen; that is
+a decision for the owner, not for the code.
+
+`POST /api/history/reports` - "Segnala un errore". The frontend fills in `target` from the card
+the visitor is on - an `EVENT` by its `year`, `month`, `day`, `language` and `text` (an event has
+no identifier of its own), an `INSIGHT` or a `PATH` by its `slug` - so the visitor only says what is
+wrong:
+
+```bash
+curl -X POST 'https://<host>/api/history/reports' -H 'Content-Type: application/json' -d '{
+  "target": {"type": "EVENT", "year": 1957, "month": 10, "day": 4, "language": "it", "text": "Viene lanciato lo Sputnik 1."},
+  "category": "WRONG_DATE",
+  "message": "A Baikonur era già il 5 ottobre.",
+  "contact": "nome@example.org"
+}'
+```
+
+`category` is `WRONG_DATE`, `WRONG_PLACE`, `WRONG_TEXT`, `BROKEN_LINK` or `OTHER`; `message` is 10 to
+1000 characters; `contact` is an optional email address, only for replying. The answer is a `201`
+with the report's number. A malformed report is a `400` (`INVALID_REPORT`, `INVALID_DATE`, ...) and
+**does not count against the limit**. The body must be `application/json` (anything else is a `415`)
+and is read up to 8 KB, whatever the client announces: a report is a few hundred bytes, and this is
+an endpoint anybody can call.
+
+It is the one public endpoint that writes, so it is limited, in memory and per instance, as
+auth-service's login is:
+
+| Variable | Default | |
+|---|---|---|
+| `HISTORY_REPORTS_MAXPERCLIENT` | `5` | reports one address may send per window |
+| `HISTORY_REPORTS_MAXTOTAL` | `200` | reports the whole service accepts per window |
+| `HISTORY_REPORTS_WINDOW` | `1h` | the window |
+
+Over either limit it is a `429` with `Retry-After`. "One visitor" is one IPv4 address or one
+IPv6 /64: a household or a phone holds a whole /64 and can write from any address in it, so
+every address of a /64 shares one quota. The address is the caller's real one only because
+`server.forward-headers-strategy: framework` is set in the `prod` profile, as in auth-service:
+history-service is reachable only through the gateway, which adds the `Forwarded` header.
+`ForwardedAddressIntegrationTest` sends that header and checks it, for IPv4 and IPv6, so the
+claim is tested rather than assumed.
+
+The message, the contact and the event text may not contain control characters (a line break and
+a tab are fine in the message and the text): Postgres refuses a NUL, and it would otherwise fail
+after the quota was spent.
+
+**What is stored** (migration `V3`): the report and what it is about, and nothing that identifies
+the visitor - no address, no session. `contact` is the one exception, and only if they chose to
+leave it. **It is personal data**: use it to reply, then clear it, and say so in the privacy notice
+of the frontend. There is no screen for reports yet; read them in SQL:
+
+```sql
+SELECT id, created_at, target_type, target_slug, target_year, target_month, target_day,
+       category, message, contact
+FROM history.error_reports WHERE handled_at IS NULL ORDER BY created_at;
+
+UPDATE history.error_reports SET handled_at = now(), contact = NULL WHERE id = 42;
+```
+
+An admin view is the next step, and needs history-service to verify `auth-service`'s JWTs, which it
+does not do yet.
+
 ### Being a good neighbour to Wikipedia
 
 Wikipedia is a shared resource with rules, and this service follows them:
@@ -899,9 +1113,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  71 tests
+cd service/auth-service    && ./mvnw test    #  79 tests
 cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 274 tests
+cd service/history-service && ./mvnw test    # 422 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -925,6 +1139,13 @@ talk to a stand-in on a local port.
 Every service exposes `/actuator/health` and `/actuator/prometheus`. Prometheus scrapes
 them over the internal network and Grafana is provisioned with it as a datasource, so the
 datasource comes up with no manual wiring. Configuration lives under `infra/`.
+
+The scrape targets are the three services on the ports `.env` gives them (`AUTH_PORT`,
+`HISTORY_PORT`, `GATEWAY_PORT`): `infra/prometheus/prometheus.yml.tpl` is a template and the
+Compose file fills the ports in when the container starts. `history-service` used to be
+scraped on a fixed 8082, which is only right in development; with any other `HISTORY_PORT` its
+metrics, and the alerts built on them, were silently empty. Check Prometheus's Status > Targets
+page after changing a port: all three jobs should be `UP`.
 
 In production Prometheus and Grafana listen on the host's loopback only. From your
 machine, open a tunnel and use them as if they were local:
@@ -968,6 +1189,13 @@ metrics would be public.
 
 - **Postgres is published only in dev**, on the loopback (`localhost:5433`, in
   `compose-dev.yml`). `compose-prod.yml` publishes nothing for the database.
+- **The three Spring services run with the least Linux privilege they need** in
+  `compose-prod.yml`: every capability dropped, `no-new-privileges`, and the JVM set to exit on
+  `OutOfMemoryError` so that `restart: unless-stopped` restarts it rather than leaving it
+  half-alive. Every container's log is rotated (3 files of 10 MB). Postgres and Caddy are left
+  out of the capability drop on purpose: both start as root and need it in their entrypoints.
+  There are no memory or CPU limits, because the right numbers depend on the host: set them
+  (`mem_limit`, `cpus`) once you know it, and the JVM will size its heap from the limit.
 - **Prometheus and Grafana are loopback-only.** Prometheus runs with
   `--web.enable-lifecycle` and no authentication, so anyone who could reach its port could
   shut it down. Do not change those bindings to `0.0.0.0` to save an SSH tunnel.
@@ -977,9 +1205,11 @@ metrics would be public.
   at `~/.config/rclone/rclone.conf` on the host — same reasoning as `.env`. `ALERT_WEBHOOK_URL`
   is lower stakes (it can post to the ops channel, nothing more) but still belongs only in
   `.env`, not committed.
-- **Published images are scanned for known vulnerabilities** (Trivy, in `publish-images`) before
-  the moving tag (`latest`/branch) is pointed at them; results are in the repository's Security
-  tab, alongside CodeQL's.
+- **Published images are scanned for known vulnerabilities** (Trivy, in `publish-images`) right
+  after they are pushed; results are in the repository's Security tab, alongside CodeQL's. The
+  scan is advisory: a HIGH/CRITICAL finding adds a warning to the CI run and does not stop the
+  moving tag (`latest`/branch) from being pointed at the image, so the Security tab has to be
+  looked at. See `docs/architecture.md` for why it is not a gate.
 - **`server.forward-headers-strategy` is enabled in the `prod` profile**, so the services
   trust the `X-Forwarded-*` headers they receive. That is safe only because the proxy
   overwrites them rather than passing on what the caller sent. The standard `Forwarded`

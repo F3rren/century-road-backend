@@ -1,0 +1,51 @@
+{
+  "slug": "ruggero-ii-re-di-sicilia-1130",
+  "title": "Ruggero II incoronato re di Sicilia",
+  "summary": "Il giorno di Natale del 1130 Ruggero II d'Altavilla è acclamato e incoronato a Palermo primo re di Sicilia, dopo avere ottenuto il titolo da Anacleto II, uno dei due contendenti al soglio pontificio nel 1130.",
+  "date": {
+    "year": 1130,
+    "month": 12,
+    "day": 25
+  },
+  "place": {
+    "name": "Palermo, Italia",
+    "lat": 38.1157,
+    "lon": 13.3615,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Ruggero era conte di Sicilia dal 1105. Nel 1127, morto senza figli il duca Guglielmo II di Puglia, rivendicò i possedimenti degli Altavilla nella penisola, trovando l'opposizione di papa Onorio II e dei nobili locali. Nell'agosto 1128 il papa lo investì duca di Puglia a Benevento e nel settembre 1129 Ruggero fu riconosciuto tale da Napoli, Capua e dalle altre città. Alla morte di Onorio II, nel febbraio 1130, si ebbe una duplice elezione, di Innocenzo II e di Anacleto II; Ruggero sostenne Anacleto.",
+  "event": "Il 27 settembre 1130 una bolla di Anacleto fece di Ruggero un re di Sicilia. Ruggero partì per Palermo e il giorno di Natale fu incoronato, secondo l'articolo italiano probabilmente dall'arcivescovo Pietro, dopo essere stato acclamato da un'assemblea popolare. Per l'articolo italiano a Ruggero si deve l'unione in un solo regno delle conquiste normanne dell'Italia meridionale, della Sicilia e di Malta, e nel convocare le Curiae generales si può vedere la prima assise legislativa del Parlamento siciliano.",
+  "after": "L'appoggio ad Anacleto portò Ruggero in una guerra di dieci anni: Bernardo di Chiaravalle, campione di Innocenzo II, organizzò una coalizione contro Anacleto e il suo «re mezzo pagano», mentre il Sud si ribellava. Nel luglio 1132 Ruggero fu sconfitto a Nocera. Dopo la morte di Anacleto, nel gennaio 1138, Innocenzo II invase il regno, ma fu catturato a Galluccio il 22 luglio 1139 e proclamò Ruggero re. Per l'articolo inglese quelle terre formarono per sette secoli i regni di Napoli e di Sicilia. A Palermo Ruggero attirò uomini di ogni etnia, come il geografo al-Idrisi.",
+  "links": [
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "Anche a Carlo Magno, nell'800, il titolo più alto era stato conferito da un papa."
+    },
+    {
+      "slug": "battaglia-di-hastings-1066",
+      "reason": "Sessantaquattro anni prima un altro duca normanno, Guglielmo, conquistava l'Inghilterra a Hastings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Roger II of Sicily - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roger_II_of_Sicily",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ruggero II di Sicilia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ruggero_II_di_Sicilia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno è quello di Natale per entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Entrambi gli articoli considerano Anacleto II un antipapa: la duplice elezione del 1130 oppose lui a Innocenzo II. Fu Innocenzo II, riconosciuto dalla maggior parte della cristianità, a confermare il titolo di Ruggero nel 1139."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

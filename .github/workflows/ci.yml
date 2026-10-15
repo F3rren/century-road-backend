@@ -16,6 +16,15 @@ on:
 permissions:
   contents: read
 
+# One run per branch or pull request. Two quick pushes would otherwise run side by side, and the
+# older one's image job can finish last and leave the moving tag (latest/develop) pointing at the
+# older commit. A newer push supersedes the older run on develop and on pull requests; on main
+# nothing is cancelled, because release.sh insists on a *completed* green run for the commit it
+# releases.
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: ${{ github.ref != 'refs/heads/main' }}
+
 jobs:
   build-and-test:
     name: ${{ matrix.service }} build, test and quality

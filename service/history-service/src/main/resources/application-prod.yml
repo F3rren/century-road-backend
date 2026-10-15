@@ -7,3 +7,9 @@ server:
     include-stacktrace: never
     include-message: never
     include-binding-errors: never
+
+  # Trust forwarded headers only because history-service is reachable solely through the
+  # gateway, which sets them from the address the proxy in front of it saw: without this,
+  # every visitor would arrive from the gateway's own address and share one report limit.
+  # Same setting, same reasoning as in auth-service.
+  forward-headers-strategy: framework

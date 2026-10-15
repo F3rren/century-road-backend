@@ -1,0 +1,51 @@
+{
+  "slug": "morte-di-maometto-632",
+  "title": "La morte di Maometto e la scelta del primo califfo",
+  "summary": "L'8 giugno del 632 muore a Medina Maometto, fondatore dell'Islam; sulla sua successione nasce un disaccordo, e Abu Bakr è confermato primo califfo.",
+  "date": {
+    "year": 632,
+    "month": 6,
+    "day": 8
+  },
+  "place": {
+    "name": "Medina, Arabia Saudita",
+    "lat": 24.4672,
+    "lon": 39.6111,
+    "countryCode": "SA",
+    "approximate": false
+  },
+  "before": "Durante il pellegrinaggio del 632 Maometto guidò di persona le cerimonie e pronunciò un sermone. Si dice che tra i punti ricordati ci fossero il divieto di usura e delle vendette per gli omicidi del periodo preislamico, la fratellanza di tutti i musulmani e l'adozione di dodici mesi lunari senza intercalazione.",
+  "event": "Nel giugno del 632, dopo aver pregato al cimitero, Maometto fu colto da un forte mal di testa e dalla febbre. Chiese alle mogli di poter restare nella casa di Aisha e vi arrivò a stento, appoggiandosi ad Ali e a Fadl ibn Abbas. Secondo varie fonti, tra cui il Sahih al-Bukhari, disse di sentirsi spezzare l'aorta a causa del cibo mangiato a Khaybar. L'8 giugno 632 morì; secondo la tradizione le sue ultime parole furono: «O Dio, perdonami e abbi pietà di me, e fammi unire ai più alti compagni». Lo storico Alfred Welch, che ritiene la malattia una comune febbre di Medina, si limita a ipotizzare stanchezza fisica e mentale.",
+  "after": "Alla morte di Maometto nacque un disaccordo su chi gli succedesse. Umar ibn al-Khattab, un importante compagno del profeta, propose Abu Bakr, amico e collaboratore di Maometto, che con altri sostegni fu confermato primo califfo. Alcuni compagni contestarono la scelta, sostenendo che Maometto avesse designato come successore Ali ibn Abi Talib, suo cugino e genero, a Ghadir Khumm. Abu Bakr dovette prima domare una rivolta di tribù arabe, le «guerre della ridda», poi attaccò l'Impero bizantino. In un decennio i musulmani conquistarono la Mesopotamia, la Siria bizantina, l'Egitto bizantino e gran parte della Persia, e si formò il califfato dei Rashidun.",
+  "links": [
+    {
+      "slug": "egira-622",
+      "reason": "Dieci anni prima Maometto era emigrato a Medina con i primi musulmani."
+    },
+    {
+      "slug": "battaglia-dello-yarmuk-636",
+      "reason": "Pochi anni dopo i suoi successori battono i Bizantini sullo Yarmuk."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Muhammad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Muhammad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Maometto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Maometto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I particolari della malattia e le ultime parole sono riferiti dalla tradizione islamica. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Il disaccordo sulla successione è quello fra chi sostiene Abu Bakr e chi sostiene Ali."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "slug": "morte-di-nerone-68",
+  "title": "La morte di Nerone e la fine della dinastia giulio-claudia",
+  "summary": "Il 9 giugno del 68 d.C. Nerone, dichiarato nemico pubblico dal Senato e abbandonato dai pretoriani, si toglie la vita vicino a Roma: finisce la dinastia fondata da Augusto.",
+  "date": {
+    "year": 68,
+    "month": 6,
+    "day": 9
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Roma: Nerone morì nei pressi della città, nella villa di un suo liberto, e le fonti consultate non indicano il luogo preciso."
+  },
+  "before": "Nel marzo del 68 Gaio Giulio Vindice, governatore della Gallia Lugdunense, si ribellò contro la politica fiscale di Nerone e chiamò a unirsi a lui Servio Sulpicio Galba, governatore della Spagna Tarraconense. Vindice fu sconfitto a Vesontio nel maggio del 68 dalle legioni di Verginio Rufo, ma le legioni germaniche erano scontente (cercarono di proclamare imperatore Verginio Rufo, che rifiutò) e Galba continuava a opporsi. Il prefetto del pretorio, Ninfidio Sabino, passò dalla parte di Galba, e il Senato riconobbe Galba come nuovo princeps.",
+  "event": "Secondo Svetonio, Nerone fuggì da Roma pensando di raggiungere Ostia e una flotta, ma rinunciò quando alcuni ufficiali si rifiutarono di seguirlo. Tornato a Palazzo, a mezzanotte trovò le guardie andate via e gli amici scomparsi. Il liberto Faonte gli offrì la sua villa fuori città, dove Nerone arrivò travestito con quattro liberti fedeli. Seppe che il Senato lo aveva dichiarato nemico pubblico; costretto dal rumore dei cavalieri in arrivo, si pugnalò alla gola con l'aiuto del suo segretario Epafrodito. Morì il 9 giugno del 68.",
+  "after": "Con Nerone finì la dinastia giulio-claudia, fondata da Augusto. La sua morte aprì un breve periodo di guerra civile, l'anno dei quattro imperatori. Nelle province orientali nacque la leggenda che Nerone non fosse morto e sarebbe tornato. Le enormi spese per la ricostruzione di Roma e della dimora imperiale avevano messo lo Stato in grave difficoltà finanziaria.",
+  "links": [
+    {
+      "slug": "morte-di-augusto-14",
+      "reason": "Con Nerone finisce la dinastia fondata da Augusto, morto nel 14 d.C."
+    },
+    {
+      "slug": "grande-incendio-di-roma-64",
+      "reason": "Quattro anni prima, l'incendio di Roma e le sue conseguenze avevano segnato il regno di Nerone."
+    },
+    {
+      "slug": "anno-dei-quattro-imperatori-69",
+      "reason": "La morte di Nerone apre un anno di guerra civile e quattro imperatori."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nero - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nero",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Nerone - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Nerone",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "I particolari della fuga e della morte, comprese le ultime parole, vengono soprattutto da Svetonio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

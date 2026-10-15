@@ -1,0 +1,51 @@
+{
+  "slug": "seconda-battaglia-di-ypres-1915",
+  "title": "Il gas a Ypres",
+  "summary": "Il 22 aprile 1915, presso Ypres, i tedeschi liberano da bombole una nube di cloro sulle linee alleate: è il primo grande uso di gas velenoso sul fronte occidentale. Le truppe francesi cedono, ma i canadesi riescono a ripristinare la linea.",
+  "date": {
+    "year": 1915,
+    "month": 4,
+    "day": 22
+  },
+  "place": {
+    "name": "Langemark, Belgio",
+    "lat": 50.919,
+    "lon": 2.919,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "Il gas fu liberato su un fronte di alcuni chilometri tra Langemark e Gravenstafel e la battaglia si svolse in tutto il saliente di Ypres: il pin è su Langemark e non indica un punto preciso."
+  },
+  "before": "Per l'articolo inglese il chimico Walther Nernst propose di svuotare le trincee con gas lacrimogeno, ma Fritz Haber propose invece il cloro; Falkenhayn voleva usarlo per coprire il trasferimento di unità sul fronte orientale. I tedeschi portarono in prima linea 5730 bombole, con l'installazione supervisionata da Haber, Otto Hahn, James Franck e Gustav Hertz. A nord del saliente c'erano due divisioni francesi; la parte orientale era difesa dalla 1ª Divisione canadese e da due divisioni britanniche.",
+  "event": "Il 22 aprile, alle 17 circa per l'articolo inglese e alle 17.30 per quello italiano, i tedeschi liberarono 168 tonnellate di cloro tra Langemark e Gravenstafel, su un fronte di circa sei chilometri e mezzo per l'articolo inglese e di circa sei per quello italiano. Per l'articolo italiano furono colpite per prime le truppe coloniali algerine della 45ª Divisione e poi la 87ª divisione territoriale francese; i sopravvissuti abbandonarono le posizioni, lasciando una breccia di sei chilometri. Per l'articolo inglese i francesi nella nube ebbero da 2000 a 3000 perdite, con 800-1400 morti; per quello italiano i morti alleati furono circa 5000 nel giro di dieci minuti.",
+  "after": "Per l'articolo italiano i tedeschi non avevano truppe sufficienti per sfruttare il varco: la divisione canadese ripristinò la continuità della linea e la tenne nonostante i successivi attacchi col gas fino al 3 maggio, con 1000 morti e 4975 feriti su circa 10 000 uomini. La battaglia, che per l'articolo inglese durò fino al 25 maggio, fu composta da quattro scontri: Gravenstafel (22-23 aprile), Saint Julien, Frezenberg e Bellewaarde.",
+  "links": [
+    {
+      "slug": "affondamento-del-lusitania-1915",
+      "reason": "Quindici giorni dopo, il 7 maggio, un sommergibile tedesco affonda il transatlantico Lusitania."
+    },
+    {
+      "slug": "battaglia-di-gorlice-tarnow-1915",
+      "reason": "Falkenhayn voleva coprire con il gas lo spostamento di unità a est, dove il 2 maggio comincia l'offensiva di Gorlice-Tarnów."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Second Battle of Ypres - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_Ypres",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Seconda battaglia di Ypres - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Seconda_battaglia_di_Ypres",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 22 aprile 1915. Gli articoli divergono sull'ora del rilascio del gas (circa le 17 per l'inglese, le 17.30 per l'italiano) e sulle perdite, e il testo attribuisce a ciascun articolo le sue cifre. L'articolo italiano è breve."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

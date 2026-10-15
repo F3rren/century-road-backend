@@ -1,0 +1,55 @@
+{
+  "slug": "sacco-di-roma-455",
+  "title": "Il sacco di Roma dei Vandali",
+  "summary": "Il 2 giugno del 455 d.C. i Vandali di re Genserico, sbarcati dall'Africa, entrano a Roma e la saccheggiano per due settimane, dopo l'uccisione di Valentiniano III e la morte dell'imperatore Petronio Massimo.",
+  "date": {
+    "year": 455,
+    "month": 6,
+    "day": 2
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.9,
+    "lon": 12.5,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Nel 442 un trattato tra l'Impero d'Occidente e i Vandali aveva previsto il matrimonio tra il figlio di Genserico, Unerico, ed Eudocia, figlia dell'imperatore Valentiniano III. Il 21 settembre 454, secondo alcune fonti su influenza di Petronio Massimo, Valentiniano fece uccidere il generale Ezio; il 16 marzo 455 fu a sua volta assassinato in una congiura di Massimo, che il giorno dopo divenne imperatore e, per legittimarsi, secondo l'articolo inglese sposò la vedova Licinia Eudossia e fece sposare Eudocia a suo figlio (quello italiano parla solo dell'intenzione di sposare Eudossia). Genserico dichiarò rotto il trattato; secondo alcune fonti fu Eudossia stessa, per vendetta, a chiamarlo.",
+  "event": "Genserico salpò da Cartagine con una grande flotta e sbarcò a Ostia. Petronio Massimo tentò di fuggire e fu ucciso dalla folla. I Vandali abbatterono gli acquedotti che portavano acqua alla città. Papa Leone I convinse Genserico a non uccidere chi non resisteva, a non incendiare gli edifici e a non torturare i prigionieri, e, secondo il racconto di Prospero, il re mantenne la promessa. Il 2 giugno i Vandali entrarono a Roma e la saccheggiarono per due settimane, portando via gran parte dei tesori; si racconta che strapparono «metà del tetto» del tempio di Giove Capitolino, togliendo le tegole di bronzo dorato.",
+  "after": "Molti romani furono presi come schiavi, e furono catturate anche Eudossia e le figlie Eudocia e Placidia, mentre cercavano di fuggire. Il vescovo di Cartagine, Deogratias, riscattò alcuni prigionieri vendendo i beni della sua chiesa e li ospitò nelle basiliche finché non poterono tornare. I Vandali devastarono poi la Campania, ma non riuscirono a prendere Napoli. Il saccheggio di due settimane è considerato più distruttivo di quello visigoto del 410, e a esso si ricollega il termine «vandalismo», anche se per un articolo i Vandali non operarono distruzioni degne di nota. Il governo imperiale fu paralizzato; il successore di Massimo, Avito, appoggiato dal re visigoto Teodorico II ma poco popolare presso l'aristocrazia romana, fu rovesciato dopo la guerra civile del 456.",
+  "links": [
+    {
+      "slug": "sacco-di-roma-410",
+      "reason": "Dopo i Visigoti nel 410, è la seconda volta in pochi decenni che Roma cade in mano a un nemico."
+    },
+    {
+      "slug": "battaglia-dei-campi-catalaunici-451",
+      "reason": "Quattro anni prima Ezio, ucciso nel 454, aveva guidato i Romani contro gli Unni in Gallia."
+    },
+    {
+      "slug": "deposizione-di-romolo-augustolo-476",
+      "reason": "Ventun anni dopo l'Impero d'Occidente finisce."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Sack of Rome (455) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Sack_of_Rome_(455)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sacco di Roma (455) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sacco_di_Roma_(455)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Gli articoli riportano particolari diversi: quello italiano data l'uccisione di Petronio Massimo al 31 maggio e dice che Genserico entrò dalla Porta Portuense; quello inglese parla dello sbarco a Ostia e non dà il giorno dell'ingresso. Sul matrimonio di Massimo con Eudossia gli articoli non concordano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

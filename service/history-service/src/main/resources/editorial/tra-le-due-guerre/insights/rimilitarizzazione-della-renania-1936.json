@@ -1,0 +1,51 @@
+{
+  "slug": "rimilitarizzazione-della-renania-1936",
+  "title": "La rimilitarizzazione della Renania",
+  "summary": "Il 7 marzo 1936 la Germania nazista manda nella Renania smilitarizzata, secondo le introduzioni dei due articoli, circa 20 000 soldati, violando il trattato di Versailles e i trattati di Locarno. Francia e Gran Bretagna scelgono di non reagire con le armi.",
+  "date": {
+    "year": 1936,
+    "month": 3,
+    "day": 7
+  },
+  "place": {
+    "name": "Colonia, Renania, Germania",
+    "lat": 50.9375,
+    "lon": 6.9603,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "La Renania è una regione ampia, a ovest del Reno: il pin è un segnaposto a Colonia e non indica un punto preciso."
+  },
+  "before": "Il trattato di Versailles vietava all'esercito tedesco l'accesso ai territori a ovest del Reno e a una fascia di 50 chilometri a est, e i trattati di Locarno del 1925 ribadirono lo status di smilitarizzazione permanente. Le forze alleate di occupazione lasciarono la Renania nel giugno 1930. Nel marzo 1933 il ministro della Difesa Blomberg fece elaborare piani per la rimilitarizzazione. Per l'articolo inglese Hitler decise il 1º marzo 1936, anche perché l'attenzione della Società delle Nazioni era sulla crisi etiopica.",
+  "event": "Il 7 marzo 1936 Hitler ordinò alla Wehrmacht di occupare la Renania con circa 20 000 uomini; per entrambi gli articoli, nel corpo del testo, il pretesto fu il patto di mutua assistenza franco-sovietico, e l'azione provocò festeggiamenti in tutta la Germania. Francia e Gran Bretagna, pur allarmate dalla violazione dei trattati, scelsero di non intervenire militarmente: per l'articolo inglese l'opinione pubblica e le élite dei due paesi si opponevano a un intervento e nessuno dei due aveva un esercito pronto a muoversi.",
+  "after": "Per l'articolo italiano la mancata reazione delle potenze occidentali convinse Hitler della loro riluttanza a ostacolare le ambizioni della politica estera nazista; il 14 marzo 1936 parlò a Monaco. Per l'articolo inglese la rimilitarizzazione spostò l'equilibrio di potenza in Europa dalla Francia e dai suoi alleati verso la Germania. Il 7 marzo la Germania dichiarò di rinunciare al patto di Locarno; il Consiglio della Società delle Nazioni stabilì, non all'unanimità, che la rimilitarizzazione violava i trattati di Versailles e di Locarno.",
+  "links": [
+    {
+      "slug": "trattati-di-locarno-1925",
+      "reason": "Più di dieci anni prima, a Locarno, la Germania aveva accettato di rispettare la smilitarizzazione della Renania."
+    },
+    {
+      "slug": "anschluss-1938",
+      "reason": "Due anni dopo, il 12 marzo 1938, la Germania annette l'Austria."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Remilitarisation of the Rhineland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Remilitarisation_of_the_Rhineland",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rimilitarizzazione della Renania - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rimilitarizzazione_della_Renania",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambe le introduzioni danno il 7 marzo 1936 e circa 20 000 uomini; nel corpo i due articoli citano anche altre cifre (19 battaglioni di fanteria, 3 battaglioni oltre il Reno; l'articolo inglese riporta dal diario di Shirer 2 000, poi 9 500, e per lui circa 50 000 uomini; quello italiano parla di soli 3 000 soldati effettivi in Renania). Il pretesto del patto franco-sovietico è nell'introduzione dell'articolo inglese e, nel corpo, anche in quello italiano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

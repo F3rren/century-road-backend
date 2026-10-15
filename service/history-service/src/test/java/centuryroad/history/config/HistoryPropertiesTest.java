@@ -40,7 +40,8 @@ class HistoryPropertiesTest {
                 "history.resilience.retry-attempts=2", "history.resilience.retry-wait=300ms",
                 "history.resilience.breaker-open-duration=30s",
                 "history.timeline.cron=0 0 1 * * *", "history.timeline.delay=1s",
-                "history.timeline.max-consecutive-failures=10"));
+                "history.timeline.max-consecutive-failures=10",
+                "history.reports.max-per-client=5", "history.reports.max-total=200", "history.reports.window=1h"));
     }
 
     private static String[] without(String key) {

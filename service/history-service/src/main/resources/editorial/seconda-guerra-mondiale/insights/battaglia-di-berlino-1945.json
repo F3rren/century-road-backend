@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-berlino-1945",
+  "title": "La battaglia di Berlino",
+  "summary": "Il 16 aprile 1945 l'Armata Rossa riprende l'offensiva a est di Berlino. Dopo aver superato la linea dell'Oder circonda la capitale e combatte per le strade. Hitler si uccide il 30 aprile, la guarnigione si arrende il 2 maggio e la guerra in Europa finisce pochi giorni dopo.",
+  "date": {
+    "year": 1945,
+    "month": 4,
+    "day": 16
+  },
+  "place": {
+    "name": "Berlino, Germania",
+    "lat": 52.52,
+    "lon": 13.405,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "L'offensiva cominciò sull'Oder, a est della città: il pin è su Berlino, l'obiettivo finale, ed è solo un segnaposto."
+  },
+  "before": "Dopo l'offensiva di gennaio e febbraio 1945 l'Armata Rossa si era fermata sull'Oder, a circa 60 chilometri da Berlino per l'articolo inglese (80 per l'italiano). Il generale Heinrici, nuovo comandante del gruppo d'armate Vistola, fece fortificare le alture di Seelow. Per l'articolo inglese Stalin voleva prendere Berlino prima degli Alleati occidentali, che non avevano piani per conquistarla: Eisenhower non vedeva ragione di subire perdite per una città destinata alla zona sovietica. Il 12 aprile Hitler seppe della morte di Roosevelt e per un momento sperò in una rottura tra gli Alleati.",
+  "event": "Il 16 aprile due fronti sovietici attaccarono Berlino da est e da sud, mentre un terzo travolgeva le forze tedesche a nord. Il 20 aprile, giorno del compleanno di Hitler, l'artiglieria sovietica cominciò a colpire il centro della città. Il 23 aprile il generale Weidling prese il comando di una guarnigione di divisioni indebolite e di Volkssturm e giovani della Hitler Youth. Nei giorni seguenti l'Armata Rossa conquistò la città strada per strada; per l'articolo inglese il 29 aprile attraversò il ponte Moltke e il 30 attaccò il Reichstag.",
+  "after": "Hitler si uccise il 30 aprile e la guarnigione di Berlino si arrese il 2 maggio; per l'articolo inglese i combattimenti attorno alla città continuarono fino all'8 maggio, giorno della fine della guerra in Europa (il 9 per i sovietici), e per quello italiano la Germania si arrese il 9. Per l'articolo inglese i sovietici ebbero 81 116 morti, per quello italiano 78 291 più 2 825 polacchi, lo stesso totale; per l'articolo inglese morirono circa 125 000 civili nell'intera operazione (100 000 nella battaglia per l'italiano). Per entrambi gli articoli, durante e dopo l'assalto le truppe sovietiche commisero violenze sui civili e saccheggi.",
+  "links": [
+    {
+      "slug": "operazione-bagration-1944",
+      "reason": "Quasi dieci mesi prima, il 22 giugno 1944, i sovietici avevano lanciato l'operazione Bagration."
+    },
+    {
+      "slug": "conferenza-di-jalta-1945",
+      "reason": "Più di due mesi prima, il 4 febbraio, a Jalta i capi alleati avevano discusso l'assetto della Germania e dell'Europa."
+    },
+    {
+      "slug": "resa-della-germania-1945",
+      "reason": "Ventidue giorni dopo, l'8 maggio, la Germania si arrende."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Berlin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Berlin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Berlino - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Berlino",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 16 aprile 1945 come inizio e il 2 maggio per la resa di Berlino. Per la fine della guerra l'articolo inglese dà l'8 maggio (9 in Unione Sovietica), quello italiano il 9 nell'introduzione, mentre nel testo dà il 7 (Reims) e la notte dell'8 (Berlino). Le perdite sovietiche coincidono (81 116 morti per l'inglese; 78 291 morti più 2 825 polacchi per l'italiano); divergono la distanza dall'Oder (60 chilometri per l'inglese, 80 per l'italiano) e i civili morti. Il pin è su Berlino."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

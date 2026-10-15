@@ -1,0 +1,54 @@
+{
+  "slug": "quattro-giornate-di-napoli-1943",
+  "title": "Le quattro giornate di Napoli",
+  "summary": "Tra il 27 e il 30 settembre 1943 la popolazione di Napoli, con i militari, si ribella all'occupazione tedesca, con poche armi e senza una vera organizzazione. I tedeschi lasciano la città prima dell'arrivo degli Alleati, il 1º ottobre. Per l'articolo italiano Napoli è la prima grande città europea a insorgere con successo.",
+  "date": {
+    "year": 1943,
+    "month": 9,
+    "day": 27
+  },
+  "place": {
+    "name": "Napoli, Italia",
+    "lat": 40.8518,
+    "lon": 14.2681,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Tra il 1940 e il 1943 Napoli subì duri bombardamenti alleati, con circa 20 000 civili morti per l'articolo inglese e oltre 25 000 per quello italiano. Dopo l'armistizio dell'8 settembre le truppe italiane, senza ordini, si sbandarono; in Campania c'erano 20 000 tedeschi (oltre 20 000 per l'articolo italiano) contro 5 000 italiani, e i generali Pentimalli e Del Tetto fuggirono. Per l'articolo inglese il colonnello Schöll proclamò lo stato d'assedio e il coprifuoco, minacciando di uccidere fino a cento napoletani per ogni tedesco ucciso, e i tedeschi volevano deportare i napoletani e distruggere la città.",
+  "event": "Il 27 settembre, per l'articolo inglese, i tedeschi catturarono circa 8 000 napoletani e 400-500 insorti armati risposero all'attacco; ci furono combattimenti in diversi quartieri, come il Vomero. Per l'articolo inglese un gruppo di 200 insorti guidato dal tenente Enzo Stimolo prese il deposito di armi di Castel Sant'Elmo, e il giorno dopo gli insorti attuarono un piano per impedire ai genieri tedeschi di far saltare il ponte della Sanità. Per l'articolo inglese i tedeschi cominciarono a evacuare, spinti anche dalla falsa notizia di uno sbarco alleato a Bagnoli, lasciando incendi e stragi, tra cui l'incendio dell'Archivio di Stato.",
+  "after": "Alle 9.30 del 1º ottobre le prime pattuglie alleate raggiunsero Napoli. Per entrambi gli articoli i morti nei combattimenti sono incerti: secondo alcuni autori 168 militari e partigiani e 159 civili, secondo una commissione ministeriale 155 vittime, ma i registri del cimitero di Poggioreale ne indicano 562. La città ricevette la medaglia d'oro al valor militare. Per l'articolo inglese la rivolta impedì ai tedeschi di organizzare la difesa o di distruggere la città, come aveva ordinato Hitler; il 22 dicembre 1944 (anno dato solo dall'articolo italiano) Pentimalli e Del Tetto furono condannati a 20 anni per collaborazione con i tedeschi; per l'articolo italiano la condanna fu annullata pochi mesi dopo.",
+  "links": [
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Diciannove giorni prima, l'8 settembre, era stato reso noto l'armistizio."
+    },
+    {
+      "slug": "repubblica-sociale-italiana-1943",
+      "reason": "Quattro giorni prima, il 23 settembre, era stata proclamata la Repubblica sociale italiana."
+    },
+    {
+      "slug": "rastrellamento-del-ghetto-di-roma-1943",
+      "reason": "Diciannove giorni dopo, il 16 ottobre, i tedeschi rastrellano gli ebrei del ghetto di Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Four Days of Naples - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Four_Days_of_Naples",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Quattro giornate di Napoli - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Quattro_giornate_di_Napoli",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'insurrezione dal 27 al 30 settembre 1943 e l'arrivo degli Alleati il 1º ottobre. Divergono sul numero dei morti per i bombardamenti (circa 20 000 o oltre 25 000); gli articoli danno gli stessi fatti dei combattimenti. Sulla condanna di Pentimalli e Del Tetto l'anno (1944) e l'annullamento sono solo nell'articolo italiano. Il pin è su Napoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

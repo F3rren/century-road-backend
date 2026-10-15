@@ -1,0 +1,56 @@
+{
+  "slug": "concilio-di-nicea-325",
+  "title": "Il concilio di Nicea",
+  "summary": "Nel 325 d.C. l'imperatore Costantino riunisce a Nicea il primo concilio ecumenico dei vescovi cristiani, per risolvere la disputa sulla natura di Gesù tra Alessandro e Ario: ne esce la prima parte del Credo niceno.",
+  "date": {
+    "year": 325,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Nicea (İznik), Turchia",
+    "lat": 40.43,
+    "lon": 29.72,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "Tra il 318 e il 322 era cominciata ad Alessandria una disputa tra il vescovo Alessandro e il presbitero Ario sulla natura di Gesù e sul suo rapporto con Dio Padre: per Alessandro il Figlio era generato dal Padre dall'eternità; per Ario solo il Padre era eterno, e il Figlio era stato creato e subordinato. Nel 324 Costantino sconfisse Licinio e divenne l'unico imperatore; venuto a conoscenza della controversia, scrisse ai due invitandoli a riconciliarsi, e poi convocò un concilio.",
+  "event": "Costantino riunì i vescovi a Nicea, in Bitinia, vicino alla sua capitale Nicomedia; le spese, compresi i viaggi dei vescovi, furono pagate dal tesoro imperiale. Le fonti riferiscono 250-300 partecipanti, con la cifra di 318 diventata tradizionale, e le firme finali sono 200-220; quasi tutti i vescovi venivano dall'Oriente. Il concilio, che durò da maggio a luglio, approvò un credo, sottoscritto da tutti i vescovi tranne due, adottò per la Pasqua il metodo romano e alessandrino, si pronunciò sullo scisma meliziano ed emanò venti canoni. Ario e due vescovi che rifiutarono il credo furono esiliati in Illiria.",
+  "after": "Il concilio non risolse del tutto la disputa: l'arianesimo continuò a diffondersi e per tutto il IV secolo restò oggetto di dibattito. Eusebio di Nicomedia, vescovo ariano, ottenne presto il favore di Costantino contro i vescovi niceni, e fu lui a battezzarlo poco prima della morte, nel 337. I successori di Costantino in Oriente, Costanzo II e Valente, furono ariani. Un equivoco diffuso è che a Nicea sia stato deciso il canone biblico: non risulta che se ne sia discusso.",
+  "links": [
+    {
+      "slug": "editto-di-milano-313",
+      "reason": "Dopo la tolleranza del 313, ora è la Chiesa stessa a dividersi."
+    },
+    {
+      "slug": "fondazione-di-costantinopoli-330",
+      "reason": "Cinque anni dopo Costantino fonda la nuova capitale."
+    },
+    {
+      "slug": "editto-di-tessalonica-380",
+      "reason": "Nel 380 il credo niceno diventa religione di Stato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Council of Nicaea - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/First_Council_of_Nicaea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Concilio di Nicea I - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Concilio_di_Nicea_I",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Lo storico Socrate Scolastico dà il 20 maggio 325 come data di apertura, ma secondo l'articolo inglese potrebbe essere stata più tarda, in giugno; gli articoli non concordano sulla fine: per quello italiano il concilio si concluse il 25 luglio; quello inglese dice «fino alla fine di luglio» nell'introduzione e «nelle prime settimane di luglio» nel testo. Per questo la data è data solo all'anno.",
+    "Non esistono atti dettagliati del concilio, e la successione delle discussioni non è certa; le idee di Ario ci sono note soprattutto dai suoi oppositori."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

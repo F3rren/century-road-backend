@@ -1,0 +1,37 @@
+{
+  "slug": "l-italia-dall-armistizio-alla-liberazione",
+  "title": "L'Italia dall'armistizio alla Liberazione",
+  "tagline": "Dall'armistizio dell'8 settembre 1943 al 25 aprile 1945: la Repubblica sociale, Napoli, Roma, le Fosse Ardeatine e la Resistenza nell'Italia occupata.",
+  "intro": "Il percorso segue l'Italia dall'armistizio dell'8 settembre 1943 alla Liberazione del 25 aprile 1945: la Repubblica sociale italiana, le quattro giornate di Napoli, il rastrellamento del ghetto di Roma, le Fosse Ardeatine, la liberazione di Roma e l'insurrezione dell'aprile 1945.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "armistizio-di-cassibile-1943",
+      "narrative": "Si parte dall'8 settembre 1943: è reso noto l'armistizio e i tedeschi occupano l'Italia."
+    },
+    {
+      "insight": "repubblica-sociale-italiana-1943",
+      "narrative": "Il 23 settembre nasce la Repubblica sociale italiana, guidata da Mussolini."
+    },
+    {
+      "insight": "quattro-giornate-di-napoli-1943",
+      "narrative": "Dal 27 al 30 settembre Napoli si ribella ai tedeschi."
+    },
+    {
+      "insight": "rastrellamento-del-ghetto-di-roma-1943",
+      "narrative": "Il 16 ottobre i tedeschi rastrellano gli ebrei del ghetto di Roma."
+    },
+    {
+      "insight": "fosse-ardeatine-1944",
+      "narrative": "Il 24 marzo 1944 i tedeschi uccidono 335 persone alle Fosse Ardeatine."
+    },
+    {
+      "insight": "liberazione-di-roma-1944",
+      "narrative": "Il 4 giugno 1944 gli Alleati entrano a Roma."
+    },
+    {
+      "insight": "liberazione-d-italia-1945",
+      "narrative": "Il 25 aprile 1945 il Comitato di liberazione proclama l'insurrezione generale."
+    }
+  ]
+}

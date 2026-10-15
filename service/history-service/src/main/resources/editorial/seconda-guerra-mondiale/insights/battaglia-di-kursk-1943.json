@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-kursk-1943",
+  "title": "La battaglia di Kursk",
+  "summary": "Il 5 luglio 1943 i tedeschi attaccano il saliente di Kursk con l'operazione Cittadella, ma i sovietici, che ne conoscono il piano, hanno costruito difese in profondità. L'offensiva si ferma in pochi giorni e l'Armata Rossa passa al contrattacco: da allora l'iniziativa sul fronte orientale resta ai sovietici.",
+  "date": {
+    "year": 1943,
+    "month": 7,
+    "day": 5
+  },
+  "place": {
+    "name": "Kursk, Russia",
+    "lat": 51.7373,
+    "lon": 36.1874,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "La battaglia si combatté nel saliente intorno alla città, a nord e a sud: il pin è su Kursk ed è solo un segnaposto."
+  },
+  "before": "Dopo Stalingrado l'Armata Rossa passò all'offensiva nel sud, e fra febbraio e marzo 1943 il fronte formò un saliente intorno a Kursk. Per l'articolo inglese i tedeschi volevano indebolire la capacità offensiva sovietica tagliando il saliente con un attacco da nord e uno da sud, e Hitler sperava di riaffermare il prestigio della Germania davanti ai suoi alleati. Per l'articolo inglese i sovietici, che conoscevano il piano grazie alla rete di spie Lucy, costruirono difese in profondità. I tedeschi rinviarono l'attacco per attendere nuove armi, e questo diede tempo all'Armata Rossa di rafforzarsi.",
+  "event": "Il 5 luglio cominciò l'operazione Cittadella. Per l'articolo italiano il fronte del saliente era largo circa 150 chilometri e i tedeschi trovarono campi minati molto fitti: un reparto ne tolse circa 2 700 in un chilometro. Per l'articolo inglese l'avanzata tedesca arrivò a 8-12 chilometri di profondità a nord e a 35 a sud, e il primo giorno fu il più costoso nella storia della guerra aerea per numero di aerei abbattuti. Il 12 luglio, per l'articolo inglese, nel sud ci fu un grande scontro di carri armati, a Prokhorovka, e i sovietici lanciarono l'operazione Kutuzov contro il retro tedesco al nord.",
+  "after": "Per l'articolo inglese la sera del 12 luglio Hitler, saputo dello sbarco in Sicilia, decise di fermare l'offensiva e di spostare forze in Italia. Per l'articolo inglese fu la prima volta che una grande offensiva tedesca fu fermata prima di sfondare; per entrambi gli articoli l'iniziativa sul fronte orientale passò all'Armata Rossa. Per l'articolo inglese le perdite sovietiche furono 177 877 durante l'offensiva tedesca e 685 456 nelle due controffensive; quelle tedesche 54 182 nella Cittadella e 111 114 nelle controffensive. Per l'articolo italiano la battaglia fu la maggiore battaglia di carri armati della storia.",
+  "links": [
+    {
+      "slug": "battaglia-di-stalingrado-1942",
+      "reason": "Poco più di dieci mesi prima, il 23 agosto 1942, era cominciata la battaglia di Stalingrado."
+    },
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Cinque giorni dopo, il 10 luglio, gli Alleati sbarcano in Sicilia."
+    },
+    {
+      "slug": "operazione-bagration-1944",
+      "reason": "Quasi un anno dopo, il 22 giugno 1944, i sovietici lanciano l'operazione Bagration."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Kursk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Kursk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Kursk - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Kursk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 5 luglio 1943. Per la durata l'articolo italiano parla di dieci giorni di combattimenti, quello inglese di una battaglia che comprende le controffensive sovietiche fino ad agosto. Le perdite sono quelle dell'articolo inglese, che precisa che dipendono dalle fonti. L'inglese colloca la decisione di Hitler di fermare l'offensiva la sera del 12 luglio, l'italiano il 13; l'italiano dà lo sbarco in Sicilia nella notte tra il 10 e l'11 luglio e identifica Lucy con un solo agente, John Cairncross, mentre l'inglese parla di una rete di spie. Il pin è un segnaposto su Kursk."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

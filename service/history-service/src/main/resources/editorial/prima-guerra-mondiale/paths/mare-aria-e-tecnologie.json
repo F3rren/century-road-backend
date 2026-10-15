@@ -1,0 +1,37 @@
+{
+  "slug": "mare-aria-e-tecnologie",
+  "title": "Mare, aria e tecnologie",
+  "tagline": "Gas, sommergibili, carri armati e aerei: come le armi nuove e le decisioni sul mare cambiarono la guerra, fino all'ingresso degli Stati Uniti.",
+  "intro": "Il percorso segue le novità della prima guerra mondiale: il gas a Ypres, il Lusitania, la battaglia navale dello Jutland, i primi carri armati, il telegramma Zimmermann, l'ingresso degli Stati Uniti e la morte del Barone Rosso.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "PRIMA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "seconda-battaglia-di-ypres-1915",
+      "narrative": "Si parte dall'aprile 1915: a Ypres i tedeschi usano il cloro."
+    },
+    {
+      "insight": "affondamento-del-lusitania-1915",
+      "narrative": "Nel maggio 1915 un sommergibile affonda il Lusitania."
+    },
+    {
+      "insight": "battaglia-dello-jutland-1916",
+      "narrative": "Nel 1916 lo scontro navale dello Jutland."
+    },
+    {
+      "insight": "battaglia-di-flers-courcelette-1916",
+      "narrative": "Nel settembre 1916 compaiono i primi carri armati."
+    },
+    {
+      "insight": "telegramma-zimmermann-1917",
+      "narrative": "Nel gennaio 1917 il telegramma Zimmermann propone al Messico un'alleanza."
+    },
+    {
+      "insight": "ingresso-degli-stati-uniti-in-guerra-1917",
+      "narrative": "Nell'aprile 1917 gli Stati Uniti dichiarano guerra alla Germania."
+    },
+    {
+      "insight": "barone-rosso-1918",
+      "narrative": "Nell'aprile 1918 muore il Barone Rosso."
+    }
+  ]
+}

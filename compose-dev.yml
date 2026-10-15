@@ -164,11 +164,12 @@ services:
     image: prom/prometheus:v3.15.0
     environment:
       AUTH_PORT:    "8081"
+      HISTORY_PORT: "8082"
       GATEWAY_PORT: "8080"
     volumes:
       - ./infra/prometheus/prometheus.yml.tpl:/etc/prometheus/prometheus.yml.tpl:ro
       - prometheus_data:/prometheus
-    # The scrape config is a template with the two service ports in it; this fills them in
+    # The scrape config is a template with the three service ports in it; this fills them in
     # and starts Prometheus as the image would have. See compose-prod.yml for the reasoning.
     entrypoint:
       - /bin/sh
@@ -176,7 +177,8 @@ services:
       - |
         set -e
         sed -e "s/@AUTH_PORT@/$${AUTH_PORT}/g" /etc/prometheus/prometheus.yml.tpl > /tmp/step1.yml
-        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step1.yml > /tmp/prometheus.yml
+        sed -e "s/@HISTORY_PORT@/$${HISTORY_PORT}/g" /tmp/step1.yml > /tmp/step2.yml
+        sed -e "s/@GATEWAY_PORT@/$${GATEWAY_PORT}/g" /tmp/step2.yml > /tmp/prometheus.yml
         exec /bin/prometheus "$$@"
       - prometheus
     command:

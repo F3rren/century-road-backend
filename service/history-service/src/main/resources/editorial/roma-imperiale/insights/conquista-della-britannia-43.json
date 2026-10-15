@@ -1,0 +1,57 @@
+{
+  "slug": "conquista-della-britannia-43",
+  "title": "Claudio invade la Britannia",
+  "summary": "Nel 43 d.C. l'imperatore Claudio manda in Britannia un esercito al comando di Aulo Plauzio: comincia la conquista che trasformerà il sud dell'isola in una provincia romana.",
+  "date": {
+    "year": 43,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Richborough, Kent, Regno Unito",
+    "lat": 51.2917,
+    "lon": 1.3236,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "Il punto indica Richborough, dove si ritiene di solito sia avvenuto lo sbarco principale; né il porto di partenza né il luogo dello sbarco sono certi, e alcuni storici propongono un approdo più a ovest, verso Chichester o Southampton."
+  },
+  "before": "Giulio Cesare era sbarcato in Britannia nel 55 e nel 54 a.C. senza conquistare territori, ma da allora le tribù del sud erano legate a Roma da scambi, tributi e alleanze con i capi locali. Augusto preparò invasioni dell'isola e le abbandonò, e Caligola nel 40 schierò le truppe sulla Manica, in un episodio dal significato incerto. Intanto in Britannia il regno dei Catuvellauni, guidato da Carataco, si ingrandiva, e Verica, re alleato di Roma, fu cacciato dalla sua terra.",
+  "event": "Nel 43 Claudio affidò la spedizione ad Aulo Plauzio, un senatore di rango; un pretesto fu riportare sul trono Verica. Secondo l'articolo italiano la forza era di circa 20 000 ausiliari e quattro legioni; per quello inglese non è chiaro quante legioni partirono, e solo la Seconda Augusta, comandata dal futuro imperatore Vespasiano, è attestata con certezza. Le truppe attraversarono la Manica in tre divisioni e batterono i Britanni di Carataco e Togodumno nella battaglia del Medway, che durò due giorni. Poi Claudio raggiunse l'esercito per la marcia finale su Camulodunum, l'odierna Colchester, che divenne la capitale della nuova provincia. Secondo l'arco di Claudio a Roma, undici re britannici si arresero a lui.",
+  "after": "Claudio tornò a Roma per celebrare la vittoria e ottenne il titolo di Britannicus. Carataco fuggì a ovest e continuò la resistenza fino alla sconfitta del 50; probabilmente già nel 47 il territorio a sud-est di una linea dall'Humber alla foce del Severn era in mano romana, e Vespasiano avanzò almeno fino a Exeter. La conquista durò decenni: la rivolta di Budicca, nel 60-61, distrusse Camulodunum, Verulamium e Londinium, e il sud dell'isola fu in gran parte conquistato entro l'87.",
+  "links": [
+    {
+      "slug": "battaglia-di-alesia-52-ac",
+      "reason": "Negli anni della conquista della Gallia Cesare era sbarcato due volte in Britannia, senza fermarsi."
+    },
+    {
+      "slug": "morte-di-augusto-14",
+      "reason": "Augusto aveva preparato invasioni dell'isola, ma poi vi aveva rinunciato."
+    },
+    {
+      "slug": "vallo-di-adriano-122",
+      "reason": "Nel 122 comincia il Vallo di Adriano, che segnerà a lungo il confine settentrionale della provincia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Roman conquest of Britain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Roman_conquest_of_Britain",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conquista della Britannia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conquista_della_Britannia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti danno l'anno, non il mese: l'invasione è collocata nel 43 d.C.",
+    "Le dimensioni dell'esercito non sono certe: l'articolo italiano parla di quattro legioni (Seconda Augusta, Nona Hispana, Quattordicesima Gemina, Ventesima Valeria Victrix) e circa 20 000 ausiliari; quello inglese dice che non è chiaro quante legioni partirono e che solo la Seconda Augusta è attestata con certezza."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

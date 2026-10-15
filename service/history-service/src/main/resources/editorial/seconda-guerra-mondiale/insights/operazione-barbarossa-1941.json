@@ -1,0 +1,54 @@
+{
+  "slug": "operazione-barbarossa-1941",
+  "title": "L'operazione Barbarossa",
+  "summary": "Il 22 giugno 1941 la Germania, con alcuni alleati, attacca l'Unione Sovietica lungo un fronte di 2 900 chilometri, due anni dopo il patto di non aggressione. Per l'articolo inglese è la più grande operazione militare della storia: apre il fronte orientale e porta i sovietici nel campo degli Alleati.",
+  "date": {
+    "year": 1941,
+    "month": 6,
+    "day": 22
+  },
+  "place": {
+    "name": "Brest, confine sovietico",
+    "lat": 52.0976,
+    "lon": 23.7341,
+    "approximate": true,
+    "note": "L'attacco si estese per 2 900 chilometri, dal Baltico al Mar Nero: il pin è su Brest, sul confine, ed è solo un segnaposto."
+  },
+  "before": "L'Alto comando tedesco cominciò a pianificare l'invasione nel luglio 1940, dopo l'occupazione sovietica della Bessarabia e della Bucovina settentrionale; Hitler la autorizzò il 18 dicembre 1940 e il nome in codice, in origine Otto, divenne Barbarossa. Per l'articolo italiano l'attacco, previsto per il 15 maggio, fu rinviato al 22 giugno. Per l'articolo inglese Stalin, pur avvertito dai servizi, non ordinò la mobilitazione per paura di provocare la Germania, e le truppe sovietiche furono colte in gran parte impreparate, spesso mal schierate e con organici ridotti.",
+  "event": "Nelle prime ore di domenica 22 giugno, per l'articolo italiano tra le 3.15 e le 3.45, l'artiglieria tedesca aprì il fuoco dal Baltico al Mar Nero e alle 4.45 fu dato l'ordine di avanzare ai reparti corazzati. Per l'articolo inglese attaccarono più di 3,8 milioni di soldati dell'Asse, per quello italiano circa tre milioni (3,5 milioni in un altro passo). Per l'articolo inglese la Luftwaffe avrebbe distrutto 1 489 aerei sovietici il primo giorno (cifra poi giudicata prudente; più di 1 800 per l'italiano) e i comandi sovietici furono paralizzati nelle prime ore, mentre la prima reazione di Stalin fu l'incredulità. Per l'articolo italiano il 21 giugno Schulenburg ricevette la dichiarazione di guerra da consegnare a Molotov, e alle 4 del 22 fu letta a Dekanozov; per l'inglese fu consegnata a Molotov alle 5.30 ora di Mosca.",
+  "after": "Per l'articolo inglese l'Asse avanzò: l'8 settembre cominciò l'assedio di Leningrado, il 19 fu presa Kiev e il 2 ottobre (30 settembre nel testo inglese e per l'italiano) partì l'offensiva verso Mosca, che si fermò alla periferia della città entro il 5 dicembre, quando i sovietici contrattaccarono. Per gli articoli i tedeschi catturarono circa cinque milioni di soldati sovietici e lasciarono morire di fame o uccisero oltre 3 milioni di prigionieri; le fucilazioni e le gassazioni uccisero oltre un milione di ebrei sovietici. Il fallimento strategico rovesciò le sorti della Germania.",
+  "links": [
+    {
+      "slug": "patto-molotov-ribbentrop-1939",
+      "reason": "Un anno e dieci mesi prima, il 23 agosto 1939, la Germania e l'Unione Sovietica avevano firmato il patto Molotov-Ribbentrop."
+    },
+    {
+      "slug": "guerra-d-inverno-1939",
+      "reason": "Quasi diciannove mesi prima, il 30 novembre 1939, l'Unione Sovietica aveva attaccato la Finlandia."
+    },
+    {
+      "slug": "assedio-di-leningrado-1941",
+      "reason": "Due mesi e mezzo dopo, l'8 settembre, comincia l'assedio di Leningrado."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Barbarossa - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Barbarossa",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Barbarossa - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Barbarossa",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 22 giugno 1941. Divergono sul numero degli invasori (più di 3,8 milioni per l'inglese, che nel testo parla anche di circa tre milioni di soldati della Wehrmacht; circa tre milioni nell'introduzione dell'italiano e 3,5 milioni nel testo), sugli aerei distrutti il primo giorno, sull'orario della dichiarazione di guerra (consegna a Molotov alle 5.30 di Mosca per l'inglese; per l'italiano ricevuta da Schulenburg il 21 giugno e letta a Dekanozov alle 4 del 22, senza l'ora della consegna a Molotov) e sull'inizio dell'offensiva su Mosca (2 ottobre nell'introduzione inglese, 30 settembre nel suo testo e per l'italiano). L'articolo italiano cita nella dichiarazione di guerra un patto di non aggressione del 24 agosto 1939, mentre altrove, come l'inglese, dà il 23 agosto. Il pin è un segnaposto sul confine."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

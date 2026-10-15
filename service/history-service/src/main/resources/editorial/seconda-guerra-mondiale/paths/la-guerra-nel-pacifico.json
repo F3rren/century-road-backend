@@ -1,0 +1,41 @@
+{
+  "slug": "la-guerra-nel-pacifico",
+  "title": "La guerra nel Pacifico",
+  "tagline": "Da Pearl Harbor alla resa del Giappone: Singapore, Midway, Guadalcanal, Iwo Jima e le due bombe atomiche nella guerra tra il Giappone e gli Alleati.",
+  "intro": "Il percorso segue la guerra nel Pacifico, dall'attacco giapponese a Pearl Harbor, il 7 dicembre 1941, alla resa del Giappone nell'agosto 1945: la caduta di Singapore, la battaglia delle Midway, Guadalcanal, Iwo Jima, i bombardamenti atomici di Hiroshima e Nagasaki.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "attacco-a-pearl-harbor-1941",
+      "narrative": "Si parte dal 7 dicembre 1941: il Giappone attacca la flotta americana a Pearl Harbor."
+    },
+    {
+      "insight": "caduta-di-singapore-1942",
+      "narrative": "Il 15 febbraio 1942 la guarnigione britannica di Singapore si arrende ai giapponesi."
+    },
+    {
+      "insight": "battaglia-di-midway-1942",
+      "narrative": "Il 4 giugno 1942 la flotta americana sconfigge quella giapponese alle Midway."
+    },
+    {
+      "insight": "battaglia-di-guadalcanal-1942",
+      "narrative": "Il 7 agosto 1942 gli Alleati sbarcano a Guadalcanal: comincia la controffensiva."
+    },
+    {
+      "insight": "battaglia-di-iwo-jima-1945",
+      "narrative": "Il 19 febbraio 1945 i Marines sbarcano a Iwo Jima."
+    },
+    {
+      "insight": "bombardamento-atomico-di-hiroshima-1945",
+      "narrative": "Il 6 agosto 1945 una bomba atomica distrugge Hiroshima."
+    },
+    {
+      "insight": "bombardamento-atomico-di-nagasaki-1945",
+      "narrative": "Il 9 agosto una seconda bomba atomica colpisce Nagasaki."
+    },
+    {
+      "insight": "resa-del-giappone-1945",
+      "narrative": "Il 15 agosto il Giappone annuncia la resa, firmata il 2 settembre."
+    }
+  ]
+}

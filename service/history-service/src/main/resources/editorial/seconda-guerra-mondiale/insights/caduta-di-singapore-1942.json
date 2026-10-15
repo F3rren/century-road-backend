@@ -1,0 +1,49 @@
+{
+  "slug": "caduta-di-singapore-1942",
+  "title": "La caduta di Singapore",
+  "summary": "Il 15 febbraio 1942, dopo una settimana di battaglia cominciata l'8, il generale britannico Percival si arrende ai giapponesi a Singapore. Circa 80 000 soldati diventano prigionieri. Churchill la definisce il peggior disastro della storia militare britannica.",
+  "date": {
+    "year": 1942,
+    "month": 2,
+    "day": 15
+  },
+  "place": {
+    "name": "Singapore",
+    "lat": 1.3521,
+    "lon": 103.8198,
+    "approximate": false
+  },
+  "before": "Singapore era la principale base militare britannica nel Sud-Est asiatico. L'8 dicembre 1941 i giapponesi avevano cominciato l'invasione della Malesia; il generale Yamashita scese lungo la penisola con circa 30 000 uomini per l'articolo inglese (circa 35 000 di prima linea più 30 000 di supporto per l'italiano). Per l'articolo inglese i britannici ritenevano la giungla impraticabile e furono aggirati in fretta; il generale Percival comandava a Singapore 85 000 uomini, molti con organici ridotti e poca esperienza, e Churchill gli ordinò di resistere fino all'ultimo uomo. I britannici distrussero il terrapieno che collegava l'isola alla terraferma, ma gran parte dell'acqua dell'isola arrivava da serbatoi sulla terraferma.",
+  "event": "L'8 febbraio i giapponesi attraversarono lo stretto di Johore e si stabilirono sull'isola, nel punto più debole delle difese. Per l'articolo inglese Percival si aspettava lo sbarco più a nord e disperse le forze lungo tutta la costa, senza una riserva adeguata. Per l'articolo inglese il 14 febbraio i giapponesi uccisero pazienti e personale dell'ospedale Alexandra. Il 15 febbraio circa un milione di civili era stipato in un'area pari all'1% dell'isola e le scorte stavano finendo; Yamashita chiese per la seconda volta la resa incondizionata e nel pomeriggio Percival capitolò.",
+  "after": "Circa 80 000 soldati britannici, indiani, australiani e locali diventarono prigionieri, che si aggiunsero ai 50 000 catturati in Malesia, per l'articolo inglese; per l'articolo italiano oltre il 27% dei prigionieri occidentali morì prima della fine della guerra. Per l'articolo inglese, dei circa 40 000 indiani a Singapore circa 30 000 (40 000 nell'introduzione) si unirono all'Esercito nazionale indiano e circa 7 000 combatterono in Birmania e a Kohima e Imphal. Per gli articoli la caduta di Singapore, la più grande capitolazione della storia britannica, danneggiò il prestigio britannico in Asia e contribuì alla fine del dominio coloniale nella regione.",
+  "links": [
+    {
+      "slug": "attacco-a-pearl-harbor-1941",
+      "reason": "Più di due mesi prima, il 7 dicembre 1941, il Giappone aveva attaccato Pearl Harbor."
+    },
+    {
+      "slug": "battaglia-di-midway-1942",
+      "reason": "Poco meno di quattro mesi dopo, il 4 giugno, la battaglia delle Midway."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Singapore - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Singapore",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Singapore - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Singapore",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 febbraio 1942 per la resa e l'8 febbraio per l'inizio della battaglia sull'isola; l'articolo italiano data la campagna di Malesia dall'8 dicembre 1941. I prigionieri sono circa 80 000 per l'inglese (nel suo testo quasi 85 000) e oltre 80 000 per l'italiano; la percentuale di morti tra loro è dell'articolo italiano. Il pin è su Singapore."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "tregua-di-natale-1914",
+  "title": "La tregua di Natale",
+  "summary": "Alla vigilia di Natale del 1914, in vari punti del fronte occidentale, soldati britannici e tedeschi, e in misura minore francesi, escono spontaneamente dalle trincee per scambiarsi doni e canti, seppellire i morti e fraternizzare, senza alcun accordo ufficiale.",
+  "date": {
+    "year": 1914,
+    "month": 12,
+    "day": 24
+  },
+  "place": {
+    "name": "Ypres, Belgio",
+    "lat": 50.8503,
+    "lon": 2.8787,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "Le tregue si estesero a molti settori del fronte occidentale: per l'articolo italiano i primi episodi ebbero luogo nella zona di Ypres, in settori come Ploegsteert e Comines-Warneton. Il pin è su Ypres e non è l'unico luogo."
+  },
+  "before": "Per l'articolo inglese la tregua venne cinque mesi dopo l'inizio delle ostilità, dopo lo stallo della corsa al mare e l'esito incerto della prima battaglia di Ypres. Il 7 dicembre 1914 papa Benedetto XV propose una tregua di Natale ai governi in guerra, ma la richiesta fu respinta. Già nella settimana precedente il Natale i soldati dei due schieramenti si scambiavano auguri e canzoni dalle trincee.",
+  "event": "Nella notte della vigilia i tedeschi misero candele sul bordo delle trincee e sugli alberi e cantarono canti natalizi; i britannici risposero cantando. Poi i soldati attraversarono la terra di nessuno per scambiarsi cibo, tabacco, alcolici e souvenir come bottoni e berretti, e si tennero sepolture e cerimonie religiose comuni. Per l'articolo inglese furono coinvolti circa 100 000 soldati britannici e tedeschi, per quello italiano circa 100 000 francesi, britannici e tedeschi. In alcuni settori si continuò a combattere.",
+  "after": "Gli alti comandi giudicarono male la fraternizzazione e la vietarono. Per l'articolo italiano, nel dicembre 1915 ordini espliciti e sbarramenti di artiglieria cercarono di impedire ogni tregua, ma piccole tregue ci furono lo stesso; nel 1916, dopo Verdun, la Somme e l'uso delle armi chimiche, nessuna tregua fu organizzata, anche se lo stesso articolo cita poi scambi di canti e piccole tregue locali. Per l'articolo inglese nel 1916 i soldati erano diventati meno propensi alla tregua, dopo le perdite del 1915.",
+  "links": [
+    {
+      "slug": "battaglia-della-marna-1914",
+      "reason": "Pochi mesi prima, a settembre, la prima battaglia della Marna aveva fermato i tedeschi davanti a Parigi."
+    },
+    {
+      "slug": "battaglia-di-verdun-1916",
+      "reason": "Nel 1916 la battaglia di Verdun è fra le esperienze dopo le quali, per l'articolo italiano, a Natale non si organizzò alcuna tregua."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Christmas truce - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Christmas_truce",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Tregua di Natale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Tregua_di_Natale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le tregue non furono un solo evento: le fonti le collocano nei giorni attorno al Natale e in settori diversi (per l'articolo inglese in molti settori durarono fino alla notte di Natale, in altri fino al capodanno). Il 24 dicembre è la vigilia, in cui per l'articolo italiano ebbero luogo i primi episodi. Sulle partite di calcio il testo non dice nulla perché i due articoli divergono: per quello italiano furono organizzate partite improvvisate; l'articolo inglese afferma che si giocò a calcio ma riferisce che alcuni storici contestano i racconti di partite organizzate, parlando di semplici tiri con palloni improvvisati."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

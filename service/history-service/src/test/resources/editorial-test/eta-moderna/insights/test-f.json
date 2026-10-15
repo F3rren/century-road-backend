@@ -1,0 +1,42 @@
+{
+  "slug": "test-f",
+  "title": "Titolo test-f",
+  "summary": "Sintesi di test-f.",
+  "date": {
+    "year": 2020,
+    "month": 3,
+    "day": 5
+  },
+  "place": {
+    "name": "Luogo test-f",
+    "lat": 15.0,
+    "lon": 25.0,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Prima uno due tre.",
+  "event": "Evento uno due tre.",
+  "after": "Dopo uno due tre.",
+  "links": [
+    {
+      "slug": "test-a",
+      "reason": "Perché sì."
+    },
+    {
+      "slug": "test-b",
+      "reason": "Perché no."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fonte",
+      "url": "https://it.wikipedia.org/wiki/Test",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

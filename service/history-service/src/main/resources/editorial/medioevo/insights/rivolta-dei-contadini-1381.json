@@ -1,0 +1,51 @@
+{
+  "slug": "rivolta-dei-contadini-1381",
+  "title": "La rivolta dei contadini inglesi del 1381",
+  "summary": "Il 13 giugno 1381 i ribelli della rivolta dei contadini entrano a Londra, guidati da Wat Tyler: due giorni dopo Tyler è ucciso a Smithfield alla presenza del giovane Riccardo II e la rivolta si sgretola.",
+  "date": {
+    "year": 1381,
+    "month": 6,
+    "day": 13
+  },
+  "place": {
+    "name": "Londra, Inghilterra",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Dopo la peste nera, in Inghilterra la manodopera scarseggiava e i salari salivano; le autorità risposero con l'Ordinanza dei lavoratori del 1349 e lo Statuto del 1351, che cercavano di fissare i salari ai livelli precedenti. La guerra con la Francia, intanto, richiedeva tasse sempre più alte: nel 1377 fu introdotta la poll tax, di quattro pence per ogni persona sopra i 14 anni, seguita da una seconda nel 1379. Il 30 maggio 1381 il tentativo di un funzionario regio di riscuotere le tasse arretrate a Brentwood, nell'Essex, causò uno scontro violento che si diffuse nel sud-est del paese.",
+  "event": "I ribelli chiedevano meno tasse, la fine della servitù della gleba e la rimozione dei funzionari del re. Ispirati dal predicatore John Ball e guidati da Wat Tyler, i ribelli del Kent marciarono su Londra, dove entrarono il 13 giugno, nel pomeriggio, attraverso il London Bridge; aggredirono le prigioni, distrussero il palazzo di Savoy e bruciarono i libri di legge nel Temple. Il 14 giugno Riccardo II, che aveva 14 anni, incontrò i ribelli a Mile End e accettò la maggior parte delle richieste, compresa l'abolizione della servitù; intanto altri ribelli presero la Torre, portarono fuori l'arcivescovo Sudbury e il tesoriere Hales e li decapitarono a Tower Hill. Il 15 a Smithfield il sindaco Walworth e uno scudiero uccisero Tyler.",
+  "after": "Riccardo II convinse i ribelli ad allontanarsi da Smithfield, mentre il sindaco radunava la milizia cittadina; poi revocò le concessioni fatte. La rivolta si era estesa all'Anglia orientale, dove fu repressa il 25 o 26 giugno nella battaglia di North Walsham; il re mobilitò circa 4000 soldati. I capi furono per lo più catturati e giustiziati, e entro novembre furono uccisi almeno 1500 ribelli. Per l'articolo inglese la rivolta influenzò la guerra dei Cent'anni, perché dissuase i Parlamenti successivi dal votare nuove tasse. Gli storici moderni sono meno sicuri dei suoi effetti sulla storia sociale ed economica.",
+  "links": [
+    {
+      "slug": "peste-nera-1347",
+      "reason": "Trentaquattro anni prima la peste nera aveva fatto salire i salari e scosso l'equilibrio sociale."
+    },
+    {
+      "slug": "inizio-della-guerra-dei-cent-anni-1337",
+      "reason": "Le tasse per la guerra con la Francia, cominciata nel 1337, furono una delle cause della rivolta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Peasants' Revolt - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Peasants'_Revolt",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolta dei contadini - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolta_dei_contadini",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 13 giugno è il giorno dell'ingresso a Londra dato dall'articolo inglese, che segue gli eventi giorno per giorno; quello italiano non indica date precise. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Per l'articolo inglese l'arcivescovo Sudbury fu decapitato a Tower Hill il 14 giugno, dopo essere stato preso nella Torre di Londra; l'articolo italiano dice che i ribelli lo catturarono e lo uccisero prima dell'incontro con il re. Sempre l'articolo inglese ricorda che il nome «rivolta dei contadini» non compare nelle cronache dell'epoca ed è criticato, perché molti ribelli non erano contadini."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

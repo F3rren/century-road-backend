@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-del-kalka-1223",
+  "title": "La battaglia del fiume Kalka",
+  "summary": "Il 31 maggio 1223 i generali mongoli Jebe e Subutai sconfiggono sul fiume Kalka una coalizione di principi russi e di Cumani.",
+  "date": {
+    "year": 1223,
+    "month": 5,
+    "day": 31
+  },
+  "place": {
+    "name": "Fiume Kalka, oblast' di Donec'k, Ucraina",
+    "lat": 47.2,
+    "lon": 37.6,
+    "countryCode": "UA",
+    "approximate": true,
+    "note": "Il punto indica la zona del fiume Kalchyk, nell'oblast' di Donec'k. Per l'articolo inglese la posizione del fiume Kalka non è nota con certezza."
+  },
+  "before": "Nel 1219 Gengis Khan aveva invaso l'impero corasmio. Jebe e Subutai, con un esercito di 20 000 uomini, attraversarono la Persia saccheggiando varie città, razziarono la Georgia e, ottenuto il permesso di Gengis Khan, passarono il Caucaso. Sconfissero una coalizione di tribù locali e poi i Cumani; il khan cumano, Köten, fuggì dal genero Mstislav di Galizia e lo avvertì: «Oggi i Mongoli hanno preso la nostra terra, domani prenderanno la vostra». Dopo quasi un anno di indifferenza, quando si seppe che i Mongoli risalivano il Dnestr, Mstislav formò un'alleanza con i principi russi, tra cui Mstislav III di Kiev.",
+  "event": "I Mongoli indietreggiarono per nove giorni, fingendo di ritirarsi, mentre i Russi li inseguivano senza un comandante in capo. Poi si volsero contro i nemici sul Kalka, quando gran parte dell'esercito della coalizione l'aveva attraversato. La rotta cominciò quasi subito: i Cumani fuggirono attraverso le file dei Russi, che andarono in confusione, e la cavalleria pesante mongola passò dai varchi. Mstislav III di Kiev si chiuse con i suoi in un campo fortificato; dopo tre giorni si arrese, con la promessa di avere salva la vita, ma i Mongoli massacrarono i suoi uomini e fecero giustiziare lui.",
+  "after": "Fu una sconfitta molto costosa per i principi russi: per la Cronaca di Novgorod, la più attendibile, soltanto uno su dieci tornò a casa. I Mongoli non erano però venuti a conquistare: dopo avere saccheggiato qualche città nel sud si volsero a est, dove ritrovarono Gengis Khan sul Syr Darya. Per l'articolo italiano l'attacco di Jebe e Subutai gettò le basi della successiva invasione dei principati russi, nel 1237, che si concluse con la conquista della Rus' di Kiev.",
+  "links": [
+    {
+      "slug": "gengis-khan-1206",
+      "reason": "Diciassette anni prima Temüjin era stato proclamato Gengis Khan e aveva fondato l'Impero mongolo."
+    },
+    {
+      "slug": "battaglia-di-legnica-1241",
+      "reason": "Diciotto anni dopo i Mongoli sconfiggono a Legnica un esercito di Polacchi e Tedeschi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Kalka River - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Kalka_River",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del fiume Kalka - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_fiume_Kalka",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 31 maggio è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "Nessuna fonte primaria dà le cifre: per l'articolo inglese le stime moderne vanno da circa 8000 a 80 000-100 000 uomini per i Russi, e lo storico John Fennell giudica stereotipate o esagerate le cifre delle fonti russe, che si contraddicono."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

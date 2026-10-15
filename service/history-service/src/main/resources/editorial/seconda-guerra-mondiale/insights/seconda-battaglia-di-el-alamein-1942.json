@@ -1,0 +1,50 @@
+{
+  "slug": "seconda-battaglia-di-el-alamein-1942",
+  "title": "La seconda battaglia di El Alamein",
+  "summary": "Il 23 ottobre 1942, a El Alamein, in Egitto, l'8ª armata britannica di Montgomery attacca l'armata italo-tedesca di Rommel. Dopo quasi due settimane di combattimenti l'Asse ripiega dall'Egitto verso la Libia e la Tunisia: per l'articolo italiano è il punto di svolta della campagna nordafricana, per l'inglese l'inizio della fine della campagna del deserto occidentale.",
+  "date": {
+    "year": 1942,
+    "month": 10,
+    "day": 23
+  },
+  "place": {
+    "name": "El Alamein, Egitto",
+    "lat": 30.8333,
+    "lon": 28.9544,
+    "countryCode": "EG",
+    "approximate": false
+  },
+  "before": "Dopo la vittoria di Gazala l'armata italo-tedesca di Rommel era penetrata in Egitto, minacciando il canale di Suez; a El Alamein gli inglesi la fermarono nella prima battaglia (luglio) e poi ad Alam Halfa, il 30 agosto. Churchill sostituì Auchinleck con Alexander e mise Montgomery al comando dell'8ª armata. Gli Alleati, che per l'articolo inglese sapevano molto dei piani dell'Asse e dei suoi convogli grazie a Ultra, aspettarono sei settimane per i rinforzi; Rommel, a corto di carburante, fortificò il fronte con circa 500 000 mine per l'articolo inglese (445 000 per l'italiano).",
+  "event": "Il 23 ottobre cominciò l'offensiva britannica, l'operazione Lightfoot, che doveva aprire varchi nei campi minati al nord. Per l'articolo inglese gli Alleati avevano 195 000 uomini e 1 029 carri armati contro 116 000 uomini e 547 carri; per l'articolo italiano circa 200 000 uomini e 1 000 carri contro circa 100 000 uomini e 490 carri, con i numeri che variano secondo le fonti. Per l'articolo italiano l'aviazione alleata dominava il cielo, e dall'Italia erano arrivate solo 1 000 delle 6 000 tonnellate di carburante promesse (l'articolo avverte che altre fonti danno dati diversi). I combattimenti proseguirono con perdite pesanti da entrambe le parti, fino all'operazione Supercharge.",
+  "after": "L'Asse cominciò a ritirarsi: per l'articolo italiano all'alba del 4 novembre; le divisioni di fanteria italiane, senza mezzi di trasporto, non poterono sfuggire e oltre 30 000 soldati si arresero. Per l'articolo inglese l'8ª armata ebbe 13 560 perdite, 2 350 morti; per le perdite dell'Asse l'articolo inglese riporta stime molto diverse, perché la ritirata fu caotica. Il 10 novembre Churchill disse che non era la fine, né l'inizio della fine, ma forse la fine dell'inizio. Pochi giorni dopo la fine della battaglia, l'8 novembre (il 7 per l'articolo italiano), gli Alleati sbarcarono in Nord Africa.",
+  "links": [
+    {
+      "slug": "operazione-torch-1942",
+      "reason": "Sedici giorni dopo, l'8 novembre, gli Alleati sbarcano in Marocco e in Algeria con l'operazione Torch."
+    },
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Quasi nove mesi dopo, il 10 luglio 1943, gli Alleati sbarcano in Sicilia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Second Battle of El Alamein - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Second_Battle_of_El_Alamein",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Seconda battaglia di El Alamein - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Seconda_battaglia_di_El_Alamein",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio il 23 ottobre 1942. Per la fine l'articolo inglese dà il 4 novembre e quello italiano il 5; per lo sbarco in Nord Africa l'inglese dà l'8 novembre e l'italiano il 7. Anche le forze in campo e le perdite divergono, e il testo attribuisce ciascuna cifra all'articolo che la dà. Il pin è su El Alamein."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

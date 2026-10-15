@@ -1,0 +1,52 @@
+{
+  "slug": "trattato-di-verdun-843",
+  "title": "Il trattato di Verdun divide l'Impero carolingio",
+  "summary": "Nell'agosto dell'843 il trattato di Verdun divide l'Impero carolingio tra i tre figli sopravvissuti di Ludovico il Pio: è il primo di una serie di spartizioni da cui verranno, in seguito, i regni di Francia e di Germania.",
+  "date": {
+    "year": 843,
+    "month": 8,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Verdun, Francia",
+    "lat": 49.1597,
+    "lon": 5.3837,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Ludovico il Pio, divenuto sovrano dei Franchi dopo la morte di Carlo Magno, aveva diviso l'impero tra i figli, perché ciascuno regnasse su un proprio regno sotto la sua autorità. Il maggiore, Lotario I, aveva il titolo di imperatore, ma ripetute ridivisioni e rivolte lo indebolirono. Alla morte del padre, nell'840, Lotario rivendicò il dominio sull'intero regno; i fratelli Ludovico il Germanico e Carlo il Calvo rifiutarono, gli fecero guerra e lo sconfissero a Fontenoy nell'841. Nell'842 sigillarono l'alleanza con i Giuramenti di Strasburgo, che dichiaravano Lotario inadatto al trono imperiale, e lui si dispose a trattare.",
+  "event": "Il trattato, frutto di più di un anno di negoziati, fu concluso nell'agosto dell'843: per l'articolo italiano fu firmato a Verdun, per quello inglese l'accordo è del 10 agosto, con l'incontro poco prima. Lotario I ricevette la parte centrale, la Francia di mezzo, dai Paesi Bassi alla Provenza e all'Italia, con le due città imperiali, Aquisgrana e Roma, e conservò il titolo di imperatore, ma con autorità solo nominale sui fratelli. Ludovico il Germanico ebbe la parte orientale, a est del Reno. Carlo il Calvo ebbe la parte occidentale, con le terre a ovest del Rodano.",
+  "after": "Il trattato riflette l'antica usanza franca di dividere l'eredità tra i figli, e non il diritto del primogenito, che i due regni franchi avrebbero presto adottato. Fu il primo di quattro trattati di spartizione, seguito da Prüm (855), Meerssen (870) e Ribemont (880). La Francia occidentale e quella orientale divennero in seguito i regni di Francia e di Germania. La striscia centrale, la futura Lotaringia, aveva lunghi confini vulnerabili e comunicazioni interne scarse, e si frammentò presto: solo Carlo il Grosso riuscì, per poco, a riunire l'impero di Carlo Magno.",
+  "links": [
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "L'impero che qui si divide era stato proclamato nell'800 con l'incoronazione di Carlo Magno."
+    },
+    {
+      "slug": "ottone-i-incoronato-imperatore-962",
+      "reason": "La Francia orientale diventerà il regno di Germania, di cui Ottone I è incoronato imperatore nel 962."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Verdun - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Verdun",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Verdun - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Verdun",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Per l'articolo inglese il trattato fu concordato il 10 agosto 843; per quello italiano fu firmato «nell'agosto dell'843»: per questo la data è data solo al mese. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il mese indicato è quello riportato dalle fonti.",
+    "L'articolo italiano osserva che il trattato è spesso presentato come la dissoluzione dell'impero di Carlo Magno, mentre in realtà riflette la continua adesione alla tradizione franca di un'eredità divisibile."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

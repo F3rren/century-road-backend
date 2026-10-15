@@ -31,7 +31,7 @@ public record TimelineResponse(
             @Schema(description = "The event, as Wikipedia lists it on the page for that day.") String text) {
     }
 
-    private static final OnThisDayResponse.Attribution ATTRIBUTION = new OnThisDayResponse.Attribution(
+    static final OnThisDayResponse.Attribution ATTRIBUTION = new OnThisDayResponse.Attribution(
             "Wikipedia",
             "CC BY-SA 4.0",
             "https://creativecommons.org/licenses/by-sa/4.0/",

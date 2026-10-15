@@ -1,0 +1,54 @@
+{
+  "slug": "battaglia-di-stalingrado-1942",
+  "title": "La battaglia di Stalingrado",
+  "summary": "Il 23 agosto 1942 la 6ª armata tedesca attacca Stalingrado, sul Volga, con l'appoggio di violenti bombardamenti aerei. Dopo mesi di combattimenti casa per casa i sovietici, con l'operazione Urano, la circondano; il 2 febbraio 1943 la 6ª armata si arrende. Per gli articoli è la svolta della guerra sul fronte orientale.",
+  "date": {
+    "year": 1942,
+    "month": 8,
+    "day": 23
+  },
+  "place": {
+    "name": "Stalingrado (oggi Volgograd), Russia",
+    "lat": 48.708,
+    "lon": 44.5133,
+    "countryCode": "RU",
+    "approximate": false
+  },
+  "before": "Nell'estate del 1942 Hitler puntò sulla Russia meridionale: bisognava arrivare ai pozzi petroliferi del Caucaso, e controllare Stalingrado, importante centro industriale e nodo sul Volga, significava anche difendere il fianco dell'avanzata. Per l'articolo inglese il 23 luglio Hitler estese gli obiettivi all'occupazione della città, che portava il nome di Stalin, e ordinò di annientarne la popolazione: gli uomini sarebbero stati uccisi, donne e bambini deportati. Stalin, convinto che l'attacco principale sarebbe stato su Mosca, difendeva soprattutto la capitale.",
+  "event": "I primi scontri sulle vie di accesso alla città ci furono il 17 luglio. Il 23 agosto la 6ª armata e parte della 4ª armata corazzata cominciarono l'offensiva, appoggiate da bombardamenti della Luftwaffe che ridussero in gran parte la città in macerie. Il combattimento divenne uno scontro casa per casa, con rinforzi da entrambe le parti. Per l'articolo inglese a metà novembre i tedeschi, a prezzo di perdite enormi, avevano respinto i difensori in zone strette lungo la riva occidentale del Volga; poi l'inverno rese le condizioni durissime.",
+  "after": "Il 19 novembre l'Armata Rossa lanciò l'operazione Urano contro le armate romene sui fianchi e circondò la 6ª armata; Hitler vietò di tentare lo sfondamento e i rifornimenti aerei non bastarono. Il 2 febbraio 1943 la 6ª armata si arrese, la prima armata di Hitler a farlo, per l'articolo inglese. Le perdite dell'Asse furono, per l'articolo inglese, tra 800 000 e 1,5 milioni; per l'articolo italiano i sovietici ebbero 478 000 morti o dispersi e 650 000 feriti, e dei 100 000 prigionieri della sacca solo 5 000 tornarono in Germania entro il 1955.",
+  "links": [
+    {
+      "slug": "battaglia-di-mosca-1941",
+      "reason": "Quasi undici mesi prima, il 30 settembre 1941, era cominciata l'offensiva tedesca verso Mosca."
+    },
+    {
+      "slug": "seconda-battaglia-di-el-alamein-1942",
+      "reason": "Due mesi dopo, il 23 ottobre, comincia in Egitto la battaglia di El Alamein."
+    },
+    {
+      "slug": "battaglia-di-kursk-1943",
+      "reason": "Poco più di dieci mesi dopo, il 5 luglio 1943, comincia la battaglia di Kursk."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Stalingrad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Stalingrad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Stalingrado - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Stalingrado",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 2 febbraio 1943 come fine. Per l'inizio il testo usa il 23 agosto, giorno dell'offensiva sulla città per l'articolo inglese; entrambi dicono che i primi scontri furono a metà luglio (17 luglio). La cifra d'archivio sovietica (478 000 morti o dispersi, 650 000 feriti) è la stessa nei due articoli, e l'inglese dà anche stime più alte; per l'Asse l'italiano non dà un totale. I prigionieri sono circa 91 000 per l'inglese, circa 90 000 o 100 000 per l'italiano, che fa partire la «fase più drammatica» il 21 agosto; il testo attribuisce le cifre a ciascun articolo. Il pin è su Stalingrado."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -33,7 +33,8 @@ public final class TestSupport {
                 wikipediaSettings(),
                 new HistoryProperties.Resilience(3, Duration.ofMillis(50), 2, Duration.ofMillis(1),
                         Duration.ofSeconds(30)),
-                new HistoryProperties.Timeline("-", Duration.ZERO, 3));
+                new HistoryProperties.Timeline("-", Duration.ZERO, 3),
+                new HistoryProperties.Reports(5, 100, Duration.ofHours(1)));
     }
 
     public static Entry entry(String text, Integer year) {

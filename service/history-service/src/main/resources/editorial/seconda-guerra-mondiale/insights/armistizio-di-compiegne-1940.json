@@ -1,0 +1,54 @@
+{
+  "slug": "armistizio-di-compiegne-1940",
+  "title": "L'armistizio di Compiègne del 1940",
+  "summary": "Il 22 giugno 1940, nella foresta di Compiègne e nello stesso vagone del 1918, la Francia firma l'armistizio con la Germania. I tedeschi occupano il nord e le coste atlantiche; a sud resta un governo francese con sede a Vichy.",
+  "date": {
+    "year": 1940,
+    "month": 6,
+    "day": 22
+  },
+  "place": {
+    "name": "Radura dell'armistizio, Compiègne, Francia",
+    "lat": 49.4262,
+    "lon": 2.9069,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Il governo francese lasciò Parigi per Bordeaux il 10 giugno e dichiarò Parigi città aperta. Per l'articolo inglese, dopo la proposta di un'unione franco-britannica (di Churchill, per l'articolo italiano) il gabinetto si divise e il 16 giugno il primo ministro Reynaud si dimise; gli subentrò Pétain, favorevole all'armistizio. Per l'articolo italiano il 20 giugno Pétain annunciò alla nazione la richiesta di armistizio. Hitler scelse come sede la foresta di Compiègne, dove era stato firmato l'armistizio dell'11 novembre 1918 che aveva chiuso la prima guerra mondiale.",
+  "event": "Su ordine di Hitler le delegazioni si incontrarono nello stesso vagone ferroviario del 1918, tolto dal museo. Keitel lesse un preambolo sull'onta di quell'armistizio; per l'articolo inglese Hitler, seduto sulla sedia di Foch, lasciò poi il vagone in segno di disprezzo. L'armistizio fu firmato la sera del 22 giugno, alle 18.36 per l'articolo inglese e alle 18.50 per quello italiano, dal generale francese Huntziger. Tre quinti della Francia, con tutti i porti sulla Manica e sull'Atlantico, passavano sotto occupazione tedesca; il resto era governato da un regime con sede a Vichy. La Francia pagava circa 400 milioni di franchi al giorno di costi d'occupazione.",
+  "after": "L'armistizio entrò in vigore nella notte del 25 giugno, alle 0.35 per entrambi gli articoli (l'introduzione inglese dice mezzanotte). Doveva valere fino a un trattato di pace che non fu mai negoziato. Per l'articolo inglese quasi un milione di francesi restò prigioniero di guerra per cinque anni. Dopo lo sbarco alleato in Nord Africa, nel novembre 1942 la zona libera fu occupata da tedeschi e italiani con il piano Anton. Per l'articolo inglese la resistenza continuò con le Forze francesi libere di de Gaulle.",
+  "links": [
+    {
+      "slug": "battaglia-di-francia-1940",
+      "reason": "Quarantatré giorni prima, il 10 maggio, la Germania aveva attaccato a ovest."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1918",
+      "reason": "Più di ventuno anni prima, l'11 novembre 1918, nello stesso vagone la Germania aveva firmato l'armistizio che chiuse la prima guerra mondiale."
+    },
+    {
+      "slug": "operazione-torch-1942",
+      "reason": "Più di due anni dopo, con lo sbarco alleato in Nord Africa dell'8 novembre 1942, la zona libera fu occupata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armistice of 22 June 1940 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_22_June_1940",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Secondo armistizio di Compiègne - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Secondo_armistizio_di_Compiègne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 22 giugno 1940. Gli articoli divergono sull'ora della firma (18.36 o 18.50): il testo dà le due ore attribuite. Sull'entrata in vigore alle 0.35 del 25 giugno concordano, ma l'introduzione inglese dice mezzanotte. Il pin è sul sito dell'armistizio, nella foresta di Compiègne."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

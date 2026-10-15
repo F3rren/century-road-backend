@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-stamford-bridge-1066",
+  "title": "La battaglia di Stamford Bridge",
+  "summary": "Il 25 settembre del 1066 il re inglese Aroldo Godwinson sconfigge nello Yorkshire il re di Norvegia Harald Hardrada e il proprio fratello Tostig, entrambi uccisi; la battaglia è tradizionalmente considerata la fine simbolica dell'epoca vichinga.",
+  "date": {
+    "year": 1066,
+    "month": 9,
+    "day": 25
+  },
+  "place": {
+    "name": "Stamford Bridge, Yorkshire, Inghilterra",
+    "lat": 53.992,
+    "lon": -0.912,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "Il punto indica il villaggio di Stamford Bridge; per l'articolo inglese nel 2020 reperti militari vichinghi sono stati trovati circa un miglio a sud, presso Low Catton, e chi li ha trovati ritiene che provengano dal campo di battaglia del 1066, perché presso il villaggio non sono emersi resti simili."
+  },
+  "before": "La morte senza figli di Edoardo il Confessore, nel gennaio 1066, aprì una lotta per il trono inglese tra pretendenti di tutta l'Europa nordoccidentale, tra cui il re di Norvegia Harald Hardrada. Aroldo Godwinson, eletto re dal Witenagemot, aveva un fratello, Tostig, esiliato nel 1065 dalla carica di conte di Northumbria, che in primavera aveva compiuto vari attacchi falliti. In settembre Hardrada, raggiunto da forze reclutate da Tostig, risalì l'Ouse e il 20 settembre sconfisse a Fulford, presso York, un esercito inglese guidato da Edwin e Morcar; York si arrese. Aroldo era nel sud, in attesa di un'invasione dalla Normandia.",
+  "event": "Appresa l'invasione, Aroldo marciò verso nord con i suoi huscarl e quanti thegn riuscì a radunare: secondo l'articolo inglese percorse i circa 298 km da Londra allo Yorkshire in quattro giorni e il 25 settembre colse di sorpresa i Norvegesi a Stamford Bridge. Secondo la saga di Harald di Snorri Sturluson, prima dello scontro un cavaliere sconosciuto offrì a Tostig di riavere la contea se avesse lasciato Hardrada; era Aroldo in persona. Gli Inglesi, rallentati dal ponte, formarono la linea e attaccarono; i Norvegesi, che almeno in parte non portavano le armature, cedettero. Hardrada, colpito da una freccia alla gola, e Tostig furono uccisi.",
+  "after": "Aroldo accettò una tregua con i sopravvissuti, tra cui Olaf, figlio di Hardrada: della flotta di oltre 300 navi ne bastarono 24 per riportarli via. La vittoria durò poco: il 28 settembre Guglielmo di Normandia sbarcò a Pevensey e Aroldo dovette marciare di nuovo verso sud. La battaglia è tradizionalmente presentata come la fine dell'epoca vichinga, anche se grandi campagne scandinave in Britannia e in Irlanda continuarono nei decenni seguenti, come quelle del danese Sweyn Estrithson nel 1069–1070 e di Magnus Barefoot, re di Norvegia, nel 1098 e nel 1102–1103.",
+  "links": [
+    {
+      "slug": "attacco-vichingo-a-lindisfarne-793",
+      "reason": "Le incursioni vichinghe in Britannia erano cominciate nel 793 con quella a Lindisfarne, la prima registrata nei documenti."
+    },
+    {
+      "slug": "battaglia-di-hastings-1066",
+      "reason": "Meno di tre settimane dopo Aroldo è sconfitto e ucciso dai Normanni a Hastings."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Stamford Bridge - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Stamford_Bridge",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Stamford Bridge - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Stamford_Bridge",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 25 settembre è il giorno dato da entrambi gli articoli. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "L'incontro tra il cavaliere sconosciuto e Tostig è riferito, negli articoli, dalla saga di Snorri Sturluson; il numero dei Norvegesi è una stima, tra 7000 e 9000 uomini."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

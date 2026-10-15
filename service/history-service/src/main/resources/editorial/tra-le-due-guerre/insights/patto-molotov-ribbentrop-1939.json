@@ -1,0 +1,50 @@
+{
+  "slug": "patto-molotov-ribbentrop-1939",
+  "title": "Il patto Molotov-Ribbentrop",
+  "summary": "Il 23 agosto 1939 la Germania nazista e l'Unione Sovietica firmano a Mosca un patto di non aggressione di dieci anni, con un protocollo segreto che divide l'Europa orientale in sfere di influenza. Una settimana dopo, il 1º settembre, la Germania invade la Polonia.",
+  "date": {
+    "year": 1939,
+    "month": 8,
+    "day": 23
+  },
+  "place": {
+    "name": "Mosca, Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "countryCode": "RU",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, dopo l'esclusione dei sovietici dall'accordo di Monaco, i colloqui con Regno Unito e Francia ripresero nel 1939 ma si arenarono a metà luglio, e il 21 agosto i sovietici sospesero quelli militari; il riavvicinamento fra Mosca e Berlino era cominciato all'inizio del 1939. Per l'articolo italiano la Polonia rifiutava di permettere all'esercito sovietico di intervenire sul suo territorio, e nella terza settimana di agosto i negoziati con gli occidentali si fermarono; quattro giorni prima del patto, il 19 agosto, era stato firmato un accordo commerciale tedesco-sovietico.",
+  "event": "Il patto fu firmato a Mosca da Molotov e Ribbentrop: i contraenti si impegnavano a non aggredirsi, a non appoggiare terzi in azioni offensive e, per l'articolo inglese, a non allearsi con un nemico dell'altro per dieci anni. Il protocollo segreto assegnava alla sfera sovietica Lettonia, Estonia, Finlandia e Bessarabia e a quella tedesca la Lituania, e fissava la divisione della Polonia, in caso di suo «riassetto politico», lungo i fiumi Narew, Vistola e San.",
+  "after": "Il 1º settembre 1939 la Germania invase la Polonia e il 17 settembre, per l'articolo inglese, Stalin ordinò l'invasione sovietica. Nel 1940 l'Unione Sovietica annesse parti della Carelia dopo la guerra d'inverno con la Finlandia, poi gli Stati baltici e parti della Romania. Per l'articolo inglese l'esistenza del protocollo segreto fu dimostrata in Occidente solo ai processi di Norimberga.",
+  "links": [
+    {
+      "slug": "accordo-di-monaco-1938",
+      "reason": "Meno di undici mesi prima, a Monaco, i sovietici erano stati esclusi dall'accordo sui Sudeti."
+    },
+    {
+      "slug": "nascita-dell-urss-1922",
+      "reason": "Sedici anni e quasi otto mesi dopo la sua nascita, nel 1922, l'Unione Sovietica firma il patto con la Germania."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Molotov–Ribbentrop Pact - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Molotov–Ribbentrop_Pact",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Patto Molotov-Ribbentrop - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Patto_Molotov-Ribbentrop",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà il 23 agosto 1939; l'articolo inglese è incoerente: nell'introduzione il patto è firmato il 24 agosto con data retrodatata al 23, nel corpo del testo è firmato il 23, e il protocollo segreto è del 23. Il testo usa il 23 agosto, data del documento."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

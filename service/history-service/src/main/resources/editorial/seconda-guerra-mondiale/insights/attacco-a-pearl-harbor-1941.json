@@ -1,0 +1,54 @@
+{
+  "slug": "attacco-a-pearl-harbor-1941",
+  "title": "L'attacco a Pearl Harbor",
+  "summary": "Il 7 dicembre 1941 l'aviazione imbarcata giapponese attacca di sorpresa la flotta americana del Pacifico a Pearl Harbor, nelle Hawaii, e uccide 2 403 americani. Gli Stati Uniti, fino ad allora neutrali, dichiarano guerra al Giappone il giorno dopo ed entrano nella seconda guerra mondiale.",
+  "date": {
+    "year": 1941,
+    "month": 12,
+    "day": 7
+  },
+  "place": {
+    "name": "Pearl Harbor, Oahu, Hawaii, Stati Uniti",
+    "lat": 21.3649,
+    "lon": -157.9714,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese mesi di trattative avevano opposto Stati Uniti e Giappone: il Giappone chiedeva la fine delle sanzioni, la fine degli aiuti americani alla Cina e l'accesso alle risorse delle Indie orientali olandesi. L'ammiraglio Yamamoto progettò un attacco preventivo alla flotta del Pacifico, per impedirle di intralciare le azioni giapponesi nel Sud-Est asiatico. Il 26 novembre la forza d'attacco, al comando di Nagumo, partì, poco prima di ricevere la nota americana che chiedeva il ritiro dalla Cina e dall'Indocina.",
+  "event": "Domenica 7 dicembre, alle 7.48 ora delle Hawaii per l'articolo inglese e alle 7.55 per quello italiano, gli aerei lanciati da sei portaerei attaccarono in due ondate le navi e le basi di Pearl Harbor: per l'articolo inglese 353 aerei. Delle otto corazzate americane presenti tutte furono danneggiate e quattro affondate, per l'articolo inglese. Le portaerei americane erano in mare e furono risparmiate, e i giapponesi non colpirono i depositi di carburante e le officine della base. Per l'articolo inglese il messaggio giapponese in 14 parti, presentato più di un'ora dopo l'inizio dell'attacco, non era una dichiarazione di guerra, consegnata solo il giorno dopo; per quello italiano la dichiarazione fu formalizzata ad attacco iniziato, per ritardi nella decrittazione.",
+  "after": "Il 7 dicembre morirono 2 403 americani e 1 178 furono feriti (articolo inglese); i giapponesi persero 29 aerei e cinque sommergibili tascabili, e i loro morti furono 130 nell'introduzione dell'articolo inglese, 64 nel suo testo e, per quello italiano, 59 aviatori, 121 marinai del grande sommergibile e 9 dei sommergibili tascabili. L'8 dicembre Stati Uniti e Regno Unito dichiararono guerra al Giappone e l'11 dicembre la Germania e l'Italia dichiararono guerra agli Stati Uniti. Roosevelt chiamò il 7 dicembre «un giorno che vivrà nell'infamia». Per l'articolo inglese, il contrammiraglio Chūichi Hara riassunse così il risultato giapponese: «Abbiamo vinto una grande vittoria tattica a Pearl Harbor e così facendo abbiamo perso la guerra».",
+  "links": [
+    {
+      "slug": "carta-atlantica-1941",
+      "reason": "Quasi quattro mesi prima, il 14 agosto, Roosevelt e Churchill avevano dichiarato gli obiettivi comuni per il dopoguerra."
+    },
+    {
+      "slug": "caduta-di-singapore-1942",
+      "reason": "Più di due mesi dopo, il 15 febbraio 1942, i giapponesi conquistano Singapore."
+    },
+    {
+      "slug": "battaglia-di-midway-1942",
+      "reason": "Quasi sei mesi dopo, il 4 giugno 1942, la battaglia delle Midway."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Attack on Pearl Harbor - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Attack_on_Pearl_Harbor",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Attacco di Pearl Harbor - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Attacco_di_Pearl_Harbor",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 7 dicembre 1941 e 2 403 morti americani. Divergono sull'ora dell'attacco (7.48 per l'inglese, 7.55 per l'italiano); le cifre degli aerei sono compatibili (l'inglese: 353 giunti su Oahu, 350 nel raid su 414 disponibili; l'italiano: 350 destinati all'incursione su 389 imbarcati). Sulle corazzate perdute l'introduzione inglese dice quattro affondate, il suo testo cinque affondate o arenate; l'italiano ne conta cinque. I morti giapponesi sono 130 nell'introduzione inglese, 64 nel suo testo; l'italiano dà 59 aviatori, 121 marinai del grande sommergibile e 9 dei tascabili. Il pin è su Pearl Harbor."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

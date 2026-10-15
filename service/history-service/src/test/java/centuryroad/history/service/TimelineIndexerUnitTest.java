@@ -16,6 +16,7 @@ import centuryroad.history.wikipedia.WikipediaFeedClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
+import org.springframework.dao.DataAccessResourceFailureException;
 
 import java.time.Duration;
 import java.time.MonthDay;
@@ -33,8 +34,10 @@ import static org.mockito.ArgumentMatchers.anyList;
 import static org.mockito.ArgumentMatchers.anyString;
 import static org.mockito.ArgumentMatchers.eq;
 import static org.mockito.BDDMockito.given;
+import static org.mockito.Mockito.doThrow;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.never;
+import static org.mockito.Mockito.times;
 import static org.mockito.Mockito.verify;
 
 class TimelineIndexerUnitTest {
@@ -62,7 +65,8 @@ class TimelineIndexerUnitTest {
         HistoryProperties defaults = TestSupport.properties();
         HistoryProperties properties = new HistoryProperties(defaults.fallbackLanguage(), defaults.cache(),
                 defaults.wikipedia(), defaults.resilience(),
-                new HistoryProperties.Timeline(cron, Duration.ofSeconds(1), maxConsecutiveFailures));
+                new HistoryProperties.Timeline(cron, Duration.ofSeconds(1), maxConsecutiveFailures),
+                defaults.reports());
         return new TimelineIndexer(client, LOCATOR, repository, cooldown, properties, clock) {
             @Override
             boolean pause(Duration duration) {
@@ -163,6 +167,32 @@ class TimelineIndexerUnitTest {
         verify(repository).replaceDay(eq("en"), eq(MonthDay.of(1, 1)), anyList());
         verify(repository).replaceDay(eq("it"), eq(MonthDay.of(12, 31)), anyList());
         verify(repository).replaceDay(eq("it"), eq(MonthDay.of(2, 29)), anyList());
+    }
+
+    @Test
+    void aDayTheDatabaseRefusesKeepsItsRows_andThePassGoesOn() {
+        // Used to end the whole pass, with no summary, on the first write that failed.
+        WikipediaFeedClient client = (language, day) ->
+                TestSupport.feed(language, day, Section.EVENTS, event("A Roma", 1950, page(ROME)));
+        doThrow(new DataAccessResourceFailureException("connection lost"))
+                .when(repository).replaceDay(eq("it"), eq(MonthDay.of(1, 1)), anyList());
+
+        assertThat(indexer(client, "-", 3).rebuild()).isTrue();
+
+        verify(repository).replaceDay(eq("en"), eq(MonthDay.of(1, 1)), anyList());
+        verify(repository).replaceDay(eq("it"), eq(MonthDay.of(12, 31)), anyList());
+    }
+
+    @Test
+    void aDatabaseThatKeepsRefusingEndsThePassAfterTheConfiguredRunOfFailures() {
+        WikipediaFeedClient client = (language, day) ->
+                TestSupport.feed(language, day, Section.EVENTS, event("A Roma", 1950, page(ROME)));
+        doThrow(new DataAccessResourceFailureException("connection lost"))
+                .when(repository).replaceDay(anyString(), any(MonthDay.class), anyList());
+
+        indexer(client, "-", 3).rebuild();
+
+        verify(repository, times(3)).replaceDay(anyString(), any(MonthDay.class), anyList());
     }
 
     @Test

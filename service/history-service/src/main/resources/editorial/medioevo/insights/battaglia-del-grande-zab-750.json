@@ -1,0 +1,50 @@
+{
+  "slug": "battaglia-del-grande-zab-750",
+  "title": "La battaglia del Grande Zab e la fine degli Omayyadi",
+  "summary": "Il 25 gennaio del 750, sulle rive del Grande Zab, in Iraq, gli Abbasidi sconfiggono il califfo omayyade Marwan II: finisce il califfato omayyade e comincia quello abbaside, che durerà dal 750 al 1258.",
+  "date": {
+    "year": 750,
+    "month": 1,
+    "day": 25
+  },
+  "place": {
+    "name": "Grande Zab, Iraq",
+    "lat": 35.991,
+    "lon": 43.344,
+    "countryCode": "IQ",
+    "approximate": false
+  },
+  "before": "La rivoluzione abbaside cominciò nel giugno del 747, quando Abu Muslim alzò le bandiere nere nei villaggi attorno a Merv. Nel 748 prese il controllo della città e mandò il comandante Qahtaba verso ovest; nel marzo del 749 le sue truppe vinsero un grande esercito omayyade a Jablaq, vicino a Isfahan, e ad agosto raggiunsero l'Eufrate presso Kufa. Il califfo Marwan II fece arrestare il capo abbaside Ibrahim al-Imam, che morì in prigionia; il comando passò al fratello Abu al-Abbas, che fu proclamato califfo a Kufa. Marwan, con un grande esercito di veterani siriani, si stabilì a Mosul.",
+  "event": "I due eserciti combatterono piccoli scontri per giorni. Il 25 gennaio 750 Marwan II ordinò ai suoi di attraversare su un ponte di barche il fiume per attaccare gli Abbasidi, comandati da Abd Allah ibn Ali. Gli Omayyadi erano più numerosi, ma divisi da lotte tribali. Gli Abbasidi smontarono da cavallo e formarono una linea di lance, con gli arcieri dietro, e fermarono la carica della cavalleria siriana. Le linee omayyadi si sfaldarono; Marwan ordinò di distruggere il ponte per impedire l'inseguimento, ma così intrappolò i suoi, e molti annegarono nel fiume.",
+  "after": "Marwan II fuggì in Egitto, e qualche mese dopo fu raggiunto e ucciso mentre si nascondeva in una chiesa. La battaglia segnò la fine del califfato omayyade e l'ascesa di quello abbaside, che durò dal 750 al 1258.",
+  "links": [
+    {
+      "slug": "fondazione-di-baghdad-762",
+      "reason": "Dodici anni dopo gli Abbasidi fondano la loro nuova capitale, Baghdad."
+    },
+    {
+      "slug": "sacco-di-baghdad-1258",
+      "reason": "Il califfato abbaside finisce nel 1258, quando i Mongoli prendono Baghdad."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Zab - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Zab",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del Grande Zab - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_Grande_Zab",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 25 gennaio 750. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

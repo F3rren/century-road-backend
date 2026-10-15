@@ -1,0 +1,43 @@
+{
+  "slug": "test-c",
+  "title": "Titolo test-c",
+  "summary": "Sintesi di test-c.",
+  "date": {
+    "year": 1969,
+    "month": 7,
+    "day": 20
+  },
+  "place": {
+    "name": "Luogo test-c",
+    "lat": 12.0,
+    "lon": 22.0,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto sulla mappa è un luogo di partenza."
+  },
+  "before": "Prima uno due tre.",
+  "event": "Evento uno due tre.",
+  "after": "Dopo uno due tre.",
+  "links": [
+    {
+      "slug": "test-a",
+      "reason": "Perché sì."
+    },
+    {
+      "slug": "test-b",
+      "reason": "Perché no."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fonte",
+      "url": "https://it.wikipedia.org/wiki/Test",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [],
+  "provenance": {
+    "author": "Century Road"
+  }
+}

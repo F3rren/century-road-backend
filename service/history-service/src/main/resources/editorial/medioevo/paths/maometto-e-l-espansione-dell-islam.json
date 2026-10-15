@@ -1,0 +1,33 @@
+{
+  "slug": "maometto-e-l-espansione-dell-islam",
+  "title": "Maometto e l'espansione dell'Islam",
+  "tagline": "Dall'Egira alla fondazione di Baghdad: in un secolo e mezzo un profeta lascia la Mecca, i suoi successori conquistano la Siria e la Persia, e gli Abbasidi fondano una nuova capitale.",
+  "intro": "Il percorso segue la nascita dell'Islam e la sua espansione: l'Egira, la morte di Maometto e la scelta del primo califfo, le vittorie sui Bizantini, la conquista di Gerusalemme, la fine degli Omayyadi e la fondazione di Baghdad.\n\nI racconti sui primi tempi dell'Islam vengono in gran parte dalla tradizione islamica e da cronisti bizantini, e non sempre concordano; dove le fonti o i due articoli divergono, il testo lo dice.",
+  "topic": "MEDIOEVO",
+  "stops": [
+    {
+      "insight": "egira-622",
+      "narrative": "Si parte dal 622: Maometto lascia la Mecca per Medina, e da allora si contano gli anni del calendario islamico."
+    },
+    {
+      "insight": "morte-di-maometto-632",
+      "narrative": "Nel 632 Maometto muore e Abu Bakr è scelto come primo califfo, non senza contestazioni."
+    },
+    {
+      "insight": "battaglia-dello-yarmuk-636",
+      "narrative": "Nel 636 i musulmani sconfiggono i Bizantini sullo Yarmuk e conquistano la Siria."
+    },
+    {
+      "insight": "conquista-islamica-di-gerusalemme-637",
+      "narrative": "Pochi mesi dopo il patriarca Sofronio consegna Gerusalemme al califfo Umar."
+    },
+    {
+      "insight": "battaglia-del-grande-zab-750",
+      "narrative": "Nel 750 gli Abbasidi sconfiggono gli Omayyadi: cambia la dinastia del califfato."
+    },
+    {
+      "insight": "fondazione-di-baghdad-762",
+      "narrative": "Nel 762 gli Abbasidi fondano Baghdad, la nuova capitale."
+    }
+  ]
+}

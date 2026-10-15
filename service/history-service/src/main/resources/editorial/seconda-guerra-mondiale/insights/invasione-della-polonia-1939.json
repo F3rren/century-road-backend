@@ -1,0 +1,51 @@
+{
+  "slug": "invasione-della-polonia-1939",
+  "title": "L'invasione tedesca della Polonia",
+  "summary": "Il 1º settembre 1939 la Germania, con la Slovacchia, attacca la Polonia da nord, da sud e da ovest. Il 3 settembre Regno Unito e Francia, alleati dei polacchi, dichiarano guerra alla Germania: comincia la seconda guerra mondiale. La campagna dura fino al 6 ottobre.",
+  "date": {
+    "year": 1939,
+    "month": 9,
+    "day": 1
+  },
+  "place": {
+    "name": "Westerplatte, Danzica, Polonia",
+    "lat": 54.404,
+    "lon": 18.67,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "L'attacco investì tutto il confine polacco: il pin è su Westerplatte, presso Danzica, dove la corazzata Schleswig-Holstein sparò sul deposito di munizioni, e non indica l'intero fronte."
+  },
+  "before": "La Germania chiedeva Danzica, città libera a maggioranza tedesca, e un collegamento extraterritoriale attraverso il «corridoio» polacco, che separava la Prussia orientale dal resto del Reich. Il 28 aprile 1939 Hitler denunciò il patto di non aggressione del 1934 con la Polonia. Alla fine di agosto il patto Molotov-Ribbentrop, con il protocollo segreto sulle sfere d'influenza (per l'articolo inglese una spartizione dell'Europa orientale, per quello italiano ancora senza zone di spartizione), tolse di mezzo l'opposizione sovietica; il 25 agosto il Regno Unito si impegnò a difendere l'indipendenza polacca. Per l'articolo inglese Hitler rinviò allora l'attacco, previsto per il 26 agosto, al 1º settembre.",
+  "event": "Per l'articolo italiano, alle 4.40 fu bombardata Wieluń (circa 1 200 morti) e poco dopo le 4.45 la corazzata Schleswig-Holstein aprì il fuoco sul deposito di munizioni di Westerplatte; alle 4.45 artiglieria e aviazione aprirono il fuoco e le divisioni corazzate, seguite dalla fanteria, cominciarono ad avanzare. Per l'articolo inglese attaccarono forze tedesche e slovacche da nord, da sud e da ovest, e i polacchi si ritirarono dalle basi di confine verso linee di difesa più arretrate; per quello italiano il piano polacco non prevedeva difese mobili e le forze di frontiera furono superate in fretta.",
+  "after": "Il 3 settembre il Regno Unito e la Francia dichiararono guerra alla Germania; per l'articolo inglese il loro aiuto fu in realtà molto limitato. Il 17 settembre l'Armata Rossa invase la Polonia da est. Il 6 ottobre la Germania e l'Unione Sovietica controllavano ormai tutto il paese; per l'articolo inglese la Polonia non si arrese mai formalmente. Per l'articolo italiano fu il primo esempio della «guerra lampo», in cui carri armati, aerei e radio agivano insieme.",
+  "links": [
+    {
+      "slug": "patto-molotov-ribbentrop-1939",
+      "reason": "Nove giorni prima, il 23 agosto, la Germania e l'Unione Sovietica avevano firmato il patto Molotov-Ribbentrop."
+    },
+    {
+      "slug": "invasione-sovietica-della-polonia-1939",
+      "reason": "Sedici giorni dopo, il 17 settembre, l'Unione Sovietica invade la Polonia da est."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Invasion of Poland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Invasion_of_Poland",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campagna di Polonia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campagna_di_Polonia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 1º settembre 1939 come inizio e il 6 ottobre come fine della campagna. Gli orari esatti prima delle 4.45 e il numero dei morti di Wieluń sono solo dell'articolo italiano; il rinvio dell'attacco dal 26 agosto è in entrambi. Il testo non dà il giorno del patto Molotov-Ribbentrop, perché gli articoli non lo danno allo stesso modo (23 o 24 agosto); il collegamento usa il 23 agosto, data dell'approfondimento sul patto. Sul protocollo segreto divergono: per l'inglese divideva l'Europa orientale, per l'italiano non stabiliva ancora zone di spartizione. Il pin è su Westerplatte."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

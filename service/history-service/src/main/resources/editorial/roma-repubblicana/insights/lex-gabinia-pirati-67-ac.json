@@ -1,0 +1,51 @@
+{
+  "slug": "lex-gabinia-pirati-67-ac",
+  "title": "La lex Gabinia dà a Pompeo il comando contro i pirati",
+  "summary": "Nel 67 a.C. la legge proposta dal tribuno Aulo Gabinio affida a Pompeo un comando straordinario contro i pirati su tutto il Mediterraneo: in tre mesi li sconfigge, ma il precedente di un potere così concentrato pesa sul futuro della Repubblica.",
+  "date": {
+    "year": -67,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.8925,
+    "lon": 12.4853,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Da decenni i pirati rendevano insicuro il Mediterraneo, con danni ai traffici e al rifornimento di grano di Roma. Nel 68 a.C. incendiarono il porto di Ostia, distrussero una flotta consolare e rapirono due senatori con il loro seguito. Pompeo, popolare tra i plebei per i suoi successi contro Sertorio e i seguaci di Mario, vide l'occasione e fece presentare la legge dal tribuno Aulo Gabinio. Il Senato diffidava: temeva che concedere tanto potere a un uomo solo ripetesse il caso di Silla, dittatore quindici anni prima.",
+  "event": "La legge, approvata nel 67 a.C. con il sostegno del popolo e, secondo un articolo, di Cesare e di Cicerone, diede a Pompeo poteri di proconsole su tutte le province entro cinquanta miglia dal mare, cioè quasi tutto il territorio romano, per tre anni. Gli diede anche una grande flotta e un esercito di circa 120 000 fanti e qualche migliaio di cavalieri, molto denaro e il diritto di nominare venticinque legati.",
+  "after": "Pompeo sconfisse i pirati in soli tre mesi. La legge ebbe però un effetto durevole: affidò a un solo uomo il comando militare su gran parte dell'impero e, con la carriera di Pompeo, mostrò che le riforme di Silla, che volevano rafforzare il Senato, non funzionavano. Alcuni decenni dopo il suo schema, con poteri su tutte le province e legati nominati dal comandante, fu ripreso da Augusto.",
+  "links": [
+    {
+      "slug": "rivolta-di-spartaco-73-ac",
+      "reason": "Nel 70 a.C. Pompeo e Crasso, i vincitori di Spartaco, erano consoli."
+    },
+    {
+      "slug": "primo-triumvirato-60-ac",
+      "reason": "Sette anni dopo Pompeo si allea con Cesare e Crasso."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lex Gabinia de piratis persequendis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lex_Gabinia_de_piratis_persequendis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Lex Gabinia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Lex_Gabinia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'anno, il 67 a.C., è quello della legge. Le cifre di navi e soldati variano da una fonte all'altra: per le navi si va da 270 a 500."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

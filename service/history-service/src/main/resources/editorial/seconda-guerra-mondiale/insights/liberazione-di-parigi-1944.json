@@ -1,0 +1,54 @@
+{
+  "slug": "liberazione-di-parigi-1944",
+  "title": "La liberazione di Parigi",
+  "summary": "Il 25 agosto 1944 il comandante tedesco von Choltitz si arrende e Parigi è liberata, dopo l'insurrezione della Resistenza, cominciata il 18-19 agosto, e l'arrivo della 2ª divisione corazzata francese di Leclerc. De Gaulle assume il controllo della città. Per l'articolo italiano Choltitz non obbedì all'ordine di Hitler di distruggerla.",
+  "date": {
+    "year": 1944,
+    "month": 8,
+    "day": 25
+  },
+  "place": {
+    "name": "Hôtel de Ville, Parigi, Francia",
+    "lat": 48.8566,
+    "lon": 2.3522,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "Dopo lo sbarco in Normandia, per l'articolo inglese il comando alleato di Eisenhower non prevedeva di prendere subito Parigi: voleva aggirarla, evitare combattimenti urbani e non dover nutrire oltre due milioni di civili. De Gaulle insisteva perché la Francia riprendesse la sovranità e perché fosse una divisione francese a entrare. Per l'articolo inglese i comandi britannici e americani vollero un reparto di soldati bianchi e scelsero la 2ª divisione corazzata di Leclerc, la sola che si potesse riorganizzare in quel modo. Il 10 agosto i ferrovieri scioperarono; il 18-19 agosto la Resistenza si sollevò contro la guarnigione tedesca (per l'articolo inglese gli scontri armati cominciarono il 19, per quello italiano l'insurrezione generale il 18).",
+  "event": "Il 24 agosto Leclerc, per l'articolo inglese, disobbedì al suo superiore americano e mandò un'avanguardia a Parigi: la 9ª compagnia, in gran parte di repubblicani spagnoli, raggiunse l'Hôtel de Ville alle 21.22 per entrambi gli articoli (l'introduzione italiana dice «poco prima di mezzanotte»). Il 25 agosto entrarono il grosso della divisione francese e la 4ª divisione americana. Per l'articolo inglese il generale von Choltitz, comandante della guarnigione, si arrese alle 15.30 all'Hôtel Meurice, nonostante gli ordini di Hitler che la città «non dovesse cadere in mano nemica se non ridotta in macerie».",
+  "after": "Lo stesso giorno de Gaulle arrivò a Parigi e all'Hôtel de Ville attribuì la liberazione al popolo francese. Per l'articolo inglese furono uccisi da 800 a 1 000 combattenti della Resistenza e 1 500 feriti; la 2ª divisione corazzata ebbe 71 morti e 225 feriti. Per l'articolo inglese Choltitz, che nelle memorie si descrisse come il salvatore della città, aveva piuttosto perso il controllo e non aveva i mezzi per eseguire gli ordini. Per gli articoli la liberazione fece crollare di fatto il regime di Vichy e legittimò il governo provvisorio guidato da de Gaulle.",
+  "links": [
+    {
+      "slug": "sbarco-in-normandia-1944",
+      "reason": "Poco meno di tre mesi prima, il 6 giugno, gli Alleati erano sbarcati in Normandia."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1940",
+      "reason": "Più di quattro anni prima, il 22 giugno 1940, la Francia aveva firmato l'armistizio con la Germania."
+    },
+    {
+      "slug": "operazione-market-garden-1944",
+      "reason": "Ventitré giorni dopo, il 17 settembre, comincia l'operazione Market Garden."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Liberation of Paris - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liberation_of_Paris",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Liberazione di Parigi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Liberazione_di_Parigi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 25 agosto 1944 per la resa; per l'inizio dell'insurrezione l'inglese parla di scioperi e volantini il 18 e di scontri armati il 19, l'italiano dell'insurrezione generale il 18 e di scontri dal 19. Per l'arrivo dell'avanguardia all'Hôtel de Ville entrambi dicono le 21.22, ma l'introduzione italiana «poco prima di mezzanotte». Per i morti francesi l'inglese dà 800-1 000 resistenti e 1 500 feriti, l'italiano 1 500 morti tra resistenti e civili. La scelta della divisione di Leclerc per ragioni di composizione è dell'articolo inglese. Il pin è sull'Hôtel de Ville."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

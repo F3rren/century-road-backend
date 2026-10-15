@@ -1,0 +1,52 @@
+{
+  "slug": "rivolta-di-spartaco-73-ac",
+  "title": "La rivolta di Spartaco",
+  "summary": "Nel 73 a.C. circa settanta gladiatori fuggono da una scuola di Capua e danno inizio alla terza guerra servile: guidati da Spartaco e da altri capi, gli schiavi in armi sconfiggono più volte i Romani e minacciano l'Italia per due anni.",
+  "date": {
+    "year": -73,
+    "month": 1,
+    "day": 1,
+    "precision": "YEAR"
+  },
+  "place": {
+    "name": "Capua, Campania, Italia",
+    "lat": 41.1,
+    "lon": 14.2,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Il punto indica Capua, dove si trovava la scuola di gladiatori; la rivolta si estese a gran parte dell'Italia meridionale."
+  },
+  "before": "Nella Repubblica romana del primo secolo a.C. gli schiavi erano molti e i giochi gladiatori molto popolari. A Capua, nella scuola di Gneo Cornelio Lentulo Batiato, circa duecento gladiatori progettarono una fuga. Gli schiavi si erano già ribellati altre due volte, ma nessuna rivolta aveva messo in pericolo il controllo romano sull'Italia.",
+  "event": "Il piano fu scoperto, e nel 73 a.C. una settantina di gladiatori prese degli attrezzi da cucina e si aprì la strada fuori dalla scuola, impadronendosi di carri con armi e armature. Elessero capi Crixus ed Enomao, due schiavi galli, e Spartaco, forse un ex ausiliario trace dell'esercito romano. Sconfissero il piccolo contingente mandato da Capua, saccheggiarono la zona e si fortificarono sul Vesuvio. Altri schiavi si unirono a loro: nel giro di due anni, secondo una fonte, il gruppo raggiunse circa 120 000 persone, tra uomini, donne e bambini, e sconfisse più volte truppe locali, milizie e perfino legioni comandate dai consoli.",
+  "after": "Il Senato schierò otto legioni al comando di Marco Licinio Crasso, che nel 71 a.C. distrusse l'esercito degli schiavi. Circa 6 000 sopravvissuti furono crocifissi lungo la via Appia, da Capua a Roma. Pompeo, arrivato da nord, uccise circa 5 000 ribelli in fuga e rivendicò il merito di aver «estirpato la guerra»: nacque l'ostilità con Crasso. I due, eletti consoli per il 70 a.C. anche per la minaccia delle loro legioni accampate presso Roma, si riconciliarono solo dieci anni dopo, con il primo triumvirato.",
+  "links": [
+    {
+      "slug": "battaglia-di-porta-collina-82-ac",
+      "reason": "Nove anni prima un'altra guerra, quella civile, aveva insanguinato l'Italia."
+    },
+    {
+      "slug": "primo-triumvirato-60-ac",
+      "reason": "Crasso e Pompeo, i vincitori di Spartaco, si alleano con Cesare."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Third Servile War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Third_Servile_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Terza guerra servile - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Terza_guerra_servile",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Le fonti, tra cui Plutarco e Appiano, non concordano su tutto: per Plutarco gli schiavi volevano fuggire verso la libertà, per Appiano e Floro la rivolta fu una guerra civile. Le cifre sono approssimative. L'anno è il 73 a.C., ma la guerra durò fino al 71 a.C."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

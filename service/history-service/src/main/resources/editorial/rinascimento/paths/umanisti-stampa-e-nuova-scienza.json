@@ -1,0 +1,41 @@
+{
+  "slug": "umanisti-stampa-e-nuova-scienza",
+  "title": "Umanisti, stampa e nuova scienza",
+  "tagline": "Dalla Donazione di Costantino smascherata ai libri di Copernico e Vesalio: un secolo di umanisti, tipografi e scienziati.",
+  "intro": "Il percorso segue gli umanisti, la stampa e la nuova scienza: Lorenzo Valla smaschera la Donazione di Costantino, Gutenberg stampa la Bibbia, Aldo Manuzio apre la sua tipografia, e poi Erasmo, Machiavelli, Moro, Copernico e Vesalio pubblicano le loro opere.\n\nSu date e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "RINASCIMENTO",
+  "stops": [
+    {
+      "insight": "donazione-di-costantino-smascherata-1440",
+      "narrative": "Si parte dal 1440: Valla dimostra che la Donazione di Costantino è un falso."
+    },
+    {
+      "insight": "bibbia-di-gutenberg-1455",
+      "narrative": "Nel 1455 Gutenberg completa a Magonza la sua Bibbia a stampa."
+    },
+    {
+      "insight": "aldo-manuzio-e-la-stampa-aldina-1494",
+      "narrative": "Nel 1494 Aldo Manuzio apre a Venezia la sua tipografia."
+    },
+    {
+      "insight": "elogio-della-follia-1511",
+      "narrative": "Nel 1511 Erasmo pubblica l'Elogio della follia."
+    },
+    {
+      "insight": "il-principe-di-machiavelli-1513",
+      "narrative": "Nel 1513 Machiavelli scrive il Principe."
+    },
+    {
+      "insight": "utopia-di-tommaso-moro-1516",
+      "narrative": "Nel 1516 Tommaso Moro pubblica Utopia."
+    },
+    {
+      "insight": "de-revolutionibus-di-copernico-1543",
+      "narrative": "Nel 1543 Copernico pubblica il suo sistema con il Sole al centro."
+    },
+    {
+      "insight": "de-humani-corporis-fabrica-1543",
+      "narrative": "Nello stesso anno Vesalio pubblica la sua anatomia dell'uomo."
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "slug": "operazione-torch-1942",
+  "title": "L'operazione Torch",
+  "summary": "L'8 novembre 1942 truppe americane e britanniche sbarcano in Marocco e in Algeria, nel Nord Africa francese fedele al regime di Vichy. Dopo pochi giorni di scontri un accordo con l'ammiraglio Darlan ferma la resistenza francese, e gli Alleati possono avanzare verso la Tunisia.",
+  "date": {
+    "year": 1942,
+    "month": 11,
+    "day": 8
+  },
+  "place": {
+    "name": "Casablanca, Marocco",
+    "lat": 33.5731,
+    "lon": -7.5898,
+    "countryCode": "MA",
+    "approximate": true,
+    "note": "Gli sbarchi avvennero in tre aree, in Marocco e in Algeria: il pin è su Casablanca, la principale base navale francese sull'Atlantico, e non indica l'intero fronte."
+  },
+  "before": "Dopo l'ingresso degli Stati Uniti in guerra, nel dicembre 1941, americani e britannici si accordarono a Washington sulla priorità alla Germania e, per l'articolo italiano, su uno sbarco in Nord Africa. Per l'articolo inglese gli americani preferivano uno sbarco limitato in Europa, ma Churchill propose il Nord Africa e Roosevelt, che voleva aiutare i sovietici, accettò. Per l'articolo inglese Eisenhower fu nominato comandante il 14 agosto 1942, per quello italiano assunse il comando supremo il 27 luglio. Per l'articolo inglese il 21 ottobre il generale Clark, sbarcato in segreto da un sommergibile a Cherchell, incontrò ufficiali francesi disposti ad appoggiare gli Alleati, e de Gaulle fu tenuto fuori dall'operazione.",
+  "event": "All'alba dell'8 novembre tre gruppi da sbarco attaccarono Casablanca, Orano e Algeri. Per l'articolo inglese quello occidentale, americano e comandato da Patton, contava 35 000 uomini e incontrò resistenza e maltempo; a Safi il porto fu preso intatto, Casablanca fu conquistata dopo un breve assedio, Orano si arrese dopo il bombardamento di corazzate britanniche e a Algeri, dove si incontrò meno opposizione, la resa arrivò il primo giorno. Per l'articolo italiano i soldati anglo-americani erano in tutto 113 000; per l'articolo inglese il gruppo che attaccò Orano ne contava 18 500, per quello italiano 37 000.",
+  "after": "Il 10 novembre Eisenhower riconobbe l'ammiraglio Darlan come alto commissario francese in Nord Africa, e Darlan ordinò di cessare la resistenza; per l'articolo inglese l'accordo offese de Gaulle e molti americani e britannici, e Hitler, saputolo, ordinò l'occupazione della Francia di Vichy. Darlan fu assassinato il 24 dicembre. Per l'articolo italiano l'Asse mandò truppe in Tunisia e la campagna finì con la resa del 13 maggio 1943.",
+  "links": [
+    {
+      "slug": "seconda-battaglia-di-el-alamein-1942",
+      "reason": "Sedici giorni prima, il 23 ottobre, era cominciata la battaglia di El Alamein."
+    },
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Otto mesi dopo, il 10 luglio 1943, gli Alleati sbarcano in Sicilia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Torch - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Torch",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Torch - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Torch",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno gli sbarchi dall'8 al 16 novembre 1942. Divergono sulle forze: l'articolo inglese dà 35 000 uomini a Casablanca e 18 500 a Orano, quello italiano 35 000 a Casablanca, 37 000 a Orano e 113 000 in tutto. Divergono anche sulle date: l'incontro di Clark a Cherchell è il 21 ottobre per l'inglese e il 23 per l'italiano; la nomina di Eisenhower il 14 agosto per l'inglese, il 27 luglio per l'italiano. Il pin è su Casablanca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

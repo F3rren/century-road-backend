@@ -1,0 +1,50 @@
+{
+  "slug": "trattato-di-brest-litovsk-1918",
+  "title": "Il trattato di Brest-Litovsk",
+  "summary": "Il 3 marzo 1918 la Russia bolscevica firma a Brest-Litovsk una pace separata con gli Imperi centrali e si ritira dalla guerra. Rinuncia a ogni pretesa su Ucraina, Paesi baltici e Bielorussia (per l'articolo inglese su gran parte di essa) e perde anche la Polonia (tutta per l'inglese, la parte orientale per l'italiano); il trattato resta molto controverso in Russia.",
+  "date": {
+    "year": 1918,
+    "month": 3,
+    "day": 3
+  },
+  "place": {
+    "name": "Brest-Litovsk (Brest), Bielorussia",
+    "lat": 52.0976,
+    "lon": 23.7341,
+    "countryCode": "BY",
+    "approximate": false
+  },
+  "before": "Dopo l'armistizio sul fronte orientale del dicembre 1917, le trattative durarono mesi. Nel gennaio 1918 gli Imperi centrali chiesero la separazione di tutti i territori occupati; la delegazione sovietica, guidata da Trotskij, cercava di tirare per le lunghe, in attesa di rivoluzioni nell'Europa centrale. Per l'articolo italiano la convinzione era che la rivoluzione mondiale fosse ormai imminente. Il 18 febbraio l'offensiva tedesca riprese l'avanzata e costrinse i sovietici a chiedere la pace.",
+  "event": "Il 3 marzo 1918 la Russia firmò. Per l'articolo inglese perse il controllo di Ucraina, Polonia, Bielorussia, Lituania, Lettonia, Estonia e delle province caucasiche di Kars e Batum: terre con il 34% della popolazione dell'ex impero, il 54% del suo territorio industriale, l'89% dei giacimenti di carbone e il 26% delle ferrovie. Per l'articolo italiano il trattato strappò alla Russia 56 milioni di abitanti, il 32% della popolazione.",
+  "after": "Un protocollo supplementare dell'agosto 1918 impose alla Russia riparazioni per sei miliardi di marchi (articolo inglese). Per l'articolo inglese il trattato fu annullato da una clausola dell'armistizio dell'11 novembre 1918; per quello italiano lo cancellò ufficialmente il trattato di Versailles. In Russia fu controverso: per l'articolo inglese diede una causa comune ai Bianchi e aprì una frattura fra i bolscevichi e i socialisti rivoluzionari di sinistra.",
+  "links": [
+    {
+      "slug": "rivoluzione-d-ottobre-1917",
+      "reason": "Meno di quattro mesi prima, nel novembre 1917, i bolscevichi avevano preso il potere."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1918",
+      "reason": "L'11 novembre 1918 l'armistizio di Compiègne, per l'articolo inglese, abroga il trattato con una clausola."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Brest-Litovsk - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Brest-Litovsk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Brest-Litovsk - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Brest-Litovsk",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 3 marzo 1918. Per l'articolo italiano la Russia passò al calendario gregoriano il 1º febbraio giuliano, e il 18 febbraio dell'offensiva tedesca è già gregoriano. Le percentuali dei territori perduti sono diverse nei due articoli e il testo le attribuisce a ciascuno. Fino al 1918 la Russia usava il calendario giuliano, in ritardo di tredici giorni su quello gregoriano: il giorno indicato è quello riportato dalle fonti, e secondo l'altro calendario cadrebbe in un giorno diverso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

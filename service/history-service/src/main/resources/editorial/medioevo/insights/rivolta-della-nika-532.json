@@ -1,0 +1,50 @@
+{
+  "slug": "rivolta-della-nika-532",
+  "title": "La rivolta della Nika a Costantinopoli",
+  "summary": "Il 13 gennaio del 532 la folla di Costantinopoli si ribella all'imperatore Giustiniano nell'Ippodromo al grido «Nika!», «Vinci!»: la rivolta brucia gran parte della città e finisce in un massacro.",
+  "date": {
+    "year": 532,
+    "month": 1,
+    "day": 13
+  },
+  "place": {
+    "name": "Ippodromo di Costantinopoli (Istanbul), Turchia",
+    "lat": 41.0058,
+    "lon": 28.975,
+    "countryCode": "TR",
+    "approximate": false
+  },
+  "before": "Nell'Impero i sostenitori delle squadre delle corse dei carri, i Blu e i Verdi, avevano un peso anche sociale e politico. Giustiniano aveva favorito i Blu, poi aveva cercato di limitare il potere delle fazioni. Era impopolare per le tasse alte e per le accuse di corruzione contro i suoi funzionari Giovanni di Cappadocia e Triboniano, e la guerra contro i Sasanidi andava male, con la sconfitta di Callinico nel 531. Nel 531 alcuni Blu e Verdi furono arrestati per omicidio; il 10 gennaio 532 per l'articolo inglese (l'11 gennaio per quello italiano) due condannati, un Blu e un Verde, sopravvissero all'esecuzione; furono portati da monaci in una chiesa, dove cercarono asilo.",
+  "event": "Il 13 gennaio 532, giorno di una corsa dei carri, la folla insultò Giustiniano; a fine giornata il grido delle fazioni era diventato un unico «Nika», e la folla assalì il palazzo. I rivoltosi chiesero la destituzione di Giovanni di Cappadocia e di Triboniano, e Giustiniano accettò; poi proclamarono imperatore Ipazio, nipote di Anastasio I. Secondo il racconto, Giustiniano pensò di fuggire, ma la moglie Teodora lo dissuase. Per l'articolo inglese i soldati di Belisario e di Mundo, per quello italiano di Narsete e Belisario, entrarono nell'Ippodromo, catturarono Ipazio e Pompeo e fecero strage dei rivoltosi.",
+  "after": "Secondo Procopio morirono circa 30 000 persone, anche se molte probabilmente per calpestamento. Ipazio e Pompeo furono giustiziati, e i senatori che avevano sostenuto la rivolta furono esiliati. Gli incendi avevano distrutto gran parte della città, compresa Santa Sofia, che Giustiniano ricostruì. Giovanni di Cappadocia, destituito su richiesta dei rivoltosi, fu poi reintegrato. La repressione non pose fine alla violenza delle fazioni.",
+  "links": [
+    {
+      "slug": "corpus-iuris-civilis-529",
+      "reason": "Il giurista Triboniano, che dirigeva il Corpus iuris civilis, era uno dei bersagli dei rivoltosi."
+    },
+    {
+      "slug": "peste-di-giustiniano-541",
+      "reason": "Nove anni dopo la peste arriva in Egitto e nel 542 colpisce Costantinopoli."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nika riots - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nika_riots",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolta di Nika - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolta_di_Nika",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 13 gennaio è la data di inizio per entrambi gli articoli; la cronologia dei giorni successivi non è esatta e viene da fonti diverse, tra cui Giovanni Malala e Procopio. Dopo la riforma giuliana i Romani usavano il calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

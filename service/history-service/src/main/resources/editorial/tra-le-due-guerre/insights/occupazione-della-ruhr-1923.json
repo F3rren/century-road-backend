@@ -1,0 +1,51 @@
+{
+  "slug": "occupazione-della-ruhr-1923",
+  "title": "L'occupazione della Ruhr",
+  "summary": "L'11 gennaio 1923 truppe francesi e belghe occupano la Ruhr, la regione industriale tedesca, per costringere la Germania a pagare le riparazioni. L'occupazione dura fino all'agosto 1925 e aggrava la crisi economica e l'iperinflazione in Germania.",
+  "date": {
+    "year": 1923,
+    "month": 1,
+    "day": 11
+  },
+  "place": {
+    "name": "Essen, Ruhr, Germania",
+    "lat": 51.4556,
+    "lon": 7.0116,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "L'occupazione riguardò tutta la regione industriale della Ruhr: il pin è su Essen, dove secondo l'articolo italiano Poincaré dichiarò che si trovavano truppe e ingegneri francesi, e non indica un punto preciso."
+  },
+  "before": "L'occupazione fu una risposta alle inadempienze della Germania nei pagamenti delle riparazioni previsti dal trattato di Versailles. Per l'articolo inglese il 5 maggio 1921 un ultimatum di Londra aveva minacciato l'occupazione della Ruhr se la Germania non avesse accettato un piano di pagamento di 132 miliardi di marchi oro; per l'articolo italiano il 9 gennaio 1923 la Commissione per le riparazioni dichiarò la Germania inadempiente, con i voti di Francia, Italia e Belgio e l'astensione dell'Inghilterra.",
+  "event": "Per l'articolo inglese Francia e Belgio volevano costringere la Germania a fornire il carbone e le altre materie prime delle riparazioni. Con il sostegno del governo tedesco, i civili attuarono resistenza passiva e disobbedienza civile, che bloccarono in gran parte l'economia della regione; ci furono anche sabotaggi e rappresaglie. I civili uccisi furono circa 137 e i feriti 600 per l'articolo inglese, 130 i morti per quello italiano.",
+  "after": "Per l'articolo inglese il governo pagò il sostegno ai lavoratori e alle imprese ferme soprattutto stampando moneta, il che contribuì all'iperinflazione. Dopo la stabilizzazione della moneta alla fine del 1923, Francia e Belgio accettarono nel 1924 il piano Dawes, che ristrutturò le riparazioni, e ritirarono le truppe entro l'agosto 1925. Per entrambi gli articoli l'occupazione favorì la crescita dei movimenti di estrema destra; per quello inglese i nazisti la usarono, in parte, come giustificazione del putsch del novembre 1923.",
+  "links": [
+    {
+      "slug": "trattato-di-versailles-1919",
+      "reason": "Le riparazioni erano previste dal trattato di Versailles del 1919."
+    },
+    {
+      "slug": "putsch-di-monaco-1923",
+      "reason": "Quasi dieci mesi dopo, l'8 novembre, il putsch di Monaco."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Occupation of the Ruhr - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Occupation_of_the_Ruhr",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Occupazione della Ruhr - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Occupazione_della_Ruhr",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio l'11 gennaio 1923 e la fine il 25 agosto 1925. I morti civili sono 137 per l'articolo inglese e 130 per quello italiano. Il pin è un segnaposto sulla Ruhr."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

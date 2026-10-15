@@ -1,0 +1,52 @@
+{
+  "slug": "battaglia-di-roncisvalle-778",
+  "title": "L'imboscata di Roncisvalle",
+  "summary": "Il 15 agosto del 778 i Baschi tendono un'imboscata alla retroguardia dell'esercito di Carlo Magno nei Pirenei e la annientano: vi muore Rolando, il futuro eroe della «Chanson de Roland».",
+  "date": {
+    "year": 778,
+    "month": 8,
+    "day": 15
+  },
+  "place": {
+    "name": "Passo di Roncisvalle, Pirenei, Spagna",
+    "lat": 42.989,
+    "lon": -1.334,
+    "countryCode": "ES",
+    "approximate": true,
+    "note": "Il punto indica il passo di Roncisvalle, sui Pirenei; la localizzazione precisa dello scontro è discussa."
+  },
+  "before": "Nel 778 Sulayman al-Arabi, governatore di Barcellona e Girona, offrì a Carlo Magno la sua sottomissione e quella di Husayn di Saragozza in cambio di aiuto contro l'emiro omayyade di Cordova, Abd al-Rahman I. Carlo valicò i Pirenei con l'esercito diviso in due: le sue truppe furono accolte a Barcellona e a Girona da Sulayman al-Arabi (per l'articolo italiano Carlo conquistò Pamplona e Barcellona), ma Husayn rifiutò di aprirgli Saragozza, che Carlo assediò per oltre un mese. Alla fine si accordarono: Husayn avrebbe pagato oro e liberato prigionieri, e i Franchi avrebbero tolto l'assedio.",
+  "event": "Prima di lasciare la Spagna Carlo fece abbattere le mura di Pamplona, la capitale dei Baschi, che sospettava alleati dei Mori. Tornando in Francia, la sera del 15 agosto la sua retroguardia, comandata tra gli altri da Rolando, governatore militare della Marca di Bretagna, e da Eggihard (maestro di palazzo per l'articolo inglese, siniscalco per quello italiano), fu assalita dai Baschi sui Pirenei (per l'articolo inglese, secondo l'opinione prevalente, non lontano da Roncisvalle; per quello italiano il luogo esatto è del tutto incerto). I Baschi, meno armati ma padroni del terreno, isolarono la retroguardia e i carri, la sterminarono, saccheggiarono il bagaglio e fuggirono col buio. L'articolo italiano osserva che difficilmente si può parlare di una vera battaglia, e che i Baschi avevano prima reso omaggio al re.",
+  "after": "Fu l'unica sconfitta importante di Carlo Magno, che non guidò più un esercito in Spagna. La morte di Rolando fece di lui e dei paladini un modello per i cavalieri e influì sul codice cavalleresco del Medioevo. La battaglia è raccontata nella «Chanson de Roland», nell'XI secolo, la più antica opera importante della letteratura francese giunta fino a noi, e nell'«Orlando furioso»: alcuni racconti la cambiano o la esagerano.",
+  "links": [
+    {
+      "slug": "fine-del-regno-longobardo-774",
+      "reason": "Quattro anni prima Carlo aveva conquistato il regno longobardo."
+    },
+    {
+      "slug": "incoronazione-di-carlo-magno-800",
+      "reason": "Ventidue anni dopo sarà incoronato imperatore."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Roncevaux Pass - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Roncevaux_Pass",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Roncisvalle - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Roncisvalle",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il 15 agosto è il giorno dato da entrambi gli articoli; per l'articolo italiano l'epitaffio del siniscalco Oggiaro, citato da Eginardo, permette di datare lo scontro, mentre lo stesso Eginardo non ne cita il luogo. Prima della riforma del 1582 le date si danno nel calendario giuliano, che non coincide con quello gregoriano: il giorno indicato è quello riportato dalle fonti.",
+    "L'articolo italiano dà come motivo della partenza da Saragozza la notizia di una rivolta dei Sassoni; quello inglese parla di un accordo con Husayn."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

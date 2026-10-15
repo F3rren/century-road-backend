@@ -1,0 +1,51 @@
+{
+  "slug": "offensiva-brusilov-1916",
+  "title": "L'offensiva Brusilov",
+  "summary": "Il 4 giugno 1916 il generale Brusilov attacca gli Imperi centrali in Galizia e Volinia, su un fronte che per l'articolo italiano supera i 500 chilometri. È la più grande offensiva russa della guerra: mette in crisi l'Austria-Ungheria e allenta la pressione sul fronte italiano, ma costa perdite enormi.",
+  "date": {
+    "year": 1916,
+    "month": 6,
+    "day": 4
+  },
+  "place": {
+    "name": "Luc'k (Lutsk), Ucraina",
+    "lat": 50.7472,
+    "lon": 25.3254,
+    "countryCode": "UA",
+    "approximate": true,
+    "note": "Per l'articolo italiano l'offensiva si svolse su un fronte di oltre 500 chilometri, dalle paludi del Pryp\"jat' alla fine dello schieramento austriaco: il pin è su Luc'k, una delle città conquistate, e non indica un punto preciso."
+  },
+  "before": "Con l'accordo di Chantilly del dicembre 1915, per l'articolo inglese, Russia, Francia, Gran Bretagna e Italia si impegnarono ad attaccare insieme nell'estate 1916. A marzo l'offensiva russa del lago Narač era stata un fallimento. Il piano di Brusilov mirava ad alleggerire la pressione sulle armate in Francia e sull'Italia, e se possibile a mettere fuori gioco l'Austria-Ungheria; per l'articolo inglese il 26 maggio lo zar ordinò di anticipare l'offensiva, dopo le richieste degli italiani sotto attacco.",
+  "event": "Il 4 giugno 1916 Brusilov attaccò le forze degli Imperi centrali; per l'articolo italiano su ordine dello zar Nicola II e su un fronte di oltre 500 chilometri. Per l'articolo inglese Brusilov riunì quattro armate con 40 divisioni di fanteria e 15 di cavalleria. Per l'articolo inglese, alla fine del 6 giugno tre corpi della 4ª Armata austro-ungarica erano stati respinti oltre lo Styr e i russi avanzavano verso Luc'k; per quello italiano Luc'k fu occupata già il secondo giorno.",
+  "after": "Per l'articolo inglese l'offensiva allentò la pressione tedesca su Verdun e quella austro-ungarica sugli italiani, inflisse perdite irreparabili all'esercito austro-ungarico e spinse la Romania a entrare in guerra; le perdite russe contribuirono alla rivoluzione dell'anno seguente. Per l'articolo italiano l'attacco si estinse il 20 settembre, dopo l'arrivo di truppe tedesche da Verdun, e quasi 1 500 000 soldati austriaci furono messi fuori combattimento, di cui oltre 400 000 prigionieri.",
+  "links": [
+    {
+      "slug": "battaglia-di-gorlice-tarnow-1915",
+      "reason": "Più di un anno prima, nel maggio 1915, Gorlice-Tarnów aveva fatto crollare il fronte russo."
+    },
+    {
+      "slug": "battaglia-di-verdun-1916",
+      "reason": "Dal febbraio Verdun impegnava i tedeschi e i francesi: l'offensiva Brusilov alleggerisce quella pressione."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Brusilov offensive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Brusilov_offensive",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva Brusilov - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_Brusilov",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 4 giugno 1916 per l'inizio. Per la fine l'articolo italiano dà il 20 settembre e quello inglese la fine di settembre. Il testo non usa i numeri delle perdite russe, che i due articoli riportano in modo diverso. Fino al 1918 la Russia usava il calendario giuliano, in ritardo di tredici giorni su quello gregoriano: il giorno indicato è quello riportato dalle fonti, e secondo l'altro calendario cadrebbe in un giorno diverso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
