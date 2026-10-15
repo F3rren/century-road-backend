@@ -1,0 +1,54 @@
+{
+  "slug": "caduta-di-mussolini-1943",
+  "title": "La caduta di Mussolini",
+  "summary": "Nella notte tra il 24 e il 25 luglio 1943 il Gran consiglio del fascismo approva l'ordine del giorno di Dino Grandi, che toglie la fiducia a Mussolini. Il 25 luglio il re lo fa arrestare e affida il governo al maresciallo Badoglio: finiscono quasi ventun anni di governo fascista.",
+  "date": {
+    "year": 1943,
+    "month": 7,
+    "day": 25
+  },
+  "place": {
+    "name": "Palazzo Venezia, Roma, Italia",
+    "lat": 41.8964,
+    "lon": 12.4823,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "All'inizio del 1943 l'Italia stava perdendo la guerra: il fronte africano era crollato e la Tunisia cadde il 13 maggio. Il 10 luglio gli Alleati sbarcarono in Sicilia. Due manovre parallele, guidate dal gerarca Dino Grandi e dal re Vittorio Emanuele III, miravano a liberarsi di Mussolini; a metà maggio il re cominciò a pensare di uscire dalla guerra, mentre Mussolini, malato di gastrite e duodenite di origine nervosa, restava spesso a casa. Per l'articolo inglese gli Alleati, dopo la dichiarazione di Casablanca, accettavano solo la resa incondizionata.",
+  "event": "Il Gran consiglio, 28 membri, si riunì a Palazzo Venezia il 24 luglio: alle 17 per l'articolo inglese e per il testo di quello italiano (l'introduzione italiana dà le 18.15). L'ordine del giorno Grandi ottenne 19 voti a favore e 8 contrari; per l'articolo italiano la votazione avvenne alle 2.30 del 25 luglio, e vi fu anche un astenuto. Per l'articolo inglese il voto non aveva valore giuridico, perché solo il re poteva destituire il capo del governo. Il 25 luglio, alle 17, Mussolini, che aveva chiesto un'udienza al re, arrivò a Villa Savoia e fu arrestato dai carabinieri: alle 17 per l'articolo inglese, verso le 17.20 per quello italiano, dopo un colloquio di circa venti minuti. Alle 22.45 la radio annunciò che Badoglio era il nuovo capo del governo e che «la guerra continua».",
+  "after": "Per l'articolo inglese la gente festeggiò nelle strade, e il governo Badoglio dichiarò lo stato d'assedio e il coprifuoco il 26 luglio; per l'articolo italiano quel giorno una circolare ordinò di fucilare chi compisse atti di violenza o ribellione contro le forze armate o di polizia. Hitler, per l'articolo inglese, capì subito che il cambio di regime avrebbe con ogni probabilità portato l'Italia a uscire dall'alleanza. L'armistizio con gli Alleati fu firmato il 3 settembre e reso noto l'8.",
+  "links": [
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Quindici giorni prima, il 10 luglio, gli Alleati erano sbarcati in Sicilia."
+    },
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Quarantacinque giorni dopo, l'8 settembre, è reso noto l'armistizio con gli Alleati."
+    },
+    {
+      "slug": "repubblica-sociale-italiana-1943",
+      "reason": "Due mesi dopo, il 23 settembre, nasce la Repubblica sociale italiana."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of the Fascist regime in Italy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_the_Fascist_regime_in_Italy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Caduta del fascismo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Caduta_del_fascismo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la riunione del Gran consiglio il 24-25 luglio e l'arresto il 25. L'articolo italiano dà due ore di inizio (18.15 nell'introduzione, 17 nel testo), l'inglese le 17; sull'ora dell'arresto di Mussolini l'inglese dà le 17, l'italiano verso le 17.20. L'ora e l'astenuto della votazione sono dell'articolo italiano. L'articolo inglese precisa che il voto non aveva valore di legge. Il pin è su Palazzo Venezia, dove si riunì il Gran consiglio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "armistizio-di-cassibile-1943",
+  "title": "L'armistizio di Cassibile",
+  "summary": "Il 3 settembre 1943 a Cassibile, in Sicilia, il generale Castellano firma in segreto l'armistizio tra l'Italia e gli Alleati; l'8 settembre viene reso pubblico. I tedeschi, che lo aspettavano, attaccano le forze italiane e occupano gran parte del paese: il re e il governo fuggono a Brindisi e comincia la Resistenza.",
+  "date": {
+    "year": 1943,
+    "month": 9,
+    "day": 8
+  },
+  "place": {
+    "name": "Cassibile, Siracusa, Italia",
+    "lat": 36.9783,
+    "lon": 15.1511,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "L'armistizio fu firmato a Cassibile, in un accampamento alleato presso Siracusa; il pin è su Cassibile, e il giorno dato è quello dell'annuncio, l'8 settembre."
+  },
+  "before": "Il governo Badoglio, formato dopo la caduta di Mussolini, per l'articolo inglese non cambiò la posizione dell'Italia come alleata della Germania, ma cercava vie per un accordo con gli Alleati; Hitler mandò intanto diverse divisioni a sud delle Alpi, ufficialmente per difendere l'Italia, in realtà per controllarla. Per l'articolo inglese il generale Castellano fu ammesso a trattare con gli Alleati a Lisbona e il 27 agosto tornò in Italia con la richiesta di un incontro in Sicilia.",
+  "event": "La firma avvenne il 3 settembre, a Cassibile, tra Castellano e il generale americano Bedell Smith: per l'articolo inglese la cerimonia cominciò alle 14, per l'italiano verso le 17. Per l'articolo inglese Castellano era partito senza un'autorizzazione scritta di Badoglio, che per l'italiano arrivò con un telegramma alle 16.30. L'armistizio restò segreto cinque giorni; per l'articolo italiano perché entrava in vigore con l'annuncio. Per l'articolo inglese un bombardamento di Roma con 500 aerei fu fermato all'ultimo momento, e il 7 settembre Badoglio chiese di rinviare l'annuncio, ma Eisenhower lo confermò per l'8. Per l'articolo italiano alle 17.30 (18.30 in Italia) Radio Algeri trasmise il proclama di Eisenhower e solo alle 19.42 Badoglio parlò agli italiani; per l'articolo inglese lo annunciò prima Badoglio e poi Eisenhower.",
+  "after": "Per l'articolo inglese le forze tedesche attaccarono subito quelle italiane con l'operazione Achse; la maggior parte dell'esercito non era stata informata e non ebbe ordini chiari. Il re, la famiglia reale e Badoglio lasciarono Roma all'alba del 9 settembre e raggiunsero Brindisi. Per l'articolo inglese le forze armate italiane furono sciolte con la forza al nord e al centro, e il 12 settembre i tedeschi liberarono Mussolini e fu poi creata la Repubblica sociale italiana. Per entrambi gli articoli cominciò la Resistenza italiana.",
+  "links": [
+    {
+      "slug": "caduta-di-mussolini-1943",
+      "reason": "Quarantacinque giorni prima, il 25 luglio, il Gran consiglio aveva sfiduciato Mussolini."
+    },
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Due mesi prima, il 10 luglio, gli Alleati erano sbarcati in Sicilia."
+    },
+    {
+      "slug": "repubblica-sociale-italiana-1943",
+      "reason": "Quindici giorni dopo, il 23 settembre, nasce la Repubblica sociale italiana."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Armistice of Cassibile - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Armistice_of_Cassibile",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Armistizio di Cassibile - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Armistizio_di_Cassibile",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma il 3 settembre 1943 e l'annuncio l'8; il testo usa l'8 perché, per l'articolo italiano, l'armistizio entrava in vigore con l'annuncio (per l'inglese la data di entrata in vigore era legata a uno sbarco previsto, lasciata alla discrezione degli Alleati, e Castellano intendeva il 12 settembre). Sull'ora della firma l'inglese dà le 14 e l'italiano le 17, con il testo firmato alle 17.30. Gli articoli divergono sull'ordine degli annunci (Radio Algeri e poi Badoglio per l'italiano; Badoglio e poi Eisenhower per l'inglese). Il pin è su Cassibile, dove fu firmato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "slug": "il-fronte-orientale",
+  "title": "Il fronte orientale",
+  "tagline": "Da Barbarossa a Berlino: Leningrado, Mosca, Stalingrado, Kursk e Bagration nella guerra tra la Germania e l'Unione Sovietica, dal 1941 al 1945.",
+  "intro": "Il percorso segue la guerra tra la Germania e l'Unione Sovietica, dall'invasione del giugno 1941 alla caduta di Berlino nell'aprile 1945: l'operazione Barbarossa, l'assedio di Leningrado, la battaglia di Mosca, Stalingrado, Kursk, l'operazione Bagration e la battaglia di Berlino.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "operazione-barbarossa-1941",
+      "narrative": "Si parte dal 22 giugno 1941: la Germania attacca l'Unione Sovietica lungo un fronte di 2 900 chilometri."
+    },
+    {
+      "insight": "assedio-di-leningrado-1941",
+      "narrative": "L'8 settembre comincia l'assedio di Leningrado, che durerà 872 giorni."
+    },
+    {
+      "insight": "battaglia-di-mosca-1941",
+      "narrative": "Il 30 settembre i tedeschi ripartono verso Mosca; il 5 dicembre i sovietici contrattaccano."
+    },
+    {
+      "insight": "battaglia-di-stalingrado-1942",
+      "narrative": "Il 23 agosto 1942 comincia l'attacco a Stalingrado, che finisce con la resa della 6ª armata."
+    },
+    {
+      "insight": "battaglia-di-kursk-1943",
+      "narrative": "Il 5 luglio 1943 l'ultima grande offensiva tedesca si ferma a Kursk."
+    },
+    {
+      "insight": "operazione-bagration-1944",
+      "narrative": "Il 22 giugno 1944 l'Armata Rossa distrugge il gruppo d'armate Centro in Bielorussia."
+    },
+    {
+      "insight": "battaglia-di-berlino-1945",
+      "narrative": "Il 16 aprile 1945 comincia la battaglia che porta alla caduta di Berlino."
+    }
+  ]
+}

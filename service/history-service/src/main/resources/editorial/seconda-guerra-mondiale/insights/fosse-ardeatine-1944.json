@@ -1,0 +1,54 @@
+{
+  "slug": "fosse-ardeatine-1944",
+  "title": "L'eccidio delle Fosse Ardeatine",
+  "summary": "Il 24 marzo 1944 a Roma le truppe di occupazione tedesche uccidono 335 civili e militari italiani, prigionieri politici, ebrei e detenuti comuni, nelle cave delle Fosse Ardeatine. È la rappresaglia per l'attentato partigiano di via Rasella del giorno prima, in cui erano morti poliziotti tedeschi.",
+  "date": {
+    "year": 1944,
+    "month": 3,
+    "day": 24
+  },
+  "place": {
+    "name": "Fosse Ardeatine, Roma, Italia",
+    "lat": 41.8588,
+    "lon": 12.5146,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Roma era occupata dai tedeschi dal settembre 1943. Il 23 marzo 1944 un gruppo di partigiani dei GAP attaccò in via Rasella una colonna del reggimento di polizia «Bozen», formato da altoatesini (reclute per l'articolo italiano, veterani del Regio Esercito per quello inglese). Per entrambi gli articoli i poliziotti morti furono 33 (28 subito per l'inglese; per l'italiano 28 quando fu presa la decisione, 32 in nottata e il 33º il giorno dopo); per l'articolo inglese furono uccisi forse due civili, tra cui un bambino di undici anni, per quello italiano due civili, tra cui un tredicenne. Per l'articolo inglese Kappler e il comandante Mälzer decisero di fucilare dieci italiani per ogni tedesco ucciso, e Hitler autorizzò la rappresaglia, da eseguire entro 24 ore.",
+  "event": "Per l'articolo inglese Kappler non aveva abbastanza condannati a morte e completò l'elenco con detenuti con lunghe pene, con prigionieri ritenuti «degni di morte» e con ebrei in custodia, e con prigionieri offerti dalla questura. Il 24 marzo i prigionieri furono portati in camion alle cave di pozzolana abbandonate vicino alla via Ardeatina e uccisi a gruppi di cinque con un colpo alla nuca. Per l'articolo inglese per errore ne furono presi 335, cinque più di quelli richiesti, e furono uccisi comunque. Le gallerie furono poi chiuse con l'esplosivo, per nascondere l'eccidio.",
+  "after": "75 delle 335 vittime erano ebree per l'articolo inglese, almeno 75 per quello italiano; per l'articolo inglese la più giovane aveva 15 anni. Per l'articolo inglese i corpi restarono sepolti nelle cave per oltre un anno e i familiari furono avvisati con lentezza, e se lo furono. Le cave sono oggi un cimitero memoriale e monumento nazionale, e ogni anno si leggono i 335 nomi. Per l'articolo inglese Kappler fu condannato all'ergastolo nel 1947 (nel 1948 per quello italiano, che dice che fu condannato solo per 15 morti), evase nel 1977 e morì meno di un anno dopo.",
+  "links": [
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Più di sei mesi prima, l'8 settembre 1943, era stato reso noto l'armistizio."
+    },
+    {
+      "slug": "rastrellamento-del-ghetto-di-roma-1943",
+      "reason": "Più di cinque mesi prima, il 16 ottobre 1943, i tedeschi avevano rastrellato gli ebrei del ghetto di Roma."
+    },
+    {
+      "slug": "liberazione-di-roma-1944",
+      "reason": "Più di dieci settimane dopo, il 4 giugno, Roma è liberata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ardeatine massacre - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ardeatine_massacre",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Eccidio delle Fosse Ardeatine - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Eccidio_delle_Fosse_Ardeatine",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 24 marzo 1944 e 335 vittime, di cui 75 ebrei (almeno 75 per l'italiano). Per l'attentato di via Rasella gli articoli concordano su 33 poliziotti morti in tutto (28 subito per l'inglese; per l'italiano 28 quando fu presa la decisione, 32 in nottata e il 33º il giorno dopo) e divergono sui civili uccisi (due, con un bambino di undici anni forse, per l'inglese; due, con un tredicenne, per l'italiano) e sul reparto (reclute per l'italiano, veterani per l'inglese). Sulla rappresaglia: per l'inglese Kappler e Mälzer decisero il rapporto di dieci a uno con l'avallo di Mackensen e Hitler autorizzò; per l'italiano la proposta fu di Mackensen, dopo aver consultato Kappler, e Kesselring la definì, e Hitler dispose una rappresaglia immediata, ma non esistono documenti che provino un suo ordine diretto con l'entità precisa della rappresaglia. Kappler fu condannato nel 1947 per l'inglese, nel 1948 per l'italiano. Il pin è sul monumento delle Fosse Ardeatine."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

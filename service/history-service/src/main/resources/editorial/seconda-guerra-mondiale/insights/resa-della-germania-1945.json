@@ -1,0 +1,54 @@
+{
+  "slug": "resa-della-germania-1945",
+  "title": "La resa della Germania",
+  "summary": "Nella notte tra l'8 e il 9 maggio 1945 (l'atto è datato 8 maggio) a Karlshorst, Berlino, i rappresentanti dell'esercito tedesco firmano la resa incondizionata, che pone fine alla guerra in Europa. Un primo atto firmato a Reims il giorno prima non fu riconosciuto dai sovietici, che celebrano la vittoria il 9 maggio.",
+  "date": {
+    "year": 1945,
+    "month": 5,
+    "day": 8
+  },
+  "place": {
+    "name": "Karlshorst, Berlino, Germania",
+    "lat": 52.4894,
+    "lon": 13.5256,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Il 30 aprile 1945 Hitler si era ucciso, designando come successore l'ammiraglio Dönitz, che tentò di formare un governo a Flensburg. Per l'articolo inglese dopo la caduta di Berlino e l'incontro tra truppe americane e sovietiche sull'Elba, l'area ancora controllata dai tedeschi era divisa in due e la maggior parte delle forze era in sacche isolate. Il 6 maggio Eisenhower chiese la resa immediata, simultanea e incondizionata su tutti i fronti, minacciando di chiudere le linee a chi si arrendeva e di riprendere i bombardamenti dalla mezzanotte dell'8 maggio. Dönitz autorizzò il generale Jodl a firmare, chiedendo un ritardo di 48 ore.",
+  "event": "Il primo atto di resa fu firmato a Reims, nel quartier generale alleato, alle 2.41 del 7 maggio da Jodl, e doveva entrare in vigore alle 23.01 dell'8 maggio. Per entrambi gli articoli i sovietici lo respinsero: il testo era diverso da quello concordato e il loro rappresentante non era autorizzato a firmare, ma erano pretesti; volevano un atto unico a Berlino, sede del governo da cui era partita l'aggressione. Eisenhower accettò di considerare quello di Reims un breve atto di resa militare. Il testo definitivo fu firmato a Karlshorst da Keitel, con altri due firmatari tedeschi, e datato prima della mezzanotte dell'8 maggio (le 22.43, per l'introduzione dell'articolo inglese): la firma materiale avvenne però dopo la mezzanotte, a quasi l'una del 9, e fu retrodatata; l'articolo italiano dà anche le 0.16.",
+  "after": "Per gli articoli l'atto, in inglese, russo e tedesco, di cui solo le versioni inglese e russa facevano fede, pose fine alla guerra in Europa. Un giornalista dell'Associated Press ruppe l'embargo sulla notizia di Reims, e i paesi occidentali celebrarono il «Giorno della vittoria in Europa» l'8 maggio; i sovietici, che non avevano riconosciuto Reims, celebrarono il «Giorno della vittoria» il 9. Per l'articolo inglese gli Alleati occuparono di fatto la Germania, e il 5 giugno 1945 quattro potenze confermarono con la dichiarazione di Berlino di rappresentarla.",
+  "links": [
+    {
+      "slug": "battaglia-di-berlino-1945",
+      "reason": "Ventidue giorni prima, il 16 aprile, era cominciata la battaglia di Berlino."
+    },
+    {
+      "slug": "conferenza-di-potsdam-1945",
+      "reason": "Settanta giorni dopo, il 17 luglio, i tre grandi si incontrano a Potsdam."
+    },
+    {
+      "slug": "resa-del-giappone-1945",
+      "reason": "Più di tre mesi dopo, il 15 agosto, il Giappone annuncia la resa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "German Instrument of Surrender - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/German_Instrument_of_Surrender",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Capitolazione della Germania nazista - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Capitolazione_della_Germania_nazista",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'8 maggio 1945 per la firma a Karlshorst e il 7 maggio per Reims. Sull'ora della firma a Berlino l'introduzione inglese dà le 22.43 dell'8 maggio, ma il testo inglese e quello italiano dicono che la firma materiale avvenne quasi all'una del 9 e fu retrodatata (l'italiano ha anche le 0.16); le 22.43 sono l'ora della dichiarazione sovietica ufficiale. Il pin è su Karlshorst."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,54 @@
+{
+  "slug": "battaglia-di-midway-1942",
+  "title": "La battaglia delle Midway",
+  "summary": "Tra il 4 e il 7 giugno 1942 la flotta americana del Pacifico sconfigge presso l'atollo di Midway la flotta giapponese: affonda quattro portaerei giapponesi, perdendone una. Per gli articoli è una svolta della guerra nel Pacifico.",
+  "date": {
+    "year": 1942,
+    "month": 6,
+    "day": 4
+  },
+  "place": {
+    "name": "Atollo di Midway, Oceano Pacifico",
+    "lat": 28.2072,
+    "lon": -177.3735,
+    "approximate": true,
+    "note": "La battaglia si combatté in mare, a nord e a nord-ovest dell'atollo: il pin è sull'atollo di Midway, obiettivo giapponese, e non indica dove affondarono le navi."
+  },
+  "before": "Dopo Pearl Harbor il Giappone aveva conquistato in fretta Hong Kong, le Filippine, la Malesia, Singapore e le Indie orientali olandesi. L'ammiraglio Yamamoto voleva eliminare le portaerei americane, che non erano state colpite a Pearl Harbor, e per l'articolo italiano scelse il 2 aprile 1942 come esca l'atollo di Midway, imponendo il suo piano dopo il raid di Doolittle su Tokyo, il 18 aprile. Per l'articolo inglese gli americani avevano decifrato in parte il codice navale giapponese e, con un trucco sull'acqua potabile di Midway, avevano capito che «AF» era Midway e quando sarebbe arrivato l'attacco, il 4 o il 5 giugno.",
+  "event": "Il 4 giugno i giapponesi cominciarono a bombardare Midway. Per l'articolo inglese gli aerei di Midway e quelli delle portaerei americane sorpresero la forza di Nagumo mentre le sue portaerei stavano riarmando e rifornendo gli aerei: una sola bomba esplose fra gli aerei armati e riforniti e la Akagi fu divorata dalle fiamme. Furono affondate le quattro portaerei giapponesi, Akagi, Kaga, Sōryū e Hiryū, e l'incrociatore pesante Mikuma. Gli americani persero la portaerei Yorktown e il cacciatorpediniere Hammann; le portaerei Enterprise e Hornet restarono intatte.",
+  "after": "Per l'articolo inglese morirono 3 057 giapponesi, molti piloti ben addestrati e difficili da sostituire, e 307 americani. Per l'articolo italiano i giapponesi persero più di 300 aerei e gli americani 147, e alla flotta statunitense del Pacifico restarono tre portaerei operative. Per gli articoli la battaglia segnò un punto di svolta della guerra nel Pacifico; per l'articolo inglese, dopo Midway e il logoramento della campagna delle Salomone, la capacità giapponese di rimpiazzare le perdite divenne presto insufficiente mentre quella industriale americana cresceva. Per l'articolo inglese lo storico John Keegan la definì «il colpo più sbalorditivo e decisivo della storia della guerra navale».",
+  "links": [
+    {
+      "slug": "attacco-a-pearl-harbor-1941",
+      "reason": "Quasi sei mesi prima, il 7 dicembre 1941, il Giappone aveva attaccato la flotta americana a Pearl Harbor."
+    },
+    {
+      "slug": "caduta-di-singapore-1942",
+      "reason": "Poco meno di quattro mesi prima, il 15 febbraio, i giapponesi avevano conquistato Singapore."
+    },
+    {
+      "slug": "battaglia-di-guadalcanal-1942",
+      "reason": "Più di due mesi dopo, il 7 agosto, gli americani sbarcano a Guadalcanal."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Midway - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Midway",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia delle Midway - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_delle_Midway",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 4 al 7 giugno 1942; il testo usa il 4. Le perdite sono quelle dell'articolo che le dà, e quelle in aerei dell'articolo italiano. Il pin è sull'atollo di Midway, e non ha codice del paese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

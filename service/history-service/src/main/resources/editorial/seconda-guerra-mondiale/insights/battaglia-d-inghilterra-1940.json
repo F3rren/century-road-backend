@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-d-inghilterra-1940",
+  "title": "La battaglia d'Inghilterra",
+  "summary": "Dal 10 luglio 1940, secondo la datazione ufficiale britannica, la Luftwaffe attacca il Regno Unito per ottenere la superiorità aerea e spingerlo alla pace. La RAF resiste e Hitler rinvia l'invasione: per gli articoli è la prima grande sconfitta tedesca della seconda guerra mondiale.",
+  "date": {
+    "year": 1940,
+    "month": 7,
+    "day": 10
+  },
+  "place": {
+    "name": "Dover e il Canale della Manica, Regno Unito",
+    "lat": 51.1279,
+    "lon": 1.3134,
+    "countryCode": "GB",
+    "approximate": true,
+    "note": "La battaglia si combatté nei cieli di tutto il sud dell'Inghilterra e della Manica: il pin è su Dover, sullo stretto della Manica, ed è solo un segnaposto."
+  },
+  "before": "Dopo la caduta della Francia il Regno Unito era rimasto senza alleati in Europa e minacciato di invasione dal mare. Per l'articolo italiano Lord Halifax e una parte dell'opinione pubblica volevano una pace negoziata, ma Churchill e la maggioranza del governo rifiutarono; il 18 giugno Churchill disse che la battaglia di Francia era finita e che stava per cominciare quella d'Inghilterra.",
+  "event": "I primi attacchi, in luglio, colpirono i convogli di navi nella Manica e porti come Portsmouth; la RAF data a quel 10 luglio l'inizio della battaglia. Il 16 luglio, sei giorni dopo, Hitler ordinò di preparare l'operazione Leone marino, lo sbarco in Inghilterra, possibile solo se la Luftwaffe avesse conquistato la superiorità aerea sulla Manica. In agosto la Luftwaffe passò agli aeroporti e alle infrastrutture della RAF, poi alle fabbriche di aerei e infine, per l'articolo inglese, a bombardamenti su obiettivi politici e su civili. Il comando della caccia britannica, il RAF Fighter Command, era guidato da Hugh Dowding. Per l'articolo italiano anche la Regia Aeronautica partecipò con 170 aerei, in modo del tutto ininfluente.",
+  "after": "Il 19 settembre, per l'articolo italiano, Hitler rinviò a tempo indefinito l'operazione Leone marino. Le analisi del dopoguerra citate dall'articolo italiano contano da luglio a settembre 1 023 caccia persi dalla RAF e 1 887 aerei dalla Luftwaffe, di cui 873 caccia; entrambe le parti dichiararono molti più abbattimenti di quelli reali. I bombardamenti notturni continuarono: per l'articolo inglese gli storici tedeschi considerano la battaglia un'unica campagna, da luglio 1940 a maggio 1941, che include il Blitz.",
+  "links": [
+    {
+      "slug": "dunkerque-1940",
+      "reason": "Un mese e mezzo prima, il 26 maggio, era cominciata l'evacuazione di Dunkerque."
+    },
+    {
+      "slug": "blitz-1940",
+      "reason": "Quasi due mesi dopo, il 7 settembre, la Luftwaffe comincia a bombardare Londra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Britain - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Britain",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia d'Inghilterra - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_d'Inghilterra",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Per l'articolo inglese la durata ufficiale britannica è dal 10 luglio al 31 ottobre 1940, mentre gli storici tedeschi la fanno arrivare a maggio 1941; l'articolo italiano parla di estate e autunno 1940 e data al 10 luglio l'inizio secondo la RAF. Il giorno è quello della datazione britannica. Per l'inizio degli attacchi agli aeroporti (Adlertag) gli articoli concordano sul 13 agosto, dopo un rinvio per il maltempo, ma divergono sulla data prevista (l'11 per l'italiano, intorno al 5 per l'inglese): il testo dice solo «in agosto». Il pin è un segnaposto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

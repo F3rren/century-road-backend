@@ -1,0 +1,55 @@
+{
+  "slug": "sbarco-in-normandia-1944",
+  "title": "Lo sbarco in Normandia",
+  "summary": "Il 6 giugno 1944, il D-Day, truppe alleate sbarcano su cinque spiagge della Normandia, dopo lanci di paracadutisti e un forte bombardamento dal mare e dal cielo. Per l'articolo inglese è la maggiore invasione dal mare della storia e apre la liberazione della Francia. Il costo è alto, soprattutto a Omaha.",
+  "date": {
+    "year": 1944,
+    "month": 6,
+    "day": 6
+  },
+  "place": {
+    "name": "Omaha Beach, Colleville-sur-Mer, Francia",
+    "lat": 49.3697,
+    "lon": -0.8734,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "Lo sbarco avvenne su circa 80 chilometri di costa: il pin è su Omaha Beach, dove le perdite furono maggiori, ed è solo un segnaposto."
+  },
+  "before": "Dopo l'attacco tedesco all'Unione Sovietica Stalin chiedeva un secondo fronte in Europa. Per l'articolo inglese Churchill convinse Roosevelt a rinviare l'invasione promessa per il 1942; la traversata della Manica fu decisa a Washington nel maggio 1943 e a Teheran, nel novembre, fu promessa a Stalin per maggio 1944. Fu scelta la Normandia, non il Pas-de-Calais, più fortificato. Eisenhower comandava le forze alleate; sul fronte tedesco von Rundstedt comandava l'OB West e Rommel, a capo del Gruppo di armate B, sovrintendeva alle difese costiere e al Vallo Atlantico. Per l'articolo inglese gli Alleati ingannarono i tedeschi sul luogo e sulla data con l'operazione Bodyguard, e per il maltempo lo sbarco fu rinviato di 24 ore.",
+  "event": "Poco dopo la mezzanotte tra il 5 e il 6 giugno, per l'articolo inglese, 24 000 soldati aviotrasportati americani, britannici e canadesi furono lanciati nell'entroterra. Dopo un imponente bombardamento dal cielo e dal mare, alle 6.30 circa le fanterie americane sbarcarono a Utah e Omaha e, un'ora più tardi per entrambi gli articoli, quelle britanniche e canadesi a Gold, Juno e Sword: cinque spiagge lungo circa 80 chilometri di costa. Per l'articolo inglese i forti venti spinsero le imbarcazioni verso est, i soldati furono colpiti dai cannoni sopra le spiagge e le perdite maggiori furono a Omaha, dove la costa era alta.",
+  "after": "Per l'articolo inglese gli Alleati stabilirono una testa di ponte su ognuna delle cinque spiagge il primo giorno, ma Carentan, Saint-Lô e Bayeux restarono ai tedeschi; Caen, un obiettivo importante, fu presa solo il 21 luglio, e le cinque teste di ponte furono unite il 12 giugno. Le perdite tedesche il primo giorno sono stimate in 4 000-9 000 uomini, quelle alleate in almeno 10 000, con 4 414 morti accertati. Per l'articolo inglese lo sbarco aprì la liberazione della Francia; per quello italiano la campagna terrestre successiva puntava a liberare Parigi.",
+  "links": [
+    {
+      "slug": "sbarco-in-sicilia-1943",
+      "reason": "Quasi undici mesi prima, il 10 luglio 1943, gli Alleati erano sbarcati in Sicilia."
+    },
+    {
+      "slug": "operazione-bagration-1944",
+      "reason": "Sedici giorni dopo, il 22 giugno, l'Armata Rossa attacca in Bielorussia con l'operazione Bagration."
+    },
+    {
+      "slug": "liberazione-di-parigi-1944",
+      "reason": "Poco meno di tre mesi dopo, il 25 agosto, Parigi è liberata."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Normandy landings - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Normandy_landings",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sbarco in Normandia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sbarco_in_Normandia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 6 giugno 1944. Entrambi dicono che gli sbarchi britannici e canadesi furono un'ora dopo quelli americani delle 6.30. Per le perdite alleate il primo giorno l'inglese dà almeno 10 000 con 4 414 morti accertati; l'italiano circa 10 300 con 2 500 morti, saliti a circa 4 400 secondo ricerche del 2014; per i tedeschi entrambi 4 000-9 000. L'inglese dice «la maggiore invasione dal mare», l'italiano «una delle più grandi». Il pin è su Omaha Beach."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

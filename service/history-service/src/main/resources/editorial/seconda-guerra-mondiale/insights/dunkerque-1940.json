@@ -1,0 +1,50 @@
+{
+  "slug": "dunkerque-1940",
+  "title": "L'evacuazione di Dunkerque",
+  "summary": "Dal 26 maggio al 4 giugno 1940 centinaia di migliaia di soldati alleati accerchiati dai tedeschi sulla costa della Manica, sono portati in Gran Bretagna dalle spiagge e dal porto di Dunkerque con l'operazione Dynamo. Per l'articolo inglese ne sono salvati più di 338 000.",
+  "date": {
+    "year": 1940,
+    "month": 5,
+    "day": 26
+  },
+  "place": {
+    "name": "Dunkerque, Francia",
+    "lat": 51.0343,
+    "lon": 2.3768,
+    "countryCode": "FR",
+    "approximate": false
+  },
+  "before": "I carri armati tedeschi avevano raggiunto la Manica: per l'articolo italiano il 20 maggio presso Abbeville, tagliando fuori in Belgio e nel nord della Francia le migliori armate francesi e il corpo di spedizione britannico. Per l'articolo inglese il comandante britannico Gort vide subito nell'evacuazione la scelta migliore e cominciò a progettare il ripiegamento su Dunkerque, il porto buono più vicino. Per l'articolo inglese l'ordine di fermare l'avanzata corazzata fu dato la sera del 23 maggio da Rundstedt e approvato da Hitler il giorno dopo, e fu revocato il 26; per quello italiano fu deciso il 24 da Rundstedt e Kluge.",
+  "event": "Il 26 maggio cominciò l'operazione Dynamo. Il primo giorno, per l'articolo inglese, furono portati via solo 7 669 soldati, ma entro l'ottavo giorno una flotta improvvisata di oltre 800 imbarcazioni ne aveva salvati 338 226. Molti salirono sui cacciatorpediniere dal molo del porto; altri aspettavano per ore nell'acqua fino alle spalle, e piccole barche partite dalla Gran Bretagna, le «piccole navi» di Dunkerque, li portavano alle navi più grandi. Per l'articolo inglese la prima arrivò il 28 maggio. Nel frattempo, dal 28 al 31 maggio, i circa 40 000 uomini della prima armata francese ritardarono a Lilla l'avanzata tedesca.",
+  "after": "Per l'articolo inglese il corpo di spedizione britannico perse nella campagna di Francia 68 000 uomini e dovette abbandonare quasi tutti i carri armati, i veicoli e l'equipaggiamento. Il 4 giugno Churchill alla Camera dei Comuni parlò di un «miracolo di salvezza» e avvertì che le guerre non si vincono con le evacuazioni. Per l'articolo italiano in Gran Bretagna fu chiamata una «stupefacente vittoria morale», ma gli Alleati avevano perso le loro migliori forze, e la seconda fase dell'offensiva tedesca, il 5 giugno, portò alla caduta della Francia.",
+  "links": [
+    {
+      "slug": "battaglia-di-francia-1940",
+      "reason": "Sedici giorni prima, il 10 maggio, i tedeschi avevano attaccato a ovest."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1940",
+      "reason": "Ventisette giorni dopo, il 22 giugno, la Francia firma l'armistizio con la Germania."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dunkirk evacuation - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dunkirk_evacuation",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Dunkerque - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Dunkerque",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'operazione dal 26 maggio al 4 giugno 1940. Per i salvati l'articolo inglese dà 338 226 soldati; quello italiano circa 338 000, di cui 115 000 francesi; i «più di 400 000» della sua introduzione sono le truppe alleate rimaste nella sacca, in gran parte evacuate. Sull'ordine di fermare i carri armati i due articoli nominano gli stessi protagonisti ma ne descrivono diversamente ruoli e data: per l'inglese Rundstedt ordinò l'arresto il 23 su suggerimento di Kluge e Hitler approvò il 24; per l'italiano Rundstedt e Kluge decisero il 24 e Hitler confermò subito; il testo dà le due versioni. Il pin è su Dunkerque."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "sbarco-in-sicilia-1943",
+  "title": "Lo sbarco alleato in Sicilia",
+  "summary": "Nella notte tra il 9 e il 10 luglio 1943 gli Alleati sbarcano in Sicilia con l'operazione Husky, dopo la fine della campagna in Nord Africa. Dopo circa sei settimane (38 giorni per l'articolo italiano) l'isola è conquistata. Lo sbarco contribuisce alla caduta di Mussolini e porta la guerra sul suolo italiano.",
+  "date": {
+    "year": 1943,
+    "month": 7,
+    "day": 10
+  },
+  "place": {
+    "name": "Gela, Sicilia, Italia",
+    "lat": 37.0757,
+    "lon": 14.2447,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "Gli sbarchi investirono la costa sud-orientale dell'isola, da Licata a Cassibile, presso Siracusa: il pin è su Gela ed è solo un segnaposto."
+  },
+  "before": "Con la fine della campagna in Nord Africa, a maggio 1943, per l'articolo inglese gli Alleati decisero di attaccare l'Asse in Europa passando per l'Italia. Per l'articolo italiano la conferenza di Casablanca, il 22 gennaio 1943, aveva autorizzato lo sbarco in Sicilia a partire da giugno. Le forze alleate erano la 7ª armata americana di Patton e l'8ª britannica di Montgomery. L'isola era difesa dalla 6ª armata italiana del generale Guzzoni e da forze tedesche: per l'articolo inglese, all'inizio di luglio, circa 200 000 italiani e 32 000 tedeschi, più 30 000 uomini a terra della Luftwaffe. Per depistare i nemici gli Alleati usarono anche l'operazione Mincemeat.",
+  "event": "Poco dopo la mezzanotte tra il 9 e il 10 luglio cominciarono i lanci di paracadutisti e poi gli sbarchi dal mare. Per l'articolo inglese venti fino a 70 chilometri orari disperdono i paracadutisti americani, in parte lontani dai punti di raccolta; dei 147 alianti britannici solo 12 atterrarono sull'obiettivo e 69 caddero in mare, con oltre 200 annegati. Per l'articolo italiano una tempesta aveva reso difficile la navigazione delle flotte nelle ore precedenti, ma poco dopo la mezzanotte il vento calò a meno di dieci nodi; lo stesso articolo attribuisce però ai venti forti la dispersione di paracadutisti e alianti. Gli sbarchi avvennero sulla costa sud-orientale.",
+  "after": "Per l'articolo inglese la campagna di terra finì il 17 agosto, per quello italiano durò 38 giorni; le forze dell'Asse evacuarono attraverso lo stretto di Messina. Le perdite alleate furono, per l'articolo inglese, 8 781 per la 7ª armata americana e 11 843 per l'8ª britannica; per l'articolo italiano circa 8 800 perdite statunitensi e circa 12 800 britanniche. Per l'articolo inglese l'invasione portò alla destituzione di Mussolini e al primo governo Badoglio; per quello italiano accelerò anche le trattative per l'armistizio di Cassibile.",
+  "links": [
+    {
+      "slug": "operazione-torch-1942",
+      "reason": "Otto mesi prima, l'8 novembre 1942, gli Alleati erano sbarcati in Marocco e in Algeria."
+    },
+    {
+      "slug": "caduta-di-mussolini-1943",
+      "reason": "Quindici giorni dopo, il 25 luglio, Mussolini cade."
+    },
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Due mesi dopo, l'8 settembre, è reso noto l'armistizio tra l'Italia e gli Alleati."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Allied invasion of Sicily - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Allied_invasion_of_Sicily",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sbarco in Sicilia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sbarco_in_Sicilia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 10 luglio 1943; per l'articolo inglese i lanci e gli sbarchi cominciarono nella notte tra il 9 e il 10. Sulla fine della campagna concordano nella sostanza: l'inglese dà sei settimane e il 17 agosto, l'italiano 38 giorni e il 17 agosto come fine dell'evacuazione. Divergono un poco sulle forze tedesche in Sicilia (32 000 per l'inglese, 28 000 per l'italiano) e sulle perdite alleate, e il testo attribuisce ciascuna cifra all'articolo che la dà. Il pin è su Gela."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

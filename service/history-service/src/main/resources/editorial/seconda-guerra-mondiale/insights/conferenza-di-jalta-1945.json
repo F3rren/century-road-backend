@@ -1,0 +1,53 @@
+{
+  "slug": "conferenza-di-jalta-1945",
+  "title": "La conferenza di Jalta",
+  "summary": "Dal 4 all'11 febbraio 1945, a Jalta, in Crimea, Roosevelt, Churchill e Stalin discutono l'assetto della Germania e dell'Europa dopo la guerra: zone di occupazione, il futuro della Polonia, le Nazioni Unite e l'entrata in guerra dei sovietici contro il Giappone. Il suo significato storico è stato oggetto di accese controversie.",
+  "date": {
+    "year": 1945,
+    "month": 2,
+    "day": 4
+  },
+  "place": {
+    "name": "Palazzo di Livadija, Jalta, Crimea",
+    "lat": 44.4672,
+    "lon": 34.1436,
+    "approximate": false
+  },
+  "before": "A febbraio 1945 la sconfitta tedesca era sicura: gli Alleati occidentali avevano liberato la Francia e il Belgio e combattevano al confine occidentale della Germania, mentre l'Armata Rossa era a 65 chilometri da Berlino per l'articolo inglese e a 80 per quello italiano. La questione era la forma dell'Europa dopo la guerra. Per l'articolo inglese Roosevelt voleva l'appoggio sovietico contro il Giappone e alle Nazioni Unite, Churchill voleva elezioni libere in Polonia, Stalin voleva una sfera d'influenza in Europa orientale; fu Stalin a scegliere Jalta. De Gaulle non fu invitato.",
+  "event": "Per l'articolo inglese i tre capi concordarono la priorità della resa incondizionata della Germania, la sua divisione e quella di Berlino in quattro zone di occupazione, compresa una francese, la smilitarizzazione e la denazificazione. Sulla Polonia fu riconosciuto il governo provvisorio comunista, con la linea Curzon come confine orientale e compensi territoriali a ovest a spese della Germania; Stalin promise elezioni libere. Stalin accettò di entrare nelle Nazioni Unite e promise di entrare in guerra contro il Giappone due o tre mesi dopo la resa tedesca. La Dichiarazione sull'Europa liberata prometteva elezioni libere, ma Molotov vi inserì un linguaggio che ne indeboliva l'applicazione.",
+  "after": "Per l'articolo inglese l'Armata Rossa occupava già tutta la Polonia e gran parte dell'Europa orientale, e la Dichiarazione fece poco per dissipare le intese sulle sfere d'influenza. La conferenza fu poi oggetto di intense controversie: per l'articolo italiano alcuni la considerano l'origine della guerra fredda, per l'espansionismo sovietico, altri l'ultimo momento di leale collaborazione tra le tre grandi potenze, vanificato dalle decisioni occidentali e dagli eventi dei mesi seguenti. Una terza conferenza dei tre grandi si tenne a Potsdam nel luglio 1945.",
+  "links": [
+    {
+      "slug": "battaglia-delle-ardenne-1944",
+      "reason": "Cinquanta giorni prima, il 16 dicembre, i tedeschi avevano attaccato nelle Ardenne."
+    },
+    {
+      "slug": "battaglia-di-berlino-1945",
+      "reason": "Settantun giorni dopo, il 16 aprile, comincia la battaglia di Berlino."
+    },
+    {
+      "slug": "conferenza-di-potsdam-1945",
+      "reason": "Più di cinque mesi dopo, il 17 luglio, i tre grandi si incontrano a Potsdam."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yalta Conference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yalta_Conference",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di Jalta - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_Jalta",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la conferenza dal 4 all'11 febbraio 1945. Divergono sulla distanza dell'Armata Rossa da Berlino (65 o 80 chilometri). Le decisioni sono quelle riportate dall'articolo inglese. Il pin è sul palazzo di Livadija, vicino a Jalta."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

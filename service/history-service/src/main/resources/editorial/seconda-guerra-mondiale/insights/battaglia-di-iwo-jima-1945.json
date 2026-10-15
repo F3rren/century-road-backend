@@ -1,0 +1,49 @@
+{
+  "slug": "battaglia-di-iwo-jima-1945",
+  "title": "La battaglia di Iwo Jima",
+  "summary": "Il 19 febbraio 1945 i Marines americani sbarcano a Iwo Jima, un'isola giapponese fortificata con 18 chilometri di tunnel. Dopo cinque settimane di combattimenti, finiti il 26 marzo, l'isola è conquistata; gli americani hanno più perdite totali, i giapponesi più morti. La foto della bandiera sul monte Suribachi diventa famosissima.",
+  "date": {
+    "year": 1945,
+    "month": 2,
+    "day": 19
+  },
+  "place": {
+    "name": "Iwo Jima, Isole Vulcano, Giappone",
+    "lat": 24.75,
+    "lon": 141.2833,
+    "approximate": false
+  },
+  "before": "Dopo la perdita delle Marianne, nell'estate del 1944, per l'articolo inglese Iwo Jima divenne più importante per i giapponesi: serviva da stazione di allarme contro i bombardieri americani diretti in Giappone. Gli americani volevano usare i suoi aeroporti per i caccia di scorta ai B-29. L'isola fu fortificata con una fitta rete di bunker e, per l'articolo inglese, 18 chilometri di gallerie; era bombardata dal 15 giugno 1944 per l'articolo inglese; per l'italiano i primi raid furono il 24 giugno, quelli regolari da agosto e il bombardamento preliminare cominciò l'8 dicembre. Il comandante Kuribayashi sapeva di non poter vincere e voleva infliggere perdite tali da far riconsiderare agli Stati Uniti l'invasione del Giappone.",
+  "event": "Il 19 febbraio, con la supremazia aerea e navale americana, i Marines sbarcarono. Per l'articolo italiano il primo giorno costò oltre 600 morti e circa 1 900 feriti. Per l'articolo inglese il 23 febbraio sei Marines issarono una bandiera americana sul monte Suribachi, alto 169 metri: era il secondo alzabandiera di quel giorno, e la fotografia di Joe Rosenthal diventò una delle immagini più riprodotte della guerra. Poi la battaglia continuò nel nord dell'isola contro i giapponesi, che combattevano nei tunnel.",
+  "after": "La battaglia finì ufficialmente il 26 marzo. Per l'articolo inglese su 21 000 soldati giapponesi solo 216 furono fatti prigionieri e più di 26 000 americani furono colpiti, 6 800 morti; per l'articolo italiano le perdite americane furono da 23 000 a 26 000 tra morti e feriti per i soli Marines, più quelle della marina. Per entrambi fu l'unica battaglia dello sbarco anfibio nel Pacifico in cui gli americani ebbero più perdite totali dei giapponesi, anche se i morti giapponesi furono molto più numerosi. Per l'articolo inglese l'invasione fu controversa: l'ex capo delle operazioni navali Pratt giudicò l'isola inutile come base. L'esperienza servì per Okinawa e per il piano di invadere il Giappone.",
+  "links": [
+    {
+      "slug": "battaglia-di-guadalcanal-1942",
+      "reason": "Due anni e mezzo prima, il 7 agosto 1942, i Marines erano sbarcati a Guadalcanal."
+    },
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Quasi sei mesi dopo, il 6 agosto, una bomba atomica distrugge Hiroshima."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Iwo Jima - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Iwo_Jima",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Iwo Jima - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Iwo_Jima",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio il 19 febbraio e la fine il 26 marzo 1945. Le perdite americane coincidono nella sostanza: oltre 26 000 con 6 800 morti per l'inglese; l'italiano dà oltre 23 000 nell'introduzione e 23 000-26 000 (25 851) per i soli Marines nel testo, con 5 885, 5 931 o 6 821 morti tra i Marines secondo le fonti. Divergono sull'inizio dei bombardamenti (15 giugno 1944 per l'inglese; per l'italiano raid il 24 giugno, bombardamenti regolari da agosto, programma preliminare dall'8 dicembre). Il pin è sull'isola, senza codice del paese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
