@@ -1,0 +1,37 @@
+{
+  "slug": "dalla-polonia-alla-caduta-della-francia",
+  "title": "Dalla Polonia alla caduta della Francia",
+  "tagline": "Dal patto Molotov-Ribbentrop alla resa della Francia: la Polonia, la Finlandia, la Scandinavia e la battaglia di Francia in meno di un anno.",
+  "intro": "Il percorso segue il primo anno della seconda guerra mondiale in Europa: il patto Molotov-Ribbentrop, l'invasione tedesca e poi sovietica della Polonia, la guerra d'inverno in Finlandia, l'invasione di Danimarca e Norvegia, la battaglia di Francia e l'armistizio di Compiègne.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "patto-molotov-ribbentrop-1939",
+      "narrative": "Si parte dal 23 agosto 1939: la Germania e l'Unione Sovietica firmano il patto di non aggressione, con il protocollo segreto."
+    },
+    {
+      "insight": "invasione-della-polonia-1939",
+      "narrative": "Il 1º settembre la Germania attacca la Polonia e due giorni dopo Regno Unito e Francia le dichiarano guerra."
+    },
+    {
+      "insight": "invasione-sovietica-della-polonia-1939",
+      "narrative": "Il 17 settembre l'Armata Rossa entra in Polonia da est e il paese viene spartito."
+    },
+    {
+      "insight": "guerra-d-inverno-1939",
+      "narrative": "Il 30 novembre l'Unione Sovietica attacca la Finlandia, che resiste fino a marzo."
+    },
+    {
+      "insight": "invasione-della-danimarca-e-della-norvegia-1940",
+      "narrative": "Il 9 aprile 1940 la Germania occupa la Danimarca e invade la Norvegia."
+    },
+    {
+      "insight": "battaglia-di-francia-1940",
+      "narrative": "Il 10 maggio i carri armati tedeschi passano per le Ardenne e raggiungono la Manica."
+    },
+    {
+      "insight": "armistizio-di-compiegne-1940",
+      "narrative": "Il 22 giugno la Francia firma l'armistizio nel vagone ferroviario del 1918."
+    }
+  ]
+}

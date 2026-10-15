@@ -1,0 +1,54 @@
+{
+  "slug": "rastrellamento-del-ghetto-di-roma-1943",
+  "title": "Il rastrellamento del ghetto di Roma",
+  "summary": "Il 16 ottobre 1943, durante l'occupazione tedesca di Roma, la polizia tedesca arresta 1 259 persone, quasi tutte appartenenti alla comunità ebraica, soprattutto nel ghetto presso il Portico d'Ottavia. Dopo gli arresti, 1 023 persone sono deportate ad Auschwitz: ne sopravvivono sedici.",
+  "date": {
+    "year": 1943,
+    "month": 10,
+    "day": 16
+  },
+  "place": {
+    "name": "Portico d'Ottavia, ghetto di Roma, Italia",
+    "lat": 41.8918,
+    "lon": 12.4796,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "I tedeschi occuparono Roma dopo l'armistizio dell'8 settembre 1943. Il ghetto, istituito nel 1555 da papa Paolo IV, era un quartiere di quattro isolati presso il Portico d'Ottavia; la comunità ebraica romana contava circa 8 000 persone per l'articolo inglese e tra 8 000 e 12 000 per quello italiano, e dal 1938 valevano in Italia le leggi razziali. Per l'articolo italiano il 24 settembre Himmler ordinò a Kappler di trasferire in Germania e «liquidare» tutti gli ebrei. Il 26 settembre Kappler chiese alla comunità 50 chili d'oro, minacciando la deportazione di duecento capifamiglia; l'oro fu consegnato il 28.",
+  "event": "All'alba di sabato 16 ottobre, giorno festivo per gli ebrei, 365 uomini della polizia tedesca effettuarono il rastrellamento (per l'articolo inglese circondarono il ghetto; per l'italiano un centinaio operò nel ghetto e gli altri nel resto della città), perché nessun italiano era ritenuto abbastanza fidato; per l'articolo inglese il capo del reparto antiebraico Dannecker aveva ordinato di svuotarlo, e alcuni riuscirono a fuggire sui tetti. Per l'articolo italiano l'operazione durò dalle 5.30 alle 14 e ci fu la collaborazione di funzionari della Repubblica sociale. Furono arrestate 1 259 persone: 363 uomini, 689 donne e 207 bambini. Per l'articolo inglese 1 023 furono riconosciute come ebree e portate al Collegio militare di Palazzo Salviati.",
+  "after": "Il 18 ottobre i prigionieri furono caricati alla stazione Tiburtina su un convoglio per Auschwitz: per l'articolo italiano 18 carri bestiame, arrivati il 22 ottobre. Di chi fu arrestato il 16 ottobre e deportato tornarono solo sedici persone, quindici uomini e una donna. Per l'articolo italiano durante l'occupazione di Roma furono deportati 2 091 ebrei e ne tornarono 101; per l'articolo inglese più di 2 000, di cui sopravvissero 102. Per l'articolo inglese il comportamento di Pio XII, con il Vaticano a pochi passi, è oggetto di una controversia storica; l'articolo italiano dedica una sezione al «silenzio del Papa» e alle iniziative vaticane. Roma fu liberata il 4 giugno 1944.",
+  "links": [
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Trentotto giorni prima, l'8 settembre, era stato reso noto l'armistizio con gli Alleati."
+    },
+    {
+      "slug": "rivolta-del-ghetto-di-varsavia-1943",
+      "reason": "Quasi sei mesi prima, il 19 aprile, era scoppiata la rivolta del ghetto di Varsavia."
+    },
+    {
+      "slug": "fosse-ardeatine-1944",
+      "reason": "Più di cinque mesi dopo, il 24 marzo 1944, i tedeschi uccidono 335 persone alle Fosse Ardeatine."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Raid on the Roman Ghetto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Raid_on_the_Roman_Ghetto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rastrellamento del ghetto di Roma - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rastrellamento_del_ghetto_di_Roma",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 16 ottobre 1943, 1 259 arrestati, 1 023 deportati ad Auschwitz e 16 sopravvissuti. Divergono sul numero degli ebrei romani (8 000 per l'inglese, 8 000-12 000 per l'italiano), sui deportati durante l'occupazione (2 091 con 101 sopravvissuti per l'italiano, più di 2 000 con 102 per l'inglese) e sul numero dei prigionieri caricati sui treni (almeno 1 035 per l'inglese). Il giorno della partenza (18 ottobre) è in entrambi; l'arrivo il 22 ottobre e i 18 carri bestiame sono solo nell'italiano. Entrambi dicono che nessun italiano partecipò all'azione; l'italiano parla comunque della collaborazione di funzionari della Repubblica sociale. Il pin è sul Portico d'Ottavia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

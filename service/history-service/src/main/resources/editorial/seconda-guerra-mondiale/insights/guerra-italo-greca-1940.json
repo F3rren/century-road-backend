@@ -1,0 +1,51 @@
+{
+  "slug": "guerra-italo-greca-1940",
+  "title": "L'Italia attacca la Grecia",
+  "summary": "Il 28 ottobre 1940 l'Italia, che già controlla l'Albania, attacca la Grecia dopo un ultimatum pensato per essere respinto. L'offensiva si blocca, i greci contrattaccano e respingono gli italiani in Albania: sarà la Germania, ad aprile 1941, a chiudere la campagna.",
+  "date": {
+    "year": 1940,
+    "month": 10,
+    "day": 28
+  },
+  "place": {
+    "name": "Giannina (Ioannina), Epiro, Grecia",
+    "lat": 39.665,
+    "lon": 20.8537,
+    "countryCode": "GR",
+    "approximate": true,
+    "note": "L'offensiva partì dal confine albanese lungo tutto il fronte, dalle montagne al mare: il pin è su Giannina, città dell'Epiro, ed è solo un segnaposto."
+  },
+  "before": "L'Italia occupava l'Albania dall'aprile 1939. Per l'articolo inglese una campagna di stampa ostile e una serie di provocazioni, culminate il 15 agosto 1940 nell'affondamento dell'incrociatore greco Elli da parte di un sommergibile italiano, precedettero la guerra. Per l'articolo italiano Mussolini voleva riequilibrare l'alleanza con la Germania e affermare il ruolo autonomo dell'Italia. L'ultimatum, redatto da Ciano il 20 ottobre, fu per l'articolo italiano concepito per essere inaccettabile: l'ambasciatore Grazzi lo consegnò a Metaxas alle 3 del 28 ottobre, chiedendo di occupare entro tre ore «alcuni punti strategici» della Grecia.",
+  "event": "Metaxas respinse l'ultimatum. All'alba del 28 ottobre le forze italiane, partite dalle basi in Albania, si mossero lungo il fronte: per i resoconti italiani alle 6, ora di scadenza dell'ultimatum, per fonti greche già alle 5.30. Per l'articolo inglese le divisioni, mal armate e mal comandate, incontrarono una resistenza inattesa dell'esercito greco e penetrarono solo di pochi chilometri, fra montagne e fango. Per l'articolo italiano il generale Visconti Prasca aveva pianificato male l'offensiva, condotta con forze insufficienti.",
+  "after": "Per l'articolo inglese, con l'appoggio aereo e di materiali britannico, a metà novembre i greci fermarono gli italiani e passarono al contrattacco, riportandoli in Albania: una sconfitta definita da uno storico il «primo rovescio dell'Asse in tutta la guerra». In marzo 1941 la controffensiva italiana fallì. Il 6 aprile la Germania invase la Grecia: per l'articolo inglese i greci si arresero ai tedeschi il 20 aprile e agli italiani il 23. Per entrambi gli articoli gli italiani ebbero 13 755 morti.",
+  "links": [
+    {
+      "slug": "entrata-dell-italia-nella-seconda-guerra-mondiale-1940",
+      "reason": "Quattro mesi e mezzo prima, il 10 giugno, l'Italia era entrata in guerra."
+    },
+    {
+      "slug": "notte-di-taranto-1940",
+      "reason": "Due settimane dopo, l'11 novembre, un attacco aereo britannico colpisce la flotta italiana a Taranto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Greco-Italian War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greco-Italian_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campagna italiana di Grecia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campagna_italiana_di_Grecia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 28 ottobre 1940 come inizio. Per l'ora dell'attacco l'articolo italiano riporta le due versioni, italiana (6.00) e greca (5.30). Sull'ultimatum l'introduzione dell'articolo inglese parla di cessione di territorio, ma il suo testo di libero passaggio per occupare «punti strategici» non precisati, come l'articolo italiano: il testo segue l'italiano, che dà anche l'ora di consegna (le 3 del mattino), mentre l'inglese dice solo «alla vigilia» del 28. Il pin è su Giannina."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

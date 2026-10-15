@@ -1,0 +1,37 @@
+{
+  "slug": "dalla-normandia-alla-resa",
+  "title": "Dalla Normandia alla resa",
+  "tagline": "Dallo sbarco in Normandia alla conferenza di Potsdam: la liberazione di Parigi, Market Garden, le Ardenne, Jalta e la resa della Germania.",
+  "intro": "Il percorso segue la guerra in Europa occidentale e la sua fine, dallo sbarco in Normandia del 6 giugno 1944 alla conferenza di Potsdam del luglio 1945: la liberazione di Parigi, l'operazione Market Garden, la battaglia delle Ardenne, la conferenza di Jalta e la resa della Germania.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "sbarco-in-normandia-1944",
+      "narrative": "Si parte dal 6 giugno 1944: gli Alleati sbarcano su cinque spiagge della Normandia."
+    },
+    {
+      "insight": "liberazione-di-parigi-1944",
+      "narrative": "Il 25 agosto Parigi è liberata dopo l'insurrezione della Resistenza."
+    },
+    {
+      "insight": "operazione-market-garden-1944",
+      "narrative": "Il 17 settembre l'operazione Market Garden tenta di prendere il ponte di Arnhem e fallisce."
+    },
+    {
+      "insight": "battaglia-delle-ardenne-1944",
+      "narrative": "Il 16 dicembre i tedeschi attaccano a sorpresa nelle Ardenne."
+    },
+    {
+      "insight": "conferenza-di-jalta-1945",
+      "narrative": "Il 4 febbraio 1945 Roosevelt, Churchill e Stalin si incontrano a Jalta."
+    },
+    {
+      "insight": "resa-della-germania-1945",
+      "narrative": "L'8 maggio la Germania firma a Berlino la resa incondizionata."
+    },
+    {
+      "insight": "conferenza-di-potsdam-1945",
+      "narrative": "Il 17 luglio comincia a Potsdam l'ultima conferenza dei tre grandi."
+    }
+  ]
+}

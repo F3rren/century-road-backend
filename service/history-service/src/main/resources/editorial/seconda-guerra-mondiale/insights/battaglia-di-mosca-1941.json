@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-mosca-1941",
+  "title": "La battaglia di Mosca",
+  "summary": "Il 30 settembre 1941 la Wehrmacht riprende l'avanzata verso Mosca con l'operazione Tifone e circonda due grandi sacche sovietiche, ma si ferma alle porte della capitale. Il 5 dicembre l'Armata Rossa contrattacca e il piano tedesco di una vittoria rapida sull'Unione Sovietica fallisce.",
+  "date": {
+    "year": 1941,
+    "month": 9,
+    "day": 30
+  },
+  "place": {
+    "name": "Mosca, Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "La battaglia si combatté su un settore del fronte orientale di circa 600 chilometri, per l'articolo inglese: il pin è su Mosca, l'obiettivo tedesco, ed è solo un segnaposto."
+  },
+  "before": "Dopo la presa di Smolensk, il 16 luglio, l'avanzata verso Mosca si arrestò: Hitler, per cui la capitale era secondaria, spostò forze a sud per accerchiare le forze sovietiche a Kiev, nonostante i generali Halder e Brauchitsch volessero attaccare Mosca. Per l'articolo inglese l'operazione costò all'Armata Rossa quasi 700 000 uomini, tra morti, prigionieri e feriti, al 26 settembre. Il 6 settembre, per l'articolo italiano, Hitler cominciò a riunire le forze per Mosca; la ripresa dell'offensiva fu fissata al 30 settembre.",
+  "event": "Il 30 settembre cominciò l'operazione Tifone. Per l'articolo inglese vi presero parte fino a due milioni di soldati tedeschi, contro 1 250 000 sovietici. I tedeschi circondarono due sacche, a Vjaz'ma e a Brjansk; per l'articolo inglese le punte di due gruppi corazzati si incontrarono a Vjaz'ma il 10 ottobre e per eliminare le truppe accerchiate servirono 28 divisioni. Il 7 ottobre, per l'articolo inglese, la prima neve e il fango della rasputitsa rallentarono entrambi gli eserciti. Per gli articoli Stalin poté portare rinforzi dalla Siberia dopo le informazioni di Richard Sorge sulle intenzioni del Giappone.",
+  "after": "Il 5 dicembre i sovietici passarono al contrattacco e respinsero i tedeschi dalla capitale. Per l'articolo inglese l'8 dicembre Hitler ordinò di passare alla difensiva, il 19 destituì il comandante dell'esercito Brauchitsch assumendone il comando e il 20 vietò il ripiegamento. Le perdite sono molto discusse: per l'articolo inglese quelle sovietiche vanno da circa 654 000 a 1,8 milioni, secondo le fonti e il periodo considerato. Per l'articolo italiano il fallimento a Mosca fu, con la battaglia d'Inghilterra, il secondo grande punto di svolta a sfavore dei tedeschi.",
+  "links": [
+    {
+      "slug": "assedio-di-leningrado-1941",
+      "reason": "Ventidue giorni prima, l'8 settembre, era cominciato l'assedio di Leningrado."
+    },
+    {
+      "slug": "operazione-barbarossa-1941",
+      "reason": "Cento giorni prima, il 22 giugno, la Germania aveva invaso l'Unione Sovietica."
+    },
+    {
+      "slug": "battaglia-di-stalingrado-1942",
+      "reason": "Quasi undici mesi dopo, il 23 agosto 1942, comincia la battaglia di Stalingrado."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Moscow - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Moscow",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Mosca - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Mosca",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 30 settembre 1941 come ripresa dell'avanzata; per l'articolo inglese a volte si indica il 2 ottobre e l'inizio della battaglia nell'introduzione è «ottobre». Le perdite divergono molto secondo le fonti citate dall'articolo inglese, e il testo ne dà solo l'intervallo. Divergono anche sulla data della prima neve (7 ottobre per l'inglese, 6 per l'italiano) e sulla destituzione di Brauchitsch (19 dicembre per l'inglese, 10 per l'italiano). Il pin è su Mosca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

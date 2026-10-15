@@ -1,0 +1,37 @@
+{
+  "slug": "il-mediterraneo-e-l-africa",
+  "title": "Il Mediterraneo e l'Africa",
+  "tagline": "Dall'entrata in guerra dell'Italia alla caduta di Mussolini: Grecia, Taranto, El Alamein, lo sbarco in Nord Africa e quello in Sicilia.",
+  "intro": "Il percorso segue la guerra nel Mediterraneo e in Africa del Nord, dal 10 giugno 1940, quando l'Italia entra in guerra, fino al luglio 1943: l'attacco alla Grecia, la notte di Taranto, la battaglia di El Alamein, l'operazione Torch, lo sbarco in Sicilia e la caduta di Mussolini.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "entrata-dell-italia-nella-seconda-guerra-mondiale-1940",
+      "narrative": "Si parte dal 10 giugno 1940: Mussolini annuncia da Palazzo Venezia l'entrata in guerra."
+    },
+    {
+      "insight": "guerra-italo-greca-1940",
+      "narrative": "Il 28 ottobre l'Italia attacca la Grecia, ma l'offensiva si arena."
+    },
+    {
+      "insight": "notte-di-taranto-1940",
+      "narrative": "L'11 novembre aerei britannici colpiscono la flotta italiana nel porto di Taranto."
+    },
+    {
+      "insight": "seconda-battaglia-di-el-alamein-1942",
+      "narrative": "Il 23 ottobre 1942 Montgomery attacca a El Alamein e l'Asse comincia a ritirarsi."
+    },
+    {
+      "insight": "operazione-torch-1942",
+      "narrative": "L'8 novembre gli Alleati sbarcano in Marocco e in Algeria."
+    },
+    {
+      "insight": "sbarco-in-sicilia-1943",
+      "narrative": "Il 10 luglio 1943 gli Alleati sbarcano in Sicilia: la guerra arriva in Italia."
+    },
+    {
+      "insight": "caduta-di-mussolini-1943",
+      "narrative": "Il 25 luglio il Gran consiglio sfiducia Mussolini, che viene arrestato."
+    }
+  ]
+}

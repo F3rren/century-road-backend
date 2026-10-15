@@ -1,0 +1,50 @@
+{
+  "slug": "bombardamento-atomico-di-nagasaki-1945",
+  "title": "Il bombardamento atomico di Nagasaki",
+  "summary": "Il 9 agosto 1945, tre giorni dopo Hiroshima, un B-29 americano sgancia la bomba atomica «Fat Man» su Nagasaki, dopo che le nuvole hanno impedito di colpire l'obiettivo previsto, Kokura. Per l'articolo inglese muoiono tra 60 000 e 80 000 persone. Il Giappone annuncia la resa il 15 agosto.",
+  "date": {
+    "year": 1945,
+    "month": 8,
+    "day": 9
+  },
+  "place": {
+    "name": "Nagasaki, Giappone",
+    "lat": 32.7503,
+    "lon": 129.8777,
+    "countryCode": "JP",
+    "approximate": false
+  },
+  "before": "Dopo Hiroshima i comandi americani decisero di procedere con un secondo attacco. Per l'articolo inglese la missione, prevista per l'11 agosto, fu anticipata di due giorni per evitare cinque giorni di maltempo. Per l'articolo inglese in quegli stessi giorni l'Unione Sovietica dichiarò guerra al Giappone e invase la Manciuria. Per l'articolo inglese l'obiettivo primario era Kokura e quello secondario Nagasaki.",
+  "event": "Il 9 agosto il B-29 Bockscar decollò da Tinian con la bomba «Fat Man». Dopo tre passaggi sopra Kokura coperta dalle nubi e a corto di carburante, l'aereo fu dirottato su Nagasaki. Sull'ultima fase gli articoli divergono: per l'italiano il capitano avvistò la città alle 11.02 ancora coperta dalle nuvole e usò il radar contro gli ordini; per l'inglese alle 11.01 uno squarcio tra le nubi permise la mira a vista. Per l'articolo italiano la bomba, con circa 6,4 chili di plutonio 239, esplose a circa 470 metri, quasi 4 chilometri a nord-ovest del punto previsto; per l'inglese con circa 5 chili, a 503 metri, quasi 3 chilometri. Per gli articoli l'esplosione fu confinata nella valle di Urakami e le colline protessero gran parte della città.",
+  "after": "Per l'articolo inglese morirono tra 60 000 e 80 000 persone nei mesi seguenti, circa la metà il primo giorno. Per l'articolo italiano morirono subito almeno 35 000-40 000 dei 240 000 abitanti (le stime vanno da 22 000 a 75 000), più di 55 000 furono feriti, e le vittime totali furono circa 80 000; in tutto, nei mesi seguenti, le due città superarono le 200 000. Per l'articolo inglese il Giappone annunciò la resa il 15 agosto, sei giorni dopo, e firmò lo strumento di resa il 2 settembre.",
+  "links": [
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Tre giorni prima, il 6 agosto, una bomba atomica aveva colpito Hiroshima."
+    },
+    {
+      "slug": "resa-del-giappone-1945",
+      "reason": "Sei giorni dopo, il 15 agosto, il Giappone annuncia la resa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Atomic bombings of Hiroshima and Nagasaki - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bombardamenti atomici di Hiroshima e Nagasaki - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Bombardamenti_atomici_di_Hiroshima_e_Nagasaki",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 9 agosto 1945. Le stime delle vittime concordano nell'ordine di grandezza (60 000-80 000 per l'inglese; per l'italiano almeno 35 000-40 000 subito e circa 80 000 in tutto). Sulla rotta gli articoli concordano; sull'ultima fase e sulla bomba divergono, come dice il testo. Gli articoli sono gli stessi dell'approfondimento su Hiroshima, perché trattano i due bombardamenti. Il pin è su Nagasaki."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

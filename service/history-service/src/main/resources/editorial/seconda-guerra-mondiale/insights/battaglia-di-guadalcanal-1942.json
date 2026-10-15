@@ -1,0 +1,50 @@
+{
+  "slug": "battaglia-di-guadalcanal-1942",
+  "title": "La campagna di Guadalcanal",
+  "summary": "Il 7 agosto 1942 i Marines americani sbarcano a Guadalcanal, nelle isole Salomone: è la prima grande offensiva alleata contro il Giappone. Dopo sei mesi di battaglie a terra, in mare e in cielo attorno all'aeroporto di Henderson Field, i giapponesi evacuano l'isola entro il 9 febbraio 1943.",
+  "date": {
+    "year": 1942,
+    "month": 8,
+    "day": 7
+  },
+  "place": {
+    "name": "Guadalcanal, Isole Salomone",
+    "lat": -9.4281,
+    "lon": 160.0527,
+    "countryCode": "SB",
+    "approximate": false
+  },
+  "before": "Dopo le battaglie del Mar dei Coralli e delle Midway gli Alleati decisero, per l'articolo inglese, di attaccare in Nuova Guinea e nelle isole Salomone per difendere le rotte verso l'Australia e, alla fine, colpire la grande base giapponese di Rabaul. I giapponesi avevano occupato Tulagi in maggio e, per l'articolo italiano, all'inizio di luglio avevano cominciato a costruire una pista d'aviazione a Guadalcanal, che, una volta completata, avrebbe potuto minacciare le rotte di rifornimento tra Stati Uniti, Australia e Nuova Zelanda.",
+  "event": "Per l'articolo inglese il maltempo permise alla flotta alleata di arrivare di sorpresa la notte tra il 6 e il 7 agosto. Per l'articolo inglese 3 000 Marines attaccarono Tulagi e le isole vicine, difese da 886 uomini della marina giapponese che opposero accanita resistenza e furono uccisi quasi fino all'ultimo uomo, con 248 perdite americane (122 per l'articolo italiano); a Guadalcanal sbarcarono alle 9.10 del 7 agosto 11 000 Marines, incontrarono poca resistenza e occuparono l'aeroporto entro le 16 dell'8 agosto. Per l'articolo italiano i soldati giapponesi, privi di armi pesanti e in preda al panico per il bombardamento, abbandonarono la base.",
+  "after": "Gli americani completarono la pista, che chiamarono Henderson Field. Per l'articolo inglese i giapponesi tentarono più volte di riprenderla, in settembre e in ottobre, e la campagna comprese grandi battaglie navali, da Savo a Capo Esperance, fino alla battaglia navale di Guadalcanal, a metà novembre, vittoria alleata decisiva. A dicembre i giapponesi rinunciarono all'isola ed evacuarono le ultime forze entro il 9 febbraio 1943. Per l'articolo inglese gli Alleati ottennero l'iniziativa strategica nel Pacifico, che non persero più.",
+  "links": [
+    {
+      "slug": "battaglia-di-midway-1942",
+      "reason": "Più di due mesi prima, il 4 giugno, la flotta americana aveva sconfitto quella giapponese alle Midway."
+    },
+    {
+      "slug": "battaglia-di-iwo-jima-1945",
+      "reason": "Due anni e mezzo dopo, il 19 febbraio 1945, i Marines sbarcano a Iwo Jima."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Guadalcanal campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Guadalcanal_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campagna di Guadalcanal - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campagna_di_Guadalcanal",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la campagna dal 7 agosto 1942 al 9 febbraio 1943. I particolari degli sbarchi sono dell'articolo inglese; il dettaglio dei giapponesi privi di armi pesanti è dell'articolo italiano. Sulle perdite americane a Tulagi, Gavutu e Tanambogo gli articoli divergono: 248 per l'inglese, 122 per l'italiano. Il pin è sull'aeroporto di Henderson Field."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "slug": "resa-del-giappone-1945",
+  "title": "La resa del Giappone",
+  "summary": "Il 15 agosto 1945 l'imperatore Hirohito annuncia alla radio la resa del Giappone, dopo le due bombe atomiche e l'entrata in guerra dell'Unione Sovietica. L'atto di resa è firmato il 2 settembre a bordo della USS Missouri: finisce la seconda guerra mondiale.",
+  "date": {
+    "year": 1945,
+    "month": 8,
+    "day": 15
+  },
+  "place": {
+    "name": "Tokyo, Giappone",
+    "lat": 35.6762,
+    "lon": 139.6503,
+    "countryCode": "JP",
+    "approximate": false
+  },
+  "before": "Alla fine di luglio la marina giapponese non era più in grado di condurre grandi operazioni e un'invasione alleata era imminente. Il 26 luglio la dichiarazione di Potsdam aveva chiesto la resa incondizionata. Per gli articoli i capi giapponesi, mentre dicevano in pubblico di voler combattere fino all'ultimo, chiedevano in segreto all'Unione Sovietica di mediare. Il 6 agosto fu bombardata Hiroshima. Per l'articolo inglese i sovietici dichiararono guerra la sera dell'8 agosto e invasero la Manciuria subito dopo la mezzanotte; il 9 agosto fu bombardata Nagasaki. Per l'articolo italiano questi due attacchi spinsero Hirohito a ordinare ai capi di accettare le condizioni di Potsdam.",
+  "event": "Tra il 12 e il 15 agosto un gruppo di ufficiali tentò un colpo di Stato per impedire la resa, senza successo. Il 15 agosto, a mezzogiorno, fu trasmesso il discorso registrato dell'imperatore, che per la prima volta si rivolgeva direttamente al popolo. Per l'articolo inglese Hirohito disse che la guerra non si era sviluppata necessariamente a vantaggio del Giappone e che il nemico aveva cominciato a usare «una bomba nuova e crudelissima». Per gli articoli la registrazione, per la sua cattiva qualità e il giapponese antico, fu molto difficile da capire; per l'articolo inglese alcuni ufficiali si uccisero piuttosto che arrendersi.",
+  "after": "Il 28 agosto cominciò l'occupazione del Giappone. Il 2 settembre, a bordo della corazzata americana Missouri, funzionari del governo giapponese firmarono l'atto di resa, che pose fine alle ostilità con gli Alleati. Per gli articoli alcuni soldati giapponesi sparsi in Asia e nel Pacifico rifiutarono di arrendersi per mesi e anni, fino agli anni Settanta. Per l'articolo inglese lo stato di guerra con la maggior parte degli Alleati finì formalmente solo con il trattato di San Francisco, in vigore dal 28 aprile 1952; con l'Unione Sovietica la pace arrivò nel 1956. Per l'articolo inglese sono discussi il ruolo delle bombe atomiche nella resa e l'etica dei due attacchi; per l'italiano gli storici dibattono l'etica del loro uso.",
+  "links": [
+    {
+      "slug": "bombardamento-atomico-di-nagasaki-1945",
+      "reason": "Sei giorni prima, il 9 agosto, una seconda bomba atomica aveva colpito Nagasaki."
+    },
+    {
+      "slug": "resa-della-germania-1945",
+      "reason": "Più di tre mesi prima, l'8 maggio, si era arresa la Germania."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Surrender of Japan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Surrender_of_Japan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Resa del Giappone - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Resa_del_Giappone",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 15 agosto 1945 per l'annuncio dell'imperatore e il 2 settembre per la firma dell'atto di resa; il testo usa il 15 agosto. L'articolo inglese data la dichiarazione di guerra sovietica a tarda sera dell'8 agosto e l'invasione subito dopo la mezzanotte; l'italiano data l'invasione e la notizia della dichiarazione al 9 agosto. Il colpo di Stato e il discorso sono in entrambi gli articoli. Il pin è su Tokyo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

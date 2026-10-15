@@ -1,0 +1,50 @@
+{
+  "slug": "entrata-dell-italia-nella-seconda-guerra-mondiale-1940",
+  "title": "L'Italia entra in guerra",
+  "summary": "Il 10 giugno 1940 Mussolini annuncia dal balcone di Palazzo Venezia l'entrata in guerra dell'Italia contro Francia e Regno Unito, dopo nove mesi di non belligeranza. Sceglie il momento in cui la Francia sembra sul punto di cedere, sperando in guadagni territoriali con pochi combattimenti; l'esercito è però impreparato.",
+  "date": {
+    "year": 1940,
+    "month": 6,
+    "day": 10
+  },
+  "place": {
+    "name": "Palazzo Venezia, Roma, Italia",
+    "lat": 41.8964,
+    "lon": 12.4823,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Il 1º settembre 1939, nonostante l'alleanza con la Germania, Mussolini aveva dichiarato la non belligeranza dell'Italia. Per l'articolo italiano, durante i nove mesi di non belligeranza, restò a lungo dubbioso: colpito dalle vittorie tedesche, ma consapevole della grave impreparazione militare del paese. Il 28 maggio 1940 comunicò a Badoglio la decisione di intervenire contro la Francia e il 30 maggio annunciò a Hitler che l'Italia sarebbe entrata in guerra il 5 giugno; Hitler chiese un rinvio, poi per l'articolo italiano ritirò la richiesta.",
+  "event": "Lunedì 10 giugno, alle 16.30, a Palazzo Chigi Ciano lesse all'ambasciatore francese la dichiarazione di guerra, valida dall'11 giugno; alle 16.45 la lesse all'ambasciatore britannico. Alle 18 Mussolini annunciò dal balcone di Palazzo Venezia, davanti alla folla e con un discorso trasmesso via radio, che era scoccata «l'ora delle decisioni irrevocabili». Per l'articolo inglese lo fece mentre il governo francese fuggiva da Parigi a Bordeaux, perché le potenze alleate sembravano sul punto di crollare, e sperava di ottenere guadagni territoriali con pochi combattimenti.",
+  "after": "Per l'articolo inglese l'offensiva italiana nel sud della Francia cominciò solo il 21 giugno e si fermò contro una resistenza più forte del previsto; il 22 giugno la Francia si arrese, mentre il Regno Unito e il Commonwealth continuarono a combattere molto oltre quanto Mussolini credeva possibile. Per l'articolo italiano la notizia fu accolta con entusiasmo dai gruppi industriali e da una buona parte dei vertici fascisti; l'unica voce critica, oltre ai giornali clandestini, fu L'Osservatore Romano, che scrisse che «il duce (abbagliato) salì sul treno in corsa».",
+  "links": [
+    {
+      "slug": "battaglia-di-francia-1940",
+      "reason": "Un mese prima, il 10 maggio, la Germania aveva attaccato a ovest."
+    },
+    {
+      "slug": "guerra-italo-greca-1940",
+      "reason": "Quattro mesi e mezzo dopo, il 28 ottobre, l'Italia attacca la Grecia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Military history of Italy during World War II - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Military_history_of_Italy_during_World_War_II",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Entrata dell'Italia nella seconda guerra mondiale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Entrata_dell'Italia_nella_seconda_guerra_mondiale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 10 giugno 1940. L'articolo inglese è una storia generale dell'Italia nella guerra e dice poco su quel giorno: gli orari, le dichiarazioni agli ambasciatori e il discorso sono dell'articolo italiano. Per l'inizio delle operazioni contro la Francia l'articolo inglese dà il 21 giugno, quello italiano l'11 giugno (azioni di confine e bombardamenti dimostrativi). Il pin è su Palazzo Venezia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

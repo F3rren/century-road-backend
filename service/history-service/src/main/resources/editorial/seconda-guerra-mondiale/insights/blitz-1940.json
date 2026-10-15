@@ -1,0 +1,50 @@
+{
+  "slug": "blitz-1940",
+  "title": "Il Blitz",
+  "summary": "Il 7 settembre 1940 la Luftwaffe comincia a bombardare Londra e poi altre città britanniche, in una campagna che per l'articolo inglese dura otto mesi. Nel corso della guerra i bombardamenti della Luftwaffe uccidono più di 40 000 civili, quasi la metà nella capitale, ma non fanno cedere il paese né fermano la produzione di guerra.",
+  "date": {
+    "year": 1940,
+    "month": 9,
+    "day": 7
+  },
+  "place": {
+    "name": "Londra, Regno Unito",
+    "lat": 51.5074,
+    "lon": -0.1278,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, verso la fine della battaglia d'Inghilterra il dominio dell'aria diurno sul Regno Unito era ancora conteso; per quello italiano a settembre la Luftwaffe aveva ormai perso la battaglia d'Inghilterra. Per l'articolo inglese, senza segni di cedimento della RAF e con molte perdite tedesche, Hitler era frustrato dall'avanzata lenta e il comando della Luftwaffe voleva cambiare strategia. Il 6 settembre 1940 Hitler e Göring ordinarono di attaccare le città britanniche, cominciando da Londra, per costringere la caccia della RAF a una battaglia di annientamento. Prima della guerra i teorici dell'arma aerea, come Douhet, ritenevano che bombardare i civili avrebbe fatto crollare il morale.",
+  "event": "Dal 7 settembre Londra fu bombardata sistematicamente dalla Luftwaffe per 56 giorni e notti su 57 per l'articolo inglese, per 57 giorni consecutivi per quello italiano. Il 15 settembre, la «Battle of Britain Day», ci fu un grande attacco diurno, che per l'articolo inglese costò molte perdite senza risultati duraturi. Dopo l'ottobre la Luftwaffe passò sempre più ai raid notturni, per sfuggire alla RAF, e colpì anche Liverpool, Hull, Bristol, Coventry, Birmingham, Glasgow e molte altre città. Per l'articolo inglese partecipò ai bombardamenti anche il Corpo Aereo Italiano, negli ultimi mesi del 1940.",
+  "after": "Durante la guerra i bombardamenti uccisero più di 40 000 civili, quasi la metà nella capitale, dove più di un milione di case furono danneggiate o distrutte. Non riuscirono a demoralizzare i britannici fino a farli arrendere né a ostacolare seriamente la produzione di guerra, che continuò ad aumentare: l'effetto maggiore fu costringere i britannici a disperdere la produzione di aerei e ricambi. Per gli articoli il comando della Luftwaffe non aveva una strategia metodica per distruggere l'industria britannica e disperse gli attacchi su troppi obiettivi.",
+  "links": [
+    {
+      "slug": "battaglia-d-inghilterra-1940",
+      "reason": "Quasi due mesi prima, il 10 luglio, era cominciata la battaglia d'Inghilterra."
+    },
+    {
+      "slug": "lend-lease-1941",
+      "reason": "Sei mesi dopo, l'11 marzo 1941, gli Stati Uniti approvano il Lend-Lease per sostenere la Gran Bretagna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Blitz - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/The_Blitz",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "The Blitz - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/The_Blitz",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dà la durata dal 7 settembre 1940 al 16 maggio 1941, e cita un grande raid nella notte tra il 10 e l'11 maggio; l'articolo italiano parla soltanto di otto mesi tra il 1940 e il 1941. Anche i giorni di bombardamento su Londra divergono (56 su 57 o 57 consecutivi). Sul dominio dell'aria alla vigilia del Blitz l'inglese parla di cielo ancora conteso di giorno, l'italiano di battaglia d'Inghilterra già persa dalla Luftwaffe a settembre; l'introduzione inglese parla di una campagna della Germania nazista e dell'Italia fascista, quella italiana solo dei tedeschi. L'articolo italiano è molto breve: i dettagli sono dell'articolo inglese. Il pin è su Londra."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

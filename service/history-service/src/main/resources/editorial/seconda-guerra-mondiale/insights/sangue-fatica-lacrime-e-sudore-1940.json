@@ -1,0 +1,50 @@
+{
+  "slug": "sangue-fatica-lacrime-e-sudore-1940",
+  "title": "Il primo discorso di Churchill: «sangue, fatica, lacrime e sudore»",
+  "summary": "Il 13 maggio 1940, tre giorni dopo essere diventato primo ministro, Winston Churchill parla alla Camera dei Comuni e dice di non avere «nulla da offrire se non sangue, fatica, lacrime e sudore». La Camera vota all'unanimità la fiducia al suo governo.",
+  "date": {
+    "year": 1940,
+    "month": 5,
+    "day": 13
+  },
+  "place": {
+    "name": "Palazzo di Westminster, Londra, Regno Unito",
+    "lat": 51.4995,
+    "lon": -0.1248,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Churchill aveva sostituito Neville Chamberlain il 10 maggio 1940, lo stesso giorno in cui la Germania aveva invaso i Paesi Bassi: il re gli aveva offerto l'incarico il venerdì. Non era la scelta preferita della maggior parte dei conservatori ed era stato impopolare in molti ambienti fin dagli anni Trenta, quando i parlamentari ignoravano o criticavano i suoi discorsi contro la politica di appeasement verso la Germania.",
+  "event": "Il 13 maggio Churchill tenne il suo primo discorso da primo ministro alla Camera dei Comuni, chiedendole di votare la fiducia al nuovo governo. Per l'articolo inglese annunciò la formazione di un gabinetto di guerra di cinque membri e disse che il paese era all'inizio di una delle più grandi battaglie della storia, con scontri in Norvegia e in Olanda. Si chiese e si rispose: la politica del governo era fare la guerra per mare, per terra e per aria con tutte le forze; l'obiettivo era la vittoria, a ogni costo. La mozione passò all'unanimità.",
+  "after": "Uno storico citato dagli articoli descrisse l'effetto del discorso sui parlamentari come «elettrizzante»; ma Churchill stesso ritenne di aver avuto il pieno appoggio dell'intera Camera solo dopo il discorso del 4 luglio 1940 su Mers-el-Kébir. Seguirono i discorsi del 4 giugno, «combatteremo sulle spiagge», e del 18 giugno, «la loro ora migliore». La frase è stata definita una parafrasi di quella detta da Garibaldi a Roma nel 1849 e, per gli articoli, ricorda anche una frase di Theodore Roosevelt del 1897. Dal 2016 compare sulla banconota da 5 sterline.",
+  "links": [
+    {
+      "slug": "battaglia-di-francia-1940",
+      "reason": "Tre giorni prima, il 10 maggio, la Germania aveva attaccato a ovest e Churchill era diventato primo ministro."
+    },
+    {
+      "slug": "dunkerque-1940",
+      "reason": "Tredici giorni dopo, il 26 maggio, comincia l'evacuazione dei soldati alleati da Dunkerque."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blood, toil, tears and sweat - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Blood,_toil,_tears_and_sweat",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sangue, fatica, lacrime e sudore - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sangue,_fatica,_lacrime_e_sudore",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 13 maggio 1940. L'articolo italiano è più breve e non riporta il testo del discorso: le parole del discorso sono quelle dell'articolo inglese, e il testo ne dà solo la sostanza. Il pin è sul Palazzo di Westminster, sede della Camera dei Comuni."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

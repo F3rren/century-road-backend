@@ -1,0 +1,55 @@
+{
+  "slug": "repubblica-sociale-italiana-1943",
+  "title": "La Repubblica sociale italiana",
+  "summary": "Il 23 settembre 1943 è proclamata la Repubblica sociale italiana, Stato collaborazionista creato dalla Germania nazista nell'Italia occupata e guidato da Mussolini, liberato dai tedeschi. La sua capitale di fatto è Salò, sul lago di Garda. Cessa con la fine della guerra in Italia, tra l'aprile e il maggio 1945.",
+  "date": {
+    "year": 1943,
+    "month": 9,
+    "day": 23
+  },
+  "place": {
+    "name": "Salò, lago di Garda, Italia",
+    "lat": 45.6075,
+    "lon": 10.5236,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "La Repubblica fu proclamata il 23 settembre e si disse con capitale Roma; il pin è su Salò, capitale di fatto, e non indica dove fu proclamata."
+  },
+  "before": "L'8 settembre 1943, per l'articolo inglese, la Germania, preparata all'annuncio dell'armistizio, intervenne subito e le sue truppe presero il controllo dell'Italia del nord e del centro. Per l'articolo inglese Mussolini, liberato dall'operazione del Gran Sasso, fu portato in Germania, dove Hitler volle che tornasse in Italia a creare un nuovo Stato fascista sotto la protezione tedesca; Mussolini era malato e riluttante, ma Hitler minacciò di distruggere Milano, Genova e Torino. Mussolini accettò. Per l'articolo inglese il 15 settembre annunciò il Partito fascista repubblicano e il 18 la ripresa della guerra a fianco di Germania e Giappone.",
+  "event": "Il 23 settembre fu proclamata la Repubblica sociale italiana, con Mussolini, per l'articolo inglese, capo dello Stato e presidente del consiglio (per l'italiano di fatto capo della Repubblica, benché mai proclamato tale, oltre che capo del governo e ministro degli Esteri). Per l'articolo inglese il governo fu scelto e nominato da Hitler stesso, e fino al dicembre 1943 lo Stato si chiamò Stato nazionale repubblicano d'Italia. Per l'articolo inglese dichiarava Roma sua capitale ma la sede reale era Salò, dove risiedevano Mussolini e il ministero degli Esteri; per l'articolo italiano Salò è il nome con cui è nota perché lì aveva sede l'agenzia Stefani. Fu riconosciuta solo dalle potenze dell'Asse e dai loro satelliti.",
+  "after": "Per l'articolo italiano la storiografia la considera in gran parte uno Stato fantoccio, anche se alcuni storici le attribuiscono un certo grado di sovranità. Per l'articolo inglese la Germania incorporò di fatto alcuni territori, come le zone di operazioni delle Prealpi, con Trento, Bolzano e Belluno, e del Litorale adriatico, con Udine, Gorizia, Trieste, Pola e Fiume. Per l'articolo inglese la Repubblica crollò intorno al 25 aprile 1945, dopo 19 mesi; Mussolini fu catturato e ucciso dai partigiani il 28 aprile e Graziani si arrese il 1º maggio. L'articolo italiano indica la fine con la resa di Caserta del 29 aprile, efficace dal 2 maggio.",
+  "links": [
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Quindici giorni prima, l'8 settembre, era stato reso noto l'armistizio con gli Alleati."
+    },
+    {
+      "slug": "quattro-giornate-di-napoli-1943",
+      "reason": "Quattro giorni dopo, il 27 settembre, comincia a Napoli l'insurrezione contro i tedeschi."
+    },
+    {
+      "slug": "liberazione-d-italia-1945",
+      "reason": "Un anno e sette mesi dopo, il 25 aprile 1945, l'insurrezione generale avvia il crollo del regime."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Italian Social Republic - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Italian_Social_Republic",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Repubblica Sociale Italiana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Repubblica_Sociale_Italiana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la fondazione nel settembre 1943 e la fine nell'aprile 1945; entrambi parlano del 23 settembre. Divergono su come datare la fine (25 aprile e 1º maggio per l'inglese, resa di Caserta del 29 aprile per l'italiano). Sulla liberazione di Mussolini e sul colloquio con Hitler gli articoli divergono nei particolari: per l'inglese a Rastenburg tre giorni dopo la liberazione, con la minaccia di distruggere Milano, Genova e Torino; per l'italiano a Monaco, con colloqui di due giorni. Divergono anche sul nome: per l'italiano dal 23 al 28 settembre Stato fascista repubblicano d'Italia, poi Stato nazionale repubblicano d'Italia fino al 30 novembre e Repubblica sociale dal 1º dicembre; per l'inglese Stato nazionale repubblicano fino a dicembre. Il pin è su Salò, capitale di fatto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

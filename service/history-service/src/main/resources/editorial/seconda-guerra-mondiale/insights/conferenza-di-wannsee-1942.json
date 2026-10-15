@@ -1,0 +1,54 @@
+{
+  "slug": "conferenza-di-wannsee-1942",
+  "title": "La conferenza di Wannsee",
+  "summary": "Il 20 gennaio 1942 a Wannsee, alla periferia di Berlino, quindici funzionari del regime nazista e delle SS si riuniscono su invito di Heydrich per coordinare la «soluzione finale della questione ebraica»: la deportazione e lo sterminio degli ebrei d'Europa. Per l'articolo inglese le uccisioni di massa erano già in corso.",
+  "date": {
+    "year": 1942,
+    "month": 1,
+    "day": 20
+  },
+  "place": {
+    "name": "Villa sul lago Wannsee, Berlino, Germania",
+    "lat": 52.4332,
+    "lon": 13.1639,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Le discriminazioni contro gli ebrei in Germania erano cominciate subito dopo la presa del potere nazista, nel gennaio 1933, e nel 1935 le leggi di Norimberga li avevano privati della cittadinanza. Per l'articolo inglese dopo l'invasione della Polonia, nel 1939, cominciò lo sterminio, prima con le squadre mobili della morte, le Einsatzgruppen, e i massacri si intensificarono dopo l'invasione dell'Unione Sovietica, nel giugno 1941. Il 31 luglio 1941 Göring autorizzò per iscritto Heydrich a preparare un piano per una «soluzione totale della questione ebraica» nei territori sotto controllo tedesco.",
+  "event": "Il 20 gennaio 1942 si riunirono, su invito di Heydrich, quindici funzionari, tra cui segretari di Stato dei ministeri e rappresentanti delle SS, per assicurarsi la collaborazione delle amministrazioni. Per gli articoli Heydrich parlò di circa undici milioni di ebrei in Europa. Per l'articolo inglese i deportati sarebbero stati «evacuati» a est, e le parole del verbale, redatto da Eichmann, dicevano ai partecipanti che quel termine era un eufemismo per l'assassinio. Per l'articolo inglese la riunione durò circa novanta minuti, e dopo la deportazione la sorte dei deportati sarebbe stata affare interno delle SS.",
+  "after": "Per l'articolo inglese, per storici come Longerich la decisione di sterminare gli ebrei era già stata presa e la conferenza servì a ottenere la collaborazione dei vari ministeri; anche per l'articolo italiano la conferenza fu la tappa del coordinamento e non il momento della decisione, e il verbale è il primo documento a mostrare con chiarezza le fasi di quel processo decisionale; ne furono distribuite trenta copie. Per l'articolo italiano i primi convogli dal ghetto di Varsavia a Treblinka partirono nel luglio 1942. Per l'articolo inglese una sola copia del verbale sopravvisse alla guerra, trovata nel marzo 1947 e usata come prova nei processi di Norimberga; la villa è oggi un luogo della memoria.",
+  "links": [
+    {
+      "slug": "notte-dei-cristalli-1938",
+      "reason": "Più di tre anni prima, il 9 novembre 1938, la notte dei cristalli aveva devastato sinagoghe e negozi ebraici in Germania."
+    },
+    {
+      "slug": "operazione-barbarossa-1941",
+      "reason": "Quasi sette mesi prima, il 22 giugno 1941, la Germania aveva attaccato l'Unione Sovietica."
+    },
+    {
+      "slug": "rivolta-del-ghetto-di-varsavia-1943",
+      "reason": "Un anno e tre mesi dopo, il 19 aprile 1943, scoppia la rivolta del ghetto di Varsavia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Wannsee Conference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Wannsee_Conference",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di Wannsee - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_Wannsee",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 20 gennaio 1942 e quindici partecipanti. Sull'interpretazione gli articoli concordano: la conferenza fu la tappa del coordinamento, non il momento della decisione; l'italiano aggiunge che il verbale è il primo documento a esplicitare le fasi del processo decisionale. La durata, il ritrovamento della copia e le fasi precedenti sono dell'articolo inglese; il numero delle copie (trenta) è in entrambi, i primi convogli solo nell'italiano. Sulle uccisioni l'inglese parte dall'invasione della Polonia (1939); l'italiano data all'agosto 1941 le fucilazioni «sistematiche e indistinte», donne e bambini compresi, data che anche l'inglese dà per l'estensione a donne e bambini. Il pin è sulla villa di Wannsee."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
