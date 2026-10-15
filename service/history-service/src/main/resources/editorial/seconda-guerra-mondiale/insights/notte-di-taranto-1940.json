@@ -1,0 +1,50 @@
+{
+  "slug": "notte-di-taranto-1940",
+  "title": "La notte di Taranto",
+  "summary": "Nella notte tra l'11 e il 12 novembre 1940 aerosiluranti britannici decollati dalla portaerei Illustrious attaccano la flotta italiana ancorata a Taranto e mettono fuori combattimento tre delle sei corazzate. Per l'articolo inglese è il primo attacco navale compiuto interamente da aerei.",
+  "date": {
+    "year": 1940,
+    "month": 11,
+    "day": 11
+  },
+  "place": {
+    "name": "Porto di Taranto, Italia",
+    "lat": 40.4668,
+    "lon": 17.24,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Taranto era la base della flotta italiana: per l'articolo inglese sei corazzate (una ancora non pronta), sette incrociatori pesanti, due leggeri e otto cacciatorpediniere. Dopo l'ingresso dell'Italia in guerra i convogli britannici verso l'Egitto erano minacciati dalla flotta, che per l'articolo inglese di solito restava in porto. Per l'articolo italiano la base aveva gravi carenze di difesa: pochi cannoni contraerei, nessun radar, poche reti antisiluro. L'ammiraglio Cunningham decise l'attacco notturno con aerosiluranti, previsto per il 21 ottobre e rinviato per problemi tecnici; la portaerei Eagle, per un guasto, non poté partecipare.",
+  "event": "L'11 novembre dalle 20.30 decollarono dalla Illustrious due ondate di biplani Swordfish. La prima ondata arrivò sul porto poco prima delle 23, la seconda, per l'articolo italiano, verso le 23.30: lanciarono bengala per illuminare le navi e attaccarono con siluri e bombe, volando bassi, perché il fondale era poco profondo. Furono colpite le corazzate Conte di Cavour, Littorio e Duilio. Per l'articolo italiano gli inglesi persero due aerei. Per l'articolo inglese gli aerei usavano un dispositivo (un tamburo di filo collegato al siluro) che evitava ai siluri di tuffarsi troppo, e le reti antisiluro, posate solo in parte, non arrivavano al fondo: i siluri passarono sotto di esse.",
+  "after": "Per l'articolo inglese il Conte di Cavour ebbe 27 morti e non tornò mai in pieno servizio, il Littorio 32 morti; Duilio e Littorio furono salvati facendoli arenare, e la flotta italiana perse in una notte metà delle corazzate. Il giorno dopo le navi illese furono spostate a Napoli. Per l'articolo italiano fu un colpo durissimo per la Regia Marina e per il regime. Per l'articolo inglese gli ufficiali giapponesi studiarono l'attacco mentre preparavano quello a Pearl Harbor, anch'essa in acque basse.",
+  "links": [
+    {
+      "slug": "guerra-italo-greca-1940",
+      "reason": "Due settimane prima, il 28 ottobre, l'Italia aveva attaccato la Grecia."
+    },
+    {
+      "slug": "attacco-a-pearl-harbor-1941",
+      "reason": "Poco più di un anno dopo, il 7 dicembre 1941, il Giappone attacca Pearl Harbor."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Taranto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Taranto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Notte di Taranto - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Notte_di_Taranto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la notte tra l'11 e il 12 novembre 1940; il testo usa l'11. L'articolo inglese dà il numero di Swordfish in modi diversi (21, 24, venti) e il testo non lo indica. Sulle reti antisiluro i due articoli concordano sui circa 4 200 m posati e divergono sulla lunghezza necessaria (12,8 km per l'inglese, 8 600 m per l'italiano); anche i palloni di sbarramento concordano. Il testo non riporta queste cifre. Sulle navi presenti a Taranto l'inglese dà numeri diversi in due sezioni (il testo usa quelli dello sfondo) e l'italiano elenca sette incrociatori pesanti, due leggeri e «vari» cacciatorpediniere. Il pin è sul porto di Taranto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

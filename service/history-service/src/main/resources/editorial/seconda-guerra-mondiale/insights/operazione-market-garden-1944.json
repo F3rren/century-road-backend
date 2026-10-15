@@ -1,0 +1,55 @@
+{
+  "slug": "operazione-market-garden-1944",
+  "title": "L'operazione Market Garden",
+  "summary": "Il 17 settembre 1944 gli Alleati lanciano in Olanda la più grande operazione aviotrasportata della guerra: paracadutisti per prendere i ponti, truppe di terra per raggiungerli. Eindhoven e Nimega sono conquistate, ma il ponte di Arnhem sul Reno no: l'operazione fallisce e la 1ª divisione aviotrasportata britannica è quasi distrutta.",
+  "date": {
+    "year": 1944,
+    "month": 9,
+    "day": 17
+  },
+  "place": {
+    "name": "Arnhem, Paesi Bassi",
+    "lat": 51.9851,
+    "lon": 5.8987,
+    "countryCode": "NL",
+    "approximate": true,
+    "note": "L'operazione si svolse lungo circa 100 chilometri di strada, dal confine belga-olandese ad Arnhem: il pin è su Arnhem, dove si trovava il ponte sul Reno, ed è solo un segnaposto."
+  },
+  "before": "Dopo lo sbarco in Normandia, gli Alleati volevano aprirsi una via d'invasione verso la Germania del nord. Il piano, per l'articolo inglese, prevedeva un saliente di 100 chilometri in territorio occupato dai tedeschi con una testa di ponte sul Basso Reno: truppe aviotrasportate americane, britanniche e polacche, da 35 000 a 40 000 uomini, avrebbero preso nove ponti («Market») e le forze terrestri britanniche li avrebbero raggiunti («Garden») lungo un'unica strada, in 48 ore. Circa 100 000 soldati tedeschi erano nella zona.",
+  "event": "Il 17 settembre cominciò l'operazione, la più grande operazione aviotrasportata della guerra fino ad allora, per l'articolo inglese. Le forze terrestri avanzarono lungo l'unica strada, la «Hell's Highway», circondata da terreno paludoso. L'operazione conquistò le città olandesi di Eindhoven e Nimega, ma fallì nell'obiettivo più importante, il ponte sul Reno ad Arnhem: la 1ª divisione aviotrasportata britannica non riuscì ad assicurarsene il controllo, anche se un solo battaglione tenne per quattro giorni l'estremità nord, e fu ritirata dalla riva nord. Per l'articolo inglese non c'erano abbastanza barche per far attraversare tutti.",
+  "after": "Per l'articolo inglese la 1ª divisione aviotrasportata ebbe 8 000 tra morti, dispersi e prigionieri su 10 000 uomini; per l'articolo italiano su 10 005 partiti ne tornarono a sud del Reno solo 2 163. Per le perdite tedesche l'articolo inglese dà 3 300 come cifra ufficiale e 6 400-8 000 come stima prudente; l'articolo italiano ne attribuisce circa 20 000 al gruppo d'armate B. Gli storici criticarono il piano: per Beevor era «un cattivo piano fin dall'inizio e fin dai vertici». Arnhem fu presa dagli Alleati solo nell'aprile 1945.",
+  "links": [
+    {
+      "slug": "sbarco-in-normandia-1944",
+      "reason": "Più di tre mesi prima, il 6 giugno, gli Alleati erano sbarcati in Normandia."
+    },
+    {
+      "slug": "liberazione-di-parigi-1944",
+      "reason": "Ventitré giorni prima, il 25 agosto, Parigi era stata liberata."
+    },
+    {
+      "slug": "battaglia-delle-ardenne-1944",
+      "reason": "Quasi tre mesi dopo, il 16 dicembre, i tedeschi attaccano nelle Ardenne."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Market Garden - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Market_Garden",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Market Garden - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Market_Garden",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio il 17 settembre 1944; l'articolo inglese dà la fine il 25 settembre, l'italiano la notte tra il 25 e il 26. Per la 1ª divisione aviotrasportata le cifre sono compatibili (8 000 perduti per l'inglese; per l'italiano 2 163 tornati su 10 005, cioè 7 842 perduti). Per le perdite tedesche divergono: l'inglese dà 3 300 come cifra ufficiale e stime fino a 8 000 e oltre, l'italiano 3 300 ad Arnhem e Oosterbeek e circa 20 000 per il gruppo d'armate B in tutta l'area. Per i ponti da prendere l'inglese dà nove, l'italiano cinque. Il testo attribuisce le cifre a ciascun articolo. Il pin è su Arnhem."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "operazione-bagration-1944",
+  "title": "L'operazione Bagration",
+  "summary": "Il 22 giugno 1944 l'Armata Rossa attacca in Bielorussia il gruppo d'armate Centro tedesco. In pochi giorni il fronte crolla e Minsk è liberata il 4 luglio. Per gli articoli è una delle più gravi sconfitte della Wehrmacht.",
+  "date": {
+    "year": 1944,
+    "month": 6,
+    "day": 22
+  },
+  "place": {
+    "name": "Minsk, Bielorussia",
+    "lat": 53.9006,
+    "lon": 27.559,
+    "countryCode": "BY",
+    "approximate": true,
+    "note": "L'offensiva si estese su tutta la Bielorussia: il pin è su Minsk, il principale obiettivo, e non indica il punto d'attacco."
+  },
+  "before": "A giugno 1944 il gruppo d'armate Centro era esposto, dopo le sconfitte tedesche nel sud. Per l'articolo inglese l'Alto comando tedesco si aspettava l'attacco nel sud e spostò laggiù un terzo dell'artiglieria, metà dei cacciacarri e l'88% dei carri armati del gruppo d'armate Centro; l'inganno sovietico, la maskirovka, ebbe successo. Per l'articolo italiano dal 19 giugno più di 140 000 partigiani attaccarono le retrovie tedesche, con oltre 40 000 demolizioni sulle ferrovie. L'offensiva cominciò poco più di due settimane dopo lo sbarco in Normandia.",
+  "event": "Il 22 giugno l'Armata Rossa attaccò in Bielorussia. Per l'articolo inglese schierava circa 1 670 000 uomini tra combattenti e supporto, 5 818 carri armati e cannoni d'assalto e 7 799 aerei contro 849 000 uomini del gruppo d'armate Centro (486 000 combattenti), con 495 carri funzionanti. Il 3 luglio fu chiusa la sacca a est di Minsk con dentro la 4ª armata tedesca (per l'articolo italiano distrutta entro l'8 luglio; per l'introduzione inglese già entro il 28 giugno); Minsk fu raggiunta il 3 luglio e, per l'articolo inglese, liberata il 4. Per l'articolo inglese tra il 22 giugno e il 4 luglio il gruppo d'armate Centro perse 25 divisioni e 300 000 uomini.",
+  "after": "Per l'articolo inglese i tedeschi ebbero circa 450 000 perdite, la più grave sconfitta della storia militare tedesca; 57 000 prigionieri furono fatti sfilare a Mosca, e 31 dei 47 comandanti di divisione o di corpo furono uccisi o catturati. Per l'articolo inglese l'offensiva proseguì verso la Vistola e Varsavia e finì il 19 agosto; per quello italiano terminò il 1º agosto, anche se i combattimenti sulla Vistola e sul Niemen durarono fino a fine mese. Per l'articolo inglese la Germania dovette combattere su due grandi fronti per la prima volta nella guerra.",
+  "links": [
+    {
+      "slug": "battaglia-di-kursk-1943",
+      "reason": "Quasi un anno prima, il 5 luglio 1943, i tedeschi avevano lanciato l'offensiva di Kursk."
+    },
+    {
+      "slug": "sbarco-in-normandia-1944",
+      "reason": "Sedici giorni prima, il 6 giugno, gli Alleati erano sbarcati in Normandia."
+    },
+    {
+      "slug": "battaglia-di-berlino-1945",
+      "reason": "Quasi dieci mesi dopo, il 16 aprile 1945, comincia la battaglia di Berlino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Bagration - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Bagration",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Bagration - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Bagration",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 22 giugno 1944. Divergono sulla fine (19 agosto per l'inglese, 1º agosto per l'italiano, che dice anche che l'operazione propriamente detta finì a metà luglio) e sulle forze in campo e sulle perdite tedesche (350 000-400 000 per l'italiano; circa 450 000 nell'introduzione inglese e 400 000-540 000 nel testo), sul giorno in cui Minsk fu liberata (il 3 luglio per l'italiano, il 4 per l'inglese) e sul numero delle divisioni perse (28 nell'introduzione inglese, 25 nel suo testo); sulla 4ª armata l'introduzione inglese dice distrutta entro il 28 giugno, il suo testo la sacca chiusa il 3 luglio. Le cifre usate nel testo sono dell'articolo inglese. Il pin è su Minsk."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

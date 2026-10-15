@@ -1,0 +1,54 @@
+{
+  "slug": "liberazione-di-auschwitz-1945",
+  "title": "La liberazione di Auschwitz",
+  "summary": "Il 27 gennaio 1945 i soldati dell'Armata Rossa, avanzando dalla Vistola all'Oder, arrivano ad Auschwitz e liberano il campo di concentramento e di sterminio, dove i nazisti avevano ucciso circa 1,1 milioni di persone, in maggioranza ebrei. Quel giorno è oggi ricordato come Giorno della Memoria.",
+  "date": {
+    "year": 1945,
+    "month": 1,
+    "day": 27
+  },
+  "place": {
+    "name": "Auschwitz-Birkenau, Oświęcim, Polonia",
+    "lat": 50.0359,
+    "lon": 19.1783,
+    "countryCode": "PL",
+    "approximate": false
+  },
+  "before": "Tra il 1940 e il 1945 circa 1,3 milioni di persone, in maggioranza ebrei, furono deportate ad Auschwitz e circa 1,1 milioni vi furono uccise. Per l'articolo inglese ad agosto 1944 i prigionieri nel complesso erano più di 135 000. Per l'articolo italiano nel novembre 1944 Himmler ordinò di fermare le esecuzioni nelle camere a gas e di demolirle insieme ai forni, per nascondere le prove, ma i nazisti distrussero solo quelli di Birkenau. Quando l'Armata Rossa cominciò l'offensiva Vistola-Oder, nel gennaio 1945, per l'articolo inglese quasi 60 000 prigionieri furono costretti a una marcia della morte verso ovest.",
+  "event": "Il 27 gennaio i soldati sovietici arrivarono al campo: per l'articolo inglese la 322ª divisione di fucilieri alle 15, per quello italiano alle otto del mattino. Per l'articolo inglese la liberazione non era un obiettivo specifico dell'Armata Rossa ma una conseguenza della sua avanzata, e 231 soldati sovietici morirono nei combattimenti intorno ai campi. Per l'articolo inglese erano rimasti circa 7 000 prigionieri, per lo più gravemente malati; i soldati trovarono 600 cadaveri, 370 000 abiti da uomo, 837 000 capi femminili e sette tonnellate di capelli umani (otto per l'articolo italiano), e rimasero sconvolti.",
+  "after": "Per l'articolo inglese gli ospedali dell'Armata Rossa curarono 4 500 sopravvissuti, e a giugno 1945 ne restavano ancora 300 troppo deboli per essere spostati. Per l'articolo inglese alcuni articoli di giornali sovietici, come la Pravda, non nominarono gli ebrei. Per l'articolo italiano uno studio calcola che almeno 960 000 dei circa 1,1 milioni di morti furono ebrei. Per l'articolo inglese la data è riconosciuta come Giornata internazionale della memoria dell'Olocausto; per l'articolo italiano è il Giorno della Memoria dal 2005.",
+  "links": [
+    {
+      "slug": "conferenza-di-wannsee-1942",
+      "reason": "Tre anni prima, il 20 gennaio 1942, a Wannsee si era discusso il coordinamento della «soluzione finale»."
+    },
+    {
+      "slug": "rivolta-del-ghetto-di-varsavia-1943",
+      "reason": "Un anno e nove mesi prima, il 19 aprile 1943, gli ebrei del ghetto di Varsavia si erano ribellati."
+    },
+    {
+      "slug": "processi-di-norimberga-1945",
+      "reason": "Quasi dieci mesi dopo, il 20 novembre, comincia a Norimberga il processo ai capi nazisti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Liberation of Auschwitz concentration camp - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liberation_of_Auschwitz_concentration_camp",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campo di concentramento di Auschwitz - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campo_di_concentramento_di_Auschwitz",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 27 gennaio 1945, 1,3 milioni di deportati e 1,1 milioni di morti. Divergono sull'ora dell'arrivo dei sovietici (alle 15 per l'articolo inglese, alle 8 per quello italiano), sulle tonnellate di capelli (sette per l'inglese, otto per l'italiano) e sul nome della ricorrenza. L'articolo inglese è dedicato alla liberazione, e il testo ne trae i particolari. Il pin è sul campo di Auschwitz-Birkenau."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

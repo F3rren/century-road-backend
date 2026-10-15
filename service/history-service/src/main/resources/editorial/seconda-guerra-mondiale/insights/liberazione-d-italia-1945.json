@@ -1,0 +1,55 @@
+{
+  "slug": "liberazione-d-italia-1945",
+  "title": "Il 25 aprile 1945, la Liberazione",
+  "summary": "Il 25 aprile 1945 il Comitato di liberazione nazionale Alta Italia proclama, con sede a Milano, l'insurrezione generale contro i nazifascisti ancora in armi, con l'intimazione «Arrendersi o perire!». Nei giorni seguenti il nord Italia è liberato e la guerra in Italia finisce con la resa del 2 maggio. Oggi il 25 aprile è festa nazionale.",
+  "date": {
+    "year": 1945,
+    "month": 4,
+    "day": 25
+  },
+  "place": {
+    "name": "Milano, Italia",
+    "lat": 45.4642,
+    "lon": 9.19,
+    "countryCode": "IT",
+    "approximate": true,
+    "note": "L'insurrezione si estese a tutta l'Italia del nord: il pin è su Milano, sede del comando del Comitato di liberazione nazionale Alta Italia, e non indica un luogo preciso."
+  },
+  "before": "Dopo l'armistizio e l'attacco tedesco dell'8 settembre 1943 molti soldati sbandati formarono gruppi partigiani, e il 9 settembre nacque a Roma il Comitato di liberazione nazionale, con comunisti, democristiani, socialisti, azionisti, liberali e demolaburisti. Per l'articolo inglese molti partigiani vissero sulle montagne combattendo contro fascisti e tedeschi nella guerra civile, e alcune città, tra cui Napoli, furono liberate da insurrezioni antifasciste (Torino e Milano nell'aprile 1945, per l'inglese il 28 e il 25). Per l'articolo inglese Bologna fu liberata il 21 aprile 1945 e Genova il 23.",
+  "event": "Il 25 aprile 1945 il Comitato di liberazione nazionale Alta Italia, con comando a Milano, proclamò l'insurrezione generale in tutti i territori ancora occupati, indicando alle forze partigiane del Corpo volontari della libertà di attaccare i presìdi tedeschi e fascisti e imporre la resa, giorni prima dell'arrivo degli Alleati. «Arrendersi o perire!» fu l'intimazione ai nazifascisti. Per l'articolo inglese il Comitato emanò anche decreti, assumendo il potere «in nome del popolo italiano» e prevedendo la pena di morte per i gerarchi fascisti, compreso Mussolini (per l'articolo italiano, senza citarlo esplicitamente).",
+  "after": "Per l'articolo inglese entro il 1º maggio tutta l'Italia del nord era liberata, con Torino e Venezia il 28 aprile, e Mussolini fu ucciso tre giorni dopo l'insurrezione. Per entrambi gli articoli la guerra in Italia finì il 2 maggio con la resa definitiva delle forze tedesche e fasciste, firmata a Caserta il 29 aprile. Per l'articolo inglese la liberazione pose fine a due anni e mezzo di occupazione tedesca, cinque di guerra e ventitré di dittatura fascista (vent'anni, per l'articolo italiano). Un decreto del 22 aprile 1946 rese festa nazionale il 25 aprile di quell'anno; dal 1949 lo è stabilmente ogni anno.",
+  "links": [
+    {
+      "slug": "repubblica-sociale-italiana-1943",
+      "reason": "Un anno e sette mesi prima, il 23 settembre 1943, era stata proclamata la Repubblica sociale italiana."
+    },
+    {
+      "slug": "liberazione-di-roma-1944",
+      "reason": "Quasi undici mesi prima, il 4 giugno 1944, Roma era stata liberata dagli Alleati."
+    },
+    {
+      "slug": "battaglia-di-berlino-1945",
+      "reason": "Nove giorni prima, il 16 aprile, l'Armata Rossa aveva attaccato Berlino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Liberation Day (Italy) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liberation_Day_(Italy)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anniversario della liberazione d'Italia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Anniversario_della_liberazione_d'Italia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli sono sulla festa del 25 aprile e danno gli stessi fatti dell'insurrezione e della resa (2 maggio, resa di Caserta del 29 aprile). Divergono sui decreti (Mussolini è citato per l'inglese, non esplicitamente per l'italiano) e sugli anni di dittatura (ventitré per l'inglese, vent'anni per l'italiano). Il pin è su Milano."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

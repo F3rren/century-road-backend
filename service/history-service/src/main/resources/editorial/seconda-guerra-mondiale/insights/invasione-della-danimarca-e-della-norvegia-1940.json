@@ -1,0 +1,51 @@
+{
+  "slug": "invasione-della-danimarca-e-della-norvegia-1940",
+  "title": "L'invasione della Danimarca e della Norvegia",
+  "summary": "All'alba del 9 aprile 1940 la Germania occupa la Danimarca, che capitola in meno di sei ore, e invade la Norvegia. Berlino dice di voler proteggere i due paesi da un attacco franco-britannico. In Norvegia i combattimenti durano fino a giugno.",
+  "date": {
+    "year": 1940,
+    "month": 4,
+    "day": 9
+  },
+  "place": {
+    "name": "Oslo, Norvegia",
+    "lat": 59.9139,
+    "lon": 10.7522,
+    "countryCode": "NO",
+    "approximate": true,
+    "note": "L'operazione colpì molte località di due paesi: il pin è su Oslo, capitale della Norvegia, ed è solo un segnaposto."
+  },
+  "before": "La Germania importava minerale di ferro dalla Svezia, in gran parte attraverso il porto norvegese di Narvik, e il Regno Unito valutava un blocco. Nell'ottobre 1939 il capo della marina tedesca Raeder discusse con Hitler la possibilità di occupare basi in Norvegia prima degli inglesi; per l'articolo italiano Hitler si interessò poco al progetto. Churchill propose di minare le acque norvegesi; con la guerra d'inverno Regno Unito e Francia studiarono anche uno sbarco a Narvik. Dopo un incontro con Quisling, il 14 dicembre, Hitler ordinò una pianificazione preliminare dell'invasione, e il 1º marzo 1940 una direttiva prevedeva di attaccare sia la Norvegia sia la Danimarca.",
+  "event": "Alle 4 del 9 aprile l'ambasciatore tedesco a Copenaghen chiamò il ministro degli Esteri danese e, all'incontro venti minuti dopo, dichiarò che le truppe tedesche stavano occupando il paese per proteggerlo da un attacco franco-britannico, minacciando di bombardare la capitale: i tedeschi erano già sbarcati a Gedser alle 3.55. Il re Cristiano e il governo capitolarono verso le 6, e l'invasione durò meno di sei ore. In Norvegia, per l'articolo inglese, i cannoni e i siluri della fortezza di Oscarsborg affondarono l'incrociatore Blücher nell'Oslofjord, con 600-1 000 morti, e la minaccia della fortezza ritardò il resto del gruppo navale abbastanza da permettere al re, al governo e ai parlamentari di lasciare Oslo.",
+  "after": "Per l'articolo inglese in Norvegia l'operazione durò fino al 10 giugno; il re e il governo non furono catturati e formarono un governo in esilio a Londra, e per questo la Norvegia non si arrese mai in senso giuridico. La Danimarca, che aveva capitolato in cambio dell'indipendenza politica negli affari interni, ebbe fino all'estate del 1943 un'occupazione insolitamente indulgente: l'arresto e la deportazione degli ebrei danesi furono rinviati finché quasi tutti, avvertiti, trovarono rifugio nella Svezia neutrale.",
+  "links": [
+    {
+      "slug": "guerra-d-inverno-1939",
+      "reason": "Poco più di quattro mesi prima, il 30 novembre 1939, era cominciata la guerra d'inverno."
+    },
+    {
+      "slug": "battaglia-di-francia-1940",
+      "reason": "Un mese dopo, il 10 maggio, la Germania attacca a ovest Belgio, Paesi Bassi e Francia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Weserübung - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Weserübung",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Weserübung - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Weserübung",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 9 aprile 1940. L'articolo inglese dà l'operazione dal 9 aprile al 10 giugno, quello italiano l'8 giugno come fine ufficiale delle operazioni. L'affondamento del Blücher è in entrambi, la stima di 600-1 000 morti solo nell'inglese, e il testo lo dice. Sul disinteresse per il progetto del 1939 l'italiano indica Hitler, l'inglese gli altri rami della Wehrmacht. Il pin è su Oslo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "slug": "la-gran-bretagna-da-sola",
+  "title": "La Gran Bretagna da sola",
+  "tagline": "Da Churchill a Dunkerque, dalla battaglia d'Inghilterra al Blitz, fino agli aiuti americani e alla Carta atlantica: il Regno Unito resiste nel 1940-1941.",
+  "intro": "Il percorso segue il Regno Unito nel periodo in cui, dopo la caduta della Francia, fronteggia la Germania quasi da solo: il primo discorso di Churchill, l'evacuazione di Dunkerque, la battaglia d'Inghilterra, il Blitz, la legge Lend-Lease e la Carta atlantica.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "sangue-fatica-lacrime-e-sudore-1940",
+      "narrative": "Il 13 maggio 1940 Churchill, da tre giorni primo ministro, promette «sangue, fatica, lacrime e sudore»."
+    },
+    {
+      "insight": "dunkerque-1940",
+      "narrative": "Dal 26 maggio le truppe alleate accerchiate sono evacuate dalle spiagge di Dunkerque."
+    },
+    {
+      "insight": "battaglia-d-inghilterra-1940",
+      "narrative": "Dal 10 luglio la RAF difende il cielo britannico dalla Luftwaffe."
+    },
+    {
+      "insight": "blitz-1940",
+      "narrative": "Dal 7 settembre i tedeschi bombardano Londra e le altre città britanniche."
+    },
+    {
+      "insight": "lend-lease-1941",
+      "narrative": "L'11 marzo 1941 gli Stati Uniti approvano la legge che permette di aiutare il Regno Unito."
+    },
+    {
+      "insight": "carta-atlantica-1941",
+      "narrative": "Il 14 agosto Roosevelt e Churchill dichiarano gli obiettivi comuni per il dopoguerra."
+    }
+  ]
+}

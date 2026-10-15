@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-delle-ardenne-1944",
+  "title": "La battaglia delle Ardenne",
+  "summary": "Il 16 dicembre 1944 la Germania lancia nelle Ardenne, tra Belgio e Lussemburgo, l'ultima grande offensiva sul fronte occidentale, per spezzare in due le linee alleate. L'attacco è una sorpresa, ma la resistenza americana a Bastogne e altrove lo rallenta. Alla fine di gennaio 1945 il fronte è ristabilito.",
+  "date": {
+    "year": 1944,
+    "month": 12,
+    "day": 16
+  },
+  "place": {
+    "name": "Bastogne, Belgio",
+    "lat": 50,
+    "lon": 5.7167,
+    "countryCode": "BE",
+    "approximate": true,
+    "note": "L'offensiva si svolse su un largo fronte delle Ardenne, tra il Belgio e il Lussemburgo: il pin è su Bastogne, la città assediata, ed è solo un segnaposto."
+  },
+  "before": "Dopo lo sbarco in Normandia gli Alleati erano avanzati più in fretta del previsto, con truppe stanche e rifornimenti al limite. Per l'articolo inglese a dicembre Eisenhower e il suo stato maggiore tenevano le Ardenne soprattutto come zona di riposo per la 1ª armata americana. Hitler progettò l'offensiva, per l'articolo inglese, per impedire agli Alleati di usare il porto di Anversa, spezzare le loro linee e costringerli a trattare. Per l'articolo italiano sperava in una nuova Dunkerque e la Germania aveva 164 divisioni a est e solo 74 a ovest.",
+  "event": "La mattina del 16 dicembre i tedeschi attaccarono di sorpresa. Per l'articolo inglese a favorire il successo furono la sicurezza eccessiva degli Alleati, informazioni sbagliate, la ricognizione aerea ostacolata dal maltempo e linee tenute da truppe stanche e da rimpiazzi senza esperienza; la nuvolosità teneva a terra l'aviazione alleata. Per l'articolo inglese la resistenza americana a nord, sull'Elsenborn Ridge, e a sud, a Bastogne, bloccò strade importanti e mise in ritardo l'avanzata tedesca; i boschi di Foy-Notre-Dame furono raggiunti il 22-23 dicembre, e il 24 fu il limite estremo dell'avanzata, subito fermata.",
+  "after": "Per l'articolo inglese il tempo migliorò dal 24 dicembre e permise attacchi aerei sui tedeschi; il 26 dicembre un reparto di punta della 3ª armata di Patton raggiunse Bastogne da sud e pose fine all'assedio. L'offensiva era di fatto spezzata dal 27, ma i combattimenti proseguirono quasi un mese, fino al 25 gennaio 1945. Per l'articolo inglese i tedeschi impiegarono oltre 410 000 uomini e ebbero tra 63 000 e 104 000 perdite; gli Alleati tra 77 000 e oltre 83 000, con almeno 8 600 morti. Per l'articolo inglese fu la battaglia più sanguinosa combattuta dagli Stati Uniti nella guerra.",
+  "links": [
+    {
+      "slug": "sbarco-in-normandia-1944",
+      "reason": "Più di sei mesi prima, il 6 giugno, gli Alleati erano sbarcati in Normandia."
+    },
+    {
+      "slug": "operazione-market-garden-1944",
+      "reason": "Quasi tre mesi prima, il 17 settembre, era cominciata l'operazione Market Garden, poi fallita ad Arnhem."
+    },
+    {
+      "slug": "conferenza-di-jalta-1945",
+      "reason": "Cinquanta giorni dopo, il 4 febbraio 1945, comincia la conferenza di Jalta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Bulge - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Bulge",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva delle Ardenne - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_delle_Ardenne",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 16 dicembre 1944 come inizio. La fine (25 gennaio 1945) e le cifre di forze e perdite usate nel testo sono dell'articolo inglese; l'articolo italiano dice che la battaglia durò un mese, dà le divisioni tedesche a est e a ovest (74 a ovest, mentre l'inglese parla di 55 divisioni incomplete) e ha cifre proprie: circa 250 000 soldati tedeschi di prima linea contro oltre 410 000 dell'inglese, e circa 39 000 perdite americane nelle prime due settimane. Il pin è su Bastogne."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

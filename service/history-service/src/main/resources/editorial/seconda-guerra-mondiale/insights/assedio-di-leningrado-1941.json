@@ -1,0 +1,54 @@
+{
+  "slug": "assedio-di-leningrado-1941",
+  "title": "L'assedio di Leningrado",
+  "summary": "L'8 settembre 1941 l'esercito tedesco taglia le vie di comunicazione terrestri di Leningrado, che resterà assediata per 872 giorni. La città non viene conquistata, ma nell'assedio muoiono da circa 642 000 civili (stima minima citata dall'articolo italiano) a 1,5 milioni tra soldati e civili (stima inglese), per fame, freddo e malattie.",
+  "date": {
+    "year": 1941,
+    "month": 9,
+    "day": 8
+  },
+  "place": {
+    "name": "Leningrado (oggi San Pietroburgo), Russia",
+    "lat": 59.9311,
+    "lon": 30.3609,
+    "countryCode": "RU",
+    "approximate": false
+  },
+  "before": "Leningrado, seconda città dell'Unione Sovietica, era uno degli obiettivi dell'operazione Barbarossa: ex capitale, sede della flotta sovietica del Baltico e centro industriale, con l'11% della produzione industriale del 1939 per l'articolo inglese. Ad agosto il gruppo d'armate Nord raggiunse la periferia, mentre i finlandesi si muovevano da nord. Per l'articolo italiano Hitler aveva stabilito che la città non fosse occupata ma «isolata ermeticamente», per eliminarne la popolazione con la fame e il freddo; per l'articolo inglese Hitler intendeva distruggere del tutto la città e la sua popolazione.",
+  "event": "L'8 settembre 1941 furono tagliate le vie di terra tra Leningrado e il resto del paese: cominciò l'assedio. Per l'articolo inglese i tedeschi decisero di bombardare la città e di farla morire di fame invece di conquistarla, e i loro scienziati avevano calcolato che sarebbe stata allo stremo in poche settimane. I rifornimenti arrivavano per via aerea, con navi sul lago Ladoga e, quando il lago gelava, lungo la «strada della vita». Per l'articolo italiano in novembre la razione di pane scese a 250 grammi per operai e soldati e a 125 per i civili.",
+  "after": "Per l'articolo inglese un'offensiva dell'Armata Rossa aprì un corridoio di terra il 18 gennaio 1943, ma l'assedio fu rotto del tutto solo il 27 gennaio 1944; l'articolo italiano indica anche il 26 febbraio 1944. Per l'articolo inglese morirono circa 1,5 milioni di persone su 3,2 milioni di abitanti prima della guerra, e alcuni storici lo classificano come genocidio; per l'articolo italiano morirono circa un milione di civili, soprattutto nell'inverno 1941-1942, e Leningrado fu la prima «città eroina» dell'Unione Sovietica.",
+  "links": [
+    {
+      "slug": "operazione-barbarossa-1941",
+      "reason": "Due mesi e mezzo prima, il 22 giugno, la Germania aveva attaccato l'Unione Sovietica."
+    },
+    {
+      "slug": "guerra-d-inverno-1939",
+      "reason": "Un anno e nove mesi prima, il 30 novembre 1939, l'Unione Sovietica aveva attaccato la Finlandia, i cui soldati parteciparono poi all'assedio."
+    },
+    {
+      "slug": "battaglia-di-mosca-1941",
+      "reason": "Ventidue giorni dopo, il 30 settembre, i tedeschi riprendono l'offensiva verso Mosca."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Siege of Leningrad - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Siege_of_Leningrad",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Assedio di Leningrado - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Assedio_di_Leningrado",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'8 settembre 1941 e 872 giorni. Divergono sulla fine (27 gennaio 1944 per l'articolo inglese; l'articolo italiano dà il 27 gennaio nella prima frase e il 26 febbraio più avanti, nell'introduzione e nel testo) e sui morti (fino a 1,5 milioni tra soldati e civili per l'inglese; per l'italiano da circa 642 000 a un milione di civili, e 1,6-2 milioni contando anche i militari). Il pin è sulla città."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

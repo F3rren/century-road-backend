@@ -1,0 +1,55 @@
+{
+  "slug": "rivolta-del-ghetto-di-varsavia-1943",
+  "title": "La rivolta del ghetto di Varsavia",
+  "summary": "Il 19 aprile 1943 gli ebrei rimasti nel ghetto di Varsavia si ribellano alle SS, che vogliono deportare gli ultimi abitanti nei campi di sterminio. I combattenti, pochi e con armi scarse, resistono quasi un mese; il ghetto è distrutto il 16 maggio. Per l'articolo inglese è la più grande rivolta ebraica della seconda guerra mondiale.",
+  "date": {
+    "year": 1943,
+    "month": 4,
+    "day": 19
+  },
+  "place": {
+    "name": "Ghetto di Varsavia, Polonia",
+    "lat": 52.2496,
+    "lon": 20.9928,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Il ghetto occupava circa 3,3-3,4 chilometri quadrati nella città: il pin è su un punto del suo quartiere, nell'area dell'ex ghetto, e non indica un edificio preciso."
+  },
+  "before": "Dal 1939-1940 i tedeschi concentravano gli ebrei polacchi in ghetti sovraffollati; in quello di Varsavia, di circa 3,3 chilometri quadrati per l'articolo inglese e 3,4 per quello italiano, furono stipate 300 000-400 000 persone per l'articolo inglese, circa 400 000 per quello italiano. Per l'articolo inglese tra il 23 luglio e il 21 settembre 1942 la «Grossaktion» deportò 254 000-300 000 abitanti a Treblinka, dove furono assassinati. Alla fine del 1942 i superstiti capirono che le deportazioni erano parte di uno sterminio, e per l'articolo inglese l'Organizzazione ebraica di combattimento e l'Unione militare ebraica si prepararono alla resistenza armata. Il 18 gennaio 1943 una piccola resistenza armata interruppe la nuova deportazione dopo pochi giorni.",
+  "event": "Il 19 aprile 1943 il ghetto rifiutò di arrendersi al comandante delle SS Jürgen Stroop, mandato da Himmler, che ordinò di distruggerlo isolato per isolato. Per l'articolo inglese centinaia di ebrei, con armi scarse, tra cui pistole e bottiglie incendiarie, sapevano che la vittoria era impossibile e la sopravvivenza improbabile. Per l'articolo inglese Marek Edelman, ultimo comandante sopravvissuto della ŻOB, disse che combattevano «per non lasciare ai tedeschi il solo diritto di scegliere il tempo e il luogo della nostra morte». La rivolta terminò il 16 maggio per entrambi gli articoli, anche se per l'inglese un ultimo scontro ci fu il 5 giugno e per l'italiano piccoli gruppi continuarono a combattere sporadicamente fino al 23 settembre.",
+  "after": "Per l'articolo inglese il rapporto di Stroop dichiarava 56 065 ebrei uccisi o catturati e 110 vittime tedesche, tra cui 16 morti; l'articolo inglese stima almeno 13 000 ebrei uccisi nel ghetto, di cui circa 6 000 bruciati vivi o morti per il fumo. Per l'articolo italiano furono circa 13 000 gli uccisi, più 6 929 prigionieri portati a Treblinka e uccisi; il ghetto fu raso al suolo e i circa 42 000 superstiti furono dispersi in vari campi. Per l'articolo inglese Stroop chiuse l'operazione facendo saltare la sinagoga.",
+  "links": [
+    {
+      "slug": "invasione-della-polonia-1939",
+      "reason": "Più di tre anni prima, il 1º settembre 1939, la Germania aveva invaso la Polonia."
+    },
+    {
+      "slug": "conferenza-di-wannsee-1942",
+      "reason": "Un anno e tre mesi prima, il 20 gennaio 1942, a Wannsee si era discussa la «soluzione finale»."
+    },
+    {
+      "slug": "rastrellamento-del-ghetto-di-roma-1943",
+      "reason": "Quasi sei mesi dopo, il 16 ottobre, i tedeschi rastrellano gli ebrei del ghetto di Roma."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Warsaw Ghetto Uprising - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warsaw_Ghetto_Uprising",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolta del ghetto di Varsavia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolta_del_ghetto_di_Varsavia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la rivolta dal 19 aprile al 16 maggio 1943. Le cifre dei morti divergono nel modo di presentarle (il rapporto di Stroop, le stime di storici, 13 000 uccisi) e il testo le attribuisce a chi le dà. L'articolo italiano dà i superstiti e le deportazioni, quello inglese la «Grossaktion» e l'organizzazione dei combattenti. Sulle perdite tedesche entrambi dicono 110, con 16 morti per l'inglese e 17 (16 in azione) per l'italiano; sull'area del ghetto 3,3 o 3,4 chilometri quadrati. Il pin è su un punto dell'area del ghetto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

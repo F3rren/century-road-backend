@@ -1,0 +1,55 @@
+{
+  "slug": "invasione-sovietica-della-polonia-1939",
+  "title": "L'Unione Sovietica invade la Polonia",
+  "summary": "Il 17 settembre 1939, sedici giorni dopo l'attacco tedesco, l'Armata Rossa entra in Polonia da est senza una dichiarazione di guerra formale. Il governo sovietico dice di voler proteggere ucraini e bielorussi. La campagna si chiude con la spartizione del paese tra la Germania e l'Unione Sovietica.",
+  "date": {
+    "year": 1939,
+    "month": 9,
+    "day": 17
+  },
+  "place": {
+    "name": "Łuck (oggi Lutsk), Ucraina",
+    "lat": 50.7472,
+    "lon": 25.3254,
+    "countryCode": "UA",
+    "approximate": true,
+    "note": "L'invasione investì tutto il confine orientale polacco: il pin è su Łuck (oggi Lutsk, in Ucraina), una delle città che per l'articolo inglese accolsero i sovietici, ed è solo un segnaposto."
+  },
+  "before": "Per l'articolo italiano fin dal 1935 l'Unione Sovietica aveva trattato con Regno Unito, Francia e Polonia un'alleanza antinazista, ma i negoziati fallirono; per quello inglese le trattative con Londra e Parigi cominciarono all'inizio del 1939. Il 23 agosto Mosca firmò il patto Molotov-Ribbentrop. Per l'articolo inglese il protocollo segreto divideva la Polonia in sfere d'influenza; per quello italiano non prevedeva una spartizione, ma solo sfere d'influenza e un limite all'espansione tedesca, e la spartizione fu l'esito dell'imprevista rapidità del crollo polacco. Per l'articolo italiano, dopo l'attacco tedesco i sovietici erano riluttanti a intervenire e, dopo che il 9 settembre la zona d'influenza sovietica fu comunicata all'ambasciatore tedesco Schulenburg, rinviarono l'invasione di più di una settimana.",
+  "event": "Il 17 settembre l'Armata Rossa, molto più numerosa dei difensori, invase la Polonia da est senza una dichiarazione di guerra formale e, per l'articolo italiano, rompendo il patto di non aggressione sovietico-polacco. Il governo sovietico annunciò di agire per proteggere gli ucraini e i bielorussi dell'est, perché lo Stato polacco era crollato. Per l'articolo inglese alcune città, come Dubno, Łuck e Włodzimierz Wołyński, accolsero i sovietici convinte che marciassero contro i tedeschi, e il governo polacco ordinò l'evacuazione delle truppe verso la Romania. Per l'articolo inglese le operazioni durarono circa venti giorni e finirono il 6 ottobre.",
+  "after": "In novembre l'Unione Sovietica annesse il territorio occupato: i suoi abitanti, 13,5 milioni per l'articolo inglese e circa 12 milioni per quello italiano, diventarono cittadini sovietici. I prigionieri polacchi furono 320 000 per l'introduzione dell'articolo inglese (230 000-450 000 nel suo testo) e 230 000 o più per quello italiano. Tra il 1939 e il 1941 ci furono quattro grandi ondate di deportazioni verso la Siberia e altre zone remote; le stime dei deportati variano molto: centinaia di migliaia nell'introduzione dell'articolo inglese, che nel testo riporta stime fino a 1 500 000 e una polacca del 2009 di circa 150 000 tra deportati e morti, e decine di migliaia per quello italiano. Le forze sovietiche rimasero nell'est della Polonia fino all'estate del 1941, quando la Germania attaccò l'Unione Sovietica.",
+  "links": [
+    {
+      "slug": "invasione-della-polonia-1939",
+      "reason": "Sedici giorni prima, il 1º settembre, la Germania aveva attaccato la Polonia da ovest."
+    },
+    {
+      "slug": "patto-molotov-ribbentrop-1939",
+      "reason": "Venticinque giorni prima, il 23 agosto, il patto Molotov-Ribbentrop aveva stabilito le sfere d'influenza."
+    },
+    {
+      "slug": "guerra-d-inverno-1939",
+      "reason": "Due mesi e mezzo dopo, il 30 novembre, l'Unione Sovietica attacca la Finlandia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Soviet invasion of Poland - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Soviet_invasion_of_Poland",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Invasione sovietica della Polonia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Invasione_sovietica_della_Polonia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 17 settembre 1939; il 6 ottobre come fine e la durata di circa venti giorni sono solo dell'articolo inglese (quello italiano dice soltanto che la campagna si concluse con la divisione del paese). Le cifre divergono: prigionieri, abitanti, deportati. L'articolo inglese è incoerente sulla dichiarazione di guerra: nell'introduzione dice che non ci fu, in una sezione dice che Molotov ne consegnò una all'ambasciatore polacco. Il collegamento al patto usa il 23 agosto; l'inglese dà anche il 24 in un passo. Gli articoli divergono anche sul ruolo del patto: per l'inglese il protocollo segreto divideva la Polonia, per l'italiano la spartizione non era nel patto. L'articolo italiano è breve: le città accolte e l'evacuazione verso la Romania sono dell'articolo inglese. Il pin è un segnaposto."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

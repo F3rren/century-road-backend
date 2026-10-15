@@ -1,0 +1,54 @@
+{
+  "slug": "lend-lease-1941",
+  "title": "La legge Lend-Lease",
+  "summary": "L'11 marzo 1941 il presidente Roosevelt firma la legge Lend-Lease, che permette agli Stati Uniti di fornire materiali bellici, cibo e petrolio agli Alleati senza essere ancora in guerra. Tra il 1941 e il 1945 gli aiuti valgono 50,1 miliardi di dollari, in gran parte destinati al Regno Unito.",
+  "date": {
+    "year": 1941,
+    "month": 3,
+    "day": 11
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.8977,
+    "lon": -77.0365,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Le leggi di neutralità degli anni Trenta vietavano agli americani di vendere armi alle nazioni in guerra. Nel 1939 Roosevelt ottenne la formula «cash and carry»: chi comprava pagava in contanti e trasportava la merce con le proprie navi. Dopo la caduta della Francia il Regno Unito era rimasto quasi solo e, per l'articolo inglese, nel 1941 aveva venduto gran parte dei beni all'estero e le sue riserve d'oro si stavano esaurendo. Le leggi di neutralità e l'opinione pubblica impedivano di vendere armi a credito o di prestare denaro: Roosevelt trovò allora l'idea del Lend-Lease.",
+  "event": "L'11 marzo 1941 Roosevelt firmò la legge. Per l'articolo italiano gli dava il potere di decidere sia i materiali da fornire sia le modalità di rimborso dei paesi beneficiari, e permetteva di soccorrere gli Stati la cui politica era ritenuta conforme agli interessi americani senza rompere formalmente la neutralità; per l'articolo inglese, invece, la legge pose fine alla neutralità degli Stati Uniti, un passo decisivo verso il sostegno aperto agli Alleati. Per l'articolo inglese il materiale era fornito gratis, da usare finché fosse restituito o distrutto, e Harry Hopkins ne controllava di fatto l'applicazione.",
+  "after": "Tra il 1941 e il 1945 furono spediti 50,1 miliardi di dollari di forniture: 31,4 al Regno Unito, 11,3 all'Unione Sovietica, 3,2 alla Francia, 1,6 alla Cina. Per l'articolo italiano la legge finì il 2 settembre 1945, con la resa del Giappone; l'articolo inglese dà il 20 settembre nell'introduzione e il 2 settembre in un altro passo. Per l'articolo inglese il Regno Unito rimborsò i residui con prestiti a lungo termine, finiti di pagare nel 2006. Il peso preciso del Lend-Lease sulla vittoria alleata è discusso, per l'articolo inglese.",
+  "links": [
+    {
+      "slug": "blitz-1940",
+      "reason": "Sei mesi prima, il 7 settembre 1940, era cominciato il Blitz sul Regno Unito."
+    },
+    {
+      "slug": "carta-atlantica-1941",
+      "reason": "Cinque mesi dopo, il 14 agosto, Roosevelt e Churchill firmano la Carta atlantica."
+    },
+    {
+      "slug": "attacco-a-pearl-harbor-1941",
+      "reason": "Quasi nove mesi dopo, il 7 dicembre, l'attacco a Pearl Harbor porta gli Stati Uniti in guerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Lend-Lease - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Lend-Lease",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Legge degli affitti e prestiti - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Legge_degli_affitti_e_prestiti",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'11 marzo 1941. Sulla fine l'articolo italiano dà il 2 settembre 1945 (ma nell'introduzione parla di aiuti fino al settembre 1946), l'inglese il 20 settembre nell'introduzione e il 2 settembre in un altro passo. Divergono anche sulla neutralità (per l'italiano senza romperla formalmente, per l'inglese la legge la finì) e sul rimborso (per l'italiano il presidente decideva le modalità, per l'inglese il materiale era fornito senza costi). Per il debito britannico sui materiali rimasti entrambi gli articoli partono da 1 075 milioni di sterline; i 42,5 milioni sono per l'italiano la somma finale fissata, per l'inglese l'ultima rata, pagata il 29 dicembre 2006. Il pin è su Washington, sede del governo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

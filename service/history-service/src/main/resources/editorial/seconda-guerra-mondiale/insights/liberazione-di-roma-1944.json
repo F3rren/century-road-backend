@@ -1,0 +1,60 @@
+{
+  "slug": "liberazione-di-roma-1944",
+  "title": "La liberazione di Roma",
+  "summary": "Il 4 giugno 1944 le truppe americane della 5ª armata del generale Clark entrano a Roma, dopo lo sfondamento delle difese tedesche a Cassino e ad Anzio. I tedeschi rinunciano a una battaglia casa per casa e si ritirano verso nord, con scontri locali. Roma era occupata da quasi nove mesi.",
+  "date": {
+    "year": 1944,
+    "month": 6,
+    "day": 4
+  },
+  "place": {
+    "name": "Roma, Italia",
+    "lat": 41.9028,
+    "lon": 12.4964,
+    "countryCode": "IT",
+    "approximate": false
+  },
+  "before": "Dopo l'occupazione tedesca di Roma, nel settembre 1943, gli Alleati furono fermati sulla linea Gustav, perno di Cassino. Il 22 gennaio 1944 sbarcarono ad Anzio, e in città si sperò in una liberazione rapida. Per l'articolo italiano il generale Clark voleva conquistare Roma a tutti i costi, e i comandi americani gli fecero notare che sarebbe stato importante liberare Roma prima dello sbarco in Francia. Per l'articolo inglese l'operazione Diadem, lanciata l'11 maggio, doveva rompere la linea Gustav e aprire la strada verso Roma, tenendo impegnate in Italia le forze tedesche mentre cominciava la campagna di Normandia.",
+  "event": "Dopo lo sfondamento a Cassino e dalla testa di sbarco di Anzio, per l'articolo inglese Clark ordinò alle truppe di Anzio di dirigersi verso Roma invece di tagliare la ritirata della 10ª armata tedesca, e si specula che volesse che fosse la sua 5ª armata a prendere la città prima dell'8ª armata britannica. Il 4 giugno, e il 5 per l'articolo italiano, i soldati americani entrarono a Roma, con scontri locali (duri in alcuni quartieri per l'articolo italiano), e furono accolti con entusiasmo. Il maresciallo Kesselring preferì ritirarsi verso nord senza combattere nell'area urbana, benché Roma fosse una città aperta che i tedeschi avevano continuato a usare come nodo di comunicazioni.",
+  "after": "Per l'articolo italiano i tedeschi ripiegarono sulla linea Gotica; per quello sull'operazione Diadem prima sulla linea del Trasimeno e poi sulla Gotica. Per l'articolo inglese l'ordine di Clark permise alla 10ª armata tedesca di evitare l'accerchiamento. Per l'articolo italiano dall'8 settembre 1943 al 4 giugno 1944 la Resistenza romana aveva avuto circa 1 700 caduti e circa diecimila romani erano stati deportati in Germania. Per l'articolo italiano la rinuncia dei tedeschi a combattere dentro Roma fu dovuta anche alla combattività dei partigiani romani, che avevano compiuto l'attentato di via Rasella.",
+  "links": [
+    {
+      "slug": "fosse-ardeatine-1944",
+      "reason": "Più di dieci settimane prima, il 24 marzo, i tedeschi avevano ucciso 335 persone alle Fosse Ardeatine."
+    },
+    {
+      "slug": "armistizio-di-cassibile-1943",
+      "reason": "Quasi nove mesi prima, l'8 settembre 1943, era stato reso noto l'armistizio."
+    },
+    {
+      "slug": "sbarco-in-normandia-1944",
+      "reason": "Due giorni dopo, il 6 giugno, gli Alleati sbarcano in Normandia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Diadem - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Diadem",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Liberazione di Roma - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Liberazione_di_Roma",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battle of Anzio - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Anzio",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà l'ingresso a Roma il 4 e il 5 giugno 1944; il testo usa il 4, come l'articolo sulla battaglia di Anzio (quello su Diadem non dà il giorno). Sul perché i tedeschi non difesero la città l'italiano ricorda anche un'uscita concordata attraverso il Vaticano, mentre l'articolo su Anzio dice che il 2 giugno Hitler ordinò di non difendere Roma. Le mosse di Clark sono dell'articolo inglese sull'operazione Diadem, e il testo ne ricorda anche l'articolo sulla battaglia di Anzio, che dà la liberazione di Roma il 4 giugno. Il pin è su Roma."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1046,9 +1046,17 @@ auth-service's login is:
 | `HISTORY_REPORTS_MAXTOTAL` | `200` | reports the whole service accepts per window |
 | `HISTORY_REPORTS_WINDOW` | `1h` | the window |
 
-Over either limit it is a `429` with `Retry-After`. "One address" is the caller's real address
-only because `server.forward-headers-strategy: framework` is set in the `prod` profile, as in
-auth-service: history-service is reachable only through the gateway.
+Over either limit it is a `429` with `Retry-After`. "One visitor" is one IPv4 address or one
+IPv6 /64: a household or a phone holds a whole /64 and can write from any address in it, so
+every address of a /64 shares one quota. The address is the caller's real one only because
+`server.forward-headers-strategy: framework` is set in the `prod` profile, as in auth-service:
+history-service is reachable only through the gateway, which adds the `Forwarded` header.
+`ForwardedAddressIntegrationTest` sends that header and checks it, for IPv4 and IPv6, so the
+claim is tested rather than assumed.
+
+The message, the contact and the event text may not contain control characters (a line break and
+a tab are fine in the message and the text): Postgres refuses a NUL, and it would otherwise fail
+after the quota was spent.
 
 **What is stored** (migration `V3`): the report and what it is about, and nothing that identifies
 the visitor - no address, no session. `contact` is the one exception, and only if they chose to
@@ -1105,9 +1113,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  71 tests
+cd service/auth-service    && ./mvnw test    #  79 tests
 cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 397 tests
+cd service/history-service && ./mvnw test    # 422 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1131,6 +1139,13 @@ talk to a stand-in on a local port.
 Every service exposes `/actuator/health` and `/actuator/prometheus`. Prometheus scrapes
 them over the internal network and Grafana is provisioned with it as a datasource, so the
 datasource comes up with no manual wiring. Configuration lives under `infra/`.
+
+The scrape targets are the three services on the ports `.env` gives them (`AUTH_PORT`,
+`HISTORY_PORT`, `GATEWAY_PORT`): `infra/prometheus/prometheus.yml.tpl` is a template and the
+Compose file fills the ports in when the container starts. `history-service` used to be
+scraped on a fixed 8082, which is only right in development; with any other `HISTORY_PORT` its
+metrics, and the alerts built on them, were silently empty. Check Prometheus's Status > Targets
+page after changing a port: all three jobs should be `UP`.
 
 In production Prometheus and Grafana listen on the host's loopback only. From your
 machine, open a tunnel and use them as if they were local:
@@ -1174,6 +1189,13 @@ metrics would be public.
 
 - **Postgres is published only in dev**, on the loopback (`localhost:5433`, in
   `compose-dev.yml`). `compose-prod.yml` publishes nothing for the database.
+- **The three Spring services run with the least Linux privilege they need** in
+  `compose-prod.yml`: every capability dropped, `no-new-privileges`, and the JVM set to exit on
+  `OutOfMemoryError` so that `restart: unless-stopped` restarts it rather than leaving it
+  half-alive. Every container's log is rotated (3 files of 10 MB). Postgres and Caddy are left
+  out of the capability drop on purpose: both start as root and need it in their entrypoints.
+  There are no memory or CPU limits, because the right numbers depend on the host: set them
+  (`mem_limit`, `cpus`) once you know it, and the JVM will size its heap from the limit.
 - **Prometheus and Grafana are loopback-only.** Prometheus runs with
   `--web.enable-lifecycle` and no authentication, so anyone who could reach its port could
   shut it down. Do not change those bindings to `0.0.0.0` to save an SSH tunnel.
@@ -1183,9 +1205,11 @@ metrics would be public.
   at `~/.config/rclone/rclone.conf` on the host — same reasoning as `.env`. `ALERT_WEBHOOK_URL`
   is lower stakes (it can post to the ops channel, nothing more) but still belongs only in
   `.env`, not committed.
-- **Published images are scanned for known vulnerabilities** (Trivy, in `publish-images`) before
-  the moving tag (`latest`/branch) is pointed at them; results are in the repository's Security
-  tab, alongside CodeQL's.
+- **Published images are scanned for known vulnerabilities** (Trivy, in `publish-images`) right
+  after they are pushed; results are in the repository's Security tab, alongside CodeQL's. The
+  scan is advisory: a HIGH/CRITICAL finding adds a warning to the CI run and does not stop the
+  moving tag (`latest`/branch) from being pointed at the image, so the Security tab has to be
+  looked at. See `docs/architecture.md` for why it is not a gate.
 - **`server.forward-headers-strategy` is enabled in the `prod` profile**, so the services
   trust the `X-Forwarded-*` headers they receive. That is safe only because the proxy
   overwrites them rather than passing on what the caller sent. The standard `Forwarded`

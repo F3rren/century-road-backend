@@ -1,0 +1,55 @@
+{
+  "slug": "battaglia-di-francia-1940",
+  "title": "La battaglia di Francia",
+  "summary": "Il 10 maggio 1940 la Germania attacca Belgio, Paesi Bassi, Lussemburgo e Francia. I carri armati passano per le Ardenne, attraversano la Mosa a Sedan e arrivano alla Manica, accerchiando le truppe alleate. Il 22 giugno, per l'articolo inglese, la Francia firma l'armistizio.",
+  "date": {
+    "year": 1940,
+    "month": 5,
+    "day": 10
+  },
+  "place": {
+    "name": "Sedan, Francia",
+    "lat": 49.7017,
+    "lon": 4.9403,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "L'attacco investì quattro paesi: il pin è su Sedan, dove i tedeschi attraversarono la Mosa, e non indica l'intera campagna."
+  },
+  "before": "Dopo l'attacco alla Polonia, per l'articolo inglese la Francia aveva tentato in settembre una limitata offensiva nella Saar, ritirandosi poi (a metà ottobre nell'introduzione, il 17 settembre nel testo dello stesso articolo); i comandi alleati puntavano a una guerra lunga e difensiva. Per l'articolo inglese i francesi, che avevano costruito la linea Maginot, ritenevano le Ardenne al sicuro (Pétain le aveva dichiarate «impenetrabili» a certe condizioni); per quello italiano mandarono le migliori armate verso nord, nel Belgio, aspettandosi una ripetizione del piano Schlieffen. Per l'articolo italiano Hitler avrebbe voluto attaccare già il 12 novembre 1939, ma i generali lo convinsero a rinviare.",
+  "event": "Il 10 maggio la Wehrmacht invase Belgio, Lussemburgo, Paesi Bassi e parti della Francia. Per l'articolo italiano paracadutisti presero i ponti sulla Mosa e la fortezza belga di Eben-Emael, dove 80 soldati sbarcati con alianti la conquistarono in 30 ore; per l'articolo inglese le azioni sui ponti di Maastricht fallirono e i ponti furono fatti saltare, tranne uno ferroviario. Il 13 maggio, per l'articolo inglese, il Panzergruppe Kleist forzò tre passaggi della Mosa presso Sedan, con genieri d'assalto, dopo il più pesante bombardamento aereo fino ad allora; per quello italiano genieri e granatieri attraversarono il fiume e i primi panzer erano di là il 14. Il 14 maggio la Luftwaffe distrusse il centro di Rotterdam, con 800-980 morti per l'articolo inglese, e l'esercito olandese si arrese: la sera del 14 per l'articolo inglese, che dà il 15 per il documento di capitolazione; il 15 per quello italiano.",
+  "after": "I tedeschi arrivarono alla Manica e accerchiarono le truppe alleate in Belgio, evacuate da Dunkerque con l'operazione Dynamo. Il 5 giugno cominciò la seconda fase, Fall Rot; il 10 giugno l'Italia dichiarò guerra alla Francia e il 14 i tedeschi occuparono Parigi. Per l'articolo inglese l'armistizio fu firmato il 22 giugno; per quello italiano le trattative cominciarono il 22, l'armistizio, firmato a Compiègne, entrò in vigore il 25 e la Francia capitolò il 25. Nacque il governo di Vichy guidato da Pétain, e per l'articolo italiano le unità francesi evacuate formarono il nucleo della Francia libera di de Gaulle.",
+  "links": [
+    {
+      "slug": "invasione-della-danimarca-e-della-norvegia-1940",
+      "reason": "Un mese prima, il 9 aprile, la Germania aveva occupato la Danimarca e invaso la Norvegia."
+    },
+    {
+      "slug": "dunkerque-1940",
+      "reason": "Sedici giorni dopo, il 26 maggio, comincia a Dunkerque l'evacuazione delle truppe alleate accerchiate."
+    },
+    {
+      "slug": "armistizio-di-compiegne-1940",
+      "reason": "Quarantatré giorni dopo, il 22 giugno, la Francia firma l'armistizio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of France - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_France",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Campagna di Francia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Campagna_di_Francia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 10 maggio 1940 come inizio. Sulla fine: l'articolo inglese dà il 25 giugno come fine dei combattimenti e il 22 come firma dell'armistizio; quello italiano dice che le trattative cominciarono il 22, che l'armistizio, firmato a Compiègne, entrò in vigore il 25 e che la Francia capitolò il 25. Anche la resa olandese ha due date (14 o 15 maggio): l'articolo inglese le dà entrambe, la resa la sera del 14 e il documento il 15. Il pin è su Sedan, dove i tedeschi attraversarono la Mosa."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

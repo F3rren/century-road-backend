@@ -17,7 +17,14 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
 
 import java.time.OffsetDateTime;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
+import java.util.concurrent.Callable;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
@@ -73,6 +80,14 @@ class AuthControllerTest {
         return objectMapper.readValue(resp.getBody(), Map.class);
     }
 
+    /** The whole answer but the two fields that differ on every request: the time and the request id. */
+    private Map<String, Object> answerOf(ResponseEntity<String> resp) throws Exception {
+        Map<String, Object> body = new HashMap<>(bodyOf(resp));
+        body.remove("timestamp");
+        body.remove("sessionId");
+        return body;
+    }
+
     @Test
     void aCorrectLoginReturnsBothTokensAndTheUserSummary() throws Exception {
         ResponseEntity<String> resp = rest.postForEntity("/api/auth/login",
@@ -104,6 +119,37 @@ class AuthControllerTest {
     }
 
     @Test
+    void everyRefusedLoginAnswersWithTheSameBodyNotJustTheSameCode_andNeverEchoesTheEmail() throws Exception {
+        // The code alone is not the whole answer: `message` is in the body too, and it used to say
+        // "No matching enabled user for <email>" or "Wrong password for <email>" - which told an
+        // anonymous caller which addresses are registered, and repeated theirs back.
+        save("disabled@test.it", "password-di-prova", Role.USER, false);
+
+        ResponseEntity<String> wrongPassword = rest.postForEntity("/api/auth/login",
+                Map.of("email", "user@test.it", "password", "not-the-password"), String.class);
+        ResponseEntity<String> unknownEmail = rest.postForEntity("/api/auth/login",
+                Map.of("email", "nobody@test.it", "password", "whatever12"), String.class);
+        ResponseEntity<String> disabled = rest.postForEntity("/api/auth/login",
+                Map.of("email", "disabled@test.it", "password", "password-di-prova"), String.class);
+
+        assertThat(answerOf(unknownEmail)).isEqualTo(answerOf(wrongPassword)).isEqualTo(answerOf(disabled));
+        for (ResponseEntity<String> refused : List.of(wrongPassword, unknownEmail, disabled)) {
+            assertThat(refused.getBody()).doesNotContain("@test.it").doesNotContain("Wrong password")
+                    .doesNotContain("No matching");
+        }
+    }
+
+    @Test
+    void anEmailLongerThanAnAddressCanBeIsRefusedBeforeItIsKept() {
+        String tooLong = "a".repeat(250) + "@test.it";
+
+        ResponseEntity<String> resp = rest.postForEntity("/api/auth/login",
+                Map.of("email", tooLong, "password", "whatever12"), String.class);
+
+        assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+    }
+
+    @Test
     void aDisabledUserIsRefusedEvenWithTheRightPassword() throws Exception {
         save("disabled@test.it", "password-di-prova", Role.USER, false);
 
@@ -130,6 +176,8 @@ class AuthControllerTest {
 
         assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.TOO_MANY_REQUESTS);
         assertThat(resp.getHeaders().getFirst("Retry-After")).isNotNull();
+        // The key is the caller's address and email; neither belongs in the answer.
+        assertThat(resp.getBody()).doesNotContain("user@test.it").doesNotContain("127.0.0.1");
     }
 
     @Test
@@ -170,5 +218,61 @@ class AuthControllerTest {
         ResponseEntity<String> afterLogout = rest.postForEntity("/api/auth/refresh",
                 Map.of("refreshToken", refreshToken), String.class);
         assertThat(afterLogout.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void aUserDisabledAfterLoggingInCanNoLongerRefresh() throws Exception {
+        Map<String, Object> loginData = (Map<String, Object>) bodyOf(rest.postForEntity("/api/auth/login",
+                Map.of("email", "user@test.it", "password", "password-di-prova"), String.class)).get("data");
+        String refreshToken = (String) loginData.get("refreshToken");
+
+        User user = userRepository.findByEmail("user@test.it").orElseThrow();
+        user.setEnabled(false);
+        userRepository.save(user);
+
+        ResponseEntity<String> refreshed = rest.postForEntity("/api/auth/refresh",
+                Map.of("refreshToken", refreshToken), String.class);
+        ResponseEntity<String> garbage = rest.postForEntity("/api/auth/refresh",
+                Map.of("refreshToken", "not-a-real-token"), String.class);
+
+        assertThat(refreshed.getStatusCode()).isEqualTo(HttpStatus.UNAUTHORIZED);
+        // Indistinguishable from a token that never existed.
+        assertThat(answerOf(refreshed)).isEqualTo(answerOf(garbage));
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void aRefreshTokenUsedByManyRequestsAtOnceWorksForExactlyOne() throws Exception {
+        Map<String, Object> loginData = (Map<String, Object>) bodyOf(rest.postForEntity("/api/auth/login",
+                Map.of("email", "user@test.it", "password", "password-di-prova"), String.class)).get("data");
+        String refreshToken = (String) loginData.get("refreshToken");
+
+        int callers = 8;
+        ExecutorService pool = Executors.newFixedThreadPool(callers);
+        java.util.concurrent.CountDownLatch go = new java.util.concurrent.CountDownLatch(1);
+        List<Future<HttpStatus>> results = new ArrayList<>();
+        try {
+            for (int i = 0; i < callers; i++) {
+                Callable<HttpStatus> call = () -> {
+                    go.await();
+                    return HttpStatus.valueOf(rest.postForEntity("/api/auth/refresh",
+                            Map.of("refreshToken", refreshToken), String.class).getStatusCode().value());
+                };
+                results.add(pool.submit(call));
+            }
+            go.countDown();
+            int ok = 0;
+            for (Future<HttpStatus> result : results) {
+                if (result.get() == HttpStatus.OK) {
+                    ok++;
+                }
+            }
+            // Single-use means one winner, however the requests interleave. A read followed by a
+            // write lets several pass the read before any writes.
+            assertThat(ok).isEqualTo(1);
+        } finally {
+            pool.shutdownNow();
+        }
     }
 }

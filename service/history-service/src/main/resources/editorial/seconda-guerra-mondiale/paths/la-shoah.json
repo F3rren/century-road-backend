@@ -1,0 +1,33 @@
+{
+  "slug": "la-shoah",
+  "title": "La Shoah",
+  "tagline": "Dalla notte dei cristalli ai processi di Norimberga: la persecuzione e lo sterminio degli ebrei d'Europa, tra Wannsee, Varsavia, Roma e Auschwitz.",
+  "intro": "Il percorso segue la persecuzione e lo sterminio degli ebrei d'Europa durante il regime nazista: la notte dei cristalli, la conferenza di Wannsee, la rivolta del ghetto di Varsavia, il rastrellamento del ghetto di Roma, la liberazione di Auschwitz e i processi di Norimberga.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove i due articoli divergono, il testo lo dice.",
+  "topic": "SECONDA_GUERRA_MONDIALE",
+  "stops": [
+    {
+      "insight": "notte-dei-cristalli-1938",
+      "narrative": "Si parte dal 9 novembre 1938: in Germania sinagoghe e negozi ebraici sono devastati."
+    },
+    {
+      "insight": "conferenza-di-wannsee-1942",
+      "narrative": "Il 20 gennaio 1942 a Wannsee i funzionari nazisti coordinano la «soluzione finale»."
+    },
+    {
+      "insight": "rivolta-del-ghetto-di-varsavia-1943",
+      "narrative": "Il 19 aprile 1943 gli ebrei del ghetto di Varsavia si ribellano alle SS."
+    },
+    {
+      "insight": "rastrellamento-del-ghetto-di-roma-1943",
+      "narrative": "Il 16 ottobre 1943 i tedeschi rastrellano gli ebrei del ghetto di Roma."
+    },
+    {
+      "insight": "liberazione-di-auschwitz-1945",
+      "narrative": "Il 27 gennaio 1945 l'Armata Rossa libera Auschwitz."
+    },
+    {
+      "insight": "processi-di-norimberga-1945",
+      "narrative": "Il 20 novembre 1945 comincia il processo ai principali capi nazisti."
+    }
+  ]
+}

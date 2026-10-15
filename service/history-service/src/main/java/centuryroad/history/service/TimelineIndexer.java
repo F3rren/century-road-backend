@@ -107,6 +107,15 @@ public class TimelineIndexer {
                     } catch (UpstreamException e) {
                         log.debug("Country index: {} {} kept, Wikipedia failed: {}", language.code(), day, e.getMessage());
                         done = false;
+                    } catch (RuntimeException e) {
+                        // Not Wikipedia's doing - a database that refused the write, a response shaped in
+                        // a way nobody expected - and no reason to give up on the other 700 days: the day
+                        // keeps the rows it had (replaceDay is one transaction) and the pass goes on. It
+                        // counts as a failure all the same, so a database that is down ends the pass
+                        // after the same run of days as a Wikipedia that is down. Warned, with the
+                        // exception: unlike a flaky upstream, this is something to look at.
+                        log.warn("Country index: {} {} kept, the day could not be written", language.code(), day, e);
+                        done = false;
                     }
                     if (done) {
                         refreshed++;

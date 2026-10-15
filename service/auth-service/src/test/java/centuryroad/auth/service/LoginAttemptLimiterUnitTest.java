@@ -55,4 +55,36 @@ class LoginAttemptLimiterUnitTest {
 
         assertThat(limiter.checkAndRecord("k")).isZero();
     }
+
+    @Test
+    void counterWhoseWindowIsOverAreDroppedOnceTooManyKeysAreTracked() {
+        long[] now = {1_000L};
+        LoginAttemptLimiter limiter = new LoginAttemptLimiter(5, 60_000L, () -> now[0]);
+        // Every key a caller can invent is a key kept: this many, all fresh.
+        for (int i = 0; i <= LoginAttemptLimiter.PRUNE_ABOVE; i++) {
+            limiter.checkAndRecord("ip|user" + i + "@test.it");
+        }
+        assertThat(limiter.trackedKeys()).isEqualTo(LoginAttemptLimiter.PRUNE_ABOVE + 1);
+
+        now[0] += 60_001L;
+        limiter.checkAndRecord("ip|someone-else@test.it");
+
+        assertThat(limiter.trackedKeys()).isEqualTo(1);
+    }
+
+    @Test
+    void countersStillInsideTheirWindowSurviveThePruning() {
+        long[] now = {1_000L};
+        LoginAttemptLimiter limiter = new LoginAttemptLimiter(1, 60_000L, () -> now[0]);
+        for (int i = 0; i <= LoginAttemptLimiter.PRUNE_ABOVE; i++) {
+            limiter.checkAndRecord("ip|user" + i + "@test.it");
+        }
+
+        now[0] += 30_000L;
+        limiter.checkAndRecord("ip|someone-else@test.it");
+
+        // Nothing was old enough to drop, and a key already at its limit is still at it.
+        assertThat(limiter.trackedKeys()).isEqualTo(LoginAttemptLimiter.PRUNE_ABOVE + 2);
+        assertThat(limiter.checkAndRecord("ip|user0@test.it")).isGreaterThan(0);
+    }
 }

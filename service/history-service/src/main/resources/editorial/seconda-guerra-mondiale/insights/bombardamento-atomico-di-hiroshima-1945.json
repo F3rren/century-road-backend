@@ -1,0 +1,54 @@
+{
+  "slug": "bombardamento-atomico-di-hiroshima-1945",
+  "title": "Il bombardamento atomico di Hiroshima",
+  "summary": "Il 6 agosto 1945 un bombardiere americano B-29, l'Enola Gay, sgancia la bomba atomica «Little Boy» su Hiroshima, in Giappone: è il primo uso di un'arma nucleare in guerra. Per l'articolo inglese entro due-quattro mesi muoiono tra 90 000 e 166 000 persone, circa la metà il primo giorno, per il 90% civili.",
+  "date": {
+    "year": 1945,
+    "month": 8,
+    "day": 6
+  },
+  "place": {
+    "name": "Hiroshima, Giappone",
+    "lat": 34.3853,
+    "lon": 132.4553,
+    "countryCode": "JP",
+    "approximate": false
+  },
+  "before": "Nell'ultimo anno di guerra gli Alleati preparavano una costosa invasione del Giappone, preceduta da bombardamenti convenzionali e incendiari che per l'articolo inglese avevano devastato 64 città. Per l'articolo inglese a luglio il progetto Manhattan aveva prodotto due tipi di bomba atomica, e il 509º gruppo dell'aviazione americana era a Tinian, nelle Marianne. Il 25 luglio fu ordinato l'uso delle bombe su Hiroshima, Kokura, Niigata e Nagasaki. Il 26 la dichiarazione di Potsdam chiese la resa incondizionata, altrimenti «pronta e completa distruzione»: il governo giapponese la ignorò.",
+  "event": "Il 6 agosto l'Enola Gay, decollato da Tinian, sganciò «Little Boy» alle 8.15 ora di Hiroshima per l'articolo inglese, alle 8.14 e 45 secondi per quello italiano. Per entrambi la bomba esplose a circa 580 metri dal suolo, dopo 43-44 secondi di caduta; conteneva circa 64 chilogrammi di uranio 235 per l'articolo inglese, 60 per quello italiano. Per l'articolo inglese i sopravvissuti ricordano un lampo di luce, il «pika», e un boato, il «don»; i piccoli incendi si fusero in una tempesta di fuoco e molti si gettarono nei fiumi. Per l'articolo italiano l'esplosione, equivalente a sedici chilotoni, uccise sul colpo 70 000-80 000 persone.",
+  "after": "Per l'articolo inglese la città aveva una guarnigione stimata di 24 000 soldati, ma circa il 90% dei morti era civile; per l'articolo inglese fu distrutto il 69% degli edifici (un altro 6-7% danneggiato), per quello italiano circa il 90% fu raso al suolo. Molti sopravvissuti morirono nei giorni e nei mesi seguenti per ustioni e malattia da radiazioni; per l'articolo italiano, nella sezione su Hiroshima, alla fine del 1945 le vittime erano salite a circa 200 000 (altrove lo stesso articolo dà 150 000-220 000, e «oltre 200 000» per le due città insieme). Tre giorni dopo una seconda bomba colpì Nagasaki, e il Giappone annunciò la resa il 15 agosto. Per l'articolo inglese sono stati e restano discussi la giustificazione etica e legale dei bombardamenti e il loro peso sulla fine della guerra.",
+  "links": [
+    {
+      "slug": "conferenza-di-potsdam-1945",
+      "reason": "Venti giorni prima, il 17 luglio, era cominciata la conferenza di Potsdam."
+    },
+    {
+      "slug": "battaglia-di-iwo-jima-1945",
+      "reason": "Quasi sei mesi prima, il 19 febbraio, i Marines erano sbarcati a Iwo Jima."
+    },
+    {
+      "slug": "bombardamento-atomico-di-nagasaki-1945",
+      "reason": "Tre giorni dopo, il 9 agosto, una seconda bomba atomica colpisce Nagasaki."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Atomic bombings of Hiroshima and Nagasaki - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atomic_bombings_of_Hiroshima_and_Nagasaki",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bombardamenti atomici di Hiroshima e Nagasaki - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Bombardamenti_atomici_di_Hiroshima_e_Nagasaki",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 6 agosto 1945. Sull'ora l'articolo inglese dà le 8.15, quello italiano le 8.15 nell'introduzione e le 8.14 e 45 secondi nel testo; divergono sul peso dell'uranio (64 o 60 chili) e sul bersaglio: per l'articolo inglese Hiroshima era l'obiettivo primario, per quello italiano il primo obiettivo previsto era Kokura e fu cambiato per le nubi. Anche le vittime divergono (90 000-166 000 per l'inglese; per l'italiano 70 000-80 000 subito e circa 200 000 a fine 1945): il testo attribuisce a ciascun articolo le sue stime. Il pin è su Hiroshima."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

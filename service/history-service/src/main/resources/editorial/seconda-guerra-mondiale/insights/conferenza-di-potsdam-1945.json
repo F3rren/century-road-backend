@@ -1,0 +1,54 @@
+{
+  "slug": "conferenza-di-potsdam-1945",
+  "title": "La conferenza di Potsdam",
+  "summary": "Dal 17 luglio al 2 agosto 1945, a Potsdam, vicino a Berlino, Stalin, Truman e Churchill (poi Attlee) decidono come amministrare la Germania occupata e ne spostano in via provvisoria il confine orientale sulla linea Oder-Neisse. Il 26 luglio viene lanciato l'ultimatum al Giappone. Per l'articolo inglese in meno di diciotto mesi comincia la guerra fredda.",
+  "date": {
+    "year": 1945,
+    "month": 7,
+    "day": 17
+  },
+  "place": {
+    "name": "Palazzo Cecilienhof, Potsdam, Germania",
+    "lat": 52.4181,
+    "lon": 13.0711,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "La Germania si era arresa l'8 maggio, dieci settimane prima. Per l'articolo italiano la conferenza avrebbe dovuto tenersi a Berlino, ma la città era troppo danneggiata e la sede fu spostata nel castello di Potsdam, rimasto intatto. Per l'articolo inglese, rispetto a Jalta, cinque mesi prima, i rapporti erano cambiati: i sovietici occupavano l'Europa centrale e orientale e Stalin aveva insediato un governo comunista in Polonia; Roosevelt era morto il 12 aprile e il presidente era Truman. Durante la conferenza Truman fu informato in segreto che il 16 luglio la prima prova atomica era riuscita.",
+  "event": "Parteciparono Stalin, Truman e Churchill; dopo la sconfitta elettorale, dal 28 luglio il Regno Unito fu rappresentato dal nuovo primo ministro Attlee. Per l'articolo inglese Germania e Austria furono divise in quattro zone di occupazione, il confine orientale tedesco fu spostato a ovest, in via provvisoria, sulla linea Oder-Neisse, e fu riconosciuto il governo polacco appoggiato dai sovietici. Per l'articolo italiano fu deciso di espellere la popolazione tedesca dai territori passati alla Polonia, dalla Cecoslovacchia e dall'Ungheria; non ci fu accordo sull'ammontare delle riparazioni, e ogni potenza le gestì nella propria zona.",
+  "after": "Per l'articolo inglese il 26 luglio Churchill, Truman e Chiang Kai-shek pubblicarono la dichiarazione di Potsdam, con le condizioni di resa per il Giappone; per l'articolo italiano Truman lanciò un ultimatum al Giappone, minacciando «immediata e completa distruzione». Per l'articolo inglese la conferenza si chiuse con un rapporto più saldo tra i tre governi, ma entro diciotto mesi le relazioni si deteriorarono e nacque la guerra fredda. Per l'articolo inglese i sovietici ribadirono l'impegno di Jalta ad attaccare i territori giapponesi.",
+  "links": [
+    {
+      "slug": "conferenza-di-jalta-1945",
+      "reason": "Più di cinque mesi prima, il 4 febbraio, i tre grandi si erano incontrati a Jalta."
+    },
+    {
+      "slug": "resa-della-germania-1945",
+      "reason": "Settanta giorni prima, l'8 maggio, la Germania si era arresa."
+    },
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Venti giorni dopo, il 6 agosto, una bomba atomica distrugge Hiroshima."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Potsdam Conference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Potsdam_Conference",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di Potsdam - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_Potsdam",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la conferenza dal 17 luglio al 2 agosto 1945; l'articolo inglese dice in un passo che doveva cominciare il 16. L'articolo italiano è molto breve: i particolari sulla Germania e sulla Polonia sono dell'articolo inglese, quelli sulle espulsioni e sulle riparazioni dell'italiano. Sul confine con la Polonia l'inglese dice che la linea Oder-Neisse era provvisoria, in attesa del trattato di pace, mentre l'italiano dice soltanto che i confini furono stabiliti. Sulle riparazioni l'inglese descrive un accordo (l'Unione Sovietica dalla propria zona, più il 15% dell'equipaggiamento industriale utilizzabile delle zone occidentali in cambio di merci e il 10% senza pagamento), mentre l'italiano parla di mancato accordo sull'ammontare. Il pin è sul palazzo Cecilienhof."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

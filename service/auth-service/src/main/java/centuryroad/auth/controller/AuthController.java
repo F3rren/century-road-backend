@@ -16,6 +16,7 @@ import centuryroad.auth.service.JwtService;
 import centuryroad.auth.service.LoginAttemptLimiter;
 import centuryroad.auth.service.RefreshTokenService;
 import centuryroad.auth.service.UserService;
+import centuryroad.auth.util.LogSanitizer;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.headers.Header;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -44,6 +45,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/api/auth")
 @Tag(name = "Authentication", description = "Sign in, renew a token, sign out. The only endpoints reachable without a token.")
 public class AuthController {
+
+        private static final int MAX_EMAIL_LENGTH = 254;
 
         private final AuthService authService;
         private final UserService userService;
@@ -81,6 +84,11 @@ public class AuthController {
                 if (request.password() == null || request.password().isBlank()) {
                         throw new InvalidRequestException("Missing password", "La password e' obbligatoria.");
                 }
+                // 254 is the longest an address can be. Past it the value is no email, and it is
+                // part of the limiter's key, so it is not kept around for a minute to prove it.
+                if (request.email().length() > MAX_EMAIL_LENGTH) {
+                        throw new InvalidRequestException("Email too long", "L'email non e' valida.");
+                }
 
                 // Keyed on the caller's address. There are now two proxies in front of this
                 // service - the TLS terminator and the gateway - so the connection's own remote
@@ -95,7 +103,9 @@ public class AuthController {
                 String limiterKey = httpRequest.getRemoteAddr() + "|" + request.email();
                 long retryAfter = loginAttemptLimiter.checkAndRecord(limiterKey);
                 if (retryAfter > 0) {
-                        throw new TooManyRequestsException("Too many login attempts for " + limiterKey,
+                        // The message reaches the response body, so it names neither the caller's
+                        // address nor the email: the limiter key is the pair, never to be echoed.
+                        throw new TooManyRequestsException("Too many login attempts",
                                         "Troppi tentativi. Riprova tra qualche minuto.", retryAfter);
                 }
 
@@ -103,7 +113,10 @@ public class AuthController {
                 try {
                         user = authService.login(request.email(), request.password());
                 } catch (AuthenticationFailedException e) {
-                        log.warn("Login refused | {}", limiterKey);
+                        // The address and the masked email, never the raw email: it is whatever the
+                        // caller typed, and a log is archived and shared (see LogSanitizer).
+                        log.warn("Login refused | {} | {}", httpRequest.getRemoteAddr(),
+                                        LogSanitizer.maskEmail(request.email()));
                         throw e;
                 }
                 loginAttemptLimiter.reset(limiterKey);
@@ -132,8 +145,12 @@ public class AuthController {
                 // access token's claims need (email, role) still have to come from the
                 // database.
                 User user = userService.findById(userId);
-                if (user == null) {
-                        throw new AuthenticationFailedException("User no longer exists");
+                // A disabled account must stop being able to renew its session: the login refuses
+                // it, and a refresh token issued before it was disabled would otherwise keep
+                // minting access tokens for as long as it keeps being rotated. Same exception and
+                // text as an unknown token, so the answer does not say which it was.
+                if (user == null || !user.isEnabled()) {
+                        throw new AuthenticationFailedException("Refresh token not found, expired or already used");
                 }
 
                 String newToken = jwtService.generateToken(user);

@@ -1,0 +1,55 @@
+{
+  "slug": "carta-atlantica-1941",
+  "title": "La Carta atlantica",
+  "summary": "Il 14 agosto 1941 Roosevelt e Churchill, che hanno viaggiato in segreto per incontrarsi nella baia di Placentia, a Terranova, rendono nota una dichiarazione comune sugli obiettivi del dopoguerra: niente conquiste territoriali, autodeterminazione dei popoli, libertà dal timore e dal bisogno. È uno dei passi verso la nascita dell'ONU.",
+  "date": {
+    "year": 1941,
+    "month": 8,
+    "day": 14
+  },
+  "place": {
+    "name": "Argentia, baia di Placentia, Terranova, Canada",
+    "lat": 47.2958,
+    "lon": -53.9786,
+    "countryCode": "CA",
+    "approximate": true,
+    "note": "Il pin è su Argentia, sulla baia di Placentia: per l'articolo inglese l'incontro avvenne tra le navi nella baia e la dichiarazione fu resa nota dalla base navale americana; per l'italiano l'incontro fu ad Argentia."
+  },
+  "before": "Nel giugno 1941 gli Alleati avevano espresso i loro principi nella dichiarazione di St James's Palace, e in luglio era stato firmato l'accordo anglo-sovietico. Per l'articolo inglese Roosevelt voleva legare il Regno Unito a obiettivi di guerra concreti e Churchill voleva legare gli Stati Uniti allo sforzo bellico. I due viaggiarono in segreto e si incontrarono nella baia di Placentia: per l'articolo inglese la nave di Churchill, la Prince of Wales, raggiunse la nave americana Augusta il 9 agosto; per l'articolo italiano l'incontro fu il 12 e 13 agosto.",
+  "event": "Il 14 agosto fu resa pubblica la «dichiarazione comune» del presidente e del primo ministro. Per l'articolo inglese in otto punti: nessuna conquista territoriale; modifiche territoriali solo in accordo con i popoli; diritto all'autodeterminazione; meno barriere commerciali; cooperazione economica e benessere sociale; un mondo libero dal bisogno e dal timore; libertà dei mari; disarmo degli aggressori. Per l'articolo inglese non esistette mai un testo firmato, e il nome «Carta atlantica» fu coniato dal quotidiano Daily Herald; per l'articolo italiano l'atto fu sottoscritto a bordo della Prince of Wales.",
+  "after": "Il 24 settembre 1941 i governi in esilio di otto paesi europei, l'Unione Sovietica e la Francia libera aderirono ai principi comuni; il 1º gennaio 1942 un gruppo più ampio di nazioni firmò la Dichiarazione delle Nazioni Unite. Per l'articolo inglese Giappone e Asse la lessero come una possibile alleanza contro di loro. Per l'articolo italiano la Carta fu una sorta di provocazione per l'Unione Sovietica, che si sentì esclusa, e conteneva un'incongruenza con l'Impero britannico, che Churchill voleva mantenere.",
+  "links": [
+    {
+      "slug": "lend-lease-1941",
+      "reason": "Cinque mesi prima, l'11 marzo, Roosevelt aveva firmato la legge Lend-Lease."
+    },
+    {
+      "slug": "attacco-a-pearl-harbor-1941",
+      "reason": "Quasi quattro mesi dopo, il 7 dicembre, l'attacco a Pearl Harbor porta gli Stati Uniti in guerra."
+    },
+    {
+      "slug": "quattordici-punti-di-wilson-1918",
+      "reason": "Più di ventitré anni prima, nel gennaio 1918, i quattordici punti di Wilson avevano indicato principi simili per il dopoguerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Atlantic Charter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Atlantic_Charter",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Carta Atlantica - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Carta_Atlantica",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 14 agosto 1941. Divergono sul giorno dell'incontro (9 agosto per l'inglese, 12 e 13 per l'italiano) e sulla firma: per l'articolo inglese non ci fu un testo firmato, per l'italiano la Carta fu sottoscritta a bordo della Prince of Wales. Per l'articolo italiano i due non si erano mai conosciuti prima; per l'inglese avevano partecipato alla stessa cena nel 1918 ed erano in contatto dal 1939. Il pin è su Argentia, nella baia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

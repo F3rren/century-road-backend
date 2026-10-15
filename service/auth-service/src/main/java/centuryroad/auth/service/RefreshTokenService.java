@@ -3,6 +3,7 @@ package centuryroad.auth.service;
 import centuryroad.auth.model.RefreshToken;
 import centuryroad.auth.repository.RefreshTokenRepository;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.nio.charset.StandardCharsets;
 import java.security.MessageDigest;
@@ -52,7 +53,13 @@ public class RefreshTokenService {
      * refresh call always rotates, so a stolen-and-replayed old token stops working
      * the
      * moment the legitimate client refreshes once.
+     *
+     * Single-use holds under concurrency because the check and the revocation are one
+     * conditional UPDATE (see RefreshTokenRepository.revokeIfActive), not a read followed
+     * by a write: of two requests carrying the same token at the same moment, the database
+     * lets exactly one change the row.
      */
+    @Transactional
     public Optional<Long> rotate(String rawToken) {
         Optional<RefreshToken> found = refreshTokenRepository.findByTokenHash(hash(rawToken));
         if (found.isEmpty()) {
@@ -60,13 +67,8 @@ public class RefreshTokenService {
         }
 
         RefreshToken entity = found.get();
-        if (entity.getRevokedAt() != null || entity.getExpiresAt().isBefore(OffsetDateTime.now())) {
-            return Optional.empty();
-        }
-
-        entity.setRevokedAt(OffsetDateTime.now());
-        refreshTokenRepository.save(entity);
-        return Optional.of(entity.getUserId());
+        int revoked = refreshTokenRepository.revokeIfActive(entity.getId(), OffsetDateTime.now());
+        return revoked == 1 ? Optional.of(entity.getUserId()) : Optional.empty();
     }
 
     public void revoke(String rawToken) {

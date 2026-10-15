@@ -1,0 +1,54 @@
+{
+  "slug": "guerra-d-inverno-1939",
+  "title": "La guerra d'inverno",
+  "summary": "Il 30 novembre 1939 l'Unione Sovietica attacca la Finlandia, che aveva rifiutato di cedere territori di confine. Nonostante la netta superiorità sovietica, soprattutto in carri armati e aerei, i finlandesi resistono per più di due mesi. La guerra finisce a marzo 1940 con il trattato di Mosca, che costa alla Finlandia una parte del territorio.",
+  "date": {
+    "year": 1939,
+    "month": 11,
+    "day": 30
+  },
+  "place": {
+    "name": "Terijoki (oggi Zelenogorsk), Russia",
+    "lat": 60.195,
+    "lon": 29.7,
+    "approximate": true,
+    "note": "Il fronte andava dall'Artico al golfo di Finlandia: il pin è su Terijoki, il primo villaggio occupato dall'Armata Rossa, e non indica l'intero fronte."
+  },
+  "before": "I sovietici chiedevano alla Finlandia di cedere territori di confine in cambio di altre terre, per ragioni di sicurezza, soprattutto per proteggere Leningrado, a 32 chilometri dalla frontiera; i finlandesi rifiutarono. Il 26 novembre 1939 a Mainila, villaggio sovietico presso il confine, un posto di guardia fu colpito dall'artiglieria: per i sovietici l'attacco era finlandese, per i finlandesi sovietico. Per l'articolo inglese più storici finlandesi e russi hanno concluso che fu un'operazione sotto falsa bandiera del NKVD. Mosca ruppe le relazioni diplomatiche, il 28 novembre secondo l'articolo inglese.",
+  "event": "Il 30 novembre, senza dichiarazione di guerra, le forze sovietiche invasero la Finlandia: per l'articolo inglese con 21 divisioni, circa 450 000 uomini, e bombardando Helsinki, con circa cento morti. Il 1º dicembre, per l'articolo italiano, a Terijoki fu insediato un governo fantoccio comunista guidato da Otto Kuusinen, che l'Unione Sovietica riconosceva come unico governo finlandese. A Helsinki, allo scoppio della guerra, Risto Ryti formò il governo e Mannerheim ebbe il comando supremo. Per l'articolo inglese la maggior parte delle fonti ritiene che i sovietici volessero conquistare tutta la Finlandia, ma altre lo negano. Per l'articolo inglese il 14 dicembre la Società delle Nazioni espulse l'Unione Sovietica.",
+  "after": "I finlandesi respinsero gli attacchi per più di due mesi, con temperature fino a −43 °C. Poi i sovietici riorganizzarono l'esercito e in febbraio 1940 ripresero l'offensiva; Mannerheim raccomandò al governo di cercare la pace. Il trattato di Mosca fu firmato il 12 marzo: la Finlandia cedette l'istmo di Carelia e gran parte della Carelia del Ladoga, il 9% del territorio per l'articolo inglese e circa il 12% per quello italiano; per l'articolo inglese 422 000-450 000 careliani furono evacuati. Nel giugno 1941 cominciò la guerra di continuazione.",
+  "links": [
+    {
+      "slug": "invasione-sovietica-della-polonia-1939",
+      "reason": "Due mesi e mezzo prima, il 17 settembre, l'Unione Sovietica aveva invaso la Polonia."
+    },
+    {
+      "slug": "invasione-della-danimarca-e-della-norvegia-1940",
+      "reason": "Poco più di quattro mesi dopo, il 9 aprile 1940, la Germania attacca Danimarca e Norvegia."
+    },
+    {
+      "slug": "operazione-barbarossa-1941",
+      "reason": "Quasi diciannove mesi dopo, il 22 giugno 1941, la Germania attacca l'Unione Sovietica."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Winter War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Winter_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra d'inverno - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_d'inverno",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 30 novembre 1939 come inizio. Sulla fine l'articolo italiano dà il 12 marzo 1940; l'articolo inglese dice 12 marzo nel testo e 13 nell'introduzione (giorno del cessate il fuoco): il testo usa il 12. Le percentuali di territorio ceduto divergono (9% per l'inglese; l'introduzione italiana dà circa il 12% del territorio, ma il suo testo parla del 12% della popolazione) e il testo le attribuisce a ciascun articolo. Per Mainila l'articolo inglese cita storici che parlano di falsa bandiera, quello italiano riporta solo le due versioni opposte. Il pin è su Terijoki."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

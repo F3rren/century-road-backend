@@ -1,0 +1,54 @@
+{
+  "slug": "processi-di-norimberga-1945",
+  "title": "I processi di Norimberga",
+  "summary": "Il 20 novembre 1945 comincia a Norimberga il processo del Tribunale militare internazionale ai principali capi nazisti sopravvissuti, voluto da Stati Uniti, Unione Sovietica, Regno Unito e Francia. Dopo oltre dieci mesi, tra il 30 settembre e il 1º ottobre 1946, dodici imputati sono condannati a morte. Per l'articolo inglese è considerato «il vero inizio» del diritto penale internazionale.",
+  "date": {
+    "year": 1945,
+    "month": 11,
+    "day": 20
+  },
+  "place": {
+    "name": "Palazzo di Giustizia, Norimberga, Germania",
+    "lat": 49.4466,
+    "lon": 11.0524,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese il 1º novembre 1943 la dichiarazione di Mosca aveva avvertito i capi nazisti che sarebbero stati perseguiti; le proposte per punirli andavano dal processo-spettacolo dall'esito prestabilito, voluto dall'Unione Sovietica, all'esecuzione sommaria, preferita dal Regno Unito. Il 2 maggio 1945 il presidente Truman annunciò la creazione di un tribunale militare internazionale. Per l'articolo italiano i sovietici volevano Berlino, ma fu scelta Norimberga: nel settore americano, con un Palazzo di Giustizia quasi intatto, una grande prigione e il valore simbolico di sede dei raduni del partito nazista.",
+  "event": "Tra il 20 novembre 1945 e il 1º ottobre 1946 il Tribunale militare internazionale giudicò, per l'articolo inglese, 22 tra i principali capi della Germania nazista, e sei organizzazioni tedesche; per l'articolo italiano i capi erano venti. Ogni nazione vincitrice forniva un giudice e un sostituto; tra i procuratori capo c'erano l'americano Jackson, il britannico Shawcross e il sovietico Rudenko; per l'articolo inglese anche, per la Francia, de Menthon, poi Champetier de Ribes. Per l'articolo inglese tutti furono accusati di crimini contro la pace e la maggior parte di crimini di guerra e contro l'umanità, e la Shoah fu un tema centrale; la corte definì l'aggressione «il crimine internazionale supremo».",
+  "after": "Per l'articolo inglese dodici imputati furono condannati a morte, sette a pene detentive e tre assolti; furono dichiarate criminali quattro organizzazioni, tra cui le SS. Per entrambi gli articoli dieci furono impiccati il 16 ottobre 1946 e Göring si uccise prima dell'esecuzione (il giorno prima per l'inglese, la notte prima per l'italiano). Per l'articolo inglese altri dodici processi, a esecutori di grado inferiore, si concentrarono di più sulla Shoah, con 177 imputati e 25 condanne a morte; per l'articolo italiano furono 183 imputati, con 12 condanne a morte. Per l'articolo inglese i processi furono controversi all'epoca per aver punito retroattivamente il crimine di aggressione.",
+  "links": [
+    {
+      "slug": "liberazione-di-auschwitz-1945",
+      "reason": "Quasi dieci mesi prima, il 27 gennaio, i sovietici avevano liberato Auschwitz."
+    },
+    {
+      "slug": "resa-della-germania-1945",
+      "reason": "Più di sei mesi prima, l'8 maggio, la Germania si era arresa."
+    },
+    {
+      "slug": "conferenza-di-wannsee-1942",
+      "reason": "Quasi quattro anni prima, il 20 gennaio 1942, i capi nazisti si erano riuniti a Wannsee per coordinare lo sterminio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nuremberg trials - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nuremberg_trials",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Processo di Norimberga - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Processo_di_Norimberga",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il processo dal 20 novembre 1945 al 1º ottobre 1946. Sul numero degli imputati principali entrambi dicono che gli accusati erano 24, ma l'inglese dà 22 giudicati e l'italiano venti nell'introduzione e ventiquattro nel testo. Per le condanne a morte l'inglese ne conta dodici e dice che il 16 ottobre ne furono impiccati dieci e Göring si uccise il giorno prima; l'italiano non dà il totale, elenca dieci impiccati e il suicidio di Göring, che pone la notte prima. Sui processi successivi l'inglese dà 177 imputati e 25 condanne a morte, l'italiano 183 imputati e 12 condanne a morte. Le condanne e i particolari del tribunale sono attribuiti all'articolo che li dà. Il pin è sul Palazzo di Giustizia di Norimberga."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
