@@ -25,6 +25,12 @@ spring:
           uri: ${HISTORY_SERVICE_URI:http://localhost:8082}
           predicates:
             - "Path=/api/history/**"
+          metadata:
+            # Milliseconds, and the longest history-service itself can take: primary and fallback
+            # language loaded one after the other, each up to ~14s (connect 2s + read 5s, two
+            # attempts, 300ms apart, plus the bulkhead's 1s wait). A flat 10s would turn answers
+            # it was about to give into 504s. Keep it above that figure if those timeouts grow.
+            response-timeout: 30000
 
       globalcors:
         cors-configurations:

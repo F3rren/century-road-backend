@@ -8,6 +8,19 @@ spring:
 
   cloud:
     gateway:
+      # Reactor Netty waits forever by default: an upstream that accepts the connection and then
+      # stalls would hold the browser's request, and a gateway connection, open until something
+      # else gave up. These are the bounds; the answer when one is hit is a 504 (response) or a
+      # connection error (connect) instead of a hang.
+      #
+      # 10s covers auth-service (BCrypt login is the slowest call, well under a second). The
+      # history route overrides it below, in the route definitions: it can legitimately take
+      # far longer, because one request may load the requested language and then the fallback
+      # one from Wikipedia, each with its own retry.
+      httpclient:
+        connect-timeout: 2000
+        response-timeout: 10s
+
       # The gateway handles preflight OPTIONS requests for the frontend.
       # Authentication uses a bearer token, not a browser-attached cookie.
       globalcors:
