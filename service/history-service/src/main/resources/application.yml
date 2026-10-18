@@ -9,6 +9,13 @@ spring:
     username: ${SPRING_DATASOURCE_USERNAME}
     password: ${SPRING_DATASOURCE_PASSWORD}
     driver-class-name: org.postgresql.Driver
+    # How long a request waits for a free connection before it fails (HikariCP's default is
+    # 30s, which keeps a request - and the gateway connection behind it - hanging through a
+    # database stall). Kept at 5s rather than shorter: Flyway and the pool's first connection
+    # go through this too at startup, where a database that is still waking up should get a
+    # fair chance before the service gives up.
+    hikari:
+      connection-timeout: 5000
 
   # Flyway changes the schema; Hibernate only validates it.
   jpa:
