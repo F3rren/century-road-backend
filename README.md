@@ -1113,9 +1113,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  79 tests
-cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 422 tests
+cd service/auth-service    && ./mvnw test    #  80 tests
+cd service/gateway         && ./mvnw test    #  47 tests
+cd service/history-service && ./mvnw test    # 424 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
