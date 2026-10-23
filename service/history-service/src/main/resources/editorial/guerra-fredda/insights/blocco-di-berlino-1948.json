@@ -1,0 +1,55 @@
+{
+  "slug": "blocco-di-berlino-1948",
+  "title": "Il blocco di Berlino",
+  "summary": "Dal 24 giugno 1948 l'Unione Sovietica chiude le vie di terra e d'acqua verso i settori occidentali di Berlino. Stati Uniti e Regno Unito riforniscono la città per via aerea; il blocco viene tolto il 12 maggio 1949, il ponte aereo prosegue fino al 30 settembre.",
+  "date": {
+    "year": 1948,
+    "month": 6,
+    "day": 24
+  },
+  "place": {
+    "name": "Aeroporto di Tempelhof, Berlino, Germania",
+    "lat": 52.4730,
+    "lon": 13.4030,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Il blocco riguardava tutti i settori occidentali della città; il punto è sull'aeroporto di Tempelhof, uno degli aeroporti della città dove atterravano i voli del ponte aereo."
+  },
+  "before": "Dopo l'accordo di Potsdam la Germania e Berlino erano state divise in quattro zone di occupazione, e i settori statunitense, britannico e francese della città si trovavano dentro la zona sovietica. Per l'articolo inglese l'unico accordo scritto sull'accesso da ovest riguardava tre corridoi aerei. Sempre per l'inglese, nella prima metà del 1948 le potenze occidentali, riunite a Londra, decisero di estendere il piano Marshall alla Germania e di completare la fusione economica delle loro zone; dal 1° aprile i sovietici limitarono il traffico verso Berlino. Il 18 giugno gli occidentali annunciarono il nuovo marco tedesco, introdotto il 21, che i sovietici rifiutarono di ammettere a Berlino.",
+  "event": "Il 24 giugno 1948 i sovietici bloccarono il traffico ferroviario, stradale e fluviale da e per i settori occidentali, parlando di «difficoltà tecniche»; per l'articolo italiano tagliarono anche la corrente elettrica, per l'inglese la ridussero a due ore al giorno. I corridoi aerei restarono aperti. Per l'articolo italiano Truman scartò la proposta del generale Clay di scortare gli aiuti con una colonna corazzata, giudicandola troppo rischiosa. Il 25 giugno Clay ordinò l'operazione Vittles e il giorno dopo partirono i primi aerei. Per l'articolo inglese gli spostamenti a piedi e in metropolitana tra est e ovest non si fermarono, e circa un terzo del cibo dei settori occidentali arrivava da est.",
+  "after": "Per l'articolo inglese dalla fine di agosto del 1948 il ponte aereo bastava a rifornire Berlino Ovest, e in ventiquattro ore tra il 15 e il 16 aprile 1949 portò 12.941 tonnellate di carbone. Il 25 aprile l'agenzia sovietica TASS si disse disposta a porre fine al blocco, che fu tolto a mezzanotte del 12 maggio. I voli continuarono fino al 30 settembre 1949 per accumulare scorte: in tutto 278.228 voli e oltre 2,3 milioni di tonnellate di merci. Per l'articolo italiano il 23 maggio 1949 le zone occidentali divennero la Repubblica Federale Tedesca e il 7 ottobre quella sovietica la Repubblica Democratica Tedesca. Per l'articolo inglese il blocco contribuì all'ingresso nella NATO di Portogallo, Islanda, Italia, Danimarca e Norvegia.",
+  "links": [
+    {
+      "slug": "piano-marshall-1947",
+      "reason": "Un anno e diciannove giorni prima, il 5 giugno 1947, era stato annunciato il piano Marshall, che nel 1948 gli occidentali decisero di estendere alla Germania."
+    },
+    {
+      "slug": "rottura-tito-stalin-1948",
+      "reason": "Quattro giorni dopo, il 28 giugno, si consuma la rottura tra Tito e Stalin."
+    },
+    {
+      "slug": "firma-del-patto-atlantico-1949",
+      "reason": "Poco più di nove mesi dopo, il 4 aprile 1949, con il blocco ancora in corso, dodici paesi firmano a Washington il Patto Atlantico."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Berlin Blockade - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Berlin_Blockade",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Blocco di Berlino - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Blocco_di_Berlino",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli fanno iniziare il blocco il 24 giugno 1948. Sulla fine l'articolo italiano dà l'11 maggio 1949 nell'introduzione e la mezzanotte del 12 maggio nel testo; l'inglese dice un minuto dopo la mezzanotte del 12 maggio. Sul ponte aereo l'italiano dice che cominciò il 25 giugno e durò 462 giorni; l'inglese dice che Clay lo ordinò il 25 e che i primi aerei partirono il 26. Sull'elettricità l'italiano parla di distacco dalla rete, l'inglese di due ore al giorno (in un altro passo quattro). L'italiano dice che gli aerei furono forniti da Stati Uniti, Regno Unito e Francia; per l'inglese gli aerei francesi rifornivano solo la propria guarnigione. Il totale delle merci è 2.326.406 tonnellate in entrambi gli articoli, ma l'introduzione inglese dà anche 2.334.374. La proposta della colonna corazzata è nell'articolo italiano; l'inglese riporta un piano di LeMay respinto da Washington. Le date della Germania Ovest e Est sono dell'articolo italiano, i dati dei voli e la TASS dell'inglese. Sul nuovo marco l'articolo italiano dice che fu Truman a introdurlo il 18 giugno; per l'inglese il 18 giugno Stati Uniti, Regno Unito e Francia lo annunciarono e il 21 fu introdotto. Il pin è sull'aeroporto di Tempelhof."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

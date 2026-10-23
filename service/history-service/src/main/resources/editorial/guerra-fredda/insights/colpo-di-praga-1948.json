@@ -1,0 +1,55 @@
+{
+  "slug": "colpo-di-praga-1948",
+  "title": "Il colpo di Praga",
+  "summary": "Il 25 febbraio 1948 il presidente cecoslovacco Edvard Beneš, sotto la pressione di milizie, polizia e manifestazioni comuniste, accetta le dimissioni dei ministri non comunisti e nomina il governo voluto dal Partito comunista di Klement Gottwald. Per l'articolo inglese comincia così il governo del partito, che dura quattro decenni.",
+  "date": {
+    "year": 1948,
+    "month": 2,
+    "day": 25
+  },
+  "place": {
+    "name": "Praga, Repubblica Ceca",
+    "lat": 50.0875,
+    "lon": 14.4213,
+    "countryCode": "CZ",
+    "approximate": true,
+    "note": "Il punto è nel centro di Praga: gli articoli raccontano la presa della città e la decisione di Beneš senza indicare un luogo preciso."
+  },
+  "before": "Alle elezioni del 1946 il Partito comunista di Cecoslovacchia (KSČ) ottenne il 38% dei voti e Gottwald divenne primo ministro di un governo di coalizione; i comunisti controllavano gli Interni e la polizia. Per l'articolo italiano nel luglio 1947 il governo accettò l'invito alle discussioni sul piano Marshall, ma Gottwald fu convocato a Mosca da Stalin e il partito cambiò posizione. Per l'articolo inglese dall'estate 1947 il KSČ aveva perso consensi e ci si aspettava una sua netta sconfitta alle elezioni del maggio 1948; per questo e per gli insuccessi elettorali dei comunisti francesi e italiani Stalin indurì la sua linea e ordinò a Gottwald di prendere il potere. All'inizio del 1948 il ministero degli Interni epurò la polizia dai non comunisti.",
+  "event": "Per protesta i ministri non comunisti si dimisero: per l'articolo inglese dodici, il 21 febbraio; per l'italiano il 20, a partire dai socialisti nazionali. Speravano che Beneš respingesse le dimissioni o indicesse elezioni anticipate. Intanto milizie armate e polizia presero il controllo di Praga, i ministeri dei dimissionari furono occupati da «comitati d'azione» comunisti e l'esercito rimase neutrale. Gottwald minacciò uno sciopero generale se Beneš non avesse nominato un governo a guida comunista. Il 25 febbraio Beneš, temendo un intervento sovietico, e per l'articolo inglese anche la guerra civile, cedette: accettò le dimissioni e nominò il nuovo governo di Gottwald, ancora formalmente di coalizione ma dominato dai comunisti e dai loro alleati.",
+  "after": "Per l'articolo inglese il ministro degli Esteri Jan Masaryk, l'unico ministro di rilievo né comunista né filocomunista, fu trovato morto sotto una finestra due settimane dopo; migliaia di persone furono licenziate o fuggirono, centinaia arrestate. Il 9 maggio, per l'articolo inglese, fu approvata una nuova costituzione che faceva della Cecoslovacchia una «democrazia popolare»; Beneš non la firmò e si dimise, il 2 giugno per l'articolo inglese, il 7 per l'italiano. Per l'articolo inglese il colpo allarmò l'Occidente, contribuì a superare l'opposizione al piano Marshall nel Congresso americano e favorì i passi verso la difesa comune da cui poco più di un anno dopo nacque la NATO.",
+  "links": [
+    {
+      "slug": "piano-marshall-1947",
+      "reason": "Più di otto mesi prima, il 5 giugno 1947, Marshall aveva offerto gli aiuti a cui la Cecoslovacchia poi rinunciò."
+    },
+    {
+      "slug": "rottura-tito-stalin-1948",
+      "reason": "Quattro mesi e tre giorni dopo, il 28 giugno 1948, la Jugoslavia di Tito rompe con Stalin."
+    },
+    {
+      "slug": "firma-del-patto-atlantico-1949",
+      "reason": "Un anno, un mese e dieci giorni dopo, il 4 aprile 1949, è firmato il Patto Atlantico, base della NATO."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1948 Czechoslovak coup d'état - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1948_Czechoslovak_coup_d%27%C3%A9tat",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Colpo di Stato in Cecoslovacchia del 1948 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_in_Cecoslovacchia_del_1948",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli datano al 25 febbraio 1948 l'accettazione delle dimissioni e la nomina del nuovo governo da parte di Beneš; l'articolo inglese dice anche che la crisi di governo durò dal 20 al 27 febbraio. Gli articoli non concordano sulle dimissioni dei ministri (dodici il 21 febbraio per l'inglese, dal 20 febbraio per l'italiano) né su quelle di Beneš (2 giugno per l'inglese, 7 giugno per l'italiano). Danno anche cifre diverse sugli iscritti al partito, qui non riportate. La convocazione di Gottwald a Mosca è dell'articolo italiano; l'inglese non ne parla e lega la svolta di Stalin al calo dei consensi del KSČ e agli insuccessi dei comunisti in Francia e in Italia. Masaryk, i licenziamenti e gli arresti dopo il colpo, la data della costituzione e le conseguenze in Occidente vengono dall'articolo inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

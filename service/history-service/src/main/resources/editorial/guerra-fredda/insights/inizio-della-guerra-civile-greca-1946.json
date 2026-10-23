@@ -1,0 +1,55 @@
+{
+  "slug": "inizio-della-guerra-civile-greca-1946",
+  "title": "L'inizio della guerra civile greca",
+  "summary": "Nella notte fra il 30 e il 31 marzo 1946, alla vigilia delle elezioni, ex partigiani comunisti attaccano il presidio di Litochoro, sotto il monte Olimpo. Per l'articolo italiano, per la data in molti hanno preso lo scontro come inizio della terza fase della guerra civile greca, ma quel ruolo di battaglia d'apertura è un mito.",
+  "date": {
+    "year": 1946,
+    "month": 3,
+    "day": 30
+  },
+  "place": {
+    "name": "Litochoro, Grecia",
+    "lat": 40.1028,
+    "lon": 22.5069,
+    "countryCode": "GR",
+    "approximate": true,
+    "note": "Il punto indica il paese di Litochoro; gli articoli non dicono dove si trovasse il presidio attaccato."
+  },
+  "before": "L'accordo di Varkiza del 12 febbraio 1945 aveva previsto il disarmo dell'ELAS e un'amnistia limitata ai reati politici. Per l'articolo italiano seguì il «terrore bianco» contro ex militanti dell'EAM e comunisti: secondo l'EAM, tra Varkiza e le elezioni del marzo 1946, 1289 suoi membri furono uccisi. Le elezioni furono fissate per il 31 marzo 1946 e a febbraio il Comitato centrale dell'EAM decise di astenersi. Per l'articolo inglese il Partito comunista (KKE) boicottò il voto e, dopo il ritorno del suo leader Zachariadis, scelse di aggravare la crisi.",
+  "event": "Per l'articolo italiano, nella notte fra il 30 e il 31 marzo trentatré combattenti attaccarono a Litochoro, sotto il monte Olimpo, una forza di gendarmi e guardie nazionali, ne uccisero dodici, bruciarono edifici e presero armi: fu lo scontro più grave dall'accordo di Varkiza. Per l'articolo inglese furono trenta ex membri dell'ELAS, che assaltarono la stazione di polizia del villaggio la notte prima delle elezioni e uccisero i poliziotti. Il giorno dopo il Rizospastis, giornale del KKE, scrisse che autorità e bande inventavano presunti attacchi comunisti.",
+  "after": "Per l'articolo italiano l'attacco, per la sua data, è stato considerato da molti l'inizio della terza fase della guerra civile, quella del 1946-1949; ma la coincidenza con le elezioni fu un caso, dovuto probabilmente a ragioni tattiche locali più che a un calcolo politico, e il suo significato di battaglia d'apertura fu mitico, perché serviva alla destra per presentare i comunisti come aggressori e ai comunisti per dire di aver seguito un piano rivoluzionario. Le elezioni furono vinte dallo Schieramento Unito dei Nazionalisti. Dagli ex combattenti dell'ELAS nacque l'Esercito Democratico Greco (DSE), guidato da Markos Vafiadis, che per l'articolo inglese comandava da una base in Jugoslavia.",
+  "links": [
+    {
+      "slug": "accordo-di-varkiza-1945",
+      "reason": "Più di tredici mesi prima, il 12 febbraio 1945, l'accordo di Varkiza aveva sciolto l'ELAS."
+    },
+    {
+      "slug": "dottrina-truman-1947",
+      "reason": "Meno di un anno dopo, il 12 marzo 1947, gli Stati Uniti annunciano che sosterranno il governo greco."
+    },
+    {
+      "slug": "operazione-pyrsos-1949",
+      "reason": "Più di tre anni dopo, nell'agosto 1949, l'esercito nazionale attacca le ultime roccaforti del DSE."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Greek Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greek_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile greca - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_greca",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'attacco avvenne di notte, fra il 30 e il 31 marzo 1946: la data indicata è quella della sera del 30, vigilia delle elezioni del 31 marzo. L'articolo italiano dà la notte e la data delle elezioni; l'inglese dice solo «la notte prima delle elezioni» del marzo 1946, senza contraddirlo. I due articoli differiscono sui numeri: trentatré combattenti del DSE e dodici gendarmi e guardie nazionali uccisi per l'italiano, trenta ex membri dell'ELAS e i poliziotti della stazione uccisi (senza numero) per l'inglese. La lettura dell'attacco come inizio della guerra, e il giudizio che quel ruolo sia un mito, sono dell'articolo italiano; l'inglese scrive solo che i combattimenti ripresero nel marzo 1946 con quell'attacco. Il pin è sul paese di Litochoro, perché nessuno dei due articoli indica il punto preciso del presidio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
