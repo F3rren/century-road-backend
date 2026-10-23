@@ -1,0 +1,54 @@
+{
+  "slug": "dekemvriana-1944",
+  "title": "La Dekemvriana",
+  "summary": "Il 3 dicembre 1944 polizia e gendarmeria sparano su una manifestazione dell'EAM diretta a piazza Syntagma, ad Atene. Cominciano trentasette giorni di combattimenti tra l'EAM-ELAS da una parte e il governo greco e l'esercito britannico dall'altra, finiti con la sconfitta dell'EAM-ELAS.",
+  "date": {
+    "year": 1944,
+    "month": 12,
+    "day": 3
+  },
+  "place": {
+    "name": "Piazza Syntagma, Atene, Grecia",
+    "lat": 37.9755,
+    "lon": 23.7348,
+    "countryCode": "GR",
+    "approximate": false
+  },
+  "before": "Nel maggio 1944, alla conferenza del Libano, le fazioni non collaborazioniste si erano accordate per un governo di unità nazionale, in cui l'EAM ebbe sei ministri su ventiquattro. Con l'accordo di Caserta del settembre 1944 le forze della resistenza erano state poste sotto il comando del generale britannico Ronald Scobie. In ottobre i tedeschi si ritirarono e il 13 ottobre i britannici entrarono ad Atene, seguiti dal governo Papandreou. Su istruzione sovietica i dirigenti del KKE evitarono di prendere il pieno controllo del paese. Il disarmo della resistenza divise governo ed EAM: il 1º dicembre Scobie chiese lo scioglimento dell'ELAS e il 2 dicembre i ministri dell'EAM si dimisero.",
+  "event": "Il 3 dicembre almeno 200 000 persone marciarono su via Panepistimiou verso piazza Syntagma. Quando arrivarono alla Tomba del Milite Ignoto si cominciò a sparare da strade ed edifici governativi; furono uccisi ventotto manifestanti e feriti 148. Il comandante britannico Woodhouse sostenne che non era certo chi avesse sparato per primo, mentre il fotografo di LIFE Dmitri Kessel riferì che la polizia aveva sparato senza provocazione. Seguirono combattimenti in tutta Atene, prima tra l'EAM e le forze di sicurezza greche, poi, nella seconda metà di dicembre, anche contro i britannici. Il 12 dicembre l'EAM controllava gran parte di Atene e del Pireo, e i britannici fecero arrivare rinforzi dall'Italia. A Natale Churchill andò ad Atene per una conferenza di pace, che fallì.",
+  "after": "All'inizio di gennaio l'EAM aveva perso la battaglia: gli scontri finirono l'11 gennaio 1945 e il 15 gennaio Scobie accettò un cessate il fuoco. Papandreou si dimise e fu sostituito dal generale Nikolaos Plastiras. I guerriglieri lasciarono Atene portando con sé migliaia di ostaggi, e circa 13 000 membri dell'EAM-ELAS furono arrestati dai britannici e consegnati alle autorità greche. Nel febbraio 1945 il governo Plastiras e il partito comunista firmarono l'accordo di Varkiza, con il disarmo dell'ELAS. Seguì un periodo di «Terrore bianco» contro la sinistra che, per entrambi gli articoli, contribuì allo scoppio della guerra civile greca nel 1946.",
+  "links": [
+    {
+      "slug": "accordo-di-varkiza-1945",
+      "reason": "Poco più di due mesi dopo, il 12 febbraio 1945, l'accordo di Varkiza fissa il disarmo dell'ELAS."
+    },
+    {
+      "slug": "inizio-della-guerra-civile-greca-1946",
+      "reason": "Quasi sedici mesi dopo, alla fine di marzo del 1946, comincia la guerra civile greca."
+    },
+    {
+      "slug": "conferenza-di-jalta-1945",
+      "reason": "Due mesi dopo, il 4 febbraio 1945, i tre grandi si incontrano a Jalta."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dekemvriana - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dekemvriana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dekemvriana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dekemvriana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I due articoli sono quasi la stessa voce tradotta e concordano su date e numeri: scontri dal 3 dicembre 1944 all'11 gennaio 1945, ventotto morti e 148 feriti il 3 dicembre (nella parte sugli eventi «più di ventotto»). L'articolo italiano aggiunge che il «Terrore bianco» seguì anche un «Terrore rosso» istigato dall'EAM; l'inglese parla solo del primo. Il pin è su piazza Syntagma, dove il 3 dicembre si sparò sulla manifestazione; i combattimenti successivi interessarono tutta Atene e il Pireo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

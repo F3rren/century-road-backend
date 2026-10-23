@@ -1,0 +1,57 @@
+{
+  "slug": "campagna-di-pingjin-1948",
+  "title": "La campagna di Pingjin",
+  "summary": "Dal 29 novembre 1948 al 31 gennaio 1949 l'Esercito Popolare di Liberazione isola le guarnigioni nazionaliste di Fu Zuoyi nella Cina del nord, prende Zhangjiakou e Tianjin e il 31 gennaio entra a Pechino, allora chiamata Beiping, che per l'articolo italiano passa ai comunisti senza combattimenti.",
+  "date": {
+    "year": 1948,
+    "month": 11,
+    "day": 29
+  },
+  "place": {
+    "name": "Pechino, Cina",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto è su Pechino, ma la campagna si combatté in tutta la zona tra Zhangjiakou, Xinbao'an, Pechino e Tianjin."
+  },
+  "before": "Per l'articolo inglese, nell'inverno del 1948 l'equilibrio nella Cina del nord pendeva verso i comunisti. Finita la campagna di Liaoshen, le forze di Lin Biao entrarono nella pianura della Cina del nord; Fu Zuoyi e il governo di Nanchino decisero di abbandonare Chengde, Baoding e Qinhuangdao e di concentrare le truppe a Beiping, l'attuale Pechino, a Tianjin e a Zhangjiakou, sperando di conservarle per rinforzare Xuzhou, dove era in corso un'altra grande campagna, o di ritirarsi nel Suiyuan. Il 23 novembre le forze di Lin Biao presero Shanhaiguan e tagliarono la ferrovia tra Beiping e Tianjin.",
+  "event": "Il 29 novembre i comunisti attaccarono Zhangjiakou. Fu Zuoyi mandò in soccorso il 35º corpo, poi lo richiamò per difendere Beiping, minacciata di accerchiamento, ma il corpo fu bloccato a Xinbao'an, presa il 22 dicembre; il comandante Guo Jingyun si uccise. Intanto i comunisti avevano avviato colloqui segreti con Fu, favoriti dalla figlia Fu Dong, iscritta clandestina al partito; il 19 dicembre i colloqui si arenarono. Il 14 gennaio 1949, appena finita la campagna dello Huaihai, cominciò l'assalto a Tianjin: dopo ventinove ore di combattimenti 130.000 nazionalisti erano stati uccisi o catturati.",
+  "after": "Isolato a Beiping, il 21 gennaio Fu Zuoyi decise di negoziare un accordo di pace; il 22 lasciò la città e il suo esercito fu integrato nelle forze comuniste. Il 31 gennaio la Quarta Armata di campagna entrò a Beiping e la campagna si chiuse. Per l'articolo italiano la città fu presa senza combattimenti e la campagna diede ai comunisti la Cina del nord; per l'articolo inglese la sconfitta tolse al Kuomintang la capacità di combattere efficacemente sul continente. Per l'articolo italiano nell'aprile 1949 i comunisti attraversarono lo Yangtze e presero Nanchino.",
+  "links": [
+    {
+      "slug": "campagna-di-huaihai-1948",
+      "reason": "Ventitré giorni prima, il 6 novembre 1948, era cominciata attorno a Xuzhou la campagna dello Huaihai."
+    },
+    {
+      "slug": "attraversamento-dello-yangtze-1949",
+      "reason": "Meno di tre mesi dopo l'ingresso a Pechino, il 20 aprile 1949, i comunisti attraversano lo Yangtze."
+    },
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Otto mesi dopo l'ingresso a Pechino, il 1º ottobre 1949, Mao Zedong vi proclama la Repubblica Popolare Cinese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pingjin campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pingjin_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La campagna non ha una voce propria su Wikipedia in italiano. L'articolo italiano sulla guerra civile cinese la chiama «campagna di Pechino» e dice solo che diede ai comunisti la Cina del nord e che Pechino fu conquistata senza combattimenti il 31 gennaio 1949; non dà la data d'inizio. Le date e i particolari militari sono dell'articolo inglese, che usa il nome di allora della città, Beiping.",
+    "L'articolo inglese fa cominciare la campagna il 29 novembre 1948 e finire il 31 gennaio 1949, per sessantaquattro giorni, ma racconta che già il 23 novembre le forze di Lin Biao avevano preso Shanhaiguan; la data scelta è quella che l'articolo indica come inizio. Sulla fine i due articoli concordano: il 31 gennaio 1949.",
+    "Il pin è su Pechino, dove la campagna si chiuse; è approssimato perché i combattimenti si svolsero soprattutto a Zhangjiakou, Xinbao'an e Tianjin."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

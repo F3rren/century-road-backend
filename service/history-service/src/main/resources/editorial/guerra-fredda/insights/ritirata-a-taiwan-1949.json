@@ -1,0 +1,57 @@
+{
+  "slug": "ritirata-a-taiwan-1949",
+  "title": "La ritirata a Taiwan",
+  "summary": "Il 7 dicembre 1949, dopo aver perso quasi tutta la Cina continentale, il governo della Repubblica di Cina guidato dal Kuomintang si ritira sull'isola di Taiwan. Nello stesso mese Chiang Kai-shek proclama Taipei capitale provvisoria e continua a presentarsi come l'unico governo legittimo della Cina.",
+  "date": {
+    "year": 1949,
+    "month": 12,
+    "day": 7
+  },
+  "place": {
+    "name": "Taipei, Taiwan",
+    "lat": 25.0330,
+    "lon": 121.5654,
+    "countryCode": "TW",
+    "approximate": true,
+    "note": "La ritirata riguardò tutta l'isola di Taiwan; il punto indica Taipei, proclamata capitale provvisoria nel dicembre 1949."
+  },
+  "before": "Taiwan, ceduta dai Qing al Giappone nel 1895, era tornata alla Repubblica di Cina nel 1945, dopo la resa giapponese. Per l'articolo inglese sulla ritirata, dopo la vittoria comunista in Manciuria Chiang Kai-shek concluse alla fine del 1948 di doversi spostare a Taiwan e cominciò a mandarvi beni culturali e riserve finanziarie; già dall'agosto 1948, nell'arco di quattro mesi, vi fu trasferita l'aviazione. Nel 1949 i comunisti attraversarono lo Yangtze e presero Nanchino e Shanghai. Il 1º ottobre Mao Zedong proclamò a Pechino la Repubblica Popolare Cinese. Per l'articolo inglese sulla guerra civile il governo nazionalista restò a Canton fino al 15 ottobre, a Chongqing fino al 25 novembre e poi a Chengdu.",
+  "event": "Il 7 dicembre 1949 i resti del governo, i membri del Kuomintang e i suoi ufficiali si ritirarono a Taiwan con molti civili e profughi; per l'articolo inglese sulla ritirata parteciparono circa due milioni di soldati. Per l'articolo italiano Chiang, con circa 600 000 soldati e circa due milioni di civili, raggiunse la costa partendo da Chongqing e lasciò il continente grazie all'aiuto navale della Settima Flotta statunitense. Nel dicembre Chiang proclamò Taipei capitale provvisoria della Repubblica di Cina, affermando di rappresentare il solo governo legittimo del paese. Il 10 dicembre cadde Chengdu, l'ultima grande città continentale in mano ai nazionalisti.",
+  "after": "Dopo la caduta di Chengdu la maggior parte della resistenza sul continente cessò. Un attacco comunista all'isola di Kinmen fu respinto, e questo fermò l'avanzata verso Taiwan; Hainan fu presa nel 1950, in aprile per l'articolo inglese, in maggio per quello italiano. Chiang considerava la ritirata temporanea e preparò piani per riconquistare il continente, tra cui il «Progetto Gloria Nazionale», che non fu mai attuato. Per l'articolo italiano all'inizio del 1950 molti osservatori ritenevano imminente la caduta del suo governo. Nel 1971 l'Assemblea generale delle Nazioni Unite riconobbe la Repubblica Popolare come unica rappresentante legittima della Cina all'ONU.",
+  "links": [
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Poco più di due mesi prima, il 1º ottobre 1949, Mao aveva proclamato a Pechino la Repubblica Popolare Cinese."
+    },
+    {
+      "slug": "attraversamento-dello-yangtze-1949",
+      "reason": "Meno di otto mesi prima, il 20 aprile 1949, i comunisti avevano cominciato ad attraversare lo Yangtze verso Nanchino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Retreat of the government of the Republic of China to Taiwan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Retreat_of_the_government_of_the_Republic_of_China_to_Taiwan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Chinese Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data del 7 dicembre 1949 è nell'articolo inglese sulla ritirata e in quello sulla guerra civile; l'articolo italiano sulla guerra civile cinese (non è stato usato un articolo italiano dedicato alla ritirata) dice solo «nel dicembre» per la proclamazione di Taipei. Sui numeri gli articoli divergono: l'inglese sulla ritirata parla di circa due milioni di soldati, ma più avanti stima tra 900 000 e 1 100 000 migranti dal continente tra il 1945 e il 1955, con 580 000 o 450 000 soldati secondo le fonti; l'italiano dice circa 600 000 soldati e due milioni di civili. Il pin è su Taipei, la capitale provvisoria nominata negli articoli sulla guerra civile."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

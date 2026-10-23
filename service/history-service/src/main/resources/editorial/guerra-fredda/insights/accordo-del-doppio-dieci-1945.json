@@ -1,0 +1,57 @@
+{
+  "slug": "accordo-del-doppio-dieci-1945",
+  "title": "L'accordo del Doppio Dieci",
+  "summary": "Il 10 ottobre 1945 a Chongqing, dopo oltre quaranta giorni di trattative e il primo incontro in vent'anni tra Mao Zedong e Chiang Kai-shek, il Kuomintang e il Partito Comunista Cinese firmano un accordo per evitare una nuova guerra civile. Per l'articolo inglese l'intesa fallisce presto e nel 1946 la guerra riprende.",
+  "date": {
+    "year": 1945,
+    "month": 10,
+    "day": 10
+  },
+  "place": {
+    "name": "Chongqing, Cina",
+    "lat": 29.5630,
+    "lon": 106.5516,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto indica il centro di Chongqing: l'articolo inglese dice che l'accordo fu firmato nel luogo che oggi è il museo del villaggio della Roccia Rossa, ma non ne dà la posizione."
+  },
+  "before": "Il Giappone si era arreso in agosto. Per l'articolo italiano tra le condizioni di resa, dettate dagli Stati Uniti, c'era quella di arrendersi all'esercito nazionalista e non alle truppe comuniste, mentre l'Unione Sovietica, occupata la Manciuria, mise a disposizione del Partito Comunista il materiale militare catturato. Per l'articolo inglese il trattato sino-sovietico del 14 agosto aveva riconosciuto il governo del Kuomintang; Stalin spinse Mao ad accettare gli inviti di Chiang Kai-shek, e Chiang accettò di trattare per le pressioni statunitensi. Il 27 agosto Mao arrivò a Chongqing con l'ambasciatore americano Patrick J. Hurley.",
+  "event": "Le trattative furono condotte soprattutto da Wang Shijie per il Kuomintang e da Zhou Enlai per i comunisti; fu il primo incontro tra Mao e Chiang in vent'anni, e l'ultimo. Intanto si combatteva: la campagna di Shangdang, cominciata il 10 settembre, finì il 12 ottobre con una vittoria comunista che per l'articolo inglese rafforzò Mao al tavolo. L'accordo, firmato il 10 ottobre, giorno del «Doppio Dieci» della Repubblica di Cina, prevedeva che il Partito Comunista riconoscesse il governo del Kuomintang come legittimo e che questo riconoscesse i comunisti come opposizione legale; prevedeva inoltre la legalità di tutti i partiti, una conferenza politica consultiva, l'abolizione dei servizi segreti dei due partiti ed elezioni generali.",
+  "after": "Mao tornò a Yan'an l'11 ottobre. Per l'articolo inglese nessuna delle due parti prese l'accordo sul serio: Mao lo definì «un semplice pezzo di carta», e Chiang, in un telegramma del 29 settembre, aveva scritto ai suoi comandanti che le trattative servivano a ridurre la pressione internazionale. Già a novembre era chiaro che l'intesa sarebbe durata poco. Per l'articolo italiano il generale statunitense George Marshall, inviato come mediatore, cercò di negoziare un cessate il fuoco, ma la fragile tregua durò solo fino alla primavera del 1946; sul finire del 1946, fallite le trattative, la guerra civile riprese.",
+  "links": [
+    {
+      "slug": "resa-del-giappone-1945",
+      "reason": "Cinquantasei giorni prima, il 15 agosto 1945, il Giappone aveva annunciato la resa."
+    },
+    {
+      "slug": "campagna-di-liaoshen-1948",
+      "reason": "Quasi tre anni dopo, il 12 settembre 1948, i comunisti avviano in Manciuria la campagna di Liaoshen."
+    },
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Quasi quattro anni dopo, il 1º ottobre 1949, Mao Zedong proclama a Pechino la Repubblica Popolare Cinese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Double Tenth Agreement - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Double_Tenth_Agreement",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'accordo non ha una voce propria su Wikipedia in italiano, e l'articolo italiano sulla guerra civile cinese non parla né dell'accordo né delle trattative di Chongqing: da lì vengono solo il contesto (le condizioni di resa del Giappone, la Manciuria sovietica, la mediazione di Marshall, la tregua fino alla primavera del 1946). Tutto ciò che riguarda le trattative e l'accordo è dell'articolo inglese.",
+    "L'articolo inglese non è coerente sulla durata: nell'introduzione parla di quarantatré giorni di trattative dal 29 agosto al 10 ottobre, più avanti di quarantun giorni a partire dal 28 agosto e di sette settimane; dice che Mao arrivò a Chongqing il 27 agosto, ma in un altro passo che Hurley vi arrivò con Mao a metà agosto. Per questo il testo dice «oltre quaranta giorni». La data del 10 ottobre è la stessa in tutto l'articolo.",
+    "Il pin è sul centro di Chongqing, segnato come approssimato perché l'articolo nomina il luogo della firma senza darne la posizione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

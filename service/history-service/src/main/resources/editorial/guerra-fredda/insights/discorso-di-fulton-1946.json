@@ -1,0 +1,54 @@
+{
+  "slug": "discorso-di-fulton-1946",
+  "title": "Il discorso di Fulton",
+  "summary": "Il 5 marzo 1946, al Westminster College di Fulton, nel Missouri, Winston Churchill, non più primo ministro, dice che da Stettino a Trieste una «cortina di ferro» è scesa sull'Europa. Per l'articolo inglese alcuni vedono nel discorso il segnale dell'inizio della guerra fredda.",
+  "date": {
+    "year": 1946,
+    "month": 3,
+    "day": 5
+  },
+  "place": {
+    "name": "Westminster College, Fulton, Missouri, Stati Uniti",
+    "lat": 38.8481,
+    "lon": -91.9531,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese, dopo la guerra la Grande Alleanza esisteva ancora sulla carta, ma i contrasti tra l'Unione Sovietica e gli alleati occidentali crescevano: l'influenza comunista si estendeva nell'Europa orientale, in Grecia era in corso una guerra civile, l'URSS avanzava pretese sulla Turchia e ritardava il ritiro delle truppe dall'Iran. Churchill, sconfitto alle elezioni del luglio 1945 e capo dell'opposizione, passava l'inverno negli Stati Uniti da privato cittadino; aveva accettato l'invito del Westminster College a patto che Truman lo accompagnasse. Per l'articolo italiano aveva già usato l'espressione «cortina di ferro» in un telegramma a Truman dell'11 maggio 1945, durante la crisi di Trieste, e prima di lui l'avevano usata altri, tra cui Goebbels.",
+  "event": "Churchill e Truman arrivarono a Fulton in treno il 5 marzo; Churchill parlò per quarantasei minuti davanti a 1.500 persone. Il titolo era «The Sinews of Peace», per l'articolo italiano «Risorse di pace». Per l'articolo inglese disse che gli Stati Uniti erano al culmine della potenza mondiale, che il segreto della bomba atomica non andava condiviso e che contro la guerra e la tirannia serviva un'associazione fraterna dei popoli di lingua inglese. Disse poi che da Stettino sul Baltico a Trieste sull'Adriatico era scesa una cortina di ferro, dietro la quale le capitali dell'Europa centrale e orientale, da Varsavia a Sofia, erano sotto un controllo di Mosca molto forte e in alcuni casi crescente. Aggiunse di non credere che l'Unione Sovietica volesse la guerra, ma i frutti della guerra. Il paragrafo sulla cortina di ferro non era nel testo dato in anticipo alla stampa.",
+  "after": "Per l'articolo inglese Stalin ebbe il testo il giorno dopo e il 13 marzo, in un'intervista alla Pravda, accostò Churchill a Hitler, accusandolo di chiamare l'Occidente alla guerra contro l'URSS in nome di una teoria razziale dei popoli di lingua inglese. Per l'articolo italiano nell'agosto dello stesso anno rispose anche Andrej Ždanov, usando la stessa espressione, e la frase, non subito ben accolta, si diffuse per indicare la divisione dell'Europa. Per l'articolo inglese l'idea di una nuova unità europea, accennata nel discorso, fu sviluppata da Churchill a Zurigo nel settembre 1946.",
+  "links": [
+    {
+      "slug": "conferenza-di-potsdam-1945",
+      "reason": "Più di sette mesi prima, il 17 luglio 1945, Stalin, Truman e Churchill si erano incontrati a Potsdam."
+    },
+    {
+      "slug": "dottrina-truman-1947",
+      "reason": "Un anno e sette giorni dopo, il 12 marzo 1947, Truman annuncia al Congresso la sua dottrina."
+    },
+    {
+      "slug": "colpo-di-praga-1948",
+      "reason": "Quasi due anni dopo, il 25 febbraio 1948, i comunisti prendono il potere a Praga, una delle capitali nominate nel discorso."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fulton Speech - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fulton_Speech",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Discorso sulla cortina di ferro - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Discorso_sulla_cortina_di_ferro",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il discorso il 5 marzo 1946 a Fulton. Il contesto internazionale, il viaggio, il contenuto e la reazione di Stalin vengono dall'articolo inglese; i precedenti dell'espressione «cortina di ferro», il telegramma dell'11 maggio 1945 e la risposta di Ždanov dall'articolo italiano, che riporta il discorso per brevi citazioni. I due articoli leggono diversamente il ruolo di Truman: per l'italiano averlo informato prima significava che il presidente approvava, per l'inglese Truman lesse il testo ma ufficialmente non vi si associò, per potersene distanziare. Il pin è sul campus del Westminster College."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

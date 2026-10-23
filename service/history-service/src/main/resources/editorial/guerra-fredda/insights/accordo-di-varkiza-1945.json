@@ -1,0 +1,79 @@
+{
+  "slug": "accordo-di-varkiza-1945",
+  "title": "L'accordo di Varkiza",
+  "summary": "Il 12 febbraio 1945, a Varkiza, vicino ad Atene, il governo greco e il Partito Comunista di Grecia, per l'EAM-ELAS sconfitto nella Dekemvriana, firmano un accordo: disarmo dell'ELAS, amnistia per i soli reati politici, un plebiscito ed elezioni sorvegliate da osservatori alleati.",
+  "date": {
+    "year": 1945,
+    "month": 2,
+    "day": 12
+  },
+  "place": {
+    "name": "Varkiza, Grecia",
+    "lat": 37.8230,
+    "lon": 23.8100,
+    "countryCode": "GR",
+    "approximate": true,
+    "note": "Il punto indica la località di Varkiza, vicino ad Atene; gli articoli non dicono in quale edificio fu firmato l'accordo."
+  },
+  "before": "Dal 3 dicembre 1944 all'11 gennaio 1945 l'EAM-ELAS aveva combattuto ad Atene contro il governo greco e l'esercito britannico, ed era stato sconfitto. La conferenza di Natale presieduta da Churchill era fallita perché le richieste dell'EAM-ELAS erano state giudicate eccessive; Papandreou si era dimesso ed era stato sostituito dal generale Nikolaos Plastiras. Per l'articolo italiano sulla guerra civile greca una tregua firmata l'11 gennaio fissò la fine delle ostilità al 15 gennaio, e pochi giorni dopo fu convocata la conferenza di Varkiza per definirne i termini.",
+  "event": "L'accordo fu firmato dal ministro degli Esteri greco e dal segretario del Partito Comunista di Grecia (KKE) per l'EAM-ELAS; per l'articolo italiano sulla guerra civile la delegazione governativa era guidata da Ioannis Sofianopoulos. L'articolo IX prevedeva entro l'anno un plebiscito sulla Costituzione, da cui sarebbero venute le elezioni per un'assemblea costituente, con osservatori alleati a garantirne la regolarità. I membri dell'EAM-ELAS potevano fare politica se consegnavano le armi; il governo garantiva le libertà civili e politiche e si impegnava a formare un esercito nazionale apolitico. Nei giorni o nelle settimane successive l'ELAS consegnò, secondo i registri, fra l'altro 100 pezzi d'artiglieria e 48 973 fucili e pistole; i numeri reali erano più alti.",
+  "after": "Gli articoli sull'accordo dicono che le promesse non furono mantenute: l'amnistia valeva solo per i reati politici, e molte azioni dei comunisti nella Dekemvriana furono considerate non politiche. Seguì una diffusa persecuzione di comunisti ed ex membri e sostenitori dell'EAM, il «Terrore bianco». Per entrambi gli articoli sulla guerra civile circa 80 000 persone furono perseguite; per l'inglese alcuni ex partigiani nascosero le armi in montagna e cinquemila fuggirono in Jugoslavia. Il KKE rimase legale fino al 27 dicembre 1947. Per l'articolo italiano sulla guerra civile l'attacco di Litochoro, nella notte tra il 30 e il 31 marzo 1946, fu lo scontro più grave dall'accordo.",
+  "links": [
+    {
+      "slug": "dekemvriana-1944",
+      "reason": "Poco più di due mesi prima, il 3 dicembre 1944, ad Atene erano cominciati gli scontri della Dekemvriana."
+    },
+    {
+      "slug": "conferenza-di-jalta-1945",
+      "reason": "Otto giorni prima, il 4 febbraio 1945, si era aperta la conferenza di Jalta."
+    },
+    {
+      "slug": "inizio-della-guerra-civile-greca-1946",
+      "reason": "Più di tredici mesi dopo, nella notte fra il 30 e il 31 marzo 1946, l'attacco di Litochoro è preso da molti come inizio della guerra civile greca."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty of Varkiza - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Varkiza",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordo di Varkiza - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordo_di_Varkiza",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dekemvriana - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Dekemvriana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dekemvriana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dekemvriana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Greek Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Greek_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile greca - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_greca",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I due articoli sull'accordo sono la stessa voce tradotta: firma, contenuti, armi consegnate e conseguenze vengono da lì. I fatti precedenti vengono dagli articoli sulla Dekemvriana e sulla guerra civile greca; la tregua dell'11 gennaio, il nome di Sofianopoulos e Litochoro dall'articolo italiano sulla guerra civile, le armi nascoste e la fuga in Jugoslavia dall'inglese. L'articolo sulla Dekemvriana dice che l'accordo fu firmato dal governo Plastiras e dal partito comunista, e nomina Sofianopoulos tra i partecipanti per l'EAM alla conferenza di Natale, mentre l'articolo italiano sulla guerra civile lo pone a capo della delegazione governativa a Varkiza. Il pin è sulla località di Varkiza."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "rottura-tito-stalin-1948",
+  "title": "La rottura tra Tito e Stalin",
+  "summary": "Il 28 giugno 1948 il Cominform, riunito a Bucarest, condanna il Partito comunista di Jugoslavia e lo dichiara fuori dall'organizzazione. La Jugoslavia di Tito si stacca dal blocco guidato dall'Unione Sovietica e, privata dei suoi aiuti, si rivolge agli Stati Uniti.",
+  "date": {
+    "year": 1948,
+    "month": 6,
+    "day": 28
+  },
+  "place": {
+    "name": "Bucarest, Romania",
+    "lat": 44.4268,
+    "lon": 26.1025,
+    "countryCode": "RO",
+    "approximate": true,
+    "note": "Gli articoli dicono solo che la riunione del Cominform si tenne a Bucarest, senza indicare l'edificio: il punto è nel centro della città."
+  },
+  "before": "Dopo la guerra Tito cercò un ruolo di guida nei Balcani. Per l'articolo inglese voleva integrare l'Albania nella Jugoslavia, firmò con la Bulgaria un trattato a Bled nell'agosto 1947 senza consultare Mosca e sosteneva i comunisti greci, mentre Stalin voleva fermare quell'insurrezione per evitare uno scontro con Stati Uniti e Regno Unito. Per l'articolo italiano pesava il progetto di Federazione balcanica, contrario agli interessi sovietici. Nel febbraio 1948 Stalin rimproverò i delegati jugoslavi a Mosca; il 18 marzo ritirò i consiglieri militari e il 27 marzo mandò la prima di tre lettere, che presentava lo scontro come ideologico.",
+  "event": "Nella seconda lettera, il 4 maggio, Stalin propose di portare la questione davanti al Cominform, l'organizzazione dei partiti comunisti fondata nel settembre 1947. Per l'articolo inglese il 19 giugno il Partito comunista di Jugoslavia (KPJ) fu invitato alla riunione di Bucarest e rifiutò di mandare delegati. La risoluzione accusò il KPJ di antisovietismo, errori ideologici, mancanza di democrazia interna e posizioni nazionaliste, lo dichiarò fuori dal Cominform e contava sui membri «sani» del partito per rovesciare Tito. Per l'articolo italiano l'accusa fu di deviazionismo, trotzkismo e bucharinismo e di piani quinquennali irrealizzabili. Gli jugoslavi seppero della rottura il 28 giugno, quando la risoluzione uscì sul quotidiano di Praga Rudé právo.",
+  "after": "Per l'articolo inglese Tito scelse di resistere. Seguirono le epurazioni del periodo detto Informbiro, con migliaia di persone imprigionate, uccise o esiliate, e una crisi economica, perché l'economia jugoslava dipendeva dagli scambi con il blocco orientale. Nel febbraio 1949 gli Stati Uniti decisero di dare aiuti economici a Tito e chiesero in cambio che la Jugoslavia smettesse di aiutare i comunisti greci quando ciò non avesse messo in pericolo la posizione di Tito. Per l'articolo italiano i rapporti con l'Unione Sovietica si avviarono alla normalizzazione dopo la morte di Stalin, il 5 marzo 1953, con la visita di Chruščëv a Belgrado nel 1955.",
+  "links": [
+    {
+      "slug": "colpo-di-praga-1948",
+      "reason": "Poco più di quattro mesi prima, il 25 febbraio 1948, i comunisti prendono il potere in Cecoslovacchia."
+    },
+    {
+      "slug": "blocco-di-berlino-1948",
+      "reason": "Quattro giorni prima, il 24 giugno 1948, comincia il blocco di Berlino."
+    },
+    {
+      "slug": "operazione-pyrsos-1949",
+      "reason": "Poco più di tredici mesi dopo, il 2 agosto 1949, comincia l'offensiva finale contro i comunisti greci, ormai senza l'appoggio jugoslavo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tito–Stalin split - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tito%E2%80%93Stalin_split",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rottura Tito-Stalin - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rottura_Tito-Stalin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Per l'articolo italiano la rottura fu ufficializzata nella riunione del Cominform del 28 giugno 1948 a Bucarest, dove gli jugoslavi furono condannati quel giorno. L'articolo inglese colloca la riunione a Bucarest e dice che il 28 giugno la risoluzione fu pubblicata su Rudé právo, ma non dà il giorno in cui fu approvata; dice però che l'invito del 19 giugno era per una riunione due giorni dopo. Gli articoli divergono sulla presenza jugoslava: l'inglese dice che il KPJ rifiutò di mandare delegati, l'italiano scrive che «la delegazione jugoslava viene accusata». Le lettere di Stalin, gli aiuti americani e le epurazioni vengono dall'articolo inglese; il progetto di Federazione balcanica e la normalizzazione del 1955 dall'italiano, che è molto breve. Il pin è approssimato sul centro di Bucarest."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

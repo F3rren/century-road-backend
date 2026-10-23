@@ -1,0 +1,55 @@
+{
+  "slug": "prima-bomba-atomica-sovietica-1949",
+  "title": "La prima bomba atomica sovietica",
+  "summary": "Il 29 agosto 1949, al poligono di Semipalatinsk, in Kazakistan, l'Unione Sovietica fa esplodere RDS-1, la sua prima bomba atomica, da 22 chilotoni. Gli Stati Uniti ne rilevano le ricadute radioattive e il 23 settembre Truman annuncia l'esplosione.",
+  "date": {
+    "year": 1949,
+    "month": 8,
+    "day": 29
+  },
+  "place": {
+    "name": "Poligono nucleare di Semipalatinsk, Kazakistan",
+    "lat": 50.4378,
+    "lon": 77.8125,
+    "countryCode": "KZ",
+    "approximate": true,
+    "note": "Gli articoli indicano soltanto il poligono di Semipalatinsk, una vasta area, allora nella Repubblica socialista sovietica kazaka; il punto è indicativo, all'interno della zona del poligono."
+  },
+  "before": "Per l'articolo inglese la bomba fu progettata dall'aprile 1946 nel Laboratorio n. 2, poi Istituto Kurčatov, con plutonio prodotto nel complesso di Čeljabinsk-40. Su insistenza di Lavrentij Berija fu scelto un ordigno a implosione con nucleo di plutonio, simile a Fat Man, la bomba sganciata su Nagasaki: i progettisti avevano un modello più avanzato, ma preferirono quello di cui si conosceva l'affidabilità, anche grazie alle molte informazioni avute dallo spionaggio durante la guerra. Nel novembre 1947 il ministro degli Esteri Molotov aveva affermato che l'Unione Sovietica conosceva il «segreto» dell'arma nucleare.",
+  "event": "Il 29 agosto 1949, alle sette del mattino ora locale, l'ordigno esplose al poligono di Semipalatinsk con una potenza di 22 chilotoni, simile a quella delle bombe americane The Gadget e Fat Man. Per l'articolo inglese la commissione del test era presieduta da Michail Pervuchin, lo sviluppo era guidato da Igor' Kurčatov e Julij Chariton, e Berija sovrintendeva alla prova. Intorno al punto dello scoppio erano stati costruiti case, un ponte e un tratto di metropolitana simulato, e disposti mezzi corazzati, una cinquantina di aerei, un centinaio tra cannoni e mortai e oltre 1.500 animali; l'esplosione risultò più distruttiva del previsto del cinquanta per cento. Gli Stati Uniti chiamarono l'arma Joe-1, da Iosif Stalin.",
+  "after": "Per l'articolo inglese il 3 settembre un aereo WB-29 dell'aviazione statunitense, in volo dal Giappone all'Alaska, raccolse detriti radioattivi che, confrontati con quelli di altri voli, dimostrarono il test. Gli americani non se lo aspettavano prima del 1953, i britannici prima del 1954. Il 23 settembre Truman annunciò che «nelle ultime settimane» c'era stata un'esplosione atomica in URSS; la TASS parlò di lavori di scavo, ma ribadì che il paese aveva armi nucleari. Per l'articolo inglese gli Stati Uniti avviarono un programma accelerato per la bomba all'idrogeno, e cominciò la corsa agli armamenti nucleari. Per l'articolo italiano fu la prima arma nucleare sviluppata e provata fuori dagli Stati Uniti.",
+  "links": [
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Quattro anni e ventitré giorni prima, il 6 agosto 1945, una bomba atomica americana aveva distrutto Hiroshima."
+    },
+    {
+      "slug": "firma-del-patto-atlantico-1949",
+      "reason": "Quasi cinque mesi prima, il 4 aprile, dodici paesi avevano firmato a Washington il Patto Atlantico."
+    },
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Trentatré giorni dopo, il 1° ottobre, Mao Zedong proclama a Pechino la Repubblica Popolare Cinese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "RDS-1 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/RDS-1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "RDS-1 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/RDS-1",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il test il 29 agosto 1949 a Semipalatinsk, con 22 chilotoni; l'ora (le sette del mattino, ora del Kazakistan) è solo nell'articolo inglese. L'articolo italiano è molto breve: oltre a data, luogo, potenza e nome Joe-1, dice soltanto che fu la prima arma nucleare sviluppata e provata fuori dagli Stati Uniti. Tutto il resto (progetto, test, scoperta americana, annuncio di Truman, reazione sovietica) viene dall'articolo inglese. L'italiano accosta The Gadget e Fat Man ai bombardamenti di Hiroshima e Nagasaki; l'inglese collega Fat Man a Nagasaki, e il testo segue l'inglese. Gli articoli non danno il punto esatto dello scoppio: il pin è indicativo, nella zona del poligono."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
