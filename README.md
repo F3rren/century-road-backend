@@ -1113,9 +1113,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  79 tests
-cd service/gateway         && ./mvnw test    #  43 tests
-cd service/history-service && ./mvnw test    # 422 tests
+cd service/auth-service    && ./mvnw test    #  80 tests
+cd service/gateway         && ./mvnw test    #  47 tests
+cd service/history-service && ./mvnw test    # 424 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1175,8 +1175,13 @@ go to `ALERT_WEBHOOK_URL` (a Discord incoming webhook by default; edit `contact-
 Slack instead), the same variable `infra/postgres/backup.sh` uses for a failed backup, so there
 is one operational channel, not several.
 
+`AlertRulesIntegrationTest` (history-service) keeps the rules honest about *what* they watch: every
+`resilience4j_*` / `history_*` series a rule's query names, label matchers included, must be on the
+service's real `/actuator/prometheus`, and each title must read the metric it promises (the breaker
+alert reads the breaker's state, not the bulkhead). It cannot say whether Grafana accepts the rule.
+
 After the first deploy, check **Alerting → Alert rules** in Grafana: every rule should show a
-real Normal/Pending/Firing state. These rules were written against the metrics' names and were
+real Normal/Pending/Firing state. These rules were checked against the metrics' names but were
 not exercised against a running Grafana while adding them — if one shows an evaluation error
 instead, open it in the Grafana UI, which will say why, and fix it there; editing the exported
 YAML by hand afterward is easier than getting it right blind a second time.
