@@ -196,7 +196,7 @@ services:
   #
   # The version is written here, not in .env, so Dependabot can see it and propose bumps.
   prometheus:
-    image: prom/prometheus:v3.15.0
+    image: prom/prometheus:v3.15.1
     restart: unless-stopped
     logging: *default-logging
     environment:
@@ -235,7 +235,7 @@ services:
   # Loopback only, same reasoning as Prometheus: the admin password is the single thing
   # standing between the internet and the dashboards.
   grafana:
-    image: grafana/grafana:13.2.2
+    image: grafana/grafana:13.2.4
     restart: unless-stopped
     logging: *default-logging
     environment:
