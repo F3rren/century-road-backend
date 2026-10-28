@@ -1,0 +1,57 @@
+{
+  "slug": "rimozione-di-macarthur-1951",
+  "title": "La rimozione di MacArthur",
+  "summary": "L'11 aprile 1951 il presidente statunitense Truman toglie al generale Douglas MacArthur il comando delle forze dell'ONU in Corea e i suoi altri incarichi in Estremo Oriente, dopo che il generale aveva criticato in pubblico la politica del governo. Al suo posto nomina Matthew Ridgway.",
+  "date": {
+    "year": 1951,
+    "month": 4,
+    "day": 11
+  },
+  "place": {
+    "name": "Casa Bianca, Washington, Stati Uniti",
+    "lat": 38.8977,
+    "lon": -77.0365,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Il punto è sulla Casa Bianca, a Washington, la città dove fu presa la decisione; l'articolo inglese dice che Truman ne discusse nel suo ufficio senza nominare l'edificio, e ricorda che in quegli anni, durante i lavori alla Casa Bianca, la sua residenza temporanea era Blair House. MacArthur ricevette la notizia a Tokyo. Gli articoli non dicono dove si tenne la conferenza stampa."
+  },
+  "before": "MacArthur aveva guidato lo sbarco di Incheon del 15 settembre 1950 e poi l'invasione della Corea del Nord, ma l'intervento cinese lo aveva costretto a ritirarsi. Il 6 dicembre Truman ordinò che le dichiarazioni pubbliche dei militari fossero approvate dal Dipartimento di Stato; MacArthur continuò a criticare i limiti posti alla guerra. Tra febbraio e marzo 1951 le forze dell'ONU tornarono ad avanzare e ripresero Seul. Mentre Truman preparava una proposta di cessate il fuoco, il 23 marzo MacArthur pubblicò un proprio comunicato rivolto alla Cina; il 5 aprile il deputato Joseph Martin lesse alla Camera una sua lettera critica verso il governo, che diceva: «non c'è sostituto della vittoria».",
+  "event": "Dal 6 al 9 aprile Truman discusse il caso nel suo ufficio con Marshall, Bradley, Acheson e Harriman; per l'articolo inglese i capi di stato maggiore giudicarono la rimozione auspicabile «dal punto di vista militare». L'11 aprile Truman scrisse l'ordine, firmato da Bradley, che passava tutti i comandi di MacArthur a Ridgway. Il segretario dell'Esercito Frank Pace, in visita al fronte in Corea, doveva comunicarglielo di persona, ma un guasto alle comunicazioni lo impedì e, mentre i giornalisti chiedevano conferme, Truman diede l'annuncio in una conferenza stampa. A Tokyo MacArthur seppe la notizia durante un pranzo all'ambasciata statunitense, da un aiutante che l'aveva sentita alla radio.",
+  "after": "MacArthur tornò negli Stati Uniti, fu accolto a San Francisco da circa 500 000 persone e a New York con una grande parata, e parlò davanti al Congresso. Tra maggio e giugno due commissioni del Senato indagarono sulla rimozione e conclusero che rientrava nei poteri costituzionali del presidente. Per l'articolo inglese la maggioranza del pubblico disapprovò la decisione e a metà 1951 l'approvazione di Truman scese al 23 per cento. Per l'articolo italiano sulla guerra di Corea, pochi mesi dopo, su suggerimento dell'Unione Sovietica, si avviarono le trattative per una conclusione concordata del conflitto.",
+  "links": [
+    {
+      "slug": "battaglia-del-bacino-di-chosin-1950",
+      "reason": "Quattro mesi e mezzo prima, il 27 novembre 1950, le truppe cinesi avevano accerchiato le forze dell'ONU al bacino di Chosin."
+    },
+    {
+      "slug": "armistizio-di-panmunjom-1953",
+      "reason": "Più di due anni dopo, il 27 luglio 1953, a Panmunjeom viene firmato l'armistizio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Relief of Douglas MacArthur - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Relief_of_Douglas_MacArthur",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Douglas MacArthur - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Douglas_MacArthur",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Corea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Corea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Tutti e tre gli articoli danno l'11 aprile 1951. L'articolo inglese spiega che la consegna era prevista per le 20 dell'11 aprile ora di Washington, cioè le 10 del 12 aprile ora di Tokyo; in un altro passo dice che MacArthur ricevette la notifica ufficiale «poco dopo le 15 ora di Tokyo», senza precisare il giorno. La data è quella dell'ordine e dell'annuncio a Washington. Sul motivo gli articoli differiscono: l'articolo italiano su MacArthur dice che fu rimosso per «grave insubordinazione», mentre l'inglese dice che il motivo ufficiale furono le sue dichiarazioni pubbliche in disaccordo con il presidente e che Truman parlò di insubordinazione solo dal 1956. La ripresa di Seul è del 14 marzo per gli articoli italiani; l'articolo inglese dice 17 marzo in un passo e il 14 in un altro. L'arrivo a San Francisco è il 16 aprile per l'articolo italiano, mentre l'inglese dice che MacArthur partì per gli Stati Uniti il 17 aprile. Il pin è sulla Casa Bianca perché la decisione fu presa a Washington."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

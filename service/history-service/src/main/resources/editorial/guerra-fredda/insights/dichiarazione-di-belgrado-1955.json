@@ -1,0 +1,51 @@
+{
+  "slug": "dichiarazione-di-belgrado-1955",
+  "title": "La dichiarazione di Belgrado",
+  "summary": "Il 2 giugno 1955, al termine della visita di Chruščëv in Jugoslavia, lui e Tito firmano a Belgrado una dichiarazione che chiude la rottura del 1948: l'Unione Sovietica garantisce di non interferire negli affari interni jugoslavi e riconosce che il socialismo può svilupparsi in forme diverse.",
+  "date": {
+    "year": 1955,
+    "month": 6,
+    "day": 2
+  },
+  "place": {
+    "name": "Belgrado, Serbia",
+    "lat": 44.8176,
+    "lon": 20.4569,
+    "countryCode": "RS",
+    "approximate": true,
+    "note": "Gli articoli parlano della visita di Chruščëv a Belgrado, e l'inglese della dichiarazione che porta il nome della città, senza indicare l'edificio della firma: il punto è nel centro della città."
+  },
+  "before": "Nel 1948 il Cominform aveva condannato il partito comunista jugoslavo e la Jugoslavia di Tito si era staccata dal blocco sovietico. Per l'articolo italiano Tito si avvicinò all'Occidente, firmò trattati con Grecia e Turchia nel 1953 e nel 1954 e con il memorandum di Londra del 5 ottobre 1954 ottenne la zona B del Territorio Libero di Trieste. Dopo la morte di Stalin, il 5 marzo 1953, Tito dovette scegliere tra le riforme di tipo occidentale e un accordo con la nuova dirigenza sovietica. Per l'articolo inglese i due paesi ristabilirono le relazioni diplomatiche già nel 1953, con lo scambio degli ambasciatori, senza che questo normalizzasse automaticamente i rapporti tra i due partiti.",
+  "event": "Tito invitò Chruščëv a Belgrado. Per l'articolo inglese i negoziati si svolsero dal 27 maggio al 2 giugno 1955, il giorno in cui Tito e Chruščëv firmarono la dichiarazione; il viaggio è talvolta chiamato «Canossa sovietica». Il documento garantiva la non ingerenza negli affari interni della Jugoslavia e riconosceva il diritto di seguire altre forme di sviluppo socialista nei diversi paesi; per l'articolo inglese chiudeva il periodo detto Informbiro. Per l'articolo italiano, con quel viaggio l'Unione Sovietica ammetteva che il socialismo si poteva raggiungere anche con libere elezioni e con alleanze con partiti borghesi, senza una rivoluzione come quella russa.",
+  "after": "Per l'articolo inglese la riconciliazione fu breve. Dopo l'intervento sovietico in Ungheria nell'ottobre 1956 Mosca avviò una nuova campagna contro Tito, accusando il governo jugoslavo dell'insurrezione ungherese; altri periodi di freddezza seguirono negli anni Sessanta. La dichiarazione contribuì però al disimpegno jugoslavo dal Patto balcanico con Grecia e Turchia, membri della NATO, e restò per trentacinque anni la base dei rapporti tra i due paesi. Nel 1964 la Jugoslavia divenne membro associato del Comecon.",
+  "links": [
+    {
+      "slug": "rottura-tito-stalin-1948",
+      "reason": "Quasi sette anni prima, il 28 giugno 1948, il Cominform aveva condannato il partito comunista jugoslavo."
+    },
+    {
+      "slug": "rapporto-segreto-di-chruscev-1956",
+      "reason": "Quasi nove mesi dopo, il 25 febbraio 1956, Chruščëv denuncia i crimini di Stalin davanti al XX Congresso del partito."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Belgrade declaration - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Belgrade_declaration",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rottura Tito-Stalin - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rottura_Tito-Stalin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data della firma, il 2 giugno 1955, e i negoziati dal 27 maggio vengono dall'articolo inglese sulla dichiarazione, che è molto breve. Non c'è una voce italiana sulla dichiarazione: per l'italiano si usa l'articolo sulla rottura Tito-Stalin, che parla di una visita «nel maggio 1955» in un passo e «nel maggio-giugno 1955» in un altro, senza nominare la dichiarazione. Quel passo dice anche che la dirigenza sovietica in visita era guidata in modo collegiale da Chruščëv, Berija e Malenkov; l'articolo inglese nomina solo Chruščëv e il testo non riprende quell'elenco. L'articolo inglese dice inoltre che i due partiti si scambiarono lettere alla fine del 1955, cioè dopo la firma; anche questo passo non è usato. Le due voci divergono sulle relazioni diplomatiche: per l'inglese furono ristabilite nel 1953, per l'italiano la visita del 1955 ristabilì «le piene relazioni politiche e diplomatiche». Trieste, i trattati con Grecia e Turchia e la lettura sulle vie al socialismo vengono dall'italiano; il resto dall'inglese. Il pin è approssimato sul centro di Belgrado."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "slug": "la-guerra-fredda-1950-1959",
+  "title": "La guerra fredda, 1950-1959",
+  "tagline": "Dalla guerra di Corea allo Sputnik: la morte di Stalin, le rivolte nell'Europa orientale, il Patto di Varsavia e la crisi di Suez.",
+  "intro": "Il percorso segue gli anni cinquanta della guerra fredda, dall'invasione della Corea del Sud del giugno 1950 al lancio dello Sputnik dell'ottobre 1957: la morte di Stalin, la rivolta di Berlino Est, il Patto di Varsavia, il rapporto segreto di Chruščëv, la rivoluzione ungherese e la crisi di Suez.\n\nÈ la linea principale del decennio: la guerra di Corea, la destalinizzazione e la paura atomica hanno ciascuna un percorso proprio, che incrocia questo. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "invasione-della-corea-del-sud-1950",
+      "narrative": "Si parte dal 25 giugno 1950: l'esercito della Corea del Nord attraversa il 38º parallelo e invade la Corea del Sud."
+    },
+    {
+      "insight": "morte-di-stalin-1953",
+      "narrative": "Il 5 marzo 1953 Stalin muore nella sua dacia di Kuncevo, alla periferia di Mosca."
+    },
+    {
+      "insight": "rivolta-di-berlino-est-1953",
+      "narrative": "Il 17 giugno lo sciopero degli operai edili di Berlino Est diventa una rivolta contro il governo."
+    },
+    {
+      "insight": "patto-di-varsavia-1955",
+      "narrative": "Il 14 maggio 1955 l'Unione Sovietica e sette Stati dell'Europa orientale firmano il Patto di Varsavia."
+    },
+    {
+      "insight": "rapporto-segreto-di-chruscev-1956",
+      "narrative": "Il 25 febbraio 1956, a porte chiuse, Chruščëv parla contro Stalin al XX Congresso del partito."
+    },
+    {
+      "insight": "rivoluzione-ungherese-1956",
+      "narrative": "Il 23 ottobre una manifestazione di studenti a Budapest diventa un'insurrezione."
+    },
+    {
+      "insight": "crisi-di-suez-1956",
+      "narrative": "Il 29 ottobre Israele invade il Sinai; due giorni dopo Regno Unito e Francia attaccano l'Egitto."
+    },
+    {
+      "insight": "sputnik-1",
+      "narrative": "Il 4 ottobre 1957 l'Unione Sovietica lancia lo Sputnik, il primo satellite artificiale."
+    }
+  ]
+}

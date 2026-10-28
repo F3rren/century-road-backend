@@ -1,0 +1,55 @@
+{
+  "slug": "morte-di-stalin-1953",
+  "title": "La morte di Stalin",
+  "summary": "Il 5 marzo 1953 Iosif Stalin muore a settantaquattro anni nella sua dacia di Kuncevo, alla periferia di Mosca, quattro giorni dopo essere stato trovato colpito da un ictus. Ai funerali del 9 marzo almeno 109 persone muoiono nella calca; il potere passa a una direzione collettiva, che avvia riforme e cerca una fine negoziata della guerra di Corea.",
+  "date": {
+    "year": 1953,
+    "month": 3,
+    "day": 5
+  },
+  "place": {
+    "name": "Dacia di Kuncevo, Mosca, Russia",
+    "lat": 55.7225,
+    "lon": 37.464,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli nominano la dacia di Kuncevo, un quartiere periferico di Mosca, ma non danno coordinate: il punto indica la zona della dacia, a ovest del centro della città."
+  },
+  "before": "La salute di Stalin aveva cominciato a peggiorare verso la fine della seconda guerra mondiale: soffriva di aterosclerosi, nel maggio 1945 aveva avuto un lieve ictus e in ottobre un grave attacco di cuore. Secondo il racconto dello storico Volkogonov, la sera del 28 febbraio 1953 bevve con Berija, Chruščëv, Malenkov, Molotov e pochi altri, che se ne andarono verso le cinque del mattino del 1º marzo. Per tutto il giorno dalla sua stanza non arrivò alcun rumore; alle undici di sera la governante entrò e lo trovò a terra, incosciente.",
+  "event": "Alle sette del mattino del 2 marzo Berija e un gruppo di medici lo visitarono e conclusero che aveva avuto un ictus emorragico, con paralisi del lato destro. Le cure dei giorni seguenti, tra cui le sanguisughe per abbassare la pressione, non servirono: Stalin morì alle 21.50 del 5 marzo, e la morte fu annunciata il giorno dopo da Radio Mosca. Il 7 marzo la Pravda pubblicò i risultati dell'autopsia, che indicavano una grave emorragia cerebrale. Alcuni storici hanno ipotizzato un avvelenamento; per l'articolo inglese non sono emerse prove certe, per l'italiano il rapporto ufficiale reso pubblico nel 2013 conferma la morte naturale.",
+  "after": "La salma fu esposta per tre giorni nella Sala delle Colonne e il 9 marzo fu deposta nel Mausoleo di Lenin; nella calca morirono almeno 109 persone, secondo una stima di Chruščëv. Stalin non aveva designato un successore: emersero Malenkov, Berija e Chruščëv, e fu ristabilita la direzione collettiva. Berija fu arrestato a giugno e giustiziato a dicembre. I nuovi dirigenti ridussero le grandi opere, alleggerirono le tasse sui contadini, concessero un'amnistia di massa e cercarono un riavvicinamento con la Jugoslavia e rapporti meno ostili con gli Stati Uniti; nel luglio 1953 perseguirono una fine negoziata della guerra di Corea.",
+  "links": [
+    {
+      "slug": "armistizio-di-panmunjom-1953",
+      "reason": "Quasi cinque mesi dopo, il 27 luglio, a Panmunjeom viene firmato l'armistizio della guerra di Corea."
+    },
+    {
+      "slug": "rivolta-di-berlino-est-1953",
+      "reason": "Tre mesi e dodici giorni dopo, il 17 giugno, a Berlino Est scoppia una rivolta."
+    },
+    {
+      "slug": "rapporto-segreto-di-chruscev-1956",
+      "reason": "Quasi tre anni dopo, il 25 febbraio 1956, Chruščëv pronuncia il suo rapporto segreto su Stalin."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Death and state funeral of Joseph Stalin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Death_and_state_funeral_of_Joseph_Stalin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Morte e funerali di Stato di Iosif Stalin - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Morte_e_funerali_di_Stato_di_Iosif_Stalin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I due articoli concordano sulla data e sull'ora della morte (21.50 del 5 marzo 1953) e sul racconto degli ultimi giorni, che l'articolo italiano riporta in gran parte negli stessi termini dell'inglese. L'articolo italiano riporta anche una versione diversa, secondo cui Stalin sarebbe stato trovato già morto; il testo segue il racconto principale di entrambi. Sull'ipotesi dell'avvelenamento con warfarin di Naumov e Brent, l'inglese indica come probabile responsabile Berija, l'italiano Berija e Chruščëv; solo l'italiano parla del rapporto sull'autopsia pubblicato nel 2013. Sulla calca l'inglese nomina piazza Trubnaja, l'italiano la zona davanti alla Sala delle Colonne, e solo l'italiano aggiunge che altre fonti stimano da 500 ad alcune migliaia di morti. Il pin indica la zona della dacia di Kuncevo, senza coordinate negli articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

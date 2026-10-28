@@ -1,0 +1,55 @@
+{
+  "slug": "ivy-mike-1952",
+  "title": "Ivy Mike",
+  "summary": "Il 1° novembre 1952, sull'isola di Elugelab, nell'atollo di Enewetak, nelle isole Marshall, gli Stati Uniti fanno esplodere Ivy Mike, il primo ordigno termonucleare a più stadi provato a piena potenza: 10,4 megatoni. Al posto dell'isola resta un cratere.",
+  "date": {
+    "year": 1952,
+    "month": 11,
+    "day": 1
+  },
+  "place": {
+    "name": "Isola di Elugelab, atollo di Enewetak, Isole Marshall",
+    "lat": 11.6667,
+    "lon": 162.1867,
+    "countryCode": "MH",
+    "approximate": true,
+    "note": "L'isola di Elugelab fu distrutta dall'esplosione e gli articoli non danno coordinate: il punto è indicativo, nella parte settentrionale dell'atollo di Enewetak dove si trovava l'isola."
+  },
+  "before": "Nel gennaio 1950, cinque mesi dopo il primo test atomico sovietico, il presidente Truman ordinò un programma per la bomba all'idrogeno. Nel marzo 1951 Edward Teller e Stanisław Ulam descrissero un progetto a due stadi, in cui i raggi X di una bomba a fissione comprimono un secondo stadio con il combustibile per la fusione. Per l'articolo inglese il test fu fissato per il 1° novembre 1952, pochi giorni prima delle elezioni presidenziali; un comitato presieduto da J. Robert Oppenheimer aveva cercato di farlo rinviare o annullare, sperando in accordi con l'Unione Sovietica, senza riuscirci.",
+  "event": "L'ordigno, soprannominato «Sausage», era alto più di sei metri e pesava circa settantaquattro tonnellate: una prova di principio, non un'arma trasportabile. Usava deuterio liquido raffreddato quasi allo zero assoluto. Esplose alle 7:15 ora locale del 1° novembre con una potenza di 10,4 megatoni; per l'articolo italiano tra 10,4 e 12, quasi mille volte la bomba di Hiroshima. Per l'articolo inglese dove c'era Elugelab rimase un cratere largo 1,9 chilometri e profondo cinquanta metri, e la zona attorno all'atollo fu fortemente contaminata.",
+  "after": "Per l'articolo inglese un'ora dopo piloti dell'aviazione statunitense attraversarono la nube per raccogliere campioni, e uno di loro morì precipitando in mare. Nei campioni furono trovati due nuovi elementi, poi chiamati einsteinio e fermio. L'Unione Sovietica provò un ordigno termonucleare a uno stadio nell'agosto 1953 e uno a due stadi, RDS-37, nel 1955. Il progetto a deuterio liquido di Mike fu considerato superato dopo la riuscita del test Castle Bravo, con un ordigno che non richiedeva raffreddamento.",
+  "links": [
+    {
+      "slug": "prima-bomba-atomica-sovietica-1949",
+      "reason": "Tre anni e due mesi prima, il 29 agosto 1949, l'Unione Sovietica aveva provato la sua prima bomba atomica; cinque mesi dopo Truman ordinò il programma per la bomba all'idrogeno."
+    },
+    {
+      "slug": "castle-bravo-1954",
+      "reason": "Sedici mesi dopo, il 1° marzo 1954, gli Stati Uniti provano a Bikini Castle Bravo, una bomba termonucleare a combustibile solido."
+    },
+    {
+      "slug": "prima-bomba-h-sovietica-1955",
+      "reason": "Tre anni e tre settimane dopo, il 22 novembre 1955, l'Unione Sovietica prova il suo primo ordigno termonucleare a due stadi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ivy Mike - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ivy_Mike",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ivy Mike - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ivy_Mike",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'esplosione il 1° novembre 1952 alle 7:15 ora locale; l'articolo inglese precisa che in tempo di Greenwich erano le 19:15 del 31 ottobre. La data è quella locale. Sulla potenza l'inglese dà 10,4 megatoni, l'italiano tra 10,4 e 12. L'articolo italiano è molto breve (data, luogo, potenza, confronto con Hiroshima): tutto il resto, dal programma di Truman ai campioni nella nube e ai test sovietici, viene dall'articolo inglese. L'isola non esiste più e gli articoli non danno coordinate: il pin è indicativo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

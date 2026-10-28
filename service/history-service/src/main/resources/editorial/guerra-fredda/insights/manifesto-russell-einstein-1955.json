@@ -1,0 +1,54 @@
+{
+  "slug": "manifesto-russell-einstein-1955",
+  "title": "Il manifesto Russell-Einstein",
+  "summary": "Il 9 luglio 1955, in una conferenza stampa a Caxton Hall, a Londra, Bertrand Russell presenta un manifesto firmato da undici scienziati e intellettuali, tra cui Albert Einstein, morto in aprile, che avverte dei pericoli delle armi nucleari e chiede una conferenza di scienziati per valutarli.",
+  "date": {
+    "year": 1955,
+    "month": 7,
+    "day": 9
+  },
+  "place": {
+    "name": "Caxton Hall, Londra, Regno Unito",
+    "lat": 51.4988,
+    "lon": -0.1347,
+    "countryCode": "GB",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese il 6 agosto 1945 gli Stati Uniti sganciarono una bomba atomica su Hiroshima e tre giorni dopo una su Nagasaki, uccidendo almeno centomila civili. Il 18 agosto Russell pubblicò il suo primo commento noto sulle armi atomiche, in cui scriveva che l'umanità avrebbe dovuto scegliere tra perire tutta e acquisire «un minimo di buon senso». Józef Rotblat, l'unico scienziato ad aver lasciato il progetto Manhattan per ragioni morali, dopo Hiroshima si disse «preoccupato sull'intero futuro dell'umanità». Negli anni seguenti Russell e Rotblat lavorarono, con Einstein e altri scienziati, al testo del manifesto. Einstein lo firmò poco prima di morire, il 18 aprile 1955.",
+  "event": "Il manifesto fu presentato in una conferenza stampa a Caxton Hall, diretta da Rotblat. Per l'articolo inglese era stata prenotata una sala piccola, ma l'interesse crebbe e alla fine la più grande fu riempita da giornalisti di stampa, radio e televisione di tutto il mondo; Russell rispose alle loro domande, alcune all'inizio ostili. Il testo chiedeva una conferenza politicamente neutrale in cui gli scienziati valutassero i rischi delle armi di distruzione di massa per la sopravvivenza dell'umanità, e si rivolgeva a tutti i popoli e i governi. Ne è spesso citata la frase «Ricordatevi della vostra umanità, e dimenticate il resto». Per l'articolo italiano firmarono, tra gli altri, Max Born, Frédéric Joliot-Curie, Linus Pauling e Hideki Yukawa.",
+  "after": "La conferenza era stata pensata da Jawaharlal Nehru in India, ma con la crisi di Suez il progetto fu rinviato per l'articolo inglese, abbandonato per l'italiano; fu rifiutata anche un'offerta di Aristotele Onassis per un incontro a Monaco. Cyrus Eaton, imprenditore canadese che conosceva Russell dal 1938, si offrì di finanziarla nella sua cittadina, Pugwash, in Nuova Scozia, dove si tenne nel 1957, per l'articolo inglese a luglio. Per l'articolo inglese il manifesto divenne lo statuto fondativo delle conferenze Pugwash su scienza e affari mondiali; per l'articolo italiano queste ricevettero il premio Nobel per la pace nel 1995, lo stesso anno in cui lo ricevette Rotblat.",
+  "links": [
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Quasi dieci anni prima, il 6 agosto 1945, la bomba atomica su Hiroshima, dopo la quale Russell scrisse il suo primo commento noto sulle armi atomiche e Rotblat si disse preoccupato per il futuro dell'umanità."
+    },
+    {
+      "slug": "prima-bomba-h-sovietica-1955",
+      "reason": "Quattro mesi e tredici giorni dopo, il 22 novembre, l'Unione Sovietica prova la sua prima bomba termonucleare a due stadi."
+    },
+    {
+      "slug": "crisi-di-suez-1956",
+      "reason": "Un anno, tre mesi e venti giorni dopo, il 29 ottobre 1956, comincia la crisi di Suez, con cui la conferenza chiesta dal manifesto, prevista in India, fu rinviata per l'articolo inglese e abbandonata per l'italiano."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Russell–Einstein Manifesto - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Russell–Einstein_Manifesto",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Manifesto Russell-Einstein - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Manifesto_Russell-Einstein",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la presentazione a Londra il 9 luglio 1955, in una conferenza stampa a Caxton Hall diretta da Rotblat. Il contesto (Hiroshima, Nagasaki, il primo scritto di Russell, la sala stampa) viene dall'articolo inglese, l'elenco dei firmatari e il Nobel alle conferenze Pugwash dall'italiano. I firmatari sono undici per l'inglese, Russell, Einstein e «altri nove» per l'italiano: i conti coincidono. La frase «Ricordatevi della vostra umanità, e dimenticate il resto» per l'inglese è un passo del manifesto, citato anche da Rotblat nel discorso per il Nobel; per l'italiano «fu sua», cioè di Rotblat. Sulla conferenza in India, l'inglese dice che la crisi di Suez la fece rinviare, l'italiano che il progetto fu abbandonato. Il pin è su Caxton Hall."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

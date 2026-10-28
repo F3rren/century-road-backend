@@ -1,0 +1,54 @@
+{
+  "slug": "castle-bravo-1954",
+  "title": "Castle Bravo",
+  "summary": "Il 1° marzo 1954, nell'atollo di Bikini, nelle isole Marshall, gli Stati Uniti fanno esplodere Castle Bravo, una bomba termonucleare da 15 megatoni, molto più potente del previsto. Le ricadute radioattive colpiscono gli abitanti di atolli vicini e l'equipaggio del peschereccio giapponese Daigo Fukuryū Maru.",
+  "date": {
+    "year": 1954,
+    "month": 3,
+    "day": 1
+  },
+  "place": {
+    "name": "Cratere Bravo, atollo di Bikini, Isole Marshall",
+    "lat": 11.6972,
+    "lon": 165.2719,
+    "countryCode": "MH",
+    "approximate": false
+  },
+  "before": "Nel 1952 il test Ivy Mike aveva provato il progetto Teller-Ulam con un enorme ordigno a deuterio liquido, che richiedeva un complesso impianto di raffreddamento. Il dispositivo di Bravo, chiamato «Shrimp», aveva la stessa struttura ma usava deuteruro di litio, solido a temperatura ambiente; per l'articolo inglese l'aviazione statunitense chiedeva bombe termonucleari più leggere, da sganciare da un aereo. Il litio era arricchito al quaranta per cento circa in litio-6; il resto, litio-7, era ritenuto inerte.",
+  "event": "L'ordigno esplose alle 6:45 ora locale del 1° marzo, su un'isola artificiale costruita su una scogliera vicino all'isola di Namu. La potenza fu di 15 megatoni, due volte e mezzo i sei previsti, perché il litio-7 produsse reazioni impreviste. Per l'articolo inglese la palla di fuoco fu visibile a oltre 400 chilometri e il cratere misurava circa due chilometri di diametro. Un cambio di vento portò le ricadute radioattive verso est, sugli atolli abitati di Rongelap e Utirik e sul peschereccio Daigo Fukuryū Maru, che per l'articolo italiano si trovava fuori dalla zona considerata pericolosa.",
+  "after": "Gli abitanti degli atolli furono evacuati dopo due o tre giorni e soffrirono di malattie da radiazioni; per l'articolo inglese entro il 1963 gli abitanti delle Marshall cominciarono ad ammalarsi di tumori alla tiroide. I ventitré pescatori giapponesi ebbero la sindrome acuta da radiazioni, e il capo radiofonista Kuboyama Aikichi morì sei mesi dopo. Per l'articolo inglese in Giappone l'incidente fu definito da alcuni una «seconda Hiroshima», e nel mondo si chiese di vietare i test atmosferici; il manifesto Russell-Einstein dell'anno seguente citò il test di Bikini e la polvere che aveva colpito i pescatori.",
+  "links": [
+    {
+      "slug": "ivy-mike-1952",
+      "reason": "Sedici mesi prima, il 1° novembre 1952, Ivy Mike aveva provato lo stesso schema con un ordigno a deuterio liquido, che dopo Bravo fu considerato superato."
+    },
+    {
+      "slug": "manifesto-russell-einstein-1955",
+      "reason": "Poco più di sedici mesi dopo, il 9 luglio 1955, il manifesto Russell-Einstein cita il test di Bikini e i pescatori giapponesi colpiti dalle ricadute."
+    },
+    {
+      "slug": "bombardamento-atomico-di-hiroshima-1945",
+      "reason": "Più di otto anni e mezzo prima, il 6 agosto 1945, era stata sganciata su Hiroshima una bomba circa mille volte meno potente di Bravo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Castle Bravo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Castle_Bravo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Castle Bravo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Castle_Bravo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il test il 1° marzo 1954 a Bikini, con 15 megatoni; l'ora, le 6:45 locali, è dell'articolo inglese, che precisa che in tempo di Greenwich erano le 18:45 del 28 febbraio. La data è quella locale. Sulla potenza prevista gli articoli non sono coerenti: entrambi dicono 15 megatoni, due volte e mezzo i sei previsti, ma l'inglese altrove scrive il triplo dei cinque previsti e l'italiano «quasi tre volte». Sull'evacuazione entrambi dicono tre giorni dopo, l'inglese altrove 48 e 52 ore; gli atolli colpiti sono Rongelap e Utirik, con Rongerik citato in altri passi. L'inglese conta Bravo come sesta esplosione nucleare più potente, l'italiano come quinta. La «seconda Hiroshima», i tumori entro il 1963 e il manifesto Russell-Einstein vengono dall'articolo inglese. Il pin è sulle coordinate del cratere date da entrambi gli articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

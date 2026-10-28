@@ -1,0 +1,37 @@
+{
+  "slug": "la-paura-atomica",
+  "title": "La paura atomica",
+  "tagline": "Dal primo ordigno termonucleare allo Sputnik: nuove armi, spie, accuse di comunismo e scienziati che ne avvertono i pericoli.",
+  "intro": "Il percorso segue gli anni cinquanta della corsa alle armi nucleari e della paura che la accompagna, dal test di Ivy Mike del novembre 1952 al lancio dello Sputnik dell'ottobre 1957: l'esecuzione dei Rosenberg, Castle Bravo, le udienze esercito-McCarthy, il manifesto Russell-Einstein e la prima bomba H sovietica.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "ivy-mike-1952",
+      "narrative": "Si parte dal 1º novembre 1952: nelle isole Marshall gli Stati Uniti fanno esplodere il primo ordigno termonucleare a più stadi provato a piena potenza."
+    },
+    {
+      "insight": "esecuzione-dei-rosenberg-1953",
+      "narrative": "Il 19 giugno 1953 Julius ed Ethel Rosenberg, condannati per spionaggio a favore dell'Unione Sovietica, sono giustiziati."
+    },
+    {
+      "insight": "castle-bravo-1954",
+      "narrative": "Il 1º marzo 1954, a Bikini, Castle Bravo esplode con una potenza molto superiore al previsto."
+    },
+    {
+      "insight": "udienze-esercito-mccarthy-1954",
+      "narrative": "Dal 22 aprile la televisione trasmette in diretta le udienze del Senato tra l'esercito e il senatore McCarthy."
+    },
+    {
+      "insight": "manifesto-russell-einstein-1955",
+      "narrative": "Il 9 luglio 1955, a Londra, Bertrand Russell presenta un manifesto sui pericoli delle armi nucleari."
+    },
+    {
+      "insight": "prima-bomba-h-sovietica-1955",
+      "narrative": "Il 22 novembre l'Unione Sovietica sgancia sul poligono di Semipalatinsk la sua prima bomba termonucleare a due stadi."
+    },
+    {
+      "insight": "sputnik-1",
+      "narrative": "Il 4 ottobre 1957 l'Unione Sovietica lancia lo Sputnik, il primo satellite artificiale."
+    }
+  ]
+}
