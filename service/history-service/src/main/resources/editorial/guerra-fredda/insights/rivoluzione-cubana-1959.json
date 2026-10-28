@@ -1,0 +1,52 @@
+{
+  "slug": "rivoluzione-cubana-1959",
+  "title": "La rivoluzione cubana",
+  "summary": "Il 1° gennaio 1959, con i ribelli ormai a Santa Clara, il dittatore Fulgencio Batista fugge da Cuba e la rivoluzione guidata dal Movimento 26 luglio di Fidel Castro trionfa. L'8 gennaio Castro entra all'Avana.",
+  "date": {
+    "year": 1959,
+    "month": 1,
+    "day": 1
+  },
+  "place": {
+    "name": "L'Avana, Cuba",
+    "lat": 23.1136,
+    "lon": -82.3666,
+    "countryCode": "CU",
+    "approximate": true,
+    "note": "Il punto indica la città dell'Avana, capitale da cui Batista lasciò il paese e dove entrarono i ribelli; gli articoli non indicano il luogo esatto della partenza."
+  },
+  "before": "Batista aveva preso il potere con il colpo di Stato del marzo 1952. Il 26 luglio 1953 Fidel e Raúl Castro attaccarono la caserma Moncada di Santiago di Cuba e furono sconfitti e arrestati; liberati con un'amnistia nel 1955, andarono in esilio in Messico, dove si unì a loro Ernesto «Che» Guevara. Il 2 dicembre 1956 sbarcarono a Cuba con lo yacht Granma e si rifugiarono sulla Sierra Maestra, da dove il Movimento 26 luglio condusse la guerriglia. Nel 1958 i ribelli respinsero l'offensiva dell'esercito, l'operazione Verano, e a dicembre passarono all'attacco.",
+  "event": "Le colonne di Guevara e di Camilo Cienfuegos avanzarono verso ovest: il 30 dicembre 1958 Cienfuegos prese Yaguajay, mentre Guevara dal 29 assaltava Santa Clara. Nella notte del 1° gennaio 1959 Batista, convinto a partire dal generale Cantillo per l'articolo italiano, lasciò Cuba in aereo per la Repubblica Dominicana, e Santa Clara si arrese. All'Avana Cantillo tentò di formare un nuovo governo e chiese un cessate il fuoco, ma Castro lo rifiutò e da Radio Rebelde invitò allo sciopero generale. Il 2 gennaio le forze di Castro presero Santiago senza combattere, mentre quelle di Guevara e Cienfuegos entravano all'Avana; l'8 gennaio Castro arrivò nella capitale dopo una lunga marcia.",
+  "after": "Presidente divenne Manuel Urrutia. Per l'articolo inglese a Santiago un tribunale rivoluzionario fece fucilare decine di uomini del regime il 12 gennaio; il 16 febbraio Castro diventò primo ministro, mentre il presidente perdeva peso, e il 9 aprile annunciò che le elezioni promesse sarebbero state rinviate di quindici mesi. Le relazioni con gli Stati Uniti peggiorarono: dopo la nazionalizzazione delle proprietà straniere, nell'agosto 1960, gli Stati Uniti imposero un embargo e nel gennaio 1961 ruppero i rapporti diplomatici; nell'aprile 1961 venne il fallito sbarco nella baia dei Porci. Il Movimento 26 luglio diventò nell'ottobre 1965 il Partito comunista di Cuba.",
+  "links": [
+    {
+      "slug": "rottura-delle-relazioni-tra-stati-uniti-e-cuba-1961",
+      "reason": "Due anni e due giorni dopo, il 3 gennaio 1961, gli Stati Uniti rompono le relazioni diplomatiche con il governo di Castro."
+    },
+    {
+      "slug": "invasione-della-baia-dei-porci-1961",
+      "reason": "Più di due anni e tre mesi dopo, il 17 aprile 1961, esuli cubani addestrati dalla CIA sbarcano a Cuba per rovesciare Castro."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuban Revolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cuban_Revolution",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione cubana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_cubana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 1° gennaio 1959, giorno della fuga di Batista e, per entrambi gli articoli, della fine o della vittoria della rivoluzione. L'introduzione dell'articolo inglese dice che Batista fu rovesciato il 31 dicembre 1958 e poi fuggì; nel corpo lo stesso articolo dice che fuggì poche ore dopo, il 1° gennaio. L'italiano parla della notte del 1° gennaio e di Santo Domingo come destinazione.",
+    "Su Santa Clara gli articoli non coincidono: per l'inglese la città cadde il 31 dicembre, per l'italiano l'assalto cominciò il 29 e l'esercito si arrese dopo aver saputo della fuga di Batista. Cantillo, Radio Rebelde e la presa di Santiago senza combattere vengono soprattutto dall'italiano; le fucilazioni, la carica di primo ministro e il rinvio delle elezioni solo dall'inglese. Sulla nazionalizzazione dell'agosto 1960 l'inglese parla di proprietà statunitensi, l'italiano di tutte le proprietà straniere. Il pin è sull'Avana."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

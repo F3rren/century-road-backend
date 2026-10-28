@@ -1,0 +1,41 @@
+{
+  "slug": "vietnam-dall-indocina-all-escalation",
+  "title": "Vietnam I: dall'Indocina all'escalation",
+  "tagline": "Da Dien Bien Phu a Mỹ Lai: la fine dell'Indocina francese, la divisione del Vietnam e l'ingresso degli Stati Uniti nella guerra.",
+  "intro": "Il percorso segue la prima parte della guerra del Vietnam, dall'assedio di Dien Bien Phu del marzo 1954 al massacro di Mỹ Lai del marzo 1968: gli accordi di Ginevra, la protesta di Thích Quảng Đức, il colpo di Stato contro Diệm, il golfo del Tonchino, l'operazione Rolling Thunder e l'offensiva del Têt.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "battaglia-di-dien-bien-phu-1954",
+      "narrative": "Si parte dal 13 marzo 1954: il Viet Minh assedia il campo trincerato francese di Dien Bien Phu, che si arrende il 7 maggio."
+    },
+    {
+      "insight": "conferenza-di-ginevra-1954",
+      "narrative": "Il 21 luglio gli accordi di Ginevra fermano la guerra d'Indocina e dividono in via provvisoria il Vietnam lungo il 17º parallelo."
+    },
+    {
+      "insight": "autoimmolazione-di-thich-quang-duc-1963",
+      "narrative": "L'11 giugno 1963, a Saigon, il monaco Thích Quảng Đức si dà fuoco contro la politica di Diệm verso i buddhisti."
+    },
+    {
+      "insight": "colpo-di-stato-contro-diem-1963",
+      "narrative": "Il 1º novembre un gruppo di generali rovescia Diệm, che il giorno dopo è ucciso con il fratello."
+    },
+    {
+      "insight": "incidente-del-golfo-del-tonchino-1964",
+      "narrative": "Il 2 agosto 1964 il Maddox si scontra con motosiluranti nordvietnamite; il 7 il Congresso autorizza Johnson a usare la forza."
+    },
+    {
+      "insight": "operazione-rolling-thunder-1965",
+      "narrative": "Dal 2 marzo 1965 aerei statunitensi e sudvietnamiti bombardano il Vietnam del Nord."
+    },
+    {
+      "insight": "offensiva-del-tet-1968",
+      "narrative": "Tra il 30 e il 31 gennaio 1968 nordvietnamiti e Viet Cong attaccano di sorpresa le città del Sud."
+    },
+    {
+      "insight": "massacro-di-my-lai-1968",
+      "narrative": "Il 16 marzo, a Sơn Mỹ, soldati statunitensi uccidono centinaia di civili inermi."
+    }
+  ]
+}

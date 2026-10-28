@@ -1,0 +1,51 @@
+{
+  "slug": "embargo-contro-cuba-1962",
+  "title": "L'embargo contro Cuba",
+  "summary": "Il 7 febbraio 1962, con il Proclama 3447, il presidente Kennedy estende le restrizioni commerciali varate da Eisenhower nell'ottobre 1960 e impone l'embargo su ogni tipo di scambio con Cuba. Per l'articolo inglese è l'embargo commerciale più duraturo della storia moderna.",
+  "date": {
+    "year": 1962,
+    "month": 2,
+    "day": 7
+  },
+  "place": {
+    "name": "Casa Bianca, Washington, Stati Uniti",
+    "lat": 38.8977,
+    "lon": -77.0365,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Gli articoli non dicono dove Kennedy firmò il proclama; il punto è sulla Casa Bianca, sede della presidenza che emanò l'embargo."
+  },
+  "before": "Dopo la rivoluzione i due paesi entrarono in una guerra commerciale: nel 1960 Washington tagliò la quota di zucchero cubano e Cuba confiscò le raffinerie statunitensi. Per l'articolo italiano il 20 ottobre 1960, dopo la nazionalizzazione delle grandi imprese, fu istituito un ampio embargo sulle esportazioni; per l'inglese il primo embargo escludeva solo l'aiuto umanitario. Il 3 gennaio 1961 gli Stati Uniti ruppero le relazioni diplomatiche. Dopo la baia dei Porci il Congresso approvò, il 4 settembre 1961, il Foreign Assistance Act, che autorizzava il presidente a imporre un embargo completo. Dal 22 al 31 gennaio 1962, a Punta del Este, i ministri degli esteri dell'OSA dichiararono Cuba esclusa dal sistema interamericano.",
+  "event": "Per l'articolo italiano il 7 febbraio 1962 Kennedy firmò il Proclama 3447, che ampliava le restrizioni di Eisenhower a ogni tipo di scambio. Il proclama richiamava il Foreign Assistance Act ma, a differenza di questo, che citava anche i danni subiti dai cittadini statunitensi con gli espropri, insisteva solo sull'allineamento del governo cubano al comunismo sino-sovietico. Il portavoce Pierre Salinger raccontò che prima di firmare Kennedy gli chiese di procurargli un migliaio di sigari H. Upmann. L'articolo inglese data questo primo allargamento all'8 febbraio e ne aggiunge un altro il 23 marzo; insieme, queste misure vietarono anche i prodotti contenenti merci cubane fabbricati altrove.",
+  "after": "Per l'articolo inglese il 7 settembre 1962 Kennedy estese formalmente l'embargo a tutto il commercio cubano, salvo la vendita non sovvenzionata di cibo e medicinali. Nell'ottobre 1962 la crisi dei missili portò alla «quarantena» navale dell'isola. Seguirono le restrizioni ai viaggi dell'8 febbraio 1963 e i Cuban Assets Control Regulations dell'8 luglio 1963, che congelarono i beni cubani negli Stati Uniti. L'embargo fu allentato tra il 2015 e il 2017 e poi di nuovo inasprito; dal 1992 le Nazioni Unite lo hanno condannato a più riprese.",
+  "links": [
+    {
+      "slug": "rottura-delle-relazioni-tra-stati-uniti-e-cuba-1961",
+      "reason": "Un anno, un mese e quattro giorni prima, il 3 gennaio 1961, gli Stati Uniti avevano rotto le relazioni diplomatiche con Cuba."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Otto mesi e nove giorni dopo, il 16 ottobre 1962, comincia la crisi dei missili di Cuba."
+    }
+  ],
+  "sources": [
+    {
+      "title": "United States embargo against Cuba - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_embargo_against_Cuba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Embargo contro Cuba - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Embargo_contro_Cuba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data del 7 febbraio 1962 e il Proclama 3447 sono dell'articolo italiano; l'inglese non nomina il proclama, data il primo allargamento all'8 febbraio 1962 e colloca l'estensione formale a tutto il commercio il 7 settembre 1962. Sul primo embargo l'italiano indica il 20 ottobre 1960, l'inglese lo fa seguire alle nazionalizzazioni del 30 agosto 1960. Sull'OSA l'inglese dice che Cuba fu sospesa il 21 gennaio 1962, un giorno prima dell'inizio dell'incontro di Punta del Este indicato dall'italiano. La conferenza di Punta del Este, il racconto dei sigari e il confronto con il Foreign Assistance Act sono solo nell'italiano; le misure del 1963, il giudizio sulla durata e le condanne delle Nazioni Unite vengono dall'inglese. Il pin è approssimativo, sulla Casa Bianca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

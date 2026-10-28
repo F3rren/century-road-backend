@@ -1,0 +1,51 @@
+{
+  "slug": "massacro-di-my-lai-1968",
+  "title": "Il massacro di Mỹ Lai",
+  "summary": "Il 16 marzo 1968, nel villaggio di Sơn Mỹ, nel Vietnam del Sud, soldati statunitensi uccidono centinaia di civili inermi, quasi tutti donne, bambini e anziani. L'esercito copre il fatto, che diventa pubblico solo nel novembre 1969; un solo soldato, il tenente William Calley, sarà condannato.",
+  "date": {
+    "year": 1968,
+    "month": 3,
+    "day": 16
+  },
+  "place": {
+    "name": "Sơn Mỹ, provincia di Quảng Ngãi, Vietnam",
+    "lat": 15.1783,
+    "lon": 108.8694,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "Sơn Mỹ era un villaggio di più frazioni sparse tra risaie e canali; il punto indica la zona della frazione di Mỹ Lai, senza un luogo preciso dato dagli articoli."
+  },
+  "before": "Per l'articolo inglese la compagnia Charlie dell'11ª brigata, arrivata nel Vietnam del Sud nel dicembre 1967, in tre mesi non aveva incontrato il nemico ma aveva avuto ventotto perdite per mine e trappole. Durante l'offensiva del Têt il 48º battaglione Viet Cong aveva attaccato nella provincia di Quảng Ngãi, e l'intelligence americana credeva che si nascondesse nel villaggio di Sơn Mỹ. La task force Barker preparò un'operazione per il 16-18 marzo; la zona era a fuoco libero, e per l'articolo inglese il tenente colonnello Barker avrebbe ordinato di bruciare le case, uccidere il bestiame e avvelenare i pozzi.",
+  "event": "La mattina del 16 marzo circa cento soldati della compagnia Charlie, guidati dal capitano Ernest Medina, sbarcarono dagli elicotteri a Sơn Mỹ. Il battaglione cercato non c'era, ma i soldati radunarono gli abitanti e li uccisero con armi automatiche, baionette e granate, anche in un fosso di irrigazione; ci furono stupri e torture. Per l'articolo inglese i morti furono tra 347 e 504; l'italiano dice 504. Nella vicina frazione di Mỹ Khê un'altra compagnia uccise tra sessanta e centocinquantacinque persone. L'equipaggio dell'elicottero di Hugh Thompson si mise tra i soldati e i superstiti e salvò almeno undici vite.",
+  "after": "Il 28 marzo il rapporto ufficiale presentò l'operazione come un successo, con 128 Viet Cong uccisi, e le prime indagini dell'esercito coprirono il fatto. Il veterano Ron Ridenhour, che aveva raccolto i racconti dei soldati, scrisse al Congresso, e nel settembre 1969 Calley fu incriminato per omicidio; a novembre il giornalista Seymour Hersh rese pubblica la storia. Per l'articolo inglese l'indignazione contribuì all'opposizione alla guerra negli Stati Uniti. Ventisei soldati furono accusati, ma nel 1971 fu condannato solo Calley, all'ergastolo; Nixon lo fece trasferire agli arresti domiciliari, dove rimase tre anni e mezzo. Medina fu assolto.",
+  "links": [
+    {
+      "slug": "offensiva-del-tet-1968",
+      "reason": "Quarantasei giorni prima, il 30 gennaio 1968, era cominciata l'offensiva del Têt, durante la quale il battaglione cercato a Sơn Mỹ aveva attaccato nella provincia."
+    },
+    {
+      "slug": "invasione-della-cecoslovacchia-1968",
+      "reason": "Cinque mesi dopo, nella notte tra il 20 e il 21 agosto 1968, le truppe del Patto di Varsavia entrano in Cecoslovacchia."
+    }
+  ],
+  "sources": [
+    {
+      "title": "My Lai massacre - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/My_Lai_massacre",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Massacro di Mỹ Lai - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Massacro_di_Mỹ_Lai",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 16 marzo 1968. Sul numero delle vittime l'articolo italiano dice 504, l'inglese spiega che il numero non si può stabilire con certezza e che le cifre più citate sono 347 e 504 (il memoriale elenca 504 nomi). Sulla condanna di Calley l'inglese dice in un punto che fu riconosciuto colpevole dell'omicidio di ventidue abitanti e in un altro di almeno venti; l'italiano non dà il numero. Sull'intervento di Nixon l'italiano dice il giorno dopo la condanna, l'inglese due giorni dopo. I particolari sulla preparazione dell'operazione e sul rapporto del 28 marzo sono dell'articolo inglese. Il pin è sulla zona di Mỹ Lai, dentro il villaggio di Sơn Mỹ."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

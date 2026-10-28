@@ -1,0 +1,51 @@
+{
+  "slug": "offensiva-del-tet-1968",
+  "title": "L'offensiva del Têt",
+  "summary": "Tra il 30 e il 31 gennaio 1968, durante il capodanno vietnamita, l'esercito nordvietnamita e i Viet Cong attaccano di sorpresa le città del Vietnam del Sud, compresa Saigon. Respinti con perdite pesanti, non ottengono la sollevazione sperata, ma l'offensiva scuote l'opinione pubblica e il governo degli Stati Uniti.",
+  "date": {
+    "year": 1968,
+    "month": 1,
+    "day": 30
+  },
+  "place": {
+    "name": "Saigon (oggi Città di Ho Chi Minh), Vietnam",
+    "lat": 10.7769,
+    "lon": 106.7009,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "L'offensiva colpì più di cento città e paesi in tutto il Vietnam del Sud. Il punto è sul centro di Saigon, dove tra gli obiettivi c'erano l'ambasciata statunitense e il palazzo dell'Indipendenza."
+  },
+  "before": "Per l'articolo italiano nel luglio 1967 la dirigenza comunista decise di concentrarsi su poche operazioni di grande effetto contro i centri urbani, puntando sul divario tra il governo e l'opinione pubblica americana; prevalse la linea dei «falchi» guidati da Lê Duẩn. Per l'articolo inglese il Politburo sperava che gli assalti alle città provocassero diserzioni e una sollevazione. Gli attacchi alle basi di Dak To e di Khe Sanh, vicino al confine, dovevano attirare l'attenzione americana lontano dalle città, e i comunisti annunciarono una tregua di sette giorni per il Têt, quando gran parte dei soldati sudvietnamiti era in licenza.",
+  "event": "Alcuni attacchi partirono in anticipo, il 30 gennaio per l'articolo inglese e il 29 per l'italiano; quello principale cominciò nelle prime ore del 31 gennaio. Per l'articolo inglese 77.000 soldati colpirono più di cento città e paesi, compresi trentasei capoluoghi di provincia su quarantaquattro e la capitale Saigon. A Saigon un commando entrò nel recinto dell'ambasciata statunitense, che fu ripreso in mattinata. A Huế i combattimenti durarono circa un mese e per l'articolo inglese fu distrutto tra il 40 e il 50% della città; durante l'occupazione le forze comuniste giustiziarono migliaia di persone. La sollevazione sperata non avvenne.",
+  "after": "Per l'articolo inglese l'offensiva fu una sconfitta militare per il Nord, ma colpì il governo e il pubblico americano, a cui era stato detto che il nemico stava perdendo. Il governo sudvietnamita stimò 14.300 civili morti e 24.000 feriti. Il 27 febbraio il giornalista Walter Cronkite disse in televisione che gli Stati Uniti erano impantanati in uno stallo che si poteva chiudere solo con un negoziato. Il 31 marzo Johnson annunciò in televisione una sospensione parziale dei bombardamenti sul Nord e che non si sarebbe ricandidato; per l'articolo italiano diede così inizio a colloqui di pace. Intorno a Khe Sanh si combatté per altri due mesi.",
+  "links": [
+    {
+      "slug": "operazione-rolling-thunder-1965",
+      "reason": "Quasi tre anni prima, il 2 marzo 1965, erano cominciati i bombardamenti continui sul Vietnam del Nord, che Johnson riduce due mesi dopo il Têt."
+    },
+    {
+      "slug": "massacro-di-my-lai-1968",
+      "reason": "Quarantasei giorni dopo, il 16 marzo 1968, soldati americani in cerca di un battaglione che aveva combattuto nel Têt uccidono centinaia di civili a Mỹ Lai."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tet Offensive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tet_Offensive",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva del Têt - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_del_T%C3%AAt",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio tra il 30 e il 31 gennaio 1968; la data è il 30. Sugli attacchi anticipati differiscono: l'inglese li colloca nelle prime ore del 30 gennaio, l'italiano dice che i combattimenti al Sud cominciarono il 29 in quattro città di provincia. Sul commando dell'ambasciata l'inglese parla di diciannove guastatori, l'italiano di venti. I numeri sulle forze e sulle città attaccate sono dell'articolo inglese; l'italiano dice che furono attaccati tutti i capoluoghi di provincia meno otto. Le vittime civili (14.300 per l'inglese, circa 14.000 per l'italiano) sono stime del governo sudvietnamita. La rinuncia di Johnson a ricandidarsi è in entrambi gli articoli (l'inglese la data al 31 marzo, l'italiano dice «entro poche settimane»). Il pin è su Saigon, uno dei centri dell'offensiva."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

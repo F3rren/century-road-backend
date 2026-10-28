@@ -1,0 +1,51 @@
+{
+  "slug": "incidente-del-golfo-del-tonchino-1964",
+  "title": "L'incidente del golfo del Tonchino",
+  "summary": "Il 2 agosto 1964, nel golfo del Tonchino, il cacciatorpediniere statunitense Maddox si scontra con tre motosiluranti nordvietnamite. Il 4 agosto due navi americane segnalano un secondo attacco, che in realtà non avvenne. Il 7 agosto il Congresso approva la risoluzione che autorizza il presidente Johnson a usare la forza nel Sud-est asiatico.",
+  "date": {
+    "year": 1964,
+    "month": 8,
+    "day": 2
+  },
+  "place": {
+    "name": "Thanh Hóa, sulla costa del golfo del Tonchino, Vietnam",
+    "lat": 19.8075,
+    "lon": 105.7764,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "Gli scontri avvennero in mare, nel golfo del Tonchino; per l'articolo inglese il 2 agosto il Maddox era vicino a una delle isole bombardate due notti prima (Hon Me) e a circa ventotto miglia nautiche dalla costa. Il punto è sulla città di Thanh Hóa, nell'entroterra della costa di fronte a quella zona, dentro il territorio del Vietnam."
+  },
+  "before": "Per l'articolo inglese, dopo la conferenza di Ginevra del 1954 il Vietnam era diviso e dal 1957 un'insurrezione guidata dai comunisti combatteva il governo di Saigon; poi un colpo di Stato appoggiato dagli Stati Uniti aveva causato la morte di Diệm. Per l'articolo italiano nel 1964 Johnson e i suoi collaboratori volevano una pressione crescente sul Vietnam del Nord, e il 27 luglio altri cinquemila consiglieri militari furono mandati al Sud. Nella notte del 30 luglio commando sudvietnamiti attaccarono una stazione radar sull'isola di Hon Me; il giorno dopo il Maddox cominciò una missione di spionaggio lungo la costa del Nord.",
+  "event": "Il 2 agosto tre motosiluranti nordvietnamite si avvicinarono al Maddox. Per l'articolo inglese la nave sparò tre colpi di avvertimento, poi le motosiluranti attaccarono con siluri e mitragliatrici; aerei della portaerei Ticonderoga intervennero. Quattro marinai nordvietnamiti furono uccisi e sei feriti, nessuna vittima americana. Il 3 agosto si unì il Turner Joy. La sera del 4 agosto, con mare grosso, le due navi spararono per circa due ore su segnali radar e riferirono di essere attaccate: non c'erano navi nordvietnamite, e il comandante Herrick espresse presto dei dubbi.",
+  "after": "Il 5 agosto, con l'operazione Pierce Arrow, aerei americani bombardarono basi di motosiluranti e un deposito di carburante a Vinh. Il governo presentò l'attacco come «non provocato», negando l'appoggio della marina alle incursioni sudvietnamite. Il 7 agosto il Congresso approvò la risoluzione del golfo del Tonchino: per l'articolo italiano all'unanimità alla Camera e con due voti contrari al Senato. Per l'articolo inglese fu la giustificazione legale per mandare forze convenzionali nel Vietnam del Sud e per la guerra aperta contro il Nord dall'inizio del 1965. Uno studio storico della NSA, reso pubblico nel 2005, concluse che l'incidente del 4 agosto si basava su cattive informazioni della marina e su comunicazioni nordvietnamite travisate.",
+  "links": [
+    {
+      "slug": "colpo-di-stato-contro-diem-1963",
+      "reason": "Nove mesi prima, il 1º novembre 1963, un colpo di Stato rovescia Diệm a Saigon."
+    },
+    {
+      "slug": "operazione-rolling-thunder-1965",
+      "reason": "Sette mesi dopo, il 2 marzo 1965, cominciano i bombardamenti continui sul Vietnam del Nord."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Gulf of Tonkin incident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Gulf_of_Tonkin_incident",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Incidente del golfo del Tonchino - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Incidente_del_golfo_del_Tonchino",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 2 agosto, giorno dello scontro reale; l'articolo italiano colloca l'incidente tra il 2 e il 4 agosto. Gli articoli concordano sul fatto che l'attacco del 4 agosto non avvenne. Sul 2 agosto differiscono: la versione ufficiale riportata dall'articolo italiano dice che il Maddox fu attaccato e rispose, mentre l'inglese, sulla base di uno studio interno della NSA, dice che il Maddox sparò per primo tre colpi di avvertimento (anche l'italiano lo cita come esito di una relazione NSA). L'inglese dice che a negare davanti al Congresso l'appoggio alle incursioni sudvietnamite fu Johnson, l'italiano attribuisce la deposizione a McNamara. Il voto alla Camera e al Senato è dell'articolo italiano; i cinquemila consiglieri del 27 luglio anche. Il pin è a terra, sulla costa di fronte alla zona degli scontri, perché questi avvennero in mare."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

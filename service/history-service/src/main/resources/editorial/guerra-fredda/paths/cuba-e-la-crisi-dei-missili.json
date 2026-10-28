@@ -1,0 +1,37 @@
+{
+  "slug": "cuba-e-la-crisi-dei-missili",
+  "title": "Cuba e la crisi dei missili",
+  "tagline": "Dalla fuga di Batista alla linea rossa: la rivoluzione, la rottura con gli Stati Uniti e i tredici giorni della crisi dei missili.",
+  "intro": "Il percorso segue Cuba e gli Stati Uniti dalla vittoria della rivoluzione del 1º gennaio 1959 all'entrata in funzione della linea rossa del 30 agosto 1963: la rottura delle relazioni, la baia dei Porci, l'operazione Mongoose, l'embargo e la crisi dei missili.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "rivoluzione-cubana-1959",
+      "narrative": "Si parte dal 1º gennaio 1959: Batista fugge da Cuba e la rivoluzione di Fidel Castro trionfa."
+    },
+    {
+      "insight": "rottura-delle-relazioni-tra-stati-uniti-e-cuba-1961",
+      "narrative": "Il 3 gennaio 1961 gli Stati Uniti rompono le relazioni diplomatiche con Cuba e chiudono l'ambasciata all'Avana."
+    },
+    {
+      "insight": "invasione-della-baia-dei-porci-1961",
+      "narrative": "Il 17 aprile esuli cubani addestrati e finanziati dalla CIA sbarcano nella baia dei Porci."
+    },
+    {
+      "insight": "operazione-mongoose-1961",
+      "narrative": "Il 30 novembre Kennedy autorizza l'operazione Mongoose, il programma segreto della CIA contro il governo di Castro."
+    },
+    {
+      "insight": "embargo-contro-cuba-1962",
+      "narrative": "Il 7 febbraio 1962 Kennedy estende l'embargo a ogni tipo di scambio con Cuba."
+    },
+    {
+      "insight": "crisi-dei-missili-di-cuba-1962",
+      "narrative": "Il 16 ottobre Kennedy vede le fotografie di un U-2 che mostrano basi per missili sovietici a Cuba: seguono tredici giorni di confronto."
+    },
+    {
+      "insight": "linea-rossa-1963",
+      "narrative": "Il 30 agosto 1963 entra in funzione la linea rossa tra Washington e Mosca."
+    }
+  ]
+}

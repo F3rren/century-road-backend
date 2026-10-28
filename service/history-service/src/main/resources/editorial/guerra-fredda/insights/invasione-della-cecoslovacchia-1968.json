@@ -1,0 +1,55 @@
+{
+  "slug": "invasione-della-cecoslovacchia-1968",
+  "title": "L'invasione della Cecoslovacchia",
+  "summary": "Nella notte tra il 20 e il 21 agosto 1968 circa 250.000 soldati di Unione Sovietica, Polonia, Bulgaria e Ungheria entrano in Cecoslovacchia e fermano le riforme della Primavera di Praga di Alexander Dubček. Romania e Albania rifiutano di partecipare; durante l'occupazione muoiono 137 cecoslovacchi.",
+  "date": {
+    "year": 1968,
+    "month": 8,
+    "day": 20
+  },
+  "place": {
+    "name": "Piazza San Venceslao, Praga, Repubblica Ceca",
+    "lat": 50.0813,
+    "lon": 14.4275,
+    "countryCode": "CZ",
+    "approximate": true,
+    "note": "L'invasione coinvolse tutto il paese; il punto è nel centro di Praga, sulla piazza San Venceslao, dove il 19 gennaio 1969 si diede fuoco Jan Palach; gli articoli non indicano dove si trovasse la sede del Comitato centrale."
+  },
+  "before": "Il 5 gennaio 1968 il riformista Alexander Dubček sostituì Antonín Novotný come primo segretario del Partito comunista cecoslovacco: cominciava la Primavera di Praga. Ad aprile Dubček lanciò un «Programma d'azione» con più libertà di stampa, di parola e di movimento, il «socialismo dal volto umano» secondo l'articolo inglese, e il 26 giugno l'abolizione della censura fu confermata per legge. Ulbricht e Gomułka chiedevano un intervento militare. Gli incontri di Čierna nad Tisou, a luglio, e di Bratislava, il 3 agosto, non bastarono a Mosca: il 16-17 agosto il Politburo sovietico approvò l'uso della forza e il 18 Brežnev annunciò agli alleati l'intervento per la notte del 20.",
+  "event": "Verso le 23 del 20 agosto gli eserciti di quattro paesi del Patto di Varsavia entrarono in Cecoslovacchia con 250.000 uomini e 2000 carri armati, per arrivare poi a 500.000; per l'articolo inglese i sovietici superavano gli altri di cinque a uno. Le truppe della Germania Est furono fermate poche ore prima, per il timore di una resistenza maggiore. Un volo da Mosca atterrò all'aeroporto di Praga-Ruzyně e uomini in borghese presero lo scalo, dove dalle due del mattino arrivarono gli aerei con i paracadutisti. L'esercito cecoslovacco non ricevette ordini di difesa e Dubček chiese di non resistere. Il 21 agosto la sede del Comitato centrale fu presa d'assalto e Dubček fu arrestato dal KGB e portato a Mosca.",
+  "after": "La resistenza della popolazione fu non violenta: niente cibo né acqua agli invasori, cartelli e graffiti, segnali stradali tolti. Dopo giorni di trattative la delegazione cecoslovacca, tranne František Kriegel, accettò il protocollo di Mosca, e il 27 agosto Dubček tornò a Praga ancora primo segretario. Il 13 settembre l'Albania lasciò il Patto di Varsavia. Il 19 gennaio 1969 lo studente Jan Palach si diede fuoco in piazza San Venceslao; il 17 aprile Dubček fu sostituito da Gustáv Husák e cominciò la «normalizzazione», con l'annullamento delle riforme e le epurazioni. La politica di Mosca verso gli Stati satelliti prese il nome di dottrina Brežnev.",
+  "links": [
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Quasi dodici anni prima, il 23 ottobre 1956, era cominciata la rivoluzione ungherese, poi schiacciata dall'Armata Rossa."
+    },
+    {
+      "slug": "patto-di-varsavia-1955",
+      "reason": "Tredici anni e tre mesi prima, il 14 maggio 1955, era nata l'alleanza i cui eserciti invadono la Cecoslovacchia."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Undici mesi dopo, il 20 luglio 1969, il modulo lunare di Apollo 11 si posa sulla Luna."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Warsaw Pact invasion of Czechoslovakia - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warsaw_Pact_invasion_of_Czechoslovakia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Invasione della Cecoslovacchia da parte del Patto di Varsavia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Invasione_della_Cecoslovacchia_da_parte_del_Patto_di_Varsavia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli datano l'invasione alla notte tra il 20 e il 21 agosto 1968 e la fanno cominciare verso le 23 del 20, che è la data scelta; l'inglese dice anche che le truppe passarono il confine a mezzanotte e fa finire la Primavera di Praga il 21 agosto. L'introduzione dell'articolo italiano parla di «cinque Stati membri» ma ne elenca quattro, come l'inglese. I 137 morti sono «civili» nell'introduzione italiana e «cechi e slovacchi» nel resto dei due articoli. L'appello di Dubček a non resistere, il «Programma d'azione», la legge del 26 giugno e il «socialismo dal volto umano» sono solo nell'inglese; l'assalto alla sede del Comitato centrale è per l'italiano della mattina del 21 agosto, mentre un passo dell'inglese dice Dubček arrestato nella notte del 20; l'ora d'arrivo dei paracadutisti e la data esatta dell'uscita dell'Albania (l'inglese dice settembre 1968) sono dell'italiano. Il pin è approssimativo, nel centro di Praga."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

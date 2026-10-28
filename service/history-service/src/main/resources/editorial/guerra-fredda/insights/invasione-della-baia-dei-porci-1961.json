@@ -1,0 +1,55 @@
+{
+  "slug": "invasione-della-baia-dei-porci-1961",
+  "title": "L'invasione della baia dei Porci",
+  "summary": "Il 17 aprile 1961 oltre 1400 esuli cubani addestrati e finanziati dalla CIA sbarcano nella baia dei Porci, sulla costa sud-occidentale di Cuba, per rovesciare Fidel Castro. Senza altro appoggio aereo statunitense sono sconfitti in tre giorni e si arrendono il 20 aprile.",
+  "date": {
+    "year": 1961,
+    "month": 4,
+    "day": 17
+  },
+  "place": {
+    "name": "Playa Girón, baia dei Porci, Cuba",
+    "lat": 22.0700,
+    "lon": -81.0350,
+    "countryCode": "CU",
+    "approximate": true,
+    "note": "Lo sbarco principale avvenne a Playa Girón e un secondo a Playa Larga, trentacinque chilometri più a nord-ovest; il punto è su Playa Girón, dove poi ripiegarono gli invasori, e rappresenta una zona di combattimento più ampia."
+  },
+  "before": "Dopo la rivoluzione del 1959 i rapporti tra Cuba e Stati Uniti peggiorarono: il governo di Castro nazionalizzò proprietà statunitensi e si avvicinò all'Unione Sovietica, gli Stati Uniti ridussero gli acquisti di zucchero cubano, imposero un embargo e ruppero le relazioni diplomatiche. Il 17 marzo 1960 Eisenhower approvò il piano della CIA; gli esuli della Brigata 2506 furono addestrati in Guatemala. Il nuovo presidente Kennedy autorizzò l'operazione e scelse per lo sbarco la zona di Zapata, che l'articolo italiano descrive come paludosa. Il 15 aprile 1961 otto bombardieri B-26 forniti dalla CIA attaccarono gli aeroporti cubani; per l'articolo italiano il 16 aprile Castro dichiarò Cuba stato socialista.",
+  "event": "Nella notte del 17 aprile la forza principale sbarcò a Playa Girón e una seconda a Playa Larga. Le barriere coralline rallentarono le operazioni e una pattuglia della milizia diede l'allarme. In mattinata gli aerei cubani sfuggiti ai bombardamenti affondarono o danneggiarono le navi con munizioni e rifornimenti. Kennedy aveva annullato altri attacchi aerei per poter negare il coinvolgimento diretto degli Stati Uniti e non diede altro appoggio. Le forze armate cubane, guidate prima da José Ramón Fernández e poi da Castro in persona, contrattaccarono; il 18 aprile Chruščëv minacciò un intervento sovietico. Il 20 aprile gli invasori, ormai senza munizioni, si arresero.",
+  "after": "Per l'articolo inglese gli esuli ebbero 106 morti e circa 1202 furono catturati; i prigionieri furono processati e condannati, e nel dicembre 1962 Castro ne liberò 1113 in cambio di 53 milioni di dollari in cibo e medicinali. Il 21 aprile Kennedy si dichiarò pubblicamente responsabile. Per entrambi gli articoli Castro ne uscì rafforzato e Cuba si avvicinò ancora all'Unione Sovietica. L'articolo inglese scrive che il fallimento avviò l'operazione Mongoose per destabilizzare Cuba e preparò il terreno alla crisi dei missili del 1962; l'italiano collega alla crisi la decisione di Castro di dotarsi di missili per difendersi da nuovi attacchi.",
+  "links": [
+    {
+      "slug": "vostok-1-gagarin",
+      "reason": "Cinque giorni prima, il 12 aprile 1961, Jurij Gagarin era diventato il primo essere umano a volare nello spazio."
+    },
+    {
+      "slug": "rivoluzione-cubana-1959",
+      "reason": "Più di due anni prima, il 1º gennaio 1959, la rivoluzione cubana aveva portato Castro al potere."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Quasi un anno e mezzo dopo, il 16 ottobre 1962, comincia la crisi dei missili di Cuba."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Bay of Pigs Invasion - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Bay_of_Pigs_Invasion",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Invasione della baia dei Porci - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Invasione_della_baia_dei_Porci",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno lo sbarco nella notte del 17 aprile 1961 e la fine dei combattimenti dopo tre giorni; l'inglese dà la resa il 20 aprile. Le cifre non coincidono: l'inglese parla di oltre 1400 uomini, l'italiano di 1453; per l'inglese gli esuli ebbero 106 morti, per l'italiano circa 104; l'esercito cubano ebbe 176 morti per l'inglese e 157 per l'italiano, più le perdite della milizia e dei civili. Sui prigionieri l'inglese dice che ne furono catturati circa 1202 e liberati 1113 nel dicembre 1962, l'italiano che circa 1113 si arresero. L'approvazione del piano da parte di Eisenhower il 17 marzo 1960 e la scelta di Zapata da parte di Kennedy sono in entrambi gli articoli (l'italiano data il piano della CIA al 16 marzo); la dichiarazione di Cuba stato socialista del 16 aprile viene dall'articolo italiano; la dichiarazione di Kennedy del 21 aprile e l'operazione Mongoose dall'inglese. La minaccia di Chruščëv del 18 aprile è in entrambi. Il pin è su Playa Girón."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
