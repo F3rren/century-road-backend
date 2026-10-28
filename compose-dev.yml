@@ -161,7 +161,7 @@ services:
   # The version is written here, not in .env.dev, so Dependabot can see it and propose bumps;
   # keep it the same as compose-prod.yml.
   prometheus:
-    image: prom/prometheus:v3.15.0
+    image: prom/prometheus:v3.15.1
     environment:
       AUTH_PORT:    "8081"
       HISTORY_PORT: "8082"
@@ -194,7 +194,7 @@ services:
 
   # ─── Grafana ─────────────────────────────────────────────────────────────────
   grafana:
-    image: grafana/grafana:13.2.2
+    image: grafana/grafana:13.2.4
     environment:
       GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:-admin}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env.dev}
