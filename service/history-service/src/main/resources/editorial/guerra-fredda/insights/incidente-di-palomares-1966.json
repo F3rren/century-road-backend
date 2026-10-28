@@ -1,0 +1,50 @@
+{
+  "slug": "incidente-di-palomares-1966",
+  "title": "L'incidente di Palomares",
+  "summary": "Il 17 gennaio 1966 un bombardiere B-52 statunitense con quattro bombe termonucleari si scontra con un aereo cisterna durante il rifornimento in volo sopra Palomares, in Spagna. Nessuna bomba produce un'esplosione nucleare, ma due spargono plutonio sul terreno.",
+  "date": {
+    "year": 1966,
+    "month": 1,
+    "day": 17
+  },
+  "place": {
+    "name": "Palomares, Almería, Spagna",
+    "lat": 37.2440,
+    "lon": -1.8000,
+    "countryCode": "ES",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese il B-52 partecipava all'operazione Chrome Dome, una missione di allerta in cui bombardieri armati di bombe nucleari restavano di continuo in volo. Era partito dalla base di Seymour Johnson, nella Carolina del Nord, con quattro bombe termonucleari B28; il volo verso i confini europei dell'Unione Sovietica e ritorno richiedeva due rifornimenti in volo sopra la Spagna. Per l'articolo italiano il bombardiere tornava dalla frontiera turco-sovietica. L'aereo cisterna KC-135 veniva dalla base di Morón, nel sud della Spagna.",
+  "event": "Verso le 10:30, a circa 9450 metri di quota, durante il secondo rifornimento, i due aerei si scontrarono: morirono i quattro uomini dell'aereo cisterna e tre dei sette del bombardiere, mentre gli altri quattro si salvarono con il paracadute. Tre bombe caddero a terra vicino a Palomares e furono trovate entro un giorno; in due l'esplosivo convenzionale detonò all'impatto, senza esplosione nucleare, e disperse plutonio. La quarta cadde in mare: un pescatore del posto, Francisco Simó Orts, la vide entrare in acqua, e dopo ottanta giorni di ricerche la marina statunitense la recuperò intatta.",
+  "after": "Per l'articolo inglese il 25 gennaio gli Stati Uniti annunciarono che non avrebbero più sorvolato la Spagna con armi nucleari, e il 29 gennaio il governo spagnolo vietò quei voli. La terra più contaminata fu rimossa e spedita negli Stati Uniti, ma tracce di contaminazione restarono per decenni; nel 2015 Spagna e Stati Uniti firmarono un accordo per proseguire la bonifica. Sempre per l'articolo inglese, Palomares e l'incidente di Thule del 1968, in Groenlandia, resero politicamente insostenibile l'operazione Chrome Dome.",
+  "links": [
+    {
+      "slug": "primo-test-nucleare-cinese-1964",
+      "reason": "Quindici mesi prima, il 16 ottobre 1964, la Cina aveva fatto il suo primo test nucleare, diventando un altro Stato con armi nucleari."
+    },
+    {
+      "slug": "trattato-sullo-spazio-extra-atmosferico-1967",
+      "reason": "Un anno e dieci giorni dopo, il 27 gennaio 1967, si apre alla firma il trattato che vieta di mettere armi nucleari nello spazio."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1966 Palomares accident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1966_Palomares_accident",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Incidente di Palomares - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Incidente_di_Palomares",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano è breve: la ricostruzione dell'incidente, le vittime, le conseguenze politiche e la bonifica vengono dall'articolo inglese. I due articoli divergono su alcuni numeri: la quota della collisione (9450 metri per l'inglese, 10 000 per l'italiano), la potenza delle bombe (1,1 megatoni per l'inglese, 1,5 per l'italiano) e i tempi del ritrovamento delle tre bombe a terra (entro ventiquattro ore per l'inglese, in poche ore per l'italiano). Anche l'area contaminata varia dentro l'articolo inglese, tra circa due e 2,6 chilometri quadrati. La collisione avvenne in volo, sopra la costa: il pin è sul villaggio di Palomares, vicino al quale caddero gli aerei e le tre bombe a terra."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

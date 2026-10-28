@@ -1,0 +1,55 @@
+{
+  "slug": "trattato-sullo-spazio-extra-atmosferico-1967",
+  "title": "Il trattato sullo spazio extra-atmosferico",
+  "summary": "Il 27 gennaio 1967 si apre alla firma, negli Stati Uniti, nel Regno Unito e in Unione Sovietica, il trattato che vieta di mettere armi nucleari nello spazio e di rivendicare la sovranità sulla Luna e sugli altri corpi celesti. Entra in vigore il 10 ottobre.",
+  "date": {
+    "year": 1967,
+    "month": 1,
+    "day": 27
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.9072,
+    "lon": -77.0369,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Il trattato fu aperto alla firma lo stesso giorno in tre luoghi, che l'articolo inglese indica come Londra, Mosca e Washington. Il punto è su Washington, una delle tre sedi, nominata per prima tra i paesi depositari da entrambi gli articoli; non è indicato un edificio."
+  },
+  "before": "Per l'articolo inglese il trattato nacque dallo sviluppo, negli anni Cinquanta, dei missili balistici intercontinentali, che raggiungevano i bersagli passando per lo spazio. Nell'agosto 1957 gli Stati Uniti proposero ispezioni sui razzi; l'Unione Sovietica invece provò i suoi missili e in ottobre lanciò lo Sputnik. Il 22 settembre 1960 Eisenhower propose all'ONU un trattato sullo spazio simile a quello sull'Antartide; per il Dipartimento di Stato americano i sovietici chiedevano in cambio il ritiro delle basi missilistiche statunitensi all'estero, richiesta lasciata cadere dopo il trattato sui test del 1963. Il 17 ottobre 1963 l'Assemblea generale approvò all'unanimità una risoluzione che vietava di introdurre armi di distruzione di massa nello spazio.",
+  "event": "Il testo fu negoziato all'ONU, e nel dicembre 1966 l'Assemblea generale ne discusse varie proposte: gli Stati Uniti, le cui bozze riguardavano solo i corpi celesti, accettarono la versione sovietica, che vietava le armi di distruzione di massa in tutto lo spazio. Il 27 gennaio 1967 il trattato fu aperto alla firma nei tre paesi depositari. Vieta di mettere armi nucleari o altre armi di distruzione di massa in orbita o sui corpi celesti, riserva la Luna e gli altri corpi celesti a scopi pacifici, senza basi, test di armi o manovre militari, ed esclude che uno Stato se ne appropri: per l'articolo italiano sono «patrimonio comune dell'umanità». Non vieta le armi convenzionali in orbita.",
+  "after": "Il trattato entrò in vigore il 10 ottobre 1967. Per l'articolo inglese lo seguirono altri accordi dell'ONU sullo spazio: sul soccorso agli astronauti, sulla responsabilità per i danni causati dai veicoli spaziali, sulla loro registrazione e, nel 1979, sulla Luna. Lo stesso articolo lo considera la «pietra angolare» del diritto spaziale e lo conta tra i trattati sul controllo delle armi nucleari firmati durante la guerra fredda. Il testo dice poco o nulla su attività nate dopo, come l'estrazione di risorse dalla Luna e dagli asteroidi.",
+  "links": [
+    {
+      "slug": "sputnik-1",
+      "reason": "Più di nove anni prima, il 4 ottobre 1957, l'Unione Sovietica aveva lanciato lo Sputnik 1, il primo satellite artificiale."
+    },
+    {
+      "slug": "trattato-di-non-proliferazione-nucleare-1968",
+      "reason": "Un anno e cinque mesi dopo, il 1º luglio 1968, gli stessi tre Stati firmano il trattato di non proliferazione nucleare."
+    },
+    {
+      "slug": "apollo-11",
+      "reason": "Quasi due anni e sei mesi dopo, il 20 luglio 1969, i primi esseri umani camminano sulla Luna, che il trattato riserva a scopi pacifici."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Outer Space Treaty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Outer_Space_Treaty",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato sullo spazio extra-atmosferico - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_sullo_spazio_extra-atmosferico",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'apertura alla firma il 27 gennaio 1967 e l'entrata in vigore il 10 ottobre 1967. L'articolo italiano tratta solo i contenuti: la storia del negoziato e gli accordi successivi vengono dall'articolo inglese. L'inglese data l'accordo sul soccorso agli astronauti al 1967 in un passo e al 1968 in un altro, per questo il testo non dà l'anno. Il pin è su Washington, una delle tre sedi della firma, non su un edificio preciso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

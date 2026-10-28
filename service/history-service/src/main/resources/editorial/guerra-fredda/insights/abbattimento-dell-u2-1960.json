@@ -1,0 +1,51 @@
+{
+  "slug": "abbattimento-dell-u2-1960",
+  "title": "L'abbattimento dell'U-2",
+  "summary": "Il 1º maggio 1960 un aereo spia statunitense U-2, pilotato da Francis Gary Powers per la CIA, viene abbattuto da un missile sovietico vicino a Sverdlovsk e il pilota è catturato. Gli Stati Uniti parlano prima di un aereo meteorologico della NASA, poi ammettono lo spionaggio; due settimane dopo il vertice di Parigi fallisce.",
+  "date": {
+    "year": 1960,
+    "month": 5,
+    "day": 1
+  },
+  "place": {
+    "name": "Dintorni di Sverdlovsk (Ekaterinburg), Russia",
+    "lat": 56.7500,
+    "lon": 60.8500,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli dicono che l'aereo fu abbattuto nei pressi di Sverdlovsk, l'inglese vicino a Kosulino; il punto indica la zona a sud-est della città ed è approssimato."
+  },
+  "before": "La CIA faceva volare sull'Unione Sovietica l'U-2, costruito per salire oltre la portata dei caccia e, si credeva, dei missili sovietici; per l'articolo italiano il primo volo operativo risale al 4 luglio 1956 e Chruščëv ne fu informato subito, ma taceva per non mostrare la debolezza delle difese sovietiche. Per l'articolo inglese Chruščëv ed Eisenhower si erano incontrati a Camp David nel settembre 1959 e il clima più disteso aveva fatto sperare in un accordo; per metà maggio era previsto a Parigi un vertice delle quattro potenze. Eisenhower autorizzò due ultimi voli prima del vertice: il primo, il 9 aprile 1960, sorvolò Semipalatinsk e Bajkonur senza essere intercettato.",
+  "event": "Il 1º maggio, festa nazionale sovietica, Powers decollò da Peshawar, in Pakistan, per attraversare l'Unione Sovietica da sud a nord e atterrare a Bodø, in Norvegia. I caccia sovietici non riuscirono a raggiungerlo; vicino a Sverdlovsk lo colpì un missile terra-aria S-75. Per l'articolo inglese fu il primo di tre missili sparati da una batteria, per l'italiano uno di una salva di quattordici. Nella stessa salva fu abbattuto per errore un MiG-19 sovietico, e per l'articolo inglese il pilota, Sergei Safronov, morì. Powers uscì dall'abitacolo, per l'articolo italiano senza riuscire ad attivare l'autodistruzione dell'aereo, scese con il paracadute e fu catturato.",
+  "after": "Gli Stati Uniti diffusero la versione di un aereo della NASA per ricerche meteorologiche finito fuori rotta. Il 7 maggio Chruščëv rivelò che il pilota era vivo e mostrò parti dell'equipaggiamento; per l'articolo inglese l'11 maggio Eisenhower riconobbe il programma di spionaggio e il proprio ruolo. Il vertice di Parigi fallì: Eisenhower non si scusò, Chruščëv se ne andò e ritirò l'invito a visitare l'Unione Sovietica. I voli sull'Unione Sovietica furono sospesi. Powers fu condannato per spionaggio a tre anni di prigione e sette di lavori forzati; il 10 febbraio 1962 fu scambiato con la spia sovietica Rudoľf Abeľ sul ponte di Glienicke.",
+  "links": [
+    {
+      "slug": "invasione-della-baia-dei-porci-1961",
+      "reason": "Poco meno di un anno dopo, il 17 aprile 1961, un'altra operazione preparata dalla CIA sotto Eisenhower, lo sbarco di esuli cubani nella baia dei Porci, fallisce in tre giorni."
+    },
+    {
+      "slug": "costruzione-del-muro-di-berlino-1961",
+      "reason": "Poco più di quindici mesi dopo, il 13 agosto 1961, la Germania Est chiude il confine con Berlino Ovest: Berlino era uno dei temi del vertice di Parigi mancato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1960 U-2 incident - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1960_U-2_incident",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Crisi degli U-2 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Crisi_degli_U-2",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'abbattimento il 1º maggio 1960. Sul numero di missili non concordano: l'inglese dice che l'U-2 fu colpito dal primo di tre S-75 e che la versione della salva di quattordici missili, a lungo condivisa, risale a Oleg Penkovsky; l'italiano parla di una salva di quattordici. L'inglese riporta anche versioni successive e contestate (un pilota sovietico, Igor Mentyukov, sostenne nel 1996 di aver fatto cadere l'U-2 con la scia del suo caccia) che qui non sono seguite. La morte del pilota del MiG-19, l'incontro di Camp David e il discorso di Eisenhower dell'11 maggio vengono dall'articolo inglese, che sulle date del vertice non è coerente (aperto il 15 e chiuso il 16 maggio in un punto, iniziato il 16 in un altro); il silenzio di Chruščëv sui voli dal 1956 e il mancato uso dell'autodistruzione dall'italiano. L'italiano dice anche che già il 5 maggio Chruščëv annunciò al Soviet Supremo l'abbattimento senza dire che il pilota era vivo. Il pin è nella zona a sud-est di Sverdlovsk, verso Kosulino, il villaggio nominato dall'articolo inglese, ed è approssimato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

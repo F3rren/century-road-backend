@@ -1,0 +1,55 @@
+{
+  "slug": "costruzione-del-muro-di-berlino-1961",
+  "title": "La costruzione del Muro di Berlino",
+  "summary": "Nella notte tra il 12 e il 13 agosto 1961 polizia ed esercito della Germania Est chiudono il confine con Berlino Ovest con filo spinato e recinzioni; pochi giorni dopo arrivano i primi blocchi di cemento. Il Muro serve a fermare la fuga dei cittadini tedesco-orientali verso ovest e resta fino al 9 novembre 1989.",
+  "date": {
+    "year": 1961,
+    "month": 8,
+    "day": 13
+  },
+  "place": {
+    "name": "Porta di Brandeburgo, Berlino, Germania",
+    "lat": 52.5163,
+    "lon": 13.3777,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Il Muro correva tutto attorno a Berlino Ovest; il punto è sulla Porta di Brandeburgo, il cui varco fu chiuso, e rappresenta l'intera linea di confine."
+  },
+  "before": "Dopo la guerra Berlino era divisa in quattro settori, all'interno della zona sovietica. Nel 1952 fu chiuso il confine tra le due Germanie, ma a Berlino il passaggio tra i settori restò molto più accessibile e la città diventò la via principale per lasciare la Germania Est. Per l'articolo inglese entro il 1961 se ne erano andati 3,5 milioni di tedeschi orientali, circa il 20% della popolazione, molti giovani e istruiti; l'italiano parla di 2,6 milioni tra il 1949 e il 1961. Per l'articolo inglese il 15 giugno 1961 Walter Ulbricht dichiarò che nessuno aveva intenzione di costruire un muro, e al vertice di Vienna Kennedy aveva ammesso che gli Stati Uniti non si sarebbero opposti attivamente a una barriera.",
+  "event": "Il 12 agosto Ulbricht firmò l'ordine di chiudere il confine; a mezzanotte polizia e reparti dell'esercito tedesco-orientale cominciarono a bloccarlo e la mattina di domenica 13 agosto Berlino Ovest era isolata. Le strade lungo il confine furono divelte, filo spinato e recinzioni furono posati attorno ai tre settori occidentali, chiusi entro il territorio orientale. I primi elementi di cemento furono messi in opera il 15 agosto per l'articolo italiano, il 17 per l'inglese. Per l'articolo inglese i soldati di guardia avevano l'ordine di sparare a chi tentava di passare. La Germania Est presentò il Muro come «barriera di difesa antifascista» contro un'aggressione dall'Ovest.",
+  "after": "Molte famiglie furono divise e chi viveva a est e lavorava a ovest perse il lavoro. Per l'articolo inglese Kennedy denunciò il Muro, ma fu sollevato che l'accesso di Berlino Ovest all'Occidente non fosse toccato; il 19 agosto il vicepresidente Johnson e il generale Lucius Clay, mandati da lui, arrivarono in città, e il giorno dopo una colonna di 1500 soldati statunitensi raggiunse Berlino attraverso la Germania Est. Per l'articolo italiano la prima persona morta tentando la fuga fu Ida Siekmann, il 22 agosto; nel giugno 1962 un secondo muro creò la «striscia della morte» e tra il 1962 e il 1989 le emigrazioni scesero a cinquemila. Il Muro fu aperto il 9 novembre 1989.",
+  "links": [
+    {
+      "slug": "blocco-di-berlino-1948",
+      "reason": "Tredici anni prima, il 24 giugno 1948, l'Unione Sovietica aveva chiuso le vie di terra verso i settori occidentali di Berlino."
+    },
+    {
+      "slug": "rivolta-di-berlino-est-1953",
+      "reason": "Otto anni prima, il 17 giugno 1953, la rivolta di Berlino Est era stata repressa dai carri armati sovietici."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Poco più di quattordici mesi dopo, il 16 ottobre 1962, comincia la crisi dei missili di Cuba."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Berlin Wall - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Berlin_Wall",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Muro di Berlino - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Muro_di_Berlino",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano dà l'inizio della costruzione nella notte tra il 12 e il 13 agosto 1961, l'inglese dice che il confine fu chiuso a partire dalla mezzanotte e che la costruzione cominciò il 13 agosto: la data scelta è il 13. Gli articoli non concordano sul numero di chi lasciò la Germania Est (3,5 milioni entro il 1961 per l'inglese, 2,6 milioni tra il 1949 e il 1961 per l'italiano), sul giorno dei primi elementi di cemento (17 agosto per l'inglese, 15 per l'italiano) e sulla lunghezza (per l'inglese 156 chilometri attorno ai settori occidentali e 43 tra le due parti della città; 155 per l'italiano). La frase di Ulbricht, il vertice di Vienna, la reazione di Kennedy e l'arrivo delle truppe statunitensi vengono dall'articolo inglese; Ida Siekmann, il secondo muro del 1962 e il calo delle emigrazioni dall'italiano. Il pin è sulla Porta di Brandeburgo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

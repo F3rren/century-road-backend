@@ -1,0 +1,52 @@
+{
+  "slug": "colpo-di-stato-contro-diem-1963",
+  "title": "Il colpo di Stato contro Diệm",
+  "summary": "Il 1º novembre 1963 un gruppo di generali sudvietnamiti guidati da Dương Văn Minh rovescia il presidente Ngô Đình Diệm; gli Stati Uniti sono informati e hanno deciso di non impedirlo. La mattina dopo Diệm e il fratello Ngô Đình Nhu si arrendono e vengono uccisi dai militari che li hanno arrestati.",
+  "date": {
+    "year": 1963,
+    "month": 11,
+    "day": 1
+  },
+  "place": {
+    "name": "Palazzo Gia Long, Città di Ho Chi Minh, Vietnam",
+    "lat": 10.7763,
+    "lon": 106.6999,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "Il colpo di Stato si svolse in tutta Saigon; il punto è sul palazzo Gia Long, la residenza del presidente assediata nella notte. Diệm e Nhu furono uccisi altrove, a un passaggio a livello lungo la strada verso Tân Sơn Nhứt."
+  },
+  "before": "Diệm era diventato primo ministro dello Stato del Vietnam nel giugno 1954 e, dopo un referendum truccato nell'ottobre 1955, presidente della Repubblica del Vietnam, governando con la sua famiglia. Nel 1963 la crisi buddhista, cominciata con i nove morti del giorno del Vesak, si aggravò; per l'articolo inglese la svolta fu il 21 agosto, quando le forze speciali di Nhu assaltarono le pagode. Il governo Kennedy, con il cablogramma 243, autorizzò l'ambasciata a esplorare un cambio di guida, e l'agente della CIA Lucien Conein disse ai congiurati che gli Stati Uniti non sarebbero intervenuti per fermarli.",
+  "event": "Il 1º novembre le truppe ribelli presero la sede della polizia, l'aeroporto di Tân Sơn Nhứt, la posta e la radio. Alle 16:30 i generali annunciarono il colpo di Stato alla radio e chiesero a Diệm e Nhu di lasciare il potere; Diệm rifiutò. Dopo il tramonto le truppe di Nguyễn Văn Thiệu attaccarono il palazzo Gia Long, che cadde all'alba. Per l'articolo inglese i fratelli lo avevano già lasciato verso le 20, rifugiandosi a Cholon. La mattina del 2 novembre si arresero, in una chiesa cattolica del quartiere; caricati su un blindato, furono uccisi durante il trasporto verso il quartier generale dello stato maggiore.",
+  "after": "I generali dissero prima che i fratelli si erano suicidati, ma le fotografie dei corpi nel blindato smentirono questa versione. Kennedy, informato durante una riunione, lasciò la stanza e scrisse poi di sentirsi responsabile per aver approvato il cablogramma 243. A Saigon la caduta del regime fu festeggiata nelle strade. Il 5 novembre fu annunciato un governo provvisorio, con Minh capo dello Stato e Nguyễn Ngọc Thơ primo ministro, e l'8 novembre gli Stati Uniti lo riconobbero. Per l'articolo inglese, entro una settimana i viet cong lanciarono più di mille attacchi, e le uccisioni divisero i generali.",
+  "links": [
+    {
+      "slug": "autoimmolazione-di-thich-quang-duc-1963",
+      "reason": "Quasi cinque mesi prima, l'11 giugno, il monaco Thích Quảng Đức si era dato fuoco a Saigon."
+    },
+    {
+      "slug": "incidente-del-golfo-del-tonchino-1964",
+      "reason": "Nove mesi dopo, il 2 agosto 1964, avviene l'incidente del golfo del Tonchino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1963 South Vietnamese coup d'état - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1963_South_Vietnamese_coup_d%27%C3%A9tat",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ngô Đình Diệm - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ngô_Đình_Diệm",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese è dedicato al colpo di Stato, l'italiano è una biografia di Diệm con un breve paragrafo sul golpe: quasi tutti i particolari (cablogramma 243, Conein, ore, assedio del palazzo, versione del suicidio, governo provvisorio) vengono dall'inglese. Entrambi danno il 1º novembre per il golpe e il 2 novembre per la cattura e l'uccisione.",
+    "Sull'uccisione l'italiano dice che i fratelli furono giustiziati dal capitano Nguyễn Văn Nhung; per l'inglese un'indagine di Đôn stabilì che a sparare fu il maggiore Dương Hiếu Nghĩa e che Nhung sparò a sua volta e colpì i corpi con un coltello. Sulla fuga dal palazzo l'inglese riporta la versione del tunnel e quella di Ellen Hammer, per cui i fratelli uscirono a piedi; l'italiano parla di un passaggio sotterraneo. L'articolo inglese dice in un punto che Thiệu comandava la 5ª divisione e in un altro che guidò la 7ª nell'assalto al palazzo: per questo il testo non indica la divisione. Il pin è sul palazzo Gia Long."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

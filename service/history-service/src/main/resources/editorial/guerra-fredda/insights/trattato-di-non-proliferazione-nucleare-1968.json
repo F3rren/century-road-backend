@@ -1,0 +1,51 @@
+{
+  "slug": "trattato-di-non-proliferazione-nucleare-1968",
+  "title": "Il trattato di non proliferazione nucleare",
+  "summary": "Il 1º luglio 1968 Stati Uniti, Regno Unito e Unione Sovietica firmano il trattato di non proliferazione nucleare: gli Stati senza armi nucleari si impegnano a non procurarsele, quelli che le hanno a non trasferirle e a negoziare il disarmo. Entra in vigore nel 1970.",
+  "date": {
+    "year": 1968,
+    "month": 7,
+    "day": 1
+  },
+  "place": {
+    "name": "Mosca, Russia",
+    "lat": 55.7558,
+    "lon": 37.6173,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli non dicono dove avvenne la firma, solo che firmarono Stati Uniti, Regno Unito e Unione Sovietica. Il punto è su Mosca, capitale di uno dei tre Stati firmatari, scelta per distinguerla dal trattato sullo spazio, che ha il punto su Washington."
+  },
+  "before": "Per l'articolo inglese il trattato nacque dalla preoccupazione che un mondo con molti Stati nucleari fosse meno sicuro, con più rischi di errori, incidenti ed escalation. Nel dicembre 1953 Eisenhower aveva proposto all'ONU, con «Atoms for Peace», un'organizzazione per diffondere la tecnologia nucleare pacifica, da cui nel 1957 nacque l'AIEA. Il processo fu avviato nel 1958 dal ministro degli Esteri irlandese Frank Aiken; tra il 1965 e il 1968 il testo fu negoziato a Ginevra dal Comitato delle diciotto nazioni sul disarmo. Quando fu proposto si prevedevano da venticinque a trenta Stati nucleari entro vent'anni.",
+  "event": "Il trattato, di undici articoli, fu aperto alla firma nel 1968; per l'articolo italiano Stati Uniti, Regno Unito e Unione Sovietica lo sottoscrissero il 1º luglio. Riconosce come Stati nucleari quelli che avevano costruito e fatto esplodere un ordigno prima del 1º gennaio 1967: Stati Uniti, Unione Sovietica, Regno Unito, Francia e Cina. Gli altri firmatari si impegnano a non procurarsi armi nucleari e ad accettare i controlli dell'AIEA; gli Stati nucleari a non trasferirle a nessuno. Tutte le parti si impegnano a negoziare in buona fede il disarmo. Per l'articolo inglese il primo Stato a firmare fu la Finlandia.",
+  "after": "Il trattato entrò in vigore il 5 marzo 1970, per una durata iniziale di venticinque anni; nel maggio 1995 le parti decisero di estenderlo senza limiti di tempo. Francia e Cina vi aderirono nel 1992. Per l'articolo inglese l'adesione diventò quasi universale dopo la fine della guerra fredda; non vi aderirono mai, tra gli altri, India, Israele e Pakistan, e la Corea del Nord, entrata nel 1985, annunciò il ritiro nel 2003. Secondo i critici citati dall'articolo inglese, il trattato non basta a fermare la diffusione delle armi nucleari.",
+  "links": [
+    {
+      "slug": "primo-test-nucleare-cinese-1964",
+      "reason": "Tre anni e otto mesi prima, il 16 ottobre 1964, la Cina aveva fatto il suo primo test nucleare, l'ultimo dei cinque Stati che il trattato riconosce come nucleari."
+    },
+    {
+      "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "reason": "Quasi cinque anni prima, il 5 agosto 1963, gli stessi tre Stati avevano firmato il trattato sulla messa al bando parziale dei test nucleari."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Treaty on the Non-Proliferation of Nuclear Weapons - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_on_the_Non-Proliferation_of_Nuclear_Weapons",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di non proliferazione nucleare - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_non_proliferazione_nucleare",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno, il 1º luglio 1968, e l'entrata in vigore il 5 marzo 1970 vengono dall'articolo italiano: l'inglese dice soltanto che il trattato fu aperto alla firma nel 1968 ed entrò in vigore nel 1970, e che la Finlandia fu il primo Stato a firmare. La storia del negoziato, la Finlandia, le previsioni sugli Stati nucleari e le critiche sono dell'articolo inglese. Sulla Corea del Nord gli articoli divergono: per l'inglese annunciò il ritiro nel 2003, per l'italiano si ritirò definitivamente nel 2004, dopo l'annuncio del 10 gennaio 2003. Nessuno dei due articoli dice in quale città si firmò: il pin è su Mosca, capitale di uno dei tre Stati firmatari."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

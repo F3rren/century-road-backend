@@ -1,0 +1,51 @@
+{
+  "slug": "conferenza-di-ginevra-1954",
+  "title": "La conferenza di Ginevra",
+  "summary": "Dal 26 aprile al 21 luglio 1954 a Ginevra le potenze discutono di Corea e di Indocina. Sulla Corea non si trova un accordo; per l'Indocina gli accordi firmati il 21 luglio fermano la guerra e dividono in via provvisoria il Vietnam lungo il 17º parallelo, in attesa di elezioni per la riunificazione nel 1956, che non si terranno.",
+  "date": {
+    "year": 1954,
+    "month": 7,
+    "day": 21
+  },
+  "place": {
+    "name": "Palazzo delle Nazioni, Ginevra, Svizzera",
+    "lat": 46.2266,
+    "lon": 6.1404,
+    "countryCode": "CH",
+    "approximate": false
+  },
+  "before": "Il 18 febbraio 1954, alla conferenza di Berlino, i ministri degli esteri di Stati Uniti, Unione Sovietica, Regno Unito e Francia avevano concordato un nuovo incontro a Ginevra sulla Corea e sull'Indocina, con la partecipazione della Cina comunista. In Indocina la guerra tra la Francia e il Viet Minh di Ho Chi Minh durava dal 1946. La conferenza si aprì il 26 aprile al Palazzo delle Nazioni; la discussione sull'Indocina cominciò l'8 maggio, il giorno dopo la resa francese a Dien Bien Phu.",
+  "event": "Per settimane le posizioni restarono lontane, e la parte sulla Corea si chiuse il 15 giugno senza alcuna dichiarazione. In Francia il governo Laniel cadde e il nuovo presidente del consiglio, Pierre Mendès France, promise di dimettersi se non avesse ottenuto un cessate il fuoco entro un mese. Il primo ministro cinese Zhou Enlai lo incontrò in segreto a Berna il 23 giugno e spinse il Viet Minh al compromesso. Si arrivò a una linea di divisione lungo il 17º parallelo e a elezioni per la riunificazione nel luglio 1956. Gli accordi, datati 20 luglio per rispettare la scadenza di Mendès France, furono firmati la mattina del 21. Per l'articolo inglese la dichiarazione finale non fu firmata, e gli Stati Uniti e lo Stato del Vietnam non la accettarono.",
+  "after": "Le forze dei due campi si raggrupparono a nord e a sud della linea. Per l'articolo inglese almeno 892 876 persone dal Nord passarono per le stazioni ufficiali per i profughi; l'articolo italiano parla di quasi un milione di profughi, soprattutto cattolici. Il 9 ottobre le ultime forze francesi lasciarono Hanoi. Nel Sud gli Stati Uniti sostennero il primo ministro Ngô Đình Diệm, che rifiutò di tenere le elezioni dicendo che il suo governo non aveva firmato gli accordi; la scadenza del luglio 1956 passò senza voto. Alla fine del 1960 gli oppositori del regime di Saigon formarono il Fronte di Liberazione Nazionale.",
+  "links": [
+    {
+      "slug": "battaglia-di-dien-bien-phu-1954",
+      "reason": "Settantacinque giorni prima, il 7 maggio, la guarnigione francese di Dien Bien Phu si era arresa."
+    },
+    {
+      "slug": "autoimmolazione-di-thich-quang-duc-1963",
+      "reason": "Quasi nove anni dopo, l'11 giugno 1963, un monaco buddhista si dà fuoco a Saigon per protesta contro il governo di Diệm."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1954 Geneva Conference - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1954_Geneva_Conference",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Conferenza di Ginevra (1954) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Conferenza_di_Ginevra_(1954)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la conferenza dal 26 aprile al 21 luglio 1954; la data scelta è quella della firma degli accordi sull'Indocina, che per l'articolo inglese sono datati 20 luglio ma furono firmati la mattina del 21. La sede al Palazzo delle Nazioni, i profughi contati e la dichiarazione finale non firmata vengono dall'articolo inglese; la nascita del Fronte di Liberazione Nazionale alla fine del 1960, a opera delle forze di opposizione al regime di Saigon, dall'italiano; per l'inglese il Fronte fu creato dal governo di Ho Chi Minh.",
+    "Gli articoli raccontano in modo diverso la fase finale: per l'italiano il compromesso sul 17º parallelo e sulle elezioni entro due anni fu proposto da Molotov in una riunione la sera del 12 luglio; per l'inglese le ultime questioni furono risolte il pomeriggio del 20 luglio. Sul ritiro francese l'inglese dice che le ultime forze lasciarono il Vietnam il 28 aprile 1956, l'italiano che il ritiro dall'Indocina fu completato entro il 1955. Per l'italiano il discorso con cui Mendès France si diede un mese di tempo è del 17 giugno; per l'inglese il governo Laniel cadde il 18 giugno. Il testo non segue nessuna delle due date. Il pin è sul Palazzo delle Nazioni."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
