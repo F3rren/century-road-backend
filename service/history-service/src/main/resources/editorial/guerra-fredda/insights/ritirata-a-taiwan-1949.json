@@ -9,7 +9,7 @@
   },
   "place": {
     "name": "Taipei, Taiwan",
-    "lat": 25.0330,
+    "lat": 25.033,
     "lon": 121.5654,
     "countryCode": "TW",
     "approximate": true,
@@ -26,6 +26,10 @@
     {
       "slug": "attraversamento-dello-yangtze-1949",
       "reason": "Meno di otto mesi prima, il 20 aprile 1949, i comunisti avevano cominciato ad attraversare lo Yangtze verso Nanchino."
+    },
+    {
+      "slug": "invasione-della-corea-del-sud-1950",
+      "reason": "Poco più di sei mesi dopo, il 25 giugno 1950, la Corea del Nord invade la Corea del Sud."
     }
   ],
   "sources": [

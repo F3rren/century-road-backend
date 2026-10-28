@@ -1,0 +1,55 @@
+{
+  "slug": "prima-bomba-h-sovietica-1955",
+  "title": "La prima bomba H sovietica a due stadi",
+  "summary": "Il 22 novembre 1955 un bombardiere Tu-16 sgancia sul poligono di Semipalatinsk, in Kazakistan, RDS-37, la prima bomba termonucleare sovietica a due stadi, da 1,6 megatoni: per l'articolo inglese è la prima prova al mondo di una bomba a fusione a più stadi lanciata da un aereo.",
+  "date": {
+    "year": 1955,
+    "month": 11,
+    "day": 22
+  },
+  "place": {
+    "name": "Poligono nucleare di Semipalatinsk, Kazakistan",
+    "lat": 50.4378,
+    "lon": 77.8125,
+    "countryCode": "KZ",
+    "approximate": true,
+    "note": "L'articolo indica soltanto il poligono di Semipalatinsk, una vasta area, allora nella Repubblica socialista sovietica kazaka; il punto è indicativo, all'interno della zona del poligono."
+  },
+  "before": "Per l'articolo italiano su Sacharov, fra il 1948 e il 1953 il fisico partecipò al progetto e alla sperimentazione delle prime bombe termonucleari sovietiche. Per l'articolo inglese queste usavano lo schema a strati detto «sloika», ideato da Andrej Sacharov nel 1948: RDS-6s, provata il 12 agosto 1953, arrivò a 400 chilotoni, ma lo schema era difficile da ingrandire. Gli Stati Uniti avevano fatto esplodere Ivy Mike il 1° novembre 1952 e, nella primavera del 1954, le prove dell'operazione Castle, a cominciare da Castle Bravo, nel campo dei megatoni. Nel 1954 Sacharov e Jakov Zel'dovič svilupparono la compressione per radiazione: i raggi X di un primo stadio a fissione comprimono un secondo stadio a fusione, idea equivalente allo schema americano Teller-Ulam. Il 24 dicembre 1954 il progetto fu approvato con il nome RDS-37.",
+  "event": "Per sicurezza la potenza fu ridotta, sostituendo parte del combustibile a fusione con materiale inerte: il progetto era da tre megatoni, ne furono misurati 1,6. Il 22 novembre 1955 la bomba fu sganciata da un Tupolev Tu-16 ed esplose a 1.550 metri d'altezza, per evitare ricadute radioattive vicine; fu l'esplosione più grande mai avvenuta a Semipalatinsk. Sotto uno strato d'inversione l'onda d'urto fu in parte rimandata verso il suolo: crollò una trincea, uccidendo un soldato, e a Kurčatov, a 65 chilometri, crollò un edificio, uccidendo una bambina. Un testimone, a trentadue chilometri, ricordò un calore «quasi intollerabile».",
+  "after": "Il 24 novembre la commissione del test concluse che lo sviluppo delle bombe all'idrogeno doveva proseguire sui principi di RDS-37, che divenne il prototipo dei successivi ordigni sovietici a due stadi. Il 7 dicembre, alla Camera dei comuni britannica, Barbara Castle chiese di fermare le prove britanniche della bomba all'idrogeno, sostenendo che Est e Ovest avevano raggiunto la parità; il New York Times stimò una potenza tra due e quindici megatoni. Gli Stati Uniti ottennero lo stesso risultato il 20 maggio 1956, con la prova Cherokee, ma avevano già diverse centinaia di bombe da più megatoni. Il successo diede a Sacharov più prestigio e autonomia.",
+  "links": [
+    {
+      "slug": "prima-bomba-atomica-sovietica-1949",
+      "reason": "Più di sei anni prima, il 29 agosto 1949, l'Unione Sovietica aveva provato nello stesso poligono la sua prima bomba atomica."
+    },
+    {
+      "slug": "ivy-mike-1952",
+      "reason": "Tre anni e ventuno giorni prima, il 1° novembre 1952, gli Stati Uniti avevano fatto esplodere Ivy Mike, il loro primo ordigno termonucleare, non ancora un'arma utilizzabile."
+    },
+    {
+      "slug": "sputnik-1",
+      "reason": "Un anno, dieci mesi e dodici giorni dopo, il 4 ottobre 1957, l'Unione Sovietica lancia da Baikonur, sempre in Kazakistan, il primo satellite artificiale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "RDS-37 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/RDS-37",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Andrej Dmitrievič Sacharov - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Andrej_Dmitrievič_Sacharov",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Non c'è un articolo italiano su RDS-37: quasi tutto il testo viene dall'articolo inglese. L'articolo italiano su Sacharov non nomina questo test; dice solo che fra il 1948 e il 1953 il fisico partecipò al progetto e alla sperimentazione delle prime bombe termonucleari sovietiche, ed è citato solo per questo. L'articolo inglese dà la potenza progettata in tre megatoni in un passo e parla di una bomba da 2,9 megatoni in un altro; la potenza misurata è 1,6 megatoni in entrambi i passi. Sulla compressione per radiazione l'articolo inglese dice in un punto che Sacharov e Zel'dovič la idearono in modo indipendente, in un altro che a gennaio 1954 ne studiarono insieme lo schema. Il pin è lo stesso, indicativo, usato per la prima bomba atomica sovietica, all'interno della zona del poligono: l'articolo non dà il punto esatto dello scoppio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

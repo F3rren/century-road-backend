@@ -1,0 +1,55 @@
+{
+  "slug": "invasione-della-corea-del-sud-1950",
+  "title": "L'invasione della Corea del Sud",
+  "summary": "All'alba del 25 giugno 1950 l'esercito della Corea del Nord attraversa il 38º parallelo senza dichiarazione di guerra e invade la Corea del Sud. Tre giorni dopo cade Seul; il Consiglio di sicurezza dell'ONU condanna l'invasione e gli Stati Uniti intervengono.",
+  "date": {
+    "year": 1950,
+    "month": 6,
+    "day": 25
+  },
+  "place": {
+    "name": "Penisola di Ongjin, Corea",
+    "lat": 37.9300,
+    "lon": 125.3600,
+    "countryCode": "KP",
+    "approximate": true,
+    "note": "Il punto indica la penisola di Ongjin, dove per l'articolo inglese cominciarono i combattimenti e che per l'italiano fu la direttrice principale dell'avanzata; l'attacco si svolse lungo tutto il 38º parallelo. Nel 1950 la penisola apparteneva alla Corea del Sud, dopo l'armistizio del 1953 è passata alla Corea del Nord."
+  },
+  "before": "Nel 1945 la Corea, colonia giapponese, era stata divisa lungo il 38º parallelo in una zona sovietica e una statunitense; nel 1948 erano nati due stati, guidati da Kim Il-sung a Pyongyang e da Syngman Rhee a Seul, ciascuno dei quali si proclamava unico governo legittimo di tutta la Corea. Lungo il confine si susseguivano scontri. Per l'articolo inglese Stalin, convinto che la situazione fosse cambiata dopo la vittoria comunista in Cina, il ritiro statunitense e la prima bomba sovietica, nell'aprile 1950 permise a Kim di attaccare, a condizione che Mao fosse disposto a mandare rinforzi in caso di bisogno. Il 15 giugno la data dell'invasione fu fissata al 25.",
+  "event": "Per l'articolo inglese alle 4:40 del 25 giugno 1950 l'esercito nordcoreano attraversò il 38º parallelo dietro un fuoco d'artiglieria, senza dichiarare guerra; per l'articolo italiano il fuoco cominciò alle 4 e la dichiarazione arrivò solo alle 11, col pretesto di un attacco sudcoreano presso Haeju. Per l'inglese i combattimenti cominciarono nella penisola di Ongjin, a ovest; per l'italiano presso Kaesŏng, mentre Ongjin fu la direttrice principale dell'avanzata. L'esercito sudcoreano, addestrato soprattutto alla controguerriglia e senza carri armati né artiglieria pesante, fu travolto in pochi giorni. Il 28 giugno cadde Seul, mentre i sudcoreani facevano saltare il ponte sul fiume Han carico di profughi.",
+  "after": "Lo stesso 25 giugno il Consiglio di sicurezza dell'ONU, in assenza del rappresentante sovietico che boicottava le sedute, condannò l'invasione; il 27 raccomandò agli stati membri di aiutare la Corea del Sud, e Truman ordinò alle forze aeree e navali statunitensi di intervenire. Le prime truppe di terra statunitensi, arrivate dal Giappone ai primi di luglio, non riuscirono a fermare l'avanzata: all'inizio di agosto sudcoreani e alleati tenevano solo un perimetro attorno al porto di Busan, nel sud-est della penisola.",
+  "links": [
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Poco meno di nove mesi prima, il 1° ottobre 1949, Mao aveva proclamato la Repubblica Popolare Cinese."
+    },
+    {
+      "slug": "battaglia-del-perimetro-di-pusan-1950",
+      "reason": "Quaranta giorni dopo, il 4 agosto, comincia la battaglia attorno al perimetro di Pusan."
+    },
+    {
+      "slug": "morte-di-stalin-1953",
+      "reason": "Poco più di due anni e otto mesi dopo, il 5 marzo 1953, muore Stalin, che aveva permesso a Kim di attaccare."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Korean War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Corea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Corea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli danno la stessa data, il 25 giugno 1950, ma non la stessa ora: l'inglese dice che il 38º parallelo fu attraversato alle 4:40, l'italiano che il fuoco d'artiglieria cominciò alle 4. L'inglese dice che la Corea del Nord non dichiarò guerra prima dell'invasione; l'italiano che la dichiarazione formale arrivò alle 11 del mattino, sette ore dopo l'inizio. Il via libera di Stalin, la data fissata il 15 giugno e la caduta di Seul il 28 giugno vengono dall'articolo inglese; l'italiano dà numeri diversi per le forze nordcoreane (350 000 uomini in un passo, circa 120 000 in un altro) e qui non sono riportati. Sulla risoluzione 83 l'inglese dice che fu adottata il 25 giugno e (con lo stesso numero) il 27, l'italiano la colloca il 27: il testo dice solo che il 25 ci fu la condanna e il 27 la raccomandazione di aiutare la Corea del Sud. L'inglese riferisce anche che alcuni studiosi sostengono che il primo colpo potrebbe essere stato sudcoreano, presso Haeju, ma che il rapporto da cui nasce questa tesi conteneva errori e falsità. Il pin è sulla penisola di Ongjin: per l'inglese lì cominciarono i combattimenti, per l'italiano la guerra cominciò presso Kaesŏng e Ongjin fu la direttrice principale dell'avanzata."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "sbarco-di-inchon-1950",
+  "title": "Lo sbarco di Incheon",
+  "summary": "Il 15 settembre 1950 le forze dell'ONU comandate da MacArthur sbarcano a Incheon, vicino a Seul e molto alle spalle delle linee nordcoreane. L'operazione Chromite taglia i rifornimenti dell'esercito nordcoreano, che si ritira dal perimetro di Busan; due settimane dopo Seul è riconquistata.",
+  "date": {
+    "year": 1950,
+    "month": 9,
+    "day": 15
+  },
+  "place": {
+    "name": "Wolmi-do, Incheon, Corea del Sud",
+    "lat": 37.4740,
+    "lon": 126.5960,
+    "countryCode": "KR",
+    "approximate": true,
+    "note": "Il punto indica l'isola di Wolmi-do, all'ingresso del porto di Incheon, dove avvenne il primo sbarco; le altre due spiagge dello sbarco erano a Incheon."
+  },
+  "before": "Da agosto le forze dell'ONU resistevano agli attacchi nordcoreani nel perimetro di Busan, nel sud-est della penisola. Già nei primi giorni di guerra MacArthur pensava a uno sbarco alle spalle del nemico per riprendere la zona di Seul. Per l'articolo inglese gli altri comandanti erano scettici: i canali d'accesso erano stretti, le correnti rapide e le maree tra le più ampie del mondo; la marina preferiva sbarcare a Kunsan. MacArthur sostenne che proprio per questo i nordcoreani non si aspettavano un attacco a Incheon, e il 28 agosto i capi di stato maggiore approvarono il piano.",
+  "event": "Dal 13 settembre navi e aerei bombardarono la fortezza dell'isola di Wolmi-do, all'ingresso del porto; per l'articolo inglese napalm era stato sganciato già il 10. Alle 6:30 del 15 settembre i marines sbarcarono sulla prima spiaggia, a Wolmi-do, presa entro mezzogiorno; nel pomeriggio, con l'alta marea, sbarcarono sulle altre due spiagge, a Incheon. Per l'articolo italiano alle 19:50 la battaglia era virtualmente terminata. Per l'articolo inglese parteciparono all'operazione circa 75 000 uomini e 261 navi; Incheon, quasi indifesa, fu presa dopo i bombardamenti.",
+  "after": "Il 16 settembre l'Ottava armata cominciò a uscire dal perimetro di Busan, mentre le forze sbarcate prendevano l'aeroporto di Kimpo e avanzavano su Seul, dove si combatté casa per casa. L'esercito nordcoreano, con le linee di rifornimento tagliate, si ritirò in modo caotico. Il 25 settembre Seul fu dichiarata liberata, ma gli ultimi nordcoreani furono cacciati dalla città solo il 28. Per l'articolo inglese, però, circa 30 000 soldati nordcoreani riuscirono a fuggire verso nord. Ai primi di ottobre le forze dell'ONU passarono il 38º parallelo ed entrarono nella Corea del Nord.",
+  "links": [
+    {
+      "slug": "battaglia-del-perimetro-di-pusan-1950",
+      "reason": "Sei settimane prima, il 4 agosto, era cominciata la battaglia del perimetro di Pusan, che lo sbarco doveva alleggerire."
+    },
+    {
+      "slug": "intervento-cinese-in-corea-1950",
+      "reason": "Trentaquattro giorni dopo, il 19 ottobre, i volontari cinesi attraversano lo Yalu ed entrano in guerra."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Inchon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Inchon",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Incheon - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Incheon",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Corea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Corea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La voce italiana sulla battaglia di Incheon è di poche righe: dice solo che lo sbarco, nome in codice Chromite, fu un successo e che due settimane dopo Seul fu riconquistata. Per i particolari il testo usa l'articolo inglese sulla battaglia e la voce italiana sulla guerra di Corea. Le fonti differiscono su alcuni punti: l'inglese fa durare la battaglia dal 15 al 19 settembre, mentre per la voce italiana sulla guerra di Corea era virtualmente finita alle 19:50 del 15; l'inglese dice che il napalm su Wolmi-do fu sganciato da 43 aerei il 10 settembre, la voce italiana che 43 bombardieri lo sganciarono in più ondate a partire dal 13; l'italiana dice che Seul fu ripresa già il 17 settembre, mentre per l'inglese Almond la dichiarò liberata il 25 e i combattimenti finirono il 28. L'italiano chiama la prima spiaggia «Pohang-Goryongpo», l'inglese «Green Beach», sul lato nord di Wolmi-do. Il nome è scritto Incheon, come nelle voci italiane. Il pin è su Wolmi-do, luogo del primo sbarco."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

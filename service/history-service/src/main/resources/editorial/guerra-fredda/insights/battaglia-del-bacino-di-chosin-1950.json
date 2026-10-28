@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-del-bacino-di-chosin-1950",
+  "title": "La battaglia del bacino di Chosin",
+  "summary": "Il 27 novembre 1950 le truppe cinesi sorprendono il X Corpo statunitense intorno al bacino di Chosin, nel nord-est della Corea del Nord. Dopo diciassette giorni di combattimenti nel gelo le forze dell'ONU rompono l'accerchiamento e vengono evacuate per mare da Hungnam: lasciano la Corea del Nord, ma anche le perdite cinesi sono molto gravi.",
+  "date": {
+    "year": 1950,
+    "month": 11,
+    "day": 27
+  },
+  "place": {
+    "name": "Bacino di Chosin (Changjin), Corea del Nord",
+    "lat": 40.3838,
+    "lon": 127.249,
+    "countryCode": "KP",
+    "approximate": true,
+    "note": "Il punto è su Hagaru-ri, all'estremità meridionale del bacino, dove c'erano il quartier generale della 1ª Divisione Marine e la pista d'atterraggio; i combattimenti si estesero lungo i due lati del lago e sulla strada fino a Koto-ri e Hungnam."
+  },
+  "before": "A metà ottobre del 1950, dopo lo sbarco di Incheon, la guerra sembrava quasi finita e le forze dell'ONU avanzavano in Corea del Nord con l'obiettivo di riunificare la penisola entro l'anno. Il 19 ottobre grandi formazioni cinesi, chiamate Esercito volontario del popolo, attraversarono in segreto il confine. Mao Zedong ordinò al 9º Corpo di Song Shi-Lun di distruggere le divisioni nemiche nel nord-est; per l'articolo inglese il corpo arrivò nella zona del bacino il 17 novembre senza essere scoperto. Il 24 novembre la 1ª Divisione Marine occupava Yudam-ni e Sinhung-ni, ai due lati del lago.",
+  "event": "La notte del 27 novembre le divisioni cinesi lanciarono attacchi e imboscate lungo la strada tra il bacino e Koto-ri e in poche ore isolarono le forze dell'ONU a Yudam-ni, Sinhung-ni, Hagaru-ri e Koto-ri. Circa 30 000 soldati dell'ONU, al comando di Oliver P. Smith, furono accerchiati da circa 120 000 cinesi, con temperature scese fino a -37 °C. Sulla riva orientale la Task Force Faith fu distrutta: dei suoi 2 500 uomini circa 1 050 raggiunsero Hagaru-ri. I Marines ripiegarono da Yudam-ni a Hagaru-ri entro il 4 dicembre, poi dal 6 dicembre verso la costa, e l'11 dicembre raggiunsero il perimetro di Hungnam.",
+  "after": "L'8 dicembre MacArthur aveva già ordinato l'evacuazione del X Corpo: 193 navi portarono via soldati, mezzi e circa un terzo dei profughi coreani, e l'ultima unità lasciò Hungnam il 24 dicembre. L'ONU contò 10 495 perdite in battaglia e altre 7 338 dovute al freddo; le perdite cinesi superarono un terzo delle forze e il 9º Corpo restò fuori combattimento per circa tre mesi. Entro la fine del 1950 cinesi e nordcoreani avevano ripreso la Corea del Nord e respinto l'ONU a sud del 38º parallelo. Per l'articolo inglese il 24 dicembre MacArthur chiese a Washington 34 bombe atomiche, e la richiesta fu respinta.",
+  "links": [
+    {
+      "slug": "intervento-cinese-in-corea-1950",
+      "reason": "Circa un mese prima, in ottobre, le truppe cinesi erano entrate in Corea del Nord."
+    },
+    {
+      "slug": "rimozione-di-macarthur-1951",
+      "reason": "Quattro mesi e mezzo dopo, l'11 aprile 1951, Truman toglie il comando a MacArthur."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Chosin Reservoir - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Chosin_Reservoir",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia del bacino di Chosin - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_del_bacino_di_Chosin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'attacco cinese la notte del 27 novembre 1950 e una battaglia di diciassette giorni, dal 27 novembre al 13 dicembre; le forze dell'ONU raggiunsero il perimetro di Hungnam l'11 dicembre e l'evacuazione finì il 24 dicembre. La temperatura minima è di -38 °C per l'articolo inglese e di -37 °C per l'italiano. Le 10 495 perdite dell'ONU sono «battle casualties» (morti, feriti e dispersi) per l'articolo inglese, mentre l'italiano le chiama «morti». Sulle perdite cinesi i numeri differiscono: l'articolo inglese cita la stima ufficiale cinese del 1988 di 52 098 perdite (21 366 in combattimento, di cui 7 304 morti, e 30 732 per freddo e fame), l'italiano 48 156 (19 202 morti in battaglia e 28 954 fuori battaglia); entrambi dicono più di un terzo delle forze. La richiesta delle bombe atomiche è solo nell'articolo inglese. Il pin usa le coordinate di Hagaru-ri date dall'articolo inglese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

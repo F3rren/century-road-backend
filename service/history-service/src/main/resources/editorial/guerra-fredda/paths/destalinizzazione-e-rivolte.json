@@ -1,0 +1,37 @@
+{
+  "slug": "destalinizzazione-e-rivolte",
+  "title": "Destalinizzazione e rivolte",
+  "tagline": "Da Berlino Est a Budapest: dopo la morte di Stalin il blocco sovietico cambia rotta, tra concessioni e rivolte represse.",
+  "intro": "Il percorso segue gli anni dopo la morte di Stalin nell'Europa orientale, dalla rivolta di Berlino Est del giugno 1953 all'esecuzione di Imre Nagy del giugno 1958: la riconciliazione con la Jugoslavia, il rapporto segreto di Chruščëv, la rivolta di Poznań, l'ottobre polacco e la rivoluzione ungherese.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "rivolta-di-berlino-est-1953",
+      "narrative": "Si parte dal 17 giugno 1953: a Berlino Est uno sciopero diventa una rivolta, fermata dai carri armati sovietici."
+    },
+    {
+      "insight": "dichiarazione-di-belgrado-1955",
+      "narrative": "Il 2 giugno 1955 Chruščëv e Tito firmano a Belgrado la dichiarazione che chiude la rottura del 1948."
+    },
+    {
+      "insight": "rapporto-segreto-di-chruscev-1956",
+      "narrative": "Il 25 febbraio 1956 Chruščëv denuncia Stalin in una sessione a porte chiuse del XX Congresso."
+    },
+    {
+      "insight": "rivolta-di-poznan-1956",
+      "narrative": "Il 28 giugno a Poznań uno sciopero operaio diventa una protesta di massa contro il governo."
+    },
+    {
+      "insight": "ottobre-polacco-1956",
+      "narrative": "Dal 19 ottobre il comitato centrale del partito polacco porta Gomułka alla guida del partito."
+    },
+    {
+      "insight": "rivoluzione-ungherese-1956",
+      "narrative": "Il 23 ottobre comincia a Budapest l'insurrezione; il 4 novembre attaccano i sovietici."
+    },
+    {
+      "insight": "esecuzione-di-imre-nagy-1958",
+      "narrative": "Il 16 giugno 1958, dopo un processo segreto, Imre Nagy è impiccato a Budapest."
+    }
+  ]
+}

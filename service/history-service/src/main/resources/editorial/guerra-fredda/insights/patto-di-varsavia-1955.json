@@ -1,0 +1,51 @@
+{
+  "slug": "patto-di-varsavia-1955",
+  "title": "Il Patto di Varsavia",
+  "summary": "Il 14 maggio 1955, a Varsavia, l'Unione Sovietica e sette Stati socialisti dell'Europa orientale firmano il Trattato di amicizia, cooperazione e mutua assistenza, cinque giorni dopo l'ingresso della Germania Ovest nella NATO. Nasce un'alleanza militare in cui le decisioni spettano di fatto a Mosca.",
+  "date": {
+    "year": 1955,
+    "month": 5,
+    "day": 14
+  },
+  "place": {
+    "name": "Varsavia, Polonia",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Gli articoli dicono solo che il trattato fu firmato a Varsavia, senza indicare l'edificio: il punto è nel centro della città."
+  },
+  "before": "Nel 1952 i colloqui sulla riunificazione tedesca avviati dalla «nota di Stalin» si erano chiusi dopo che gli occidentali avevano insistito per una Germania unita non neutrale e libera di riarmarsi. Alla conferenza di Berlino, all'inizio del 1954, Molotov propose una Germania neutrale e poi un trattato di sicurezza collettiva aperto a tutti gli Stati europei; in seguito l'Unione Sovietica si disse pronta a discutere un proprio ingresso nella NATO. Le proposte furono respinte. Il 30 agosto 1954 il parlamento francese bocciò la Comunità europea di difesa, il 23 ottobre fu decisa l'ammissione della Germania Ovest nella NATO, che divenne effettiva il 9 maggio 1955.",
+  "event": "Il 14 maggio 1955 Unione Sovietica, Albania, Bulgaria, Cecoslovacchia, Germania Est, Polonia, Romania e Ungheria firmarono a Varsavia il trattato. Secondo i firmatari, in un passo citato dall'articolo inglese, la Germania Ovest riarmata e integrata nel blocco atlantico aumentava il pericolo di una nuova guerra. Gli otto Stati si impegnavano a difendersi a vicenda in caso di attacco e, formalmente, a non intervenire negli affari interni degli altri. Per l'articolo italiano il trattato, di undici articoli, entrò in vigore il 4 giugno 1955. Il comandante supremo delle forze congiunte fu sempre un ufficiale sovietico, il primo il maresciallo Ivan Konev.",
+  "after": "Per l'articolo inglese l'Unione Sovietica aveva già truppe e dominio politico nei paesi satelliti, e per questo il patto fu a lungo considerato superfluo; funzionari della NATO lo chiamarono «castello di cartone». La Germania Est poté riarmarsi e creò la Nationale Volksarmee. Nell'autunno del 1956 il governo ungherese di Imre Nagy annunciò l'uscita dal patto e le truppe sovietiche intervennero. Per l'articolo inglese la funzione principale del patto fu proteggere l'egemonia sovietica sui satelliti: le sue sole azioni militari dirette furono invasioni di Stati membri. Il patto fu sciolto nel 1991.",
+  "links": [
+    {
+      "slug": "firma-del-patto-atlantico-1949",
+      "reason": "Sei anni e quaranta giorni prima, il 4 aprile 1949, a Washington viene firmato il Patto Atlantico, base della NATO."
+    },
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Diciassette mesi dopo, il 23 ottobre 1956, comincia a Budapest la rivoluzione ungherese, durante la quale il governo annuncerà l'uscita dal patto."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Warsaw Pact - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Warsaw_Pact",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Patto di Varsavia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Patto_di_Varsavia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma a Varsavia il 14 maggio 1955 e l'ingresso della Germania Ovest nella NATO il 9 maggio. L'entrata in vigore il 4 giugno, gli undici articoli e il nome di Konev vengono dall'articolo italiano; il «castello di cartone» e il giudizio sulla funzione del patto dall'inglese. Gli articoli si contraddicono sullo storico John Lewis Gaddis: per l'inglese nelle capitali occidentali c'era poca inclinazione a esplorare l'offerta sovietica, per l'italiano i paesi occidentali erano inclini a esplorarla; il testo non usa questo passo. Divergono anche sulla sede del comando: l'inglese la colloca a Varsavia, l'italiano dice che il quartier generale era a Mosca. Sui morti ungheresi del 1956 l'inglese stima circa 2.500 civili, l'italiano circa 2.700 ungheresi e 720 soldati sovietici. Il pin è approssimato sul centro di Varsavia."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

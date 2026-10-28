@@ -1,0 +1,55 @@
+{
+  "slug": "rivoluzione-ungherese-1956",
+  "title": "La rivoluzione ungherese",
+  "summary": "Il 23 ottobre 1956 una manifestazione di studenti a Budapest diventa un'insurrezione contro il governo comunista e la presenza sovietica. Imre Nagy torna primo ministro, scioglie la polizia politica e il 1º novembre proclama l'uscita dal Patto di Varsavia; il 4 novembre l'Armata Rossa attacca Budapest e schiaccia la rivoluzione.",
+  "date": {
+    "year": 1956,
+    "month": 10,
+    "day": 23
+  },
+  "place": {
+    "name": "Palazzo del Parlamento, Budapest, Ungheria",
+    "lat": 47.5071,
+    "lon": 19.0457,
+    "countryCode": "HU",
+    "approximate": true,
+    "note": "La rivoluzione coinvolse tutta Budapest e il resto del paese; il punto è sul Parlamento, dove la sera del 23 ottobre arrivò il corteo e parlò Nagy, e che i sovietici occuparono il 4 novembre."
+  },
+  "before": "Dopo la morte di Stalin, nel 1953, il riformista Imre Nagy era diventato primo ministro al posto dello stalinista Mátyás Rákosi, ma nell'aprile 1955 era stato destituito. Il rapporto segreto di Chruščëv, nel febbraio 1956, aprì la destalinizzazione: a luglio Rákosi fu sostituito da Ernő Gerő e il 13 ottobre Nagy fu riammesso nel partito. Per l'articolo inglese le concessioni ottenute dalla Polonia con il ritorno di Gomułka incoraggiarono gli ungheresi. Il 22 ottobre gli studenti di Budapest approvarono un documento in sedici punti, tra cui elezioni pluripartitiche, il ritorno di Nagy e il ritiro delle truppe sovietiche.",
+  "event": "Il 23 ottobre gli studenti manifestarono in solidarietà con la Polonia e la folla crebbe: per l'articolo inglese ventimila persone presso la statua di Bem, per l'italiano almeno duecentomila al culmine. Dopo un duro discorso radiofonico di Gerő i manifestanti abbatterono la statua di Stalin; davanti alla sede della radio l'ÁVH, la polizia politica, sparò sulla folla e cominciarono i combattimenti. Gerő chiese l'intervento sovietico e il 24 ottobre Nagy fu nominato primo ministro. Il 28 ottobre Nagy annunciò il cessate il fuoco e lo scioglimento dell'ÁVH, il 1º novembre la neutralità e l'uscita dal Patto di Varsavia. Il 3 novembre la delegazione di Pál Maléter, invitata a trattare il ritiro sovietico, fu arrestata; nelle prime ore del 4 novembre l'Armata Rossa attaccò Budapest e lo stesso giorno János Kádár proclamò da Szolnok un nuovo governo.",
+  "after": "Nagy si rifugiò nell'ambasciata iugoslava; uscito il 22 novembre con un salvacondotto, fu arrestato dai sovietici e portato in Romania. La resistenza durò in alcune zone operaie fino al 10-11 novembre. I morti ungheresi furono circa 2500 per l'articolo inglese e circa 2700 per l'italiano, i soldati sovietici uccisi circa settecento; tra duecentomila e duecentocinquantamila persone lasciarono il paese, in gran parte verso l'Austria. Per l'articolo inglese 229 persone furono poi giustiziate e la contemporanea crisi di Suez, cominciata il 29 ottobre, aveva tolto all'Occidente la possibilità politica di intervenire.",
+  "links": [
+    {
+      "slug": "ottobre-polacco-1956",
+      "reason": "Quattro giorni prima, il 19 ottobre, si era aperto il plenum polacco che riportò Gomułka alla guida del partito."
+    },
+    {
+      "slug": "crisi-di-suez-1956",
+      "reason": "Sei giorni dopo, il 29 ottobre, comincia la crisi di Suez."
+    },
+    {
+      "slug": "esecuzione-di-imre-nagy-1958",
+      "reason": "Quasi venti mesi dopo, il 16 giugno 1958, Imre Nagy viene giustiziato."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Hungarian Revolution of 1956 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Hungarian_Revolution_of_1956",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione ungherese del 1956 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_ungherese_del_1956",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli fanno cominciare la rivoluzione il 23 ottobre 1956. Sulla fine non sono concordi: l'articolo inglese dà come estremi il 23 ottobre e il 4 novembre, ma in altri passi parla di repressione il 7 novembre, vittoria sovietica il 10 e ultimi combattimenti fino all'11 o al 12; l'italiano dà dal 23 ottobre al 10-11 novembre e fa finire la rivoluzione tra il 4 e il 7 novembre, quando il governo Kádár si insediò a Budapest. Le cifre della folla del 23 ottobre sono molto diverse (ventimila presso la statua di Bem nell'inglese, almeno duecentomila al culmine nell'italiano). Per l'articolo inglese fu la dichiarazione di neutralità a decidere l'invasione; per l'italiano i verbali del Praesidium mostrano che l'invasione fu decisa il 31 ottobre, prima della dichiarazione. Sul proclama di Kádár da Szolnok l'inglese indica le sei del mattino del 4 novembre, l'italiano la sera. I soldati sovietici morti sono 699 (circa settecento) per l'inglese, 720 per l'italiano. Il pin è approssimativo, sul Parlamento."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

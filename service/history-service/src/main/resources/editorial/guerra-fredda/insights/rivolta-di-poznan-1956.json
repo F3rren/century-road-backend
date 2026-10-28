@@ -1,0 +1,55 @@
+{
+  "slug": "rivolta-di-poznan-1956",
+  "title": "La rivolta di Poznań",
+  "summary": "Il 28 giugno 1956 a Poznań uno sciopero degli operai della più grande fabbrica della città diventa una protesta di massa contro il governo comunista polacco. L'esercito la reprime entro il 30 giugno: i morti sono stimati tra cinquantasette e poco più di cento.",
+  "date": {
+    "year": 1956,
+    "month": 6,
+    "day": 28
+  },
+  "place": {
+    "name": "Piazza Adam Mickiewicz, Poznań, Polonia",
+    "lat": 52.4068,
+    "lon": 16.9200,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Circa centomila persone si radunarono sulla piazza Adam Mickiewicz, davanti al Castello imperiale, e gli scontri si estesero a molti edifici della città: il punto è sulla piazza."
+  },
+  "before": "Dopo la morte di Stalin e il rapporto segreto di Chruščëv in tutto il blocco orientale si discuteva di destalinizzazione; il 12 marzo era morto il leader polacco Bolesław Bierut. Per l'articolo inglese a Poznań le tensioni crescevano dall'autunno del 1955: gli operai della più grande fabbrica della città, le Industrie metalliche intitolate a Stalin (ZiSPO), protestavano contro tasse più alte per i lavoratori più produttivi, senza risposta; a giugno il governo aumentò le quote di lavoro. Il 27 giugno il ministro dell'industria meccanica ritirò alcune promesse fatte a una loro delegazione a Varsavia.",
+  "event": "Alle 6:30 del 28 giugno circa l'ottanta per cento degli operai della ZiSPO entrò in sciopero e marciò verso il centro; per l'articolo inglese, insieme ad altri lavoratori e a studenti, circa centomila persone si riunirono in piazza Mickiewicz chiedendo prezzi più bassi e salari più alti. Per l'articolo italiano il grido era «pane e libertà». Alla voce che la delegazione era stata arrestata, la folla assaltò il carcere, la sede locale del partito e quella della sicurezza pubblica, dalle cui finestre si sparò sui dimostranti. Il ministro della difesa, il generale sovietico Konstantin Rokossovsky, mandò il generale Stanislav Poplavsky con oltre diecimila soldati e carri armati; gli scontri durarono fino al 30 giugno.",
+  "after": "Le stime dei morti vanno da cinquantasette a poco più di cento, con centinaia di feriti. Per l'articolo inglese circa 250 persone furono arrestate nei primi giorni e il governo presentò la protesta come opera di provocatori stranieri; poi il regime cambiò linea, con aumenti salariali e riforme, e i comunisti polacchi scelsero come leader Władysław Gomułka, considerato un moderato: il passaggio è noto come ottobre polacco. Le notizie sui fatti di Poznań restarono censurate per un quarto di secolo. Per l'articolo italiano la rivolta si propagò anche all'Ungheria, dove esplose il 23 ottobre.",
+  "links": [
+    {
+      "slug": "rapporto-segreto-di-chruscev-1956",
+      "reason": "Quattro mesi prima, il 25 febbraio, Chruščëv aveva denunciato Stalin nel rapporto segreto."
+    },
+    {
+      "slug": "ottobre-polacco-1956",
+      "reason": "Meno di quattro mesi dopo, dal 19 al 21 ottobre, Gomułka torna alla guida del partito polacco."
+    },
+    {
+      "slug": "rivolta-di-berlino-est-1953",
+      "reason": "Tre anni prima, il 17 giugno 1953, gli operai di Berlino Est si erano sollevati contro il loro governo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1956 Poznań protests - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1956_Poznań_protests",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolta di Poznań - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolta_di_Poznań",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli fanno cominciare la rivolta il 28 giugno 1956; l'inglese la fa durare fino al 30 giugno, l'italiano parla di incidenti almeno fino alla mattina del 30 e aggiunge legge marziale e coprifuoco dal 29. L'articolo italiano è breve: i particolari sulla fabbrica, sulla piazza, sui reparti e sugli arresti sono dell'articolo inglese. Sul comando l'italiano dice che i carri armati erano comandati da Rokossovsky, l'inglese che Rokossovsky mandò il suo vice Poplavsky. Sui morti l'inglese riporta la stima di Łukasz Jastrząb (cinquantasette morti e circa seicento feriti) e quella più alta di Stanisław Jankowiak (poco più di cento), che dice non pienamente sostenuta dai dati. Il pin è approssimato sulla piazza Adam Mickiewicz, davanti al Castello imperiale, dove si radunò la folla; lo sciopero era partito dalla fabbrica ZiSPO."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
