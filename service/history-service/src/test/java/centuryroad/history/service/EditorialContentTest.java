@@ -96,7 +96,9 @@ class EditorialContentTest {
             // French Guiana is French territory: the shapes have it as part of France (FR), the insight as GF.
             "ariane-1", "FR",
             // Geneva sits on the border, and at 110 m scale the point falls on the French side.
-            "vaiolo-eradicato-1980", "FR");
+            "vaiolo-eradicato-1980", "FR",
+            // Geneva again: the Palais des Nations falls on the French side at that scale.
+            "conferenza-di-ginevra-1954", "FR");
     private static final int MAX_SHARED_PERCENT = 60;
     private static final double NEAR_DUPLICATE_KM = 25;
 
