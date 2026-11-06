@@ -3,8 +3,9 @@ package centuryroad.auth.exception;
 import lombok.Getter;
 
 /**
- * Raised by LoginAttemptLimiter. Carries the delay to suggest, because only the
- * limiter knows it - the handler turns it into a Retry-After header.
+ * Raised by SessionService when LoginAttemptLimiter refuses an attempt. Carries the
+ * delay to suggest, because only the limiter knows it - the handler turns it into a
+ * Retry-After header.
  */
 @Getter
 public class TooManyRequestsException extends ApplicationException {
