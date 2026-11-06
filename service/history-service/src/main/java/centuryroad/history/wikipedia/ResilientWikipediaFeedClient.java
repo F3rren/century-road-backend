@@ -1,5 +1,6 @@
 package centuryroad.history.wikipedia;
 
+import centuryroad.history.exception.UpstreamBadResponseException;
 import centuryroad.history.exception.UpstreamRateLimitedException;
 import centuryroad.history.exception.UpstreamUnavailableException;
 import centuryroad.history.model.DayFeed;
@@ -8,7 +9,9 @@ import io.github.resilience4j.bulkhead.Bulkhead;
 import io.github.resilience4j.bulkhead.BulkheadFullException;
 import io.github.resilience4j.circuitbreaker.CallNotPermittedException;
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
+import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.retry.Retry;
+import io.github.resilience4j.retry.RetryConfig;
 
 import java.time.MonthDay;
 import java.util.function.Supplier;
@@ -49,6 +52,23 @@ public class ResilientWikipediaFeedClient implements WikipediaFeedClient {
         this.retry = retry;
         this.bulkhead = bulkhead;
         this.cooldown = cooldown;
+    }
+
+    /**
+     * What the circuit breaker counts. Only faults of the integration: a 429 is the
+     * cool-down's business, and a full bulkhead is our own limit, not evidence Wikipedia is
+     * unwell. The configuration adds the numbers, and the tests build from this too, so they
+     * check the rules the service runs with rather than a copy of them.
+     */
+    public static CircuitBreakerConfig.Builder breakerRules() {
+        return CircuitBreakerConfig.custom()
+                .recordExceptions(UpstreamUnavailableException.class, UpstreamBadResponseException.class)
+                .ignoreExceptions(UpstreamRateLimitedException.class, BulkheadFullException.class);
+    }
+
+    /** What gets another try: a transient failure only. A 429 or a malformed body would answer the same again. */
+    public static RetryConfig.Builder<Object> retryRules() {
+        return RetryConfig.custom().retryOnException(UpstreamUnavailableException.class::isInstance);
     }
 
     @Override

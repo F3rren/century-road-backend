@@ -1,8 +1,5 @@
 package centuryroad.history.config;
 
-import centuryroad.history.exception.UpstreamBadResponseException;
-import centuryroad.history.exception.UpstreamRateLimitedException;
-import centuryroad.history.exception.UpstreamUnavailableException;
 import centuryroad.history.wikipedia.ResilientWikipediaFeedClient;
 import centuryroad.history.wikipedia.UpstreamCooldown;
 import centuryroad.history.wikipedia.WikimediaFeedHttpClient;
@@ -10,16 +7,13 @@ import centuryroad.history.wikipedia.WikipediaFeedClient;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.github.resilience4j.bulkhead.Bulkhead;
 import io.github.resilience4j.bulkhead.BulkheadConfig;
-import io.github.resilience4j.bulkhead.BulkheadFullException;
 import io.github.resilience4j.bulkhead.BulkheadRegistry;
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
-import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.circuitbreaker.CircuitBreakerRegistry;
 import io.github.resilience4j.micrometer.tagged.TaggedBulkheadMetrics;
 import io.github.resilience4j.micrometer.tagged.TaggedCircuitBreakerMetrics;
 import io.github.resilience4j.micrometer.tagged.TaggedRetryMetrics;
 import io.github.resilience4j.retry.Retry;
-import io.github.resilience4j.retry.RetryConfig;
 import io.github.resilience4j.retry.RetryRegistry;
 import io.micrometer.core.instrument.MeterRegistry;
 import org.apache.hc.client5.http.config.ConnectionConfig;
@@ -132,17 +126,13 @@ public class WikimediaClientConfig {
         public CircuitBreaker wikipediaCircuitBreaker(HistoryProperties properties, MeterRegistry meters) {
                 CircuitBreakerRegistry registry = CircuitBreakerRegistry.ofDefaults();
                 TaggedCircuitBreakerMetrics.ofCircuitBreakerRegistry(registry).bindTo(meters);
-                return registry.circuitBreaker(NAME, CircuitBreakerConfig.custom()
+                // Which failures count is the client's rule (breakerRules); only the numbers are set here.
+                return registry.circuitBreaker(NAME, ResilientWikipediaFeedClient.breakerRules()
                                 .slidingWindowSize(BREAKER_WINDOW)
                                 .minimumNumberOfCalls(BREAKER_MIN_CALLS)
                                 .failureRateThreshold(BREAKER_FAILURE_RATE)
                                 .permittedNumberOfCallsInHalfOpenState(BREAKER_HALF_OPEN_CALLS)
                                 .waitDurationInOpenState(properties.resilience().breakerOpenDuration())
-                                // Only faults of the integration count. A 429 is the cool-down's business,
-                                // and a full bulkhead is our own limit, not evidence Wikipedia is unwell.
-                                .recordExceptions(UpstreamUnavailableException.class,
-                                                UpstreamBadResponseException.class)
-                                .ignoreExceptions(UpstreamRateLimitedException.class, BulkheadFullException.class)
                                 .build());
         }
 
@@ -150,10 +140,9 @@ public class WikimediaClientConfig {
         public Retry wikipediaRetry(HistoryProperties properties, MeterRegistry meters) {
                 RetryRegistry registry = RetryRegistry.ofDefaults();
                 TaggedRetryMetrics.ofRetryRegistry(registry).bindTo(meters);
-                return registry.retry(NAME, RetryConfig.custom()
+                return registry.retry(NAME, ResilientWikipediaFeedClient.retryRules()
                                 .maxAttempts(properties.resilience().retryAttempts())
                                 .waitDuration(properties.resilience().retryWait())
-                                .retryOnException(UpstreamUnavailableException.class::isInstance)
                                 .build());
         }
 
