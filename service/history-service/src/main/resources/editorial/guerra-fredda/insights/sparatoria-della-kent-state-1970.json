@@ -1,0 +1,55 @@
+{
+  "slug": "sparatoria-della-kent-state-1970",
+  "title": "La sparatoria della Kent State",
+  "summary": "Il 4 maggio 1970, alla Kent State University, in Ohio, la Guardia Nazionale spara sugli studenti che protestano contro l'intervento statunitense in Cambogia: quattro morti e nove feriti. Le proteste e lo sciopero studentesco si allargano a tutto il paese.",
+  "date": {
+    "year": 1970,
+    "month": 5,
+    "day": 4
+  },
+  "place": {
+    "name": "Kent State University, Kent, Ohio, Stati Uniti",
+    "lat": 41.1497,
+    "lon": -81.3433,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Il punto è sul campus, vicino a Taylor Hall e al parcheggio di Prentice Hall, dove caddero gli studenti; gli articoli descrivono il luogo ma non danno coordinate."
+  },
+  "before": "Il 30 aprile Nixon annunciò in televisione l'intervento americano in Cambogia. Il 1º maggio circa cinquecento studenti protestarono nel Commons, il prato al centro del campus, e fu fissato un nuovo raduno per il 4 maggio; quella notte in città ci furono disordini e il sindaco Satrom dichiarò lo stato d'emergenza. Il 2 maggio chiese al governatore Rhodes la Guardia Nazionale, che arrivò in serata mentre bruciava l'edificio del ROTC, il corpo universitario di addestramento degli ufficiali. Il 3 maggio Rhodes definì i manifestanti antiamericani e rivoluzionari e disse che avrebbe chiesto a un tribunale di dichiarare lo stato d'emergenza per vietare le proteste, dando l'impressione che fosse in vigore una specie di legge marziale, ma non lo chiese mai.",
+  "event": "A mezzogiorno del 4 maggio, nonostante il divieto annunciato con 12.000 volantini, si radunarono alcune migliaia di persone. La Guardia ordinò di disperdersi e lanciò lacrimogeni, resi poco efficaci dal vento; alcuni studenti risposero con pietre. I soldati, con le baionette inastate, spinsero la folla oltre la collina di Taylor Hall, rimasero una decina di minuti chiusi in un campo d'atletica recintato e poi tornarono indietro. In cima alla collina ventotto di loro si voltarono e, senza preavviso, spararono per tredici secondi tra 61 e 67 colpi. Morirono Allison Krause, Jeffrey Miller, Sandra Scheuer e William Schroeder; nove studenti furono feriti, uno restò paralizzato. Nessuno dei colpiti era a meno di ventidue metri dai soldati.",
+  "after": "Per l'articolo inglese più di quattro milioni di studenti parteciparono allo sciopero e più di 450 campus chiusero; quello di Kent restò chiuso sei settimane. Pochi giorni dopo centomila persone manifestarono a Washington. La foto di John Filo di una ragazza di quattordici anni che grida sul corpo di Miller vinse il premio Pulitzer. Il 14 maggio la polizia uccise due studenti alla Jackson State, nel Mississippi, senza la stessa attenzione nazionale. A settembre la commissione voluta da Nixon giudicò gli spari «non necessari, ingiustificati e inescusabili»; otto soldati furono incriminati, ma nel novembre 1974 un giudice federale fece cadere le accuse.",
+  "links": [
+    {
+      "slug": "campagna-di-cambogia-1970",
+      "reason": "Cinque giorni prima, il 29 aprile 1970, truppe sudvietnamite erano entrate in Cambogia, seguite il 1º maggio da quelle statunitensi."
+    },
+    {
+      "slug": "massacro-di-my-lai-1968",
+      "reason": "Più di due anni prima, il 16 marzo 1968, soldati americani avevano ucciso centinaia di civili a Mỹ Lai, una strage diventata pubblica nel novembre 1969."
+    },
+    {
+      "slug": "pentagon-papers-1971",
+      "reason": "Tredici mesi dopo, il 13 giugno 1971, il New York Times comincia a pubblicare lo studio segreto del Pentagono sulla guerra in Vietnam."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kent State shootings - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kent_State_shootings",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sparatoria della Kent State - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sparatoria_della_Kent_State",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 4 maggio 1970, quattro morti e nove feriti. Su alcuni particolari differiscono. La folla del 4 maggio è stimata in circa 2.000 persone dall'articolo inglese e in circa 3.000 dall'italiano. Sui soldati che spararono entrambi dicono ventotto, ma l'inglese riporta anche che almeno 29 dichiararono di aver sparato, con circa 67 colpi; la cifra di 61-67 colpi è dell'italiano e della targa storica citata dall'inglese. Sui morti l'inglese dice che Krause e Miller erano tra i manifestanti e che Scheuer e Schroeder stavano solo guardando tra una lezione e l'altra; l'italiano dice che uno solo dei quattro partecipava alla protesta, per questo il testo non lo precisa. Sul campus di Kent l'inglese dice chiuso sei settimane, l'italiano fino all'estate. L'articolo inglese dice che l'invasione della Cambogia cominciò il 29 aprile, l'italiano che Nixon la lanciò il 1º maggio. I numeri dello sciopero, la commissione e il processo vengono dall'articolo inglese. Il pin è sul campus, vicino a Taylor Hall."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

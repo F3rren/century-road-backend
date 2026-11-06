@@ -1,0 +1,37 @@
+{
+  "slug": "la-distensione",
+  "title": "La distensione",
+  "tagline": "Dalla Ostpolitik di Brandt al SALT II: i trattati tra le due Germanie, gli accordi sulle armi, la stretta di mano in orbita e Helsinki.",
+  "intro": "Il percorso segue gli anni della distensione, dalla genuflessione di Varsavia del dicembre 1970 alla firma del SALT II del giugno 1979: l'accordo delle quattro potenze su Berlino, gli accordi SALT I, il trattato fondamentale tra le due Germanie, la missione Apollo-Sojuz e l'atto finale di Helsinki.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "genuflessione-di-varsavia-1970",
+      "narrative": "Si parte dal 7 dicembre 1970: Willy Brandt firma il trattato di Varsavia, che accetta la linea Oder-Neisse come confine con la Polonia."
+    },
+    {
+      "insight": "accordo-quadripartito-su-berlino-1971",
+      "narrative": "Il 3 settembre 1971 le quattro potenze si accordano su Berlino, e l'Unione Sovietica garantisce il transito tra Berlino Ovest e la Germania Ovest."
+    },
+    {
+      "insight": "accordi-salt-i-1972",
+      "narrative": "Il 26 maggio 1972, a Mosca, Nixon e Brežnev firmano gli accordi SALT I sulla limitazione delle armi strategiche."
+    },
+    {
+      "insight": "trattato-fondamentale-1972",
+      "narrative": "Il 21 dicembre, a Berlino Est, le due Germanie si riconoscono come stati sovrani con il trattato fondamentale."
+    },
+    {
+      "insight": "missione-apollo-sojuz-1975",
+      "narrative": "Il 15 luglio 1975 partono la Sojuz 19 e l'Apollo; due giorni dopo le navicelle si agganciano in orbita."
+    },
+    {
+      "insight": "atto-finale-di-helsinki-1975",
+      "narrative": "Il 1º agosto, a Helsinki, trentacinque stati firmano l'atto finale, che afferma l'inviolabilità delle frontiere e i diritti dell'uomo."
+    },
+    {
+      "insight": "firma-del-salt-ii-1979",
+      "narrative": "Il 18 giugno 1979, a Vienna, Carter e Brežnev firmano il SALT II, che il Senato statunitense non ratificherà."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "offensiva-di-pasqua-1972",
+  "title": "L'offensiva di Pasqua",
+  "summary": "Il 30 marzo 1972 l'esercito nordvietnamita attacca il Vietnam del Sud su tre fronti, attraverso la zona demilitarizzata e dal Laos e dalla Cambogia, con carri armati e artiglieria pesante. Conquista Quảng Trị, ma è fermato davanti a Huế, Kon Tum e An Lộc, anche dall'aviazione statunitense; la campagna dura fino al 22 ottobre.",
+  "date": {
+    "year": 1972,
+    "month": 3,
+    "day": 30
+  },
+  "place": {
+    "name": "Provincia di Quảng Trị, a sud della zona demilitarizzata, Vietnam",
+    "lat": 16.8800,
+    "lon": 107.0000,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "L'offensiva colpì tre fronti; il punto è nella provincia di Quảng Trị, tra la zona demilitarizzata e Đông Hà, dove il 30 marzo cominciò l'attacco agli avamposti sudvietnamiti più settentrionali. Gli articoli non danno coordinate."
+  },
+  "before": "Dopo il fallimento dell'operazione sudvietnamita Lam Son 719 in Laos, nel 1971, a dicembre il Politburo di Hanoi decise una grande offensiva per l'inizio del 1972, anno di elezioni presidenziali negli Stati Uniti. Le truppe americane si stavano ritirando: ne restavano 69.000, in gran parte di supporto. Cina e Unione Sovietica fornirono centinaia di carri armati, missili e artiglieria pesante. Gli alleati si aspettavano un attacco, ma non attraverso la zona demilitarizzata, che sarebbe stata una violazione aperta degli accordi di Ginevra; a fine marzo l'allarme sembrava passato e il generale Abrams era in Thailandia per le vacanze di Pasqua.",
+  "event": "A mezzogiorno del 30 marzo l'artiglieria colpì gli avamposti più settentrionali della provincia di Quảng Trị, e due divisioni, circa 30.000 uomini con più di cento carri armati, attraversarono la zona demilitarizzata. Il 5 aprile partì dalla Cambogia un attacco verso An Lộc, a nord-est di Saigon, che fu circondata e assediata fino a giugno; dal 12 aprile furono attaccati gli altopiani centrali, verso Kon Tum. Quảng Trị cadde il 2 maggio, ma l'avanzata verso Huế si fermò il 5 maggio. Kon Tum e An Lộc resistettero con un massiccio appoggio aereo statunitense, mentre Nixon faceva riprendere i bombardamenti sul Vietnam del Nord e minare i suoi porti.",
+  "after": "A giugno e luglio i sudvietnamiti contrattaccarono e il 16 settembre ripresero la cittadella di Quảng Trị. Entrambe le parti si dichiararono vincitrici. Più di 25.000 civili sudvietnamiti morirono e quasi un milione lasciò la propria casa. Il Nord ebbe circa 100.000 perdite e perse quasi tutti i carri impiegati, ma mantenne circa il 10 per cento del territorio del Sud, da cui estese le sue vie di rifornimento. A Parigi i negoziati proseguirono con concessioni da entrambe le parti; dopo nuovi bombardamenti americani a dicembre, il 27 gennaio 1973 furono firmati gli accordi di pace di Parigi.",
+  "links": [
+    {
+      "slug": "offensiva-del-tet-1968",
+      "reason": "Più di quattro anni prima, il 30 gennaio 1968, l'offensiva del Têt era stata il precedente grande attacco comunista, condotto soprattutto dai Viet Cong."
+    },
+    {
+      "slug": "viaggio-di-nixon-in-cina-1972",
+      "reason": "Poco più di cinque settimane prima, il 21 febbraio 1972, comincia il viaggio di Nixon in Cina, il cui annuncio aveva sconcertato i dirigenti di Hanoi."
+    },
+    {
+      "slug": "accordi-di-pace-di-parigi-1973",
+      "reason": "Quasi dieci mesi dopo, il 27 gennaio 1973, vengono firmati gli accordi di pace di Parigi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Easter Offensive - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Easter_Offensive",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Offensiva di Pasqua - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Offensiva_di_Pasqua",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la campagna dal 30 marzo al 22 ottobre 1972 e l'inizio a mezzogiorno del 30 marzo. Sugli obiettivi differiscono: per l'inglese l'offensiva doveva ottenere una vittoria decisiva, per l'italiano non era intesa come azione decisiva ma come mossa per distruggere reparti sudvietnamiti e rafforzare Hanoi nei negoziati; per questo il testo non ne dà lo scopo. Altre differenze: l'operazione Linebacker comincia il 9 maggio per l'italiano e il 10 per l'inglese; le perdite sudvietnamite ad An Lộc sono 8.000 morti e feriti, di cui circa 1.000 civili, per l'italiano e 12.500 soldati per l'inglese; tra i carri persi l'italiano conta 34 T-34, l'inglese 60. Solo l'italiano racconta che l'8 ottobre Lê Đức Thọ rinunciò a chiedere le dimissioni di Thiệu. Il pin è nella provincia di Quảng Trị, a sud della zona demilitarizzata, dove l'attacco cominciò."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

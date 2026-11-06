@@ -1,0 +1,55 @@
+{
+  "slug": "accordi-di-pace-di-parigi-1973",
+  "title": "Gli accordi di pace di Parigi",
+  "summary": "Il 27 gennaio 1973 a Parigi Stati Uniti, Vietnam del Nord, Vietnam del Sud e Governo rivoluzionario provvisorio dei Viet Cong firmano l'accordo che stabilisce un cessate il fuoco e il ritiro delle forze statunitensi entro sessanta giorni. L'intervento militare americano finisce, ma i combattimenti tra vietnamiti non si fermano.",
+  "date": {
+    "year": 1973,
+    "month": 1,
+    "day": 27
+  },
+  "place": {
+    "name": "Hotel Majestic, Parigi, Francia",
+    "lat": 48.8707,
+    "lon": 2.2935,
+    "countryCode": "FR",
+    "approximate": true,
+    "note": "L'articolo inglese nomina l'Hotel Majestic di Parigi senza indirizzo né coordinate; l'italiano dice solo Parigi. Il punto è indicativo."
+  },
+  "before": "I colloqui di pace erano cominciati a Parigi nel maggio 1968, dopo che Johnson aveva sospeso in parte i bombardamenti sul Nord. Per l'articolo inglese le trattative decisive si svolsero in segreto tra Henry Kissinger e Lê Đức Thọ dall'agosto 1969. L'8 ottobre 1972 Thọ accettò che il governo di Saigon restasse in carica e Kissinger annunciò che la pace era «a portata di mano». Il presidente sudvietnamita Thiệu, che non era stato informato dei colloqui segreti, respinse la bozza. Dopo nuove richieste americane le trattative si arenarono e dal 18 al 29 dicembre Nixon fece bombardare in modo massiccio il Vietnam del Nord; poi Hanoi tornò a trattare.",
+  "event": "Il 23 gennaio Kissinger e Thọ approvarono un testo che per entrambi gli articoli corrispondeva in sostanza alla bozza di ottobre. Il 27 gennaio lo firmarono all'Hotel Majestic i rappresentanti delle quattro parti. L'accordo prevedeva un cessate il fuoco dalla mezzanotte di Greenwich, il ritiro delle forze statunitensi e alleate entro sessanta giorni, lo scambio dei prigionieri, la riunificazione per vie pacifiche e una commissione internazionale di controllo formata da Canada, Polonia, Ungheria e Indonesia. Le truppe nordvietnamite potevano restare nel Sud, 140.000 soldati per l'articolo italiano, e il governo di Thiệu restava in carica. La zona smilitarizzata rimaneva una linea provvisoria di demarcazione, non un confine internazionale.",
+  "after": "Per l'articolo inglese gli Stati Uniti uscirono dal conflitto, ma i combattimenti tra le parti vietnamite non si fermarono e nel marzo 1973 la guerra era di nuovo aperta. Kissinger e Thọ ricevettero il premio Nobel per la pace del 1973, che Thọ rifiutò. Per l'articolo italiano Kissinger parlò di un «decente intervallo» prima di quello che riteneva l'inevitabile crollo del Sud, e disse che Saigon poteva reggere forse un anno e mezzo. Per l'articolo inglese il 4 gennaio 1974 Thiệu dichiarò che l'accordo non era più in vigore; il 30 aprile 1975 l'offensiva nordvietnamita conquistò Saigon.",
+  "links": [
+    {
+      "slug": "operazione-linebacker-ii-1972",
+      "reason": "Quaranta giorni prima, il 18 dicembre 1972, erano cominciati i bombardamenti di Natale sul Vietnam del Nord."
+    },
+    {
+      "slug": "conferenza-di-ginevra-1954",
+      "reason": "Diciotto anni e mezzo prima, nel luglio 1954, a Ginevra il Vietnam era stato diviso lungo la linea provvisoria che l'accordo mantiene."
+    },
+    {
+      "slug": "caduta-di-saigon-1975",
+      "reason": "Più di due anni dopo, il 30 aprile 1975, le truppe nordvietnamite entrano a Saigon."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Paris Peace Accords - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Paris_Peace_Accords",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordi di pace di Parigi (1973) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordi_di_pace_di_Parigi_(1973)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma a Parigi il 27 gennaio 1973. L'articolo italiano è breve: i particolari sui negoziati segreti, sulla commissione di controllo e su quello che seguì sono soprattutto dell'inglese, la cifra dei 140.000 soldati nordvietnamiti e la frase di Kissinger sull'anno e mezzo dell'italiano (anche l'inglese cita il «decent interval», ma i diciotto mesi vi sono il tempo dopo il quale gli Stati Uniti non sarebbero più intervenuti). Sul compromesso d'autunno l'inglese indica l'8 ottobre 1972, l'italiano il 10 ottobre. Sui firmatari l'inglese parla dei capi delle delegazioni, l'italiano dei ministri degli Esteri; la lista dei firmatari nell'inglese comprende tre ministri degli Esteri e il segretario di Stato statunitense. Il pin è sull'Hotel Majestic, dove l'inglese colloca la firma; le coordinate non vengono dagli articoli e sono approssimate."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

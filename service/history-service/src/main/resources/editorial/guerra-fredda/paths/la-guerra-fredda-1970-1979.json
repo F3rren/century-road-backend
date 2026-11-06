@@ -1,0 +1,45 @@
+{
+  "slug": "la-guerra-fredda-1970-1979",
+  "title": "La guerra fredda, 1970-1979",
+  "tagline": "Dalla genuflessione di Brandt all'invasione dell'Afghanistan: la distensione, la fine della guerra del Vietnam e nuove crisi nel mondo.",
+  "intro": "Il percorso segue gli anni settanta della guerra fredda, dalla genuflessione di Varsavia del dicembre 1970 all'invasione sovietica dell'Afghanistan del dicembre 1979: il viaggio di Nixon in Cina, gli accordi SALT, la pace di Parigi, il colpo di Stato in Cile, la guerra del Kippur, la caduta di Saigon e l'atto finale di Helsinki.\n\nÈ la linea principale del decennio: la distensione, la seconda parte della guerra del Vietnam e i colpi di Stato e le guerre per procura hanno ciascuno un percorso proprio. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "genuflessione-di-varsavia-1970",
+      "narrative": "Si parte dal 7 dicembre 1970: a Varsavia il cancelliere Willy Brandt si inginocchia davanti al monumento alla rivolta del ghetto e firma il trattato con la Polonia."
+    },
+    {
+      "insight": "viaggio-di-nixon-in-cina-1972",
+      "narrative": "Il 21 febbraio 1972 Richard Nixon arriva in Cina, primo presidente degli Stati Uniti a visitare la Repubblica Popolare."
+    },
+    {
+      "insight": "accordi-salt-i-1972",
+      "narrative": "Il 26 maggio, a Mosca, Nixon e Brežnev firmano il trattato sui missili antibalistici e l'accordo provvisorio sulle armi strategiche."
+    },
+    {
+      "insight": "accordi-di-pace-di-parigi-1973",
+      "narrative": "Il 27 gennaio 1973 l'accordo di Parigi stabilisce il cessate il fuoco in Vietnam e il ritiro delle forze statunitensi."
+    },
+    {
+      "insight": "colpo-di-stato-in-cile-1973",
+      "narrative": "L'11 settembre i militari guidati da Augusto Pinochet rovesciano il governo di Salvador Allende, che muore nel palazzo della Moneda."
+    },
+    {
+      "insight": "guerra-del-kippur-1973",
+      "narrative": "Il 6 ottobre Egitto e Siria attaccano Israele; Stati Uniti e Unione Sovietica riforniscono i rispettivi alleati con ponti aerei."
+    },
+    {
+      "insight": "caduta-di-saigon-1975",
+      "narrative": "Il 30 aprile 1975 le truppe nordvietnamite entrano a Saigon e il Vietnam del Sud si arrende."
+    },
+    {
+      "insight": "atto-finale-di-helsinki-1975",
+      "narrative": "Il 1º agosto, a Helsinki, trentacinque stati firmano l'atto finale della Conferenza sulla sicurezza e la cooperazione in Europa."
+    },
+    {
+      "insight": "invasione-sovietica-dell-afghanistan-1979",
+      "narrative": "Tra il 24 e il 27 dicembre 1979 l'esercito sovietico entra in Afghanistan e a Kabul uccide il leader Hafizullah Amin."
+    }
+  ]
+}

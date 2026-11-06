@@ -1,0 +1,55 @@
+{
+  "slug": "guerra-del-kippur-1973",
+  "title": "La guerra del Kippur",
+  "summary": "Il 6 ottobre 1973, giorno dello Yom Kippur, Egitto e Siria attaccano a sorpresa Israele nel Sinai e sul Golan. Stati Uniti e Unione Sovietica riforniscono con ponti aerei i rispettivi alleati; dopo una minaccia sovietica e un'allerta americana, il cessate il fuoco del 25 ottobre chiude la guerra.",
+  "date": {
+    "year": 1973,
+    "month": 10,
+    "day": 6
+  },
+  "place": {
+    "name": "Canale di Suez, sponda del Sinai, Egitto",
+    "lat": 30.5500,
+    "lon": 32.4000,
+    "countryCode": "EG",
+    "approximate": true,
+    "note": "Il punto indica la zona dell'attraversamento egiziano del canale, a est di Ismailia, sul lato del Sinai; la guerra si combatté lungo tutto il canale e anche sulle alture del Golan."
+  },
+  "before": "Nella guerra dei sei giorni del 1967 Israele aveva occupato il Sinai egiziano e parte del Golan siriano. Per l'articolo inglese le proposte di pace di Sadat del 1971 e del febbraio 1973 non furono accolte da Golda Meir; gli Stati Uniti consideravano Israele un alleato nella guerra fredda e Kissinger temeva che una vittoria araba rafforzasse l'influenza sovietica. Per l'articolo italiano nel giugno 1972 Sadat aveva espulso quasi tutti i ventimila militari sovietici; per l'inglese dalla fine del 1972 l'Egitto ricevette da Mosca caccia, missili e carri armati. Le due superpotenze perseguivano la distensione. L'intelligence israeliana scambiò i preparativi per esercitazioni, e la mattina del 6 ottobre Meir escluse un attacco preventivo per non perdere l'aiuto americano.",
+  "event": "Alle due del pomeriggio l'Egitto aprì l'operazione Badr e le sue truppe attraversarono il canale di Suez, mentre i siriani avanzavano sul Golan; i primi contrattacchi israeliani fallirono. Per l'articolo inglese il 9 ottobre l'Unione Sovietica cominciò a rifornire Egitto e Siria per via aerea e Nixon ordinò l'operazione Nickel Grass, il ponte aereo per Israele; le flotte delle due potenze nel Mediterraneo si fronteggiarono. Dal 15 ottobre gli israeliani passarono il canale. Il cessate il fuoco del 22 ottobre, negoziato da Stati Uniti e Unione Sovietica, non resse, e il 23 gli israeliani accerchiarono la Terza Armata egiziana. Il 24 Brežnev minacciò di agire da solo; gli Stati Uniti alzarono l'allerta a DEFCON 3, l'Egitto rinunciò all'aiuto sovietico e il 25 una nuova risoluzione ONU fermò la guerra.",
+  "after": "Gli arabi dell'OPEC ridussero la produzione di petrolio e decretarono un embargo contro gli Stati Uniti e altri paesi filoisraeliani, da cui la crisi petrolifera. Il 28 ottobre cominciarono le trattative al chilometro 101, a dicembre si aprì la conferenza di Ginevra promossa dalle due superpotenze e Kissinger avviò la sua diplomazia della spola: Egitto e Israele firmarono un primo accordo di disimpegno il 18 gennaio 1974, la Siria il 31 maggio. In Israele le polemiche portarono alle dimissioni di Golda Meir l'11 aprile 1974. Per l'articolo inglese la guerra fu un antecedente diretto degli accordi di Camp David del 1978, e l'Egitto si allontanò dall'Unione Sovietica.",
+  "links": [
+    {
+      "slug": "crisi-di-suez-1956",
+      "reason": "Diciassette anni prima, nell'ottobre 1956, Israele aveva già invaso il Sinai e le superpotenze erano intervenute per fermare la guerra."
+    },
+    {
+      "slug": "accordi-salt-i-1972",
+      "reason": "Circa sedici mesi prima, il 26 maggio 1972, Stati Uniti e Unione Sovietica firmavano i SALT I, nella distensione che per l'articolo inglese le due potenze perseguivano ancora alla vigilia della guerra."
+    },
+    {
+      "slug": "colpo-di-stato-in-cile-1973",
+      "reason": "Venticinque giorni prima, l'11 settembre 1973, un golpe militare rovesciava in Cile il governo di Salvador Allende."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yom Kippur War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yom_Kippur_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra del Kippur - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_del_Kippur",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la guerra dal 6 al 25 ottobre 1973. I ponti aerei, lo scontro navale nel Mediterraneo, la lettera di Brežnev e il DEFCON 3 sono descritti nell'articolo inglese; l'italiano parla in generale dell'intervento delle due superpotenze, di fasi che fecero temere un conflitto globale e del cessate il fuoco del 22 ottobre negoziato tra Washington e Mosca. Sul ponte aereo americano gli articoli divergono: per l'inglese Nixon lo ordinò il 9 ottobre e i primi aerei militari arrivarono il 14, per l'italiano partì il 13. Per l'inglese il passaggio a DEFCON 3 fu deciso da Kissinger e da altri alti funzionari senza svegliare Nixon, nel pieno dello scandalo Watergate. Il pin è qualche chilometro a est del canale, sul lato del Sinai, ed è approssimato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

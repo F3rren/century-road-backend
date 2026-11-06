@@ -1,0 +1,57 @@
+{
+  "slug": "viaggio-di-nixon-in-cina-1972",
+  "title": "Il viaggio di Nixon in Cina",
+  "summary": "Dal 21 al 28 febbraio 1972 il presidente statunitense Richard Nixon visita Pechino, Hangzhou e Shanghai: è il primo presidente degli Stati Uniti a recarsi nella Repubblica Popolare Cinese, con cui Washington non aveva rapporti diplomatici dal 1949. Il 27 febbraio i due governi diffondono il comunicato di Shanghai.",
+  "date": {
+    "year": 1972,
+    "month": 2,
+    "day": 21
+  },
+  "place": {
+    "name": "Pechino, Cina",
+    "lat": 39.9042,
+    "lon": 116.4074,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto indica Pechino, capitale della Repubblica Popolare Cinese e sede degli incontri con Mao Zedong e Zhou Enlai. Per l'articolo inglese Nixon atterrò prima a Shanghai e poi proseguì per Pechino; la visita toccò anche Hangzhou e si chiuse a Shanghai."
+  },
+  "before": "Dopo la vittoria comunista del 1949 e la ritirata del Kuomintang a Taiwan, gli Stati Uniti avevano continuato a riconoscere la Repubblica di Cina, con sede a Taipei, come unico governo della Cina, e i rapporti con Pechino erano ostili. Per l'articolo inglese, dopo la rottura sino-sovietica la dirigenza cinese cercava alleati contro l'Unione Sovietica, mentre Washington voleva più peso nei confronti di Mosca e una soluzione della guerra del Vietnam. Per l'articolo italiano nel 1969 gli Stati Uniti tolsero alcune restrizioni commerciali e nel 1971 la loro squadra di tennistavolo fu invitata in Cina. Nel luglio 1971 Henry Kissinger andò in segreto a Pechino durante un viaggio in Pakistan e il 15 luglio Nixon annunciò la visita in televisione.",
+  "event": "Il 21 febbraio Nixon atterrò a Shanghai e proseguì per Pechino, dove quasi subito Mao Zedong lo ricevette per un breve incontro. Durante la settimana Nixon ebbe molti colloqui con il primo ministro Zhou Enlai e visitò la Grande Muraglia, Hangzhou e Shanghai, mentre la moglie Pat visitava scuole, ospedali e fabbriche seguita dalla stampa americana; per l'articolo inglese il pubblico statunitense vide immagini della Cina continentale per la prima volta dopo oltre due decenni. Il 27 febbraio i due governi diffusero il comunicato di Shanghai: si impegnavano a lavorare verso la piena normalizzazione dei rapporti e prendevano atto delle divergenze su Taiwan. Nixon parlò della «settimana che ha cambiato il mondo» e ripartì il 28 febbraio.",
+  "after": "Per l'articolo inglese gli Stati Uniti mantennero i rapporti ufficiali con la Repubblica di Cina fino al 1979, quando l'amministrazione Carter spostò il riconoscimento diplomatico da Taipei a Pechino. Taiwan protestò formalmente, e anche Giappone e Corea del Sud reagirono con sconcerto perché non erano stati consultati; entro un anno diversi alleati degli Stati Uniti, fra cui Giappone, Australia e Germania Ovest, ruppero con Taiwan per stabilire rapporti con Pechino. Nell'autunno 1971 il primo ministro vietnamita Phạm Văn Đồng aveva chiesto invano a Mao di annullare la visita, e i dirigenti vietnamiti videro nel riavvicinamento un tradimento. Per l'articolo italiano la dichiarazione cinese contro chi cercasse la supremazia nell'area era di fatto un avvertimento all'Unione Sovietica.",
+  "links": [
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Più di ventidue anni prima, il 1° ottobre 1949, Mao aveva proclamato la Repubblica Popolare Cinese."
+    },
+    {
+      "slug": "ritirata-a-taiwan-1949",
+      "reason": "Più di ventidue anni prima, nel dicembre 1949, il governo della Repubblica di Cina si era ritirato a Taiwan."
+    },
+    {
+      "slug": "accordi-salt-i-1972",
+      "reason": "Poco più di tre mesi dopo, il 26 maggio, Nixon firma a Mosca gli accordi SALT I."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1972 visit by Richard Nixon to China - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1972_visit_by_Richard_Nixon_to_China",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Visita di Nixon in Cina del 1972 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Visita_di_Nixon_in_Cina_del_1972",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la visita dal 21 al 28 febbraio 1972; la data è quella dell'arrivo. Il viaggio, l'incontro con Mao, le reazioni di Taiwan, Giappone, Corea del Sud e Vietnam e il riconoscimento del 1979 vengono dall'articolo inglese; le restrizioni commerciali del 1969, la diplomazia del ping pong e la lettura antisovietica del comunicato dall'articolo italiano.",
+    "Gli articoli divergono su alcuni punti. L'inglese dice che all'incontro con Mao erano presenti anche Kissinger e Winston Lord; l'italiano dice che il segretario di Stato Rogers fu escluso dal viaggio e che Lord era l'unico americano presente oltre al presidente. Sul comunicato l'italiano scrive che gli americani riconobbero l'indivisibilità della Cina e si impegnarono a ritirare le forze da Taiwan, mentre l'inglese parla solo di divergenze riconosciute e accantonate. L'italiano data gli incontri segreti di Kissinger tra il 9 e l'11 luglio 1971.",
+    "La frase di Nixon è tradotta dall'inglese «This was the week that changed the world»."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
