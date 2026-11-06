@@ -92,10 +92,7 @@ public class ReportService {
                 throw invalid("an EVENT needs year, month and day",
                         "Per segnalare un evento servono anno, mese e giorno.");
             }
-            if (target.year() < OnThisDayQuery.MIN_YEAR || target.year() > OnThisDayQuery.MAX_YEAR) {
-                throw new InvalidRequestException("INVALID_YEAR", "year out of range",
-                        "L'anno deve essere compreso tra " + OnThisDayQuery.MIN_YEAR + " e " + OnThisDayQuery.MAX_YEAR + ".");
-            }
+            OnThisDayQuery.requireYear(target.year());
             var day = OnThisDayQuery.parseDay(target.month(), target.day());
             Language language = OnThisDayQuery.parseLanguage(target.language() == null ? "it" : target.language());
             String text = clean(target.text());

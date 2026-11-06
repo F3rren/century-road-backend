@@ -16,10 +16,7 @@ public record SamePeriodQuery(int year, int span, Language language, String excl
     public static final int MAX_PER_COUNTRY = 10;
 
     public static SamePeriodQuery of(int year, Integer span, String lang, String excludeCountry, Integer perCountry) {
-        if (year < OnThisDayQuery.MIN_YEAR || year > OnThisDayQuery.MAX_YEAR) {
-            throw new InvalidRequestException("INVALID_YEAR", "year out of range",
-                    "L'anno deve essere compreso tra " + OnThisDayQuery.MIN_YEAR + " e " + OnThisDayQuery.MAX_YEAR + ".");
-        }
+        OnThisDayQuery.requireYear(year);
         int s = span == null ? DEFAULT_SPAN : span;
         if (s < 0 || s > MAX_SPAN) {
             throw new InvalidRequestException("INVALID_SPAN", "span must be between 0 and " + MAX_SPAN + ", got " + s,

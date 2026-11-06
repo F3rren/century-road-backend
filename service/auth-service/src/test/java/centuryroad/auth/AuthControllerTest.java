@@ -11,7 +11,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.context.annotation.Import;
+import org.springframework.http.HttpEntity;
+import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.test.context.ActiveProfiles;
@@ -137,6 +140,24 @@ class AuthControllerTest {
             assertThat(refused.getBody()).doesNotContain("@test.it").doesNotContain("Wrong password")
                     .doesNotContain("No matching");
         }
+    }
+
+    @Test
+    void aBodyThatIsNotJsonIsABadRequestNotAServerError() {
+        HttpHeaders headers = new HttpHeaders();
+        headers.setContentType(MediaType.APPLICATION_JSON);
+
+        ResponseEntity<String> resp = rest.postForEntity("/api/auth/login",
+                new HttpEntity<>("{not json", headers), String.class);
+
+        assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+    }
+
+    @Test
+    void theWrongMethodIsMethodNotAllowedNotAServerError() {
+        ResponseEntity<String> resp = rest.getForEntity("/api/auth/login", String.class);
+
+        assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.METHOD_NOT_ALLOWED);
     }
 
     @Test

@@ -2,7 +2,7 @@ package centuryroad.history.controller;
 
 import centuryroad.history.config.RequestCorrelationFilter;
 import centuryroad.history.dto.ApiEnvelope;
-import centuryroad.history.exception.InvalidRequestException;
+import centuryroad.history.query.RandomEventQuery;
 import centuryroad.history.service.ViewStatsService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-
-import java.util.regex.Pattern;
 
 /**
  * Anonymous, aggregate view tracking. There is exactly one signal here - "a
@@ -39,8 +37,6 @@ import java.util.regex.Pattern;
 @Tag(name = "Tracking", description = "Anonymous, aggregate view counters")
 public class TrackingController {
 
-    private static final Pattern COUNTRY_CODE = Pattern.compile("^[A-Z]{2}$");
-
     private final ViewStatsService viewStats;
 
     public TrackingController(ViewStatsService viewStats) {
@@ -56,12 +52,7 @@ public class TrackingController {
     @PostMapping("/country/{code}")
     public ResponseEntity<ApiEnvelope<Void>> trackCountry(
             @Parameter(description = "ISO 3166-1 alpha-2 country code, uppercase.", example = "IT") @PathVariable String code) {
-        if (!COUNTRY_CODE.matcher(code).matches()) {
-            throw new InvalidRequestException("INVALID_COUNTRY_CODE",
-                    "code must be two uppercase ISO 3166-1 alpha-2 letters, got: " + code,
-                    "Codice paese non valido.");
-        }
-        viewStats.recordCountryView(code);
+        viewStats.recordCountryView(RandomEventQuery.parseCountry(code));
         return ResponseEntity.accepted().body(ApiEnvelope.success(null, null, RequestCorrelationFilter.current()));
     }
 }

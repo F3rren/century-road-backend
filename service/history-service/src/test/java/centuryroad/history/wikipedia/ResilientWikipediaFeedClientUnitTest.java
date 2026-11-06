@@ -12,9 +12,7 @@ import io.github.resilience4j.bulkhead.Bulkhead;
 import io.github.resilience4j.bulkhead.BulkheadConfig;
 import io.github.resilience4j.bulkhead.BulkheadFullException;
 import io.github.resilience4j.circuitbreaker.CircuitBreaker;
-import io.github.resilience4j.circuitbreaker.CircuitBreakerConfig;
 import io.github.resilience4j.retry.Retry;
-import io.github.resilience4j.retry.RetryConfig;
 import org.junit.jupiter.api.Test;
 
 import java.time.Duration;
@@ -67,15 +65,13 @@ class ResilientWikipediaFeedClientUnitTest {
         return new UpstreamUnavailableException("down", null);
     }
 
+    /** The service's own rules for what counts and what is retried; only the numbers are the test's. */
     private ResilientWikipediaFeedClient client(int retryAttempts, int breakerWindow, int maxConcurrent) {
-        CircuitBreaker breaker = CircuitBreaker.of("t", CircuitBreakerConfig.custom()
+        CircuitBreaker breaker = CircuitBreaker.of("t", ResilientWikipediaFeedClient.breakerRules()
                 .slidingWindowSize(breakerWindow).minimumNumberOfCalls(breakerWindow).failureRateThreshold(50)
-                .waitDurationInOpenState(Duration.ofSeconds(30))
-                .recordExceptions(UpstreamUnavailableException.class, UpstreamBadResponseException.class)
-                .ignoreExceptions(UpstreamRateLimitedException.class, BulkheadFullException.class).build());
-        Retry retry = Retry.of("t", RetryConfig.custom().maxAttempts(retryAttempts)
-                .waitDuration(Duration.ofMillis(1))
-                .retryOnException(UpstreamUnavailableException.class::isInstance).build());
+                .waitDurationInOpenState(Duration.ofSeconds(30)).build());
+        Retry retry = Retry.of("t", ResilientWikipediaFeedClient.retryRules().maxAttempts(retryAttempts)
+                .waitDuration(Duration.ofMillis(1)).build());
         Bulkhead bulkhead = Bulkhead.of("t", BulkheadConfig.custom()
                 .maxConcurrentCalls(maxConcurrent).maxWaitDuration(Duration.ZERO).build());
         return new ResilientWikipediaFeedClient(scripted, breaker, retry, bulkhead, new UpstreamCooldown(clock));

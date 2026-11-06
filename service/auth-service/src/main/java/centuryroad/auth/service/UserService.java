@@ -1,5 +1,6 @@
 package centuryroad.auth.service;
 
+import centuryroad.auth.exception.ResourceNotFoundException;
 import centuryroad.auth.model.User;
 import centuryroad.auth.repository.UserRepository;
 import org.springframework.stereotype.Service;
@@ -25,7 +26,12 @@ public class UserService {
         return userRepository.findById(id).orElse(null);
     }
 
+    /** Throws ResourceNotFoundException when no user has the id: deleting nobody is not a success. */
     public void deleteById(Long id) {
+        if (!userRepository.existsById(id)) {
+            throw new ResourceNotFoundException("No user with id " + id,
+                    String.format("L'utente con ID %d non esiste.", id));
+        }
         userRepository.deleteById(id);
     }
 }

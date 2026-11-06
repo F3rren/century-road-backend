@@ -198,4 +198,38 @@ class AdminUserControllerTest {
         assertThat(secondDelete.getStatusCode()).isEqualTo(HttpStatus.NOT_FOUND);
         assertThat(userRepository.findById(regularUserId)).isEmpty();
     }
+
+    // ----- a request that is not valid is a 400, never a 500 ------------------------------
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void aNonPositiveIdIsAValidationErrorNotAServerError() throws Exception {
+        ResponseEntity<String> put = call("/api/admin/users/0", HttpMethod.PUT, adminToken,
+                Map.of("email", "x@test.it", "role", "user"));
+        ResponseEntity<String> delete = call("/api/admin/users/0", HttpMethod.DELETE, adminToken, null);
+
+        for (ResponseEntity<String> resp : List.of(put, delete)) {
+            assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+            Map<String, Object> body = objectMapper.readValue(resp.getBody(), Map.class);
+            assertThat(body.get("error")).isEqualTo("VALIDATION_ERROR");
+            assertThat(body.get("userMessage")).isEqualTo("L'ID dell'utente deve essere un numero positivo.");
+        }
+    }
+
+    @Test
+    @SuppressWarnings("unchecked")
+    void aMalformedEmailInAnUpdateIsAValidationErrorNotAServerError() throws Exception {
+        ResponseEntity<String> resp = call("/api/admin/users/" + regularUserId, HttpMethod.PUT, adminToken,
+                Map.of("email", "non-e-una-email", "role", "user"));
+
+        assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+        assertThat(objectMapper.readValue(resp.getBody(), Map.class).get("error")).isEqualTo("VALIDATION_ERROR");
+    }
+
+    @Test
+    void anIdThatIsNotANumberIsABadRequestNotAServerError() {
+        ResponseEntity<String> resp = call("/api/admin/users/abc", HttpMethod.DELETE, adminToken, null);
+
+        assertThat(resp.getStatusCode()).isEqualTo(HttpStatus.BAD_REQUEST);
+    }
 }

@@ -10,7 +10,6 @@ import centuryroad.auth.dto.UserListPayload;
 import centuryroad.auth.dto.UserRegisterAck;
 import centuryroad.auth.dto.UserSummaryDto;
 import centuryroad.auth.dto.UserUpdateAck;
-import centuryroad.auth.exception.ResourceNotFoundException;
 import centuryroad.auth.model.User;
 import centuryroad.auth.service.AuthService;
 import centuryroad.auth.service.UserService;
@@ -115,10 +114,6 @@ public class AdminUserController {
         @DeleteMapping("/{id}")
         public ResponseEntity<ApiEnvelope<DeletedUserResponse>> deleteUser(
                         @Parameter(description = "The user's id, a positive number.", example = "42") @PathVariable("id") @Positive(message = USER_ID_POSITIVE) Long id) {
-                if (userService.findById(id) == null) {
-                        throw new ResourceNotFoundException("No user with id " + id,
-                                        String.format("L'utente con ID %d non esiste.", id));
-                }
                 userService.deleteById(id);
                 return ResponseEntity.ok(ApiEnvelope.success("Utente eliminato con successo",
                                 new DeletedUserResponse(id), RequestCorrelationFilter.current()));
