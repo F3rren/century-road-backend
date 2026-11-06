@@ -1,0 +1,73 @@
+{
+  "slug": "genuflessione-di-varsavia-1970",
+  "title": "La genuflessione di Varsavia",
+  "summary": "Il 7 dicembre 1970 a Varsavia il cancelliere della Germania Ovest Willy Brandt, dopo aver deposto una corona davanti al monumento alla rivolta del ghetto, si inginocchia in silenzio. Lo stesso giorno firma con la Polonia il trattato di Varsavia, che accetta la linea Oder-Neisse come confine.",
+  "date": {
+    "year": 1970,
+    "month": 12,
+    "day": 7
+  },
+  "place": {
+    "name": "Monumento agli eroi del ghetto, Varsavia, Polonia",
+    "lat": 52.2496,
+    "lon": 20.993,
+    "countryCode": "PL",
+    "approximate": false
+  },
+  "before": "Brandt si era opposto al regime nazista e aveva passato in esilio gran parte degli anni di Hitler; nel 1969 era diventato cancelliere. Per l'articolo italiano sull'Ostpolitik il suo governo cercava di normalizzare i rapporti con la Germania Est e con gli altri paesi del blocco orientale, e il 12 agosto 1970 aveva firmato il trattato di Mosca, con il riconoscimento del confine Oder-Neisse. Per l'articolo inglese sul trattato di Varsavia, la Polonia temeva che un governo tedesco cercasse di riprendersi gli ex territori orientali, passati a lei con la linea Oder-Neisse imposta alla Germania dall'Unione Sovietica nel 1945.",
+  "event": "Brandt era in Polonia per firmare il trattato. Davanti al monumento alla rivolta del ghetto, dopo aver deposto una corona, si inginocchiò, in modo inatteso, e restò in silenzio per circa trenta secondi, circondato da autorità e fotografi. Nelle sue memorie scrisse che il gesto non era stato preparato: «Ho fatto ciò che fanno gli uomini quando le parole vengono meno». Lo stesso giorno, per l'articolo inglese nel palazzo presidenziale, Brandt e il primo ministro polacco Józef Cyrankiewicz firmarono il trattato: le due parti si impegnavano alla non violenza e accettavano come confine la linea Oder-Neisse.",
+  "after": "In Germania Ovest il gesto fu controverso: per un sondaggio di Der Spiegel dell'epoca il 48% lo giudicò eccessivo e il 41% appropriato. Per l'articolo italiano l'opposizione lo usò tra gli argomenti della sfiducia costruttiva dell'aprile 1972, respinta per due voti. Il Bundestag ratificò il trattato il 17 maggio 1972. Brandt ricevette il premio Nobel per la pace nel 1971 e, secondo entrambi gli articoli sul gesto, questo è ritenuto una delle ragioni. Il trattato sul confine tedesco-polacco del 14 novembre 1990 riaffermò la linea Oder-Neisse per la Germania riunificata.",
+  "links": [
+    {
+      "slug": "rivolta-del-ghetto-di-varsavia-1943",
+      "reason": "Più di ventisette anni prima, il 19 aprile 1943, gli ebrei del ghetto di Varsavia si erano ribellati alle SS."
+    },
+    {
+      "slug": "conferenza-di-potsdam-1945",
+      "reason": "Più di venticinque anni prima, a Potsdam, il confine orientale tedesco era stato spostato in via provvisoria sulla linea Oder-Neisse."
+    },
+    {
+      "slug": "accordo-quadripartito-su-berlino-1971",
+      "reason": "Quasi nove mesi dopo, il 3 settembre 1971, le quattro potenze si accordano su Berlino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Kniefall von Warschau - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Kniefall_von_Warschau",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Treaty of Warsaw (1970) - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Treaty_of_Warsaw_(1970)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Warschauer Kniefall - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Warschauer_Kniefall",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato di Varsavia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_di_Varsavia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ostpolitik - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ostpolitik",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il gesto è descritto dagli articoli sul Kniefall, inglese e italiano, che concordano su data, luogo e sondaggio di Der Spiegel (l'11% senza opinione). La citazione è tradotta dalla versione inglese delle memorie di Brandt riportata dall'articolo inglese, che ricorda anche i dubbi sulla spontaneità del gesto e la critica dello storico Michael Wolffsohn, per cui Brandt avrebbe confuso la rivolta del ghetto con l'insurrezione di Varsavia. La sfiducia costruttiva del 1972 è solo nell'articolo italiano. Il trattato di Mosca e il suo contenuto vengono dall'articolo italiano sull'Ostpolitik e da quello italiano sul trattato di Varsavia.",
+    "Sul carattere definitivo del confine gli articoli divergono: l'articolo inglese sul Kniefall dice che il trattato riconobbe la linea Oder-Neisse come confine definitivo, mentre l'articolo inglese sul trattato riferisce che i commentatori tedesco-occidentali sostenevano, in base all'articolo IV, che non fosse una sistemazione definitiva, in attesa di un trattato di pace. Il pin è sul monumento agli eroi del ghetto, dove avvenne il gesto; il trattato fu firmato altrove in città."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

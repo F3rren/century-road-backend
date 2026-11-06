@@ -1,0 +1,57 @@
+{
+  "slug": "missione-apollo-sojuz-1975",
+  "title": "La missione Apollo-Sojuz",
+  "summary": "Il 15 luglio 1975 l'Unione Sovietica lancia la Sojuz 19 da Bajkonur e, poche ore dopo, gli Stati Uniti lanciano un'Apollo da Cape Canaveral; il 17 luglio le due navicelle si agganciano in orbita e i comandanti Stafford e Leonov si stringono la mano. È la prima missione spaziale congiunta dei due paesi.",
+  "date": {
+    "year": 1975,
+    "month": 7,
+    "day": 15
+  },
+  "place": {
+    "name": "Cosmodromo di Bajkonur, Kazakistan",
+    "lat": 45.965,
+    "lon": 63.305,
+    "countryCode": "KZ",
+    "approximate": true,
+    "note": "La missione si svolse in orbita. Il punto indica il cosmodromo di Bajkonur, da cui per l'articolo italiano partì la Sojuz 19 il giorno d'inizio della missione, e non una rampa precisa; l'Apollo partì da Cape Canaveral, in Florida."
+  },
+  "before": "Per l'articolo inglese, dopo un accordo del 1962 sullo scambio di dati scientifici, la concorrenza tra i programmi spaziali con equipaggio dei due paesi era tornata a crescere, e ciascuno dava poco spazio ai successi dell'altro. La missione fu resa possibile dal miglioramento dei rapporti della distensione: nell'ottobre 1970 il presidente dell'Accademia delle scienze sovietica Mstislav Keldyš rispose a una lettera della NASA che proponeva una missione comune, nel 1971 gli ingegneri dei due paesi si incontrarono a Houston e a Mosca per progettare un sistema di aggancio, ed entro l'aprile 1972 i due governi firmarono un accordo di cooperazione spaziale che prevedeva il volo nel 1975. Per l'articolo italiano la missione segnò un taglio netto con la gara verso lo spazio.",
+  "event": "La Sojuz 19, con Aleksej Leonov e Valerij Kubasov, partì il 15 luglio da Bajkonur; per l'articolo italiano fu il primo lancio sovietico trasmesso in diretta dalle televisioni internazionali. Alcune ore dopo partì da Cape Canaveral l'Apollo con Tom Stafford, Vance Brand e Deke Slayton, con un modulo di aggancio che faceva da camera di equilibrio, perché le due navicelle avevano atmosfere diverse. Il 17 luglio le navicelle si agganciarono e Stafford e Leonov si strinsero la mano attraverso il portello aperto della Sojuz. Gli equipaggi si scambiarono visite, bandiere e doni e fecero esperimenti comuni; dopo quarantaquattro ore le navicelle si staccarono e l'Apollo creò un'eclissi artificiale perché dalla Sojuz si potesse fotografare la corona solare.",
+  "after": "La Sojuz 19 atterrò il 21 luglio nel deserto del Kazakistan, l'Apollo ammarò nel Pacifico il 24 luglio. Durante il rientro gas tossici entrarono nella capsula americana: Brand perse i sensi e i tre astronauti restarono due settimane in ospedale a Honolulu. Fu l'ultimo volo di una navicella Apollo, e gli Stati Uniti non mandarono equipaggi nello spazio per quasi sei anni, fino al primo volo dello Space Shuttle nel 1981. Per l'articolo inglese la cooperazione spaziale di alto profilo poi diminuì, ma la preparazione della missione servì da esperienza per il programma Shuttle-Mir e per la Stazione spaziale internazionale.",
+  "links": [
+    {
+      "slug": "apollo-11",
+      "reason": "Quasi sei anni prima, il 20 luglio 1969, Apollo 11 si era posato sulla Luna."
+    },
+    {
+      "slug": "salyut-1",
+      "reason": "Più di quattro anni prima, il 19 aprile 1971, l'Unione Sovietica aveva lanciato Saljut 1, la prima stazione spaziale."
+    },
+    {
+      "slug": "atto-finale-di-helsinki-1975",
+      "reason": "Poco più di due settimane dopo, il 1° agosto, viene firmato l'Atto finale di Helsinki."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Apollo–Soyuz - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Apollo–Soyuz",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Programma test Apollo-Sojuz - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Programma_test_Apollo-Sojuz",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno i lanci il 15 luglio 1975 e l'aggancio il 17 luglio; la data è quella dei lanci, inizio della missione. Per l'inglese i due lanci furono a sette ore e mezza l'uno dall'altro, per l'italiano a circa sette ore. Il quadro storico, la stretta di mano e l'eredità vengono dall'articolo inglese; Bajkonur, Cape Canaveral, la diretta televisiva e le date di atterraggio e ammaraggio dall'articolo italiano.",
+    "Sulla durata dell'aggancio l'articolo inglese dà sia «un giorno, ventitré ore» sia quarantaquattro ore prima del distacco; l'italiano dà quarantaquattro ore, ed è questo il valore usato.",
+    "Il pin è su Bajkonur, luogo di lancio della Sojuz 19 nominato dall'articolo italiano, perché la missione non ha un luogo a terra; le coordinate indicano il cosmodromo in generale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "slug": "operazione-linebacker-ii-1972",
+  "title": "L'operazione Linebacker II",
+  "summary": "Dal 18 al 29 dicembre 1972, dopo la rottura dei negoziati di Parigi, i bombardieri B-52 statunitensi colpiscono soprattutto le zone di Hanoi e Haiphong, nel Vietnam del Nord. Le perdite americane sono pesanti e muoiono almeno 1.624 civili; a gennaio l'accordo di pace viene firmato su termini molto simili a quelli già concordati in ottobre.",
+  "date": {
+    "year": 1972,
+    "month": 12,
+    "day": 18
+  },
+  "place": {
+    "name": "Hanoi, Vietnam",
+    "lat": 21.0285,
+    "lon": 105.8542,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "I bombardamenti colpirono molti obiettivi nelle zone di Hanoi e Haiphong e lungo le ferrovie del Nord. Il punto è sul centro di Hanoi, dove per le fonti ufficiali nordvietnamite morì la maggior parte dei civili."
+  },
+  "before": "L'8 ottobre 1972 a Parigi Lê Đức Thọ presentò a Henry Kissinger una proposta con cessate il fuoco, ritiro delle forze statunitensi e scambio dei prigionieri; per l'articolo inglese Hanoi non chiedeva più la rimozione del presidente sudvietnamita Thiệu. Thiệu respinse il testo e chiese molte modifiche, 129 per l'articolo inglese, oltre 127 per l'italiano, tra cui il riconoscimento della zona smilitarizzata come confine internazionale. Il 20 novembre Kissinger presentò queste richieste e altre quarantaquattro volute da Nixon; i nordvietnamiti ritirarono a loro volta alcune concessioni. A metà dicembre i colloqui si interruppero e Washington diede ad Hanoi settantadue ore per tornare al tavolo.",
+  "event": "Il 18 dicembre Nixon fece partire i bombardamenti, senza spiegarli alla nazione in televisione. Più di duecento B-52, partiti da Guam e dalla base di U-Tapao in Thailandia e appoggiati da aerei tattici, attaccarono di notte aeroporti, ferrovie, centrali elettriche e depositi intorno a Hanoi e Haiphong, dal 18 al 24 e dal 26 al 29 dicembre, con una pausa per Natale. Le rotte sempre uguali delle prime notti permisero alla contraerea di prevedere gli attacchi, e il 20 dicembre furono abbattuti sette bombardieri, mentre un ottavo precipitò sulla via del ritorno. Per l'articolo inglese il 22 dicembre le bombe distrussero l'ospedale di Bach Mai, uccidendo ventotto tra medici, infermieri e farmacisti. Il 26 dicembre centoventi B-52 attaccarono da direzioni diverse, con un piano rivisto che li faceva entrare e uscire dalla zona degli obiettivi nel giro di venti minuti.",
+  "after": "Il 26 dicembre Hanoi si disse pronta a riprendere i colloqui e Nixon sospese i bombardamenti a nord del 20º parallelo. Per l'articolo inglese Mosca e Pechino protestarono ma non intervennero. Gli Stati Uniti riconobbero la perdita di quindici o sedici B-52, il Nord ne rivendicò trentaquattro; le fonti ufficiali nordvietnamite contano 1.624 civili uccisi. Il 27 gennaio 1973 a Parigi fu firmato un accordo quasi uguale a quello di ottobre. L'effetto dei bombardamenti sul negoziato è discusso: per l'articolo italiano la maggior parte degli storici non conferma che abbiano piegato Hanoi, e per l'inglese un collaboratore di Kissinger disse: «abbiamo bombardato i nordvietnamiti fino a far loro accettare le nostre concessioni».",
+  "links": [
+    {
+      "slug": "offensiva-di-pasqua-1972",
+      "reason": "Circa nove mesi prima, a fine marzo 1972, il Nord aveva lanciato l'offensiva di Pasqua, a cui gli Stati Uniti avevano risposto con la prima operazione Linebacker."
+    },
+    {
+      "slug": "accordi-di-pace-di-parigi-1973",
+      "reason": "Quaranta giorni dopo l'inizio dei bombardamenti, il 27 gennaio 1973, viene firmato a Parigi l'accordo di pace."
+    },
+    {
+      "slug": "operazione-rolling-thunder-1965",
+      "reason": "Quasi otto anni prima, il 2 marzo 1965, erano cominciati i bombardamenti continui sul Vietnam del Nord."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Linebacker II - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Linebacker_II",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Linebacker II - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Linebacker_II",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'operazione dal 18 al 29 dicembre 1972; la data è il 18. Sulle date successive differiscono: l'inglese dice che Nixon sospese i bombardamenti il 30 dicembre, l'italiano dal 29; l'inglese pone la distruzione dell'ospedale di Bach Mai il 22 dicembre, l'italiano parla di un ospedale civile colpito per sbaglio la notte del 20, con ventotto morti. Sulla rottura dei colloqui l'inglese indica il 16 dicembre, l'italiano dice che si chiusero il 13 e che Lê Đức Thọ tornò a Hanoi. L'italiano scrive anche che la fine delle ostilità fu firmata il 9 gennaio 1973, mentre per l'inglese quel giorno Kissinger e Thọ tornarono a Parigi e la firma fu il 27 gennaio: qui si segue l'inglese. Le perdite di B-52 variano molto tra le fonti (quindici secondo i registri citati dall'inglese, sedici ammessi dagli Stati Uniti secondo l'introduzione, trentaquattro rivendicati dal Nord; l'inglese stima anche tra ventidue e ventisette); i 1.624 civili sono la cifra ufficiale nordvietnamita, un altro libro vietnamita citato dall'inglese ne conta 2.368. Il pin è su Hanoi."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,57 @@
+{
+  "slug": "rivoluzione-sandinista-1979",
+  "title": "La rivoluzione sandinista",
+  "summary": "Il 19 luglio 1979 il Fronte sandinista di liberazione nazionale entra a Managua, due giorni dopo le dimissioni e la fuga del presidente Anastasio Somoza Debayle. Finisce la dittatura della famiglia Somoza, al potere dal 1937; per l'articolo inglese il Nicaragua diventa poi uno dei principali terreni di guerra per procura della guerra fredda.",
+  "date": {
+    "year": 1979,
+    "month": 7,
+    "day": 19
+  },
+  "place": {
+    "name": "Managua, Nicaragua",
+    "lat": 12.1150,
+    "lon": -86.2600,
+    "countryCode": "NI",
+    "approximate": true,
+    "note": "Il punto indica la città di Managua; gli articoli non danno un luogo preciso dell'ingresso dei sandinisti."
+  },
+  "before": "La famiglia Somoza governava il Nicaragua dal 1937 con un forte sostegno degli Stati Uniti. Il Fronte sandinista era nato nel 1961 all'università di Managua; per l'articolo inglese riceveva da Cuba armi, fondi e informazioni. Il 10 gennaio 1978 fu ucciso a Managua Pedro Joaquín Chamorro, direttore del giornale d'opposizione La Prensa: seguirono rivolte e uno sciopero generale. Il 22 agosto 1978 un commando guidato da Éden Pastora occupò il Palazzo nazionale con il parlamento in seduta e ottenne denaro e la liberazione di prigionieri. Per l'articolo italiano Carter aveva legato gli aiuti al rispetto dei diritti umani; per l'inglese nel 1978 gli Stati Uniti li sospesero.",
+  "event": "I sandinisti sferrarono l'offensiva finale (per l'articolo italiano cominciata già nel 1978), con l'appoggio di ampi strati della popolazione e, per l'articolo italiano, di parte della Chiesa cattolica e dei governi di Panama, Messico, Costa Rica e Venezuela. Il 16 giugno fu annunciata una Giunta di governo di ricostruzione nazionale, di cui facevano parte tra gli altri Violeta Chamorro, vedova del giornalista ucciso, e Daniel Ortega. Per l'articolo inglese a giugno il Fronte controllava tutto il paese tranne la capitale. Il 17 luglio Somoza si dimise e fuggì a Miami. Per l'articolo inglese il 19 luglio i sandinisti entrarono a Managua; l'articolo italiano data al 20 luglio l'ingresso della Giunta nella capitale.",
+  "after": "Il paese era devastato: per l'articolo italiano i morti erano cinquantamila e centoventimila persone erano fuggite all'estero. Il nuovo governo confiscò i beni dei Somoza, sciolse la Guardia nazionale e avviò una riforma agraria e una campagna di alfabetizzazione. L'amministrazione Carter cercò di collaborare con i sandinisti; dal 1981 Reagan sospese gli aiuti e sostenne in segreto i Contras, formati in parte da ex membri della Guardia di Somoza. La guerra contro i Contras finì nel 1989 e nel 1990 i sandinisti persero le elezioni.",
+  "links": [
+    {
+      "slug": "rivoluzione-cubana-1959",
+      "reason": "Più di vent'anni prima, nel gennaio 1959, la rivoluzione a Cuba, il paese che per l'articolo inglese aiutò i sandinisti con armi e fondi."
+    },
+    {
+      "slug": "guerra-dell-ogaden-1977",
+      "reason": "Due anni prima, il 13 luglio 1977, cominciava nel Corno d'Africa un'altra guerra in cui pesò l'intervento cubano."
+    },
+    {
+      "slug": "invasione-sovietica-dell-afghanistan-1979",
+      "reason": "Poco più di cinque mesi dopo, il 24 dicembre, le truppe sovietiche entrano in Afghanistan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Nicaraguan Revolution - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Nicaraguan_Revolution",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione sandinista - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_sandinista",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 19 luglio 1979, giorno in cui per l'articolo inglese il Fronte sandinista entrò a Managua; l'articolo italiano dice che la Giunta di governo entrò nella capitale il 20 luglio. Entrambi danno il 17 luglio per l'uscita di Somoza: l'inglese parla di dimissioni e fuga a Miami, l'italiano di partenza verso Miami e poi il Paraguay.",
+    "L'aiuto cubano, lo sciopero generale del 23 e 24 gennaio 1978, il controllo di tutto il paese tranne la capitale e la fine della guerra dei Contras nel 1989 sono dell'articolo inglese; la Giunta del 16 giugno, gli appoggi della Chiesa e dei governi vicini all'offensiva finale e le cifre su morti e profughi sono dell'italiano. Gli articoli divergono sulla morte del fondatore Carlos Fonseca, nel 1975 per l'italiano e nel novembre 1976 per l'inglese, e sugli aiuti americani: l'italiano dice che dal 1976 Carter li subordinò ai diritti umani, l'inglese che furono sospesi nel 1978. L'inglese dà anche cifre diverse sui senzatetto e sui profughi del 1979.",
+    "Il pin è sulla città di Managua, un po' a sud della riva del lago."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

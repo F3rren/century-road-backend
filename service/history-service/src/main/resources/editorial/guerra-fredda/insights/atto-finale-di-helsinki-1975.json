@@ -1,0 +1,55 @@
+{
+  "slug": "atto-finale-di-helsinki-1975",
+  "title": "L'atto finale di Helsinki",
+  "summary": "Il 1º agosto 1975 a Helsinki trentacinque stati, tra cui Stati Uniti, Unione Sovietica, Canada e tutti gli stati europei tranne Albania e Andorra, firmano l'atto finale della Conferenza sulla sicurezza e la cooperazione in Europa. Non è un trattato vincolante; afferma l'inviolabilità delle frontiere e il rispetto dei diritti dell'uomo.",
+  "date": {
+    "year": 1975,
+    "month": 8,
+    "day": 1
+  },
+  "place": {
+    "name": "Helsinki, Finlandia",
+    "lat": 60.2,
+    "lon": 24.94,
+    "countryCode": "FI",
+    "approximate": true,
+    "note": "Gli articoli dicono solo che la conferenza si tenne a Helsinki, senza indicare l'edificio; il punto è nella città, un po' all'interno rispetto alla costa."
+  },
+  "before": "Per l'articolo inglese l'atto concluse due anni di negoziati, il cosiddetto processo di Helsinki. Quando Gerald Ford divenne presidente degli Stati Uniti, nell'agosto 1974, le trattative andavano avanti da quasi due anni: l'Unione Sovietica voleva chiuderle in fretta, ma nessuno cedeva, soprattutto sui diritti umani. Henry Kissinger disse a Ford: «non l'abbiamo mai voluto, ma siamo andati dietro agli europei». Negli Stati Uniti gli americani di origine est-europea temevano che l'accordo significasse accettare il dominio sovietico sull'Europa orientale e l'annessione forzata dei paesi baltici; anche il Senato era preoccupato per la sorte dei paesi baltici.",
+  "event": "Per l'articolo inglese la riunione conclusiva della terza fase della conferenza si tenne a Helsinki dal 30 luglio al 1º agosto 1975, quando l'atto fu firmato. Il «decalogo» elencava dieci principi, tra cui il non ricorso alla forza, l'inviolabilità delle frontiere, l'integrità territoriale, il non intervento negli affari interni e il rispetto dei diritti dell'uomo. Altre parti riguardavano la cooperazione economica, scientifica e tecnologica, i ricongiungimenti familiari, i viaggi, gli scambi culturali e il controllo dell'attuazione. Per l'insistenza di Canada, Spagna e Irlanda l'atto ammetteva cambiamenti pacifici dei confini; gli Stati Uniti e altri paesi della NATO ribadirono che non riconoscevano l'annessione di Lituania, Lettonia ed Estonia all'Unione Sovietica.",
+  "after": "Entrambi gli articoli dicono che l'atto fu visto come un passo verso la riduzione delle tensioni e come un successo diplomatico dell'Unione Sovietica, perché consolidava le sue acquisizioni territoriali del dopoguerra. Le norme sui diritti umani divennero però un punto di riferimento per i dissidenti del blocco sovietico: nacque un'organizzazione non governativa per controllarne il rispetto, da cui vennero comitati regionali, tra cui per l'articolo italiano il Gruppo Helsinki di Mosca, e poi la Federazione internazionale di Helsinki e Human Rights Watch. Per l'articolo inglese negli Stati Uniti gli accordi pesarono sulla campagna presidenziale del 1976. Sulla base degli accordi nacque in seguito l'OSCE.",
+  "links": [
+    {
+      "slug": "trattato-fondamentale-1972",
+      "reason": "Più di due anni e sette mesi prima, il 21 dicembre 1972, le due Germanie si erano riconosciute con il trattato fondamentale."
+    },
+    {
+      "slug": "missione-apollo-sojuz-1975",
+      "reason": "Diciassette giorni prima, il 15 luglio 1975, era partita la missione Apollo-Sojuz."
+    },
+    {
+      "slug": "firma-del-salt-ii-1979",
+      "reason": "Quasi quattro anni dopo, il 18 giugno 1979, Stati Uniti e Unione Sovietica firmano il SALT II."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Helsinki Accords - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Helsinki_Accords",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordi di Helsinki - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordi_di_Helsinki",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è quella della firma: l'articolo inglese colloca la riunione finale tra il 30 luglio e il 1º agosto 1975 e, come l'italiano, rimanda a un documento sulla firma del 1º agosto; l'articolo italiano dice solo luglio e agosto 1975. L'articolo inglese sul trattato fondamentale cita un discorso di Helmut Schmidt alla terza fase della conferenza, datata in quel titolo dal 20 luglio al 1º agosto. Ford, Kissinger e le reazioni negli Stati Uniti vengono dall'articolo inglese (la citazione è tradotta); l'elenco dei dieci principi e il Gruppo Helsinki di Mosca dall'italiano. L'italiano dice che l'OSCE fu costituita in seguito agli accordi, l'inglese che fu fondata nel 1995 in base alla Carta di Parigi del 1990."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
