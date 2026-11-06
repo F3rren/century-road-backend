@@ -19,8 +19,8 @@ public record RandomEventQuery(Language language, String countryCode, YearRange 
                 OnThisDayQuery.parseYears(null, fromYear, toYear));
     }
 
-    /** Null when none was given; the same rule and code as everywhere a country code is taken. */
-    static String parseCountry(String countryCode) {
+    /** The one check of a country code in a request, wherever one is taken. Null when none was given. */
+    public static String parseCountry(String countryCode) {
         if (countryCode == null) {
             return null;
         }
