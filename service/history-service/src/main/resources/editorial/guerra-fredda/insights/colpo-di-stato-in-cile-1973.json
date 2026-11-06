@@ -1,0 +1,54 @@
+{
+  "slug": "colpo-di-stato-in-cile-1973",
+  "title": "Il colpo di Stato in Cile",
+  "summary": "L'11 settembre 1973 le forze armate cilene, guidate dal generale Augusto Pinochet, rovesciano il governo del presidente socialista Salvador Allende, eletto nel 1970. Allende muore nel palazzo della Moneda, bombardato dall'aviazione, e una giunta militare prende il potere. Il governo degli Stati Uniti, ostile ad Allende, appoggia la giunta.",
+  "date": {
+    "year": 1973,
+    "month": 9,
+    "day": 11
+  },
+  "place": {
+    "name": "Palazzo della Moneda, Santiago del Cile",
+    "lat": -33.4429,
+    "lon": -70.6540,
+    "countryCode": "CL",
+    "approximate": false
+  },
+  "before": "Nel 1970 Allende, candidato dell'Unità Popolare, ottenne la maggioranza relativa e il Congresso lo confermò presidente dopo che ebbe firmato uno statuto di garanzie costituzionali. Il governo degli Stati Uniti esercitò pressioni diplomatiche, economiche e segrete: la CIA cercò di impedirne l'insediamento e, per l'articolo italiano, con il memorandum di Kissinger del 9 novembre 1970 furono esclusi nuovi aiuti economici bilaterali. Allende nazionalizzò il rame e avviò la riforma agraria; l'inflazione crebbe e dall'ottobre 1972 ci furono ondate di scioperi. Il 29 giugno 1973 fallì un primo tentativo di golpe, il Tanquetazo; il 22 agosto la Camera dei deputati accusò il governo di atti incostituzionali e si appellò ai militari. Pinochet divenne comandante dell'esercito al posto del generale Prats.",
+  "event": "Per l'articolo inglese alle sei del mattino dell'11 settembre la marina aveva già preso Valparaíso, e Allende raggiunse la Moneda con la sua guardia. Rifiutò di dimettersi e di lasciare il paese in aereo con la famiglia, e alla radio pronunciò un discorso di addio. I caccia Hawker Hunter bombardarono il palazzo, attaccato anche da terra; i difensori si arresero verso le due e mezza del pomeriggio. Allende morì nel palazzo: la versione ufficiale fu il suicidio, contestata dagli oppositori del regime, e per l'articolo inglese un'autopsia del 2011 l'ha confermata. Per un rapporto del 2000, citato da entrambi gli articoli, la CIA non istigò il golpe ma ne era a conoscenza.",
+  "after": "La giunta riuniva i comandanti di esercito, aviazione, marina e carabineros; il 13 settembre sciolse il Congresso e mise fuori legge i partiti dell'Unità Popolare. Lo Stadio Nazionale divenne un luogo di detenzione e tortura; nei tre anni seguenti furono arrestate circa centotrentamila persone e i desaparecidos furono migliaia. Al posto della presidenza a rotazione prevista Pinochet ottenne la guida unica della giunta e poi si fece proclamare presidente, per l'articolo inglese alla fine del 1974. Gli Stati Uniti riconobbero e sostennero la giunta. Per l'articolo italiano l'eco del golpe arrivò in Italia, dove Enrico Berlinguer propose un accordo politico tra PCI e Democrazia Cristiana.",
+  "links": [
+    {
+      "slug": "accordi-di-pace-di-parigi-1973",
+      "reason": "Circa sette mesi e mezzo prima, il 27 gennaio 1973, si firmavano gli accordi di pace di Parigi sul Vietnam, mentre in Cile cresceva la crisi del governo Allende."
+    },
+    {
+      "slug": "rivoluzione-cubana-1959",
+      "reason": "Più di quattordici anni prima trionfava la rivoluzione di Fidel Castro; per l'articolo inglese la sua Cuba era alleata del governo Allende."
+    },
+    {
+      "slug": "guerra-del-kippur-1973",
+      "reason": "Venticinque giorni dopo, il 6 ottobre 1973, Egitto e Siria attaccano Israele e le due superpotenze si confrontano in Medio Oriente."
+    }
+  ],
+  "sources": [
+    {
+      "title": "1973 Chilean coup d'état - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/1973_Chilean_coup_d'état",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Colpo di Stato in Cile del 1973 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Colpo_di_Stato_in_Cile_del_1973",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La cronologia della giornata (Valparaíso, orari, resa alle 14.30) e l'autopsia del 2011 sono dell'articolo inglese; il memorandum del 9 novembre 1970 è descritto solo nell'italiano (l'inglese lo cita in bibliografia); gli scioperi, il Tanquetazo, l'appello della Camera e la repressione sono in entrambi; Berlinguer è solo nell'italiano. I due articoli divergono su alcuni dati: il voto di Allende nel 1970 (36,3% per l'italiano, che altrove scrive anche 37,8%; 36,6% per l'inglese), la data dell'appello della Camera (22 agosto per l'italiano, 22 o 23 agosto nell'inglese) e le dimissioni di Prats (22 agosto per l'italiano, 24 per l'inglese). Sulla morte di Allende l'inglese riferisce anche che nel 2011 due periti si dissero inclini a pensare a un assassinio. Il pin è sul palazzo della Moneda."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

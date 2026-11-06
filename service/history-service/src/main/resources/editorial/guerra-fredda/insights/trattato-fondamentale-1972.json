@@ -1,0 +1,55 @@
+{
+  "slug": "trattato-fondamentale-1972",
+  "title": "Il trattato fondamentale",
+  "summary": "Il 21 dicembre 1972 a Berlino Est la Germania Ovest e la Germania Est firmano il trattato fondamentale e si riconoscono per la prima volta come stati sovrani. Invece di ambasciate il trattato prevede rappresentanze permanenti; la firma apre la strada al riconoscimento internazionale della Germania Est.",
+  "date": {
+    "year": 1972,
+    "month": 12,
+    "day": 21
+  },
+  "place": {
+    "name": "Berlino Est, Germania",
+    "lat": 52.517,
+    "lon": 13.4,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Gli articoli dicono solo che il trattato fu firmato a Berlino Est, senza indicare l'edificio; il punto è nel centro della parte orientale della città."
+  },
+  "before": "Per l'articolo italiano, dopo la guerra le zone di occupazione erano diventate due stati distinti, e la dottrina Hallstein della Germania Ovest aveva bloccato per quasi venti anni il dialogo con la Germania Est e i rapporti di questa con altri paesi. Dal 1969, con il cancelliere Willy Brandt, la Germania Ovest cambiò strada: seguirono il trattato di Mosca del 12 agosto 1970, quello di Varsavia del 7 dicembre 1970, l'accordo delle quattro potenze del 3 settembre 1971 e l'accordo sui transiti del 17 dicembre 1971. Alla guida della SED, Walter Ulbricht era stato sostituito dal più accomodante Erich Honecker.",
+  "event": "Dopo l'entrata in vigore dell'accordo delle quattro potenze, i sottosegretari di Stato Egon Bahr per la Germania Ovest e Michael Kohl per la Germania Est negoziarono il testo, poi firmato a Berlino Est. Nei dieci articoli i due stati si impegnavano a rapporti di buon vicinato, a risolvere le dispute senza la forza rispettando l'inviolabilità dei confini, a non rappresentarsi l'uno con l'altro all'estero, e istituivano missioni permanenti presso i rispettivi governi. Per l'articolo inglese il trattato segnava l'abbandono della dottrina Hallstein a favore dell'Ostpolitik.",
+  "after": "In Germania Ovest CDU e CSU contestarono il trattato; il governo bavarese lo portò davanti alla Corte costituzionale, che il 31 luglio 1973 lo giudicò compatibile con la Legge fondamentale. Per l'articolo italiano il Parlamento federale lo aveva approvato l'11 maggio 1973 con 268 voti contro 217; entrò in vigore il 21 giugno 1973. Diversi stati aprirono relazioni con la Germania Est, dall'Australia nel dicembre 1972 agli Stati Uniti nel dicembre 1974, e il 18 settembre 1973 le due Germanie furono ammesse alle Nazioni Unite. Per l'articolo inglese rapporti diplomatici formali tra le due Germanie non ci furono fino alla riunificazione del 1990.",
+  "links": [
+    {
+      "slug": "costruzione-del-muro-di-berlino-1961",
+      "reason": "Più di undici anni prima, il 13 agosto 1961, la Germania Est aveva chiuso il confine con Berlino Ovest."
+    },
+    {
+      "slug": "accordo-quadripartito-su-berlino-1971",
+      "reason": "Più di quindici mesi prima, il 3 settembre 1971, le quattro potenze si erano accordate su Berlino."
+    },
+    {
+      "slug": "atto-finale-di-helsinki-1975",
+      "reason": "Più di due anni e sette mesi dopo, il 1º agosto 1975, trentacinque stati firmano l'atto finale di Helsinki."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Basic Treaty, 1972 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Basic_Treaty,_1972",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato fondamentale - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_fondamentale",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese è breve: il contesto, gli articoli del trattato, la sentenza della Corte costituzionale e il voto vengono dall'articolo italiano. Gli articoli divergono sulle rappresentanze permanenti: per l'inglese la Germania Ovest inviò il primo rappresentante nel febbraio 1974, per l'italiano le rappresentanze furono aperte il 2 maggio 1974, con Günter Gaus e Michael Kohl. Per le relazioni di Regno Unito, Francia e Paesi Bassi con la Germania Est l'inglese dà il febbraio 1973, l'italiano solo il 1973. L'articolo italiano parla di approvazione del Parlamento federale l'11 maggio 1973 e anche di ratifica della Germania Ovest in quella data, e colloca il dibattito sulla ratifica nel Bundesrat tre giorni dopo il 22 maggio. Il voto riportato non dice se ci furono astensioni."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

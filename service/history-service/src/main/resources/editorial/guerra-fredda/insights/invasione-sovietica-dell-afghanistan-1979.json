@@ -1,0 +1,69 @@
+{
+  "slug": "invasione-sovietica-dell-afghanistan-1979",
+  "title": "L'invasione sovietica dell'Afghanistan",
+  "summary": "Tra il 24 e il 27 dicembre 1979 l'esercito sovietico entra in Afghanistan; la sera del 27, a Kabul, reparti speciali assaltano il palazzo Tajbeg e uccidono il leader afghano Hafizullah Amin, sostituito con Babrak Karmal. Comincia una guerra che durerà fino al febbraio 1989.",
+  "date": {
+    "year": 1979,
+    "month": 12,
+    "day": 24
+  },
+  "place": {
+    "name": "Palazzo Tajbeg, Kabul, Afghanistan",
+    "lat": 34.4547,
+    "lon": 69.1100,
+    "countryCode": "AF",
+    "approximate": true,
+    "note": "Il punto è sul palazzo Tajbeg, su un'altura di Kabul, dove fu ucciso Amin; le coordinate sono approssimate e l'invasione riguardò tutto il paese."
+  },
+  "before": "Nell'aprile 1978 il Partito democratico popolare, comunista, aveva preso il potere a Kabul e nel dicembre aveva firmato un trattato di amicizia con l'Unione Sovietica. Le sue riforme e la repressione provocarono una rivolta estesa: nel marzo 1979 a Herat furono uccisi anche un centinaio di cittadini sovietici. Il governo chiese più volte truppe a Mosca, che mandò consiglieri, elicotteri e carri armati ma prese tempo sulla richiesta di intere divisioni. Nel settembre 1979 Hafizullah Amin prese il potere e Nur Mohammad Taraki fu ucciso. A Mosca si temeva che Amin perdesse il controllo del paese e, per l'articolo inglese, che si accordasse con gli Stati Uniti: un sospetto che, per lo stesso articolo, era stato messo in giro dal KGB.",
+  "event": "Per l'articolo italiano l'invasione cominciò la sera del 24 dicembre, quando i primi reparti della 40ª Armata attraversarono l'Amu Darya e i paracadutisti già a Bagram presero la base; per l'inglese l'ordine di passare il confine fu dato per le 15 del 25 dicembre. Il 27 dicembre, verso le 19, circa settecento soldati sovietici, molti in uniforme afghana, occuparono a Kabul ministeri, comandi e centri di comunicazione, mentre i gruppi Alpha e Zenit del KGB, con il cosiddetto «battaglione musulmano», assaltavano il palazzo Tajbeg: era l'operazione Štorm 333. Amin fu ucciso e Radio Kabul annunciò che era stato giustiziato dopo un processo rivoluzionario. I sovietici insediarono al suo posto Babrak Karmal, capo della fazione Parcham.",
+  "after": "Il presidente americano Carter chiese al Senato di rinviare la ratifica del trattato SALT II, impose un embargo sul grano e sulla tecnologia e guidò il boicottaggio delle Olimpiadi di Mosca del 1980; a metà gennaio 1980 l'Assemblea generale dell'ONU condannò l'intervento con 104 voti contro diciotto. La presenza sovietica non pacificò il paese: la guerriglia dei mujaheddin, sostenuti tra gli altri da Pakistan e Stati Uniti, si estese, e le truppe sovietiche lasciarono l'Afghanistan solo il 15 febbraio 1989.",
+  "links": [
+    {
+      "slug": "firma-del-salt-ii-1979",
+      "reason": "Poco più di sei mesi prima, il 18 giugno, Stati Uniti e Unione Sovietica avevano firmato il SALT II, la cui ratifica Carter fece rinviare dopo l'invasione."
+    },
+    {
+      "slug": "rivoluzione-sandinista-1979",
+      "reason": "Poco più di cinque mesi prima, il 19 luglio, i sandinisti erano entrati a Managua; per l'articolo inglese osservatori americani contavano il Nicaragua tra i nuovi regimi filosovietici di quegli anni."
+    },
+    {
+      "slug": "invasione-della-cecoslovacchia-1968",
+      "reason": "Più di undici anni prima, nell'agosto 1968, l'intervento sovietico in Cecoslovacchia, il precedente che l'articolo italiano richiama con la «dottrina Brežnev»."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Soviet–Afghan War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Soviet–Afghan_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra in Afghanistan (1979-1989) - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_in_Afghanistan_(1979-1989)",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operation Storm-333 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Storm-333",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Štorm 333 - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Štorm_333",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 24 dicembre 1979, inizio dell'invasione per l'articolo italiano sulla guerra; l'articolo inglese fa partire l'invasione con l'ordine di Ustinov per le 15 del 25 dicembre. Tutti gli articoli datano al 27 dicembre l'assalto al palazzo Tajbeg; l'articolo italiano sulla guerra usa il nome Štorm 333 per l'intera invasione, mentre gli articoli sull'operazione la limitano all'assalto del 27 (per l'articolo italiano sull'operazione era prevista per il 14 dicembre e fu rinviata).",
+    "Sulla morte di Amin le fonti divergono: per l'articolo italiano sulla guerra fu giustiziato dagli ufficiali del KGB; per l'articolo inglese sull'operazione nessun testimone ne ha confermato i particolari, si raccontò di un processo sommario, e nel 2009 si stabilì che era stato ferito a morte da una scheggia di granata. Il gruppo Grom dell'Alpha conta venticinque uomini per l'articolo inglese e ventiquattro per l'italiano.",
+    "Le reazioni internazionali vengono dai due articoli sulla guerra: l'inglese data il ritiro del SALT II dal Senato al 2 gennaio e il voto dell'Assemblea generale al 15 gennaio, l'italiano mette il voto al 14 gennaio; per questo il testo dice «a metà gennaio». Il pin è sul palazzo Tajbeg."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

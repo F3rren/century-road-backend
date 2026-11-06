@@ -1,0 +1,74 @@
+{
+  "slug": "intervento-cubano-in-angola-1975",
+  "title": "L'intervento cubano in Angola",
+  "summary": "Nel novembre 1975, mentre l'Angola diventa indipendente dal Portogallo e i movimenti di liberazione si combattono già, Cuba avvia l'operazione Carlota e manda migliaia di soldati a sostenere l'MPLA contro l'FNLA e l'UNITA, appoggiate da Stati Uniti, Zaire e Sudafrica. La guerra civile diventa un conflitto per procura tra i due blocchi.",
+  "date": {
+    "year": 1975,
+    "month": 11,
+    "day": 1,
+    "precision": "MONTH"
+  },
+  "place": {
+    "name": "Luanda, Angola",
+    "lat": -8.8500,
+    "lon": 13.3200,
+    "countryCode": "AO",
+    "approximate": true,
+    "note": "Il punto indica la zona di Luanda, dove arrivarono i primi soldati dell'operazione Carlota e dove, a Quifangondo, combatterono per difendere la capitale; il pin è spostato verso l'interno rispetto alla costa."
+  },
+  "before": "Dopo la rivoluzione dei garofani del 25 aprile 1974 il Portogallo lasciò le colonie. Gli accordi di Alvor del 15 gennaio 1975 fissarono l'indipendenza dell'Angola all'11 novembre, ma MPLA, FNLA e UNITA si combattevano già. L'FNLA era sostenuto da Zaire, Stati Uniti e Cina; dal marzo 1975 l'Unione Sovietica aumentò le armi all'MPLA, e Cuba gli mandò consiglieri militari, per l'articolo italiano dalla fine di aprile. Il 18 luglio il presidente Ford approvò un'operazione segreta della CIA per FNLA e UNITA. Il Sudafrica entrò in Angola con l'operazione Savannah, il 14 ottobre per l'articolo inglese sull'intervento, il 23 per gli articoli sulla guerra civile, e avanzò verso Luanda.",
+  "event": "Per l'articolo inglese, dopo che il 2 e 3 novembre istruttori cubani si erano scontrati con i sudafricani a Catengue, il 4 novembre Fidel Castro decise un intervento senza precedenti, chiamato Carlota dal nome della guida di una rivolta di schiavi del 1843. I primi uomini arrivarono a Luanda in aereo dal 7 novembre, il grosso con le navi. Il 10 novembre, a Quifangondo, l'FNLA e i suoi alleati zairesi furono respinti da FAPLA e cubani con i lanciarazzi, e la capitale restò all'MPLA, che l'11 proclamò la Repubblica Popolare dell'Angola. Per l'articolo inglese l'invio delle truppe non era stato concordato con l'Unione Sovietica, che lo accettò e solo da gennaio aiutò con voli a lungo raggio.",
+  "after": "Per l'articolo inglese i cubani fermarono il 13 novembre l'avanzata sudafricana lungo la costa; il 24 novembre gli Stati Uniti denunciarono l'intervento, ma il 20 dicembre il Senato vietò gli aiuti segreti ai movimenti anticomunisti angolani. Dopo la condanna dell'Organizzazione dell'unità africana, il 23 gennaio 1976, il Sudafrica si ritirò e gli ultimi suoi veicoli lasciarono l'Angola il 27 marzo 1976; l'FNLA fu disperso e l'UNITA si ritirò nella boscaglia. Nel 1976 i soldati cubani arrivarono a circa trentaseimila. Restarono in Angola fino al 1991, mentre la guerra civile continuò fino al 2002.",
+  "links": [
+    {
+      "slug": "caduta-di-saigon-1975",
+      "reason": "Circa sei mesi prima, il 30 aprile 1975, cadeva Saigon: per l'articolo inglese gli Stati Uniti lessero l'Angola come una nuova sfida di Mosca dopo le vittorie comuniste in Vietnam."
+    },
+    {
+      "slug": "rivoluzione-cubana-1959",
+      "reason": "Quasi diciassette anni prima trionfava a Cuba la rivoluzione di Fidel Castro, che nel 1975 decise l'intervento in Angola."
+    },
+    {
+      "slug": "guerra-dell-ogaden-1977",
+      "reason": "Circa venti mesi dopo, nel luglio 1977, scoppia la guerra dell'Ogaden, dove per l'articolo inglese sulla guerra civile angolana i soldati cubani combatterono contro le forze somale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuban intervention in Angola - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cuban_intervention_in_Angola",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operación Carlota - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operación_Carlota",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Angolan Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Angolan_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile in Angola - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_in_Angola",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battle of Quifangondo - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Quifangondo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è data solo al mese perché le fonti non indicano un giorno unico: l'articolo italiano sull'operazione Carlota dice «a partire dal novembre 1975»; l'articolo inglese sull'intervento la fa cominciare il 5 novembre nell'introduzione, ma nel testo dice che Castro la decise il 4 e che i primi uomini arrivarono a Luanda il 7, il primo reparto di forze speciali l'8 o il 9. La cronologia dettagliata, il ruolo sovietico e la reazione americana sono dell'articolo inglese sull'intervento; la battaglia di Quifangondo è anche nell'articolo inglese dedicato e in quello italiano sulla guerra civile, che la chiama Kifangondo. I numeri divergono: l'articolo italiano sull'operazione scrive che Cuba sbarcò almeno cinquantamila uomini in quindici giorni, gli articoli sulla guerra civile parlano di diciottomila soldati, quello inglese sull'intervento di circa trentaseimila al massimo nel 1976. Il pin è nella zona di Luanda, spostato all'interno."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

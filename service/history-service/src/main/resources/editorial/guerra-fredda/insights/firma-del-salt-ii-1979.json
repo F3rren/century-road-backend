@@ -1,0 +1,55 @@
+{
+  "slug": "firma-del-salt-ii-1979",
+  "title": "La firma del SALT II",
+  "summary": "Il 18 giugno 1979, nella Redoutensaal della Hofburg a Vienna, Jimmy Carter e Leonid Brežnev firmano il trattato SALT II, che limita i lanciatori di armi strategiche. Il Senato statunitense non lo ratificherà, ma le due parti ne rispetteranno i termini.",
+  "date": {
+    "year": 1979,
+    "month": 6,
+    "day": 18
+  },
+  "place": {
+    "name": "Palazzo della Hofburg, Vienna, Austria",
+    "lat": 48.207,
+    "lon": 16.366,
+    "countryCode": "AT",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese l'accordo SALT I del 1972 aprì la strada a nuove trattative, e i colloqui SALT II tra delegazioni americane e sovietiche durarono dal 1972 al 1979, con l'obiettivo di frenare la produzione di armi nucleari strategiche. Una svolta arrivò al vertice di Vladivostok del novembre 1974, dove il presidente Gerald Ford e il segretario generale Leonid Brežnev concordarono lo schema di base dell'accordo; i suoi elementi dovevano restare in vigore fino al 1985.",
+  "event": "L'accordo fu raggiunto a Vienna il 18 giugno 1979 e firmato da Carter e Brežnev in una cerimonia nella Redoutensaal della Hofburg. Per l'articolo inglese era il primo trattato sulle armi nucleari a prevedere riduzioni reali delle forze strategiche, a 2.250 vettori per parte, contando tutte le categorie. Vietava i nuovi programmi missilistici, cioè i missili con un parametro chiave migliore del 5% rispetto a quelli in servizio, e limitava a 1.320 i missili balistici con testate multiple (MIRV) e i missili a lungo raggio. Gli Stati Uniti conservarono i missili Trident e i missili da crociera; l'Unione Sovietica poté tenere 308 lanciatori di missili pesanti del tipo SS-18.",
+  "after": "Nel settembre 1979 gli Stati Uniti scoprirono una brigata da combattimento sovietica a Cuba, che per l'articolo inglese vi era di stanza dalla crisi dei missili del 1962; sei mesi dopo la firma l'Unione Sovietica invase l'Afghanistan. Alla luce di questi fatti, nel gennaio 1980 Carter ritirò il trattato dall'esame del Senato, che non lo ratificò; non lo ratificò nemmeno il Soviet supremo. Le due parti ne rispettarono comunque i termini. L'accordo scadde il 31 dicembre 1985 senza essere rinnovato e nel 1991 fu superato dal trattato START I.",
+  "links": [
+    {
+      "slug": "accordi-salt-i-1972",
+      "reason": "Sette anni prima, il 26 maggio 1972, Nixon e Brežnev avevano firmato a Mosca gli accordi SALT I."
+    },
+    {
+      "slug": "invasione-sovietica-dell-afghanistan-1979",
+      "reason": "Sei mesi dopo, alla fine di dicembre, l'Unione Sovietica invade l'Afghanistan."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Quasi diciassette anni prima, nell'ottobre 1962, era cominciata la crisi dei missili di Cuba: per l'articolo inglese la brigata sovietica scoperta nel 1979 era sull'isola da allora."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Strategic Arms Limitation Talks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Strategic_Arms_Limitation_Talks",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordi SALT - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordi_SALT",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il testo si basa quasi tutto sull'articolo inglese: l'articolo italiano ha la sezione sul SALT II vuota e dice soltanto che il secondo turno di negoziati durò dal 1972 al 1979. La data e il luogo, la Redoutensaal della Hofburg di Vienna, sono quelli dell'articolo inglese; il pin è sul palazzo.",
+    "L'articolo inglese non è coerente su alcuni punti: nell'introduzione parla di invasione sovietica dell'Afghanistan «del 1980», mentre nella sezione sul SALT II la colloca sei mesi dopo la firma; dice che l'accordo scadde il 31 dicembre 1985 e che le parti continuarono a rispettarlo, ma anche che i termini furono rispettati fino al 1986. Il testo segue la sezione sul SALT II per l'Afghanistan e la scadenza del 1985."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

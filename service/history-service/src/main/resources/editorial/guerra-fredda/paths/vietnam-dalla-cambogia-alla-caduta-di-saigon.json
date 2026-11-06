@@ -1,0 +1,41 @@
+{
+  "slug": "vietnam-dalla-cambogia-alla-caduta-di-saigon",
+  "title": "Vietnam II: dalla Cambogia alla caduta di Saigon",
+  "tagline": "Dall'ingresso in Cambogia alla presa di Saigon: le proteste negli Stati Uniti, i bombardamenti su Hanoi e Haiphong, la pace di Parigi e la fine della guerra.",
+  "intro": "Il percorso segue la seconda parte della guerra del Vietnam, dalla campagna di Cambogia dell'aprile 1970 alla caduta di Saigon dell'aprile 1975: la sparatoria della Kent State, i Pentagon Papers, l'offensiva di Pasqua, l'operazione Linebacker II, gli accordi di Parigi e la presa di Phnom Penh da parte dei khmer rossi.\n\nLa prima parte della guerra, da Dien Bien Phu al Têt, ha un percorso proprio. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "campagna-di-cambogia-1970",
+      "narrative": "Si parte dal 29 aprile 1970: truppe sudvietnamite, e dal 1º maggio statunitensi, entrano in Cambogia contro le basi nordvietnamite."
+    },
+    {
+      "insight": "sparatoria-della-kent-state-1970",
+      "narrative": "Il 4 maggio la Guardia Nazionale spara sugli studenti che protestano alla Kent State University: quattro morti."
+    },
+    {
+      "insight": "pentagon-papers-1971",
+      "narrative": "Il 13 giugno 1971 il New York Times comincia a pubblicare lo studio segreto del Pentagono sulla guerra."
+    },
+    {
+      "insight": "offensiva-di-pasqua-1972",
+      "narrative": "Il 30 marzo 1972 l'esercito nordvietnamita attacca il Sud su tre fronti, con carri armati e artiglieria pesante."
+    },
+    {
+      "insight": "operazione-linebacker-ii-1972",
+      "narrative": "Dal 18 al 29 dicembre i B-52 statunitensi bombardano soprattutto le zone di Hanoi e Haiphong."
+    },
+    {
+      "insight": "accordi-di-pace-di-parigi-1973",
+      "narrative": "Il 27 gennaio 1973 a Parigi si firma il cessate il fuoco; le forze statunitensi lasciano il Vietnam, ma i combattimenti tra vietnamiti non si fermano."
+    },
+    {
+      "insight": "caduta-di-phnom-penh-1975",
+      "narrative": "Il 17 aprile 1975 i khmer rossi entrano a Phnom Penh e ordinano di svuotare la città."
+    },
+    {
+      "insight": "caduta-di-saigon-1975",
+      "narrative": "Tredici giorni dopo, il 30 aprile, le truppe nordvietnamite entrano a Saigon e la guerra finisce."
+    }
+  ]
+}
