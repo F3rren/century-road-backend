@@ -1113,9 +1113,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  80 tests
+cd service/auth-service    && ./mvnw test    #  86 tests
 cd service/gateway         && ./mvnw test    #  47 tests
-cd service/history-service && ./mvnw test    # 424 tests
+cd service/history-service && ./mvnw test    # 426 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1146,6 +1146,25 @@ Compose file fills the ports in when the container starts. `history-service` use
 scraped on a fixed 8082, which is only right in development; with any other `HISTORY_PORT` its
 metrics, and the alerts built on them, were silently empty. Check Prometheus's Status > Targets
 page after changing a port: all three jobs should be `UP`.
+
+**Logs and the request id.** Every response carries `X-Request-Id` (`REQ_` and eight hex digits, minted
+by `RequestCorrelationFilter` in `auth-service` and `history-service`) and the same id is in every line
+either service writes while it answers that request, right after the thread name:
+
+```
+WARN 7166 --- [history-service] [o-auto-1-exec-1] [REQ_F8081BC5] c.h.wikipedia.WikimediaFeedHttpClient : Wikipedia (it) answered 500
+```
+
+So a person who reports a problem and quotes the id can be followed through the log with `grep REQ_F8081BC5`
+(`-` stands in outside a request: startup, the nightly index). It used to be minted and handed back
+but never printed, so there was nothing to search; `HistoryServiceIntegrationTest` and
+`AuthControllerTest` now fail if it is not there. The gateway does not mint one: it is reactive, where
+the MDC does not follow a request from thread to thread.
+
+For a log platform, set `LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs` (or `logstash`, `gelf`) on a service:
+Spring Boot's own structured logging, no dependency, one JSON object per line with the id as the field
+`requestId` (`StructuredLogsTest`). It is off by default, so `docker logs` stays readable, and
+`compose-prod.yml` does not set it.
 
 In production Prometheus and Grafana listen on the host's loopback only. From your
 machine, open a tunnel and use them as if they were local:
