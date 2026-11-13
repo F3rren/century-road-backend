@@ -39,7 +39,7 @@ class ReportServiceUnitTest {
     private final TestClock clock = TestClock.atNoon();
     private final ErrorReportRepository repository = mock(ErrorReportRepository.class);
     private final EditorialCatalog catalog = new EditorialCatalog(new PathMatchingResourcePatternResolver(),
-            "classpath:editorial-test");
+            "classpath:editorial-test", clock);
     private final ReportRateLimiter limiter = new ReportRateLimiter(TestSupport.properties(), clock);
     private final ReportService service = new ReportService(repository, catalog, limiter, clock);
 

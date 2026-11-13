@@ -53,11 +53,6 @@ public class WikimediaClientConfig {
          */
         private static final int MAX_CONNECTIONS = 6;
 
-        @Bean
-        public Clock clock() {
-                return Clock.systemUTC();
-        }
-
         /**
          * The HTTP stack, built by hand for one reason above all: Apache HttpClient
          * retries a

@@ -1,5 +1,6 @@
 package centuryroad.history.controller;
 
+import centuryroad.history.config.ClockConfig;
 import centuryroad.history.service.EditorialCatalog;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,7 +17,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /** The HTTP contract of "Perché conta", over the small fixed content in
  *  src/test/resources/editorial-test. */
 @WebMvcTest(InsightsController.class)
-@Import(EditorialCatalog.class)
+@Import({EditorialCatalog.class, ClockConfig.class})
 @ActiveProfiles("test")
 class InsightsControllerTest {
 
