@@ -1,0 +1,55 @@
+{
+  "slug": "operazione-pyrsos-1949",
+  "title": "L'operazione Pyrsos",
+  "summary": "Dal 2 al 30 agosto 1949 l'esercito nazionale greco attacca le ultime roccaforti dell'Esercito Democratico Greco, sui monti Grammos e Vitsi, nella Grecia nord-occidentale. I guerriglieri comunisti ripiegano in Albania; a metà ottobre annunciano la fine delle operazioni e la guerra civile si chiude.",
+  "date": {
+    "year": 1949,
+    "month": 8,
+    "day": 2
+  },
+  "place": {
+    "name": "Monti Grammos, Grecia",
+    "lat": 40.3500,
+    "lon": 20.9000,
+    "countryCode": "GR",
+    "approximate": true,
+    "note": "Il punto indica la zona del Grammos sul lato greco, a qualche chilometro dal confine albanese; l'operazione si svolse anche a Vitsi, più a nord-est, e gli articoli non danno un punto preciso."
+  },
+  "before": "Per l'articolo italiano, con la rottura tra Tito e Stalin l'aiuto jugoslavo all'Esercito Democratico Greco (DSE) si ridusse dalla metà del 1948 e cessò a metà 1949, mentre gli aiuti americani rinforzavano l'esercito regolare, comandato dal 29 gennaio 1949 da Alexandros Papagos. Le offensive governative colpirono il DSE nel Peloponneso, nella Macedonia orientale e nella Grecia centrale; a fine luglio quasi tutte le forze residue del DSE, circa 17000 uomini, erano lungo le frontiere settentrionali, per lo più sulle alture fortificate di Vitsi e Grammos. Per l'articolo inglese sull'operazione la Jugoslavia ritirò l'appoggio nel luglio 1949, e al DSE restava solo il territorio albanese.",
+  "event": "Per l'articolo inglese l'operazione ebbe tre fasi. Dal 2 all'8 agosto attacchi diversivi sul Grammos fecero credere che il colpo principale sarebbe arrivato lì. Dal 10 al 15 agosto il grosso dell'esercito, con artiglieria, carri e aerei, sfondò a Vitsi; nella notte fra il 14 e il 15 i difensori ripararono in Albania, ma circa 2500 raggiunsero il Grammos. Dal 25 al 30 agosto, sotto il generale Tsakalotos e con le prime bombe al napalm usate dall'aviazione greca, l'esercito attaccò il Grammos e occupò il passo di Porta Osman verso l'Albania, e il DSE riparò in Albania attraverso l'ultimo passo rimasto libero; il 30 cadde il Kamenik, ultima posizione del DSE sul Grammos. Per l'articolo italiano i guerriglieri, guidati da Zachariadis, si ritirarono in Albania nella notte fra il 29 e il 30 agosto.",
+  "after": "Per l'articolo inglese il 25 agosto il governo albanese di Enver Hoxha aveva tagliato gli aiuti ai guerriglieri; in seguito, dopo gli avvertimenti greci, li disarmò e li trasferì in Unione Sovietica. In Grecia restavano piccoli gruppi sparsi, che per l'articolo italiano a settembre si ritirarono in Bulgaria. Il 16 ottobre 1949 un annuncio alla radio dichiarò finite le operazioni: l'articolo inglese lo attribuisce a Dimitrios Partsalidis, presidente del governo provvisorio, l'italiano a Zachariadis, che parlò di prevenire «la distruzione totale della Grecia». Per l'articolo italiano fu in pratica la fine della guerra.",
+  "links": [
+    {
+      "slug": "inizio-della-guerra-civile-greca-1946",
+      "reason": "Più di tre anni prima, nella notte fra il 30 e il 31 marzo 1946, l'attacco di Litochoro era stato preso come inizio della guerra."
+    },
+    {
+      "slug": "rottura-tito-stalin-1948",
+      "reason": "Poco più di tredici mesi prima, il 28 giugno 1948, il Cominform aveva dichiarato fuori dall'organizzazione il partito comunista jugoslavo, che sosteneva il DSE."
+    },
+    {
+      "slug": "dottrina-truman-1947",
+      "reason": "Più di due anni prima, il 12 marzo 1947, gli Stati Uniti avevano annunciato il sostegno al governo greco."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Pyrsos - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Pyrsos",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile greca - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_greca",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 2 agosto 1949, inizio della prima fase secondo l'articolo inglese sull'operazione; l'articolo italiano sulla guerra civile, usato perché manca una voce italiana sull'operazione, dice solo «in agosto». Le fasi, le date e le perdite vengono dall'articolo inglese; i 17000 uomini di fine luglio, il ritiro in Bulgaria e l'annuncio di Zachariadis dall'italiano. La fine dell'aiuto jugoslavo è data in modo diverso: l'articolo inglese sull'operazione dice nell'introduzione febbraio 1949 e più avanti luglio 1949, l'italiano metà 1949. Sul ritiro dal Grammos l'inglese indica la caduta del Kamenik il 30 agosto, l'italiano la ritirata nella notte fra il 29 e il 30. Gli articoli attribuiscono l'annuncio del 16 ottobre a persone diverse. Sull'Albania l'articolo inglese sull'operazione non è coerente: nell'introduzione dice che Hoxha non cercò di disarmare i guerriglieri, nelle conseguenze che alla fine li disarmò e li mandò in Unione Sovietica; il testo segue le conseguenze. Il pin è approssimato sul lato greco del Grammos, lontano dal confine."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

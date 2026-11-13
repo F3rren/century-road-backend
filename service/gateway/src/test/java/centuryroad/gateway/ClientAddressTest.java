@@ -41,7 +41,7 @@ import reactor.netty.http.server.HttpServer;
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
 		"server.forward-headers-strategy=framework",
-		"spring.cloud.gateway.trusted-proxies=.*"
+		"spring.cloud.gateway.server.webflux.trusted-proxies=.*"
 })
 class ClientAddressTest {
 

@@ -1,0 +1,54 @@
+{
+  "slug": "rivolta-di-berlino-est-1953",
+  "title": "La rivolta di Berlino Est",
+  "summary": "Il 17 giugno 1953 lo sciopero degli operai edili di Berlino Est, cominciato contro l'aumento delle quote di produzione, diventa una rivolta contro il governo della Repubblica Democratica Tedesca che si estende a centinaia di città e paesi. I carri armati sovietici la reprimono.",
+  "date": {
+    "year": 1953,
+    "month": 6,
+    "day": 17
+  },
+  "place": {
+    "name": "Haus der Ministerien, Leipziger Straße, Berlino, Germania",
+    "lat": 52.5089,
+    "lon": 13.3833,
+    "countryCode": "DE",
+    "approximate": false
+  },
+  "before": "Nel luglio 1952 la SED, il partito al potere, avviò la «costruzione del socialismo»: industria pesante, collettivizzazione forzata delle campagne, campagna contro la Chiesa. Il tenore di vita peggiorò e molti fuggirono a ovest. Dopo la morte di Stalin, a marzo, la nuova dirigenza sovietica chiese di cambiare linea, e l'11 giugno la SED annunciò il «nuovo corso», ammettendo gli errori; restò però l'aumento del 10% delle quote di produzione, che per i lavoratori significava salari più bassi. Il 16 giugno gli edili della Stalinallee marciarono verso la sede del governo e fu proposto uno sciopero generale per il giorno dopo; la radio americana RIAS diffuse le loro richieste.",
+  "event": "Il 17 giugno cortei di operai da molte aziende si diressero verso il centro chiedendo, oltre alle vecchie quote, le dimissioni del governo e libere elezioni. La sede del governo in Leipziger Straße fu presa d'assalto. In tarda mattinata comparvero nel centro i carri armati sovietici, che aprirono il fuoco sulla folla; poco dopo fu dichiarato lo stato di emergenza. La rivolta toccò tutto il paese: per l'articolo inglese più di un milione di persone in circa settecento località, per l'italiano tra mezzo milione e un milione in un numero di luoghi tra 560 e 700. In provincia gli scioperi continuarono per alcuni giorni.",
+  "after": "Seguirono migliaia di arresti: per l'articolo italiano diecimila incarcerati da polizia e Stasi tra il 17 giugno e il 6 luglio. La propaganda della Repubblica Democratica Tedesca presentò la rivolta come un tentativo di colpo di Stato fascista organizzato dall'Occidente. Ulbricht, che sembrava sul punto di perdere la guida del partito, si salvò anche perché a Mosca il 26 giugno fu arrestato Berija; il nuovo corso fu confermato e l'apparato di polizia rafforzato. Nella Germania occidentale il 17 giugno divenne festa nazionale, fino alla riunificazione del 1990.",
+  "links": [
+    {
+      "slug": "morte-di-stalin-1953",
+      "reason": "Poco più di tre mesi prima, il 5 marzo 1953, muore Stalin e a Mosca si insedia la nuova dirigenza che chiederà alla SED di cambiare linea."
+    },
+    {
+      "slug": "blocco-di-berlino-1948",
+      "reason": "Quasi cinque anni prima, il 24 giugno 1948, l'Unione Sovietica aveva chiuso le vie di terra e d'acqua verso Berlino Ovest."
+    },
+    {
+      "slug": "rivolta-di-poznan-1956",
+      "reason": "Tre anni dopo, il 28 giugno 1956, sono gli operai di Poznań a scendere in piazza."
+    }
+  ],
+  "sources": [
+    {
+      "title": "East German uprising of 1953 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/East_German_uprising_of_1953",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivolte del 1953 nella Germania Est - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivolte_del_1953_nella_Germania_Est",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 17 giugno, il giorno della rivolta che gli articoli usano come nome; lo sciopero degli edili era cominciato il 16 per l'articolo inglese e il 15 per l'italiano, che descrive il 16 come il giorno della marcia sulla sede del governo. Gli articoli non concordano sui numeri: per il 16 giugno l'inglese parla di trecento operai in sciopero, l'italiano di circa settecento davanti alla sede del governo; sulle vittime l'italiano dà 55 morti accertati nel 2004, l'inglese riporta lo stesso numero da Deutsche Welle ma anche stime più recenti di almeno 125 morti e una cifra sovietica di 209 vittime al 18 giugno. L'inglese dice che almeno 32, forse 40, persone furono giustiziate, compresi soldati sovietici che si erano rifiutati di obbedire; l'italiano considera non verificate le notizie su 41 soldati sovietici fucilati. Il caso di Berija e la sopravvivenza politica di Ulbricht vengono dall'articolo inglese, gli arresti e la propaganda dall'italiano. Il pin è sulla Haus der Ministerien in Leipziger Straße, sede del governo, che entrambi gli articoli indicano come punto d'arrivo dei cortei del 16 e del 17 giugno; la rivolta riguardò tutto il paese."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

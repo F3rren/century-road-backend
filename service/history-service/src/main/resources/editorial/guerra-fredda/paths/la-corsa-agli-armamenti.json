@@ -1,0 +1,33 @@
+{
+  "slug": "la-corsa-agli-armamenti",
+  "title": "La corsa agli armamenti",
+  "tagline": "Dalla Bomba Zar al trattato di non proliferazione: nuove armi, un incidente nucleare e i primi trattati per limitarle.",
+  "intro": "Il percorso segue gli anni sessanta delle armi nucleari, dalla Bomba Zar dell'ottobre 1961 al trattato di non proliferazione del luglio 1968: il trattato sui test, la prima bomba cinese, l'incidente di Palomares e il trattato sullo spazio extra-atmosferico.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "bomba-zar-1961",
+      "narrative": "Si parte dal 30 ottobre 1961: sopra Novaja Zemlja l'Unione Sovietica fa esplodere la Bomba Zar."
+    },
+    {
+      "insight": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "narrative": "Il 5 agosto 1963 un trattato firmato a Mosca vieta le esplosioni di prova nell'atmosfera, nello spazio e sott'acqua."
+    },
+    {
+      "insight": "primo-test-nucleare-cinese-1964",
+      "narrative": "Il 16 ottobre 1964 la Cina fa esplodere a Lop Nur il suo primo ordigno nucleare."
+    },
+    {
+      "insight": "incidente-di-palomares-1966",
+      "narrative": "Il 17 gennaio 1966 un B-52 con quattro bombe termonucleari si scontra con un aereo cisterna sopra Palomares, in Spagna."
+    },
+    {
+      "insight": "trattato-sullo-spazio-extra-atmosferico-1967",
+      "narrative": "Il 27 gennaio 1967 si apre alla firma il trattato che vieta le armi nucleari nello spazio."
+    },
+    {
+      "insight": "trattato-di-non-proliferazione-nucleare-1968",
+      "narrative": "Il 1º luglio 1968 Stati Uniti, Regno Unito e Unione Sovietica firmano il trattato di non proliferazione nucleare."
+    }
+  ]
+}

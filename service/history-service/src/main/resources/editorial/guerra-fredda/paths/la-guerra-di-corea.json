@@ -1,0 +1,37 @@
+{
+  "slug": "la-guerra-di-corea",
+  "title": "La guerra di Corea",
+  "tagline": "Dall'invasione del giugno 1950 all'armistizio di Panmunjeom: una guerra che corre su e giù per la penisola e finisce vicino a dove era cominciata.",
+  "intro": "Il percorso segue la guerra di Corea, dall'invasione della Corea del Sud del 25 giugno 1950 all'armistizio del 27 luglio 1953: la difesa di Busan, lo sbarco di Incheon, l'intervento cinese, il bacino di Chosin e la rimozione di MacArthur.\n\nPer diversi momenti della guerra non c'è un articolo italiano proprio: la fonte italiana è allora quello sulla guerra di Corea. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "invasione-della-corea-del-sud-1950",
+      "narrative": "Si parte dal 25 giugno 1950: la Corea del Nord invade la Corea del Sud."
+    },
+    {
+      "insight": "battaglia-del-perimetro-di-pusan-1950",
+      "narrative": "Dal 4 agosto le forze dell'ONU, respinte nell'angolo sud-orientale della penisola, difendono una linea attorno a Busan."
+    },
+    {
+      "insight": "sbarco-di-inchon-1950",
+      "narrative": "Il 15 settembre le forze dell'ONU comandate da MacArthur sbarcano a Incheon, alle spalle delle linee nordcoreane."
+    },
+    {
+      "insight": "intervento-cinese-in-corea-1950",
+      "narrative": "Il 19 ottobre, mentre le forze dell'ONU avanzano verso il confine cinese, i volontari cinesi attraversano lo Yalu."
+    },
+    {
+      "insight": "battaglia-del-bacino-di-chosin-1950",
+      "narrative": "Il 27 novembre le truppe cinesi sorprendono il X Corpo statunitense attorno al bacino di Chosin."
+    },
+    {
+      "insight": "rimozione-di-macarthur-1951",
+      "narrative": "L'11 aprile 1951 Truman toglie a MacArthur il comando delle forze dell'ONU in Corea."
+    },
+    {
+      "insight": "armistizio-di-panmunjom-1953",
+      "narrative": "Il 27 luglio 1953, a Panmunjeom, è firmato l'armistizio."
+    }
+  ]
+}

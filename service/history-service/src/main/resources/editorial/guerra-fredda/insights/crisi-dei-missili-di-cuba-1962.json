@@ -1,0 +1,57 @@
+{
+  "slug": "crisi-dei-missili-di-cuba-1962",
+  "title": "La crisi dei missili di Cuba",
+  "summary": "Il 16 ottobre 1962 Kennedy vede le fotografie di un aereo spia U-2 che mostrano basi per missili sovietici in costruzione a Cuba. Seguono tredici giorni di confronto con l'Unione Sovietica e un blocco navale dell'isola, finché il 28 ottobre Chruščëv annuncia lo smantellamento dei missili.",
+  "date": {
+    "year": 1962,
+    "month": 10,
+    "day": 16
+  },
+  "place": {
+    "name": "Siti missilistici di San Cristóbal, Cuba",
+    "lat": 22.7167,
+    "lon": -83.05,
+    "countryCode": "CU",
+    "approximate": true,
+    "note": "Il punto indica la zona di San Cristóbal, nella parte occidentale di Cuba, dove l'U-2 fotografò il 14 ottobre il primo sito di lancio in costruzione; gli articoli non danno le coordinate dei siti."
+  },
+  "before": "Per l'articolo inglese nel 1959 gli Stati Uniti avevano schierato missili nucleari Thor in Inghilterra e nel 1961 missili Jupiter in Italia e in Turchia, tutti a distanza utile da Mosca; nell'aprile 1961 era fallita l'invasione di Cuba alla baia dei Porci, guidata dalla CIA. Per l'articolo italiano Chruščëv decise allora di mettere a Cuba missili con testata nucleare, come deterrenza contro una possibile invasione statunitense, e nel luglio 1962 raggiunse un accordo segreto con Fidel Castro. La costruzione delle rampe cominciò poco dopo. Il 14 ottobre un U-2 pilotato dal maggiore Richard Heyser fotografò un sito per missili R-12 in costruzione presso San Cristóbal, nella parte occidentale dell'isola.",
+  "event": "Il 15 ottobre gli analisti della CIA riconobbero nelle foto missili balistici a medio raggio; la mattina del 16 Bundy mostrò le immagini a Kennedy, che nel tardo pomeriggio riunì i consiglieri poi chiamati EXCOMM. Accantonata l'invasione, si scelse tra un attacco aereo e un blocco navale, chiamato «quarantena» perché per il diritto internazionale il blocco è un atto di guerra. Il 22 ottobre Kennedy annunciò la scoperta in televisione e il 24, per l'articolo italiano, la quarantena entrò in vigore. Il 27 ottobre un missile terra-aria lanciato da Cuba abbatté l'U-2 del maggiore Rudolf Anderson, che morì. Kennedy accettò in segreto di ritirare i missili dalla Turchia, e il 28 ottobre Chruščëv fece annunciare da Radio Mosca lo smantellamento delle armi e il loro ritorno in Unione Sovietica.",
+  "after": "Gli Stati Uniti si impegnarono pubblicamente a non invadere Cuba. I missili furono caricati su otto navi e il 20 novembre il blocco fu tolto; il 22 novembre Mikojan comunicò a Castro che sarebbero stati ritirati anche i missili tattici nucleari, di cui gli statunitensi non sapevano nulla. I Jupiter furono rimossi da Italia e Turchia tra il 1° e il 24 aprile 1963, e l'accordo segreto fu riconosciuto ufficialmente solo nel gennaio 1989. Entrambi gli articoli legano alla crisi l'istituzione della linea rossa tra Washington e Mosca e ricordano che le due potenze arrivarono poi al trattato sui test nucleari, che l'italiano data al 5 agosto 1963. Per l'articolo italiano Cuba visse la conclusione come un tradimento sovietico, e la caduta di Chruščëv nell'ottobre 1964 fu dovuta probabilmente anche all'esito della crisi.",
+  "links": [
+    {
+      "slug": "invasione-della-baia-dei-porci-1961",
+      "reason": "Quasi diciotto mesi prima, il 17 aprile 1961, era fallito lo sbarco di esuli cubani addestrati dalla CIA, che l'articolo italiano cita tra le ragioni della scelta di Chruščëv."
+    },
+    {
+      "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "reason": "Quasi dieci mesi dopo, il 5 agosto 1963, Stati Uniti, Unione Sovietica e Regno Unito firmano a Mosca il trattato che vieta i test nucleari nell'atmosfera."
+    },
+    {
+      "slug": "linea-rossa-1963",
+      "reason": "Poco più di dieci mesi dopo, il 30 agosto 1963, entra in funzione il collegamento diretto tra Washington e Mosca."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuban Missile Crisis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cuban_Missile_Crisis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Crisi dei missili di Cuba - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Crisi_dei_missili_di_Cuba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è il 16 ottobre 1962, il giorno in cui, per entrambi gli articoli, Bundy mostrò a Kennedy le fotografie dell'U-2; l'articolo inglese fa durare la crisi dal 16 al 28 ottobre. Le foto erano state scattate il 14 ottobre.",
+    "Gli articoli non concordano sulla data dei Jupiter: l'inglese parla del 1961 nell'introduzione e, più avanti, dice che Kennedy li aveva schierati nel marzo 1962; l'italiano scrive 1959. Sul blocco l'inglese dice che Kennedy lo ordinò il 22 ottobre, l'italiano che entrò in vigore il 24 alle 10. Per l'articolo inglese è discusso se l'accordo segreto riguardasse anche i missili in Italia; entrambi dicono che i Jupiter furono poi rimossi da Italia e Turchia.",
+    "Le notizie su Thor e Jupiter dell'introduzione vengono dall'articolo inglese, la decisione di Chruščëv come risposta alla baia dei Porci dall'italiano; il resto è in entrambi. Il pin è sulla zona di San Cristóbal, allora nella provincia di Pinar del Río e per l'articolo inglese oggi nella provincia di Artemisa."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

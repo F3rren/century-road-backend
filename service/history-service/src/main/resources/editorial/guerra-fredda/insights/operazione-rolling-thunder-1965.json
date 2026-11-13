@@ -1,0 +1,51 @@
+{
+  "slug": "operazione-rolling-thunder-1965",
+  "title": "L'operazione Rolling Thunder",
+  "summary": "Dal 2 marzo 1965 aerei statunitensi e sudvietnamiti bombardano in modo graduale e continuo il Vietnam del Nord, per fermare il suo sostegno all'insurrezione nel Sud. La campagna, ridotta nel marzo 1968, termina nel novembre 1968 senza raggiungere gli effetti strategici previsti.",
+  "date": {
+    "year": 1965,
+    "month": 3,
+    "day": 2
+  },
+  "place": {
+    "name": "Hanoi, Vietnam",
+    "lat": 21.0285,
+    "lon": 105.8542,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "La campagna colpì tutto il Vietnam del Nord; il primo attacco, il 2 marzo 1965, fu contro un deposito di munizioni vicino a Xom Bang. Il punto è su Hanoi, capitale del Nord e, per l'articolo inglese, considerata dagli americani il centro dell'insurrezione."
+  },
+  "before": "Per l'articolo inglese Hanoi mandava armi e materiali ai Viet Cong che combattevano il governo di Saigon, e all'inizio del 1965 Washington si convinse che senza un intervento americano quel governo non sarebbe sopravvissuto. Nell'agosto 1964, dopo l'incidente del golfo del Tonchino, l'operazione Pierce Arrow aveva colpito il Nord con raid di rappresaglia, ma i capi militari chiedevano una campagna più ampia. Dopo l'attacco a Camp Holloway del 7 febbraio 1965 seguirono le rappresaglie dell'operazione Flaming Dart. Nel cablogramma dell'8 febbraio all'ambasciatore Taylor, Johnson scriveva che lo scopo principale dei bombardamenti sarebbe stato sollevare il morale di Saigon.",
+  "event": "Il 2 marzo 1965 centoquattro aerei americani attaccarono un deposito di munizioni vicino a Xom Bang, mentre diciannove aerei sudvietnamiti colpivano la base navale di Quang Khe; sei aerei americani furono abbattuti. Per l'articolo inglese gli obiettivi erano sollevare il morale del Vietnam del Sud, costringere il Nord a smettere di mandare uomini e materiali al Sud e distruggere trasporti, industria e difese aeree nordvietnamite. Per l'articolo italiano lo scopo era fermare il sostegno ai Viet Cong senza impiegare truppe di terra. Per l'articolo inglese l'8 marzo tremilacinquecento marines sbarcarono a Da Nang, ufficialmente per difendere la base aerea.",
+  "after": "Con l'aiuto dell'Unione Sovietica e della Cina il Nord schierò una forte rete di difese antiaeree. Per l'articolo inglese il 31 dicembre 1967 il Dipartimento della Difesa annunciò che erano state sganciate 864.000 tonnellate di bombe; per l'articolo italiano le vittime civili stimate vanno da 52.000 a 182.000. Il 31 marzo 1968 Johnson annunciò la fine dei bombardamenti a nord del diciannovesimo parallelo, e la campagna fu chiusa nel novembre 1968. Per l'articolo italiano non ottenne gli effetti strategici previsti, perché i Viet Cong combattevano con la guerriglia e non dipendevano da grandi infrastrutture né da grandi rifornimenti.",
+  "links": [
+    {
+      "slug": "incidente-del-golfo-del-tonchino-1964",
+      "reason": "Sette mesi prima, il 2 agosto 1964, lo scontro nel golfo del Tonchino porta ai primi raid di rappresaglia sul Nord."
+    },
+    {
+      "slug": "offensiva-del-tet-1968",
+      "reason": "Quasi tre anni dopo, il 30 gennaio 1968, comincia l'offensiva del Têt, due mesi prima che Johnson riduca i bombardamenti."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Rolling Thunder - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Rolling_Thunder",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Rolling Thunder - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Rolling_Thunder",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli fanno cominciare la campagna il 2 marzo 1965. Sulla fine differiscono: il 2 novembre 1968 per l'articolo inglese, il 1º novembre per l'italiano, per questo il testo dice solo novembre. Sul tonnellaggio l'inglese dà 864.000 tonnellate (annunciate dal Dipartimento della Difesa il 31 dicembre 1967), l'italiano quasi 900.000 tonnellate dal 2 marzo 1965 al dicembre 1967. L'articolo italiano è breve: quasi tutti i particolari sull'avvio sono dell'inglese, la stima delle vittime civili e il giudizio sugli effetti dell'italiano. Il pin è su Hanoi come punto simbolico della campagna sul Nord."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "slug": "accordi-salt-i-1972",
+  "title": "Gli accordi SALT I",
+  "summary": "Il 26 maggio 1972, a Mosca, Richard Nixon e Leonid Brežnev firmano il trattato sui missili antibalistici (ABM) e l'accordo provvisorio sulla limitazione delle armi strategiche offensive, a conclusione dei negoziati SALT aperti a Helsinki nel novembre 1969.",
+  "date": {
+    "year": 1972,
+    "month": 5,
+    "day": 26
+  },
+  "place": {
+    "name": "Cremlino, Mosca, Russia",
+    "lat": 55.752,
+    "lon": 37.6175,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli dicono che gli accordi furono firmati a Mosca, durante il vertice del 1972, ma non indicano l'edificio; il punto è sul Cremlino, nel centro della città."
+  },
+  "before": "Per l'articolo italiano già dal gennaio 1967 il presidente Johnson chiedeva all'Unione Sovietica un accordo sulla limitazione degli armamenti nucleari, ma i sovietici accettarono l'invito solo dopo la firma del trattato di non proliferazione, nel 1968. Per l'articolo inglese gli Stati Uniti avevano proposto un trattato sui missili antibalistici al vertice di Glassboro del 1967; intanto si diffondevano i missili con testate multiple indipendenti (MIRV), che rendevano la difesa antimissile sempre più difficile e costosa. I negoziati cominciarono a Helsinki il 17 novembre 1969, con la delegazione americana guidata da Gerard C. Smith, e proseguirono alternando Vienna e Helsinki; un primo risultato sui sistemi antimissile arrivò nel maggio 1971.",
+  "event": "Nixon fu a Mosca dal 22 al 30 maggio 1972, per l'articolo italiano il primo presidente statunitense a visitare la capitale sovietica, e il 26 maggio firmò con il segretario generale del partito comunista sovietico Leonid Brežnev due testi. Il trattato ABM limitava i sistemi di difesa contro i missili balistici strategici: per l'articolo inglese ogni parte poteva avere due complessi, uno per la capitale e uno per un campo di silos, con al massimo cento missili ciascuno. L'accordo provvisorio congelava il numero dei lanciatori di missili balistici strategici ai livelli esistenti; nuovi lanciatori su sottomarini erano ammessi solo smantellandone altrettanti più vecchi. Le due parti fissarono anche alcuni principi di condotta, fra cui la non ingerenza.",
+  "after": "Per l'articolo italiano non si poteva ancora parlare di disarmo, ma solo di regolamentazione delle forze. Il Senato statunitense ratificò il trattato ABM il 3 agosto 1972 e, per l'articolo italiano, il trattato entrò in vigore il 3 ottobre. Nel 1972 cominciarono anche i negoziati SALT II. Un protocollo del 1974 ridusse i siti antimissile a uno per parte: Mosca per l'Unione Sovietica e il complesso Safeguard nel Dakota del Nord per gli Stati Uniti. Il trattato ABM restò in vigore per trent'anni, fino al ritiro unilaterale degli Stati Uniti nel 2002.",
+  "links": [
+    {
+      "slug": "trattato-di-non-proliferazione-nucleare-1968",
+      "reason": "Quasi quattro anni prima, il 1° luglio 1968, era stato firmato il trattato di non proliferazione, dopo il quale, per l'articolo italiano, i sovietici accettarono di negoziare."
+    },
+    {
+      "slug": "viaggio-di-nixon-in-cina-1972",
+      "reason": "Poco più di tre mesi prima, il 21 febbraio, Nixon era arrivato in Cina."
+    },
+    {
+      "slug": "firma-del-salt-ii-1979",
+      "reason": "Sette anni dopo, il 18 giugno 1979, Carter e Brežnev firmano a Vienna il SALT II."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Strategic Arms Limitation Talks - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Strategic_Arms_Limitation_Talks",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordi SALT - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordi_SALT",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Anti-Ballistic Missile Treaty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Anti-Ballistic_Missile_Treaty",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato anti missili balistici - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_anti_missili_balistici",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Tutti e quattro gli articoli danno la firma il 26 maggio 1972. L'appello di Johnson, il legame con il trattato di non proliferazione, le date della visita e il giudizio sul disarmo vengono dall'articolo italiano sui SALT; il negoziato, i MIRV, l'accordo provvisorio e i principi di condotta dall'articolo inglese sui SALT; il vertice di Glassboro, i limiti del trattato ABM, la ratifica e il protocollo del 1974 dall'articolo inglese sul trattato ABM.",
+    "Sul numero dei siti antimissile gli articoli non concordano: l'articolo inglese sul trattato ABM dà due complessi per parte nel testo del 1972, ridotti a uno nel 1974; l'articolo inglese sui SALT parla di un solo sito per parte; l'articolo italiano sul trattato ABM di un solo sistema, nella capitale o in un campo di missili. Il testo segue l'articolo inglese sul trattato ABM, che distingue le due fasi.",
+    "L'articolo italiano sul trattato ABM data il recesso statunitense al 13 giugno 2002; l'inglese dice che il preavviso fu dato il 13 dicembre 2001 e il ritiro avvenne il 13 giugno 2002."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

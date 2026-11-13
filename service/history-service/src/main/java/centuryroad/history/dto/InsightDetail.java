@@ -22,7 +22,8 @@ import java.util.List;
 @Schema(description = "An event explained: what led up to it, what happened, what followed, and where to read next.")
 public record InsightDetail(
         @Schema(description = "The insight's identifier.", example = "sputnik-1") String slug,
-        @Schema(description = "The language of every text here. Editorial content is written in Italian only.") Language language,
+        @Schema(description = "The language of every text here. Editorial content is written in Italian only.",
+                allowableValues = "it") Language language,
         @Schema(description = "The event's title.") String title,
         @Schema(description = "The event in one or two sentences.") String summary,
         @Schema(description = "When it happened.") EventDate date,

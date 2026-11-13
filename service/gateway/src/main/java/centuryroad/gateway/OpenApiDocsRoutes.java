@@ -59,6 +59,6 @@ public class OpenApiDocsRoutes {
 				.map(RouteDefinition::getUri)
 				.findFirst()
 				.orElseThrow(() -> new IllegalStateException("No route '" + routeId
-						+ "' in spring.cloud.gateway.routes, so there is nowhere to relay its OpenAPI document from"));
+						+ "' in spring.cloud.gateway.server.webflux.routes, so there is nowhere to relay its OpenAPI document from"));
 	}
 }

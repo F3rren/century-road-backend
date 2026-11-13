@@ -1,0 +1,51 @@
+{
+  "slug": "udienze-esercito-mccarthy-1954",
+  "title": "Le udienze esercito-McCarthy",
+  "summary": "Dal 22 aprile al 17 giugno 1954 la televisione statunitense trasmette in diretta le udienze di una sottocommissione del Senato sulle accuse incrociate tra l'esercito e il senatore Joseph McCarthy. Per l'articolo inglese la copertura televisiva contribuì molto al declino di McCarthy, censurato dal Senato a dicembre.",
+  "date": {
+    "year": 1954,
+    "month": 4,
+    "day": 22
+  },
+  "place": {
+    "name": "Campidoglio, Washington, Stati Uniti",
+    "lat": 38.8899,
+    "lon": -77.0091,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Gli articoli dicono soltanto che le udienze si tennero davanti a una sottocommissione del Senato, senza indicare la sala; il punto è sul Campidoglio, sede del Senato a Washington."
+  },
+  "before": "Per l'articolo italiano nei primi anni cinquanta crebbe negli Stati Uniti la paura di influenze comuniste, la «paura rossa», alimentata da casi di spionaggio come quello dei Rosenberg, dall'egemonia sovietica sull'Europa orientale, dalla vittoria comunista in Cina e dalla guerra di Corea. Per l'articolo inglese McCarthy era diventato noto nel febbraio 1950 dicendo di avere una lista di 205 funzionari comunisti del dipartimento di Stato. Dal gennaio 1953, con la maggioranza repubblicana, usò la sottocommissione permanente d'indagine del Senato contro presunti comunisti nel governo, e nel 1953 indagò sull'esercito, a partire dai laboratori di Fort Monmouth. L'esercito accusò lui e il suo consigliere Roy Cohn di aver fatto pressioni per favorire G. David Schine, amico di Cohn chiamato alle armi; McCarthy rispose che era una ritorsione.",
+  "event": "Per l'articolo inglese le udienze cominciarono il 16 marzo 1954, presiedute dal senatore Karl Mundt perché McCarthy era tra gli accusati; dal 22 aprile al 17 giugno le reti ABC e DuMont le trasmisero in diretta per intero, e circa ottanta milioni di persone ne videro almeno una parte. Furono screditate una fotografia ritoccata di Schine e una presunta lettera del direttore dell'FBI Hoover: per il procuratore generale, Hoover non l'aveva né scritta né ordinata. Il 9 giugno McCarthy attaccò Fred Fisher, giovane avvocato dello studio di Joseph Welch, legale dell'esercito, per una sua passata adesione alla National Lawyers Guild; Welch gli chiese: «Non ha alcun senso della decenza, signore?».",
+  "after": "Il 31 agosto la maggioranza repubblicana e la minoranza democratica della commissione pubblicarono rapporti separati: per l'articolo inglese il primo escluse pressioni dirette di McCarthy ma criticò lui e Cohn, che si era già dimesso, e respinse le accuse di McCarthy all'esercito. Per l'articolo inglese tra gennaio e giugno i consensi a McCarthy nei sondaggi Gallup scesero dal 50% al 34%, e il 2 dicembre il Senato votò la censura con 67 voti contro 22. Per l'articolo italiano nel gennaio 1955 McCarthy lasciò la presidenza della commissione, e si può ritenere che con questo il maccartismo sia finito. Per l'articolo inglese morì il 2 maggio 1957.",
+  "links": [
+    {
+      "slug": "esecuzione-dei-rosenberg-1953",
+      "reason": "Dieci mesi e tre giorni prima, il 19 giugno 1953, i Rosenberg, il cui caso per l'articolo italiano alimentò la «paura rossa», vengono giustiziati."
+    },
+    {
+      "slug": "armistizio-di-panmunjom-1953",
+      "reason": "Quasi nove mesi prima, il 27 luglio 1953, l'armistizio di Panmunjom chiude i combattimenti della guerra di Corea, che per l'articolo italiano aveva accresciuto la paura del comunismo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Army–McCarthy hearings - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Army–McCarthy_hearings",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Maccartismo - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Maccartismo",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese dice che le udienze si aprirono il 16 marzo 1954 e che la diretta televisiva durò dal 22 aprile al 17 giugno; l'articolo italiano, che tratta il maccartismo in generale, fa iniziare le udienze sull'esercito il 22 aprile. La data scelta è il 22 aprile, inizio delle udienze trasmesse in televisione. Quasi tutti i particolari (Schine, la fotografia, la lettera di Hoover, Welch e Fisher, i rapporti, i sondaggi, la censura) vengono dall'articolo inglese; il contesto della «paura rossa» dall'italiano. Sulla fine della presidenza gli articoli differiscono: per l'italiano McCarthy si dimise nel gennaio 1955 dopo la censura, per l'inglese restò presidente fino al 3 gennaio 1955, quando si insediò il nuovo Congresso e fu sostituito da John L. McClellan. Il pin è indicativo, sul Campidoglio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

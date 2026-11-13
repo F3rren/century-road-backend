@@ -1,0 +1,51 @@
+{
+  "slug": "crisi-di-suez-1956",
+  "title": "La crisi di Suez",
+  "summary": "Il 29 ottobre 1956 Israele invade la Striscia di Gaza e il Sinai; dal 31 Regno Unito e Francia attaccano l'Egitto, che a luglio aveva nazionalizzato il canale di Suez. Sotto la pressione di Stati Uniti, Unione Sovietica e Nazioni Unite i tre paesi si ritirano, e l'Egitto mantiene il controllo del canale.",
+  "date": {
+    "year": 1956,
+    "month": 10,
+    "day": 29
+  },
+  "place": {
+    "name": "Port Said, canale di Suez, Egitto",
+    "lat": 31.2600,
+    "lon": 32.2900,
+    "countryCode": "EG",
+    "approximate": true,
+    "note": "Il punto è a Port Said, all'imbocco settentrionale del canale, dove sbarcarono le truppe britanniche e francesi; la crisi riguardò tutto il canale e il Sinai, dove il 29 ottobre cominciò l'attacco israeliano."
+  },
+  "before": "Il 19 luglio 1956 gli Stati Uniti ritirarono il finanziamento per la diga di Aswān; per entrambi gli articoli pesò il riconoscimento della Cina comunista da parte dell'Egitto, e l'italiano cita anche l'acquisto di carri armati dalla Cecoslovacchia. Il 26 luglio, in un discorso ad Alessandria, Nasser annunciò la nazionalizzazione del canale di Suez. Il 29 luglio il governo francese decise un'azione militare insieme a Israele. Dal 22 al 24 ottobre, a Sèvres, vicino a Parigi, Francia, Israele e Regno Unito si accordarono in segreto: Israele avrebbe attaccato l'Egitto, e britannici e francesi sarebbero intervenuti chiedendo alle due parti di allontanarsi dal canale.",
+  "event": "Il 29 ottobre, verso le tre del pomeriggio, aerei israeliani attaccarono le posizioni egiziane in tutto il Sinai, e le truppe di Israele avanzarono rapidamente verso il canale. Il 30 ottobre Regno Unito e Francia mandarono un ultimatum a Egitto e Israele e dal 31 bombardarono l'Egitto. Per l'articolo italiano Nasser fece affondare le quaranta navi presenti nel canale, che rimase chiuso fino all'inizio del 1957. Il 5 e il 6 novembre paracadutisti e commando britannici e francesi presero terra a Port Said, dove si combatté casa per casa; il 6 novembre il primo ministro britannico Eden annunciò il cessate il fuoco.",
+  "after": "Gli Stati Uniti, alle prese nelle stesse settimane con la rivoluzione ungherese, fecero pressione finanziaria sul Regno Unito, e il primo ministro sovietico Bulganin minacciò attacchi con razzi contro Regno Unito, Francia e Israele. Già il 2 novembre l'Assemblea generale delle Nazioni Unite aveva chiesto il cessate il fuoco, e nei giorni seguenti fu creata la prima Forza di emergenza dell'ONU, proposta dal canadese Lester Pearson. Per l'articolo inglese le truppe anglo-francesi lasciarono l'Egitto entro il 22 dicembre, quelle israeliane nel marzo 1957; Eden si dimise il 9 gennaio 1957. L'Egitto mantenne il controllo del canale e il prestigio di Nasser nel mondo arabo crebbe.",
+  "links": [
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Sei giorni prima, il 23 ottobre, comincia a Budapest la rivoluzione ungherese, che gli Stati Uniti dovettero seguire insieme alla crisi di Suez."
+    },
+    {
+      "slug": "sputnik-1",
+      "reason": "Undici mesi e cinque giorni dopo, il 4 ottobre 1957, un missile sovietico R-7 porta in orbita lo Sputnik 1; durante la crisi, per l'articolo inglese, l'Unione Sovietica non aveva i missili intercontinentali con cui minacciava di colpire."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Suez Crisis - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Suez_Crisis",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Crisi di Suez - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Crisi_di_Suez",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'invasione israeliana il 29 ottobre 1956 e la nazionalizzazione il 26 luglio. Il ritiro del finanziamento statunitense il 19 luglio, l'ora dell'attacco, l'ultimatum del 30 ottobre, la risoluzione del 2 novembre, il ritiro anglo-francese entro il 22 dicembre e le dimissioni di Eden il 9 gennaio 1957 vengono dall'articolo inglese; l'affondamento delle quaranta navi, gli scontri casa per casa e l'acquisto di carri armati cecoslovacchi tra i motivi della cancellazione del finanziamento dall'italiano. Gli articoli non coincidono sul ritiro: l'italiano dice che le forze d'invasione si ritirarono nel marzo 1957, l'inglese che britannici e francesi se ne andarono entro il 22 dicembre 1956 e gli israeliani nel marzo 1957. Sul canale, l'italiano dice chiuso fino all'inizio del 1957, l'inglese da ottobre 1956 a marzo 1957, con piena riapertura il 24 aprile 1957. Il pin è a Port Said, il luogo degli sbarchi di cui parlano entrambi gli articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "slug": "caduta-di-phnom-penh-1975",
+  "title": "La caduta di Phnom Penh",
+  "summary": "Il 17 aprile 1975 i khmer rossi entrano a Phnom Penh, capitale della Repubblica Khmer sostenuta dagli Stati Uniti, e mettono fine alla guerra civile cambogiana. Poche ore dopo ordinano di svuotare la città; i soldati e i dirigenti del governo catturati vengono uccisi.",
+  "date": {
+    "year": 1975,
+    "month": 4,
+    "day": 17
+  },
+  "place": {
+    "name": "Phnom Penh, Cambogia",
+    "lat": 11.5564,
+    "lon": 104.9282,
+    "countryCode": "KH",
+    "approximate": true,
+    "note": "I khmer rossi entrarono in città da più direzioni. Il punto è sul centro di Phnom Penh."
+  },
+  "before": "La guerra civile opponeva i khmer rossi, alleati del Vietnam del Nord e dal 1970 del principe Sihanouk, al governo di Lon Nol, sostenuto dagli Stati Uniti, che nel marzo 1970 aveva deposto Sihanouk. Per l'articolo inglese all'inizio del 1975 la Repubblica Khmer controllava solo la zona della capitale e alcune città lungo il Mekong. I khmer rossi chiusero con le mine la via di rifornimento sul fiume e dal 17 febbraio Phnom Penh dipese da un ponte aereo verso l'aeroporto di Pochentong. Per l'articolo italiano la città, che prima della guerra aveva circa 600.000 abitanti, si era riempita di profughi fino a circa due milioni.",
+  "event": "Il 1º aprile Lon Nol si dimise e partì per l'esilio; la stessa notte cadde Neak Luong, sul Mekong. Il 12 aprile gli Stati Uniti evacuarono l'ambasciata con l'operazione Eagle Pull; il primo ministro Long Boret e gran parte del governo rifiutarono di partire. Il governo, ora guidato da un Comitato supremo con a capo il generale Sak Sutsakhan, offrì un cessate il fuoco e il passaggio dei poteri al fronte di Sihanouk, ma l'offerta fu respinta. Il 17 aprile il governo decise di spostarsi verso il confine thailandese e Sak partì in elicottero; i khmer rossi entrarono in città da più direzioni e alla radio fu chiesto ai soldati di cessare il fuoco. I soldati governativi disarmati furono portati allo stadio Olimpico e lì uccisi.",
+  "after": "Nel pomeriggio i khmer rossi ordinarono di evacuare la città, compresi gli ospedali con circa ventimila feriti; per l'articolo inglese circa 800 stranieri e 600 cambogiani si rifugiarono nell'ambasciata francese. Long Boret fu giustiziato intorno al 21 aprile e Pol Pot arrivò nella città deserta il 23. Il paese prese il nome di Kampuchea Democratica. Nel genocidio cambogiano morirono da 1,5 a 2 milioni di persone per l'articolo inglese, da 1,5 a 3 milioni per l'articolo italiano sui khmer rossi. Per l'articolo inglese, dopo la caduta di Saigon i khmer rossi chiesero alle truppe vietnamite di lasciare la Cambogia e a maggio cominciarono scontri tra i due paesi.",
+  "links": [
+    {
+      "slug": "campagna-di-cambogia-1970",
+      "reason": "Quasi cinque anni prima, dal 29 aprile 1970, truppe sudvietnamite e poi statunitensi erano entrate in Cambogia contro le basi nordvietnamite."
+    },
+    {
+      "slug": "accordi-di-pace-di-parigi-1973",
+      "reason": "Più di due anni prima, il 27 gennaio 1973, l'accordo di Parigi aveva fatto sperare il governo cambogiano in una fine dei combattimenti."
+    },
+    {
+      "slug": "caduta-di-saigon-1975",
+      "reason": "Tredici giorni dopo, il 30 aprile 1975, cade anche Saigon."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Phnom Penh - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Phnom_Penh",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile in Cambogia - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_in_Cambogia",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Khmer rossi - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Khmer_rossi",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo inglese sulla caduta e l'italiano sulla guerra civile danno la fine della guerra il 17 aprile 1975. Non c'è un articolo italiano sulla caduta della città: il racconto dei giorni di aprile, dell'evacuazione e delle esecuzioni è dell'articolo inglese, mentre l'italiano sulla guerra civile dà la cornice (il colpo di Stato del 1970, l'alleanza tra Sihanouk e khmer rossi, i profughi in città) e conferma Eagle Pull, il Comitato supremo e lo svuotamento della capitale. Le differenze: per l'italiano l'attacco finale cominciò il 1º gennaio 1975, per l'inglese l'offensiva sul Mekong partì il 12 gennaio; l'italiano dice che le ultime difese caddero il 15 aprile e che alle 10 del 17 la radio ordinò il cessate il fuoco perché erano in corso trattative di resa, l'inglese dice che il generale Mey Sichan chiese ai soldati di alzare bandiera bianca. Le vittime del genocidio vanno da 1,5 a 2 milioni per l'inglese e da 1,5 a 3 milioni per l'articolo italiano sui khmer rossi. Il pin è sul centro della città."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

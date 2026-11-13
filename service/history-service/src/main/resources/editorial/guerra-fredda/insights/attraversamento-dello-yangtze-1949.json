@@ -1,0 +1,61 @@
+{
+  "slug": "attraversamento-dello-yangtze-1949",
+  "title": "L'attraversamento dello Yangtze",
+  "summary": "Nella notte del 20 aprile 1949, fallite le trattative per un cessate il fuoco, l'Esercito Popolare di Liberazione comincia ad attraversare il fiume Yangtze; il 23 aprile prende Nanchino, la capitale del governo nazionalista. La campagna si chiude il 2 giugno, dopo la caduta di Shanghai.",
+  "date": {
+    "year": 1949,
+    "month": 4,
+    "day": 20
+  },
+  "place": {
+    "name": "Nanchino, Cina",
+    "lat": 32.0603,
+    "lon": 118.7969,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "La campagna si svolse lungo un lungo tratto dello Yangtze; il punto indica Nanchino, la capitale nazionalista presa il 23 aprile."
+  },
+  "before": "Tra la fine del 1948 e l'inizio del 1949 il governo nazionalista del Kuomintang aveva perso le campagne di Liaoshen, dello Huaihai e di Pingjin; per l'articolo italiano Pechino era stata presa senza combattimenti il 31 gennaio 1949. Il 21 gennaio Chiang Kai-shek aveva lasciato la presidenza a Li Zongren, e in primavera i comunisti controllavano tutta l'area a nord dello Yangtze. In aprile le due parti trattavano un cessate il fuoco a Pechino, mentre i comunisti schieravano tre armate da campo a nord del fiume. Per l'articolo inglese sulla guerra civile Stalin aveva cercato di convincere Mao a non attraversarlo.",
+  "event": "La delegazione comunista presentò un ultimatum; il 20 aprile la delegazione nazionalista ebbe l'ordine di respingere l'accordo e la notte stessa l'esercito comunista cominciò ad attraversare il fiume. Per l'articolo inglese sulla campagna tra il 20 e il 21 aprile passarono sulla riva sud trecentomila uomini; la seconda flotta della marina nazionalista e la fortezza di Jiangyin passarono ai comunisti, e le linee di difesa cedettero rapidamente. Chiang ordinò la terra bruciata mentre le truppe nazionaliste si ritiravano verso Hangzhou e Shanghai. Il 23 aprile i comunisti presero Nanchino senza incontrare molta resistenza.",
+  "after": "L'avanzata continuò: Suzhou cadde il 27 aprile, entro la fine di maggio Nanchang, Wuchang e Hanyang, il centro di Shanghai il 27 maggio e il resto dello Zhejiang il 2 giugno, data con cui l'articolo inglese chiude la campagna. Per l'articolo inglese sulla guerra civile il governo nazionalista si spostò a Canton, poi a Chongqing e a Chengdu, e il 7 dicembre si ritirò a Taiwan. Il 1º ottobre 1949, intanto, Mao Zedong aveva proclamato a Pechino la Repubblica Popolare Cinese.",
+  "links": [
+    {
+      "slug": "campagna-di-pingjin-1948",
+      "reason": "Pochi mesi prima, tra la fine del 1948 e il gennaio 1949, la campagna di Pingjin aveva dato ai comunisti la Cina del nord e Pechino."
+    },
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Poco più di cinque mesi dopo, il 1º ottobre 1949, Mao proclama a Pechino la Repubblica Popolare Cinese."
+    },
+    {
+      "slug": "ritirata-a-taiwan-1949",
+      "reason": "Meno di otto mesi dopo, il 7 dicembre 1949, il governo della Repubblica di Cina si ritira a Taiwan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Yangtze River Crossing campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Yangtze_River_Crossing_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Chinese Civil War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Chinese_Civil_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La Wikipedia italiana non ha una voce sulla campagna: il racconto delle operazioni viene dall'articolo inglese «Yangtze River Crossing campaign»; l'articolo italiano sulla guerra civile cinese dice soltanto che nell'aprile 1949 i comunisti varcarono lo Yangtze e presero Nanchino. Sulla data di inizio gli articoli inglesi non coincidono: quello sulla campagna dice la notte del 20 aprile, quello sulla guerra civile il 21 aprile; si è scelta la data dell'articolo sulla campagna. Il ruolo di Stalin e i trasferimenti del governo dopo Nanchino vengono dall'articolo inglese sulla guerra civile. Il pin è su Nanchino."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

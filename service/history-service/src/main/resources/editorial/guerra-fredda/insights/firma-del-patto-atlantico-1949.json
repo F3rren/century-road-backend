@@ -1,0 +1,55 @@
+{
+  "slug": "firma-del-patto-atlantico-1949",
+  "title": "La firma del Patto Atlantico",
+  "summary": "Il 4 aprile 1949, a Washington, dodici paesi dell'America del Nord e dell'Europa occidentale firmano il Trattato del Nord Atlantico, o Patto Atlantico, base giuridica della NATO: un attacco armato contro uno di loro sarà considerato un attacco contro tutti.",
+  "date": {
+    "year": 1949,
+    "month": 4,
+    "day": 4
+  },
+  "place": {
+    "name": "Washington, Stati Uniti",
+    "lat": 38.8951,
+    "lon": -77.0364,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Gli articoli dicono soltanto che il trattato fu firmato a Washington, senza indicare l'edificio; il punto è nel centro della città."
+  },
+  "before": "Per l'articolo inglese tra il 22 marzo e il 1° aprile 1948 si erano tenuti al Pentagono colloqui segreti, al termine dei quali era stato deciso che ci sarebbe stato un trattato; il diplomatico statunitense Theodore Achilles ne scrisse una prima bozza, ispirata soprattutto al trattato di Rio e in parte a quello di Bruxelles, e indicò in John D. Hickerson il principale responsabile di natura, contenuto e forma del trattato. Per l'articolo inglese il trattato fu pensato contro un attacco armato sovietico all'Europa occidentale. Per l'italiano l'accordo nasceva dal timore di un tale attacco, dalla volontà di impedire il ritorno di militarismi nazionalisti grazie a una forte presenza americana e da quella di favorire l'integrazione europea.",
+  "event": "Il 4 aprile 1949 il trattato fu firmato a Washington dai rappresentanti di Belgio, Canada, Danimarca, Francia, Islanda, Italia, Lussemburgo, Paesi Bassi, Norvegia, Portogallo, Regno Unito e Stati Uniti; per l'Italia firmarono il ministro degli Esteri Carlo Sforza e l'ambasciatore Alberto Tarchiani, per gli Stati Uniti il segretario di Stato Dean Acheson. Il punto centrale è l'articolo 5: un attacco armato contro uno dei membri, nelle zone indicate dall'articolo 6, sarà considerato un attacco contro tutti. L'articolo 4 prevede consultazioni quando la sicurezza di un membro è minacciata. Per l'articolo italiano aderirono anche paesi senza sbocco sull'Atlantico, come l'Italia.",
+  "after": "Per l'articolo italiano il Senato degli Stati Uniti ratificò il trattato il 21 luglio 1949 e negli altri undici paesi la ratifica fu rapida, nonostante le proteste dei partiti comunisti in Italia e in Francia; la Svezia, invitata, rifiutò per restare neutrale. Per l'articolo inglese il trattato entrò in vigore il 24 agosto 1949; per l'italiano l'anno seguente la struttura militare, la NATO, era operativa. Il 6 maggio 1955 firmò la Germania Ovest e, una settimana dopo, l'Unione Sovietica e altri paesi comunisti fondarono il Patto di Varsavia. Per l'articolo inglese la clausola di difesa reciproca non fu mai invocata durante la guerra fredda; lo fu soltanto dopo gli attentati dell'11 settembre 2001.",
+  "links": [
+    {
+      "slug": "blocco-di-berlino-1948",
+      "reason": "Poco più di nove mesi prima, il 24 giugno 1948, i sovietici avevano chiuso le vie di terra verso Berlino Ovest, e il blocco era ancora in corso."
+    },
+    {
+      "slug": "colpo-di-praga-1948",
+      "reason": "Poco più di tredici mesi prima, il 25 febbraio 1948, i comunisti avevano preso il potere in Cecoslovacchia."
+    },
+    {
+      "slug": "prima-bomba-atomica-sovietica-1949",
+      "reason": "Quasi cinque mesi dopo, il 29 agosto, l'Unione Sovietica fa esplodere la sua prima bomba atomica."
+    }
+  ],
+  "sources": [
+    {
+      "title": "North Atlantic Treaty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/North_Atlantic_Treaty",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Patto Atlantico - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Patto_Atlantico",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma a Washington il 4 aprile 1949. L'articolo italiano è breve: da lui vengono le ragioni dell'accordo (timore sovietico, militarismi, integrazione europea), la ratifica del Senato statunitense, le proteste comuniste in Italia e in Francia, il rifiuto della Svezia, la NATO operativa l'anno seguente e il Patto di Varsavia. Dall'articolo inglese vengono i colloqui segreti al Pentagono, il ruolo di Achilles e Hickerson, l'elenco dei firmatari, l'entrata in vigore il 24 agosto 1949 e il contenuto degli articoli 4, 5 e 6. Nessuno dei due articoli collega esplicitamente il trattato al blocco di Berlino. Gli articoli non indicano l'edificio della firma, per questo il pin è approssimato sul centro di Washington."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

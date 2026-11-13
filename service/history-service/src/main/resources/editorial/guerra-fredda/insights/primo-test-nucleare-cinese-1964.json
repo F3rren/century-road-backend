@@ -1,0 +1,55 @@
+{
+  "slug": "primo-test-nucleare-cinese-1964",
+  "title": "Il primo test nucleare cinese",
+  "summary": "Il 16 ottobre 1964 la Cina fa esplodere nel poligono di Lop Nur, nello Xinjiang, il suo primo ordigno nucleare, noto come «596»: una bomba a fissione d'uranio da ventidue chilotoni. Per l'articolo inglese la Cina diventa il quinto Stato con armi nucleari.",
+  "date": {
+    "year": 1964,
+    "month": 10,
+    "day": 16
+  },
+  "place": {
+    "name": "Poligono di Lop Nur, Xinjiang, Cina",
+    "lat": 40.8125,
+    "lon": 89.7900,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto è quello che l'articolo inglese dà per il luogo del test, circa settanta chilometri a nord-ovest del lago asciutto di Lop Nur; il poligono copre una zona molto più vasta, e l'articolo italiano dice soltanto che si trova nella zona nord-occidentale del paese."
+  },
+  "before": "Per l'articolo inglese il programma nucleare cinese era cominciato il 15 gennaio 1955, spinto dagli scontri con gli Stati Uniti negli anni Cinquanta, tra cui la guerra di Corea. Nel 1957 Cina e Unione Sovietica avevano firmato un accordo che prevedeva la consegna di un prototipo di bomba; con il raffreddamento dei rapporti i sovietici lo ritirarono, insieme a oltre 1400 consiglieri e tecnici. Il nome «596» viene dal giugno 1959, quando il progetto fu avviato come programma autonomo. Per l'articolo italiano la collaborazione con i sovietici durò invece fino al 1960. Nel settembre 1964 Mao decise che il test si facesse.",
+  "event": "Il 16 ottobre 1964, alle tre del pomeriggio ora cinese, un ordigno a fissione d'uranio 235 di 1550 chilogrammi esplose in cima a una torre di 102 metri, con una potenza di ventidue chilotoni. Per l'articolo inglese, alle 19 il premier Zhou Enlai diede l'annuncio a tremila persone riunite nella Grande Sala del Popolo. Lo stesso giorno il governo cinese pubblicò una dichiarazione contro il «ricatto nucleare» degli Stati Uniti e contro il trattato del 1963 sulla messa al bando parziale dei test, e si impegnò a non usare per primo le armi nucleari.",
+  "after": "Per l'articolo italiano il programma proseguì in fretta: il 17 giugno 1967, sempre a Lop Nur, la Cina provò il suo primo ordigno all'idrogeno, trentadue mesi dopo il primo test. Per l'articolo inglese, dopo il test gli Stati Uniti rafforzarono lo spionaggio sul programma cinese e i loro dirigenti aprirono colloqui con l'Unione Sovietica sulla non proliferazione; il governo di Taiwan avviò un proprio programma nucleare segreto, e i rapporti tra Cina e Unione Sovietica peggiorarono. Lo stesso articolo scrive che la capacità nucleare cinese spinse l'Unione Sovietica a firmare con gli Stati Uniti il trattato di non proliferazione del 1968.",
+  "links": [
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Quindici anni prima, il 1º ottobre 1949, era stata proclamata la Repubblica Popolare Cinese."
+    },
+    {
+      "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "reason": "Un anno e due mesi prima, il 5 agosto 1963, era stato firmato il trattato sulla messa al bando parziale dei test, che la Cina criticò il giorno del suo test."
+    },
+    {
+      "slug": "trattato-di-non-proliferazione-nucleare-1968",
+      "reason": "Tre anni e otto mesi dopo, il 1º luglio 1968, si firma il trattato di non proliferazione, che riconosce la Cina tra i cinque Stati nucleari."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Project 596 - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Project_596",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Stati con armi nucleari - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Stati_con_armi_nucleari",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano usato è quello sugli Stati con armi nucleari, e di questo soltanto il paragrafo sulla Cina: da lì vengono la data, il luogo, la potenza e il test all'idrogeno del 1967. Tutto il resto (le origini del programma, la torre, l'annuncio di Zhou Enlai, la dichiarazione del governo e le reazioni) è dell'articolo inglese. I due articoli concordano sul 16 ottobre 1964 e sui ventidue chilotoni. Divergono sulla fine della collaborazione sovietica: l'inglese parla del 1959, l'italiano dice che dal 1960 il programma proseguì in maniera autonoma. Il pin è sulle coordinate che l'articolo inglese dà per il luogo del test."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

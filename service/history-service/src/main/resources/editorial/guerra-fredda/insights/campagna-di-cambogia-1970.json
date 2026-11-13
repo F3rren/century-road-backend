@@ -1,0 +1,49 @@
+{
+  "slug": "campagna-di-cambogia-1970",
+  "title": "La campagna di Cambogia",
+  "summary": "Dal 29 aprile 1970 truppe sudvietnamite, e dal 1º maggio anche statunitensi, entrano nella Cambogia orientale per distruggere le basi dell'esercito nordvietnamita e dei Viet Cong. Catturano grandi quantità di armi e rifornimenti ma non il comando nemico; negli Stati Uniti l'operazione scatena proteste nelle università.",
+  "date": {
+    "year": 1970,
+    "month": 4,
+    "day": 29
+  },
+  "place": {
+    "name": "Becco di pappagallo, provincia di Svay Rieng, Cambogia",
+    "lat": 11.0870,
+    "lon": 105.7990,
+    "countryCode": "KH",
+    "approximate": true,
+    "note": "Le operazioni si svolsero lungo tutta la frontiera orientale della Cambogia; il punto è su Svay Rieng, nella zona del «Becco di pappagallo» dove il 29 aprile la stampa segnalò l'ingresso delle truppe sudvietnamite e dove il 30 aprile partì l'operazione Toan Thang 42. L'articolo non dà coordinate."
+  },
+  "before": "Da anni l'esercito nordvietnamita usava le zone poco abitate della Cambogia orientale come rifugio e deposito di armi; nel 1966 il principe Sihanouk aveva concordato con la Cina basi comuniste permanenti. Dal marzo 1969 Nixon le faceva bombardare in segreto (operazione Menu). Il 18 marzo 1970 l'Assemblea nazionale cambogiana depose Sihanouk e nominò capo dello Stato provvisorio il generale Lon Nol, favorevole agli Stati Uniti. Il 29 marzo l'esercito nordvietnamita attaccò le forze cambogiane e occupò gran parte dell'est del paese. Il 20 aprile Nixon annunciò il ritiro di 150.200 soldati dal Vietnam del Sud entro l'anno, nell'ambito della vietnamizzazione; il generale Abrams lo aveva avvertito che ritirarsi senza eliminare le basi oltre confine avrebbe creato una situazione militare insostenibile.",
+  "event": "Il 29 aprile la stampa riferì che truppe sudvietnamite erano entrate nel «Becco di pappagallo», nella provincia di Svay Rieng; l'operazione principale, Toan Thang 42, partì il 30 aprile con circa 8.700 uomini. La sera del 30 aprile Nixon annunciò in televisione l'intervento americano, con l'obiettivo di catturare il COSVN, il comando comunista per il Sud. Il 1º maggio 10.000 soldati statunitensi e 5.000 sudvietnamiti attaccarono nella zona dell'«Amo». Le forze nordvietnamite, avvertite, si erano ritirate verso ovest ed evitarono per lo più lo scontro: il comando non fu trovato, ma furono scoperti grandi depositi, come la cosiddetta «Città». Lon Nol non era stato informato in anticipo. Il 7 maggio Nixon limitò le operazioni americane a trenta chilometri di profondità e fissò il ritiro entro il 30 giugno.",
+  "after": "Nelle università americane scoppiarono proteste: il 4 maggio la Guardia Nazionale dell'Ohio uccise quattro studenti alla Kent State. Il 30 giugno il Senato approvò l'emendamento Cooper-Church per togliere i fondi alle operazioni in Cambogia; respinto alla Camera, fu ripreso e divenne legge il 22 dicembre, vietando l'impiego di truppe di terra americane in Laos e Cambogia. Gli alleati dichiararono 11.369 nemici uccisi e oltre 22.000 armi individuali catturate, e Nixon parlò di grande successo; per il resto del 1970 l'attività nemica intorno a Saigon calò, ma le forze nordvietnamite tornarono alle basi di confine già in estate e nel 1971 avevano rimpiazzato le armi perdute. Secondo alcuni l'intervento inasprì la guerra civile cambogiana e aiutò i Khmer rossi a reclutare.",
+  "links": [
+    {
+      "slug": "sparatoria-della-kent-state-1970",
+      "reason": "Cinque giorni dopo, il 4 maggio 1970, la Guardia Nazionale uccide quattro studenti alla Kent State durante le proteste contro l'intervento."
+    },
+    {
+      "slug": "incidente-del-golfo-del-tonchino-1964",
+      "reason": "Quasi sei anni prima, il 2 agosto 1964, c'era stato lo scontro nel golfo del Tonchino, seguito dalla risoluzione con cui Johnson e Nixon condussero la guerra, che la legge emendata dopo l'intervento in Cambogia revocò."
+    },
+    {
+      "slug": "caduta-di-phnom-penh-1975",
+      "reason": "Quasi cinque anni dopo, il 17 aprile 1975, Phnom Penh cade in mano ai Khmer rossi."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cambodian campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cambodian_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Non esiste un articolo di Wikipedia in italiano su questa campagna: il testo si basa solo sull'articolo inglese «Cambodian campaign». L'articolo non è del tutto coerente sull'inizio: in apertura dà le operazioni sudvietnamite dal 29 aprile al 22 luglio e quelle statunitensi dal 1º maggio al 30 giugno, e riferisce che il 29 aprile la stampa parlò di truppe sudvietnamite nel Becco di pappagallo, mentre l'operazione Toan Thang 42 è data come lanciata il 30 aprile (il comandante Đỗ Cao Trí si era rifiutato di partire il 29). Già dal 14 aprile c'erano state incursioni sudvietnamite più brevi, descritte come ricognizioni. La data scelta è il 29 aprile. Sulla revoca della risoluzione del golfo del Tonchino l'articolo è poco chiaro: dice che la legge con l'emendamento fu respinta alla Camera, ma che la legge modificata revocò comunque la risoluzione. I numeri delle perdite e del materiale catturato sono quelli dichiarati da Stati Uniti e Vietnam del Sud; la storia ufficiale nordvietnamita dà cifre molto diverse. Il pin è su Svay Rieng, nel Becco di pappagallo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

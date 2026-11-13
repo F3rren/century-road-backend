@@ -1,0 +1,51 @@
+{
+  "slug": "ottobre-polacco-1956",
+  "title": "L'ottobre polacco",
+  "summary": "Tra il 19 e il 21 ottobre 1956 l'ottavo plenum del comitato centrale del partito comunista polacco porta Władysław Gomułka alla guida del partito, dopo un confronto teso con una delegazione sovietica guidata da Chruščëv. La Polonia ottiene più autonomia restando fedele a Mosca.",
+  "date": {
+    "year": 1956,
+    "month": 10,
+    "day": 19
+  },
+  "place": {
+    "name": "Varsavia, Polonia",
+    "lat": 52.2297,
+    "lon": 21.0122,
+    "countryCode": "PL",
+    "approximate": true,
+    "note": "Il punto indica il centro di Varsavia, la capitale verso cui marciarono le truppe sovietiche: gli articoli non dicono dove si riunì il plenum."
+  },
+  "before": "Nel 1956 la fazione stalinista del partito polacco era stata indebolita dal rapporto segreto di Chruščëv a febbraio, dalla morte del leader Bolesław Bierut a marzo e dalle proteste di Poznań a giugno. Per l'articolo inglese in primavera migliaia di riunioni di partito avevano discusso temi tabù, come il massacro di Katyn e l'arresto di Gomułka. Gomułka, di fatto leader del paese dal 1947, era stato estromesso dagli stalinisti nel 1948, espulso dal partito nel 1949, imprigionato nel 1951 e liberato nel 1954.",
+  "event": "In ottobre il primo segretario Edward Ochab propose Gomułka come suo successore all'ottavo plenum del comitato centrale, riunito dal 19 al 21 ottobre. Gomułka chiese poteri reali e l'allontanamento del maresciallo sovietico Konstantin Rokossovsky dal politburo e dal ministero della difesa. Per l'articolo inglese una delegazione sovietica guidata da Chruščëv, con Mikojan, Bulganin, Molotov, Kaganovič e Konev, volò in Polonia per impedire l'allontanamento dei membri filosovietici del politburo, soprattutto Rokossovsky, mentre truppe sovietiche si muovevano verso Varsavia e si fermarono a cento chilometri dalla capitale. Gomułka assicurò che la Polonia non avrebbe abbandonato il comunismo né i trattati con l'Unione Sovietica; Chruščëv ritirò la minaccia e Gomułka fu confermato primo segretario.",
+  "after": "Per l'articolo inglese le notizie dalla Polonia arrivarono in Ungheria tra il 19 e il 22 ottobre, e una manifestazione di studenti a Budapest a sostegno di Gomułka fu tra gli eventi che accesero la rivolta ungherese. Entro metà novembre Gomułka ottenne la cancellazione dei debiti polacchi, l'abbandono della collettivizzazione imposta dai sovietici e il permesso di una politica più liberale verso la Chiesa cattolica; Rokossovsky lasciò la Polonia e fu liberato il cardinale Stefan Wyszyński. Per entrambi gli articoli la liberalizzazione fu temporanea e il regime di Gomułka divenne più oppressivo, ma l'evento segnò la fine dello stalinismo in Polonia.",
+  "links": [
+    {
+      "slug": "rivolta-di-poznan-1956",
+      "reason": "Meno di quattro mesi prima, il 28 giugno, gli operai di Poznań erano scesi in piazza."
+    },
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Quattro giorni dopo, il 23 ottobre, a Budapest comincia la rivoluzione ungherese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Polish October - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Polish_October",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Ottobre polacco - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Ottobre_polacco",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Nessuno dei due articoli dà il giorno preciso in cui Gomułka fu eletto primo segretario: l'articolo inglese colloca il passaggio all'ottavo plenum del comitato centrale, tenuto dal 19 al 21 ottobre 1956, e la data scelta è il primo giorno del plenum. L'articolo italiano è molto breve e parla solo di eventi di ottobre: la delegazione sovietica, le truppe, le condizioni poste da Gomułka e le concessioni di novembre sono dell'articolo inglese. L'inglese riporta anche il racconto delle memorie di Chruščëv, secondo cui fermò le truppe dopo che Gomułka glielo aveva chiesto con forza. Il pin è approssimativo sul centro di Varsavia: nessuno dei due articoli dice dove si riunì il plenum."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

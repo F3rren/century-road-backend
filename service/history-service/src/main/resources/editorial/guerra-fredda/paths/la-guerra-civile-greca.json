@@ -1,0 +1,33 @@
+{
+  "slug": "la-guerra-civile-greca",
+  "title": "La guerra civile greca",
+  "tagline": "Dagli scontri di Atene del dicembre 1944 all'offensiva finale sul Grammos: comunisti e governo greci si scontrano, con britannici e americani a fianco del governo e la Jugoslavia a sostegno dei comunisti.",
+  "intro": "Il percorso segue la guerra civile greca, dagli scontri di Atene del dicembre 1944 all'offensiva finale del governo sui monti Grammos e Vitsi nell'agosto 1949: l'accordo di Varkiza, l'attacco di Litochoro, la dottrina Truman e la rottura tra Tito e Stalin.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "dekemvriana-1944",
+      "narrative": "Si parte dal 3 dicembre 1944: ad Atene polizia e gendarmeria sparano su una manifestazione dell'EAM diretta a piazza Syntagma."
+    },
+    {
+      "insight": "accordo-di-varkiza-1945",
+      "narrative": "Il 12 febbraio 1945, a Varkiza, il governo e il Partito Comunista, per l'EAM-ELAS, firmano un accordo per il disarmo dell'ELAS."
+    },
+    {
+      "insight": "inizio-della-guerra-civile-greca-1946",
+      "narrative": "Nella notte fra il 30 e il 31 marzo 1946, alla vigilia delle elezioni, un gruppo di ex combattenti dell'ELAS attacca il presidio di Litochoro."
+    },
+    {
+      "insight": "dottrina-truman-1947",
+      "narrative": "Il 12 marzo 1947 Truman chiede al Congresso aiuti per la Grecia e la Turchia."
+    },
+    {
+      "insight": "rottura-tito-stalin-1948",
+      "narrative": "Il 28 giugno 1948 il Cominform condanna i comunisti jugoslavi, che sostenevano i comunisti greci."
+    },
+    {
+      "insight": "operazione-pyrsos-1949",
+      "narrative": "Il 2 agosto 1949 l'esercito greco lancia l'offensiva finale sui monti Grammos e Vitsi."
+    }
+  ]
+}

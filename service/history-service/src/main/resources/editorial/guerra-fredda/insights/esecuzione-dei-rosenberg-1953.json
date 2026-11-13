@@ -1,0 +1,50 @@
+{
+  "slug": "esecuzione-dei-rosenberg-1953",
+  "title": "L'esecuzione dei Rosenberg",
+  "summary": "Il 19 giugno 1953, nel carcere di Sing Sing, a Ossining, nello Stato di New York, Julius ed Ethel Rosenberg, condannati per spionaggio a favore dell'Unione Sovietica, vengono giustiziati sulla sedia elettrica, nonostante appelli alla grazia da molti paesi. Il ruolo di Ethel è rimasto controverso.",
+  "date": {
+    "year": 1953,
+    "month": 6,
+    "day": 19
+  },
+  "place": {
+    "name": "Carcere di Sing Sing, Ossining, Stati Uniti",
+    "lat": 41.1517,
+    "lon": -73.8686,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Per l'articolo inglese Julius Rosenberg, ingegnere, era stato reclutato dallo spionaggio sovietico nel 1942, secondo il suo referente Aleksandr Feklisov, e aveva passato migliaia di documenti riservati e reclutato altre fonti. Nel 1950 la scoperta dello spionaggio del fisico Klaus Fuchs portò all'arresto del suo corriere Harry Gold; a giugno fu arrestato David Greenglass, fratello di Ethel, che aveva lavorato a Los Alamos. Greenglass accusò il cognato: Julius fu arrestato il 17 luglio 1950, Ethel l'11 agosto. Il processo cominciò il 6 marzo 1951; il 29 marzo i due furono giudicati colpevoli e il 5 aprile condannati a morte.",
+  "event": "Per l'articolo inglese il governo offrì di risparmiarli se Julius avesse fatto i nomi di altre spie, ma i due rifiutarono e si dichiararono innocenti. Ci furono proteste in molte capitali europee e appelli alla grazia da intellettuali come Sartre, Picasso e Brecht e da papa Pio XII; Eisenhower li respinse. L'esecuzione, fissata per il 18 giugno, fu rinviata da una sospensione decisa il giorno prima dal giudice della Corte suprema William O. Douglas. La sera del 19 giugno Julius morì alla prima scarica; per Ethel ne servirono cinque.",
+  "after": "Per l'articolo inglese furono gli unici civili statunitensi giustiziati per spionaggio durante la guerra fredda. Il valore delle informazioni passate è discusso: il generale Groves lo giudicò minore, mentre Chruščëv scrisse di aver saputo che i Rosenberg avevano dato un aiuto molto significativo. Nel 1995 la pubblicazione dei messaggi sovietici decifrati dal progetto Venona mostrò il ruolo di Julius. Nel 2001 Greenglass ritrattò la testimonianza sulla sorella, dicendo di non ricordare chi avesse battuto a macchina gli appunti, e nel 2008, per l'articolo italiano, Morton Sobell ammise che lui e Julius erano spie, sostenendo l'innocenza di Ethel.",
+  "links": [
+    {
+      "slug": "prima-bomba-atomica-sovietica-1949",
+      "reason": "Quasi tre anni e dieci mesi prima, il 29 agosto 1949, l'Unione Sovietica aveva provato la sua prima bomba atomica, sul cui sviluppo si è discusso quanto abbia pesato lo spionaggio."
+    },
+    {
+      "slug": "udienze-esercito-mccarthy-1954",
+      "reason": "Dieci mesi dopo, il 22 aprile 1954, cominciano le udienze tra l'esercito e il senatore McCarthy, per il quale lavorava Roy Cohn, uno dei pubblici ministeri del processo Rosenberg."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Julius and Ethel Rosenberg - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Julius_and_Ethel_Rosenberg",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Caso Rosenberg - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Caso_Rosenberg",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'esecuzione il 19 giugno 1953 a Sing Sing e le date degli arresti, dell'inizio del processo e della condanna a morte. Il reclutamento, l'offerta del governo, il rinvio del 18 giugno, i particolari dell'esecuzione, i giudizi di Groves e Chruščëv e le rivelazioni del progetto Venona vengono dall'articolo inglese; l'italiano cita tra chi chiese la grazia anche Hammett, Kahlo, Rivera e Simone de Beauvoir (l'inglese nomina i primi tre tra chi protestò, non de Beauvoir). Su Sobell gli articoli differiscono: per l'italiano disse che lui e Julius avevano passato solo materiali su radar e artiglieria, per l'inglese confermò che Julius faceva parte di una cospirazione che aveva passato informazioni anche sulla bomba atomica, ma una settimana dopo negò di saperne qualcosa. L'articolo inglese data all'8 febbraio 1950 una riunione segreta sul caso, prima degli arresti: la data sembra incoerente e non è usata. Il pin è sul carcere di Sing Sing."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

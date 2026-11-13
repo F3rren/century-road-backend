@@ -1,0 +1,41 @@
+{
+  "slug": "la-guerra-fredda-1946-1949",
+  "title": "La guerra fredda, 1946-1949",
+  "tagline": "Dal discorso di Fulton alla Repubblica Popolare Cinese: come tra il 1946 e il 1949 l'Europa si divide in due blocchi.",
+  "intro": "Il percorso segue i primi anni della guerra fredda, dal discorso di Churchill a Fulton del marzo 1946 alla proclamazione della Repubblica Popolare Cinese dell'ottobre 1949: la dottrina Truman, il piano Marshall, il colpo di Praga, il blocco di Berlino, il Patto Atlantico e la prima bomba atomica sovietica.\n\nÈ la linea principale del periodo: la guerra civile greca e quella cinese hanno ciascuna un percorso proprio, che incrocia questo. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "discorso-di-fulton-1946",
+      "narrative": "Si parte dal 5 marzo 1946: a Fulton, nel Missouri, Churchill parla di una «cortina di ferro» calata sull'Europa."
+    },
+    {
+      "insight": "dottrina-truman-1947",
+      "narrative": "Il 12 marzo 1947 Truman chiede al Congresso aiuti per la Grecia e la Turchia."
+    },
+    {
+      "insight": "piano-marshall-1947",
+      "narrative": "Il 5 giugno, a Harvard, il segretario di Stato Marshall offre l'aiuto degli Stati Uniti alla ripresa dell'Europa."
+    },
+    {
+      "insight": "colpo-di-praga-1948",
+      "narrative": "Il 25 febbraio 1948 i comunisti prendono il potere in Cecoslovacchia."
+    },
+    {
+      "insight": "blocco-di-berlino-1948",
+      "narrative": "Il 24 giugno i sovietici chiudono le vie di terra e d'acqua verso i settori occidentali di Berlino, che saranno riforniti per via aerea."
+    },
+    {
+      "insight": "firma-del-patto-atlantico-1949",
+      "narrative": "Il 4 aprile 1949 dodici paesi firmano a Washington il Patto Atlantico."
+    },
+    {
+      "insight": "prima-bomba-atomica-sovietica-1949",
+      "narrative": "Il 29 agosto l'Unione Sovietica fa esplodere la sua prima bomba atomica."
+    },
+    {
+      "insight": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "narrative": "Il 1º ottobre, a Pechino, Mao Zedong proclama la Repubblica Popolare Cinese."
+    }
+  ]
+}

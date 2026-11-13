@@ -1,0 +1,58 @@
+{
+  "slug": "guerra-dell-ogaden-1977",
+  "title": "La guerra dell'Ogaden",
+  "summary": "Il 13 luglio 1977 l'esercito somalo invade l'Ogaden, regione etiope abitata in prevalenza da somali, e in poche settimane ne conquista gran parte. L'Unione Sovietica, che armava la Somalia, passa dalla parte dell'Etiopia; con l'aiuto sovietico e cubano gli etiopi ribaltano la guerra, che finisce nel marzo 1978.",
+  "date": {
+    "year": 1977,
+    "month": 7,
+    "day": 13
+  },
+  "place": {
+    "name": "Ogaden, Etiopia",
+    "lat": 8.2167,
+    "lon": 43.5667,
+    "countryCode": "ET",
+    "approximate": true,
+    "note": "Il punto è sulla città di Degehabur, nell'Ogaden settentrionale, e indica soltanto la regione: la guerra si combatté su tutto l'Ogaden e attorno a Dire Daua, Harar e Giggiga."
+  },
+  "before": "Nel 1948 il Regno Unito aveva affidato l'Ogaden all'Etiopia in base a un trattato del 1897; per l'articolo inglese i somali della regione chiedevano l'autodeterminazione. Nel 1974 il Derg, una giunta militare, aveva deposto l'imperatore Hailé Selassié. Dal 1975 la Somalia di Siad Barre sosteneva il Fronte di liberazione della Somalia occidentale, che all'inizio del 1977 controllava gran parte delle pianure dell'Ogaden. Entrambi i governi erano appoggiati dall'Unione Sovietica. Per l'articolo inglese, nel marzo 1977, ad Aden, Fidel Castro propose una federazione socialista tra Etiopia, Somalia e Yemen del Sud, ma i colloqui fallirono; dal maggio i primi militari cubani arrivarono in Etiopia.",
+  "event": "Per l'articolo italiano il 13 luglio 1977 la Somalia invase l'Ogaden con settantamila uomini; l'articolo inglese, citando documenti etiopi, data l'attacco al 12 luglio e ricorda che altre fonti dicono 13 o 23. Le forze somale avanzarono rapidamente: tra il 17 e il 19 agosto furono fermate alle porte di Dire Daua, ma il 12 settembre presero Giggiga e a fine mese controllavano quasi tutta la regione. L'Unione Sovietica, alleata di entrambe le parti, tentò una mediazione, poi scelse l'Etiopia: in settembre le mandò armi e sospese le forniture alla Somalia. Il 13 novembre la Somalia espulse i consiglieri sovietici e ruppe le relazioni con Cuba.",
+  "after": "Già dalla fine di settembre era partito un grande ponte aereo sovietico di armi e consiglieri, guidati dal generale Vasilij Petrov; da dicembre arrivarono le truppe regolari cubane, oltre dodicimila (in altri passi gli articoli dicono quindicimila). Gli etiopi resistettero a Harar, poi con i cubani contrattaccarono e il 5 marzo 1978 ripresero Giggiga; il 9 marzo Siad Barre ordinò il ritiro. Per l'articolo inglese la guerriglia nell'Ogaden continuò, centinaia di migliaia di persone fuggirono in Somalia e, finita la guerra, gli Stati Uniti presero la Somalia come alleata in cambio dell'uso delle sue basi; per l'articolo italiano gli Stati Uniti colsero l'occasione per riavvicinarsi alla Somalia.",
+  "links": [
+    {
+      "slug": "intervento-cubano-in-angola-1975",
+      "reason": "Circa venti mesi prima, nel novembre 1975, Cuba aveva mandato le sue truppe in Angola: un altro intervento cubano in Africa."
+    },
+    {
+      "slug": "guerra-del-kippur-1973",
+      "reason": "Quasi quattro anni prima, nell'ottobre 1973, il ponte aereo sovietico verso la Siria: per l'articolo inglese l'unico più grande di quello organizzato per l'Etiopia."
+    },
+    {
+      "slug": "invasione-sovietica-dell-afghanistan-1979",
+      "reason": "Circa due anni e cinque mesi dopo, a fine dicembre 1979, l'Unione Sovietica interviene con le proprie truppe in Afghanistan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Ogaden War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Ogaden_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra dell'Ogaden - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_dell'Ogaden",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data del 13 luglio 1977 è quella dell'articolo italiano; l'inglese indica il 12 luglio secondo documenti del ministero della difesa etiope e cita anche il 13 e il 23. I particolari sulle richieste di autodeterminazione, sul Fronte di liberazione, sull'incontro di Aden e sul dopoguerra sono dell'articolo inglese, più ampio; l'italiano è breve e accenna soltanto a un inutile tentativo di mediazione sovietica e al riavvicinamento degli Stati Uniti alla Somalia.",
+    "I due articoli descrivono in modo diverso il cambio di campo sovietico: per l'italiano fu Siad Barre a rompere l'intesa con Mosca, per sfruttare le difficoltà etiopi e annettere l'Ogaden (l'articolo lo racconta prima dell'invasione, e solo dopo dice che l'URSS, fallita la mediazione, interruppe gli aiuti alla Somalia); per l'inglese fu l'Unione Sovietica a ritirare il sostegno alla Somalia dopo l'invasione, sospendendo le forniture in settembre, mentre la Somalia espulse i consiglieri il 13 novembre. Il testo segue l'ordine dei fatti dato dall'inglese.",
+    "Le cifre non coincidono: entro un mese dall'invasione i somali controllavano il 60% della regione per l'italiano e il 70% per l'inglese; i soldati cubani sono quindicimila in un passo e dodicimila in un altro dell'italiano, oltre dodicimila o quindicimila nell'inglese; i consiglieri sovietici oltre mille per l'italiano e millecinquecento per l'inglese. Sulla fine, l'italiano dice ritiro ordinato il 9 marzo e completato il 15, l'inglese dice che il 23 marzo 1978 l'Etiopia dichiarò ripreso l'ultimo posto di frontiera.",
+    "Il pin è su Degehabur, sede di una brigata etiope citata dall'articolo inglese, scelto per stare ben dentro l'Ogaden e lontano dal confine somalo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

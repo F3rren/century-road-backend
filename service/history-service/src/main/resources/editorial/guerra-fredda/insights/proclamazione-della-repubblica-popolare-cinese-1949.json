@@ -1,0 +1,54 @@
+{
+  "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+  "title": "La proclamazione della Repubblica Popolare Cinese",
+  "summary": "Il 1° ottobre 1949, dalla Porta di Tiananmen a Pechino, Mao Zedong, presidente del Partito Comunista Cinese, proclama la Repubblica Popolare Cinese e il suo Governo Popolare Centrale, dopo la vittoria comunista nella guerra civile.",
+  "date": {
+    "year": 1949,
+    "month": 10,
+    "day": 1
+  },
+  "place": {
+    "name": "Porta di Tiananmen, Pechino, Cina",
+    "lat": 39.9087,
+    "lon": 116.3975,
+    "countryCode": "CN",
+    "approximate": false
+  },
+  "before": "La guerra civile tra il governo nazionalista del Kuomintang e il Partito Comunista Cinese era durata, a fasi alterne, dal 1927 al 1949; interrotta dal 1937 al 1945 per combattere i Giapponesi, era ripresa dopo la loro sconfitta, e nell'ultima fase i comunisti avevano preso il sopravvento. Nel 1949 il PCC controllava gran parte della Cina continentale e il Kuomintang si ritirava verso Taiwan, Hainan e le isole vicine. Per l'articolo inglese Mao aveva proposto di conservare il nome di Repubblica di Cina, ma dopo le obiezioni di Tan Kah Kee fu scelto «Repubblica Popolare Cinese». Il 21 settembre Mao ne annunciò la fondazione alla prima sessione plenaria della Conferenza Consultiva del Popolo Cinese.",
+  "event": "Il 1° ottobre 1949, alle 15 in punto ora di Pechino, durante una grande celebrazione in piazza Tienanmen, Mao annunciò dall'alto della Porta di Tiananmen che il Governo Popolare Centrale della Repubblica Popolare Cinese era stato fondato. La Marcia dei Volontari fu suonata come inno nazionale e la Bandiera Rossa a Cinque Stelle fu issata per la prima volta, mentre in lontananza si sparavano ventuno colpi di cannone. Per l'articolo inglese la dichiarazione indicava Pechino come capitale, nominava Zhou Enlai primo ministro e ministro degli Esteri e presentava il nuovo governo come l'unico legittimo. Seguì la prima parata militare pubblica dell'Esercito Popolare di Liberazione, con circa 16.000 uomini, comandata da Nie Rongzhen e passata in rassegna da Zhu De.",
+  "after": "Il 1° ottobre divenne la prima Festa Nazionale del paese. Subito dopo l'Unione Sovietica e altri stati comunisti riconobbero la Repubblica Popolare; per l'articolo inglese l'URSS lo fece il 2 ottobre, per prima. Molti paesi occidentali, tra cui gli Stati Uniti, continuarono invece, inizialmente, a riconoscere come governo legittimo la Repubblica di Cina, che nel dicembre 1949 si ritirò sull'isola di Taiwan. Per l'articolo inglese Chiang Kai-shek definì la Repubblica Popolare un «regime fantoccio dell'Unione Sovietica». Il nuovo governo consolidò rapidamente il proprio potere e cominciò a nazionalizzare le industrie.",
+  "links": [
+    {
+      "slug": "attraversamento-dello-yangtze-1949",
+      "reason": "Poco più di cinque mesi prima, il 20 aprile 1949, l'esercito comunista aveva cominciato ad attraversare lo Yangtze."
+    },
+    {
+      "slug": "prima-bomba-atomica-sovietica-1949",
+      "reason": "Trentatré giorni prima, il 29 agosto, l'Unione Sovietica aveva fatto esplodere la sua prima bomba atomica."
+    },
+    {
+      "slug": "ritirata-a-taiwan-1949",
+      "reason": "Poco più di due mesi dopo, il 7 dicembre 1949, il governo della Repubblica di Cina si ritira a Taiwan."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Proclamation of the People's Republic of China - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Proclamation_of_the_People%27s_Republic_of_China",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Proclamazione della Repubblica Popolare Cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Proclamazione_della_Repubblica_Popolare_Cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "I due articoli coincidono quasi del tutto: l'italiano è in gran parte una traduzione dell'inglese, ma omette il testo della dichiarazione. Vengono solo dall'articolo inglese la discussione sul nome (Tan Kah Kee), il contenuto della dichiarazione (Pechino capitale, Zhou Enlai, governo unico legittimo), la data del 2 ottobre per il riconoscimento sovietico e la frase di Chiang Kai-shek; l'italiano dice soltanto che l'URSS e altri stati comunisti riconobbero la Repubblica Popolare per primi. L'articolo italiano scrive sia «piazza Tienanmen» sia «Porta di Tiananmen»: il testo usa le due forme come lui. Il pin è sulla Porta di Tiananmen, da cui Mao fece la proclamazione."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

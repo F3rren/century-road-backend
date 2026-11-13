@@ -1,0 +1,51 @@
+{
+  "slug": "operazione-mongoose-1961",
+  "title": "L'operazione Mongoose",
+  "summary": "Il 30 novembre 1961 il presidente Kennedy autorizza ufficialmente l'operazione Mongoose, il programma segreto della CIA contro il governo di Fidel Castro: sabotaggi, propaganda, attentati e piani per uccidere i dirigenti cubani. Per entrambi gli articoli ebbe un ruolo nella crisi dei missili.",
+  "date": {
+    "year": 1961,
+    "month": 11,
+    "day": 30
+  },
+  "place": {
+    "name": "Casa Bianca, Washington, Stati Uniti",
+    "lat": 38.8977,
+    "lon": -77.0365,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "L'operazione fu condotta da Miami e a Cuba; il punto è sulla Casa Bianca, dove fu concordato il nome; gli articoli non dicono dove il presidente la autorizzò."
+  },
+  "before": "Già sotto Eisenhower, nel 1960, era stato approvato un programma di azione segreta contro il regime di Castro, con propaganda, una rete di informatori sull'isola e una forza paramilitare all'estero. Un mese dopo il fallimento della baia dei Porci, nell'aprile 1961, la CIA propose sabotaggi e attacchi contro obiettivi civili e militari a Cuba. Per l'articolo inglese, a novembre Robert Kennedy e il consigliere Richard Goodwin suggerirono al presidente di avviare la campagna; il nome fu concordato in una riunione alla Casa Bianca il 3 o il 4 novembre e il 21 novembre i Kennedy, il direttore della CIA John McCone, Goodwin e il generale Edward Lansdale discussero i piani.",
+  "event": "Per l'articolo inglese l'operazione fu autorizzata ufficialmente il 30 novembre 1961; l'italiano dice soltanto a fine novembre. La guidavano Lansdale per la parte militare e William King Harvey alla CIA, con la sede operativa a JMWAVE, una stazione segreta nel campus dell'Università di Miami, e vi parteciparono molti dipartimenti del governo. Il 20 febbraio 1962 Lansdale presentò un calendario in sei fasi che doveva culminare nell'ottobre 1962 con una «rivolta aperta» e il rovesciamento del regime. Per l'articolo italiano in quattordici mesi furono compiute 5780 azioni terroristiche e 716 sabotaggi contro infrastrutture economiche cubane.",
+  "after": "Un rapporto della CIA del marzo 1962 concluse che una rivolta interna era improbabile, e a luglio l'operazione mostrava ancora pochi progressi. Per l'articolo inglese le azioni contro Cuba furono tra i fattori della decisione sovietica di installare missili sull'isola e di quella cubana di accettarli. L'operazione fu sospesa il 30 ottobre 1962, durante la crisi dei missili, quando tre delle dieci squadre di sabotaggio erano già a Cuba; per Noam Chomsky, citato dall'articolo inglese, gli attacchi continuarono comunque. Per l'articolo italiano non indebolì Castro, anzi ne aumentò la popolarità.",
+  "links": [
+    {
+      "slug": "invasione-della-baia-dei-porci-1961",
+      "reason": "Sette mesi e tredici giorni prima, il 17 aprile 1961, era cominciato lo sbarco fallito nella baia dei Porci."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Dieci mesi e sedici giorni dopo, il 16 ottobre 1962, comincia la crisi dei missili di Cuba."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Operation Mongoose - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Operation_Mongoose",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Operazione Mongoose - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Operazione_Mongoose",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Il giorno del 30 novembre 1961 è solo nell'articolo inglese; l'italiano dice «a fine novembre 1961». La maggior parte del testo segue l'articolo inglese, molto più ampio; le cifre su azioni terroristiche e sabotaggi e il giudizio sulla popolarità di Castro sono dell'italiano. Sulle origini l'articolo italiano non è coerente: nell'introduzione colloca la volontà di Eisenhower nel marzo 1960, nella sezione sulle origini l'approvazione del programma al 17 aprile 1960; l'inglese dà il 17 marzo 1960; per questo il testo dice soltanto 1960. L'articolo inglese data la riunione in cui fu scelto il nome al 4 novembre 1961 nell'introduzione e al 3 novembre nel corpo, perciò il testo riporta entrambe le date. L'italiano dà come durata dell'operazione dal 1961 al 1975, mentre l'inglese la dice sospesa il 30 ottobre 1962 e riporta tesi diverse su quanto continuò. Il pin è approssimativo, sulla Casa Bianca."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

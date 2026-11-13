@@ -21,7 +21,6 @@ spring:
   jpa:
     hibernate:
       ddl-auto: validate
-    database-platform: org.hibernate.dialect.PostgreSQLDialect
     open-in-view: false
 
   # Keep migrations and Flyway's history table in this service's schema.
@@ -112,3 +111,10 @@ springdoc:
 logging:
   level:
     root: INFO
+  pattern:
+    # The request id RequestCorrelationFilter puts in the MDC, in every line written while a request is
+    # answered, and "-" outside one (startup, the nightly index). It was minted and handed back to the client
+    # but never printed, so a person quoting it left nothing to search. Boot prints this right after the
+    # thread name, where it puts a trace id; the same id is a field of every line in the JSON formats
+    # (LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs).
+    correlation: "[%X{requestId:--}] "

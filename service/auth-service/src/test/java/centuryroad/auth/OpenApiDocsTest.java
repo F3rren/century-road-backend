@@ -139,8 +139,8 @@ class OpenApiDocsTest {
     void everyAnswerIsDeclaredAsJson_notAsAnything() throws Exception {
         List<String> notJson = new ArrayList<>();
 
-        spec().path("paths").fields().forEachRemaining(path -> path.getValue().fields()
-                .forEachRemaining(method -> method.getValue().path("responses").fields().forEachRemaining(
+        spec().path("paths").properties().forEach(path -> path.getValue().properties()
+                .forEach(method -> method.getValue().path("responses").properties().forEach(
                         response -> response.getValue().path("content").fieldNames().forEachRemaining(mediaType -> {
                             if (!"application/json".equals(mediaType)) {
                                 notJson.add(method.getKey() + " " + path.getKey() + " " + response.getKey() + " "
@@ -171,8 +171,8 @@ class OpenApiDocsTest {
         // anyway.
         List<String> unreadable = new ArrayList<>();
 
-        spec().path("components").path("schemas").fields()
-                .forEachRemaining(schema -> schema.getValue().path("properties").fields().forEachRemaining(property -> {
+        spec().path("components").path("schemas").properties()
+                .forEach(schema -> schema.getValue().path("properties").properties().forEach(property -> {
                     String pattern = property.getValue().path("pattern").asText();
                     if (pattern.startsWith("(?")) {
                         unreadable.add(schema.getKey() + "." + property.getKey() + " = " + pattern);
@@ -196,8 +196,8 @@ class OpenApiDocsTest {
     void everyFieldOfEveryRequestAndAnswerIsDescribed_becauseTheNamesAloneDoNotSayWhatTheyMean() throws Exception {
         List<String> undescribed = new ArrayList<>();
 
-        spec().path("components").path("schemas").fields()
-                .forEachRemaining(schema -> schema.getValue().path("properties").fields().forEachRemaining(property -> {
+        spec().path("components").path("schemas").properties()
+                .forEach(schema -> schema.getValue().path("properties").properties().forEach(property -> {
                     boolean isReference = property.getValue().has("$ref");
                     if (!isReference && property.getValue().path("description").asText().isBlank()) {
                         undescribed.add(schema.getKey() + "." + property.getKey());

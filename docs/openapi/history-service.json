@@ -1,0 +1,2635 @@
+{
+  "components" : {
+    "schemas" : {
+      "ApiEnvelope" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeInsightDetail" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/InsightDetail",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListCountryEventCount" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/CountryEventCount"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListCountryViewStat" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/CountryViewStat"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListDayViewStat" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/DayViewStat"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListInsightSummary" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/InsightSummary"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListPathSummary" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/PathSummary"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeListStartHereItem" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success.",
+            "items" : {
+              "$ref" : "#/components/schemas/StartHereItem"
+            },
+            "type" : "array"
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeOnThisDayResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/OnThisDayResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopePathDetail" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/PathDetail",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeRandomEventResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/RandomEventResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeReportReceipt" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/ReportReceipt",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeSamePeriodResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/SamePeriodResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeSourcesResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/SourcesResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeTimelineResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/TimelineResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "ApiEnvelopeVoid" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_DATE. Only present on errors.",
+            "example" : "INVALID_DATE",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "sessionId", "success", "timestamp" ],
+        "type" : "object"
+      },
+      "Attribution" : {
+        "description" : "Where the text comes from and under what licence. Show it with the text.",
+        "properties" : {
+          "license" : {
+            "description" : "The licence the text is under.",
+            "example" : "CC BY-SA 4.0",
+            "type" : "string"
+          },
+          "licenseUrl" : {
+            "description" : "The licence itself.",
+            "type" : "string"
+          },
+          "notice" : {
+            "description" : "A ready-made notice, in Italian, to show as it is.",
+            "type" : "string"
+          },
+          "source" : {
+            "description" : "The source of the text.",
+            "example" : "Wikipedia",
+            "type" : "string"
+          }
+        },
+        "required" : [ "license", "licenseUrl", "notice", "source" ],
+        "type" : "object"
+      },
+      "Coordinates" : {
+        "description" : "A place on Earth, in decimal degrees.",
+        "properties" : {
+          "lat" : {
+            "description" : "Latitude, -90 to 90, positive north.",
+            "example" : 33.8938,
+            "format" : "double",
+            "type" : "number"
+          },
+          "lon" : {
+            "description" : "Longitude, -180 to 180, positive east.",
+            "example" : 35.5018,
+            "format" : "double",
+            "type" : "number"
+          }
+        },
+        "required" : [ "lat", "lon" ],
+        "type" : "object"
+      },
+      "CountryEventCount" : {
+        "description" : "How many events the country index holds for a country, in one language.",
+        "properties" : {
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 country code.",
+            "example" : "IT",
+            "type" : "string"
+          },
+          "eventCount" : {
+            "description" : "How many events with a year are placed in this country.",
+            "example" : 512,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "countryCode", "eventCount" ],
+        "type" : "object"
+      },
+      "CountryEvents" : {
+        "description" : "One country's events in the window.",
+        "properties" : {
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 country code.",
+            "example" : "JP",
+            "type" : "string"
+          },
+          "eventCount" : {
+            "description" : "How many events the index has for this country in the whole window, of which `events` shows some.",
+            "example" : 8,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "events" : {
+            "description" : "The events closest to the year, shown oldest first.",
+            "items" : {
+              "$ref" : "#/components/schemas/TimelineEvent"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "countryCode", "eventCount", "events" ],
+        "type" : "object"
+      },
+      "CountryViewStat" : {
+        "description" : "How many times a country has been viewed, in total.",
+        "properties" : {
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 country code.",
+            "example" : "IT",
+            "type" : "string"
+          },
+          "viewCount" : {
+            "description" : "How many times this country has been viewed, in total.",
+            "example" : 128,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "countryCode", "viewCount" ],
+        "type" : "object"
+      },
+      "Cover" : {
+        "description" : "A path's cover image, from Wikimedia Commons.",
+        "properties" : {
+          "alt" : {
+            "description" : "A description of the picture for people who cannot see it.",
+            "type" : "string"
+          },
+          "filePageUrl" : {
+            "description" : "The Commons page for the file, naming its author and licence. Show it next to the image.",
+            "type" : "string"
+          },
+          "imageUrl" : {
+            "description" : "The image file, already at a size meant for a cover.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "alt", "filePageUrl", "imageUrl" ],
+        "type" : "object"
+      },
+      "DataSource" : {
+        "description" : "One source of content.",
+        "properties" : {
+          "attributionRequired" : {
+            "description" : "Whether showing it requires a credit and a link back.",
+            "type" : "boolean"
+          },
+          "id" : {
+            "description" : "A stable identifier.",
+            "example" : "wikipedia-on-this-day",
+            "type" : "string"
+          },
+          "license" : {
+            "description" : "The licence it is under. \"Per file\" when each file has its own. Absent when the service has not declared one.",
+            "example" : "CC BY-SA 4.0",
+            "type" : [ "null", "string" ]
+          },
+          "licenseUrl" : {
+            "description" : "The licence itself.",
+            "type" : [ "null", "string" ]
+          },
+          "name" : {
+            "description" : "Its name.",
+            "example" : "Wikipedia - Accadde oggi",
+            "type" : "string"
+          },
+          "provides" : {
+            "description" : "What the service takes from it, in Italian.",
+            "type" : "string"
+          },
+          "url" : {
+            "description" : "Where it is.",
+            "example" : "https://it.wikipedia.org/",
+            "type" : [ "null", "string" ]
+          }
+        },
+        "required" : [ "attributionRequired", "id", "license", "licenseUrl", "name", "provides", "url" ],
+        "type" : "object"
+      },
+      "DateDto" : {
+        "description" : "A calendar day, without a year.",
+        "properties" : {
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 16,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 10,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "day", "month" ],
+        "type" : "object"
+      },
+      "DayViewStat" : {
+        "description" : "How many times a calendar day's page has been viewed, in total.",
+        "properties" : {
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 16,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 10,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "viewCount" : {
+            "description" : "How many times this day has been viewed, in total.",
+            "example" : 412,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "day", "month", "viewCount" ],
+        "type" : "object"
+      },
+      "Editorial" : {
+        "description" : "The hand-written content: guided paths and insights.",
+        "properties" : {
+          "insights" : {
+            "description" : "How many insights (\"Perché conta\").",
+            "example" : 9,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "lastReviewedAt" : {
+            "description" : "The day of the most recent review. Absent when nothing was ever reviewed.",
+            "format" : "date",
+            "type" : [ "null", "string" ]
+          },
+          "paths" : {
+            "description" : "How many guided paths.",
+            "example" : 1,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "reviewedInsights" : {
+            "description" : "How many of them have been reviewed by a person against their sources. The others are drafts, and say so by having no review date.",
+            "example" : 0,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "insights", "lastReviewedAt", "paths", "reviewedInsights" ],
+        "type" : "object"
+      },
+      "Entry" : {
+        "description" : "One item of a section: an event, a birth, a death, a holiday or a selected entry.",
+        "properties" : {
+          "pages" : {
+            "description" : "The Wikipedia articles linked from the text, in the order they appear in it. Related reading, not the article about the event; may be empty.",
+            "items" : {
+              "$ref" : "#/components/schemas/PageRef"
+            },
+            "type" : "array"
+          },
+          "text" : {
+            "description" : "What happened. This is the headline: never use the first page in its place.",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year. Negative before the common era (-44 is 44 BC). Absent for holidays.",
+            "example" : 1978,
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          }
+        },
+        "required" : [ "pages", "text" ],
+        "type" : "object"
+      },
+      "EventDate" : {
+        "description" : "A calendar date with its year, and how much of it is known.",
+        "properties" : {
+          "day" : {
+            "description" : "Day of the month. Always 1 when `precision` is `YEAR` or `MONTH`: it then means nothing.",
+            "example" : 4,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12. Always 1 when `precision` is `YEAR`: it then means nothing.",
+            "example" : 10,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "precision" : {
+            "description" : "How much of the date is known: only the `YEAR`, the `MONTH` too, or the whole `DAY`. Show no more than that. `DAY` when the content does not say.",
+            "enum" : [ "DAY", "MONTH", "YEAR" ],
+            "example" : "DAY",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year. Negative before the common era.",
+            "example" : 1957,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "day", "month", "precision", "year" ],
+        "type" : "object"
+      },
+      "ImageRef" : {
+        "description" : "An image from Wikimedia Commons. Images from a single wiki are never included, because nothing says whether they are free.",
+        "properties" : {
+          "filePageUrl" : {
+            "description" : "The Commons page for this file, naming its author and licence. Show it next to the image.",
+            "type" : "string"
+          },
+          "height" : {
+            "description" : "Height in pixels.",
+            "example" : 220,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "url" : {
+            "description" : "The image file.",
+            "type" : "string"
+          },
+          "width" : {
+            "description" : "Width in pixels. Originals can be very large: check before loading one.",
+            "example" : 330,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "filePageUrl", "height", "url", "width" ],
+        "type" : "object"
+      },
+      "IndexCoverage" : {
+        "description" : "What the country index holds for one Wikipedia edition.",
+        "properties" : {
+          "countryCount" : {
+            "description" : "In how many countries those events are.",
+            "example" : 140,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "eventCount" : {
+            "description" : "How many events with a year are placed in a country.",
+            "example" : 6800,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "indexedAt" : {
+            "description" : "When the newest of these events was written to the index: how far behind Wikipedia it can be.",
+            "format" : "date-time",
+            "type" : "string"
+          },
+          "language" : {
+            "description" : "The edition: it or en.",
+            "example" : "it",
+            "type" : "string"
+          },
+          "newestYear" : {
+            "description" : "The newest year of any indexed event.",
+            "example" : 2025,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "oldestYear" : {
+            "description" : "The oldest year of any indexed event. Negative before the common era.",
+            "example" : -3000,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "countryCount", "eventCount", "indexedAt", "language", "newestYear", "oldestYear" ],
+        "type" : "object"
+      },
+      "InsightDetail" : {
+        "description" : "An event explained: what led up to it, what happened, what followed, and where to read next.",
+        "properties" : {
+          "after" : {
+            "description" : "\"Dopo\": what followed. Developments, not all direct effects: the text says which is which.",
+            "type" : "string"
+          },
+          "before" : {
+            "description" : "\"Prima\": what prepared the event.",
+            "type" : "string"
+          },
+          "date" : {
+            "$ref" : "#/components/schemas/EventDate",
+            "description" : "When it happened."
+          },
+          "event" : {
+            "description" : "\"L'evento\": what happened, in plain words.",
+            "type" : "string"
+          },
+          "inPaths" : {
+            "description" : "The guided paths that have a stop on this insight, with its position: the way back to a path.",
+            "items" : {
+              "$ref" : "#/components/schemas/Membership"
+            },
+            "type" : "array"
+          },
+          "language" : {
+            "description" : "The language of every text here. Editorial content is written in Italian only.",
+            "enum" : [ "it" ],
+            "type" : "string"
+          },
+          "notes" : {
+            "description" : "Caveats about dates and places - a date that depends on the time zone, a pin that is only a launch site. Show them when there are any.",
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          },
+          "place" : {
+            "$ref" : "#/components/schemas/Place",
+            "description" : "Where the map should go. Check `approximate`: the pin is sometimes a launch site."
+          },
+          "provenance" : {
+            "$ref" : "#/components/schemas/Provenance",
+            "description" : "Who wrote it and when it was last really reviewed."
+          },
+          "related" : {
+            "description" : "\"Collegamenti\": two or three insights worth reading next. Use them for \"Continua a esplorare\".",
+            "items" : {
+              "$ref" : "#/components/schemas/Related"
+            },
+            "type" : "array"
+          },
+          "slug" : {
+            "description" : "The insight's identifier.",
+            "example" : "sputnik-1",
+            "type" : "string"
+          },
+          "sources" : {
+            "description" : "Where each claim can be checked. Show them on the card, not only on a general page.",
+            "items" : {
+              "$ref" : "#/components/schemas/Source"
+            },
+            "type" : "array"
+          },
+          "summary" : {
+            "description" : "The event in one or two sentences.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "The event's title.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "after", "before", "date", "event", "inPaths", "language", "notes", "place", "provenance", "related", "slug", "sources", "summary", "title" ],
+        "type" : "object"
+      },
+      "InsightSummary" : {
+        "description" : "An insight, in short: enough for a card and for the map to move to its place.",
+        "properties" : {
+          "date" : {
+            "$ref" : "#/components/schemas/EventDate",
+            "description" : "When it happened."
+          },
+          "place" : {
+            "$ref" : "#/components/schemas/Place",
+            "description" : "Where the map should go."
+          },
+          "slug" : {
+            "description" : "The insight's identifier, the last segment of its address.",
+            "example" : "sputnik-1",
+            "type" : "string"
+          },
+          "summary" : {
+            "description" : "The event in one or two sentences.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "The event's title.",
+            "example" : "Lo Sputnik 1 entra in orbita",
+            "type" : "string"
+          }
+        },
+        "required" : [ "date", "place", "slug", "summary", "title" ],
+        "type" : "object"
+      },
+      "Limit" : {
+        "description" : "One thing the content is not.",
+        "properties" : {
+          "code" : {
+            "description" : "A stable identifier.",
+            "example" : "NOT_VERIFIED",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "The limit, in Italian, to show as it is.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "code", "message" ],
+        "type" : "object"
+      },
+      "Membership" : {
+        "description" : "A guided path that has a stop on this insight.",
+        "properties" : {
+          "path" : {
+            "description" : "The path's identifier.",
+            "example" : "conquista-dello-spazio",
+            "type" : "string"
+          },
+          "position" : {
+            "description" : "This insight's place in the path, counting from 1.",
+            "example" : 1,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "stopCount" : {
+            "description" : "How many stops the path has.",
+            "example" : 9,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "title" : {
+            "description" : "The path's title.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "path", "position", "stopCount", "title" ],
+        "type" : "object"
+      },
+      "OnThisDayResponse" : {
+        "description" : "What happened on one calendar day.",
+        "properties" : {
+          "attribution" : {
+            "$ref" : "#/components/schemas/Attribution",
+            "description" : "The credit Wikipedia's licence requires wherever its text is shown."
+          },
+          "date" : {
+            "$ref" : "#/components/schemas/DateDto",
+            "description" : "The day that was asked for."
+          },
+          "language" : {
+            "description" : "The language that was asked for. Each section says which one it really came from.",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          },
+          "sections" : {
+            "additionalProperties" : {
+              "$ref" : "#/components/schemas/SectionResult"
+            },
+            "description" : "The sections asked for, keyed by name: selected, events, births, deaths, holidays. Always in that order.",
+            "type" : "object"
+          },
+          "warnings" : {
+            "description" : "Things worth telling the user about how this answer was put together. PRIMARY_UNAVAILABLE: the language asked for could not be fetched and every section comes from the fallback. FALLBACK_UNAVAILABLE: a gap in the language asked for could not be filled.",
+            "example" : [ ],
+            "items" : {
+              "type" : "string"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "attribution", "date", "language", "sections", "warnings" ],
+        "type" : "object"
+      },
+      "PageRef" : {
+        "description" : "A Wikipedia article linked from an item's text. Related reading, not the article about the event: its description and extract describe the article, not what happened.",
+        "properties" : {
+          "coordinates" : {
+            "$ref" : "#/components/schemas/Coordinates",
+            "description" : "Where the article's subject is. Absent for most pages: only places have one."
+          },
+          "description" : {
+            "description" : "Wikipedia's one-line description of the article. Absent when it has none.",
+            "example" : "capital of Lebanon",
+            "type" : [ "null", "string" ]
+          },
+          "extract" : {
+            "description" : "The opening paragraph of the article, as plain text. Absent when it has none.",
+            "type" : [ "null", "string" ]
+          },
+          "originalImage" : {
+            "$ref" : "#/components/schemas/ImageRef",
+            "description" : "The same picture at full size, for a detail view. Absent when there is no thumbnail."
+          },
+          "thumbnail" : {
+            "$ref" : "#/components/schemas/ImageRef",
+            "description" : "A small picture for lists. Absent when the article has none from Commons."
+          },
+          "title" : {
+            "description" : "The article's title.",
+            "example" : "Beirut",
+            "type" : "string"
+          },
+          "url" : {
+            "description" : "The article on Wikipedia. Link to it whenever you show its text: the licence requires it.",
+            "type" : "string"
+          },
+          "wikibaseItem" : {
+            "description" : "The Wikidata id, the same in every language: match a page across it and en with it.",
+            "example" : "Q3820",
+            "type" : [ "null", "string" ]
+          }
+        },
+        "required" : [ "title", "url" ],
+        "type" : "object"
+      },
+      "PathDetail" : {
+        "description" : "A guided path: an introduction and its stops, in the order to visit them.",
+        "properties" : {
+          "cover" : {
+            "$ref" : "#/components/schemas/Cover",
+            "description" : "The cover image. Absent when the path has none."
+          },
+          "endYear" : {
+            "description" : "The year of the path's latest stop. Negative before the common era.",
+            "example" : 2023,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "intro" : {
+            "description" : "A short introduction: where the path starts and what it follows.",
+            "type" : "string"
+          },
+          "language" : {
+            "description" : "The language of every text here. Editorial content is written in Italian only.",
+            "enum" : [ "it" ],
+            "type" : "string"
+          },
+          "readingMinutes" : {
+            "description" : "Estimated minutes to read the whole path, counted from its words.",
+            "example" : 9,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "slug" : {
+            "description" : "The path's identifier.",
+            "example" : "conquista-dello-spazio",
+            "type" : "string"
+          },
+          "startYear" : {
+            "description" : "The year of the path's earliest stop. Negative before the common era.",
+            "example" : 1957,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "stops" : {
+            "description" : "The stops, in order. Open the first, then step to the previous or the next by position.",
+            "items" : {
+              "$ref" : "#/components/schemas/Stop"
+            },
+            "type" : "array"
+          },
+          "tagline" : {
+            "description" : "One sentence on what the path is about.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "The path's title.",
+            "type" : "string"
+          },
+          "topic" : {
+            "description" : "What the path is about, from a closed list.",
+            "enum" : [ "AFRICA", "AMERICHE", "ARTE_E_CULTURA", "ASIA", "CITTA_E_LUOGHI", "DIRITTI_E_SOCIETA", "ESPLORAZIONI_E_SPAZIO", "ETA_MODERNA", "GUERRA_FREDDA", "ITALIA", "MEDICINA", "MEDIOEVO", "MONDO_ANTICO", "MONDO_ISLAMICO", "OGGI", "OTTOCENTO", "PRIMA_GUERRA_MONDIALE", "RELIGIONI_E_IDEE", "RINASCIMENTO", "ROMA_IMPERIALE", "ROMA_REPUBBLICANA", "SCIENZA", "SECONDA_GUERRA_MONDIALE", "TECNOLOGIA_ED_ECONOMIA", "TRA_LE_DUE_GUERRE" ],
+            "example" : "ESPLORAZIONI_E_SPAZIO",
+            "type" : "string"
+          },
+          "topicLabel" : {
+            "description" : "The topic's name to show, in Italian.",
+            "example" : "Esplorazioni e spazio",
+            "type" : "string"
+          }
+        },
+        "required" : [ "endYear", "intro", "language", "readingMinutes", "slug", "startYear", "stops", "tagline", "title", "topic", "topicLabel" ],
+        "type" : "object"
+      },
+      "PathSummary" : {
+        "description" : "A guided path, in short: enough for a card on the home page or in the list of paths.",
+        "properties" : {
+          "cover" : {
+            "$ref" : "#/components/schemas/Cover",
+            "description" : "The cover image. Absent when the path has none: the card has to work without it."
+          },
+          "endYear" : {
+            "description" : "The year of the path's latest stop. Negative before the common era.",
+            "example" : 2023,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "readingMinutes" : {
+            "description" : "Estimated minutes to read the whole path, counted from its words.",
+            "example" : 9,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "slug" : {
+            "description" : "The path's identifier, the last segment of its address.",
+            "example" : "conquista-dello-spazio",
+            "type" : "string"
+          },
+          "startYear" : {
+            "description" : "The year of the path's earliest stop, read from the stops' dates. Negative before the common era.",
+            "example" : 1957,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "stopCount" : {
+            "description" : "How many stops the path has.",
+            "example" : 9,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "tagline" : {
+            "description" : "One sentence on what the path is about.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "The path's title.",
+            "example" : "La conquista dello spazio",
+            "type" : "string"
+          },
+          "topic" : {
+            "description" : "What the path is about, from a closed list. Paths are listed grouped by it, in the order the topics are declared.",
+            "enum" : [ "AFRICA", "AMERICHE", "ARTE_E_CULTURA", "ASIA", "CITTA_E_LUOGHI", "DIRITTI_E_SOCIETA", "ESPLORAZIONI_E_SPAZIO", "ETA_MODERNA", "GUERRA_FREDDA", "ITALIA", "MEDICINA", "MEDIOEVO", "MONDO_ANTICO", "MONDO_ISLAMICO", "OGGI", "OTTOCENTO", "PRIMA_GUERRA_MONDIALE", "RELIGIONI_E_IDEE", "RINASCIMENTO", "ROMA_IMPERIALE", "ROMA_REPUBBLICANA", "SCIENZA", "SECONDA_GUERRA_MONDIALE", "TECNOLOGIA_ED_ECONOMIA", "TRA_LE_DUE_GUERRE" ],
+            "example" : "ESPLORAZIONI_E_SPAZIO",
+            "type" : "string"
+          },
+          "topicLabel" : {
+            "description" : "The topic's name to show, in Italian. A frontend may translate it, and falls back to this one for a topic it does not know.",
+            "example" : "Esplorazioni e spazio",
+            "type" : "string"
+          }
+        },
+        "required" : [ "endYear", "readingMinutes", "slug", "startYear", "stopCount", "tagline", "title", "topic", "topicLabel" ],
+        "type" : "object"
+      },
+      "Place" : {
+        "description" : "A place on Earth for the map to move to.",
+        "properties" : {
+          "approximate" : {
+            "description" : "True when the pin is only a stand-in for where the event happened (a launch site for an event on the Moon or in orbit). Always comes with a note: show it.",
+            "type" : "boolean"
+          },
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 code of the country the pin falls in today. Absent when unclear.",
+            "example" : "KZ",
+            "type" : [ "null", "string" ]
+          },
+          "lat" : {
+            "description" : "Latitude, -90 to 90, positive north.",
+            "example" : 45.92,
+            "format" : "double",
+            "type" : "number"
+          },
+          "lon" : {
+            "description" : "Longitude, -180 to 180, positive east.",
+            "example" : 63.34,
+            "format" : "double",
+            "type" : "number"
+          },
+          "name" : {
+            "description" : "The place's name, as it should be shown.",
+            "example" : "Cosmodromo di Baikonur",
+            "type" : "string"
+          },
+          "note" : {
+            "description" : "Why the pin is where it is. Present exactly when approximate is true.",
+            "type" : [ "null", "string" ]
+          }
+        },
+        "required" : [ "approximate", "lat", "lon", "name" ],
+        "type" : "object"
+      },
+      "Provenance" : {
+        "description" : "Who wrote an insight and when it was last really reviewed.",
+        "properties" : {
+          "author" : {
+            "description" : "Who wrote the text.",
+            "example" : "Century Road",
+            "type" : "string"
+          },
+          "reviewedAt" : {
+            "description" : "The day the text was last reviewed against its sources. Absent when it never was: do not show a date the service does not have.",
+            "example" : "2026-10-06",
+            "format" : "date",
+            "type" : [ "null", "string" ]
+          }
+        },
+        "required" : [ "author" ],
+        "type" : "object"
+      },
+      "RandomEvent" : {
+        "description" : "One event of the country index.",
+        "properties" : {
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 code of the country the map places it in.",
+            "example" : "IT",
+            "type" : "string"
+          },
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 28,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 12,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "text" : {
+            "description" : "The event, as Wikipedia lists it on the page for that day.",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year; negative before the common era.",
+            "example" : 1908,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "countryCode", "day", "month", "text", "year" ],
+        "type" : "object"
+      },
+      "RandomEventResponse" : {
+        "description" : "A random event from the country index, or none when nothing matches the filters.",
+        "properties" : {
+          "attribution" : {
+            "$ref" : "#/components/schemas/Attribution",
+            "description" : "The credit Wikipedia's licence requires wherever its text is shown."
+          },
+          "event" : {
+            "$ref" : "#/components/schemas/RandomEvent",
+            "description" : "The event. Absent when no event of the index matches the filters: say so, and do not retry with the same ones."
+          },
+          "language" : {
+            "description" : "The Wikipedia edition the text comes from.",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "attribution", "language" ],
+        "type" : "object"
+      },
+      "Related" : {
+        "description" : "Another insight worth reading next.",
+        "properties" : {
+          "date" : {
+            "$ref" : "#/components/schemas/EventDate",
+            "description" : "When it happened."
+          },
+          "reason" : {
+            "description" : "Why it is worth reading next. A reason to read, not a claim of cause.",
+            "type" : "string"
+          },
+          "slug" : {
+            "description" : "Its identifier.",
+            "example" : "vostok-1-gagarin",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "Its title.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "date", "reason", "slug", "title" ],
+        "type" : "object"
+      },
+      "ReportReceipt" : {
+        "description" : "Proof that a report was received.",
+        "properties" : {
+          "id" : {
+            "description" : "The report's number. Quote it if the visitor writes back about it.",
+            "example" : 42,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "receivedAt" : {
+            "description" : "When it was received.",
+            "format" : "date-time",
+            "type" : "string"
+          }
+        },
+        "required" : [ "id", "receivedAt" ],
+        "type" : "object"
+      },
+      "ReportRequest" : {
+        "description" : "A report of a mistake, with the thing it is about already identified.",
+        "properties" : {
+          "category" : {
+            "description" : "What kind of mistake.",
+            "enum" : [ "BROKEN_LINK", "OTHER", "WRONG_DATE", "WRONG_PLACE", "WRONG_TEXT" ],
+            "type" : "string"
+          },
+          "contact" : {
+            "description" : "An email address to answer at. Optional, and only used to reply about this report.",
+            "example" : "nome@example.org",
+            "type" : [ "null", "string" ]
+          },
+          "message" : {
+            "description" : "What is wrong, in the visitor's words: 10 to 1000 characters.",
+            "example" : "La data è sbagliata: il lancio fu il 4 ottobre.",
+            "type" : "string"
+          },
+          "target" : {
+            "$ref" : "#/components/schemas/Target",
+            "description" : "What the report is about."
+          }
+        },
+        "required" : [ "category", "message", "target" ],
+        "type" : "object"
+      },
+      "SamePeriodCoverage" : {
+        "description" : "How much the country index has for the window.",
+        "properties" : {
+          "countryCount" : {
+            "description" : "In how many countries.",
+            "example" : 17,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "eventCount" : {
+            "description" : "How many events of the window are in the index, after leaving out the excluded country.",
+            "example" : 42,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "level" : {
+            "description" : "NONE, SPARSE or OK.",
+            "enum" : [ "NONE", "OK", "SPARSE" ],
+            "type" : "string"
+          },
+          "note" : {
+            "description" : "What the index leaves out, in Italian. Show it, whatever the level: even OK is a selection.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "countryCount", "eventCount", "level", "note" ],
+        "type" : "object"
+      },
+      "SamePeriodResponse" : {
+        "description" : "Events from the same few years in different countries: a comparison in time, not a chain of causes.",
+        "properties" : {
+          "attribution" : {
+            "$ref" : "#/components/schemas/Attribution",
+            "description" : "The credit Wikipedia's licence requires wherever its text is shown."
+          },
+          "comparison" : {
+            "description" : "What these events are: TEMPORAL, always. They were contemporary; nothing says one led to another.",
+            "enum" : [ "TEMPORAL" ],
+            "type" : "string"
+          },
+          "countries" : {
+            "description" : "The countries with events in the window, most events first. Each lists the ones closest to the year, oldest first.",
+            "items" : {
+              "$ref" : "#/components/schemas/CountryEvents"
+            },
+            "type" : "array"
+          },
+          "coverage" : {
+            "$ref" : "#/components/schemas/SamePeriodCoverage",
+            "description" : "How much the index has for this window, and what it leaves out. Show the note."
+          },
+          "excludedCountry" : {
+            "description" : "The country left out, as asked. Absent when none was.",
+            "example" : "IT",
+            "type" : [ "null", "string" ]
+          },
+          "fromYear" : {
+            "description" : "First year of the window, inclusive.",
+            "example" : 1964,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "language" : {
+            "description" : "The Wikipedia edition the texts come from.",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          },
+          "notice" : {
+            "description" : "A sentence to show with the events, in Italian: they are a comparison in time, not causes and effects.",
+            "type" : "string"
+          },
+          "toYear" : {
+            "description" : "Last year of the window, inclusive.",
+            "example" : 1974,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "year" : {
+            "description" : "The year asked about.",
+            "example" : 1969,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "attribution", "comparison", "countries", "coverage", "fromYear", "language", "notice", "toYear", "year" ],
+        "type" : "object"
+      },
+      "SectionResult" : {
+        "description" : "One section of the day, and where it really came from.",
+        "properties" : {
+          "fallback" : {
+            "description" : "True when the language asked for had nothing for this section and another one was used. The Italian feed has no births or deaths, so those arrive in English. Say so rather than present English text as Italian.",
+            "type" : "boolean"
+          },
+          "items" : {
+            "description" : "The items of the section.",
+            "items" : {
+              "$ref" : "#/components/schemas/Entry"
+            },
+            "type" : "array"
+          },
+          "language" : {
+            "description" : "The edition that supplied these items. It is not always the one asked for.",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          },
+          "stale" : {
+            "description" : "True when this is a copy older than six hours because Wikipedia could not be reached to refresh it. Old history is served in preference to an error.",
+            "type" : "boolean"
+          }
+        },
+        "required" : [ "fallback", "items", "language", "stale" ],
+        "type" : "object"
+      },
+      "Source" : {
+        "description" : "A source an insight draws on, to be shown as a link.",
+        "properties" : {
+          "license" : {
+            "description" : "The licence of the text, when it has one that asks for a credit.",
+            "example" : "CC BY-SA 4.0",
+            "type" : [ "null", "string" ]
+          },
+          "publisher" : {
+            "description" : "Who publishes it.",
+            "example" : "Wikipedia",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "What the link is, as it should be shown.",
+            "example" : "Sputnik 1 - Wikipedia",
+            "type" : "string"
+          },
+          "url" : {
+            "description" : "The page itself.",
+            "example" : "https://en.wikipedia.org/wiki/Sputnik_1",
+            "type" : "string"
+          }
+        },
+        "required" : [ "publisher", "title", "url" ],
+        "type" : "object"
+      },
+      "SourcesCoverage" : {
+        "description" : "How much content there is.",
+        "properties" : {
+          "editorial" : {
+            "$ref" : "#/components/schemas/Editorial",
+            "description" : "The hand-written content."
+          },
+          "index" : {
+            "description" : "The country index, per Wikipedia edition: how many events, how many countries, which years, how recent. Empty until its first pass has run.",
+            "items" : {
+              "$ref" : "#/components/schemas/IndexCoverage"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "editorial", "index" ],
+        "type" : "object"
+      },
+      "SourcesResponse" : {
+        "description" : "Where the content comes from, under what terms, how much there is and what it leaves out.",
+        "properties" : {
+          "coverage" : {
+            "$ref" : "#/components/schemas/SourcesCoverage",
+            "description" : "How much content there is, as it stands now."
+          },
+          "limits" : {
+            "description" : "What the content is not, in Italian. Show it on the project page, in full.",
+            "items" : {
+              "$ref" : "#/components/schemas/Limit"
+            },
+            "type" : "array"
+          },
+          "sources" : {
+            "description" : "The sources of everything the service shows, with the terms of each.",
+            "items" : {
+              "$ref" : "#/components/schemas/DataSource"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "coverage", "limits", "sources" ],
+        "type" : "object"
+      },
+      "StartHereItem" : {
+        "description" : "One \"Inizia da qui\" proposal: a path or an insight chosen by hand.",
+        "properties" : {
+          "insight" : {
+            "$ref" : "#/components/schemas/InsightSummary",
+            "description" : "Present for an INSIGHT: the event in short, with its date and place."
+          },
+          "path" : {
+            "$ref" : "#/components/schemas/PathSummary",
+            "description" : "Present for a PATH: its card, with cover, reading time and number of stops."
+          },
+          "slug" : {
+            "description" : "The identifier of the path or the insight.",
+            "example" : "conquista-dello-spazio",
+            "type" : "string"
+          },
+          "teaser" : {
+            "description" : "Why to begin here, in a sentence.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "Its title.",
+            "type" : "string"
+          },
+          "type" : {
+            "description" : "PATH opens /api/history/paths/{slug}, INSIGHT opens /api/history/insights/{slug}.",
+            "enum" : [ "INSIGHT", "PATH" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "slug", "teaser", "title", "type" ],
+        "type" : "object"
+      },
+      "Stop" : {
+        "description" : "One stop of a path.",
+        "properties" : {
+          "date" : {
+            "$ref" : "#/components/schemas/EventDate",
+            "description" : "When it happened."
+          },
+          "narrative" : {
+            "description" : "Why the path comes here, from the stop before: the thread that makes the stops a story.",
+            "type" : "string"
+          },
+          "place" : {
+            "$ref" : "#/components/schemas/Place",
+            "description" : "Where the map should go. Check `approximate`."
+          },
+          "position" : {
+            "description" : "Its place in the path, counting from 1.",
+            "example" : 1,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "slug" : {
+            "description" : "The insight this stop opens: ask for it at /api/history/insights/{slug} to show the stop's content.",
+            "example" : "sputnik-1",
+            "type" : "string"
+          },
+          "summary" : {
+            "description" : "The event in one or two sentences.",
+            "type" : "string"
+          },
+          "title" : {
+            "description" : "The event's title.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "date", "narrative", "place", "position", "slug", "summary", "title" ],
+        "type" : "object"
+      },
+      "Target" : {
+        "description" : "What a report is about. An EVENT is named by its date and edition; an INSIGHT or a PATH by its slug.",
+        "properties" : {
+          "day" : {
+            "description" : "For an EVENT: the day of the month.",
+            "example" : 4,
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "language" : {
+            "description" : "For an EVENT: the edition it was read in, it or en. Defaults to it.",
+            "example" : "it",
+            "type" : [ "null", "string" ]
+          },
+          "month" : {
+            "description" : "For an EVENT: the month of the day page it is listed on, 1 to 12.",
+            "example" : 10,
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          },
+          "slug" : {
+            "description" : "For an INSIGHT or a PATH: its slug. Not for an EVENT.",
+            "example" : "sputnik-1",
+            "type" : [ "null", "string" ]
+          },
+          "text" : {
+            "description" : "For an EVENT: its text as the visitor saw it; anything past 500 characters is cut. It helps find the entry again, since an event has no identifier.",
+            "type" : [ "null", "string" ]
+          },
+          "type" : {
+            "description" : "EVENT: one of Wikipedia's entries for a day. INSIGHT: a \"Perché conta\" block. PATH: a guided path.",
+            "enum" : [ "EVENT", "INSIGHT", "PATH" ],
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "For an EVENT: its year. Negative before the common era.",
+            "example" : 1957,
+            "format" : "int32",
+            "type" : [ "integer", "null" ]
+          }
+        },
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "TimelineEvent" : {
+        "description" : "One event of the timeline.",
+        "properties" : {
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 28,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 12,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "text" : {
+            "description" : "The event, as Wikipedia lists it on the page for that day.",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year; negative before the common era.",
+            "example" : 1908,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "day", "month", "text", "year" ],
+        "type" : "object"
+      },
+      "TimelineResponse" : {
+        "description" : "One country's events across the whole year, oldest first.",
+        "properties" : {
+          "attribution" : {
+            "$ref" : "#/components/schemas/Attribution",
+            "description" : "The credit Wikipedia's licence requires wherever its text is shown."
+          },
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 code of the country.",
+            "example" : "IT",
+            "type" : "string"
+          },
+          "events" : {
+            "description" : "The events, oldest first: by year, then month and day.",
+            "items" : {
+              "$ref" : "#/components/schemas/TimelineEvent"
+            },
+            "type" : "array"
+          },
+          "indexedAt" : {
+            "description" : "When the newest of these events was indexed. Absent when there are none.",
+            "format" : "date-time",
+            "type" : [ "null", "string" ]
+          },
+          "language" : {
+            "description" : "The Wikipedia edition the texts come from.",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "attribution", "countryCode", "events", "language" ],
+        "type" : "object"
+      }
+    }
+  },
+  "info" : {
+    "description" : "What happened on a calendar day, from Wikipedia's \"On this day\" feed, and, per country, across the whole year. Public: no token, nothing per-user. The text is Wikipedia's, under CC BY-SA 4.0: whatever shows it must credit Wikipedia, link the article and name the licence (the answer carries `attribution` for that).",
+    "license" : {
+      "name" : "CC BY-SA 4.0 (the content)",
+      "url" : "https://creativecommons.org/licenses/by-sa/4.0/"
+    },
+    "title" : "Century Road - history-service",
+    "version" : "0.2"
+  },
+  "openapi" : "3.1.0",
+  "paths" : {
+    "/api/history/countries" : {
+      "get" : {
+        "description" : "Ordered by country code. Empty until the first pass of the index has run.",
+        "operationId" : "countries",
+        "parameters" : [ {
+          "description" : "Language of the index.",
+          "in" : "query",
+          "name" : "lang",
+          "required" : false,
+          "schema" : {
+            "default" : "it",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListCountryEventCount"
+                }
+              }
+            },
+            "description" : "The countries, with their event counts."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "`error` is UNSUPPORTED_LANGUAGE."
+          }
+        },
+        "summary" : "The countries the index has events for, with how many",
+        "tags" : [ "Countries" ]
+      }
+    },
+    "/api/history/countries/{code}/timeline" : {
+      "get" : {
+        "description" : "Every event with a year that Wikipedia lists on any day of the year and that the map's\nown rule places in this country: the first linked article with coordinates, inside the\ncountry's Natural Earth 1:110m shape. Rebuilt every night, so up to a day behind\nWikipedia. A valid code with nothing indexed is an empty list, not an error.",
+        "operationId" : "timeline",
+        "parameters" : [ {
+          "description" : "ISO 3166-1 alpha-2 country code, uppercase.",
+          "example" : "IT",
+          "in" : "path",
+          "name" : "code",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "description" : "Language of the texts.",
+          "in" : "query",
+          "name" : "lang",
+          "required" : false,
+          "schema" : {
+            "default" : "it",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        }, {
+          "description" : "Only events from this year on, inclusive. Negative before the common era.",
+          "in" : "query",
+          "name" : "fromYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Only events up to this year, inclusive.",
+          "in" : "query",
+          "name" : "toYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeTimelineResponse"
+                }
+              }
+            },
+            "description" : "The events, oldest first."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "`error` is INVALID_COUNTRY_CODE, UNSUPPORTED_LANGUAGE, INVALID_YEAR or BAD_REQUEST (a year that is not a number)."
+          }
+        },
+        "summary" : "One country's events across the whole year, oldest first",
+        "tags" : [ "Countries" ]
+      }
+    },
+    "/api/history/insights" : {
+      "get" : {
+        "description" : "Without parameters, every insight, oldest first. With `month` and `day`, only those of\nthat day of the year, whatever the year: the way to know which of a day's events from\n/api/history/on-this-day to mark \"Approfondimento disponibile\". Match them on `date.year`.\nAn insight whose `date.precision` is not `DAY` (only the year, or the month, is known)\nbelongs to no day and is left out. A day with none is an empty list, not an error.",
+        "operationId" : "insights",
+        "parameters" : [ {
+          "description" : "Month, 1 to 12. Give it together with `day`.",
+          "in" : "query",
+          "name" : "month",
+          "required" : false,
+          "schema" : {
+            "maximum" : 12,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Day of the month. Give it together with `month`.",
+          "in" : "query",
+          "name" : "day",
+          "required" : false,
+          "schema" : {
+            "maximum" : 31,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListInsightSummary"
+                }
+              }
+            },
+            "description" : "The insights, oldest first. Cached for five minutes."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "`error` is INVALID_DATE: only one of month and day was given, or they are not a real day."
+          }
+        },
+        "summary" : "The events that have an insight, optionally for one day",
+        "tags" : [ "Insights" ]
+      }
+    },
+    "/api/history/insights/{slug}" : {
+      "get" : {
+        "description" : "What led up to the event (`before`), what happened (`event`) and what followed\n(`after`), plus two or three insights to read next (`related`), the paths it belongs\nto, its sources, caveats about dates and places, and who wrote it. Written in Italian.",
+        "operationId" : "insight",
+        "parameters" : [ {
+          "description" : "The insight's identifier, as listed by /api/history/insights.",
+          "example" : "sputnik-1",
+          "in" : "path",
+          "name" : "slug",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeInsightDetail"
+                }
+              }
+            },
+            "description" : "The insight. Cached for five minutes."
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No insight has this slug. `error` is INSIGHT_NOT_FOUND."
+          }
+        },
+        "summary" : "\"Perché conta\": one event explained",
+        "tags" : [ "Insights" ]
+      }
+    },
+    "/api/history/on-this-day/{month}/{day}" : {
+      "get" : {
+        "description" : "Selected entries, events, births, deaths and holidays for one day of the year, from\nWikipedia. Each section says which language it really came from: the Italian feed has\nno births or deaths, so those arrive in English with `fallback: true`.\n\nIn every item, `text` is the event and `pages` are the articles linked from it, in\nthe order they appear - related reading, not the article about the event.\n\nThe year filter narrows one day; Wikipedia cannot answer \"everything in 1789\".",
+        "operationId" : "onThisDay",
+        "parameters" : [ {
+          "description" : "Month, 1 to 12.",
+          "example" : 10,
+          "in" : "path",
+          "name" : "month",
+          "required" : true,
+          "schema" : {
+            "maximum" : 12,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Day of the month. It has to exist in that month: 2/29 is valid, 2/30 is a 400.",
+          "example" : 16,
+          "in" : "path",
+          "name" : "day",
+          "required" : true,
+          "schema" : {
+            "maximum" : 31,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Language of the text.",
+          "in" : "query",
+          "name" : "lang",
+          "required" : false,
+          "schema" : {
+            "default" : "it",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        }, {
+          "description" : "Which sections to return, comma-separated or repeated. All five when omitted.",
+          "example" : "events,births",
+          "in" : "query",
+          "name" : "types",
+          "required" : false,
+          "schema" : {
+            "items" : {
+              "enum" : [ "births", "deaths", "events", "holidays", "selected" ],
+              "type" : "string"
+            },
+            "type" : "array"
+          }
+        }, {
+          "description" : "Only items from this year, such as `1969`. Negative before the common era (`-44`). Cannot be combined with fromYear or toYear; holidays have no year and are left out.",
+          "in" : "query",
+          "name" : "year",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Only items from this year on, inclusive, such as `1900`.",
+          "in" : "query",
+          "name" : "fromYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Only items up to this year, inclusive, such as `1999`.",
+          "in" : "query",
+          "name" : "toYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeOnThisDayResponse"
+                }
+              }
+            },
+            "description" : "The day, in the usual envelope. Cached for five minutes (thirty seconds when the answer is degraded: a stale copy, or a language that could not be reached)."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The request cannot be answered and Wikipedia was not asked. `error` is one of INVALID_DATE, UNSUPPORTED_LANGUAGE, INVALID_TYPE, INVALID_YEAR, BAD_REQUEST."
+          },
+          "502" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Wikipedia answered with something unusable, for instance because its API changed. `error` is UPSTREAM_BAD_RESPONSE."
+          },
+          "503" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Wikipedia could not be used and there was no copy or other language to fall back on. `error` is UPSTREAM_UNAVAILABLE, or UPSTREAM_RATE_LIMITED with a `Retry-After` header saying for how long."
+          }
+        },
+        "summary" : "What happened on a calendar day",
+        "tags" : [ "History" ]
+      }
+    },
+    "/api/history/paths" : {
+      "get" : {
+        "description" : "Every path as a card: title, one sentence, topic, the years it spans, cover, reading time and number of stops. Grouped by topic in the order the topics are declared, and inside a topic from the oldest to the newest.",
+        "operationId" : "paths",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListPathSummary"
+                }
+              }
+            },
+            "description" : "The paths. Cached for five minutes."
+          }
+        },
+        "summary" : "The guided paths",
+        "tags" : [ "Paths" ]
+      }
+    },
+    "/api/history/paths/{slug}" : {
+      "get" : {
+        "description" : "The introduction and every stop: its place (for the map to move to), its date and the\nline that ties it to the path. A stop's full explanation is the insight with the stop's\nslug, asked for when the stop is opened.",
+        "operationId" : "path",
+        "parameters" : [ {
+          "description" : "The path's identifier, as listed by /api/history/paths.",
+          "example" : "conquista-dello-spazio",
+          "in" : "path",
+          "name" : "slug",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopePathDetail"
+                }
+              }
+            },
+            "description" : "The path. Cached for five minutes."
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No path has this slug. `error` is PATH_NOT_FOUND."
+          }
+        },
+        "summary" : "One guided path, with its stops in order",
+        "tags" : [ "Paths" ]
+      }
+    },
+    "/api/history/random" : {
+      "get" : {
+        "description" : "One event picked at random from the country index, from those that match the filters\nthe visitor has active: a country, and a range of years. Every call can answer\ndifferently, so it is never cached. The event carries its date and country: open the day\nwith /api/history/on-this-day/{month}/{day} for its articles and images.\n\nOnly events with a year that the map can place in a country are in the index, about\nhalf of what Wikipedia lists. When nothing matches the filters the answer is a 200 with\nno `event`.",
+        "operationId" : "random",
+        "parameters" : [ {
+          "description" : "Language of the text.",
+          "in" : "query",
+          "name" : "lang",
+          "required" : false,
+          "schema" : {
+            "default" : "it",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        }, {
+          "description" : "Only events placed in this country. ISO 3166-1 alpha-2, uppercase.",
+          "example" : "IT",
+          "in" : "query",
+          "name" : "country",
+          "required" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "description" : "Only events from this year on, inclusive. Negative before the common era.",
+          "in" : "query",
+          "name" : "fromYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Only events up to this year, inclusive.",
+          "in" : "query",
+          "name" : "toYear",
+          "required" : false,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeRandomEventResponse"
+                }
+              }
+            },
+            "description" : "The event, or none when nothing matches. Never cached."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "`error` is INVALID_COUNTRY_CODE, UNSUPPORTED_LANGUAGE, INVALID_YEAR or BAD_REQUEST (a year that is not a number)."
+          }
+        },
+        "summary" : "\"Sorprendimi\": a random event",
+        "tags" : [ "Discovery" ]
+      }
+    },
+    "/api/history/reports" : {
+      "post" : {
+        "description" : "The frontend fills in `target` from the card the visitor is on, so the visitor only says\nwhat is wrong. An EVENT is named by its date and edition (it has no identifier of its\nown); an INSIGHT or a PATH by its slug. Nothing identifying the visitor is stored; the\nemail address is optional and only for replying.\n\nLimited per visitor and for the whole service: a 429 carries `Retry-After`.",
+        "operationId" : "report",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/ReportRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "201" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeReportReceipt"
+                }
+              }
+            },
+            "description" : "The report was stored. Its number is in the answer."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The report cannot be stored. `error` is INVALID_REPORT, INVALID_DATE, INVALID_YEAR, UNSUPPORTED_LANGUAGE or BAD_REQUEST (no body, a body that is not this shape, or one over 8 KB)."
+          },
+          "429" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Too many reports. `error` is TOO_MANY_REQUESTS, with `Retry-After`."
+          }
+        },
+        "summary" : "Report a mistake in an event, an insight or a path",
+        "tags" : [ "Reports" ]
+      }
+    },
+    "/api/history/same-period" : {
+      "get" : {
+        "description" : "What the country index has for the years around `year`, grouped by country, leaving out\n`excludeCountry` - normally the one the visitor is looking at. A comparison in time and\nnothing more: the events were contemporary, not connected, and the answer says so in\n`notice`.\n\nThe index is a selection (what Wikipedia lists on its day pages and the map can place),\nso `coverage` says how much there is for the window: NONE, SPARSE or OK. Show its note\nand do not draw conclusions from a SPARSE window.",
+        "operationId" : "samePeriod",
+        "parameters" : [ {
+          "description" : "The year at the centre of the window. Negative before the common era.",
+          "example" : 1969,
+          "in" : "query",
+          "name" : "year",
+          "required" : true,
+          "schema" : {
+            "format" : "int32",
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Years either side of `year`, 0 to 25.",
+          "in" : "query",
+          "name" : "span",
+          "required" : false,
+          "schema" : {
+            "default" : 5,
+            "maximum" : 25,
+            "minimum" : 0,
+            "type" : "integer"
+          }
+        }, {
+          "description" : "Language of the texts.",
+          "in" : "query",
+          "name" : "lang",
+          "required" : false,
+          "schema" : {
+            "default" : "it",
+            "enum" : [ "en", "it" ],
+            "type" : "string"
+          }
+        }, {
+          "description" : "Leave out this country, usually the one being looked at. ISO 3166-1 alpha-2, uppercase.",
+          "example" : "IT",
+          "in" : "query",
+          "name" : "excludeCountry",
+          "required" : false,
+          "schema" : {
+            "type" : "string"
+          }
+        }, {
+          "description" : "How many events of each country to show, 1 to 10.",
+          "in" : "query",
+          "name" : "perCountry",
+          "required" : false,
+          "schema" : {
+            "default" : 3,
+            "maximum" : 10,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeSamePeriodResponse"
+                }
+              }
+            },
+            "description" : "The countries with events in the window, most events first. A window with nothing in it is a 200 with `coverage.level` NONE. Cached for five minutes."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "`error` is INVALID_YEAR, INVALID_SPAN, INVALID_LIMIT, INVALID_COUNTRY_CODE, UNSUPPORTED_LANGUAGE or BAD_REQUEST (a value that is not a number, or no `year`)."
+          }
+        },
+        "summary" : "\"Nello stesso periodo\": events from the same years in other countries",
+        "tags" : [ "Discovery" ]
+      }
+    },
+    "/api/history/sources" : {
+      "get" : {
+        "description" : "For the project and sources page: every source of content with its licence and whether it\nmust be credited, how much content there is (the country index per edition, and how many\npaths and insights, of which how many were reviewed), and what the content is not.\n\nIt is provenance, not a seal of reliability: nothing in it says \"verified\". An insight\nwith a review date was checked by a person; every other text is Wikipedia's, shown with\nwhere it comes from.",
+        "operationId" : "sources",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeSourcesResponse"
+                }
+              }
+            },
+            "description" : "The sources. Cached for five minutes."
+          }
+        },
+        "summary" : "The sources, their terms, the coverage and the limits",
+        "tags" : [ "Sources" ]
+      }
+    },
+    "/api/history/start-here" : {
+      "get" : {
+        "description" : "For a visitor who does not know where to begin: a short list of paths and events\nchosen by the editor, each with a sentence on why to open it. Open a PATH at\n/api/history/paths/{slug} and an INSIGHT at /api/history/insights/{slug}.",
+        "operationId" : "startHere",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListStartHereItem"
+                }
+              }
+            },
+            "description" : "The proposals, in the order to show them. Cached for five minutes."
+          }
+        },
+        "summary" : "\"Inizia da qui\": a few proposals picked by hand",
+        "tags" : [ "Paths" ]
+      }
+    },
+    "/api/history/stats/countries" : {
+      "get" : {
+        "operationId" : "topCountries",
+        "parameters" : [ {
+          "description" : "How many to return, 1 to 50.",
+          "in" : "query",
+          "name" : "limit",
+          "required" : false,
+          "schema" : {
+            "default" : 10,
+            "format" : "int32",
+            "maximum" : 50,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListCountryViewStat"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "summary" : "The most-viewed countries, most viewed first",
+        "tags" : [ "Stats" ]
+      }
+    },
+    "/api/history/stats/days" : {
+      "get" : {
+        "operationId" : "topDays",
+        "parameters" : [ {
+          "description" : "How many to return, 1 to 50.",
+          "in" : "query",
+          "name" : "limit",
+          "required" : false,
+          "schema" : {
+            "default" : 10,
+            "format" : "int32",
+            "maximum" : 50,
+            "minimum" : 1,
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeListDayViewStat"
+                }
+              }
+            },
+            "description" : "OK"
+          }
+        },
+        "summary" : "The most-viewed calendar days, most viewed first",
+        "tags" : [ "Stats" ]
+      }
+    },
+    "/api/history/track/country/{code}" : {
+      "post" : {
+        "description" : "Increments that country's aggregate view counter by one. The write happens off the request thread and never fails the request, so this always answers as soon as the code is validated - the increment itself may still be in flight when it does.",
+        "operationId" : "trackCountry",
+        "parameters" : [ {
+          "description" : "ISO 3166-1 alpha-2 country code, uppercase.",
+          "example" : "IT",
+          "in" : "path",
+          "name" : "code",
+          "required" : true,
+          "schema" : {
+            "type" : "string"
+          }
+        } ],
+        "responses" : {
+          "202" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeVoid"
+                }
+              }
+            },
+            "description" : "Accepted."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeVoid"
+                }
+              }
+            },
+            "description" : "code is not two uppercase ISO 3166-1 alpha-2 letters. `error` is INVALID_COUNTRY_CODE."
+          }
+        },
+        "summary" : "Record an anonymous view of a country",
+        "tags" : [ "Tracking" ]
+      }
+    }
+  },
+  "tags" : [ {
+    "description" : "Ways into the data that are not a search: a random event, and the same years elsewhere",
+    "name" : "Discovery"
+  }, {
+    "description" : "\"Segnala un errore\": tell the editor something is wrong",
+    "name" : "Reports"
+  }, {
+    "description" : "Where the content comes from, under what terms, and what it leaves out",
+    "name" : "Sources"
+  }, {
+    "description" : "Guided paths and the \"Inizia da qui\" proposals: small narrative itineraries drafted for the project, not yet reviewed by a person",
+    "name" : "Paths"
+  }, {
+    "description" : "Aggregate, anonymous view counters, most viewed first",
+    "name" : "Stats"
+  }, {
+    "description" : "What happened on a calendar day, from Wikipedia's \"On this day\" feed",
+    "name" : "History"
+  }, {
+    "description" : "Anonymous, aggregate view counters",
+    "name" : "Tracking"
+  }, {
+    "description" : "Each country's events across the whole year, from the nightly country index",
+    "name" : "Countries"
+  }, {
+    "description" : "\"Perché conta\": events explained in short pieces, drafts not yet reviewed - before, the event, after, where to read next",
+    "name" : "Insights"
+  } ]
+}

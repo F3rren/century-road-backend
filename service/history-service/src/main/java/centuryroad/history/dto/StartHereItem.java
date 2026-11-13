@@ -1,5 +1,6 @@
 package centuryroad.history.dto;
 
+import jakarta.annotation.Nullable;
 import centuryroad.history.model.StartHerePick;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -15,8 +16,8 @@ public record StartHereItem(
         @Schema(description = "The identifier of the path or the insight.", example = "conquista-dello-spazio") String slug,
         @Schema(description = "Its title.") String title,
         @Schema(description = "Why to begin here, in a sentence.") String teaser,
-        @Schema(description = "Present for a PATH: its card, with cover, reading time and number of stops.") PathSummary path,
-        @Schema(description = "Present for an INSIGHT: the event in short, with its date and place.") InsightSummary insight) {
+        @Schema(description = "Present for a PATH: its card, with cover, reading time and number of stops.") @Nullable PathSummary path,
+        @Schema(description = "Present for an INSIGHT: the event in short, with its date and place.") @Nullable InsightSummary insight) {
 
     public static StartHereItem ofPath(StartHerePick pick, PathSummary path) {
         return new StartHereItem(pick.type(), pick.slug(), path.title(), pick.teaser(), path, null);

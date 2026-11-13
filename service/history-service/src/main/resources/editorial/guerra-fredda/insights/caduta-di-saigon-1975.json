@@ -1,0 +1,55 @@
+{
+  "slug": "caduta-di-saigon-1975",
+  "title": "La caduta di Saigon",
+  "summary": "Il 30 aprile 1975 le truppe nordvietnamite e i Viet Cong entrano a Saigon, capitale del Vietnam del Sud; il presidente Dương Văn Minh annuncia la resa e la guerra del Vietnam finisce. Nelle ore precedenti gli Stati Uniti portano via in elicottero il loro personale e migliaia di vietnamiti.",
+  "date": {
+    "year": 1975,
+    "month": 4,
+    "day": 30
+  },
+  "place": {
+    "name": "Palazzo dell'Indipendenza, Saigon (oggi Città di Ho Chi Minh), Vietnam",
+    "lat": 10.7770,
+    "lon": 106.6953,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "Gli articoli nominano il palazzo dell'Indipendenza senza darne le coordinate: il punto è indicativo."
+  },
+  "before": "Per l'articolo inglese gli accordi di Parigi del 1973 furono violati subito da entrambe le parti vietnamite. Il 10 marzo 1975 l'esercito nordvietnamita del generale Văn Tiến Dũng attaccò negli altipiani centrali e prese Buôn Ma Thuột; la ritirata sudvietnamita divenne disordinata e alla fine di marzo caddero Huế e Đà Nẵng. Il 14 aprile Hanoi chiamò l'offensiva «campagna di Ho Chi Minh». A Xuân Lộc, l'ultima linea di difesa prima di Saigon, la 18ª divisione sudvietnamita resistette fino al 20 aprile. Il 21 aprile il presidente Thiệu si dimise accusando gli Stati Uniti di non aver aiutato il Sud; il 28 il suo successore Trần Văn Hương lasciò la presidenza al generale Dương Văn Minh.",
+  "event": "Il 29 aprile l'aeroporto di Tan Son Nhut fu bombardato e le piste divennero inutilizzabili. Alle 10:51 cominciò l'operazione Frequent Wind: elicotteri portarono americani e vietnamiti dal complesso militare statunitense dell'aeroporto e dall'ambasciata alle navi della Settima flotta. L'ambasciatore Graham Martin partì poco prima delle cinque del mattino del 30; dall'ambasciata furono portati via 978 americani e circa 1.100 vietnamiti, e centinaia di persone restarono nel recinto. Hanoi ordinò di non colpire gli elicotteri. Il 30 aprile le truppe nordvietnamite entrarono in città; alle 10:24 Minh annunciò la resa incondizionata e verso mezzogiorno i carri armati sfondarono i cancelli del palazzo dell'Indipendenza.",
+  "after": "Nel pomeriggio Minh dichiarò alla radio il governo di Saigon «completamente dissolto». La città fu ribattezzata Città di Ho Chi Minh. Il nuovo governo volle ridurne la popolazione, cresciuta durante la guerra: secondo il governo vietnamita in due anni la lasciò un milione di persone. Per l'articolo inglese tra 200.000 e 300.000 sudvietnamiti furono mandati nei campi di rieducazione. Entrambi gli articoli discutono l'evacuazione: giudicata un risultato notevole, fu anche criticata come lenta e insufficiente per i vietnamiti legati agli americani. La riunificazione formale nella Repubblica Socialista del Vietnam avvenne il 2 luglio 1976.",
+  "links": [
+    {
+      "slug": "caduta-di-phnom-penh-1975",
+      "reason": "Tredici giorni prima, il 17 aprile 1975, i khmer rossi erano entrati a Phnom Penh."
+    },
+    {
+      "slug": "accordi-di-pace-di-parigi-1973",
+      "reason": "Più di due anni prima, il 27 gennaio 1973, l'accordo di Parigi aveva chiuso l'intervento militare statunitense."
+    },
+    {
+      "slug": "conferenza-di-ginevra-1954",
+      "reason": "Quasi ventuno anni prima, nel luglio 1954, la conferenza di Ginevra aveva diviso il Vietnam in due."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fall of Saigon - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Fall_of_Saigon",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Caduta di Saigon - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Caduta_di_Saigon",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la caduta il 30 aprile 1975. Su chi ricevette la resa al palazzo differiscono: l'italiano parla del colonnello Bùi Tín, l'inglese dice che fu il commissario politico Bùi Văn Tùng e che Bùi Tín in un'intervista del 1981 si attribuì il fatto a torto. L'italiano dice che la città fu ribattezzata subito, l'inglese che il nome fu cambiato dall'Assemblea nazionale il 2 luglio 1976, giorno della riunificazione. Per l'inglese Xuân Lộc fu abbandonata dai sudvietnamiti il 20 aprile, per l'italiano presa dai nordvietnamiti quel giorno. La partenza di Martin è alle 4:58 per l'inglese, intorno alle 5 per l'italiano. Il dato sui campi di rieducazione è solo dell'inglese. Il pin è sul palazzo dell'Indipendenza, dove entrarono i carri e si arrese Minh; le coordinate non vengono dagli articoli e sono approssimate."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

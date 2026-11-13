@@ -675,6 +675,21 @@ happened with `year` and `fromYear`/`toYear`). And a validation such as `@Patter
 `auth-service` strips those (`OpenApiConfig`), and the allowed values are listed as an enum
 instead.
 
+**The contract is also a file.** What each service publishes is committed in `docs/openapi/`
+(`auth-service.json`, `history-service.json`), and `OpenApiSnapshotTest` in each service fails when
+the document it serves and the committed one differ, naming the first line where they part. That is
+what a refactor must not change, what a framework upgrade can change with nobody touching the code
+(Spring Boot 4 writes dates differently), and what the frontend generates its types from, so a field
+renamed here is a compile error there. After an intended change to an endpoint, regenerate it and
+commit it with the change:
+
+```bash
+cd service/history-service && ./mvnw test -Dtest=OpenApiSnapshotTest -Dopenapi.update=true
+```
+
+The files are canonical (keys sorted, the random test port left out), so a diff shows only what the
+contract really changed.
+
 springdoc is pinned to 2.6.0, the last release built on Spring Boot 3.3. Its newer lines need
 newer Spring Boot, so it moves with Spring Boot and not on its own; `dependabot.yml` does not
 propose its minor or major bumps.
@@ -1113,9 +1128,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  80 tests
+cd service/auth-service    && ./mvnw test    #  96 tests
 cd service/gateway         && ./mvnw test    #  47 tests
-cd service/history-service && ./mvnw test    # 424 tests
+cd service/history-service && ./mvnw test    # 447 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1129,6 +1144,20 @@ That message is misleading: it also appears when Docker is running fine but cann
 or when the daemon rejects the API version the client asks for. When it shows up, read the
 `Attempted configurations were:` block just above it — it names the real reason for each
 strategy that was tried.
+
+Two gates besides the tests, both in `./mvnw clean verify` (so in CI) and neither in `./mvnw test`:
+
+- **`ArchitectureTest`** (`auth-service`, `history-service`; ArchUnit) is the shape of the service as
+  rules: the model depends on nothing above it, nothing depends on a controller, a controller asks a
+  service and not a repository, only the configuration names a concrete Wikipedia client (the one
+  door), only `JwtService` signs tokens and the token verification stands alone so it can be copied,
+  constructor injection only. Each rule is true of the code today. Where one is not yet — three
+  `history-service` controllers still read `TimelineEventRepository` themselves — the exceptions are
+  named in the rule, so a fourth cannot join them unnoticed and removing one is a visible change.
+- **A coverage floor** (JaCoCo `check`): lines at 90% (`history-service`), 88% (`auth-service`), 80%
+  (`gateway`), and branches at 80% and 70%, a few points under what the suites measure. It is a floor,
+  not a target: it fails a change that takes coverage clearly down, and says nothing about one that
+  does not.
 
 The gateway suite needs no Docker: it stubs its upstream in-process. `history-service` needs
 it for its database, like `auth-service`, but never reaches the real Wikipedia: its tests
@@ -1146,6 +1175,26 @@ Compose file fills the ports in when the container starts. `history-service` use
 scraped on a fixed 8082, which is only right in development; with any other `HISTORY_PORT` its
 metrics, and the alerts built on them, were silently empty. Check Prometheus's Status > Targets
 page after changing a port: all three jobs should be `UP`.
+
+**Logs and the request id.** Every response carries `X-Request-Id` (`REQ_` and eight hex digits, minted
+by `RequestCorrelationFilter` in `auth-service` and `history-service`) and the same id is in every line
+either service writes while it answers that request, right after the thread name:
+
+```
+WARN 7166 --- [history-service] [o-auto-1-exec-1] [REQ_F8081BC5] c.h.wikipedia.WikimediaFeedHttpClient : Wikipedia (it) answered 500
+```
+
+So a person who reports a problem and quotes the id can be followed through the log with `grep REQ_F8081BC5`
+(`-` stands in outside a request: startup, the nightly index). It used to be minted and handed back
+but never printed, so there was nothing to search; `RequestIdInLogsTest` in each service now fails if it
+is not there (a class of its own: Spring Boot starts logging once per JVM, with the first context's
+configuration, so a test about the log's format has to restart it and leave it as it found it). The gateway does not mint one: it is reactive, where
+the MDC does not follow a request from thread to thread.
+
+For a log platform, set `LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs` (or `logstash`, `gelf`) on a service:
+Spring Boot's own structured logging, no dependency, one JSON object per line with the id as the field
+`requestId` (`StructuredLogsTest`). It is off by default, so `docker logs` stays readable, and
+`compose-prod.yml` does not set it.
 
 In production Prometheus and Grafana listen on the host's loopback only. From your
 machine, open a tunnel and use them as if they were local:

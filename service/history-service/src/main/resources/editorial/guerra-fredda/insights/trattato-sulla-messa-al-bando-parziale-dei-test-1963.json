@@ -1,0 +1,56 @@
+{
+  "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+  "title": "Il trattato sulla messa al bando parziale degli esperimenti nucleari",
+  "summary": "Il 5 agosto 1963, a Mosca, Stati Uniti, Unione Sovietica e Regno Unito firmano il trattato che vieta le esplosioni nucleari di prova nell'atmosfera, nello spazio e sott'acqua, ma non quelle sotterranee. Francia e Cina non vi aderiscono.",
+  "date": {
+    "year": 1963,
+    "month": 8,
+    "day": 5
+  },
+  "place": {
+    "name": "Cremlino, Mosca, Russia",
+    "lat": 55.752,
+    "lon": 37.6175,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli dicono che il trattato fu firmato a Mosca e che il negoziato si aprì al Cremlino, ma non indicano il luogo esatto della firma."
+  },
+  "before": "Le prove nucleari erano diventate sempre più potenti e le ricadute radioattive preoccupavano l'opinione pubblica; per l'articolo inglese il test Castle Bravo del 1954 aveva contaminato atolli abitati e un peschereccio giapponese. Le trattative per un bando totale si erano arenate sulle ispezioni in loco, che per Chruščëv avrebbero favorito lo spionaggio. Per l'articolo italiano la crisi dei missili di Cuba dell'ottobre 1962 spinse Kennedy e Chruščëv a riprendere le trattative; per l'inglese li spinse a cercare un rapido riavvicinamento. Per l'articolo inglese il 10 giugno 1963 Kennedy dedicò un discorso alla pace e al trattato, e all'inizio di luglio Chruščëv propose un bando limitato all'atmosfera, allo spazio e alle acque.",
+  "event": "Il negoziato tra le tre potenze si aprì a Mosca il 15 luglio 1963; per l'articolo italiano gli Stati Uniti erano guidati da Averell Harriman, a cui Kennedy aveva chiesto il trattato «più completo possibile». Per l'articolo inglese, accantonato il bando totale, Harriman e il ministro degli esteri sovietico Gromyko aggiunsero una clausola che permette di ritirarsi in caso di «eventi straordinari» e discussero di come potessero aderire Stati non riconosciuti da tutti, come la Germania Est o la Cina: con l'approvazione di Kennedy, gli inviati statunitensi Fisher e McNaughton idearono un sistema con più governi depositari. Il testo fu siglato il 25 luglio, dieci giorni dopo l'apertura. Il 29 luglio la Francia annunciò che non avrebbe aderito, e due giorni dopo la Cina. Il 5 agosto Douglas-Home, Gromyko e Dean Rusk firmarono il trattato.",
+  "after": "Per l'articolo inglese il Senato statunitense approvò la ratifica il 24 settembre con ottanta voti contro quattordici, e il trattato entrò in vigore il 10 ottobre 1963. Per l'articolo italiano confinò gli esperimenti nel sottosuolo e fu il primo accordo importante tra Stati Uniti e Unione Sovietica sul controllo degli armamenti; fu anche accusato di preservare la supremazia delle superpotenze. Per l'articolo inglese coincise con un forte calo delle particelle radioattive nell'atmosfera, ma non fermò la proliferazione: un anno dopo l'entrata in vigore la Cina, che non lo aveva firmato, fece il test 596 e divenne la quinta potenza nucleare. Francia e Cina continuarono i test nell'atmosfera fino al 1974 e al 1980. L'articolo inglese lo considera un passo verso il trattato di non proliferazione del 1968.",
+  "links": [
+    {
+      "slug": "castle-bravo-1954",
+      "reason": "Più di nove anni prima, il 1° marzo 1954, si era svolto il test Castle Bravo, che l'articolo inglese cita tra gli eventi che cambiarono la discussione internazionale sui test nucleari."
+    },
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Meno di dieci mesi prima, il 16 ottobre 1962, si era aperta la crisi dei missili di Cuba, che l'articolo italiano indica come la spinta a riprendere le trattative."
+    },
+    {
+      "slug": "trattato-di-non-proliferazione-nucleare-1968",
+      "reason": "Quasi cinque anni dopo, il 1° luglio 1968, si apre alla firma il trattato di non proliferazione, che l'articolo inglese collega a questo."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Partial Nuclear Test Ban Treaty - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Partial_Nuclear_Test_Ban_Treaty",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Trattato sulla messa al bando parziale degli esperimenti nucleari - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Trattato_sulla_messa_al_bando_parziale_degli_esperimenti_nucleari",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la firma a Mosca il 5 agosto 1963 e l'inizio del negoziato il 15 luglio. L'articolo italiano è breve: i particolari sul negoziato, sulla ratifica e sugli effetti misurati vengono dall'inglese; dall'italiano vengono il giudizio sul primo accordo sul controllo degli armamenti e la critica sulla supremazia delle superpotenze.",
+    "L'articolo inglese data la proposta di Chruščëv di un bando parziale al 2 luglio 1963 e, poche righe dopo, cita il suo discorso del 3 luglio: per questo il testo dice solo «all'inizio di luglio». Il pin è sul Cremlino, dove per l'articolo inglese si aprì il negoziato; il luogo della firma non è indicato."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

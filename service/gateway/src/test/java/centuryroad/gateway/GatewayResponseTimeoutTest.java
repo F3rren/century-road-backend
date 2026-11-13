@@ -20,7 +20,7 @@ import reactor.netty.http.server.HttpServer;
  * longer than that - which is exactly what shows the history route's own limit (set in the
  * route definition, not by this property) is the one that applies to it.
  */
-@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "spring.cloud.gateway.httpclient.response-timeout=300ms")
+@SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "spring.cloud.gateway.server.webflux.httpclient.response-timeout=300ms")
 class GatewayResponseTimeoutTest {
 
 	private static final DisposableServer authServiceStub = slowStub("auth-service");

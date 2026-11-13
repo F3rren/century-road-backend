@@ -1,0 +1,63 @@
+{
+  "slug": "rottura-delle-relazioni-tra-stati-uniti-e-cuba-1961",
+  "title": "La rottura delle relazioni tra Stati Uniti e Cuba",
+  "summary": "Il 3 gennaio 1961 gli Stati Uniti di Eisenhower ritirano il riconoscimento diplomatico al governo cubano e chiudono l'ambasciata all'Avana, dopo due anni di nazionalizzazioni, sanzioni e un primo embargo sulle esportazioni. Le relazioni restano interrotte fino al 2015.",
+  "date": {
+    "year": 1961,
+    "month": 1,
+    "day": 3
+  },
+  "place": {
+    "name": "Ambasciata degli Stati Uniti, L'Avana, Cuba",
+    "lat": 23.1462,
+    "lon": -82.3836,
+    "countryCode": "CU",
+    "approximate": true,
+    "note": "La decisione fu presa a Washington; il punto è presso l'edificio dell'ambasciata statunitense all'Avana, chiusa il 3 gennaio 1961 e riaperta il 20 luglio 2015."
+  },
+  "before": "Dopo la rivoluzione del 1959 ogni nazionalizzazione di proprietà statunitensi fu seguita da contromisure di Washington. Nell'estate del 1960 Cuba confiscò le raffinerie di Esso, Texaco e Shell, che si erano rifiutate di lavorare il petrolio sovietico, e gli Stati Uniti cancellarono gli acquisti di zucchero cubano. Per l'articolo italiano sull'embargo, dopo la legge cubana del 13 ottobre che nazionalizzava le grandi imprese, il 17 ottobre Eisenhower ritirò l'ambasciatore e il 20 fu istituito un ampio embargo sulle esportazioni. Intanto, dal marzo 1960, la CIA addestrava esuli cubani per rovesciare Castro.",
+  "event": "Per l'articolo italiano sull'embargo, il 3 gennaio 1961 Fidel Castro, convinto che l'ambasciata statunitense fosse un covo di spie e timoroso di un'invasione, chiese di ridurre il personale diplomatico all'Avana al numero della piccola delegazione cubana a Washington; gli Stati Uniti risposero troncando le relazioni. Per l'articolo inglese sulle relazioni lo stesso giorno Washington ritirò il riconoscimento del governo cubano e chiuse l'ambasciata all'Avana; nel 1960 i diplomatici Edwin L. Sweet e William G. Friedman erano stati arrestati ed espulsi dall'isola. Per l'articolo inglese sull'embargo fu una delle ultime decisioni dell'amministrazione Eisenhower, presa dopo la seconda ondata di nazionalizzazioni.",
+  "after": "Per l'articolo italiano sull'embargo molti analisti ritengono che la dura politica statunitense accelerò, se non determinò, l'ingresso di Cuba nella sfera d'influenza sovietica. Il 17 aprile 1961 circa 1500 esuli addestrati dalla CIA sbarcarono nella baia dei Porci e furono sconfitti; seguì una campagna di attentati e sabotaggi, l'operazione Mongoose. Per l'articolo inglese sulle relazioni la rottura fermò anche i normali scambi accademici; nel 1977 i due paesi aprirono sezioni di interessi nelle rispettive capitali e le relazioni diplomatiche furono ristabilite il 20 luglio 2015.",
+  "links": [
+    {
+      "slug": "rivoluzione-cubana-1959",
+      "reason": "Due anni e due giorni prima, il 1º gennaio 1959, la rivoluzione cubana prende il potere."
+    },
+    {
+      "slug": "invasione-della-baia-dei-porci-1961",
+      "reason": "Tre mesi e due settimane dopo, il 17 aprile 1961, gli esuli addestrati dalla CIA sbarcano nella baia dei Porci."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Cuba–United States relations - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Cuba%E2%80%93United_States_relations",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Rivoluzione cubana - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Rivoluzione_cubana",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "United States embargo against Cuba - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/United_States_embargo_against_Cuba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Embargo contro Cuba - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Embargo_contro_Cuba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data del 3 gennaio 1961 è nell'articolo inglese sulle relazioni e nell'italiano sull'embargo; l'inglese sull'embargo dice soltanto gennaio 1961. Il racconto della richiesta di Castro di ridurre il personale dell'ambasciata è solo nell'articolo italiano sull'embargo. Le fonti non concordano sul primo embargo: l'articolo inglese sulle relazioni data il divieto di tutte le esportazioni al 19 ottobre 1960, l'italiano sull'embargo al 20 ottobre 1960, l'inglese sull'embargo lo fa seguire alle nazionalizzazioni del 30 agosto 1960, e l'articolo italiano sulla rivoluzione cubana, che per il resto non parla della rottura, lo presenta come risposta alla nazionalizzazione delle proprietà straniere del 6 agosto 1960. La data delle confische delle raffinerie è il 29 giugno e il 1º luglio 1960 per l'inglese sull'embargo, il 29 giugno per l'italiano. Il pin è approssimativo, all'Avana, perché lì fu chiusa l'ambasciata."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "slug": "linea-rossa-1963",
+  "title": "La linea rossa",
+  "summary": "Il 30 agosto 1963 entra in funzione la linea rossa, un collegamento diretto per telescrivente tra Washington e Mosca, voluto dopo i ritardi nelle comunicazioni durante la crisi dei missili di Cuba. Non è mai stata una linea telefonica: trasmette solo testi scritti.",
+  "date": {
+    "year": 1963,
+    "month": 8,
+    "day": 30
+  },
+  "place": {
+    "name": "Pentagono, Stati Uniti",
+    "lat": 38.8719,
+    "lon": -77.0563,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Entrambi gli articoli dicono che la linea collega il Pentagono con il Cremlino; l'articolo inglese colloca la postazione statunitense nel Pentagono nel 1988, ma non dice dove fosse nel 1963."
+  },
+  "before": "Diverse persone avevano proposto un collegamento diretto tra le due potenze, tra cui il professore di Harvard Thomas Schelling e il direttore della rivista Parade Jess Gorkin, ma le obiezioni di parte delle forze armate statunitensi e del Cremlino ne avevano ritardato l'introduzione. Durante la crisi dei missili di Cuba del 1962 i messaggi diplomatici ufficiali impiegavano in genere sei ore per arrivare, e gli Stati Uniti impiegarono quasi dodici ore per ricevere e decifrare una prima proposta di accordo di Chruščëv; nel frattempo da Mosca era arrivato un messaggio più duro. I consiglieri della Casa Bianca pensarono che comunicazioni più rapide avrebbero potuto evitare la crisi.",
+  "event": "I due paesi firmarono l'accordo nel giugno 1963, per l'articolo inglese il 20 giugno a Ginevra, e per lo stesso articolo era la prima volta che prendevano formalmente provvedimenti per ridurre il rischio di una guerra nucleare involontaria. Per l'articolo inglese a luglio gli Stati Uniti mandarono a Mosca quattro telescriventi con l'alfabeto latino, e un mese dopo arrivarono a Washington quattro telescriventi tedesco-orientali con l'alfabeto cirillico. La linea entrò in funzione il 30 agosto 1963 su un cavo che passava per Londra, Copenaghen, Stoccolma e Helsinki. I messaggi erano solo scritti, perché il parlato poteva essere frainteso, e venivano cifrati; per l'articolo inglese il primo, inviato da Washington, fu una frase di prova con tutte le lettere dell'alfabeto.",
+  "after": "Per l'articolo italiano il primo uso ufficiale statunitense fu all'assassinio di Kennedy, il 22 novembre 1963, e quello sovietico il 5 giugno 1967, all'inizio della guerra dei sei giorni, quando le due potenze si informarono a vicenda sui movimenti militari. Il Partito repubblicano criticò la linea, per l'articolo inglese nel programma del 1964, accusando l'amministrazione Kennedy di cercare accomodamenti con il comunismo. Nel 1971 la linea fu integrata con collegamenti via satellite, nel 1986 arrivarono i fax e dal 2008 una rete di computer.",
+  "links": [
+    {
+      "slug": "crisi-dei-missili-di-cuba-1962",
+      "reason": "Poco più di dieci mesi prima, dal 16 ottobre 1962, la crisi dei missili di Cuba mostrò quanto fossero lente le comunicazioni tra Washington e Mosca."
+    },
+    {
+      "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "reason": "Venticinque giorni prima, il 5 agosto 1963, Stati Uniti, Unione Sovietica e Regno Unito avevano firmato a Mosca il trattato sui test nucleari."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Moscow–Washington hotline - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Moscow–Washington_hotline",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Linea rossa - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Linea_rossa",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data scelta è il 30 agosto 1963, il giorno in cui per entrambi gli articoli la linea entrò in funzione (per l'inglese è anche il giorno del primo messaggio); l'accordo era stato firmato prima, il 20 giugno 1963 a Ginevra per l'articolo inglese, nel giugno 1963 per l'italiano. Le due date sono dello stesso anno.",
+    "Sul primo uso gli articoli non concordano: l'inglese in un passo dice che la linea fu usata la prima volta nel 1967 dal presidente Johnson, durante la guerra dei sei giorni, ma nell'elenco degli usi mette anche l'assassinio di Kennedy del 1963; l'italiano dice che il primo uso ufficiale statunitense fu nel 1963 e quello sovietico nel 1967. Il collegamento radio di riserva via Tangeri, le telescriventi e la data del 1964 della critica repubblicana sono solo nell'articolo inglese. Sui primi messaggi l'italiano dice che furono test con estratti di Shakespeare, Mark Twain e Čechov; l'inglese cita quei testi tra i messaggi di prova del 1988 e dà come primo messaggio la frase con tutte le lettere. Il pin è sul Pentagono, indicato da entrambi gli articoli come capo statunitense della linea."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

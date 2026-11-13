@@ -177,6 +177,14 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<!-- The shape of the service as rules the build enforces: see ArchitectureTest. Not managed
+		     by Spring Boot's BOM, so versioned here, where Dependabot sees it. -->
+		<dependency>
+			<groupId>com.tngtech.archunit</groupId>
+			<artifactId>archunit-junit5</artifactId>
+			<version>1.4.1</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-testcontainers</artifactId>
@@ -232,6 +240,35 @@
 						<goals>
 							<goal>report</goal>
 						</goals>
+					</execution>
+					<!-- A floor, not a target: coverage is well above it today, and the build fails if a change
+					     takes it clearly below. Set a few points under what the suite measures, since a run
+					     without Docker (a few DB-backed tests) measures slightly less than CI. -->
+					<execution>
+						<id>check</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>BUNDLE</element>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.90</minimum>
+										</limit>
+							<limit>
+								<counter>BRANCH</counter>
+								<value>COVEREDRATIO</value>
+								<minimum>0.80</minimum>
+							</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
 					</execution>
 				</executions>
 			</plugin>

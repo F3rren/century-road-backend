@@ -1,0 +1,51 @@
+{
+  "slug": "esecuzione-di-imre-nagy-1958",
+  "title": "L'esecuzione di Imre Nagy",
+  "summary": "Il 16 giugno 1958, dopo un processo segreto, il governo di János Kádár fa impiccare a Budapest Imre Nagy, primo ministro durante la rivoluzione del 1956, insieme al generale Pál Maléter e al giornalista Miklós Gimes. La notizia è resa pubblica solo a esecuzione avvenuta.",
+  "date": {
+    "year": 1958,
+    "month": 6,
+    "day": 16
+  },
+  "place": {
+    "name": "Budapest, Ungheria",
+    "lat": 47.4979,
+    "lon": 19.0402,
+    "countryCode": "HU",
+    "approximate": true,
+    "note": "Il punto indica Budapest: gli articoli dicono che Nagy morì a Budapest e fu sepolto nel cortile del carcere dell'esecuzione, ma non nominano il carcere."
+  },
+  "before": "Nagy, primo ministro riformista dal 1953 al 1955, era stato richiamato alla guida del governo il 24 ottobre 1956, durante la rivoluzione; aveva sciolto la polizia politica e il 1º novembre aveva annunciato l'uscita dell'Ungheria dal Patto di Varsavia. Quando il 4 novembre i sovietici attaccarono Budapest, si rifugiò nell'ambasciata iugoslava. Il 22 novembre ne uscì con un salvacondotto scritto di Kádár, ma fu arrestato dalle forze sovietiche e portato a Snagov, vicino a Bucarest, in Romania. Per l'articolo italiano lì i prigionieri furono spinti a firmare dimissioni retrodatate e condanne della «controrivoluzione».",
+  "event": "Riportato in Ungheria, Nagy fu accusato in segreto di aver organizzato il rovesciamento della Repubblica popolare e di tradimento. Condannato a morte, Nagy fu impiccato il 16 giugno 1958 insieme a Maléter e Gimes; il comunicato del ministro della giustizia uscì il giorno dopo. Per l'articolo inglese Nagy fu sepolto con i coimputati nel cortile del carcere dell'esecuzione e anni dopo spostato in un angolo remoto del Nuovo cimitero pubblico di Budapest, la parcella 301. Per l'articolo italiano altri due imputati erano già morti: Géza Losonczy in carcere e Jozsef Szilagyi, capo della segreteria di Nagy, giustiziato in aprile.",
+  "after": "Per l'articolo italiano i capi dei partiti comunisti erano stati invitati a pronunciarsi sul verdetto: solo Gomułka si astenne, e Togliatti ottenne che l'esecuzione fosse rinviata a dopo le elezioni italiane del 25 maggio 1958. Il giornalista americano John Gunther, citato dall'articolo inglese, definì le vicende che portarono alla morte di Nagy «un episodio di infamia senza pari». Nel giugno 1989, nel trentunesimo anniversario dell'esecuzione, Nagy fu risepolto con tutti gli onori; per l'articolo inglese parteciparono oltre duecentomila persone e il funerale contribuì alla fine del regime comunista ungherese. Per l'articolo italiano il 6 luglio 1989 la Corte suprema riabilitò ufficialmente Nagy e i coimputati.",
+  "links": [
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Quasi venti mesi prima, il 23 ottobre 1956, era cominciata la rivoluzione che riportò Nagy al governo."
+    },
+    {
+      "slug": "rapporto-segreto-di-chruscev-1956",
+      "reason": "Più di due anni prima, il 25 febbraio 1956, il rapporto segreto di Chruščëv aveva aperto la destalinizzazione."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Imre Nagy - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Imre_Nagy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Imre Nagy - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Imre_Nagy",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la morte di Nagy il 16 giugno 1958; l'italiano dice che il comunicato del ministro della giustizia, del 17 giugno, annunciò condanna ed esecuzione del giorno prima, e colloca la morte a Budapest. L'articolo inglese parla di impiccagione e di sepoltura nel cortile del carcere, senza nominarlo: per questo il pin è approssimativo su Budapest. Snagov è in entrambi gli articoli; le pressioni sui prigionieri, i coimputati Losonczy e Szilagyi, il voto dei partiti comunisti e Togliatti sono solo dell'articolo italiano. Sulla nuova sepoltura l'articolo inglese è incoerente: in un passo la colloca nel luglio 1989, in un altro nel trentunesimo anniversario dell'esecuzione, cioè il 16 giugno 1989, indicata anche dall'italiano. I due articoli divergono anche sulla nascita di Nagy (7 giugno 1896 per l'inglese, 6 giugno per l'italiano)."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

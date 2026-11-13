@@ -1,0 +1,45 @@
+{
+  "slug": "la-guerra-fredda-1960-1969",
+  "title": "La guerra fredda, 1960-1969",
+  "tagline": "Dall'aereo spia abbattuto sull'Unione Sovietica allo sbarco sulla Luna: il Muro di Berlino, la crisi dei missili, il Vietnam e Praga.",
+  "intro": "Il percorso segue gli anni sessanta della guerra fredda, dall'abbattimento dell'U-2 del maggio 1960 all'allunaggio dell'Apollo 11 del luglio 1969: il volo di Gagarin, la baia dei Porci, il Muro di Berlino, la crisi dei missili di Cuba, il trattato sui test nucleari, il golfo del Tonchino e l'invasione della Cecoslovacchia.\n\nÈ la linea principale del decennio: Cuba, il Vietnam e la corsa agli armamenti hanno ciascuno un percorso proprio, e Gagarin e l'Apollo 11 portano anche a quello sulla conquista dello spazio. Su date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "abbattimento-dell-u2-1960",
+      "narrative": "Si parte dal 1º maggio 1960: un aereo spia statunitense U-2 è abbattuto vicino a Sverdlovsk e il pilota è catturato."
+    },
+    {
+      "insight": "vostok-1-gagarin",
+      "narrative": "Il 12 aprile 1961 Jurij Gagarin è il primo essere umano nello spazio."
+    },
+    {
+      "insight": "invasione-della-baia-dei-porci-1961",
+      "narrative": "Cinque giorni dopo, il 17 aprile, esuli cubani addestrati dalla CIA sbarcano nella baia dei Porci e sono sconfitti in tre giorni."
+    },
+    {
+      "insight": "costruzione-del-muro-di-berlino-1961",
+      "narrative": "Nella notte tra il 12 e il 13 agosto la Germania Est chiude il confine con Berlino Ovest."
+    },
+    {
+      "insight": "crisi-dei-missili-di-cuba-1962",
+      "narrative": "Il 16 ottobre 1962 Kennedy vede le fotografie delle basi per missili sovietici in costruzione a Cuba."
+    },
+    {
+      "insight": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "narrative": "Il 5 agosto 1963, a Mosca, Stati Uniti, Unione Sovietica e Regno Unito vietano le esplosioni nucleari di prova nell'atmosfera, nello spazio e sott'acqua."
+    },
+    {
+      "insight": "incidente-del-golfo-del-tonchino-1964",
+      "narrative": "Il 2 agosto 1964, nel golfo del Tonchino, il cacciatorpediniere Maddox si scontra con motosiluranti nordvietnamite."
+    },
+    {
+      "insight": "invasione-della-cecoslovacchia-1968",
+      "narrative": "Nella notte tra il 20 e il 21 agosto 1968 le truppe di quattro paesi del Patto di Varsavia entrano in Cecoslovacchia."
+    },
+    {
+      "insight": "apollo-11",
+      "narrative": "Il 20 luglio 1969 l'Apollo 11 porta i primi esseri umani sulla Luna."
+    }
+  ]
+}

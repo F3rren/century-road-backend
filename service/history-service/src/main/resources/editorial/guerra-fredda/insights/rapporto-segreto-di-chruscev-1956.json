@@ -1,0 +1,55 @@
+{
+  "slug": "rapporto-segreto-di-chruscev-1956",
+  "title": "Il rapporto segreto di Chruščëv",
+  "summary": "Il 25 febbraio 1956, in una sessione a porte chiuse del XX Congresso del PCUS al Cremlino, Chruščëv parla per quattro ore contro Stalin: denuncia le grandi purghe e il culto della personalità. Il discorso, detto «rapporto segreto», apre la destalinizzazione e il «disgelo».",
+  "date": {
+    "year": 1956,
+    "month": 2,
+    "day": 25
+  },
+  "place": {
+    "name": "Cremlino, Mosca, Russia",
+    "lat": 55.7503,
+    "lon": 37.6164,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Gli articoli collocano la sessione ristretta nella Grande aula del Cremlino senza indicare l'edificio: il punto è all'interno del Cremlino."
+  },
+  "before": "Stalin era morto nel marzo 1953. Per l'articolo inglese, dopo la sua morte migliaia di prigionieri politici e deportati tornarono in Unione Sovietica, e l'arresto e l'esecuzione di Berija allargarono la conoscenza dei suoi crimini. Una commissione guidata da Pëtr Pospelov indagò sulla repressione dei delegati del XVII Congresso del 1934 e presentò le prove che nel 1937 e nel 1938 oltre un milione e mezzo di persone erano state arrestate per «attività antisovietiche» e più di 680.500 condannate a morte. Su questi risultati fu preparato il discorso.",
+  "event": "La sessione pubblica del XX Congresso si chiuse il 24 febbraio; i delegati furono richiamati nella Grande aula del Cremlino per una sessione ristretta, senza giornalisti, ospiti e delegati dei partiti stranieri. Dopo la mezzanotte Chruščëv lesse per quattro ore un rapporto preparato, senza resoconto stenografico, domande o dibattito. Accusò Stalin delle repressioni contro i vecchi bolscevichi e i delegati del 1934, di aver violato la guida collettiva, di aver esagerato il proprio ruolo nella guerra e di aver deportato intere nazionalità, lodando invece Lenin e il leninismo. Alcuni presenti si sentirono male e furono portati fuori dall'aula.",
+  "after": "Il testo fu letto in migliaia di riunioni del partito e del Komsomol; il 5 giugno 1956 il New York Times lo pubblicò per intero, mentre in Unione Sovietica uscì solo nel 1989. In Georgia, patria di Stalin, l'esercito represse il 9 marzo le manifestazioni in sua difesa. Per l'articolo inglese il discorso fu seguito da grandi cambiamenti politici e da proteste nel blocco orientale, soprattutto l'ottobre polacco e la rivoluzione ungherese. Cina e Albania lo citarono tra le cause della rottura con Mosca, accusando Chruščëv di revisionismo.",
+  "links": [
+    {
+      "slug": "morte-di-stalin-1953",
+      "reason": "Quasi tre anni prima, il 5 marzo 1953, muore Stalin."
+    },
+    {
+      "slug": "rivolta-di-poznan-1956",
+      "reason": "Quattro mesi dopo, il 28 giugno 1956, gli operai di Poznań scendono in piazza."
+    },
+    {
+      "slug": "rivoluzione-ungherese-1956",
+      "reason": "Quasi otto mesi dopo, il 23 ottobre 1956, comincia a Budapest la rivoluzione ungherese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "On the Cult of Personality and Its Consequences - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/On_the_Cult_of_Personality_and_Its_Consequences",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Sul culto della personalità e le sue conseguenze - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Sul_culto_della_personalità_e_le_sue_conseguenze",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il discorso il 25 febbraio 1956, cominciato poco dopo la mezzanotte, alla fine della sessione pubblica chiusa il 24. Divergono su alcuni dettagli: la commissione Pospelov fu istituita il 31 dicembre 1955 per l'articolo inglese e il 31 gennaio 1955 per l'italiano; il «disgelo» durò fino ai primi anni Sessanta per l'inglese e fino ai primi anni Settanta per l'italiano; l'inglese chiama Chruščëv primo segretario, l'italiano segretario generale. Sulla Georgia l'inglese dà il 9 marzo nell'introduzione e il 10 in un altro passo; l'italiano dà il 9. Il legame con l'ottobre polacco e la rivoluzione ungherese viene dall'articolo inglese. Il pin è approssimato all'interno del Cremlino: gli articoli parlano solo della Grande aula del Cremlino, senza nominare l'edificio."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

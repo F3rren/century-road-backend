@@ -11,10 +11,12 @@ management:
 spring:
   cloud:
     gateway:
-      # Replace downstream security headers on proxied responses.
-      # These filters do not cover the gateway's own responses.
-      default-filters:
-        - "SetResponseHeader=Strict-Transport-Security, max-age=${HSTS_MAX_AGE:300}; includeSubDomains"
-        - "SetResponseHeader=X-Content-Type-Options, nosniff"
-        - "SetResponseHeader=X-Frame-Options, DENY"
-        - "SetResponseHeader=Referrer-Policy, no-referrer"
+      server:
+        webflux:
+          # Replace downstream security headers on proxied responses.
+          # These filters do not cover the gateway's own responses.
+          default-filters:
+            - "SetResponseHeader=Strict-Transport-Security, max-age=${HSTS_MAX_AGE:300}; includeSubDomains"
+            - "SetResponseHeader=X-Content-Type-Options, nosniff"
+            - "SetResponseHeader=X-Frame-Options, DENY"
+            - "SetResponseHeader=Referrer-Policy, no-referrer"

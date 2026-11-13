@@ -1,0 +1,55 @@
+{
+  "slug": "pentagon-papers-1971",
+  "title": "I Pentagon Papers",
+  "summary": "Il 13 giugno 1971 il New York Times comincia a pubblicare in prima pagina i Pentagon Papers, lo studio segreto del Dipartimento della Difesa sul coinvolgimento statunitense in Vietnam, fatto uscire da Daniel Ellsberg. Il governo ottiene un blocco, ma il 30 giugno la Corte suprema permette di continuare la pubblicazione.",
+  "date": {
+    "year": 1971,
+    "month": 6,
+    "day": 13
+  },
+  "place": {
+    "name": "New York Times, Manhattan, New York, Stati Uniti",
+    "lat": 40.7560,
+    "lon": -73.9870,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Gli articoli dicono che lo studio uscì per la prima volta sul New York Times ma non danno l'indirizzo della redazione; il punto è indicativo, nel centro di Manhattan, dove per l'articolo inglese la squadra del giornale preparò la pubblicazione all'albergo New York Hilton Midtown."
+  },
+  "before": "Nel giugno 1967 il segretario alla Difesa McNamara avviò uno studio sulla storia del coinvolgimento americano in Vietnam, senza informarne il presidente Johnson. Per l'articolo inglese trentasei analisti produssero 47 volumi, con 3.000 pagine di analisi e 4.000 di documenti originali, classificati segretissimi. Tra loro c'era per alcuni mesi Daniel Ellsberg, economista della RAND Corporation. Diventato contrario alla guerra, nell'ottobre 1969 Ellsberg fotocopiò lo studio con Anthony Russo per renderlo pubblico; dopo aver cercato invano l'interesse di Kissinger e di alcuni senatori, lo consegnò a Neil Sheehan, giornalista del New York Times.",
+  "event": "Il 13 giugno 1971 il New York Times pubblicò il primo articolo della serie. Lo studio mostrava che gli Stati Uniti avevano allargato la guerra con bombardamenti su Cambogia e Laos, incursioni sulle coste del Vietnam del Nord e attacchi dei marines, mai riferiti dalla stampa, e che quattro amministrazioni, da Truman a Johnson, avevano ingannato il pubblico sulle loro intenzioni. Su richiesta del governo Nixon un tribunale federale fermò il Times dopo tre articoli. Il 18 giugno cominciò a pubblicare il Washington Post, che aveva avuto un'altra copia da Ellsberg, e poi altri giornali.",
+  "after": "Il 30 giugno la Corte suprema decise, sei voti contro tre, che il governo non aveva dimostrato le ragioni per impedire la pubblicazione. Ellsberg, che si era consegnato il 28 giugno, fu accusato di furto e detenzione di documenti segreti; nel maggio 1973 il processo fu annullato, dopo che si scoprì, tra l'altro, che agenti su ordine dell'amministrazione Nixon erano entrati illegalmente nello studio del suo psichiatra. Per l'articolo italiano il gruppo di «idraulici» creato per fermare le fughe di notizie fu poi coinvolto nei controlli illegali da cui nacque lo scandalo Watergate. Per l'articolo inglese la pubblicazione ebbe poco o nessun effetto sulla guerra in corso, perché i documenti erano di anni prima.",
+  "links": [
+    {
+      "slug": "sparatoria-della-kent-state-1970",
+      "reason": "Tredici mesi prima, il 4 maggio 1970, la Guardia Nazionale aveva ucciso quattro studenti alla Kent State durante le proteste contro l'intervento in Cambogia."
+    },
+    {
+      "slug": "incidente-del-golfo-del-tonchino-1964",
+      "reason": "Quasi sette anni prima, il 2 agosto 1964, avviene lo scontro nel golfo del Tonchino, nei mesi delle operazioni segrete contro il Nord che lo studio documenta."
+    },
+    {
+      "slug": "operazione-rolling-thunder-1965",
+      "reason": "Più di sei anni prima, il 2 marzo 1965, cominciano i bombardamenti continui sul Vietnam del Nord, a cui lo studio dedica una sezione."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Pentagon Papers - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Pentagon_Papers",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Pentagon Papers - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Pentagon_Papers",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'inizio della pubblicazione sul New York Times il 13 giugno 1971, quella sul Washington Post il 18 giugno e la decisione della Corte suprema il 30 giugno. Differiscono sul periodo coperto dallo studio (1945-1968 per l'inglese, 1945-1967 per l'italiano) e sulla consegna a Sheehan: per l'italiano nel febbraio 1971, 134 documenti; per l'inglese i due ne parlarono a febbraio e Ellsberg gli diede 43 volumi il 2 marzo. L'italiano dice che McNamara voleva darlo a Robert Kennedy; per l'inglese è quanto sostenne un rapporto, smentito poi da McNamara. Il legame tra gli «idraulici» e il Watergate è detto in questi termini solo dall'italiano; l'inglese dice che le accuse a Ellsberg caddero dopo che gli inquirenti sul Watergate scoprirono gli sforzi illegali della Casa Bianca per screditarlo. Il pin è sul New York Times, il giornale che pubblicò per primo lo studio, in un punto indicativo di Manhattan."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

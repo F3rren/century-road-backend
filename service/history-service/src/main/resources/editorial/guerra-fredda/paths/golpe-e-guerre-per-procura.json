@@ -1,0 +1,33 @@
+{
+  "slug": "golpe-e-guerre-per-procura",
+  "title": "Golpe e guerre per procura",
+  "tagline": "Dal Cile all'Afghanistan: colpi di Stato, guerre e rivoluzioni degli anni settanta in cui le due superpotenze sostennero una parte.",
+  "intro": "Il percorso segue i conflitti degli anni settanta in cui Stati Uniti e Unione Sovietica appoggiarono, armarono o affiancarono una delle parti, dal colpo di Stato in Cile del settembre 1973 all'invasione sovietica dell'Afghanistan del dicembre 1979: la guerra del Kippur, l'intervento cubano in Angola, la guerra dell'Ogaden e la rivoluzione sandinista.\n\nSu date, cifre e particolari gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "colpo-di-stato-in-cile-1973",
+      "narrative": "Si parte dall'11 settembre 1973: in Cile i militari rovesciano Salvador Allende, e il governo statunitense appoggia la giunta."
+    },
+    {
+      "insight": "guerra-del-kippur-1973",
+      "narrative": "Il 6 ottobre Egitto e Siria attaccano Israele; le due superpotenze riforniscono i propri alleati e arrivano a un'allerta."
+    },
+    {
+      "insight": "intervento-cubano-in-angola-1975",
+      "narrative": "Nel novembre 1975, mentre l'Angola diventa indipendente, Cuba manda migliaia di soldati a sostenere l'MPLA."
+    },
+    {
+      "insight": "guerra-dell-ogaden-1977",
+      "narrative": "Il 13 luglio 1977 la Somalia invade l'Ogaden; l'Unione Sovietica passa dalla parte dell'Etiopia."
+    },
+    {
+      "insight": "rivoluzione-sandinista-1979",
+      "narrative": "Il 19 luglio 1979 i sandinisti entrano a Managua, due giorni dopo la fuga di Somoza."
+    },
+    {
+      "insight": "invasione-sovietica-dell-afghanistan-1979",
+      "narrative": "Tra il 24 e il 27 dicembre l'esercito sovietico entra in Afghanistan e insedia a Kabul Babrak Karmal."
+    }
+  ]
+}

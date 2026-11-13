@@ -1,0 +1,51 @@
+{
+  "slug": "battaglia-del-perimetro-di-pusan-1950",
+  "title": "La battaglia del perimetro di Pusan",
+  "summary": "Dal 4 agosto al 18 settembre 1950 le forze dell'ONU, respinte nell'angolo sud-orientale della Corea, difendono attorno al porto di Busan una linea lungo il fiume Naktong e resistono per sei settimane agli attacchi nordcoreani, fino allo sbarco di Incheon.",
+  "date": {
+    "year": 1950,
+    "month": 8,
+    "day": 4
+  },
+  "place": {
+    "name": "Busan, Corea del Sud",
+    "lat": 35.1796,
+    "lon": 129.0756,
+    "countryCode": "KR",
+    "approximate": true,
+    "note": "Il punto indica la città portuale di Busan, al centro della zona difesa; i combattimenti si svolsero lungo un perimetro di circa 230 chilometri, attorno a Taegu, Masan, P'ohang-dong e al fiume Naktong."
+  },
+  "before": "Dopo l'invasione del 25 giugno l'esercito nordcoreano aveva respinto verso sud i sudcoreani e le truppe statunitensi, mandate in battaglia alla spicciolata, man mano che arrivavano, e sconfitte più volte, tra l'altro a Taejon a metà luglio. Il 1° agosto l'Ottava armata statunitense ordinò a tutte le forze dell'ONU di ritirarsi a est del fiume Naktong e di stabilire una linea di resistenza: il perimetro di Busan. Nella ritirata furono distrutti tutti i ponti sul fiume, in un caso con centinaia di profughi ancora sopra.",
+  "event": "Per l'articolo inglese la battaglia durò dal 4 agosto al 18 settembre e non fu un solo scontro ma una serie di grandi battaglie lungo tutto il perimetro, attorno a Taegu, Masan, P'ohang-dong e al Naktong. L'articolo italiano lo descrive come un «perimetro (o quadrilatero) di Busan», chiuso dal Naktong a nord e a ovest e dal mare sugli altri lati. Attraverso il porto di Busan arrivavano truppe e rifornimenti dal Giappone e dagli Stati Uniti, e a fine agosto le forze dell'ONU avevano più soldati combattenti di quelle nordcoreane. La grande offensiva nordcoreana del Naktong, combattuta soprattutto dal 1° all'8 settembre, sfondò in più punti ma non fece crollare la linea.",
+  "after": "Il 15 settembre gli statunitensi sbarcarono a Incheon, molto alle spalle delle linee nordcoreane, e il giorno dopo l'Ottava armata cominciò a uscire dal perimetro; il 18 settembre i combattimenti attorno a Busan erano finiti e i nordcoreani in ritirata. Per l'articolo inglese le perdite avevano distrutto l'esercito nordcoreano come forza combattente; MacArthur e i capi di stato maggiore statunitensi decisero di inseguirlo nella Corea del Nord fino al confine cinese, e la Cina minacciò di non restare in disparte.",
+  "links": [
+    {
+      "slug": "invasione-della-corea-del-sud-1950",
+      "reason": "Quaranta giorni prima, il 25 giugno, la Corea del Nord aveva invaso la Corea del Sud."
+    },
+    {
+      "slug": "sbarco-di-inchon-1950",
+      "reason": "Sei settimane dopo, il 15 settembre, gli statunitensi sbarcano a Incheon, alle spalle delle forze che premevano sul perimetro."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of the Pusan Perimeter - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_the_Pusan_Perimeter",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Corea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Corea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data d'inizio, il 4 agosto 1950, e la fine, il 18 settembre, sono quelle dell'articolo inglese sulla battaglia. L'articolo italiano, che parla della battaglia solo dentro la voce sulla guerra di Corea, non dà date d'inizio e fine: dice che il 3 agosto furono fatti saltare i ponti sul Naktong e che il primo scontro avvenne il 5 agosto. Le misure non coincidono: l'inglese dà un perimetro lungo circa 230 chilometri, l'italiano un territorio di 140 per 90 chilometri. Il numero delle forze varia anche dentro l'articolo inglese (140 000 soldati dell'ONU contro 98 000 nordcoreani nell'introduzione, 120 000 combattenti più 60 000 di supporto contro circa 97 850 il 31 agosto). L'articolo inglese chiama la battaglia «Pusan Perimeter», dalla grafia di allora del nome della città; l'italiano scrive Busan, ed è questa la forma usata per la città. I particolari sull'ordine del 1° agosto, sull'offensiva di fine agosto e sulle conseguenze vengono dall'articolo inglese. Il pin è su Busan, il porto al centro dello schieramento difensivo."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

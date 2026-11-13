@@ -7,16 +7,8 @@ import centuryroad.auth.dto.LoginRequest;
 import centuryroad.auth.dto.RefreshPayload;
 import centuryroad.auth.dto.RefreshTokenRequest;
 import centuryroad.auth.dto.UserSummaryDto;
-import centuryroad.auth.exception.AuthenticationFailedException;
 import centuryroad.auth.exception.InvalidRequestException;
-import centuryroad.auth.exception.TooManyRequestsException;
-import centuryroad.auth.model.User;
-import centuryroad.auth.service.AuthService;
-import centuryroad.auth.service.JwtService;
-import centuryroad.auth.service.LoginAttemptLimiter;
-import centuryroad.auth.service.RefreshTokenService;
-import centuryroad.auth.service.UserService;
-import centuryroad.auth.util.LogSanitizer;
+import centuryroad.auth.service.SessionService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.headers.Header;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -25,7 +17,6 @@ import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.validation.Valid;
-import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -38,9 +29,9 @@ import org.springframework.web.bind.annotation.RestController;
  * token, and
  * the only three this service exposes that another Century Road service will
  * never need
- * to call: everyone else only ever verifies a token this one already issued.
+ * to call: everyone else only ever verifies a token this one already issued. The rules
+ * behind them are SessionService's; this class is their HTTP side.
  */
-@Slf4j
 @RestController
 @RequestMapping("/api/auth")
 @Tag(name = "Authentication", description = "Sign in, renew a token, sign out. The only endpoints reachable without a token.")
@@ -48,19 +39,10 @@ public class AuthController {
 
         private static final int MAX_EMAIL_LENGTH = 254;
 
-        private final AuthService authService;
-        private final UserService userService;
-        private final JwtService jwtService;
-        private final RefreshTokenService refreshTokenService;
-        private final LoginAttemptLimiter loginAttemptLimiter;
+        private final SessionService sessionService;
 
-        public AuthController(AuthService authService, UserService userService, JwtService jwtService,
-                        RefreshTokenService refreshTokenService, LoginAttemptLimiter loginAttemptLimiter) {
-                this.authService = authService;
-                this.userService = userService;
-                this.jwtService = jwtService;
-                this.refreshTokenService = refreshTokenService;
-                this.loginAttemptLimiter = loginAttemptLimiter;
+        public AuthController(SessionService sessionService) {
+                this.sessionService = sessionService;
         }
 
         @Operation(summary = "Log in with email and password", description = """
@@ -90,41 +72,11 @@ public class AuthController {
                         throw new InvalidRequestException("Email too long", "L'email non e' valida.");
                 }
 
-                // Keyed on the caller's address. There are now two proxies in front of this
-                // service - the TLS terminator and the gateway - so the connection's own remote
-                // address is the gateway's, identical for everybody. What makes this the real
-                // caller again is server.forward-headers-strategy in the prod profile, which
-                // has Spring rewrite getRemoteAddr() from the Forwarded header the gateway
-                // adds.
-                // The gateway takes that address from X-Forwarded-For, which the terminator
-                // overwrites rather than passing on what the caller sent, and it ignores a
-                // Forwarded header from the caller (XForwardedOnlyHeaderTransformer), which the
-                // terminator drops as well. So the caller cannot choose it.
-                String limiterKey = httpRequest.getRemoteAddr() + "|" + request.email();
-                long retryAfter = loginAttemptLimiter.checkAndRecord(limiterKey);
-                if (retryAfter > 0) {
-                        // The message reaches the response body, so it names neither the caller's
-                        // address nor the email: the limiter key is the pair, never to be echoed.
-                        throw new TooManyRequestsException("Too many login attempts",
-                                        "Troppi tentativi. Riprova tra qualche minuto.", retryAfter);
-                }
+                SessionService.Tokens tokens = sessionService.login(request.email(), request.password(),
+                                httpRequest.getRemoteAddr());
 
-                User user;
-                try {
-                        user = authService.login(request.email(), request.password());
-                } catch (AuthenticationFailedException e) {
-                        // The address and the masked email, never the raw email: it is whatever the
-                        // caller typed, and a log is archived and shared (see LogSanitizer).
-                        log.warn("Login refused | {} | {}", httpRequest.getRemoteAddr(),
-                                        LogSanitizer.maskEmail(request.email()));
-                        throw e;
-                }
-                loginAttemptLimiter.reset(limiterKey);
-
-                String token = jwtService.generateToken(user);
-                String refreshToken = refreshTokenService.issue(user.getId());
-
-                LoginPayload payload = new LoginPayload(token, refreshToken, UserSummaryDto.of(user));
+                LoginPayload payload = new LoginPayload(tokens.accessToken(), tokens.refreshToken(),
+                                UserSummaryDto.of(tokens.user()));
                 return ResponseEntity.ok(ApiEnvelope.success("Login effettuato con successo", payload, RequestCorrelationFilter.current()));
         }
 
@@ -137,27 +89,11 @@ public class AuthController {
                         + "its user no longer exists. `error` is INVALID_CREDENTIALS.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
         @PostMapping("/refresh")
         public ResponseEntity<ApiEnvelope<RefreshPayload>> refresh(@Valid @RequestBody RefreshTokenRequest request) {
-                Long userId = refreshTokenService.rotate(request.refreshToken())
-                                .orElseThrow(() -> new AuthenticationFailedException(
-                                                "Refresh token not found, expired or already used"));
-
-                // rotate() only proves the token was valid for this user id; the fields the new
-                // access token's claims need (email, role) still have to come from the
-                // database.
-                User user = userService.findById(userId);
-                // A disabled account must stop being able to renew its session: the login refuses
-                // it, and a refresh token issued before it was disabled would otherwise keep
-                // minting access tokens for as long as it keeps being rotated. Same exception and
-                // text as an unknown token, so the answer does not say which it was.
-                if (user == null || !user.isEnabled()) {
-                        throw new AuthenticationFailedException("Refresh token not found, expired or already used");
-                }
-
-                String newToken = jwtService.generateToken(user);
-                String newRefreshToken = refreshTokenService.issue(user.getId());
+                SessionService.Tokens tokens = sessionService.refresh(request.refreshToken());
 
                 return ResponseEntity.ok(ApiEnvelope.success("Token aggiornato",
-                                new RefreshPayload(newToken, newRefreshToken), RequestCorrelationFilter.current()));
+                                new RefreshPayload(tokens.accessToken(), tokens.refreshToken()),
+                                RequestCorrelationFilter.current()));
         }
 
         @Operation(summary = "Sign out by revoking a refresh token", description = """
@@ -167,7 +103,7 @@ public class AuthController {
         @ApiResponse(responseCode = "400", description = "The refresh token is missing. `error` is VALIDATION_ERROR.", content = @Content(schema = @Schema(implementation = ApiEnvelope.class)))
         @PostMapping("/logout")
         public ResponseEntity<ApiEnvelope<Void>> logout(@Valid @RequestBody RefreshTokenRequest request) {
-                refreshTokenService.revoke(request.refreshToken());
+                sessionService.logout(request.refreshToken());
                 return ResponseEntity.status(HttpStatus.OK)
                                 .body(ApiEnvelope.success("Logout effettuato", null, RequestCorrelationFilter.current()));
         }

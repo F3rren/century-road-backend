@@ -73,17 +73,22 @@ public record OnThisDayQuery(MonthDay day, Language language, Set<Section> secti
         if (from == null && to == null) {
             return YearRange.unbounded();
         }
-        int lower = Optional.ofNullable(from).orElse(MIN_YEAR);
-        int upper = Optional.ofNullable(to).orElse(MAX_YEAR);
-        if (lower < MIN_YEAR || upper > MAX_YEAR) {
-            throw invalidYears("year out of range",
-                    "L'anno deve essere compreso tra " + MIN_YEAR + " e " + MAX_YEAR + ".");
-        }
+        int lower = requireYear(Optional.ofNullable(from).orElse(MIN_YEAR));
+        int upper = requireYear(Optional.ofNullable(to).orElse(MAX_YEAR));
         if (lower > upper) {
             throw invalidYears("fromYear is after toYear",
                     "L'anno iniziale non puo' essere successivo a quello finale.");
         }
         return new YearRange(lower, upper);
+    }
+
+    /** The one check of a year in a request, wherever one is taken: MIN_YEAR to MAX_YEAR. */
+    public static int requireYear(int year) {
+        if (year < MIN_YEAR || year > MAX_YEAR) {
+            throw invalidYears("year out of range",
+                    "L'anno deve essere compreso tra " + MIN_YEAR + " e " + MAX_YEAR + ".");
+        }
+        return year;
     }
 
     private static InvalidRequestException invalidYears(String message, String userMessage) {

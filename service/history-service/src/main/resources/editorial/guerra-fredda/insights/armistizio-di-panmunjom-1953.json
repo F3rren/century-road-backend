@@ -1,0 +1,55 @@
+{
+  "slug": "armistizio-di-panmunjom-1953",
+  "title": "L'armistizio di Panmunjeom",
+  "summary": "Il 27 luglio 1953 a Panmunjeom, villaggio sulla linea tra le due Coree, i delegati del comando dell'ONU e delle forze nordcoreane e cinesi firmano l'armistizio che ferma i combattimenti della guerra di Corea. Crea la zona demilitarizzata, ma non è un trattato di pace, e un trattato di pace non è mai stato firmato.",
+  "date": {
+    "year": 1953,
+    "month": 7,
+    "day": 27
+  },
+  "place": {
+    "name": "Panmunjeom, Corea del Nord",
+    "lat": 37.962,
+    "lon": 126.676,
+    "countryCode": "KP",
+    "approximate": true,
+    "note": "Panmunjeom e la sua area di sicurezza congiunta stanno sulla linea di demarcazione tra le due Coree; il punto è messo poche centinaia di metri a nord della linea, in Corea del Nord, per non cadere sul confine. Gli articoli non danno coordinate."
+  },
+  "before": "Le trattative cominciarono il 10 luglio 1951 a Kaesŏng, con il generale nordcoreano Nam Il e l'ammiraglio statunitense Charles Turner Joy. Si interruppero il 23 agosto dopo un presunto bombardamento della sede e ripresero il 25 ottobre a Panmunjeom, con la sicurezza affidata a entrambe le parti. Il punto più difficile fu il rimpatrio dei prigionieri, perché molti soldati cinesi e nordcoreani rifiutavano di tornare. Per l'articolo inglese il nuovo presidente Eisenhower visitò la Corea nel dicembre 1952, e dopo la morte di Stalin, nel marzo 1953, la nuova dirigenza sovietica chiese una rapida fine delle ostilità.",
+  "event": "Il 19 luglio i delegati raggiunsero l'accordo su tutti i punti. Il 27 luglio alle 10 del mattino Nam Il, per l'esercito nordcoreano e i volontari cinesi, e William Harrison, per il comando dell'ONU, firmarono l'armistizio, che entrò in vigore dodici ore dopo. Il documento, solo militare, fissò la linea di demarcazione e una zona demilitarizzata larga quattro chilometri lungo la linea del fronte, vicina al 38º parallelo, e affidò i prigionieri che rifiutavano il rimpatrio a una commissione di nazioni neutrali presieduta da un generale indiano. La Corea del Sud del presidente Syngman Rhee, contrario a fermarsi senza aver riunificato il paese, non lo firmò.",
+  "after": "Con l'armistizio i combattimenti cessarono, e il confine restò in una posizione simile a quella di prima della guerra. Oltre 22 000 soldati nordcoreani o cinesi rifiutarono il rimpatrio, mentre restarono in Corea del Nord o in Cina 327 sudcoreani, ventuno statunitensi e un britannico. La conferenza politica prevista entro tre mesi si tenne a Ginevra nell'aprile del 1954, senza risultati, e nessun trattato di pace seguì. Nel 1957 gli Stati Uniti dichiararono di non considerarsi più vincolati al paragrafo 13d, che limitava l'introduzione di nuove armi, e dal 1958 portarono in Corea del Sud armi nucleari.",
+  "links": [
+    {
+      "slug": "invasione-della-corea-del-sud-1950",
+      "reason": "Poco più di tre anni prima, il 25 giugno 1950, la Corea del Nord aveva invaso il Sud."
+    },
+    {
+      "slug": "rimozione-di-macarthur-1951",
+      "reason": "Più di due anni prima, l'11 aprile 1951, Truman aveva tolto il comando a MacArthur."
+    },
+    {
+      "slug": "morte-di-stalin-1953",
+      "reason": "Quasi cinque mesi prima, il 5 marzo, era morto Stalin."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Korean Armistice Agreement - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Korean_Armistice_Agreement",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Armistizio di Panmunjeom - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Armistizio_di_Panmunjeom",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "L'articolo italiano è molto breve e non dà il giorno, solo l'anno 1953: la data del 27 luglio, l'ora della firma, i termini, i prigionieri e i fatti successivi vengono dall'articolo inglese; le trattative a Kaesŏng, la sospensione e il paragrafo 13d sono in entrambi. L'articolo inglese dice nell'introduzione che firmarono anche Mark Clark, Kim Il-sung e Peng Dehuai, e più avanti che a Panmunjeom firmarono Nam Il e Harrison; il testo segue questo secondo passo. L'entrata in vigore è alle 22 ora locale, dodici ore dopo la firma, e i due passi concordano. L'articolo italiano dice che l'edificio della firma sta a cavallo della linea di demarcazione; il pin è stato messo chiaramente a nord della linea, in Corea del Nord."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

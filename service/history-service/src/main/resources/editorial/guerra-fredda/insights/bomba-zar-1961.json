@@ -1,0 +1,51 @@
+{
+  "slug": "bomba-zar-1961",
+  "title": "La Bomba Zar",
+  "summary": "Il 30 ottobre 1961 l'Unione Sovietica fa esplodere sopra l'arcipelago di Novaja Zemlja la Bomba Zar, una bomba all'idrogeno da cinquanta megatoni: per entrambi gli articoli è l'ordigno più potente mai sperimentato.",
+  "date": {
+    "year": 1961,
+    "month": 10,
+    "day": 30
+  },
+  "place": {
+    "name": "Isola Severnyj, Novaja Zemlja, Russia",
+    "lat": 73.8000,
+    "lon": 54.9000,
+    "countryCode": "RU",
+    "approximate": true,
+    "note": "Il punto indica la zona del test sull'isola Severnyj: per l'articolo inglese la bomba esplose a circa quattromila metri sopra capo Suchoj Nos, a quindici chilometri dalla baia Mitjušicha; gli articoli non danno le coordinate del punto zero."
+  },
+  "before": "Per l'articolo inglese, alla fine degli anni Cinquanta l'arsenale nucleare degli Stati Uniti superava di molto quello sovietico, e i dirigenti dell'URSS sapevano di non poter minacciare in modo credibile il territorio americano. Un primo progetto di bomba di grandissima potenza, del 1956, era stato costruito ma mai provato; il test della nuova bomba fu rinviato anche per la visita di Chruščëv negli Stati Uniti. Il 10 luglio 1961 Chruščëv approvò lo sviluppo dell'ordigno, nel quadro della ripresa dei test sovietici dopo la moratoria, e il 17 ottobre annunciò il test al XXII Congresso del PCUS.",
+  "event": "Il 30 ottobre un bombardiere Tu-95V, decollato dalla base di Olenja nella penisola di Kola, sganciò la bomba, lunga otto metri e pesante ventisette tonnellate, appesa a un grande paracadute; esplose alle 11:32 ora di Mosca, a circa quattromila metri dal suolo. Il progetto prevedeva cento megatoni, ma per ridurre la ricaduta radioattiva l'uranio 238 di uno degli stadi fu sostituito con il piombo, e la potenza scese a cinquanta. Il lampo fu visto a circa mille chilometri e il fungo salì a sessantasette chilometri per l'articolo inglese, a sessantaquattro per l'italiano. Gli edifici del villaggio di Severnyj, a cinquantacinque chilometri, furono tutti distrutti.",
+  "after": "Per l'articolo inglese il governo degli Stati Uniti sottolineò che la bomba non aveva utilità militare e si disse pronto a firmare un trattato sulla messa al bando parziale dei test, concluso nel 1963; il Foreign Office britannico e i primi ministri di Norvegia e Danimarca condannarono l'esplosione. La bomba restò un esemplare unico, troppo grande e pesante per essere impiegata come arma. Per l'articolo italiano, poco dopo il test Sacharov, che aveva guidato i fisici del progetto, cominciò la sua campagna contro le armi nucleari, e nel 1975 ricevette il premio Nobel per la pace.",
+  "links": [
+    {
+      "slug": "prima-bomba-h-sovietica-1955",
+      "reason": "Quasi sei anni prima, il 22 novembre 1955, l'Unione Sovietica aveva provato la sua prima bomba H a due stadi."
+    },
+    {
+      "slug": "trattato-sulla-messa-al-bando-parziale-dei-test-1963",
+      "reason": "Un anno e nove mesi dopo, il 5 agosto 1963, Stati Uniti, Unione Sovietica e Regno Unito firmano il trattato che vieta i test nucleari nell'atmosfera, nello spazio e sott'acqua."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Tsar Bomba - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Tsar_Bomba",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Bomba Zar - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Bomba_Zar",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il 30 ottobre 1961 alle 11:32 ora di Mosca; l'inglese aggiunge che altre fonti indicano le 11:33. Il contesto strategico, il progetto del 1956, il rinvio e le reazioni internazionali sono dell'articolo inglese; la campagna di Sacharov e il premio Nobel sono in entrambi. Sulla potenza: l'inglese dice che le prime misure davano circa cinquantotto megatoni, cifra accettata fino al 1991, quando gli scienziati sovietici resero noti i cinquanta registrati dai loro strumenti; l'italiano dice che gli Stati Uniti misurarono circa cinquantasette megatoni. Sull'altezza del fungo gli articoli differiscono (sessantasette contro sessantaquattro chilometri). Il villaggio di Severnyj distrutto a cinquantacinque chilometri è dell'inglese; l'italiano parla degli edifici dell'isola Severnyj a quella distanza.Per l'inglese il nome «Bomba Zar» è nato negli anni Novanta: all'epoca la stampa occidentale parlava della «bomba da 50 megatoni» o «da 100 megatoni». L'italiano colloca l'esplosione nella baia Mitjušicha, l'inglese sopra capo Suchoj Nos, a quindici chilometri dalla baia: il pin è nella zona, sull'isola Severnyj."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

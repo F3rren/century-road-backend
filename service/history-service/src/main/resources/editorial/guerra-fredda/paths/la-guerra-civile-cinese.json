@@ -1,0 +1,37 @@
+{
+  "slug": "la-guerra-civile-cinese",
+  "title": "La guerra civile cinese",
+  "tagline": "Dall'accordo del Doppio Dieci alla ritirata a Taiwan: come i comunisti di Mao vincono la guerra contro il Kuomintang.",
+  "intro": "Il percorso segue la seconda fase della guerra civile cinese, dall'accordo firmato a Chongqing nell'ottobre 1945 alla ritirata del governo della Repubblica di Cina a Taiwan nel dicembre 1949: le tre grandi campagne del 1948, l'attraversamento dello Yangtze e la proclamazione della Repubblica Popolare.\n\nLe campagne non hanno un articolo proprio in italiano: per quelle le fonti sono l'articolo inglese di ciascuna e quello italiano sulla guerra civile. Su date e cifre gli articoli non sempre concordano; dove divergono, il testo lo dice.",
+  "topic": "GUERRA_FREDDA",
+  "stops": [
+    {
+      "insight": "accordo-del-doppio-dieci-1945",
+      "narrative": "Si parte dal 10 ottobre 1945: a Chongqing nazionalisti e comunisti firmano un accordo che non regge."
+    },
+    {
+      "insight": "campagna-di-liaoshen-1948",
+      "narrative": "Il 12 settembre 1948 i comunisti avviano in Manciuria la campagna di Liaoshen."
+    },
+    {
+      "insight": "campagna-di-huaihai-1948",
+      "narrative": "Il 6 novembre comincia attorno a Xuzhou la campagna dello Huaihai."
+    },
+    {
+      "insight": "campagna-di-pingjin-1948",
+      "narrative": "Il 29 novembre comincia la campagna di Pingjin, che si chiude con l'ingresso dei comunisti a Beiping."
+    },
+    {
+      "insight": "attraversamento-dello-yangtze-1949",
+      "narrative": "Il 20 aprile 1949 i comunisti attraversano lo Yangtze; tre giorni dopo prendono Nanchino."
+    },
+    {
+      "insight": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "narrative": "Il 1º ottobre Mao proclama la Repubblica Popolare Cinese dalla porta di Tiananmen."
+    },
+    {
+      "insight": "ritirata-a-taiwan-1949",
+      "narrative": "Il 7 dicembre il governo della Repubblica di Cina si trasferisce a Taiwan."
+    }
+  ]
+}

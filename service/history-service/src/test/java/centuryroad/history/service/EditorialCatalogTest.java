@@ -15,6 +15,7 @@ import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.time.Clock;
 import java.time.MonthDay;
 import java.util.List;
 import java.util.function.Consumer;
@@ -47,7 +48,7 @@ class EditorialCatalogTest {
     }
 
     private EditorialCatalog catalog() {
-        return new EditorialCatalog(new PathMatchingResourcePatternResolver(), "file:" + root);
+        return new EditorialCatalog(new PathMatchingResourcePatternResolver(), "file:" + root, Clock.systemUTC());
     }
 
     // ---- fixtures ------------------------------------------------------------------------------

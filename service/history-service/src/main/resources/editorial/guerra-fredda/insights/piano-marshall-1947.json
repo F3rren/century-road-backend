@@ -1,0 +1,55 @@
+{
+  "slug": "piano-marshall-1947",
+  "title": "Il piano Marshall",
+  "summary": "Il 5 giugno 1947, all'Università di Harvard, il segretario di Stato George Marshall offre l'aiuto degli Stati Uniti alla ripresa dell'Europa e chiede agli europei di preparare un piano comune. Ne nasce il programma per la ripresa europea, in vigore dall'aprile 1948 per quattro anni; l'Unione Sovietica lo rifiuta e lo fa rifiutare ai paesi dell'Est.",
+  "date": {
+    "year": 1947,
+    "month": 6,
+    "day": 5
+  },
+  "place": {
+    "name": "Università di Harvard, Cambridge, Massachusetts, Stati Uniti",
+    "lat": 42.3745,
+    "lon": -71.1169,
+    "countryCode": "US",
+    "approximate": true,
+    "note": "Gli articoli dicono solo che Marshall parlò all'Università di Harvard; il punto è sull'Harvard Yard, il cuore del campus."
+  },
+  "before": "Per l'articolo inglese l'Europa usciva dalla guerra con città e industrie gravemente danneggiate, commerci interrotti, gravi carenze di cibo, aggravate dall'inverno 1946-47, e una ripresa lenta. Nel gennaio 1947 Truman nominò Marshall segretario di Stato e il 12 marzo annunciò la sua dottrina. Alla conferenza di Mosca, dopo sei settimane di trattative, Molotov respinse le proposte americane e britanniche sulla ricostruzione della Germania, e Washington concluse che una soluzione non poteva più aspettare. Tra gli scopi non ufficiali del piano l'articolo inglese indica anche il contenimento dell'influenza sovietica, visibile nella forza crescente dei partiti comunisti in Francia e in Italia.",
+  "event": "Il 5 giugno 1947 Marshall parlò ad Harvard. Per l'articolo inglese il discorso, scritto da Charles Bohlen, non conteneva quasi dettagli né cifre: offriva aiuti, diceva che la politica americana non era diretta contro alcun paese ma contro la fame, la povertà, la disperazione e il caos, e chiedeva agli europei di organizzare da sé il programma. Era rivolto soprattutto al pubblico europeo e la BBC lo lesse per intero. Per l'articolo italiano Marshall disse che l'Europa avrebbe avuto bisogno di grandi aiuti americani per altri tre o quattro anni, senza i quali le sue condizioni politiche, economiche e sociali sarebbero peggiorate gravemente.",
+  "after": "Per l'articolo inglese il britannico Bevin e il francese Bidault prepararono subito una risposta europea e invitarono anche i sovietici; Molotov lasciò Parigi rifiutando il piano, e Cecoslovacchia e Polonia, che avevano accettato di partecipare, dovettero rinunciare. Il colpo comunista in Cecoslovacchia del febbraio 1948 ridusse l'opposizione al Congresso, e il 3 aprile 1948 Truman firmò l'Economic Cooperation Act. Il piano durò quattro anni, con l'Organizzazione per la cooperazione economica europea a coordinare gli aiuti. Per l'articolo inglese gli economisti non sanno quanta parte della ripresa europea si debba al piano.",
+  "links": [
+    {
+      "slug": "dottrina-truman-1947",
+      "reason": "Ottantacinque giorni prima, il 12 marzo 1947, Truman aveva chiesto al Congresso aiuti per la Grecia e la Turchia."
+    },
+    {
+      "slug": "colpo-di-praga-1948",
+      "reason": "Più di otto mesi dopo, il 25 febbraio 1948, i comunisti prendono il potere in Cecoslovacchia, che aveva dovuto rinunciare al piano."
+    },
+    {
+      "slug": "blocco-di-berlino-1948",
+      "reason": "Un anno e diciannove giorni dopo, il 24 giugno 1948, comincia il blocco di Berlino."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Marshall Plan - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Marshall_Plan",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Piano Marshall - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Piano_Marshall",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data è quella del discorso di Harvard, che entrambi gli articoli danno al 5 giugno 1947; il piano entrò in vigore con la firma di Truman del 3 aprile 1948. In un passo l'articolo inglese dice che il piano fu «redatto ufficialmente» il 5 giugno 1947 in una riunione degli stati europei, cosa che non torna con il resto: qui si segue il discorso. Le cifre non concordano: l'articolo inglese dà 13,3 miliardi di dollari trasferiti, poi 17 miliardi in quattro anni e 12,4 stanziati dal Congresso; l'italiano dà oltre 12,7 miliardi e poi poco più di 14. Per l'italiano il piano terminò nel 1952, per l'inglese fu sostituito dal Mutual Security Act alla fine del 1951. Il primo paragrafo dell'articolo italiano contiene un'affermazione su garanzie in oro di una miniera in Val di Lei, senza riscontro nell'articolo inglese e fuori tema: non è stata usata. Quasi tutto il testo si basa sull'articolo inglese; dall'italiano vengono i tre o quattro anni di aiuti indicati da Marshall."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

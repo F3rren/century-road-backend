@@ -1,0 +1,57 @@
+{
+  "slug": "campagna-di-huaihai-1948",
+  "title": "La campagna dello Huaihai",
+  "summary": "Dal 6 novembre 1948 al 10 gennaio 1949 due armate comuniste circondano e distruggono le principali forze nazionaliste tra Xuzhou e il fiume Huai. Per l'articolo italiano la campagna dà ai comunisti il controllo della Cina centrale; per l'inglese li porta a minacciare direttamente la difesa di Nanchino, Shanghai e Wuhan.",
+  "date": {
+    "year": 1948,
+    "month": 11,
+    "day": 6
+  },
+  "place": {
+    "name": "Xuzhou, Jiangsu, Cina",
+    "lat": 34.2610,
+    "lon": 117.1860,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto è su Xuzhou, ma i combattimenti si svolsero in un'ampia zona tra Xuzhou e il fiume Huai, a Nianzhuang, Shuangduiji e Chenguanzhuang."
+  },
+  "before": "Per l'articolo inglese, dopo la caduta di Jinan, il 24 settembre 1948, i comunisti prepararono una campagna più ampia contro le forze nazionaliste dello Shandong e il loro grosso a Xuzhou. Il piano, proposto da Su Yu e ampliato da Mao Zedong, impegnava insieme l'Armata di campagna della Cina orientale e quella delle Pianure centrali di Liu Bocheng e Deng Xiaoping: era la prima operazione comunista coordinata tra più gruppi d'armate, e mirava a distruggere 800.000 soldati nazionalisti prima che si ritirassero a sud dello Yangtze. Chiang Kai-shek decise di difendere Xuzhou invece di ripiegare sul fiume Huai.",
+  "event": "Il 6 novembre la 7ª armata nazionalista di Huang Baitao cominciò a ripiegare verso Xuzhou e i comunisti anticiparono l'attacco. La notte dell'8 novembre gran parte della 3ª zona di pacificazione passò ai comunisti, ed entro l'11 novembre la 7ª armata fu accerchiata a Nianzhuang, a sessanta chilometri da Xuzhou: fu distrutta il 22 novembre e Huang Baitao si uccise. La 12ª armata di Huang Wei, mandata in soccorso, fu circondata a Shuangduiji e distrutta entro il 15 dicembre. La guarnigione di Xuzhou, 300.000 uomini, lasciò la città dal 30 novembre ma fu accerchiata a Chenguanzhuang; l'assalto finale cominciò il 6 gennaio 1949 e il 10 gennaio la resistenza cessò.",
+  "after": "Per l'articolo inglese fu la campagna più importante della guerra civile, quella con le perdite nazionaliste più pesanti. Le perdite delle truppe formate a Whampoa, sotto il comando diretto di Chiang, ne indebolirono la posizione, e il 21 gennaio 1949 Chiang lasciò la presidenza; mentre l'Esercito Popolare di Liberazione si avvicinava allo Yangtze, gli aiuti militari americani si fermarono gradualmente. Per l'articolo italiano nell'aprile 1949 i comunisti attraversarono lo Yangtze e presero Nanchino, capitale del governo nazionalista.",
+  "links": [
+    {
+      "slug": "campagna-di-liaoshen-1948",
+      "reason": "Cinquantacinque giorni prima, il 12 settembre 1948, era cominciata in Manciuria la campagna di Liaoshen."
+    },
+    {
+      "slug": "campagna-di-pingjin-1948",
+      "reason": "Ventitré giorni dopo, il 29 novembre 1948, comincia più a nord la campagna di Pingjin, attorno a Pechino e Tianjin."
+    },
+    {
+      "slug": "attraversamento-dello-yangtze-1949",
+      "reason": "Circa tre mesi dopo la fine della campagna, nell'aprile 1949, i comunisti attraversano lo Yangtze."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Huaihai campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Huaihai_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La campagna non ha una voce propria su Wikipedia in italiano. L'articolo italiano sulla guerra civile cinese dice solo che si svolse tra la fine del 1948 e l'inizio del 1949 e che assicurò ai comunisti il controllo della Cina centrale; le date, i movimenti e le cifre sono dell'articolo inglese, che la fa cominciare il 6 novembre 1948 e finire il 10 gennaio 1949, pur dicendo che le ultime armate nazionaliste lasciarono Bengbu nella seconda metà di gennaio.",
+    "L'articolo inglese, nelle conseguenze, dice prima che Chiang annunciò un ritiro temporaneo e poi che lasciò la presidenza il 21 gennaio 1949; il testo riporta la data.",
+    "Il pin è su Xuzhou, la città attorno a cui si organizzò la difesa nazionalista; è approssimato perché i combattimenti si estesero fino al fiume Huai."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

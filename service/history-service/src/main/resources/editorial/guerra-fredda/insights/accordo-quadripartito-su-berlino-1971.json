@@ -1,0 +1,55 @@
+{
+  "slug": "accordo-quadripartito-su-berlino-1971",
+  "title": "L'accordo quadripartito su Berlino",
+  "summary": "Il 3 settembre 1971 le quattro potenze vincitrici della seconda guerra mondiale si accordano su Berlino: confermano i propri diritti sulla città e sulla Germania, e l'Unione Sovietica garantisce il transito tra Berlino Ovest e la Germania Ovest. Lo status della città resta volutamente vago.",
+  "date": {
+    "year": 1971,
+    "month": 9,
+    "day": 3
+  },
+  "place": {
+    "name": "Sede del Consiglio di controllo alleato, Berlino-Schöneberg, Germania",
+    "lat": 52.493,
+    "lon": 13.357,
+    "countryCode": "DE",
+    "approximate": true,
+    "note": "Gli articoli non dicono dove fu concluso l'accordo il 3 settembre 1971; il punto è sull'edificio del Consiglio di controllo alleato a Schöneberg, dove secondo l'articolo italiano si tenne la cerimonia per l'entrata in vigore nel 1972."
+  },
+  "before": "Per l'articolo italiano, dalla metà degli anni cinquanta all'inizio degli anni settanta, con la dottrina Hallstein, i rapporti tra la Germania Ovest e i paesi del blocco orientale erano rimasti quasi fermi; alla fine degli anni sessanta i primi segni di distensione avviarono il riavvicinamento noto come Ostpolitik. Per l'articolo inglese l'Unione Sovietica, dopo la crisi di Berlino del 1959-1962, aveva sostenuto che i diritti e le responsabilità delle quattro potenze sulla città fossero decaduti; l'articolo italiano collega questa posizione alla crisi di Berlino del 1961.",
+  "event": "Per l'articolo inglese l'accordo fu concluso dagli ambasciatori delle quattro potenze, riuniti nel Consiglio di controllo alleato; per l'articolo italiano fu stipulato dai ministri degli esteri: Alec Douglas-Home per il Regno Unito, Andrej Gromyko per l'Unione Sovietica, Maurice Schumann per la Francia e William P. Rogers per gli Stati Uniti. Le quattro potenze rinunciavano all'uso della forza nell'area e confermavano i propri diritti su Berlino e sulla Germania intera. L'Unione Sovietica garantiva il transito senza impedimenti di persone e merci tra Berlino Ovest e la Germania Ovest e spostamenti più facili per i residenti; le potenze occidentali ribadivano che Berlino Ovest non era parte costitutiva della Germania Ovest. Per l'articolo italiano la parola «Berlino» non compare nel testo, scritto in inglese, francese e russo.",
+  "after": "L'accordo non era un trattato e non richiese ratifica; entrò in vigore il 3 giugno 1972 e, per l'articolo italiano, fu applicato fino al 3 ottobre 1990. Per l'articolo inglese l'Unione Sovietica usò la formulazione vaga per cercare di allentare i legami tra Berlino Ovest e la Germania Ovest, ma l'accordo contribuì a ridurre le tensioni sulla città e ad ampliare i contatti tra le due Germanie. Il 21 dicembre 1972 le due Germanie firmarono il trattato fondamentale e nel settembre 1973 entrarono entrambe nelle Nazioni Unite.",
+  "links": [
+    {
+      "slug": "costruzione-del-muro-di-berlino-1961",
+      "reason": "Dieci anni prima, il 13 agosto 1961, la Germania Est aveva chiuso il confine con Berlino Ovest."
+    },
+    {
+      "slug": "genuflessione-di-varsavia-1970",
+      "reason": "Quasi nove mesi prima, il 7 dicembre 1970, Brandt aveva firmato a Varsavia il trattato con la Polonia."
+    },
+    {
+      "slug": "trattato-fondamentale-1972",
+      "reason": "Più di quindici mesi dopo, il 21 dicembre 1972, le due Germanie firmano il trattato fondamentale."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Four Power Agreement on Berlin - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Four_Power_Agreement_on_Berlin",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Accordo delle quattro potenze - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Accordo_delle_quattro_potenze",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Gli articoli divergono su chi concluse l'accordo il 3 settembre 1971: per l'articolo inglese gli ambasciatori nel Consiglio di controllo alleato, mentre i quattro ministri degli esteri lo firmarono e lo misero in vigore il 3 giugno 1972 a Berlino Ovest; per l'articolo italiano lo stipularono i ministri già il 3 settembre. La data scelta è quella che entrambi danno per l'accordo. Il contenuto delle parti e degli allegati, la parola «Berlino» assente e la durata fino al 1990 vengono dall'articolo italiano; l'uso sovietico della formulazione vaga dall'articolo inglese. Sulla crisi che precedette la presa di posizione sovietica l'inglese dà il 1959-1962, l'italiano il 1961."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

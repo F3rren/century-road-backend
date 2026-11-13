@@ -1,0 +1,54 @@
+{
+  "slug": "dottrina-truman-1947",
+  "title": "La dottrina Truman",
+  "summary": "Il 12 marzo 1947, davanti al Congresso, il presidente Harry Truman chiede aiuti per la Grecia e la Turchia e dichiara che gli Stati Uniti devono sostenere i popoli liberi che resistono all'assoggettamento da parte di minoranze armate o di pressioni esterne. Per l'articolo inglese gli storici datano spesso da questo discorso l'inizio della guerra fredda.",
+  "date": {
+    "year": 1947,
+    "month": 3,
+    "day": 12
+  },
+  "place": {
+    "name": "Campidoglio, Washington, Stati Uniti",
+    "lat": 38.8899,
+    "lon": -77.0091,
+    "countryCode": "US",
+    "approximate": false
+  },
+  "before": "Nel 1946 il diplomatico George Kennan aveva mandato da Mosca il «lungo telegramma», che descriveva il potere sovietico e, per l'articolo inglese, proponeva di contenerne l'espansione. In Grecia era cominciata la guerra civile, con i ribelli comunisti sostenuti dalla Jugoslavia di Tito; la Turchia subiva pressioni sovietiche sugli Stretti e, per l'articolo italiano, sui distretti di Kars e Ardahan. Per l'articolo italiano il 21 febbraio 1947 l'ambasciata britannica comunicò a Washington che il Regno Unito non poteva più aiutare Grecia e Turchia. Il sottosegretario Dean Acheson presentò ai capi del Congresso, controllato dai repubblicani, un'idea che anticipava la teoria del domino; per l'articolo inglese il senatore Arthur Vandenberg consigliò a Truman di spaventare gli americani.",
+  "event": "Il 12 marzo 1947 Truman parlò al Congresso in seduta comune, per diciotto minuti secondo l'articolo inglese, per ventuno secondo l'italiano. Disse che la politica degli Stati Uniti doveva essere sostenere i popoli liberi che resistevano a tentativi di assoggettamento da parte di minoranze armate o di pressioni esterne, soprattutto con aiuti economici e finanziari. Chiese 400 milioni di dollari in aiuti militari ed economici, per l'articolo italiano 250 per la Grecia e 150 per la Turchia; sempre per l'italiano, l'Unione Sovietica non fu mai nominata direttamente. Per l'articolo inglese le reazioni interne furono in gran parte favorevoli, ma il giornalista Walter Lippmann criticò un impegno senza limiti e altri osservarono che la monarchia greca era essa stessa repressiva.",
+  "after": "Per l'articolo inglese nel maggio 1947 il Congresso approvò a larga maggioranza i 400 milioni, e con gli aiuti americani il governo greco finì per sconfiggere i comunisti. La dottrina fu seguita dal piano Marshall; per l'articolo inglese fu il primo di una serie di passi di contenimento che arrivò alla NATO nel 1949. Per l'articolo italiano i governi di paesi con forti partiti comunisti, come Italia e Francia, furono incoraggiati a tenerli fuori dal governo, nella crisi del maggio 1947, e la dottrina restò la base della politica statunitense verso l'Unione Sovietica fino al 1991.",
+  "links": [
+    {
+      "slug": "discorso-di-fulton-1946",
+      "reason": "Un anno e sette giorni prima, il 5 marzo 1946, Churchill aveva parlato di una cortina di ferro sull'Europa."
+    },
+    {
+      "slug": "inizio-della-guerra-civile-greca-1946",
+      "reason": "Poco meno di un anno prima, alla fine di marzo del 1946, l'attacco di Litochoro era stato preso da molti come inizio della terza fase della guerra civile greca, uno dei casi da cui parte il discorso."
+    },
+    {
+      "slug": "piano-marshall-1947",
+      "reason": "Ottantacinque giorni dopo, il 5 giugno 1947, Marshall offre gli aiuti americani per la ripresa dell'Europa."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Truman Doctrine - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Truman_Doctrine",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Dottrina Truman - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Dottrina_Truman",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno il discorso il 12 marzo 1947. Gli articoli non concordano sulla durata (diciotto minuti per l'inglese, ventuno per l'italiano); l'italiano parla in un passo di «discorso al Senato», mentre altrove e nell'articolo inglese è un discorso al Congresso in seduta comune. Per l'italiano Truman annunciò la dottrina dopo un incontro con il «presidente greco», per l'inglese fu il primo ministro Tsaldaris a chiedere aiuto a Washington nel dicembre 1946: qui non è riportato nessuno dei due. Anche l'avviso britannico è datato diversamente: entro la fine del 1946 per l'inglese, 21 febbraio 1947 per l'italiano, che qui si segue con attribuzione. La ripartizione tra Grecia e Turchia e le conseguenze in Italia e Francia sono dell'articolo italiano; l'approvazione del maggio 1947 e le reazioni interne dell'inglese. Il pin è sul Campidoglio, sede del Congresso."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

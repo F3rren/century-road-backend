@@ -2,11 +2,12 @@ package centuryroad.history.controller;
 
 import centuryroad.history.dto.IndexCoverage;
 import centuryroad.history.repository.TimelineEventRepository;
+import centuryroad.history.config.ClockConfig;
 import centuryroad.history.service.EditorialCatalog;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.context.annotation.Import;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
@@ -24,7 +25,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 /** What the project page can show about provenance: terms, how much there is, what is left out. */
 @WebMvcTest(SourcesController.class)
-@Import(EditorialCatalog.class)
+@Import({EditorialCatalog.class, ClockConfig.class})
 @ActiveProfiles("test")
 class SourcesControllerTest {
 
@@ -33,7 +34,7 @@ class SourcesControllerTest {
     @Autowired
     private MockMvc mvc;
 
-    @MockBean
+    @MockitoBean
     private TimelineEventRepository repository;
 
     @Test

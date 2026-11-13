@@ -1,0 +1,53 @@
+{
+  "slug": "campagna-di-liaoshen-1948",
+  "title": "La campagna di Liaoshen",
+  "summary": "Dal 12 settembre al 2 novembre 1948 l'Esercito Popolare di Liberazione, guidato in Manciuria da Lin Biao, conquista Jinzhou, Changchun e Shenyang e prende tutta la regione. Per l'articolo inglese, con questa campagna i comunisti ottengono per la prima volta un vantaggio numerico strategico sui nazionalisti.",
+  "date": {
+    "year": 1948,
+    "month": 9,
+    "day": 12
+  },
+  "place": {
+    "name": "Jinzhou, Liaoning, Cina",
+    "lat": 41.0954,
+    "lon": 121.1270,
+    "countryCode": "CN",
+    "approximate": true,
+    "note": "Il punto è su Jinzhou, ma la campagna si combatté in tutta la Manciuria meridionale, tra Jinzhou, Changchun e Shenyang."
+  },
+  "before": "Per l'articolo italiano, quando le truppe sovietiche si ritirarono, le città della Manciuria erano in mano ai nazionalisti e le campagne ai comunisti. Per l'articolo inglese la Manciuria, la regione più industrializzata della Cina, fu contesa dopo il ritiro sovietico del marzo 1946; nel gennaio 1948 le forze comuniste del nord-est divennero l'Armata di campagna del Nord-est, al comando di Lin Biao. Entro la primavera i comunisti controllavano le campagne, avevano isolato tra loro Shenyang, Changchun e Jinzhou e tagliato la ferrovia che riforniva Shenyang e Changchun: i rifornimenti nazionalisti dovevano arrivare per via aerea. Chiang Kai-shek e il suo comandante Wei Lihuang erano in disaccordo su quali città difendere.",
+  "event": "Il 12 settembre 1948 l'armata di Lin Biao si mosse verso sud lungo la ferrovia ed entro il 28 settembre isolò Jinzhou, punto chiave del corridoio che dalla Manciuria porta alla pianura della Cina del nord. Per l'articolo inglese Lin Biao esitò, ma Mao Zedong lo convinse a proseguire. L'assalto cominciò il 14 ottobre e la città cadde la sera dopo, con il comandante Fan Hanjie e 80.000 soldati nazionalisti. Changchun, assediata da mesi e stremata dalla fame, si arrese il 23 ottobre. Un contrattacco nazionalista verso Heishan, dal 21 ottobre, fu respinto. Il 30 ottobre Wei Lihuang lasciò Shenyang in aereo; la città, assaltata il 1º novembre, si arrese subito, e il 2 novembre cadde Yingkou.",
+  "after": "Per l'articolo italiano la cattura di molto materiale bellico nazionalista diede ai comunisti l'artiglieria e i carri armati necessari per continuare le operazioni a sud della Grande Muraglia. Per l'articolo inglese Chiang perse in Manciuria alcune delle sue truppe migliori, il ruolo di Mao nell'attacco a Jinzhou ne accrebbe il prestigio nel partito, e le guarnigioni nazionaliste di Fu Zuoyi a Beiping e Tianjin rimasero esposte agli attacchi comunisti.",
+  "links": [
+    {
+      "slug": "accordo-del-doppio-dieci-1945",
+      "reason": "Quasi tre anni prima, il 10 ottobre 1945, Kuomintang e comunisti avevano firmato a Chongqing un accordo per evitare la guerra civile."
+    },
+    {
+      "slug": "campagna-di-huaihai-1948",
+      "reason": "Cinquantacinque giorni dopo l'inizio, il 6 novembre 1948, i comunisti attaccano più a sud, attorno a Xuzhou."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Liaoshen campaign - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Liaoshen_campaign",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra civile cinese - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_civile_cinese",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La campagna non ha una voce propria su Wikipedia in italiano. L'articolo italiano sulla guerra civile cinese la chiama «campagna di Liaosen» e dice solo che fu decisiva per la conquista della Manciuria e che fornì ai comunisti armi pesanti; non dà date. Le date e i particolari militari sono dell'articolo inglese.",
+    "L'articolo inglese colloca la campagna tra settembre e novembre 1948, per cinquantadue giorni, e fa cominciare l'avanzata comunista il 12 settembre; dal 12 settembre al 2 novembre, giorno della caduta di Yingkou, sono appunto cinquantadue giorni contando il primo e l'ultimo.",
+    "Il pin è su Jinzhou, la città la cui caduta, per l'articolo inglese, fece fallire il piano nazionalista di contenere i comunisti nel nord-est; è approssimato perché la campagna si estese a tutta la Manciuria meridionale."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

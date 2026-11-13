@@ -1,0 +1,53 @@
+{
+  "slug": "battaglia-di-dien-bien-phu-1954",
+  "title": "La battaglia di Dien Bien Phu",
+  "summary": "Dal 13 marzo al 7 maggio 1954, nella valle di Dien Bien Phu, nel nord-ovest del Vietnam, le forze del Viet Minh guidate da Võ Nguyên Giáp assediano il campo trincerato francese e lo costringono alla resa. La sconfitta pesa sulla conferenza di Ginevra, che il 21 luglio chiude la guerra d'Indocina.",
+  "date": {
+    "year": 1954,
+    "month": 3,
+    "day": 13
+  },
+  "place": {
+    "name": "Valle di Dien Bien Phu, Vietnam",
+    "lat": 21.385,
+    "lon": 103.015,
+    "countryCode": "VN",
+    "approximate": true,
+    "note": "Il campo francese era formato da diversi capisaldi sparsi nella valle, con Isabelle a sei chilometri a sud; il punto indica il centro della valle, vicino alla pista e al posto di comando. Gli articoli non danno coordinate."
+  },
+  "before": "Nel maggio 1953 il generale Henri Navarre prese il comando delle forze francesi in Indocina. Per l'articolo inglese, per tagliare le vie di rifornimento del Viet Minh verso il Laos e attirarlo in una grande battaglia, scelse un campo fortificato rifornito per via aerea, come quello che a Nà Sản aveva respinto Giáp alla fine del 1952. Il 20 novembre 1953 l'operazione Castore portò i paracadutisti a Dien Bien Phu, dove c'era una vecchia pista costruita dai giapponesi. Il colonnello Christian de Castries fece fortificare la valle con capisaldi dai nomi femminili, mentre il Viet Minh portava sulle colline intorno truppe e artiglieria, anche contraerea.",
+  "event": "Il 13 marzo, poco dopo le 17, l'artiglieria del Viet Minh aprì il fuoco e la fanteria attaccò il caposaldo Béatrice, caduto nella notte; seguirono Gabrielle e, per la defezione dei soldati thai, Anne-Marie. Con la pista fuori uso, i rifornimenti arrivavano solo con il paracadute. Dopo i primi assalti Giáp passò a un assedio fatto di trincee e camminamenti che stringevano il perimetro francese, mentre a fine aprile i monsoni allagavano le posizioni. Negli Stati Uniti si discusse un intervento aereo, l'operazione Vulture, ma Eisenhower respinse le proposte dei suoi consiglieri militari. Dopo gli ultimi assalti, il 7 maggio i capisaldi centrali furono travolti e de Castries fu catturato nel suo posto di comando.",
+  "after": "Per l'articolo inglese l'8 maggio il Viet Minh contò 11 721 prigionieri, di cui 4436 feriti; quelli in grado di camminare furono portati a piedi ai campi di prigionia e centinaia morirono lungo la strada. Lo stesso 8 maggio a Ginevra cominciò la discussione sull'Indocina. In Francia la notizia fu un trauma, e a giugno il presidente del consiglio Joseph Laniel si dimise, sostituito da Pierre Mendès France. Gli accordi firmati a Ginevra il 21 luglio portarono al ritiro delle forze francesi dall'Indocina e alla divisione provvisoria del Vietnam lungo il 17º parallelo.",
+  "links": [
+    {
+      "slug": "armistizio-di-panmunjom-1953",
+      "reason": "Più di sette mesi prima, il 27 luglio 1953, l'armistizio di Panmunjeom aveva fermato i combattimenti in Corea."
+    },
+    {
+      "slug": "conferenza-di-ginevra-1954",
+      "reason": "Settantacinque giorni dopo la resa, il 21 luglio, a Ginevra vengono firmati gli accordi sull'Indocina."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Battle of Dien Bien Phu - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Battle_of_Dien_Bien_Phu",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Battaglia di Dien Bien Phu - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Battaglia_di_Dien_Bien_Phu",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno la battaglia dal 13 marzo al 7 maggio 1954. Gli scopi del piano di Navarre e il precedente di Nà Sản sono spiegati soprattutto dall'articolo inglese; l'ora d'inizio, i monsoni e i piani di intervento americani dall'italiano.",
+    "Gli articoli divergono su vari numeri. Per l'operazione Castore l'inglese dice 9000 uomini in tre giorni, l'italiano 3000. Sulla guarnigione l'inglese parla di quasi 16 000 uomini in tutto, l'italiano di 10 814, poi 13 000 e infine di 20 000 soldati coinvolti. Sulle perdite francesi l'italiano dà circa 5000 morti; l'inglese 1142 caduti e 429 morti per ferite fino al 5 maggio, e cita un'altra fonte con 2293 morti. Per il Viet Minh il governo vietnamita dà 4020 morti, le stime francesi 8000 morti e 15 000 feriti. I feriti evacuati dalla Croce Rossa sono 858 per l'inglese e 838 per l'italiano; la marcia dei prigionieri è di oltre 600 chilometri per l'inglese e di quasi 400 per l'italiano.",
+    "Su Isabelle l'inglese dice che circa settanta uomini su 1700 fuggirono in Laos, l'italiano che i superstiti tentarono una sortita e furono uccisi tutti. L'articolo italiano sulla battaglia dice che gli incontri di Ginevra si tennero il 26 aprile: è la data d'apertura della conferenza, mentre la discussione sull'Indocina cominciò l'8 maggio, come dicono l'articolo inglese e quello italiano sulla conferenza. L'articolo italiano data le defezioni di Anne-Marie al 16 marzo 1953, evidente refuso per il 1954; l'inglese le pone al 17 marzo. Per l'italiano l'assedio con trincee e camminamenti seguì i primi assalti di marzo; l'inglese data al 5 aprile la decisione di Giáp di passare a trincee e scavi. Per l'inglese il ritiro francese riguardò tutta l'Indocina tranne il Laos; l'italiano parla della fine del dominio francese in Indocina, senza eccezioni."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

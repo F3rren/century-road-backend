@@ -1,0 +1,55 @@
+{
+  "slug": "intervento-cinese-in-corea-1950",
+  "title": "L'intervento cinese in Corea",
+  "summary": "Il 19 ottobre 1950, mentre le forze dell'ONU avanzano nella Corea del Nord verso il confine cinese, l'Esercito dei Volontari del Popolo Cinese attraversa in segreto il fiume Yalu. Il 25 ottobre lancia la sua «prima fase offensiva»; entro dicembre le forze dell'ONU si ritirano dalla Corea del Nord.",
+  "date": {
+    "year": 1950,
+    "month": 10,
+    "day": 19
+  },
+  "place": {
+    "name": "Fiume Yalu, presso Sinŭiju, Corea del Nord",
+    "lat": 40.0300,
+    "lon": 124.6000,
+    "countryCode": "KP",
+    "approximate": true,
+    "note": "Gli articoli non indicano un punto preciso di attraversamento dello Yalu. Il punto è sulla sponda coreana, nell'entroterra di Sinŭiju, di fronte alla Manciuria da cui le truppe cinesi partirono."
+  },
+  "before": "Dopo lo sbarco di Incheon l'esercito nordcoreano si era disgregato; ai primi di ottobre le forze dell'ONU passarono il 38º parallelo e il 19 ottobre presero Pyongyang. Per l'articolo inglese il 30 settembre Zhou Enlai aveva avvertito gli Stati Uniti che la Cina era pronta a intervenire se avessero passato il parallelo; per l'italiano l'avvertimento passò attraverso l'ambasciatore indiano a Pechino. Il 15 ottobre, a Wake, MacArthur disse a Truman che il rischio di un intervento cinese era basso. Intanto, il 13 ottobre, il Politburo cinese aveva deciso di intervenire anche senza la copertura aerea sovietica, che per l'articolo italiano Stalin era sembrato concedere e il 10 ottobre aveva negato.",
+  "event": "Il 19 ottobre l'Esercito dei Volontari del Popolo Cinese cominciò ad attraversare in segreto lo Yalu, il fiume che segna il confine tra Cina e Corea. Per l'articolo inglese passarono circa 200 000 uomini, che marciavano di notte e restavano nascosti di giorno, così che la ricognizione aerea dell'ONU faticava a vederli. Il 25 ottobre il XIII gruppo d'armate lanciò la «prima fase offensiva» contro le forze dell'ONU che avanzavano vicino al confine. Il 1° novembre, a Unsan, ci fu il primo scontro tra truppe cinesi e statunitensi.",
+  "after": "Per l'articolo inglese, dodici giorni dopo l'ingresso dei cinesi in guerra Stalin permise all'aviazione sovietica di coprirli. Il 25 novembre i cinesi attaccarono di nuovo, sul fronte occidentale lungo il fiume Ch'ongch'on, e il 27, a est, presso il bacino di Chosin. L'Ottava armata si ritirò oltre il 38º parallelo a metà dicembre, e le truppe del fronte orientale furono evacuate per mare dal porto di Hŭngnam entro il 24. Il 4 gennaio 1951 i cinesi presero Seul.",
+  "links": [
+    {
+      "slug": "sbarco-di-inchon-1950",
+      "reason": "Trentaquattro giorni prima, il 15 settembre, le forze dell'ONU erano sbarcate a Incheon, alle spalle dell'esercito nordcoreano."
+    },
+    {
+      "slug": "battaglia-del-bacino-di-chosin-1950",
+      "reason": "Trentanove giorni dopo, il 27 novembre, i cinesi attaccano le forze dell'ONU presso il bacino di Chosin."
+    },
+    {
+      "slug": "proclamazione-della-repubblica-popolare-cinese-1949",
+      "reason": "Un anno e diciotto giorni prima, il 1° ottobre 1949, Mao aveva proclamato la Repubblica Popolare Cinese."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Korean War - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Korean_War",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Guerra di Corea - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Guerra_di_Corea",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "La data scelta è il 19 ottobre, giorno in cui per l'articolo inglese i volontari cinesi attraversarono in segreto lo Yalu ed entrarono in guerra; il 25 ottobre, data della «prima fase offensiva», è dato da entrambi gli articoli ed è nel testo. L'articolo italiano non è coerente sulle date: in un passo dice che la Cina mandò in Corea oltre 180 000 soldati «già il 18 ottobre», in un altro che l'esercito cinese guadò lo Yalu la notte del 27 ottobre ma che interi reparti erano entrati in Corea già dal 19. Anche i numeri cambiano: l'inglese parla di 200 000 soldati che attraversano lo Yalu, l'italiano di 180 000, di 260 000 e di 300 000 in passi diversi. Il permesso di Stalin all'aviazione sovietica, l'incontro di Wake, i 200 000 uomini e lo scontro di Unsan vengono dall'articolo inglese; il ruolo dell'ambasciatore indiano Panikkar e la marcia indietro di Stalin del 10 ottobre sulla copertura aerea dall'italiano. Il nome dell'esercito è reso come «Esercito dei Volontari del Popolo Cinese» dall'inglese «Chinese People's Volunteer Army»: l'articolo italiano parla di «volontari» e di 13º gruppo d'armate dell'Esercito Popolare di Liberazione. Il pin è sulla sponda coreana dello Yalu presso Sinŭiju, città che l'articolo italiano nomina per i ponti sul fiume; il punto di attraversamento non è indicato dagli articoli."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}

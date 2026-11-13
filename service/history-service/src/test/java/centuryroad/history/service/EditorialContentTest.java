@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import java.time.Clock;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -31,7 +32,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class EditorialContentTest {
 
     private final EditorialCatalog catalog = new EditorialCatalog(new PathMatchingResourcePatternResolver(),
-            EditorialCatalog.DEFAULT_ROOT);
+            EditorialCatalog.DEFAULT_ROOT, Clock.systemUTC());
 
     @Test
     void theRealContentIsValid_andHasAtLeastOneCompletePath() {
@@ -96,7 +97,9 @@ class EditorialContentTest {
             // French Guiana is French territory: the shapes have it as part of France (FR), the insight as GF.
             "ariane-1", "FR",
             // Geneva sits on the border, and at 110 m scale the point falls on the French side.
-            "vaiolo-eradicato-1980", "FR");
+            "vaiolo-eradicato-1980", "FR",
+            // Geneva again: the Palais des Nations falls on the French side at that scale.
+            "conferenza-di-ginevra-1954", "FR");
     private static final int MAX_SHARED_PERCENT = 60;
     private static final double NEAR_DUPLICATE_KM = 25;
 

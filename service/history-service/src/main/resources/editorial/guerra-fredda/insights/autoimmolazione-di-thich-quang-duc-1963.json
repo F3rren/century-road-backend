@@ -1,0 +1,51 @@
+{
+  "slug": "autoimmolazione-di-thich-quang-duc-1963",
+  "title": "L'autoimmolazione di Thích Quảng Đức",
+  "summary": "L'11 giugno 1963, a un incrocio di Saigon, il monaco buddhista Thích Quảng Đức si dà fuoco per protestare contro la politica del governo sudvietnamita di Ngô Đình Diệm verso i buddhisti. Le fotografie di Malcolm Browne fanno il giro del mondo e aumentano la pressione internazionale su Diệm.",
+  "date": {
+    "year": 1963,
+    "month": 6,
+    "day": 11
+  },
+  "place": {
+    "name": "Incrocio tra via Nguyễn Đình Chiểu e via Cách Mạng Tháng Tám, Città di Ho Chi Minh, Vietnam",
+    "lat": 10.779,
+    "lon": 106.6869,
+    "countryCode": "VN",
+    "approximate": false
+  },
+  "before": "Nato nel 1897 in un villaggio del Vietnam centrale, Quảng Đức era monaco da quando aveva vent'anni e aveva fatto costruire molti templi. Nel Vietnam del Sud il presidente Ngô Đình Diệm, cattolico, era accusato di favorire i cattolici. All'inizio di maggio del 1963, nel giorno del Vesak, a Huế fu vietata la bandiera buddhista; i buddhisti protestarono e le forze governative spararono sulla folla, uccidendo nove persone. Diệm diede la colpa ai viet cong e le proteste si moltiplicarono, con cinque richieste al governo, tra cui l'uguaglianza tra buddhismo e cattolicesimo.",
+  "event": "Il 10 giugno i giornalisti americani furono avvisati che il giorno dopo sarebbe successo qualcosa davanti all'ambasciata cambogiana; si presentarono in pochi, tra cui David Halberstam del New York Times e Malcolm Browne dell'Associated Press. La mattina dell'11 giugno circa 350 monaci e monache marciarono con cartelli in inglese e in vietnamita. All'incrocio tra il boulevard Phan Dinh Phung e via Le Van Duyet, a pochi isolati dal palazzo presidenziale, Quảng Đức si sedette nella posizione del loto, un altro monaco gli versò addosso la benzina e lui si diede fuoco, restando immobile e in silenzio. Il corpo fu portato alla pagoda Xá Lợi.",
+  "after": "La sera stessa Diệm parlò alla radio, accusando gli estremisti e promettendo di riprendere le trattative con i buddhisti. Sotto la pressione degli Stati Uniti, il 16 giugno il governo firmò il Comunicato congiunto con i rappresentanti buddhisti, ma per l'articolo inglese le riforme non furono attuate. Madame Nhu, cognata del presidente, disse che avrebbe applaudito un altro «barbecue show» di un monaco. Il 21 agosto le forze di Ngô Đình Nhu, fratello di Diệm, assaltarono le pagode in tutto il paese. Per l'articolo inglese altri cinque monaci si diedero fuoco entro la fine di ottobre; il 1º novembre un colpo di Stato rovesciò Diệm.",
+  "links": [
+    {
+      "slug": "conferenza-di-ginevra-1954",
+      "reason": "Quasi nove anni prima, il 21 luglio 1954, gli accordi di Ginevra avevano diviso il Vietnam lungo il 17º parallelo."
+    },
+    {
+      "slug": "colpo-di-stato-contro-diem-1963",
+      "reason": "Quasi cinque mesi dopo, il 1º novembre, i generali sudvietnamiti rovesciano Diệm."
+    }
+  ],
+  "sources": [
+    {
+      "title": "Thích Quảng Đức - Wikipedia",
+      "url": "https://en.wikipedia.org/wiki/Thích_Quảng_Đức",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    },
+    {
+      "title": "Thích Quảng Đức - Wikipedia",
+      "url": "https://it.wikipedia.org/wiki/Thích_Quảng_Đức",
+      "publisher": "Wikipedia",
+      "license": "CC BY-SA 4.0"
+    }
+  ],
+  "notes": [
+    "Entrambi gli articoli danno l'11 giugno 1963 e lo stesso incrocio, oggi tra via Nguyễn Đình Chiểu e via Cách Mạng Tháng Tám secondo l'articolo inglese; il pin è su quell'incrocio. L'articolo inglese dà la nascita intorno al 1897, l'italiano nel 1897. Il mancato seguito delle riforme e il numero dei monaci che si diedero fuoco fino a ottobre vengono dall'articolo inglese; l'italiano dice che dal 1963 al 1966 nel Vietnam del Sud si diedero fuoco trentatré persone.",
+    "Gli articoli divergono su alcuni particolari. L'inglese descrive l'auto come una berlina Austin Westminster, l'italiano come un'auto azzurra. Per l'inglese i templi costruiti furono 31 in tutto, quattordici al centro e diciassette al sud; l'italiano parla dell'ultimo dei diciassette templi del Sud. Sull'assalto alla pagoda Xá Lợi del 21 agosto l'italiano dice che le truppe portarono via il cuore del monaco, rimasto intatto dopo la seconda cremazione; l'inglese lo dice nell'introduzione, ma più avanti racconta che la polizia segreta voleva prendere le ceneri e che due monaci fuggirono con l'urna. Per questo il testo non parla del cuore. Il divieto della bandiera buddhista è a Huế nel giorno del Vesak per l'inglese; l'italiano dice che era vietata in tutto il paese e pone a Huế la sparatoria."
+  ],
+  "provenance": {
+    "author": "Century Road, bozza redatta con IA"
+  }
+}
