@@ -68,6 +68,40 @@ class OpenApiDocsTest {
     }
 
     @Test
+    void aFieldIsRequiredUnlessItCanBeLeftOut_soAGeneratedClientKnowsWhatIsAlwaysThere() throws Exception {
+        JsonNode schemas = spec().path("components").path("schemas");
+
+        // Place: three fields always there, two that the JSON leaves out when the service has nothing to say.
+        assertThat(texts(schemas.path("Place").path("required"))).contains("name", "lat", "lon", "approximate")
+                .doesNotContain("countryCode", "note");
+        // A boxed Integer that is null for a holiday: present or absent, never null.
+        assertThat(texts(schemas.path("Entry").path("required"))).contains("text", "pages").doesNotContain("year");
+        // DataSource is a nested record that does not omit nulls: its licence is always sent, as null when there
+        // is none, so a client must expect the key - while Place leaves it out.
+        assertThat(texts(schemas.path("DataSource").path("required"))).contains("license", "licenseUrl", "url");
+        // The editorial content is written in Italian only, and the contract says so.
+        assertThat(texts(schemas.path("InsightDetail").path("properties").path("language").path("enum")))
+                .containsExactly("it");
+        // The envelope: what every answer has, and what only some do.
+        assertThat(texts(schemas.path("ApiEnvelope").path("required"))).containsExactlyInAnyOrder("success",
+                "timestamp", "sessionId");
+    }
+
+    @Test
+    void everyNestedRecordHasASchemaOfItsOwn_notOneSharedWithAnotherOfTheSameName() throws Exception {
+        JsonNode schemas = spec().path("components").path("schemas");
+
+        // Two records called Event and two called Coverage used to share one schema each: /random was
+        // described without its countryCode and /same-period with the shape of /sources.
+        assertThat(texts(schemas.path("RandomEvent").path("required"))).contains("countryCode");
+        assertThat(texts(schemas.path("TimelineEvent").path("required"))).doesNotContain("countryCode");
+        assertThat(texts(schemas.path("SamePeriodCoverage").path("required"))).contains("level", "eventCount");
+        assertThat(texts(schemas.path("SourcesCoverage").path("required"))).contains("index", "editorial");
+        assertThat(schemas.has("Event")).isFalse();
+        assertThat(schemas.has("Coverage")).isFalse();
+    }
+
+    @Test
     void theDocumentIsServedWithoutAnyToken_becauseTheEndpointItDescribesIsPublicToo() throws Exception {
         JsonNode spec = spec();
 

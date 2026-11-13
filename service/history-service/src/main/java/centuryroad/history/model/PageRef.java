@@ -1,5 +1,6 @@
 package centuryroad.history.model;
 
+import jakarta.annotation.Nullable;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -25,11 +26,11 @@ import io.swagger.v3.oas.annotations.media.Schema;
                 + "the event: its description and extract describe the article, not what happened.")
 public record PageRef(
                 @Schema(description = "The article's title.", example = "Beirut") String title,
-                @Schema(description = "Wikipedia's one-line description of the article. Absent when it has none.", example = "capital of Lebanon") String description,
-                @Schema(description = "The opening paragraph of the article, as plain text. Absent when it has none.") String extract,
+                @Schema(description = "Wikipedia's one-line description of the article. Absent when it has none.", example = "capital of Lebanon") @Nullable String description,
+                @Schema(description = "The opening paragraph of the article, as plain text. Absent when it has none.") @Nullable String extract,
                 @Schema(description = "The article on Wikipedia. Link to it whenever you show its text: the licence requires it.") String url,
-                @Schema(description = "A small picture for lists. Absent when the article has none from Commons.") ImageRef thumbnail,
-                @Schema(description = "The same picture at full size, for a detail view. Absent when there is no thumbnail.") ImageRef originalImage,
-                @Schema(description = "Where the article's subject is. Absent for most pages: only places have one.") Coordinates coordinates,
-                @Schema(description = "The Wikidata id, the same in every language: match a page across it and en with it.", example = "Q3820") String wikibaseItem) {
+                @Schema(description = "A small picture for lists. Absent when the article has none from Commons.") @Nullable ImageRef thumbnail,
+                @Schema(description = "The same picture at full size, for a detail view. Absent when there is no thumbnail.") @Nullable ImageRef originalImage,
+                @Schema(description = "Where the article's subject is. Absent for most pages: only places have one.") @Nullable Coordinates coordinates,
+                @Schema(description = "The Wikidata id, the same in every language: match a page across it and en with it.", example = "Q3820") @Nullable String wikibaseItem) {
 }

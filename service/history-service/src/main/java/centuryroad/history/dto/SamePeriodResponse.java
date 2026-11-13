@@ -1,5 +1,6 @@
 package centuryroad.history.dto;
 
+import jakarta.annotation.Nullable;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.TimelineEvent;
 import centuryroad.history.query.SamePeriodQuery;
@@ -26,7 +27,7 @@ public record SamePeriodResponse(
         @Schema(description = "The year asked about.", example = "1969") int year,
         @Schema(description = "First year of the window, inclusive.", example = "1964") int fromYear,
         @Schema(description = "Last year of the window, inclusive.", example = "1974") int toYear,
-        @Schema(description = "The country left out, as asked. Absent when none was.", example = "IT") String excludedCountry,
+        @Schema(description = "The country left out, as asked. Absent when none was.", example = "IT") @Nullable String excludedCountry,
         @Schema(description = "What these events are: TEMPORAL, always. They were contemporary; nothing says one led to another.") Comparison comparison,
         @Schema(description = "A sentence to show with the events, in Italian: they are a comparison in time, not causes and effects.") String notice,
         @Schema(description = "How much the index has for this window, and what it leaves out. Show the note.") Coverage coverage,
@@ -46,7 +47,7 @@ public record SamePeriodResponse(
         OK
     }
 
-    @Schema(description = "How much the country index has for the window.")
+    @Schema(name = "SamePeriodCoverage", description = "How much the country index has for the window.")
     public record Coverage(
             @Schema(description = "NONE, SPARSE or OK.") CoverageLevel level,
             @Schema(description = "How many events of the window are in the index, after leaving out the excluded country.", example = "42") int eventCount,

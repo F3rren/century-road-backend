@@ -34,6 +34,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeInsightDetail" : {
@@ -70,6 +71,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListCountryEventCount" : {
@@ -109,6 +111,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListCountryViewStat" : {
@@ -148,6 +151,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListDayViewStat" : {
@@ -187,6 +191,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListInsightSummary" : {
@@ -226,6 +231,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListPathSummary" : {
@@ -265,6 +271,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeListStartHereItem" : {
@@ -304,6 +311,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeOnThisDayResponse" : {
@@ -340,6 +348,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopePathDetail" : {
@@ -376,6 +385,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeRandomEventResponse" : {
@@ -412,6 +422,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeReportReceipt" : {
@@ -448,6 +459,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeSamePeriodResponse" : {
@@ -484,6 +496,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeSourcesResponse" : {
@@ -520,6 +533,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeTimelineResponse" : {
@@ -556,6 +570,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "ApiEnvelopeVoid" : {
@@ -591,6 +606,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "sessionId", "success", "timestamp" ],
         "type" : "object"
       },
       "Attribution" : {
@@ -615,6 +631,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "license", "licenseUrl", "notice", "source" ],
         "type" : "object"
       },
       "Coordinates" : {
@@ -633,6 +650,7 @@
             "type" : "number"
           }
         },
+        "required" : [ "lat", "lon" ],
         "type" : "object"
       },
       "CountryEventCount" : {
@@ -650,6 +668,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "countryCode", "eventCount" ],
         "type" : "object"
       },
       "CountryEvents" : {
@@ -669,11 +688,12 @@
           "events" : {
             "description" : "The events closest to the year, shown oldest first.",
             "items" : {
-              "$ref" : "#/components/schemas/Event"
+              "$ref" : "#/components/schemas/TimelineEvent"
             },
             "type" : "array"
           }
         },
+        "required" : [ "countryCode", "eventCount", "events" ],
         "type" : "object"
       },
       "CountryViewStat" : {
@@ -691,6 +711,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "countryCode", "viewCount" ],
         "type" : "object"
       },
       "Cover" : {
@@ -709,23 +730,7 @@
             "type" : "string"
           }
         },
-        "type" : "object"
-      },
-      "Coverage" : {
-        "description" : "How much content there is.",
-        "properties" : {
-          "editorial" : {
-            "$ref" : "#/components/schemas/Editorial",
-            "description" : "The hand-written content."
-          },
-          "index" : {
-            "description" : "The country index, per Wikipedia edition: how many events, how many countries, which years, how recent. Empty until its first pass has run.",
-            "items" : {
-              "$ref" : "#/components/schemas/IndexCoverage"
-            },
-            "type" : "array"
-          }
-        },
+        "required" : [ "alt", "filePageUrl", "imageUrl" ],
         "type" : "object"
       },
       "DataSource" : {
@@ -743,11 +748,11 @@
           "license" : {
             "description" : "The licence it is under. \"Per file\" when each file has its own. Absent when the service has not declared one.",
             "example" : "CC BY-SA 4.0",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "licenseUrl" : {
             "description" : "The licence itself.",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "name" : {
             "description" : "Its name.",
@@ -761,9 +766,10 @@
           "url" : {
             "description" : "Where it is.",
             "example" : "https://it.wikipedia.org/",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           }
         },
+        "required" : [ "attributionRequired", "id", "license", "licenseUrl", "name", "provides", "url" ],
         "type" : "object"
       },
       "DateDto" : {
@@ -782,6 +788,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "day", "month" ],
         "type" : "object"
       },
       "DayViewStat" : {
@@ -806,6 +813,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "day", "month", "viewCount" ],
         "type" : "object"
       },
       "Editorial" : {
@@ -820,7 +828,7 @@
           "lastReviewedAt" : {
             "description" : "The day of the most recent review. Absent when nothing was ever reviewed.",
             "format" : "date",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "paths" : {
             "description" : "How many guided paths.",
@@ -835,6 +843,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "insights", "lastReviewedAt", "paths", "reviewedInsights" ],
         "type" : "object"
       },
       "Entry" : {
@@ -855,37 +864,10 @@
             "description" : "The year. Negative before the common era (-44 is 44 BC). Absent for holidays.",
             "example" : 1978,
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           }
         },
-        "type" : "object"
-      },
-      "Event" : {
-        "description" : "One event of the timeline.",
-        "properties" : {
-          "day" : {
-            "description" : "Day of the month.",
-            "example" : 28,
-            "format" : "int32",
-            "type" : "integer"
-          },
-          "month" : {
-            "description" : "Month, 1 to 12.",
-            "example" : 12,
-            "format" : "int32",
-            "type" : "integer"
-          },
-          "text" : {
-            "description" : "The event, as Wikipedia lists it on the page for that day.",
-            "type" : "string"
-          },
-          "year" : {
-            "description" : "The year; negative before the common era.",
-            "example" : 1908,
-            "format" : "int32",
-            "type" : "integer"
-          }
-        },
+        "required" : [ "pages", "text" ],
         "type" : "object"
       },
       "EventDate" : {
@@ -916,6 +898,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "day", "month", "precision", "year" ],
         "type" : "object"
       },
       "ImageRef" : {
@@ -942,6 +925,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "filePageUrl", "height", "url", "width" ],
         "type" : "object"
       },
       "IndexCoverage" : {
@@ -982,6 +966,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "countryCount", "eventCount", "indexedAt", "language", "newestYear", "oldestYear" ],
         "type" : "object"
       },
       "InsightDetail" : {
@@ -1012,7 +997,7 @@
           },
           "language" : {
             "description" : "The language of every text here. Editorial content is written in Italian only.",
-            "enum" : [ "en", "it" ],
+            "enum" : [ "it" ],
             "type" : "string"
           },
           "notes" : {
@@ -1058,6 +1043,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "after", "before", "date", "event", "inPaths", "language", "notes", "place", "provenance", "related", "slug", "sources", "summary", "title" ],
         "type" : "object"
       },
       "InsightSummary" : {
@@ -1086,6 +1072,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "date", "place", "slug", "summary", "title" ],
         "type" : "object"
       },
       "Limit" : {
@@ -1101,6 +1088,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "code", "message" ],
         "type" : "object"
       },
       "Membership" : {
@@ -1128,6 +1116,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "path", "position", "stopCount", "title" ],
         "type" : "object"
       },
       "OnThisDayResponse" : {
@@ -1162,6 +1151,7 @@
             "type" : "array"
           }
         },
+        "required" : [ "attribution", "date", "language", "sections", "warnings" ],
         "type" : "object"
       },
       "PageRef" : {
@@ -1174,11 +1164,11 @@
           "description" : {
             "description" : "Wikipedia's one-line description of the article. Absent when it has none.",
             "example" : "capital of Lebanon",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "extract" : {
             "description" : "The opening paragraph of the article, as plain text. Absent when it has none.",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "originalImage" : {
             "$ref" : "#/components/schemas/ImageRef",
@@ -1200,9 +1190,10 @@
           "wikibaseItem" : {
             "description" : "The Wikidata id, the same in every language: match a page across it and en with it.",
             "example" : "Q3820",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           }
         },
+        "required" : [ "title", "url" ],
         "type" : "object"
       },
       "PathDetail" : {
@@ -1224,7 +1215,7 @@
           },
           "language" : {
             "description" : "The language of every text here. Editorial content is written in Italian only.",
-            "enum" : [ "en", "it" ],
+            "enum" : [ "it" ],
             "type" : "string"
           },
           "readingMinutes" : {
@@ -1271,6 +1262,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "endYear", "intro", "language", "readingMinutes", "slug", "startYear", "stops", "tagline", "title", "topic", "topicLabel" ],
         "type" : "object"
       },
       "PathSummary" : {
@@ -1330,6 +1322,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "endYear", "readingMinutes", "slug", "startYear", "stopCount", "tagline", "title", "topic", "topicLabel" ],
         "type" : "object"
       },
       "Place" : {
@@ -1342,7 +1335,7 @@
           "countryCode" : {
             "description" : "ISO 3166-1 alpha-2 code of the country the pin falls in today. Absent when unclear.",
             "example" : "KZ",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "lat" : {
             "description" : "Latitude, -90 to 90, positive north.",
@@ -1363,9 +1356,10 @@
           },
           "note" : {
             "description" : "Why the pin is where it is. Present exactly when approximate is true.",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           }
         },
+        "required" : [ "approximate", "lat", "lon", "name" ],
         "type" : "object"
       },
       "Provenance" : {
@@ -1380,9 +1374,44 @@
             "description" : "The day the text was last reviewed against its sources. Absent when it never was: do not show a date the service does not have.",
             "example" : "2026-10-06",
             "format" : "date",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           }
         },
+        "required" : [ "author" ],
+        "type" : "object"
+      },
+      "RandomEvent" : {
+        "description" : "One event of the country index.",
+        "properties" : {
+          "countryCode" : {
+            "description" : "ISO 3166-1 alpha-2 code of the country the map places it in.",
+            "example" : "IT",
+            "type" : "string"
+          },
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 28,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 12,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "text" : {
+            "description" : "The event, as Wikipedia lists it on the page for that day.",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year; negative before the common era.",
+            "example" : 1908,
+            "format" : "int32",
+            "type" : "integer"
+          }
+        },
+        "required" : [ "countryCode", "day", "month", "text", "year" ],
         "type" : "object"
       },
       "RandomEventResponse" : {
@@ -1393,7 +1422,7 @@
             "description" : "The credit Wikipedia's licence requires wherever its text is shown."
           },
           "event" : {
-            "$ref" : "#/components/schemas/Event",
+            "$ref" : "#/components/schemas/RandomEvent",
             "description" : "The event. Absent when no event of the index matches the filters: say so, and do not retry with the same ones."
           },
           "language" : {
@@ -1402,6 +1431,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "attribution", "language" ],
         "type" : "object"
       },
       "Related" : {
@@ -1425,6 +1455,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "date", "reason", "slug", "title" ],
         "type" : "object"
       },
       "ReportReceipt" : {
@@ -1442,6 +1473,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "id", "receivedAt" ],
         "type" : "object"
       },
       "ReportRequest" : {
@@ -1455,7 +1487,7 @@
           "contact" : {
             "description" : "An email address to answer at. Optional, and only used to reply about this report.",
             "example" : "nome@example.org",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "message" : {
             "description" : "What is wrong, in the visitor's words: 10 to 1000 characters.",
@@ -1467,6 +1499,35 @@
             "description" : "What the report is about."
           }
         },
+        "required" : [ "category", "message", "target" ],
+        "type" : "object"
+      },
+      "SamePeriodCoverage" : {
+        "description" : "How much the country index has for the window.",
+        "properties" : {
+          "countryCount" : {
+            "description" : "In how many countries.",
+            "example" : 17,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "eventCount" : {
+            "description" : "How many events of the window are in the index, after leaving out the excluded country.",
+            "example" : 42,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "level" : {
+            "description" : "NONE, SPARSE or OK.",
+            "enum" : [ "NONE", "OK", "SPARSE" ],
+            "type" : "string"
+          },
+          "note" : {
+            "description" : "What the index leaves out, in Italian. Show it, whatever the level: even OK is a selection.",
+            "type" : "string"
+          }
+        },
+        "required" : [ "countryCount", "eventCount", "level", "note" ],
         "type" : "object"
       },
       "SamePeriodResponse" : {
@@ -1489,13 +1550,13 @@
             "type" : "array"
           },
           "coverage" : {
-            "$ref" : "#/components/schemas/Coverage",
+            "$ref" : "#/components/schemas/SamePeriodCoverage",
             "description" : "How much the index has for this window, and what it leaves out. Show the note."
           },
           "excludedCountry" : {
             "description" : "The country left out, as asked. Absent when none was.",
             "example" : "IT",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "fromYear" : {
             "description" : "First year of the window, inclusive.",
@@ -1525,6 +1586,7 @@
             "type" : "integer"
           }
         },
+        "required" : [ "attribution", "comparison", "countries", "coverage", "fromYear", "language", "notice", "toYear", "year" ],
         "type" : "object"
       },
       "SectionResult" : {
@@ -1551,6 +1613,7 @@
             "type" : "boolean"
           }
         },
+        "required" : [ "fallback", "items", "language", "stale" ],
         "type" : "object"
       },
       "Source" : {
@@ -1559,7 +1622,7 @@
           "license" : {
             "description" : "The licence of the text, when it has one that asks for a credit.",
             "example" : "CC BY-SA 4.0",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "publisher" : {
             "description" : "Who publishes it.",
@@ -1577,13 +1640,32 @@
             "type" : "string"
           }
         },
+        "required" : [ "publisher", "title", "url" ],
+        "type" : "object"
+      },
+      "SourcesCoverage" : {
+        "description" : "How much content there is.",
+        "properties" : {
+          "editorial" : {
+            "$ref" : "#/components/schemas/Editorial",
+            "description" : "The hand-written content."
+          },
+          "index" : {
+            "description" : "The country index, per Wikipedia edition: how many events, how many countries, which years, how recent. Empty until its first pass has run.",
+            "items" : {
+              "$ref" : "#/components/schemas/IndexCoverage"
+            },
+            "type" : "array"
+          }
+        },
+        "required" : [ "editorial", "index" ],
         "type" : "object"
       },
       "SourcesResponse" : {
         "description" : "Where the content comes from, under what terms, how much there is and what it leaves out.",
         "properties" : {
           "coverage" : {
-            "$ref" : "#/components/schemas/Coverage",
+            "$ref" : "#/components/schemas/SourcesCoverage",
             "description" : "How much content there is, as it stands now."
           },
           "limits" : {
@@ -1601,6 +1683,7 @@
             "type" : "array"
           }
         },
+        "required" : [ "coverage", "limits", "sources" ],
         "type" : "object"
       },
       "StartHereItem" : {
@@ -1633,6 +1716,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "slug", "teaser", "title", "type" ],
         "type" : "object"
       },
       "Stop" : {
@@ -1670,6 +1754,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "date", "narrative", "place", "position", "slug", "summary", "title" ],
         "type" : "object"
       },
       "Target" : {
@@ -1679,27 +1764,27 @@
             "description" : "For an EVENT: the day of the month.",
             "example" : 4,
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "language" : {
             "description" : "For an EVENT: the edition it was read in, it or en. Defaults to it.",
             "example" : "it",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "month" : {
             "description" : "For an EVENT: the month of the day page it is listed on, 1 to 12.",
             "example" : 10,
             "format" : "int32",
-            "type" : "integer"
+            "type" : [ "integer", "null" ]
           },
           "slug" : {
             "description" : "For an INSIGHT or a PATH: its slug. Not for an EVENT.",
             "example" : "sputnik-1",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "text" : {
             "description" : "For an EVENT: its text as the visitor saw it; anything past 500 characters is cut. It helps find the entry again, since an event has no identifier.",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "type" : {
             "description" : "EVENT: one of Wikipedia's entries for a day. INSIGHT: a \"Perché conta\" block. PATH: a guided path.",
@@ -1710,9 +1795,39 @@
             "description" : "For an EVENT: its year. Negative before the common era.",
             "example" : 1957,
             "format" : "int32",
+            "type" : [ "integer", "null" ]
+          }
+        },
+        "required" : [ "type" ],
+        "type" : "object"
+      },
+      "TimelineEvent" : {
+        "description" : "One event of the timeline.",
+        "properties" : {
+          "day" : {
+            "description" : "Day of the month.",
+            "example" : 28,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "month" : {
+            "description" : "Month, 1 to 12.",
+            "example" : 12,
+            "format" : "int32",
+            "type" : "integer"
+          },
+          "text" : {
+            "description" : "The event, as Wikipedia lists it on the page for that day.",
+            "type" : "string"
+          },
+          "year" : {
+            "description" : "The year; negative before the common era.",
+            "example" : 1908,
+            "format" : "int32",
             "type" : "integer"
           }
         },
+        "required" : [ "day", "month", "text", "year" ],
         "type" : "object"
       },
       "TimelineResponse" : {
@@ -1730,14 +1845,14 @@
           "events" : {
             "description" : "The events, oldest first: by year, then month and day.",
             "items" : {
-              "$ref" : "#/components/schemas/Event"
+              "$ref" : "#/components/schemas/TimelineEvent"
             },
             "type" : "array"
           },
           "indexedAt" : {
             "description" : "When the newest of these events was indexed. Absent when there are none.",
             "format" : "date-time",
-            "type" : "string"
+            "type" : [ "null", "string" ]
           },
           "language" : {
             "description" : "The Wikipedia edition the texts come from.",
@@ -1745,6 +1860,7 @@
             "type" : "string"
           }
         },
+        "required" : [ "attribution", "countryCode", "events", "language" ],
         "type" : "object"
       }
     }

@@ -1,5 +1,6 @@
 package centuryroad.history.dto;
 
+import jakarta.annotation.Nullable;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.TimelineEvent;
 import centuryroad.history.query.TimelineQuery;
@@ -19,11 +20,11 @@ import java.util.List;
 public record TimelineResponse(
         @Schema(description = "ISO 3166-1 alpha-2 code of the country.", example = "IT") String countryCode,
         @Schema(description = "The Wikipedia edition the texts come from.") Language language,
-        @Schema(description = "When the newest of these events was indexed. Absent when there are none.") OffsetDateTime indexedAt,
+        @Schema(description = "When the newest of these events was indexed. Absent when there are none.") @Nullable OffsetDateTime indexedAt,
         @Schema(description = "The credit Wikipedia's licence requires wherever its text is shown.") OnThisDayResponse.Attribution attribution,
         @Schema(description = "The events, oldest first: by year, then month and day.") List<Event> events) {
 
-    @Schema(description = "One event of the timeline.")
+    @Schema(name = "TimelineEvent", description = "One event of the timeline.")
     public record Event(
             @Schema(description = "The year; negative before the common era.", example = "1908") int year,
             @Schema(description = "Month, 1 to 12.", example = "12") int month,

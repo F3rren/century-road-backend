@@ -1,5 +1,6 @@
 package centuryroad.history.dto;
 
+import jakarta.annotation.Nullable;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -31,13 +32,13 @@ public record SourcesResponse(
             @Schema(description = "A stable identifier.", example = "wikipedia-on-this-day") String id,
             @Schema(description = "Its name.", example = "Wikipedia - Accadde oggi") String name,
             @Schema(description = "What the service takes from it, in Italian.") String provides,
-            @Schema(description = "Where it is.", example = "https://it.wikipedia.org/") String url,
-            @Schema(description = "The licence it is under. \"Per file\" when each file has its own. Absent when the service has not declared one.", example = "CC BY-SA 4.0") String license,
-            @Schema(description = "The licence itself.") String licenseUrl,
+            @Schema(description = "Where it is.", example = "https://it.wikipedia.org/") @Nullable String url,
+            @Schema(description = "The licence it is under. \"Per file\" when each file has its own. Absent when the service has not declared one.", example = "CC BY-SA 4.0") @Nullable String license,
+            @Schema(description = "The licence itself.") @Nullable String licenseUrl,
             @Schema(description = "Whether showing it requires a credit and a link back.") boolean attributionRequired) {
     }
 
-    @Schema(description = "How much content there is.")
+    @Schema(name = "SourcesCoverage", description = "How much content there is.")
     public record Coverage(
             @Schema(description = "The country index, per Wikipedia edition: how many events, how many countries, which years, how recent. Empty until its first pass has run.") List<IndexCoverage> index,
             @Schema(description = "The hand-written content.") Editorial editorial) {
@@ -48,7 +49,7 @@ public record SourcesResponse(
             @Schema(description = "How many guided paths.", example = "1") int paths,
             @Schema(description = "How many insights (\"Perché conta\").", example = "9") int insights,
             @Schema(description = "How many of them have been reviewed by a person against their sources. The others are drafts, and say so by having no review date.", example = "0") int reviewedInsights,
-            @Schema(description = "The day of the most recent review. Absent when nothing was ever reviewed.") LocalDate lastReviewedAt) {
+            @Schema(description = "The day of the most recent review. Absent when nothing was ever reviewed.") @Nullable LocalDate lastReviewedAt) {
     }
 
     @Schema(description = "One thing the content is not.")
