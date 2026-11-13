@@ -6,7 +6,7 @@
 
 | | Version | Notes |
 |---|---|---|
-| Spring Boot | 3.5.16 | All 3 services, same parent. Last released 3.x patch — every Boot 3.x line is now past OSS end-of-life; the move to a supported line (Boot 4.1.x) is a separate, bigger, deliberately-deferred migration (Spring Cloud two trains over, springdoc's major now locked to Boot's, Jackson 3's default date serialization changes the API's wire format) — see Key technical decisions |
+| Spring Boot | 3.5.16 | All 3 services, same parent. Last released 3.x patch — every Boot 3.x line is now past OSS end-of-life; the move to a supported line (Boot 4.1.x) is a separate, bigger, deliberately-deferred migration (planned, with what was done ahead of it, in [boot-4-migration.md](boot-4-migration.md)) (Spring Cloud two trains over, springdoc's major now locked to Boot's, Jackson 3's default date serialization changes the API's wire format) — see Key technical decisions |
 | Java | 21 | |
 | Maven | wrapper (`./mvnw`) per service | **No root aggregator `pom.xml`** — this is not a Maven reactor multi-module build. Each of the 3 services is a fully independent Maven project; every command is run from inside `service/<name>/`. |
 | PostgreSQL | via `postgis/postgis:16-3.5-alpine` | `auth-service` and `history-service` only — `gateway` is stateless |

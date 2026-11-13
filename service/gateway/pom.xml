@@ -62,7 +62,7 @@
 		<!-- Gateway: reactive (WebFlux/Netty) routing, no spring-boot-starter-web -->
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-starter-gateway</artifactId>
+			<artifactId>spring-cloud-starter-gateway-server-webflux</artifactId>
 		</dependency>
 
 		<!-- Swagger UI for every service at once, the reactive flavour this gateway needs. The

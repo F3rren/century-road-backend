@@ -16,31 +16,33 @@ server:
 spring:
   cloud:
     gateway:
-      # Downstream addresses must be supplied by the deployment.
-      # Requests are forwarded without stripping their /api/... paths.
-      routes:
-        - id: auth-service
-          uri: ${AUTH_SERVICE_URI}
-          predicates:
-            - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
+      server:
+        webflux:
+          # Downstream addresses must be supplied by the deployment.
+          # Requests are forwarded without stripping their /api/... paths.
+          routes:
+            - id: auth-service
+              uri: ${AUTH_SERVICE_URI}
+              predicates:
+                - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
 
-        - id: history-service
-          uri: ${HISTORY_SERVICE_URI}
-          predicates:
-            - "Path=/api/history/**"
-          metadata:
-            # Milliseconds, and the longest history-service itself can take: primary and fallback
-            # language loaded one after the other, each up to ~14s (connect 2s + read 5s, two
-            # attempts, 300ms apart, plus the bulkhead's 1s wait). A flat 10s would turn answers
-            # it was about to give into 504s. Keep it above that figure if those timeouts grow.
-            response-timeout: 30000
+            - id: history-service
+              uri: ${HISTORY_SERVICE_URI}
+              predicates:
+                - "Path=/api/history/**"
+              metadata:
+                # Milliseconds, and the longest history-service itself can take: primary and fallback
+                # language loaded one after the other, each up to ~14s (connect 2s + read 5s, two
+                # attempts, 300ms apart, plus the bulkhead's 1s wait). A flat 10s would turn answers
+                # it was about to give into 504s. Keep it above that figure if those timeouts grow.
+                response-timeout: 30000
 
-      globalcors:
-        cors-configurations:
-          '[/**]':
-            # Do not fall back to a development origin in production.
-            allowedOrigins: ${FRONTEND_ORIGIN}
+          globalcors:
+            cors-configurations:
+              '[/**]':
+                # Do not fall back to a development origin in production.
+                allowedOrigins: ${FRONTEND_ORIGIN}
 
-      # This setting was designed for the VPS path behind Caddy.
-      # Its safety must be checked separately for Railway's ingress.
-      trusted-proxies: ".*"
+          # This setting was designed for the VPS path behind Caddy.
+          # Its safety must be checked separately for Railway's ingress.
+          trusted-proxies: ".*"
