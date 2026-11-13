@@ -1128,9 +1128,9 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  80 tests
+cd service/auth-service    && ./mvnw test    #  94 tests
 cd service/gateway         && ./mvnw test    #  47 tests
-cd service/history-service && ./mvnw test    # 424 tests
+cd service/history-service && ./mvnw test    # 434 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1144,6 +1144,20 @@ That message is misleading: it also appears when Docker is running fine but cann
 or when the daemon rejects the API version the client asks for. When it shows up, read the
 `Attempted configurations were:` block just above it — it names the real reason for each
 strategy that was tried.
+
+Two gates besides the tests, both in `./mvnw clean verify` (so in CI) and neither in `./mvnw test`:
+
+- **`ArchitectureTest`** (`auth-service`, `history-service`; ArchUnit) is the shape of the service as
+  rules: the model depends on nothing above it, nothing depends on a controller, a controller asks a
+  service and not a repository, only the configuration names a concrete Wikipedia client (the one
+  door), only `JwtService` signs tokens and the token verification stands alone so it can be copied,
+  constructor injection only. Each rule is true of the code today. Where one is not yet — three
+  `history-service` controllers still read `TimelineEventRepository` themselves — the exceptions are
+  named in the rule, so a fourth cannot join them unnoticed and removing one is a visible change.
+- **A coverage floor** (JaCoCo `check`): lines at 90% (`history-service`), 88% (`auth-service`), 80%
+  (`gateway`), and branches at 80% and 70%, a few points under what the suites measure. It is a floor,
+  not a target: it fails a change that takes coverage clearly down, and says nothing about one that
+  does not.
 
 The gateway suite needs no Docker: it stubs its upstream in-process. `history-service` needs
 it for its database, like `auth-service`, but never reaches the real Wikipedia: its tests

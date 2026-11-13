@@ -156,6 +156,30 @@
 							<goal>report</goal>
 						</goals>
 					</execution>
+					<!-- A floor, not a target: coverage is well above it today, and the build fails if a change
+					     takes it clearly below. Set a few points under what the suite measures, since a run
+					     without Docker (a few DB-backed tests) measures slightly less than CI. -->
+					<execution>
+						<id>check</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>check</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<rule>
+									<element>BUNDLE</element>
+									<limits>
+										<limit>
+											<counter>LINE</counter>
+											<value>COVEREDRATIO</value>
+											<minimum>0.80</minimum>
+										</limit>
+									</limits>
+								</rule>
+							</rules>
+						</configuration>
+					</execution>
 				</executions>
 			</plugin>
 		</plugins>
