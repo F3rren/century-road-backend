@@ -675,6 +675,21 @@ happened with `year` and `fromYear`/`toYear`). And a validation such as `@Patter
 `auth-service` strips those (`OpenApiConfig`), and the allowed values are listed as an enum
 instead.
 
+**The contract is also a file.** What each service publishes is committed in `docs/openapi/`
+(`auth-service.json`, `history-service.json`), and `OpenApiSnapshotTest` in each service fails when
+the document it serves and the committed one differ, naming the first line where they part. That is
+what a refactor must not change, what a framework upgrade can change with nobody touching the code
+(Spring Boot 4 writes dates differently), and what the frontend generates its types from, so a field
+renamed here is a compile error there. After an intended change to an endpoint, regenerate it and
+commit it with the change:
+
+```bash
+cd service/history-service && ./mvnw test -Dtest=OpenApiSnapshotTest -Dopenapi.update=true
+```
+
+The files are canonical (keys sorted, the random test port left out), so a diff shows only what the
+contract really changed.
+
 springdoc is pinned to 2.6.0, the last release built on Spring Boot 3.3. Its newer lines need
 newer Spring Boot, so it moves with Spring Boot and not on its own; `dependabot.yml` does not
 propose its minor or major bumps.
