@@ -25,7 +25,8 @@ import java.time.OffsetDateTime;
 @Getter
 public class ApiEnvelope<T> {
 
-    @Schema(description = "True when the request was answered, false when it was refused or failed.")
+    @Schema(description = "True when the request was answered, false when it was refused or failed.",
+            requiredMode = Schema.RequiredMode.REQUIRED)
     private boolean success;
 
     @Schema(description = "Machine-readable error code, such as INVALID_DATE. Only present on errors.", example = "INVALID_DATE")
@@ -40,10 +41,10 @@ public class ApiEnvelope<T> {
     @Schema(description = "The answer itself. Only present on success.")
     private T data;
 
-    @Schema(description = "When the answer was produced, ISO 8601 with offset.", example = "2026-09-20T10:22:12+02:00")
+    @Schema(description = "When the answer was produced, ISO 8601 with offset.", example = "2026-09-20T10:22:12+02:00", requiredMode = Schema.RequiredMode.REQUIRED)
     private String timestamp;
 
-    @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.", example = "REQ_1A2B3C4D")
+    @Schema(description = "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.", example = "REQ_1A2B3C4D", requiredMode = Schema.RequiredMode.REQUIRED)
     @JsonProperty("sessionId")
     private String requestId;
 

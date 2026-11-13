@@ -1,5 +1,6 @@
 package centuryroad.history.dto;
 
+import jakarta.annotation.Nullable;
 import centuryroad.history.model.Cover;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Topic;
@@ -18,7 +19,7 @@ public record PathSummary(
         @Schema(description = "The topic's name to show, in Italian. A frontend may translate it, and falls back to this one for a topic it does not know.", example = "Esplorazioni e spazio") String topicLabel,
         @Schema(description = "The year of the path's earliest stop, read from the stops' dates. Negative before the common era.", example = "1957") int startYear,
         @Schema(description = "The year of the path's latest stop. Negative before the common era.", example = "2023") int endYear,
-        @Schema(description = "The cover image. Absent when the path has none: the card has to work without it.") Cover cover,
+        @Schema(description = "The cover image. Absent when the path has none: the card has to work without it.") @Nullable Cover cover,
         @Schema(description = "Estimated minutes to read the whole path, counted from its words.", example = "9") int readingMinutes,
         @Schema(description = "How many stops the path has.", example = "9") int stopCount) {
 

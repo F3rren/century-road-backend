@@ -1,0 +1,1064 @@
+{
+  "components" : {
+    "schemas" : {
+      "ApiEnvelope" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeDeletedUserResponse" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/DeletedUserResponse",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeLoginPayload" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/LoginPayload",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeRefreshPayload" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/RefreshPayload",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeUserListPayload" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/UserListPayload",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeUserRegisterAck" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/UserRegisterAck",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeUserSummaryDto" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/UserSummaryDto",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeUserUpdateAck" : {
+        "properties" : {
+          "data" : {
+            "$ref" : "#/components/schemas/UserUpdateAck",
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "ApiEnvelopeVoid" : {
+        "properties" : {
+          "data" : {
+            "description" : "The answer itself. Only present on success."
+          },
+          "error" : {
+            "description" : "Machine-readable error code, such as INVALID_CREDENTIALS. Only present on errors.",
+            "example" : "INVALID_CREDENTIALS",
+            "type" : "string"
+          },
+          "message" : {
+            "description" : "A message for developers and logs. Not meant to be shown to a user.",
+            "type" : "string"
+          },
+          "sessionId" : {
+            "description" : "The request id, also sent as the X-Request-Id header. Quote it when reporting a problem.",
+            "example" : "REQ_1A2B3C4D",
+            "type" : "string"
+          },
+          "success" : {
+            "description" : "True when the request was answered, false when it was refused or failed.",
+            "type" : "boolean"
+          },
+          "timestamp" : {
+            "description" : "When the answer was produced, ISO 8601 with offset.",
+            "example" : "2026-09-20T10:22:12+02:00",
+            "type" : "string"
+          },
+          "userMessage" : {
+            "description" : "A message that is safe to show to a user, in Italian. Only present on errors.",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "CreateUserRequest" : {
+        "description" : "A new user, created by an administrator.",
+        "properties" : {
+          "email" : {
+            "description" : "The new account's email address. Must not be registered already.",
+            "example" : "mario.rossi@example.com",
+            "format" : "email",
+            "minLength" : 1,
+            "type" : "string"
+          },
+          "password" : {
+            "description" : "The new account's password, at least 8 characters.",
+            "format" : "password",
+            "maxLength" : 2147483647,
+            "minLength" : 8,
+            "type" : "string",
+            "writeOnly" : true
+          },
+          "role" : {
+            "default" : "user",
+            "description" : "The account's role. Not case-sensitive. `user` when omitted.",
+            "enum" : [ "admin", "user" ],
+            "type" : "string"
+          }
+        },
+        "required" : [ "email", "password" ],
+        "type" : "object"
+      },
+      "DeletedUserResponse" : {
+        "description" : "The user that was deleted.",
+        "properties" : {
+          "id" : {
+            "description" : "The id the deleted user had.",
+            "example" : 42,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        },
+        "type" : "object"
+      },
+      "LoginPayload" : {
+        "description" : "What a successful login returns.",
+        "properties" : {
+          "refreshToken" : {
+            "description" : "A refresh token, to get a new access token when this one expires. Single-use.",
+            "type" : "string"
+          },
+          "token" : {
+            "description" : "The access token, a JWT. Send it as `Authorization: Bearer <token>`. Short-lived.",
+            "type" : "string"
+          },
+          "tokenType" : {
+            "description" : "The scheme to use for the token in the Authorization header.",
+            "example" : "Bearer",
+            "type" : "string"
+          },
+          "user" : {
+            "$ref" : "#/components/schemas/UserSummaryDto",
+            "description" : "The account that logged in."
+          }
+        },
+        "type" : "object"
+      },
+      "LoginRequest" : {
+        "description" : "The credentials of the account to sign in to.",
+        "properties" : {
+          "email" : {
+            "description" : "The account's email address.",
+            "example" : "admin@example.com",
+            "minLength" : 1,
+            "type" : "string"
+          },
+          "password" : {
+            "description" : "The account's password.",
+            "format" : "password",
+            "minLength" : 1,
+            "type" : "string",
+            "writeOnly" : true
+          }
+        },
+        "required" : [ "email", "password" ],
+        "type" : "object"
+      },
+      "RefreshPayload" : {
+        "description" : "What a successful refresh returns.",
+        "properties" : {
+          "refreshToken" : {
+            "description" : "The new refresh token. The one that was sent no longer works: keep this one.",
+            "type" : "string"
+          },
+          "token" : {
+            "description" : "The new access token, a JWT. Send it as `Authorization: Bearer <token>`.",
+            "type" : "string"
+          },
+          "tokenType" : {
+            "description" : "The scheme to use for the token in the Authorization header.",
+            "example" : "Bearer",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "RefreshTokenRequest" : {
+        "description" : "A refresh token, from a login or from a previous refresh.",
+        "properties" : {
+          "refreshToken" : {
+            "description" : "The refresh token. Single-use: sending it uses it up.",
+            "minLength" : 1,
+            "type" : "string"
+          }
+        },
+        "required" : [ "refreshToken" ],
+        "type" : "object"
+      },
+      "UpdateUserRequest" : {
+        "description" : "The changes to make to a user. Only the fields sent are changed.",
+        "properties" : {
+          "email" : {
+            "description" : "A new email address. Must not belong to another user.",
+            "example" : "mario.rossi@example.com",
+            "format" : "email",
+            "type" : "string"
+          },
+          "enabled" : {
+            "description" : "False disables the account: it can no longer log in.",
+            "type" : "boolean"
+          },
+          "password" : {
+            "description" : "A new password. Blank or missing leaves the current one.",
+            "format" : "password",
+            "type" : "string",
+            "writeOnly" : true
+          },
+          "role" : {
+            "description" : "A new role. Not case-sensitive.",
+            "enum" : [ "admin", "user" ],
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "UserListPayload" : {
+        "description" : "Every user.",
+        "properties" : {
+          "users" : {
+            "description" : "The users, in no particular order.",
+            "items" : {
+              "$ref" : "#/components/schemas/UserSummaryDto"
+            },
+            "type" : "array"
+          }
+        },
+        "type" : "object"
+      },
+      "UserRegisterAck" : {
+        "description" : "The user that was just created.",
+        "properties" : {
+          "email" : {
+            "description" : "The new user's email address.",
+            "example" : "mario.rossi@example.com",
+            "type" : "string"
+          },
+          "id" : {
+            "description" : "The new user's id.",
+            "example" : 42,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "role" : {
+            "description" : "The new user's role.",
+            "enum" : [ "ADMIN", "USER" ],
+            "example" : "USER",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "UserSummaryDto" : {
+        "description" : "A user as seen from outside. Never carries the password.",
+        "properties" : {
+          "createdAt" : {
+            "description" : "When the account was created, ISO 8601 with offset.",
+            "example" : "2026-09-18T20:47:20+02:00",
+            "type" : "string"
+          },
+          "email" : {
+            "description" : "The user's email address.",
+            "example" : "mario.rossi@example.com",
+            "type" : "string"
+          },
+          "enabled" : {
+            "description" : "False when an administrator has disabled the account: it cannot log in.",
+            "type" : "boolean"
+          },
+          "id" : {
+            "description" : "The user's id.",
+            "example" : 42,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "role" : {
+            "description" : "The user's role.",
+            "enum" : [ "ADMIN", "USER" ],
+            "example" : "USER",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      },
+      "UserUpdateAck" : {
+        "description" : "The user as it is after the update.",
+        "properties" : {
+          "email" : {
+            "description" : "The user's email address.",
+            "example" : "mario.rossi@example.com",
+            "type" : "string"
+          },
+          "enabled" : {
+            "description" : "False when the account is disabled: it cannot log in.",
+            "type" : "boolean"
+          },
+          "id" : {
+            "description" : "The user's id.",
+            "example" : 42,
+            "format" : "int64",
+            "type" : "integer"
+          },
+          "role" : {
+            "description" : "The user's role.",
+            "enum" : [ "ADMIN", "USER" ],
+            "example" : "USER",
+            "type" : "string"
+          }
+        },
+        "type" : "object"
+      }
+    },
+    "securitySchemes" : {
+      "bearerAuth" : {
+        "bearerFormat" : "JWT",
+        "description" : "The access token from `/api/auth/login` or `/api/auth/refresh`. It is short-lived: renew it with the refresh token.",
+        "scheme" : "bearer",
+        "type" : "http"
+      }
+    }
+  },
+  "info" : {
+    "description" : "Sign-in, token renewal, the caller's own profile and user administration. Log in at `/api/auth/login`, then send the access token as `Authorization: Bearer <token>`. Every answer is wrapped in the same envelope (`success`, `data`, `error`, ...).",
+    "title" : "Century Road - auth-service",
+    "version" : "0.1"
+  },
+  "openapi" : "3.1.0",
+  "paths" : {
+    "/api/admin/users" : {
+      "get" : {
+        "description" : "Every account, with no paging.",
+        "operationId" : "getAllUsers",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeUserListPayload"
+                }
+              }
+            },
+            "description" : "The users."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No token, or an invalid or expired one. `error` is UNAUTHENTICATED."
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The caller is signed in but is not an administrator. `error` is ACCESS_DENIED."
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ],
+        "summary" : "List all users",
+        "tags" : [ "User administration" ]
+      },
+      "post" : {
+        "description" : "The role defaults to `user`. The new account is enabled.",
+        "operationId" : "register",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/CreateUserRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "201" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeUserRegisterAck"
+                }
+              }
+            },
+            "description" : "The user was created."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The request is not valid: a missing or malformed email, a password shorter than 8 characters, a role that is neither admin nor user. `error` is VALIDATION_ERROR."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No token, or an invalid or expired one. `error` is UNAUTHENTICATED."
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The caller is signed in but is not an administrator. `error` is ACCESS_DENIED."
+          },
+          "409" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "That email is already registered. `error` is CONFLICT."
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ],
+        "summary" : "Create a user",
+        "tags" : [ "User administration" ]
+      }
+    },
+    "/api/admin/users/{id}" : {
+      "delete" : {
+        "description" : "Permanent: the account cannot be recovered.",
+        "operationId" : "deleteUser",
+        "parameters" : [ {
+          "description" : "The user's id, a positive number.",
+          "example" : 42,
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "exclusiveMinimum" : 0,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        } ],
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeDeletedUserResponse"
+                }
+              }
+            },
+            "description" : "The user was deleted; the answer carries its id."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No token, or an invalid or expired one. `error` is UNAUTHENTICATED."
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The caller is signed in but is not an administrator. `error` is ACCESS_DENIED."
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No user has that id. `error` is NOT_FOUND."
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ],
+        "summary" : "Delete a user",
+        "tags" : [ "User administration" ]
+      },
+      "put" : {
+        "description" : "Only the fields sent are changed. A blank or missing `password` leaves the current one, so\nchanging a role does not need a new password.",
+        "operationId" : "updateUser",
+        "parameters" : [ {
+          "description" : "The user's id, a positive number.",
+          "example" : 42,
+          "in" : "path",
+          "name" : "id",
+          "required" : true,
+          "schema" : {
+            "exclusiveMinimum" : 0,
+            "format" : "int64",
+            "type" : "integer"
+          }
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/UpdateUserRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeUserUpdateAck"
+                }
+              }
+            },
+            "description" : "The user after the update."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The request is not valid. `error` is VALIDATION_ERROR."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No token, or an invalid or expired one. `error` is UNAUTHENTICATED."
+          },
+          "403" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The caller is signed in but is not an administrator. `error` is ACCESS_DENIED."
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No user has that id. `error` is NOT_FOUND."
+          },
+          "409" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "That email belongs to another user. `error` is CONFLICT."
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ],
+        "summary" : "Update a user",
+        "tags" : [ "User administration" ]
+      }
+    },
+    "/api/auth/login" : {
+      "post" : {
+        "description" : "Returns an access token, a JWT to send afterwards as `Authorization: Bearer <token>`, and\na refresh token to renew it with.\n\nAttempts are limited per caller and email: too many is a 429 with a `Retry-After` header.\nA wrong email, a wrong password and a disabled account all answer the same 401, on purpose,\nso the answer does not say which accounts exist.",
+        "operationId" : "login",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/LoginRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeLoginPayload"
+                }
+              }
+            },
+            "description" : "Logged in."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Email or password missing. `error` is INVALID_REQUEST."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Email or password not correct, or the account is disabled. `error` is INVALID_CREDENTIALS."
+          },
+          "429" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "Too many attempts. `error` is TOO_MANY_ATTEMPTS.",
+            "headers" : {
+              "Retry-After" : {
+                "description" : "Seconds to wait before trying again.",
+                "schema" : {
+                  "type" : "integer"
+                },
+                "style" : "simple"
+              }
+            }
+          }
+        },
+        "summary" : "Log in with email and password",
+        "tags" : [ "Authentication" ]
+      }
+    },
+    "/api/auth/logout" : {
+      "post" : {
+        "description" : "Revokes the refresh token sent. The access token already issued is a signed JWT and cannot\nbe recalled: it stays valid until it expires.",
+        "operationId" : "logout",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeVoid"
+                }
+              }
+            },
+            "description" : "Signed out."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The refresh token is missing. `error` is VALIDATION_ERROR."
+          }
+        },
+        "summary" : "Sign out by revoking a refresh token",
+        "tags" : [ "Authentication" ]
+      }
+    },
+    "/api/auth/refresh" : {
+      "post" : {
+        "description" : "Refresh tokens are single-use: the answer carries a new one, and the one just sent stops\nworking. Keep the new one for next time.",
+        "operationId" : "refresh",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/RefreshTokenRequest"
+              }
+            }
+          },
+          "required" : true
+        },
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeRefreshPayload"
+                }
+              }
+            },
+            "description" : "A new access token and a new refresh token."
+          },
+          "400" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The refresh token is missing. `error` is VALIDATION_ERROR."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The refresh token is unknown, expired or already used, or its user no longer exists. `error` is INVALID_CREDENTIALS."
+          }
+        },
+        "summary" : "Exchange a refresh token for a new access token",
+        "tags" : [ "Authentication" ]
+      }
+    },
+    "/api/me" : {
+      "get" : {
+        "description" : "Read from the database on every call, not from the token's claims, so a change an\nadministrator makes shows at once instead of when the token expires.",
+        "operationId" : "getMe",
+        "responses" : {
+          "200" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelopeUserSummaryDto"
+                }
+              }
+            },
+            "description" : "The caller's account."
+          },
+          "401" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "No token, or an invalid or expired one. `error` is UNAUTHENTICATED."
+          },
+          "404" : {
+            "content" : {
+              "application/json" : {
+                "schema" : {
+                  "$ref" : "#/components/schemas/ApiEnvelope"
+                }
+              }
+            },
+            "description" : "The account no longer exists. `error` is NOT_FOUND."
+          }
+        },
+        "security" : [ {
+          "bearerAuth" : [ ]
+        } ],
+        "summary" : "The caller's own profile",
+        "tags" : [ "Profile" ]
+      }
+    }
+  },
+  "tags" : [ {
+    "description" : "Administrators only.",
+    "name" : "User administration"
+  }, {
+    "description" : "The signed-in user's own account.",
+    "name" : "Profile"
+  }, {
+    "description" : "Sign in, renew a token, sign out. The only endpoints reachable without a token.",
+    "name" : "Authentication"
+  } ]
+}

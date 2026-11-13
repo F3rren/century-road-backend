@@ -1,5 +1,6 @@
 package centuryroad.history.model;
 
+import jakarta.annotation.Nullable;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import io.swagger.v3.oas.annotations.media.Schema;
 
@@ -16,5 +17,5 @@ import java.time.LocalDate;
 public record Provenance(
         @Schema(description = "Who wrote the text.", example = "Century Road") String author,
         @Schema(description = "The day the text was last reviewed against its sources. Absent when it never was: "
-                + "do not show a date the service does not have.", example = "2026-10-06") LocalDate reviewedAt) {
+                + "do not show a date the service does not have.", example = "2026-10-06") @Nullable LocalDate reviewedAt) {
 }

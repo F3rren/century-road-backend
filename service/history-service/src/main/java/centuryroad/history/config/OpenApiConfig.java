@@ -4,6 +4,7 @@ import io.swagger.v3.oas.models.OpenAPI;
 import io.swagger.v3.oas.models.info.Info;
 import io.swagger.v3.oas.models.info.License;
 import io.swagger.v3.oas.models.servers.Server;
+import org.springdoc.core.customizers.OpenApiCustomizer;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -46,5 +47,17 @@ public class OpenApiConfig {
                                 // which is the gateway.
                                 .servers(List.of(new Server().url("/")
                                                 .description("The origin this document was loaded from")));
+        }
+
+        /**
+         * Says which fields an answer always carries. The answers are records, and a record
+         * component is there unless it is marked {@code @Nullable} (the JSON leaves a null out
+         * altogether, NON_NULL), but springdoc cannot see that on its own: without this every
+         * field of every schema was published as optional, and a client generated from the
+         * document had to treat everything as maybe missing.
+         */
+        @Bean
+        OpenApiCustomizer recordComponentsAreRequiredUnlessNullable() {
+                return new RequiredFieldsCustomizer("centuryroad.history.dto", "centuryroad.history.model");
         }
 }
