@@ -13,7 +13,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
 import org.springframework.boot.test.context.TestConfiguration;
-import org.springframework.boot.test.mock.mockito.MockBean;
+import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.MediaType;
@@ -23,6 +23,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import java.time.Clock;
 import java.time.Duration;
 
+import static org.hamcrest.Matchers.matchesPattern;
 import static org.mockito.ArgumentMatchers.any;
 import static org.mockito.BDDMockito.given;
 import static org.mockito.Mockito.verifyNoInteractions;
@@ -59,7 +60,7 @@ class ReportsControllerTest {
     @Autowired
     private Clock clock;
 
-    @MockBean
+    @MockitoBean
     private ErrorReportRepository repository;
 
     @BeforeEach
@@ -81,7 +82,10 @@ class ReportsControllerTest {
                 .andExpect(status().isCreated())
                 .andExpect(jsonPath("$.success").value(true))
                 .andExpect(jsonPath("$.data.id").value(7))
-                .andExpect(jsonPath("$.data.receivedAt").isNotEmpty());
+                // The format, not the instant: ISO 8601 with an offset, a string. Jackson 3 (Spring Boot 4) changes how dates
+                // are written by default, and this is the line that says so if the service ever starts to send something else.
+                .andExpect(jsonPath("$.data.receivedAt").value(matchesPattern(
+                        "\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(\\.\\d+)?(Z|[+-]\\d{2}:\\d{2})")));
     }
 
     @Test

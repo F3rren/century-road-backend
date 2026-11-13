@@ -155,8 +155,8 @@ class OpenApiDocsTest {
     void everyFieldOfEveryAnswerIsDescribed_becauseTheNamesAloneDoNotSayWhatTheyMean() throws Exception {
         List<String> undescribed = new ArrayList<>();
 
-        spec().path("components").path("schemas").fields().forEachRemaining(schema ->
-                schema.getValue().path("properties").fields().forEachRemaining(property -> {
+        spec().path("components").path("schemas").properties().forEach(schema ->
+                schema.getValue().path("properties").properties().forEach(property -> {
                     // A property that is only a reference to another schema is described there.
                     boolean isReference = property.getValue().has("$ref");
                     if (!isReference && property.getValue().path("description").asText().isBlank()) {
