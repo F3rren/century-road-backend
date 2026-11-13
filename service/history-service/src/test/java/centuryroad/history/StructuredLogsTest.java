@@ -3,9 +3,11 @@ package centuryroad.history;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterAll;
+import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.logging.LoggingSystem;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
@@ -21,7 +23,9 @@ import static org.assertj.core.api.Assertions.assertThat;
 /**
  * The JSON log format a deployment can switch on (LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs, Spring Boot's own,
  * no dependency): every line is one JSON object, and the request id is a field of it, so a log platform can
- * filter on it instead of searching text. Its own class, so its context - and its format - is not shared.
+ * filter on it instead of searching text. Its own class, and it starts the logging system afresh and leaves
+ * it as it found it: Spring Boot starts logging once per JVM, with the first context's configuration, so
+ * without that this would see whatever format an earlier test class began with (see RequestIdInLogsTest).
  */
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "logging.structured.format.console=ecs")
@@ -40,9 +44,18 @@ class StructuredLogsTest {
     @Autowired
     private TestRestTemplate rest;
 
+    @BeforeAll
+    static void startLoggingAfresh() {
+        LoggingSystem.get(StructuredLogsTest.class.getClassLoader()).cleanUp();
+    }
+
     @AfterAll
-    static void stopFakeWikipedia() {
+    static void stopFakeWikipediaAndLeaveLoggingAsFound() {
         wikipedia.close();
+        LoggingSystem.get(StructuredLogsTest.class.getClassLoader()).cleanUp();
+        // Boot hands the format to Logback as a system property and never clears it for a context that does not
+        // ask for one: left set, every log line of every test class after this one would be JSON.
+        System.clearProperty("CONSOLE_LOG_STRUCTURED_FORMAT");
     }
 
     @DynamicPropertySource

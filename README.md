@@ -1157,8 +1157,9 @@ WARN 7166 --- [history-service] [o-auto-1-exec-1] [REQ_F8081BC5] c.h.wikipedia.W
 
 So a person who reports a problem and quotes the id can be followed through the log with `grep REQ_F8081BC5`
 (`-` stands in outside a request: startup, the nightly index). It used to be minted and handed back
-but never printed, so there was nothing to search; `HistoryServiceIntegrationTest` and
-`AuthControllerTest` now fail if it is not there. The gateway does not mint one: it is reactive, where
+but never printed, so there was nothing to search; `RequestIdInLogsTest` in each service now fails if it
+is not there (a class of its own: Spring Boot starts logging once per JVM, with the first context's
+configuration, so a test about the log's format has to restart it and leave it as it found it). The gateway does not mint one: it is reactive, where
 the MDC does not follow a request from thread to thread.
 
 For a log platform, set `LOGGING_STRUCTURED_FORMAT_CONSOLE=ecs` (or `logstash`, `gelf`) on a service:

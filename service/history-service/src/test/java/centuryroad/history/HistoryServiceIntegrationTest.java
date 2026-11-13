@@ -5,11 +5,8 @@ import centuryroad.history.service.TimelineIndexer;
 import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.system.CapturedOutput;
-import org.springframework.boot.test.system.OutputCaptureExtension;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpHeaders;
@@ -36,7 +33,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @Import({NoRetryClientConfiguration.class, TestcontainersConfiguration.class})
-@ExtendWith(OutputCaptureExtension.class)
 class HistoryServiceIntegrationTest {
 
     private static final String IT_10_16 = "/it/api/rest_v1/feed/onthisday/all/10/16";
@@ -174,20 +170,6 @@ class HistoryServiceIntegrationTest {
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.SERVICE_UNAVAILABLE);
         assertThat((String) read(response, "$.error")).isEqualTo("UPSTREAM_UNAVAILABLE");
         assertThat(response.getBody()).doesNotContain("127.0.0.1").doesNotContain("/api/rest_v1");
-    }
-
-    // The id is minted for every request and given back to the client, so that a person who reports a problem can
-    // quote it. It is only worth that if the service's own log carries it: otherwise there is nothing to search.
-    @Test
-    void aLogLineWrittenWhileAnsweringCarriesTheRequestIdTheClientWasGiven(CapturedOutput output) {
-        wikipedia.reply("/it/api/rest_v1/feed/onthisday/all/12/12", FakeWikipedia.Reply.status(500));
-        wikipedia.reply("/en/api/rest_v1/feed/onthisday/all/12/12", FakeWikipedia.Reply.status(500));
-
-        ResponseEntity<String> response = get("/api/history/on-this-day/12/12?lang=it");
-
-        String requestId = response.getHeaders().getFirst("X-Request-Id");
-        assertThat(requestId).matches("REQ_[0-9A-F]{8}");
-        assertThat(output.getOut()).contains("Wikipedia (it) answered 500").contains("[" + requestId + "]");
     }
 
     @Test

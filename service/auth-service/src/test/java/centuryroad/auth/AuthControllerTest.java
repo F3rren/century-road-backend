@@ -7,11 +7,8 @@ import centuryroad.auth.service.LoginAttemptLimiter;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.system.CapturedOutput;
-import org.springframework.boot.test.system.OutputCaptureExtension;
 import org.springframework.boot.test.web.client.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpEntity;
@@ -44,7 +41,6 @@ import static org.assertj.core.api.Assertions.assertThat;
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
-@ExtendWith(OutputCaptureExtension.class)
 class AuthControllerTest {
 
     @Autowired
@@ -93,18 +89,6 @@ class AuthControllerTest {
         body.remove("timestamp");
         body.remove("sessionId");
         return body;
-    }
-
-    // The id is minted for every request and given back to the client, so that a person who reports a problem can
-    // quote it. It is only worth that if the service's own log carries it: otherwise there is nothing to search.
-    @Test
-    void aLogLineWrittenWhileAnsweringCarriesTheRequestIdTheClientWasGiven(CapturedOutput output) {
-        ResponseEntity<String> resp = rest.postForEntity("/api/auth/login",
-                Map.of("email", "user@test.it", "password", "una-password-sbagliata"), String.class);
-
-        String requestId = resp.getHeaders().getFirst("X-Request-Id");
-        assertThat(requestId).matches("REQ_[0-9A-F]{8}");
-        assertThat(output.getOut()).contains("Login refused").contains("[" + requestId + "]");
     }
 
     @Test
