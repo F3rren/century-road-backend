@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 
+import java.time.Clock;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -31,7 +32,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 class EditorialContentTest {
 
     private final EditorialCatalog catalog = new EditorialCatalog(new PathMatchingResourcePatternResolver(),
-            EditorialCatalog.DEFAULT_ROOT);
+            EditorialCatalog.DEFAULT_ROOT, Clock.systemUTC());
 
     @Test
     void theRealContentIsValid_andHasAtLeastOneCompletePath() {
