@@ -171,6 +171,32 @@ jobs:
           ignore-unfixed: true
           exit-code: "1"
 
+      # The scan above writes SARIF, which nobody can read in this log: the same findings as a
+      # table, only when there are any, in the log and in the run's summary page. A second pass over
+      # the image costs seconds (the vulnerability database is cached) and never fails the job.
+      - name: List the findings as a table
+        if: steps.trivy.outcome == 'failure'
+        uses: aquasecurity/trivy-action@v0.36.0
+        with:
+          scan-type: image
+          image-ref: ${{ steps.names.outputs.prefix }}-${{ matrix.service }}:${{ steps.names.outputs.sha }}
+          format: table
+          output: trivy-${{ matrix.service }}.txt
+          severity: HIGH,CRITICAL
+          ignore-unfixed: true
+          exit-code: "0"
+
+      - name: Show the findings in the log and in the run summary
+        if: steps.trivy.outcome == 'failure'
+        run: |
+          cat trivy-${{ matrix.service }}.txt
+          {
+            echo "### Trivy: fixable HIGH/CRITICAL findings in the ${{ matrix.service }} image"
+            echo '```'
+            head -n 300 trivy-${{ matrix.service }}.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
+
       # Uploaded whether the scan passed or failed, so findings are visible in the Security tab
       # even on a red run - the same tab codeql.yml already publishes to, one category per
       # service so the three legs of this matrix don't overwrite each other's results.
