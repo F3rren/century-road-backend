@@ -1,11 +1,12 @@
 package centuryroad.auth;
 
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.SerializationFeature;
+import tools.jackson.databind.json.JsonMapper;
+import tools.jackson.databind.SerializationFeature;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -38,6 +39,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * The file is canonical on purpose - object keys sorted, lists of plain strings sorted, the
  * server address (a random port in a test) left out - so it only changes when the contract does.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "springdoc.api-docs.enabled=true")
 @ActiveProfiles("test")
@@ -76,7 +78,7 @@ class OpenApiSnapshotTest {
         ResponseEntity<String> response = rest.getForEntity("/v3/api-docs", String.class);
         assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
 
-        ObjectMapper mapper = new ObjectMapper().enable(SerializationFeature.INDENT_OUTPUT);
+        JsonMapper mapper = JsonMapper.builder().enable(SerializationFeature.INDENT_OUTPUT).build();
         @SuppressWarnings("unchecked")
         Map<String, Object> spec = mapper.readValue(response.getBody(), Map.class);
         spec.remove("servers");

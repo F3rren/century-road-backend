@@ -3,11 +3,12 @@ package centuryroad.auth;
 import centuryroad.auth.model.Role;
 import centuryroad.auth.model.User;
 import centuryroad.auth.repository.UserRepository;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -34,6 +35,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * empties the
  * users table: the row under test is written once, at startup.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = {
                 "bootstrap.admin.email=primo.admin@test.it",
                 "bootstrap.admin.password=una-password-lunga"

@@ -1,12 +1,13 @@
 package centuryroad.auth;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -32,6 +33,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * description, so a
  * new endpoint cannot be added undocumented.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT, properties = "springdoc.api-docs.enabled=true")
 @Import({ TestcontainersConfiguration.class, RestTemplateTestConfiguration.class })
 @ActiveProfiles("test")
@@ -60,7 +62,7 @@ class OpenApiDocsTest {
 
     private static List<String> responseCodes(JsonNode operation) {
         List<String> codes = new ArrayList<>();
-        operation.path("responses").fieldNames().forEachRemaining(codes::add);
+        operation.path("responses").propertyNames().forEach(codes::add);
         return codes;
     }
 
@@ -77,8 +79,8 @@ class OpenApiDocsTest {
     void theDocumentIsServedWithoutAToken_becauseTheGatewayReadsItWithoutOne() throws Exception {
         JsonNode spec = spec();
 
-        assertThat(spec.path("openapi").asText()).startsWith("3.");
-        assertThat(spec.path("info").path("title").asText()).contains("auth");
+        assertThat(spec.path("openapi").asString()).startsWith("3.");
+        assertThat(spec.path("info").path("title").asString()).contains("auth");
     }
 
     @Test
@@ -86,16 +88,16 @@ class OpenApiDocsTest {
         JsonNode servers = spec().path("servers");
 
         assertThat(servers).hasSize(1);
-        assertThat(servers.get(0).path("url").asText()).isEqualTo("/");
+        assertThat(servers.get(0).path("url").asString()).isEqualTo("/");
     }
 
     @Test
     void theBearerSchemeIsDeclaredSoTheInteractivePageCanSendAToken() throws Exception {
         JsonNode scheme = spec().path("components").path("securitySchemes").path("bearerAuth");
 
-        assertThat(scheme.path("type").asText()).isEqualTo("http");
-        assertThat(scheme.path("scheme").asText()).isEqualTo("bearer");
-        assertThat(scheme.path("bearerFormat").asText()).isEqualTo("JWT");
+        assertThat(scheme.path("type").asString()).isEqualTo("http");
+        assertThat(scheme.path("scheme").asString()).isEqualTo("bearer");
+        assertThat(scheme.path("bearerFormat").asString()).isEqualTo("JWT");
     }
 
     @Test
@@ -141,7 +143,7 @@ class OpenApiDocsTest {
 
         spec().path("paths").properties().forEach(path -> path.getValue().properties()
                 .forEach(method -> method.getValue().path("responses").properties().forEach(
-                        response -> response.getValue().path("content").fieldNames().forEachRemaining(mediaType -> {
+                        response -> response.getValue().path("content").propertyNames().forEach(mediaType -> {
                             if (!"application/json".equals(mediaType)) {
                                 notJson.add(method.getKey() + " " + path.getKey() + " " + response.getKey() + " "
                                         + mediaType);
@@ -157,7 +159,7 @@ class OpenApiDocsTest {
 
         for (String schema : new String[] { "LoginRequest", "CreateUserRequest", "UpdateUserRequest" }) {
             JsonNode password = schemas.path(schema).path("properties").path("password");
-            assertThat(password.path("format").asText()).as(schema + ".password format").isEqualTo("password");
+            assertThat(password.path("format").asString()).as(schema + ".password format").isEqualTo("password");
             assertThat(password.path("writeOnly").asBoolean()).as(schema + ".password writeOnly").isTrue();
         }
     }
@@ -173,7 +175,7 @@ class OpenApiDocsTest {
 
         spec().path("components").path("schemas").properties()
                 .forEach(schema -> schema.getValue().path("properties").properties().forEach(property -> {
-                    String pattern = property.getValue().path("pattern").asText();
+                    String pattern = property.getValue().path("pattern").asString();
                     if (pattern.startsWith("(?")) {
                         unreadable.add(schema.getKey() + "." + property.getKey() + " = " + pattern);
                     }
@@ -188,7 +190,7 @@ class OpenApiDocsTest {
                 .path("properties").path("role");
 
         List<String> values = new ArrayList<>();
-        role.path("enum").forEach(node -> values.add(node.asText()));
+        role.path("enum").forEach(node -> values.add(node.asString()));
         assertThat(values).containsExactly("user", "admin");
     }
 
@@ -199,7 +201,7 @@ class OpenApiDocsTest {
         spec().path("components").path("schemas").properties()
                 .forEach(schema -> schema.getValue().path("properties").properties().forEach(property -> {
                     boolean isReference = property.getValue().has("$ref");
-                    if (!isReference && property.getValue().path("description").asText().isBlank()) {
+                    if (!isReference && property.getValue().path("description").asString().isBlank()) {
                         undescribed.add(schema.getKey() + "." + property.getKey());
                     }
                 }));
@@ -223,7 +225,7 @@ class OpenApiDocsTest {
                     "path patterns are always parsed in Spring Boot 3");
             for (String path : patterns.getPatternValues()) {
                 mapping.getKey().getMethodsCondition().getMethods().forEach(method -> {
-                    String summary = paths.path(path).path(method.name().toLowerCase()).path("summary").asText();
+                    String summary = paths.path(path).path(method.name().toLowerCase()).path("summary").asString();
                     if (summary.isBlank()) {
                         undocumented.add(method + " " + path);
                     }

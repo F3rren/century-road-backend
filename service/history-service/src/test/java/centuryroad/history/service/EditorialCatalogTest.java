@@ -89,7 +89,7 @@ class EditorialCatalogTest {
      * (which the catalog refuses anyway) goes in the default folder, so the file is never written outside root.
      */
     private static String folderOfTopic(ObjectNode path) {
-        String folder = path.path("topic").asText("").toLowerCase().replace('_', '-');
+        String folder = path.path("topic").asString("").toLowerCase().replace('_', '-');
         return Topic.ofFolder(folder).isPresent() ? folder : FOLDER;
     }
 

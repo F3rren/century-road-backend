@@ -80,8 +80,8 @@ class StructuredLogsTest {
         }
 
         assertThat(line).as("a JSON log line about Wikipedia answering 500").isNotNull();
-        assertThat(line.path("requestId").asText()).isEqualTo(requestId);
-        assertThat(line.path("message").asText()).contains("answered 500");
-        assertThat(line.path("service").path("name").asText()).isEqualTo("history-service");
+        assertThat(line.path("requestId").asString()).isEqualTo(requestId);
+        assertThat(line.path("message").asString()).contains("answered 500");
+        assertThat(line.path("service").path("name").asString()).isEqualTo("history-service");
     }
 }

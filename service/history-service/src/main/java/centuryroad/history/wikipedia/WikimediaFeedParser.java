@@ -146,7 +146,7 @@ final class WikimediaFeedParser {
 
     private static String text(JsonNode parent, String field) {
         JsonNode node = parent.path(field);
-        return node.isTextual() && !node.asText().isBlank() ? node.asText().strip() : null;
+        return node.isString() && !node.asString().isBlank() ? node.asString().strip() : null;
     }
 
     private static String underscoresToSpaces(String value) {

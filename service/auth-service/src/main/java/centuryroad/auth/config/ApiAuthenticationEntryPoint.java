@@ -1,7 +1,7 @@
 package centuryroad.auth.config;
 
 import centuryroad.auth.dto.ApiEnvelope;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.http.MediaType;

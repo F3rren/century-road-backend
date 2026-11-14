@@ -56,16 +56,16 @@ class OpenApiDocsTest {
 
     private static JsonNode parameter(JsonNode operation, String name) {
         for (JsonNode parameter : operation.path("parameters")) {
-            if (name.equals(parameter.path("name").asText())) {
+            if (name.equals(parameter.path("name").asString())) {
                 return parameter;
             }
         }
-        throw new AssertionError("No parameter " + name + " in " + operation.path("operationId").asText());
+        throw new AssertionError("No parameter " + name + " in " + operation.path("operationId").asString());
     }
 
     private static List<String> texts(JsonNode array) {
         List<String> values = new ArrayList<>();
-        array.forEach(node -> values.add(node.asText()));
+        array.forEach(node -> values.add(node.asString()));
         return values;
     }
 
@@ -107,8 +107,8 @@ class OpenApiDocsTest {
     void theDocumentIsServedWithoutAnyToken_becauseTheEndpointItDescribesIsPublicToo() throws Exception {
         JsonNode spec = spec();
 
-        assertThat(spec.path("openapi").asText()).startsWith("3.");
-        assertThat(spec.path("info").path("title").asText()).contains("history");
+        assertThat(spec.path("openapi").asString()).startsWith("3.");
+        assertThat(spec.path("info").path("title").asString()).contains("history");
     }
 
     @Test
@@ -116,9 +116,9 @@ class OpenApiDocsTest {
         JsonNode operation = spec().path("paths").path(DAY_PATH).path("get");
 
         assertThat(operation.isMissingNode()).isFalse();
-        assertThat(operation.path("summary").asText()).isNotBlank();
-        assertThat(parameter(operation, "month").path("in").asText()).isEqualTo("path");
-        assertThat(parameter(operation, "day").path("in").asText()).isEqualTo("path");
+        assertThat(operation.path("summary").asString()).isNotBlank();
+        assertThat(parameter(operation, "month").path("in").asString()).isEqualTo("path");
+        assertThat(parameter(operation, "day").path("in").asString()).isEqualTo("path");
         assertThat(operation.path("responses").propertyNames())
                 .contains("200", "400", "502", "503");
     }
@@ -127,9 +127,9 @@ class OpenApiDocsTest {
     void theDateSegmentsAreIntegersWithTheirRange() throws Exception {
         JsonNode operation = spec().path("paths").path(DAY_PATH).path("get");
 
-        assertThat(parameter(operation, "month").path("schema").path("type").asText()).isEqualTo("integer");
+        assertThat(parameter(operation, "month").path("schema").path("type").asString()).isEqualTo("integer");
         assertThat(parameter(operation, "month").path("schema").path("maximum").asInt()).isEqualTo(12);
-        assertThat(parameter(operation, "day").path("schema").path("type").asText()).isEqualTo("integer");
+        assertThat(parameter(operation, "day").path("schema").path("type").asString()).isEqualTo("integer");
         assertThat(parameter(operation, "day").path("schema").path("maximum").asInt()).isEqualTo(31);
     }
 
@@ -161,7 +161,7 @@ class OpenApiDocsTest {
         JsonNode operation = spec().path("paths").path(DAY_PATH).path("get");
 
         assertThat(texts(parameter(operation, "lang").path("schema").path("enum"))).containsExactly("it", "en");
-        assertThat(parameter(operation, "lang").path("schema").path("default").asText()).isEqualTo("it");
+        assertThat(parameter(operation, "lang").path("schema").path("default").asString()).isEqualTo("it");
         assertThat(texts(parameter(operation, "types").path("schema").path("items").path("enum")))
                 .containsExactly("selected", "events", "births", "deaths", "holidays");
     }
@@ -170,7 +170,7 @@ class OpenApiDocsTest {
     void theSuccessBodyIsTheEnvelopeAroundTheDayNotAnUnnamedObject() throws Exception {
         JsonNode spec = spec();
         String ref = spec.path("paths").path(DAY_PATH).path("get").path("responses").path("200")
-                .path("content").path("application/json").path("schema").path("$ref").asText();
+                .path("content").path("application/json").path("schema").path("$ref").asString();
 
         assertThat(ref).startsWith("#/components/schemas/");
         JsonNode envelope = spec.path("components").path("schemas").path(ref.substring(ref.lastIndexOf('/') + 1));
@@ -184,7 +184,7 @@ class OpenApiDocsTest {
         JsonNode servers = spec().path("servers");
 
         assertThat(servers).hasSize(1);
-        assertThat(servers.get(0).path("url").asText()).isEqualTo("/");
+        assertThat(servers.get(0).path("url").asString()).isEqualTo("/");
     }
 
     @Test
@@ -195,7 +195,7 @@ class OpenApiDocsTest {
                 schema.getValue().path("properties").properties().forEach(property -> {
                     // A property that is only a reference to another schema is described there.
                     boolean isReference = property.getValue().has("$ref");
-                    if (!isReference && property.getValue().path("description").asText().isBlank()) {
+                    if (!isReference && property.getValue().path("description").asString().isBlank()) {
                         undescribed.add(schema.getKey() + "." + property.getKey());
                     }
                 }));
@@ -218,7 +218,7 @@ class OpenApiDocsTest {
                     "path patterns are always parsed in Spring Boot 3");
             for (String path : patterns.getPatternValues()) {
                 mapping.getKey().getMethodsCondition().getMethods().forEach(method -> {
-                    String summary = paths.path(path).path(method.name().toLowerCase()).path("summary").asText();
+                    String summary = paths.path(path).path(method.name().toLowerCase()).path("summary").asString();
                     if (summary.isBlank()) {
                         undocumented.add(method + " " + path);
                     }

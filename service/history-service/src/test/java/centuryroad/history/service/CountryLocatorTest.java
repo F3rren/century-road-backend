@@ -66,7 +66,7 @@ class CountryLocatorTest {
         JsonNode file = read();
         ObjectNode onlySouthAfrica = MAPPER.createObjectNode();
         onlySouthAfrica.putArray("features").add(StreamSupport.stream(file.path("features").spliterator(), false)
-                .filter(f -> f.path("properties").path("iso_a2").asText().equals("ZA"))
+                .filter(f -> f.path("properties").path("iso_a2").asString().equals("ZA"))
                 .findFirst().orElseThrow());
         CountryLocator southAfrica = new CountryLocator(onlySouthAfrica);
 
