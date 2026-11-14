@@ -3,8 +3,8 @@ package centuryroad.history.controller;
 import centuryroad.history.config.RequestCorrelationFilter;
 import centuryroad.history.dto.ApiEnvelope;
 import centuryroad.history.dto.SourcesResponse;
-import centuryroad.history.repository.TimelineEventRepository;
 import centuryroad.history.service.EditorialCatalog;
+import centuryroad.history.service.TimelineService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.tags.Tag;
@@ -24,11 +24,11 @@ public class SourcesController {
 
     private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic();
 
-    private final TimelineEventRepository repository;
+    private final TimelineService timeline;
     private final EditorialCatalog catalog;
 
-    public SourcesController(TimelineEventRepository repository, EditorialCatalog catalog) {
-        this.repository = repository;
+    public SourcesController(TimelineService timeline, EditorialCatalog catalog) {
+        this.timeline = timeline;
         this.catalog = catalog;
     }
 
@@ -45,7 +45,7 @@ public class SourcesController {
     @GetMapping
     public ResponseEntity<ApiEnvelope<SourcesResponse>> sources() {
         return ResponseEntity.ok().cacheControl(CACHE).body(ApiEnvelope.success(null,
-                SourcesResponse.from(repository.coverage(), catalog.paths(), catalog.insights()),
+                SourcesResponse.from(timeline.coverage(), catalog.paths(), catalog.insights()),
                 RequestCorrelationFilter.current()));
     }
 }

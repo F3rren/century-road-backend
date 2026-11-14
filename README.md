@@ -1130,7 +1130,7 @@ which are which.
 ```bash
 cd service/auth-service    && ./mvnw test    #  96 tests
 cd service/gateway         && ./mvnw test    #  47 tests
-cd service/history-service && ./mvnw test    # 447 tests
+cd service/history-service && ./mvnw test    # 451 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
 bash infra/caddy/headers_test.sh               #  11 checks: the Caddyfile's headers, needs Docker
 ```
@@ -1151,9 +1151,10 @@ Two gates besides the tests, both in `./mvnw clean verify` (so in CI) and neithe
   rules: the model depends on nothing above it, nothing depends on a controller, a controller asks a
   service and not a repository, only the configuration names a concrete Wikipedia client (the one
   door), only `JwtService` signs tokens and the token verification stands alone so it can be copied,
-  constructor injection only. Each rule is true of the code today. Where one is not yet — three
-  `history-service` controllers still read `TimelineEventRepository` themselves — the exceptions are
-  named in the rule, so a fourth cannot join them unnoticed and removing one is a visible change.
+  constructor injection only. Each rule is true of the code today. Where one was not — three
+  `history-service` controllers used to read `TimelineEventRepository` themselves, and were named as
+  exceptions in the rule — the exceptions are named in the rule until they are gone: they ask
+  `TimelineService` now, and the list is empty.
 - **A coverage floor** (JaCoCo `check`): lines at 90% (`history-service`), 88% (`auth-service`), 80%
   (`gateway`), and branches at 80% and 70%, a few points under what the suites measure. It is a floor,
   not a target: it fails a change that takes coverage clearly down, and says nothing about one that

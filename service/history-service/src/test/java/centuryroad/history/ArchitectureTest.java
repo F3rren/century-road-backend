@@ -54,15 +54,12 @@ class ArchitectureTest {
             .should().dependOnClassesThat().resideInAnyPackage("..history.controller..", "..history.repository..");
 
     /**
-     * A controller asks a service. Three of them still read TimelineEventRepository themselves, which
-     * is known and listed here: the day one of them moves behind a service, it comes off this list, and
-     * no fourth joins it.
+     * A controller asks a service, and the database is the services' business. (Three controllers used to
+     * read TimelineEventRepository themselves, and were named here as the known exceptions; they ask
+     * TimelineService now, and the list is empty.)
      */
     @ArchTest
     static final ArchRule controllersGoThroughServices = noClasses().that().resideInAPackage("..history.controller..")
-            .and().doNotHaveSimpleName("TimelineController")
-            .and().doNotHaveSimpleName("SourcesController")
-            .and().doNotHaveSimpleName("DiscoveryController")
             .should().dependOnClassesThat().resideInAPackage("..history.repository..");
 
     // ---- the one door to Wikipedia -------------------------------------------------------------

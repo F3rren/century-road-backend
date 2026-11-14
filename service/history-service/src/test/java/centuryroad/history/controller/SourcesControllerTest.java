@@ -4,6 +4,7 @@ import centuryroad.history.dto.IndexCoverage;
 import centuryroad.history.repository.TimelineEventRepository;
 import centuryroad.history.config.ClockConfig;
 import centuryroad.history.service.EditorialCatalog;
+import centuryroad.history.service.TimelineService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.webmvc.test.autoconfigure.WebMvcTest;
@@ -25,7 +26,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 /** What the project page can show about provenance: terms, how much there is, what is left out. */
 @WebMvcTest(SourcesController.class)
-@Import({EditorialCatalog.class, ClockConfig.class})
+@Import({EditorialCatalog.class, ClockConfig.class, TimelineService.class})
 @ActiveProfiles("test")
 class SourcesControllerTest {
 

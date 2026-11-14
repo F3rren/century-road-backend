@@ -7,7 +7,7 @@ import centuryroad.history.dto.TimelineResponse;
 import centuryroad.history.model.Language;
 import centuryroad.history.query.OnThisDayQuery;
 import centuryroad.history.query.TimelineQuery;
-import centuryroad.history.repository.TimelineEventRepository;
+import centuryroad.history.service.TimelineService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -37,10 +37,10 @@ public class TimelineController {
 
     private static final CacheControl CACHE = CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic();
 
-    private final TimelineEventRepository repository;
+    private final TimelineService timeline;
 
-    public TimelineController(TimelineEventRepository repository) {
-        this.repository = repository;
+    public TimelineController(TimelineService timeline) {
+        this.timeline = timeline;
     }
 
     @Operation(summary = "The countries the index has events for, with how many",
@@ -54,7 +54,7 @@ public class TimelineController {
                     defaultValue = "it")) @RequestParam(defaultValue = "it") String lang) {
         Language language = OnThisDayQuery.parseLanguage(lang);
         return ResponseEntity.ok().cacheControl(CACHE).body(ApiEnvelope.success(null,
-                repository.countByCountry(language.code()), RequestCorrelationFilter.current()));
+                timeline.countriesWithEvents(language), RequestCorrelationFilter.current()));
     }
 
     @Operation(summary = "One country's events across the whole year, oldest first",
@@ -77,8 +77,7 @@ public class TimelineController {
             @Parameter(description = "Only events up to this year, inclusive.")
             @RequestParam(required = false) Integer toYear) {
         TimelineQuery query = TimelineQuery.of(code, lang, fromYear, toYear);
-        var rows = repository.timeline(query.language().code(), query.countryCode(), query.years().from(),
-                query.years().to());
+        var rows = timeline.timeline(query);
         return ResponseEntity.ok().cacheControl(CACHE).body(ApiEnvelope.success(null,
                 TimelineResponse.from(query, rows), RequestCorrelationFilter.current()));
     }
