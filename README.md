@@ -5,7 +5,7 @@
 [![Latest release](https://img.shields.io/github/v/release/F3rren/century-road-backend?label=release)](https://github.com/F3rren/century-road-backend/releases)
 [![License: MIT](https://img.shields.io/github/license/F3rren/century-road-backend)](LICENSE)
 [![Java 21](https://img.shields.io/badge/Java-21-orange?logo=openjdk&logoColor=white)](https://openjdk.org/projects/jdk/21/)
-[![Spring Boot 3.3.4](https://img.shields.io/badge/Spring%20Boot-3.3.4-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
+[![Spring Boot 4.1.2](https://img.shields.io/badge/Spring%20Boot-4.1.2-6DB33F?logo=springboot&logoColor=white)](https://spring.io/projects/spring-boot)
 
 Three Spring Boot services behind an API gateway. `auth-service` owns identity: users,
 login, and the JWTs every other service will eventually verify. `history-service` answers
@@ -690,8 +690,8 @@ cd service/history-service && ./mvnw test -Dtest=OpenApiSnapshotTest -Dopenapi.u
 The files are canonical (keys sorted, the random test port left out), so a diff shows only what the
 contract really changed.
 
-springdoc is pinned to 2.6.0, the last release built on Spring Boot 3.3. Its newer lines need
-newer Spring Boot, so it moves with Spring Boot and not on its own; `dependabot.yml` does not
+springdoc is on 3.2.0, the line built on Spring Boot 4.1. It is built against one Spring Boot line,
+so it moves with Spring Boot and not on its own; `dependabot.yml` does not
 propose its minor or major bumps.
 
 ## History API

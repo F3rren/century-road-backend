@@ -6,13 +6,13 @@
 
 | | Version | Notes |
 |---|---|---|
-| Spring Boot | 3.5.16 | All 3 services, same parent. Last released 3.x patch — every Boot 3.x line is now past OSS end-of-life; the move to a supported line (Boot 4.1.x) is a separate, bigger, deliberately-deferred migration (planned, with what was done ahead of it, in [boot-4-migration.md](boot-4-migration.md)) (Spring Cloud two trains over, springdoc's major now locked to Boot's, Jackson 3's default date serialization changes the API's wire format) — see Key technical decisions |
+| Spring Boot | 4.1.2 | All 3 services, same parent. Moved from 3.5.16 (every Boot 3.x line is past OSS end-of-life) in [boot-4-migration.md](boot-4-migration.md): Jackson 3 (`tools.jackson.*`), Spring Framework 7, Spring Security 7, modular starters. The published OpenAPI contract did not change. `gateway` runs Spring Cloud 2025.1.4, a train built for Boot 4.0 — see Key technical decisions |
 | Java | 21 | |
 | Maven | wrapper (`./mvnw`) per service | **No root aggregator `pom.xml`** — this is not a Maven reactor multi-module build. Each of the 3 services is a fully independent Maven project; every command is run from inside `service/<name>/`. |
 | PostgreSQL | via `postgis/postgis:16-3.5-alpine` | `auth-service` and `history-service` only — `gateway` is stateless |
 | Flyway | flyway-database-postgresql | Per-service migrations, per-service database (see Data model) |
-| Testcontainers | **1.21.4**, pinned | Overrides Spring Boot's managed version — see Key technical decisions |
-| springdoc-openapi | 2.9.1, pinned | Built against Spring Boot 3.5.14; moves with Spring Boot, not independently |
+| Testcontainers | 2.x, managed by Spring Boot | No pin and no BOM import any more — see Key technical decisions |
+| springdoc-openapi | 3.2.0, pinned | Built against Spring Boot 4.1.2; moves with Spring Boot, not independently |
 
 ## General architecture
 
@@ -108,11 +108,11 @@ compose-prod.yml          production — only Caddy is internet-facing
 
 ## Key technical decisions
 
-**Testcontainers pinned to 1.21.4** (`service/{auth-service,history-service}/pom.xml`, explicit `testcontainers-bom` import in `<dependencyManagement>` so Dependabot can see and bump the property — an override with no `<version>` tag reference would be invisible to it):
+**Spring Boot 4.1.2, Spring Cloud 2025.1.4 on the gateway.** Boot 3.x is past its OSS end-of-life (3.5, the last line, ended 2026-06-30), so security fixes for Tomcat, Spring Security, Jackson and the rest land in 4.x only. The move was prepared on 3.5 (OpenAPI snapshot, pinned wire formats, ArchUnit, deprecations cleared; see [boot-4-migration.md](boot-4-migration.md)) so that the jump itself could be checked mechanically: `docs/openapi/*.json` regenerated **unchanged** on 4.1.2, so Jackson 3 and springdoc 3 changed nothing a client can see, and the date formats the controller tests pin did not move.
 
-> Ahead of the 1.19.8 Spring Boot 3.3.4 used to manage. That release ships docker-java 3.3.6, which asks the daemon for Docker API 1.32; recent Docker Engine and Docker Desktop builds refuse anything that old and answer 400, which Testcontainers reports as the misleading "Could not find a valid Docker environment" — so the integration tests fail on an up-to-date local Docker while older CI runners still accept 1.32 and pass. Verified: 1.20.4 is still refused, 1.21.4 negotiates fine. Unrelated to the Spring Boot 3.5.16 bump below, so left untouched by it.
-
-**Spring Boot bumped 3.3.4 → 3.5.16, deliberately not straight to 4.1.x.** A Trivy scan added to CI found 153 HIGH/CRITICAL vulnerabilities, entirely in libraries Spring Boot's own BOM manages (Tomcat, Netty, Spring Framework, Spring Security, Jackson, Logback, the Postgres driver) — 3.3.4 had gone stale, and in fact every Boot 3.x line is now past its own OSS end-of-life (3.5, the last one, ended 2026-06-30). 3.5.16 is the last Boot 3.x patch: a same-major bump that resets those managed versions to current without any breaking changes, and should clear the large majority of those 153 findings. The real fix, Boot 4.1.x (the currently-supported line), is a major-version jump — a two-train Spring Cloud move (`spring-cloud.version` 2023.0.3 → 2025.0.3 here, but 4.x needs the *next* train, 2025.1.x), springdoc's major now locked to Boot's (2.6.0 → 2.9.1 here; Boot 4 needs springdoc 3.x), and Jackson 3's default date serialization changing the API's wire format (epoch timestamps → ISO-8601 strings) in a way that could affect the frontend — deliberately deferred to its own planning pass rather than bundled in under the pressure of a red CI gate.
+> The Boot 3-era pins are gone because the BOM now manages current versions: Testcontainers (the 1.21.4 pin existed only because Boot 3.3's managed 1.19.8 spoke a Docker API version modern Engines refuse; 2.x is what Boot 4 manages, and CI is what confirms it against its Docker), commons-lang3, Tomcat, the Postgres driver, log4j and Netty. What stays pinned is deliberate: springdoc (one Spring Boot line per release), jjwt, and `bcprov-jdk18on` in the gateway (transitive via spring-cloud-commons, CVE-2026-8763).
+>
+> **The gateway pairing is not one the Spring team lists.** Spring Cloud has no train built on Boot 4.1 (2025.1.x targets 4.0.x; 2026.0, for Boot 4.2, is at RC2). 2025.1.4 on Boot 4.1.2 compiles and passes the gateway's whole suite and its coverage gate, and it can: Boot 4.1.2 still ships Spring Framework 7.0.x, the Framework line that train is built on. That is evidence, not a guarantee. The way out is to move `spring-cloud.version` to 2026.0 when it is released (and Boot to 4.2 with it); Dependabot is told not to propose that train earlier.
 
 **`ApiEnvelope<T>` and the exception hierarchy are duplicated per service, not extracted to a shared library.** Each service also has its own `RequestCorrelationFilter` (identical implementation, minting `REQ_<8hex>` and setting `X-Request-Id`) rather than a shared one. This trades DRY for each service being independently deployable/buildable with zero shared-library version-skew risk — a real cost (identical bug fixes must be applied 2-3 times) accepted deliberately, not an oversight.
 
