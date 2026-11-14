@@ -3,6 +3,7 @@ package centuryroad.auth.config;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.core.env.Environment;
 import org.springframework.security.config.annotation.method.configuration.EnableMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -67,8 +68,29 @@ public class SecurityConfig {
         return http.build();
     }
 
+    /**
+     * The work factor of every new password hash: each step doubles what one guess costs an
+     * attacker who has the table (and costs a login the same). 12 is about a quarter of a second
+     * on current hardware; Spring's own default, 10, is OWASP's floor.
+     */
+    public static final int DEFAULT_BCRYPT_STRENGTH = 12;
+
+    /** Below this only the test profile may go: it trades safety for the speed of the suite. */
+    static final int MIN_BCRYPT_STRENGTH = 10;
+
+    /**
+     * BCrypt writes its work factor and a fresh random salt inside every hash, so a hash made at
+     * another factor still verifies, and raising this number only applies to hashes made from now on:
+     * AuthService.login re-hashes an older one the next time its owner signs in.
+     */
     @Bean
-    public PasswordEncoder passwordEncoder() {
-        return new BCryptPasswordEncoder();
+    public PasswordEncoder passwordEncoder(
+            @Value("${security.password.bcrypt-strength:" + DEFAULT_BCRYPT_STRENGTH + "}") int strength,
+            Environment environment) {
+        if (strength < MIN_BCRYPT_STRENGTH && !environment.matchesProfiles("test")) {
+            throw new IllegalStateException("security.password.bcrypt-strength is " + strength
+                    + ": below " + MIN_BCRYPT_STRENGTH + " only the test profile may go");
+        }
+        return new BCryptPasswordEncoder(strength);
     }
 }

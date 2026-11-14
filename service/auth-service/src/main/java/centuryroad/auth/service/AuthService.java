@@ -56,6 +56,10 @@ public class AuthService {
      * registered. They also cost the same: one BCrypt comparison is made even when
      * there is no account to compare with, against a hash made at startup, because
      * skipping it would make the unknown-email case answer measurably faster.
+     *
+     * A hash made at a lower work factor than the one configured now is replaced on the way out:
+     * this is the only moment the plain password is available, so it is where the upgrade has to
+     * happen. Only after the password has been proven right, never for a refused login.
      */
     public User login(String email, String password) {
         Optional<User> found = userRepository.findByEmail(email).filter(User::isEnabled);
@@ -66,7 +70,12 @@ public class AuthService {
         if (found.isEmpty() || !passwordMatches) {
             throw new AuthenticationFailedException(REFUSED);
         }
-        return found.get();
+        User user = found.get();
+        if (passwordEncoder.upgradeEncoding(user.getPassword())) {
+            user.setPassword(passwordEncoder.encode(password));
+            userRepository.save(user);
+        }
+        return user;
     }
 
     @Transactional

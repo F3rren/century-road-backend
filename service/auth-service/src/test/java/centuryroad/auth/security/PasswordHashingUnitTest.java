@@ -5,9 +5,11 @@ import centuryroad.auth.config.ApiAuthenticationEntryPoint;
 import centuryroad.auth.config.JwtAuthFilter;
 import centuryroad.auth.config.SecurityConfig;
 import org.junit.jupiter.api.Test;
+import org.springframework.mock.env.MockEnvironment;
 import org.springframework.security.crypto.password.PasswordEncoder;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 
 /**
@@ -21,8 +23,12 @@ class PasswordHashingUnitTest {
 
     private static final String PASSWORD = "correct horse battery staple";
 
-    private final PasswordEncoder encoder = new SecurityConfig(mock(JwtAuthFilter.class),
-            mock(ApiAuthenticationEntryPoint.class), mock(ApiAccessDeniedHandler.class), false).passwordEncoder();
+    private final SecurityConfig config = new SecurityConfig(mock(JwtAuthFilter.class),
+            mock(ApiAuthenticationEntryPoint.class), mock(ApiAccessDeniedHandler.class), false);
+
+    /** What the application builds when nothing is configured: the default, outside the test profile. */
+    private final PasswordEncoder encoder = config.passwordEncoder(SecurityConfig.DEFAULT_BCRYPT_STRENGTH,
+            new MockEnvironment());
 
     @Test
     void theSamePasswordHashedTwiceGivesTwoDifferentHashesThatBothMatch() {
@@ -46,10 +52,22 @@ class PasswordHashingUnitTest {
     }
 
     @Test
-    void theWorkFactorIsAtLeastTen() {
-        // OWASP's floor for bcrypt: each step doubles what an attacker pays per guess.
+    void theDefaultWorkFactorIsTwelve() {
+        // Each step doubles what an attacker pays per guess (and what a login costs).
         int cost = Integer.parseInt(encoder.encode(PASSWORD).substring(4, 6));
 
-        assertThat(cost).isGreaterThanOrEqualTo(10);
+        assertThat(SecurityConfig.DEFAULT_BCRYPT_STRENGTH).isEqualTo(12);
+        assertThat(cost).isEqualTo(12);
+    }
+
+    @Test
+    void aWeakerFactorIsRefusedUnlessTheTestProfileIsActive() {
+        assertThatThrownBy(() -> config.passwordEncoder(4, new MockEnvironment()))
+                .isInstanceOf(IllegalStateException.class)
+                .hasMessageContaining("bcrypt-strength");
+
+        MockEnvironment test = new MockEnvironment();
+        test.setActiveProfiles("test");
+        assertThat(config.passwordEncoder(4, test).encode(PASSWORD)).startsWith("$2a$04$");
     }
 }

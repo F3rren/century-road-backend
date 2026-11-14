@@ -18,6 +18,12 @@ bootstrap:
     email: ""
     password: ""
 
+# BCrypt's minimum, so the suite does not pay a quarter of a second per hash. The production default is
+# 12 and the application refuses to start below 10 under any other profile (SecurityConfig).
+security:
+  password:
+    bcrypt-strength: 4
+
 spring:
   jpa:
     hibernate:

@@ -1128,7 +1128,7 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    #  99 tests
+cd service/auth-service    && ./mvnw test    # 103 tests
 cd service/gateway         && ./mvnw test    #  47 tests
 cd service/history-service && ./mvnw test    # 451 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network
