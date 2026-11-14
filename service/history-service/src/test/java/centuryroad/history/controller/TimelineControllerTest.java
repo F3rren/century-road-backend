@@ -3,9 +3,11 @@ package centuryroad.history.controller;
 import centuryroad.history.dto.CountryEventCount;
 import centuryroad.history.model.TimelineEvent;
 import centuryroad.history.repository.TimelineEventRepository;
+import centuryroad.history.service.TimelineService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.context.annotation.Import;
 import org.springframework.test.context.bean.override.mockito.MockitoBean;
 import org.springframework.test.context.ActiveProfiles;
 import org.springframework.test.web.servlet.MockMvc;
@@ -27,6 +29,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 /** The HTTP contract of the country index: envelope shape, defaults, caching, and that a bad
  *  request is refused before the database is touched. */
 @WebMvcTest(TimelineController.class)
+@Import(TimelineService.class)
 @ActiveProfiles("test")
 class TimelineControllerTest {
 

@@ -6,7 +6,7 @@ import centuryroad.history.dto.RandomEventResponse;
 import centuryroad.history.dto.SamePeriodResponse;
 import centuryroad.history.query.RandomEventQuery;
 import centuryroad.history.query.SamePeriodQuery;
-import centuryroad.history.repository.TimelineEventRepository;
+import centuryroad.history.service.TimelineService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.Parameter;
 import io.swagger.v3.oas.annotations.media.Content;
@@ -38,10 +38,10 @@ public class DiscoveryController {
 
     private static final CacheControl SAME_PERIOD_CACHE = CacheControl.maxAge(Duration.ofMinutes(5)).cachePublic();
 
-    private final TimelineEventRepository repository;
+    private final TimelineService timeline;
 
-    public DiscoveryController(TimelineEventRepository repository) {
-        this.repository = repository;
+    public DiscoveryController(TimelineService timeline) {
+        this.timeline = timeline;
     }
 
     @Operation(summary = "\"Sorprendimi\": a random event",
@@ -69,10 +69,7 @@ public class DiscoveryController {
             @Parameter(description = "Only events up to this year, inclusive.")
             @RequestParam(required = false) Integer toYear) {
         RandomEventQuery query = RandomEventQuery.of(lang, country, fromYear, toYear);
-        String language = query.language().code();
-        var row = query.countryCode() == null
-                ? repository.randomEvent(language, query.years().from(), query.years().to())
-                : repository.randomEventIn(language, query.countryCode(), query.years().from(), query.years().to());
+        var row = timeline.randomEvent(query);
         return ResponseEntity.ok().cacheControl(CacheControl.noStore()).body(ApiEnvelope.success(null,
                 RandomEventResponse.from(query.language(), row), RequestCorrelationFilter.current()));
     }
@@ -104,7 +101,7 @@ public class DiscoveryController {
             @Parameter(description = "How many events of each country to show, 1 to 10.", schema = @Schema(type = "integer",
                     minimum = "1", maximum = "10", defaultValue = "3")) @RequestParam(required = false) Integer perCountry) {
         SamePeriodQuery query = SamePeriodQuery.of(year, span, lang, excludeCountry, perCountry);
-        var rows = repository.inYears(query.language().code(), query.fromYear(), query.toYear());
+        var rows = timeline.inYears(query);
         return ResponseEntity.ok().cacheControl(SAME_PERIOD_CACHE).body(ApiEnvelope.success(null,
                 SamePeriodResponse.from(query, rows), RequestCorrelationFilter.current()));
     }
