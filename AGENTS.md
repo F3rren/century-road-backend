@@ -2,7 +2,7 @@
 
 Century Road backend: 3 independent Spring Boot services (`auth-service`, `gateway`, `history-service`) behind a gateway, no shared aggregator build. The frontend (React SPA) lives in the sibling repo [century-road-frontend](https://github.com/F3rren/century-road-frontend).
 
-**Stack**: Spring Boot 3.5.16, Java 21, Maven wrapper per service, PostgreSQL + Flyway (one database per stateful service, same Postgres container — see `docs/architecture.md`), Testcontainers **pinned to 1.21.4** (don't bump back to Boot's managed 1.19.8 — see the pom.xml comment / `docs/architecture.md`'s ADR, it breaks against modern Docker Engine).
+**Stack**: Spring Boot 4.1.2 (Jackson 3, Spring Framework 7; the gateway runs Spring Cloud 2025.1.4, see `docs/boot-4-migration.md`), Java 21, Maven wrapper per service, PostgreSQL + Flyway (one database per stateful service, same Postgres container — see `docs/architecture.md`), Testcontainers as managed by Boot 4 (2.x; the old 1.21.4 pin and its BOM import are gone — see `docs/architecture.md`).
 
 **Commands** (run from inside the relevant `service/<name>/`):
 ```
@@ -17,6 +17,6 @@ Test counts as of this writing: auth-service 96, gateway 47 (no Docker needed), 
 
 **Never touch**: already-applied Flyway migration files (write a new versioned one instead), `.env`/`.env.dev` secrets, `jwt.secret`, `compose-prod.yml` outside its guarded start flow.
 
-**Ask before**: any DB schema change, a new dependency (especially anything touching `testcontainers.version`), a new microservice, CORS origin changes, login rate-limit threshold changes.
+**Ask before**: any DB schema change, a new dependency (especially a version override of anything Spring Boot manages: Boot 4 manages current ones, and an override is a decision), a new microservice, CORS origin changes, login rate-limit threshold changes.
 
 **References**: [architecture.md](docs/architecture.md) · [README.md](README.md) · frontend's [architecture.md](https://github.com/F3rren/century-road-frontend/blob/main/docs/architecture.md) / [DESIGN.md](https://github.com/F3rren/century-road-frontend/blob/main/DESIGN.md) / [PRODUCT.md](https://github.com/F3rren/century-road-frontend/blob/main/PRODUCT.md)

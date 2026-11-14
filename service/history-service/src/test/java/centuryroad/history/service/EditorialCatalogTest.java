@@ -4,9 +4,9 @@ import centuryroad.history.model.DatePrecision;
 import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import centuryroad.history.model.Topic;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ArrayNode;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.node.ArrayNode;
+import tools.jackson.databind.node.ObjectNode;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.io.TempDir;
@@ -89,7 +89,7 @@ class EditorialCatalogTest {
      * (which the catalog refuses anyway) goes in the default folder, so the file is never written outside root.
      */
     private static String folderOfTopic(ObjectNode path) {
-        String folder = path.path("topic").asText("").toLowerCase().replace('_', '-');
+        String folder = path.path("topic").asString("").toLowerCase().replace('_', '-');
         return Topic.ofFolder(folder).isPresent() ? folder : FOLDER;
     }
 

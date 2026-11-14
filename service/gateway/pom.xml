@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>3.5.16</version>
+		<version>4.1.2</version>
 		<relativePath />
 	</parent>
 	<groupId>com.centuryroad</groupId>
@@ -17,24 +17,15 @@
 
 	<properties>
 		<java.version>21</java.version>
-		<!-- The 2025.0.x ("Northfields") train pairs with Spring Boot 3.5.x - 2025.0.0 was built
-		     against 3.5.0, 2025.0.1 against 3.5.8. 2025.1.x is the next train, for Spring Boot 4;
-		     do not take it without also moving Spring Boot to 4.x. -->
-		<spring-cloud.version>2025.0.3</spring-cloud.version>
+		<!-- 2025.1.x ("Oakwood") is the Spring Cloud train for Spring Boot 4. There is no train
+		     built on 4.1 yet (2026.0 is at RC2 and targets Boot 4.2), so 4.1.2 + 2025.1.4 is a
+		     pairing the Spring team does not list: see docs/boot-4-migration.md for what was
+		     checked and for the day this moves to 2026.0. -->
+		<spring-cloud.version>2025.1.4</spring-cloud.version>
 
-		<!-- 2.9.1 is built against Spring Boot 3.5.14 - the line that matches our 3.5.16. Raise
-		     it together with Spring Boot, not on its own (dependabot.yml ignores its minors). -->
-		<springdoc.version>2.9.1</springdoc.version>
-
-		<!-- Spring Boot 3.3.4 manages commons-lang3 at 3.14.0, which has GHSA-j288-q9x7-2f5v
-		     (uncontrolled recursion, fixed in 3.18.0). Only springdoc's swagger-core brings it in
-		     here. Drop this once Spring Boot manages 3.18 or later. -->
-		<commons-lang3.version>3.18.0</commons-lang3.version>
-
-		<!-- Spring Boot 3.5.16 manages 4.1.135.Final, which has CVE-2026-75595 (CRITICAL) plus
-		     several other netty-codec-http/http2/dns findings, all fixed by 4.1.137.Final;
-		     4.1.138.Final is the latest patch of that line. Drop once Spring Boot manages it. -->
-		<netty.version>4.1.138.Final</netty.version>
+		<!-- 3.2.0 is built against Spring Boot 4.1.2 - the line that matches ours. Raise it together
+		     with Spring Boot, not on its own (dependabot.yml ignores its minors). -->
+		<springdoc.version>3.2.0</springdoc.version>
 	</properties>
 
 	<dependencyManagement>

@@ -1,8 +1,8 @@
 package centuryroad.history.service;
 
 import centuryroad.history.model.Coordinates;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
@@ -46,7 +46,7 @@ public class CountryLocator {
     CountryLocator(JsonNode featureCollection) {
         List<Shape> loaded = new ArrayList<>();
         for (JsonNode feature : featureCollection.path("features")) {
-            String code = feature.path("properties").path("iso_a2").asText("");
+            String code = feature.path("properties").path("iso_a2").asString("");
             if (code.isEmpty() || code.equals("-99")) {
                 continue;
             }
@@ -66,7 +66,7 @@ public class CountryLocator {
     private static Path2D.Double outline(JsonNode geometry) {
         Path2D.Double path = new Path2D.Double(Path2D.WIND_EVEN_ODD);
         JsonNode coordinates = geometry.path("coordinates");
-        Iterable<JsonNode> polygons = "MultiPolygon".equals(geometry.path("type").asText())
+        Iterable<JsonNode> polygons = "MultiPolygon".equals(geometry.path("type").asString())
                 ? coordinates
                 : List.of(coordinates);
         for (JsonNode polygon : polygons) {

@@ -3,8 +3,9 @@ package centuryroad.history;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.ActiveProfiles;
@@ -37,6 +38,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * registered with the client, the timer by one Wikipedia call, and the stale counter by a
  * refresh that fails while an old copy is still held.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "history.cache.fresh-ttl=1ms")
 @ActiveProfiles("test")

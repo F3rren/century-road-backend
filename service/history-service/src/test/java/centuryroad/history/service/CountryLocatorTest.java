@@ -1,9 +1,9 @@
 package centuryroad.history.service;
 
 import centuryroad.history.model.Coordinates;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
+import tools.jackson.databind.node.ObjectNode;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.ClassPathResource;
 
@@ -66,7 +66,7 @@ class CountryLocatorTest {
         JsonNode file = read();
         ObjectNode onlySouthAfrica = MAPPER.createObjectNode();
         onlySouthAfrica.putArray("features").add(StreamSupport.stream(file.path("features").spliterator(), false)
-                .filter(f -> f.path("properties").path("iso_a2").asText().equals("ZA"))
+                .filter(f -> f.path("properties").path("iso_a2").asString().equals("ZA"))
                 .findFirst().orElseThrow());
         CountryLocator southAfrica = new CountryLocator(onlySouthAfrica);
 

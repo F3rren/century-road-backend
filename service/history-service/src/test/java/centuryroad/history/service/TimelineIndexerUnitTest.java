@@ -13,7 +13,7 @@ import centuryroad.history.model.TimelineEvent;
 import centuryroad.history.repository.TimelineEventRepository;
 import centuryroad.history.wikipedia.UpstreamCooldown;
 import centuryroad.history.wikipedia.WikipediaFeedClient;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.mockito.ArgumentCaptor;
 import org.springframework.dao.DataAccessResourceFailureException;

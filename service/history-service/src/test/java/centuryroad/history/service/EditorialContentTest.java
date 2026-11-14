@@ -7,7 +7,7 @@ import centuryroad.history.model.GuidedPath;
 import centuryroad.history.model.Insight;
 import centuryroad.history.model.PathStop;
 import centuryroad.history.model.StartHerePick;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
 

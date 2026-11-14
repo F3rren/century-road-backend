@@ -33,7 +33,7 @@ class XForwardedOnlyHeaderTransformerTest {
 				callerThroughTheProxy().header("Forwarded", "for=7.7.7.7").build());
 
 		assertThat(remoteHostOf(result)).isEqualTo(PROXY_ADDRESS);
-		assertThat(result.getHeaders()).doesNotContainKey("Forwarded");
+		assertThat(result.getHeaders().containsHeader("Forwarded")).isFalse();
 	}
 
 	@Test
@@ -52,7 +52,7 @@ class XForwardedOnlyHeaderTransformerTest {
 				.build());
 
 		assertThat(remoteHostOf(result)).isEqualTo("9.9.9.9");
-		assertThat(result.getHeaders()).doesNotContainKey("Forwarded");
+		assertThat(result.getHeaders().containsHeader("Forwarded")).isFalse();
 	}
 
 	@Test

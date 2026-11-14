@@ -8,7 +8,7 @@ import centuryroad.history.model.ImageRef;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.PageRef;
 import centuryroad.history.model.Section;
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 
 import java.time.MonthDay;
 import java.util.ArrayList;
@@ -146,7 +146,7 @@ final class WikimediaFeedParser {
 
     private static String text(JsonNode parent, String field) {
         JsonNode node = parent.path(field);
-        return node.isTextual() && !node.asText().isBlank() ? node.asText().strip() : null;
+        return node.isString() && !node.asString().isBlank() ? node.asString().strip() : null;
     }
 
     private static String underscoresToSpaces(String value) {

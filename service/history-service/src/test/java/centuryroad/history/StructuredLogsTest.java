@@ -1,17 +1,18 @@
 package centuryroad.history;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.logging.LoggingSystem;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.boot.test.system.CapturedOutput;
 import org.springframework.boot.test.system.OutputCaptureExtension;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.ResponseEntity;
 import org.springframework.test.context.ActiveProfiles;
@@ -27,6 +28,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * it as it found it: Spring Boot starts logging once per JVM, with the first context's configuration, so
  * without that this would see whatever format an earlier test class began with (see RequestIdInLogsTest).
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "logging.structured.format.console=ecs")
 @ActiveProfiles("test")
@@ -78,8 +80,8 @@ class StructuredLogsTest {
         }
 
         assertThat(line).as("a JSON log line about Wikipedia answering 500").isNotNull();
-        assertThat(line.path("requestId").asText()).isEqualTo(requestId);
-        assertThat(line.path("message").asText()).contains("answered 500");
-        assertThat(line.path("service").path("name").asText()).isEqualTo("history-service");
+        assertThat(line.path("requestId").asString()).isEqualTo(requestId);
+        assertThat(line.path("message").asString()).contains("answered 500");
+        assertThat(line.path("service").path("name").asString()).isEqualTo("history-service");
     }
 }
