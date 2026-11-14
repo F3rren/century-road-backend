@@ -16,10 +16,14 @@ import java.util.Optional;
 
 /**
  * Issues, rotates and revokes refresh tokens. The raw value is handed to the
- * caller
- * exactly once, at issuing time, and never again - only its SHA-256 hash is
- * stored,
- * exactly like User.password.
+ * caller exactly once, at issuing time, and never again - only its SHA-256 hash
+ * is stored.
+ *
+ * This is deliberately not how User.password is stored (BCrypt: salted and slow,
+ * because a person chooses a password and it can be guessed). A refresh token is
+ * 256 random bits from SecureRandom, so there is nothing to guess: a salt or a
+ * slow hash would add nothing, and the lookup by hash needs the same token to
+ * always give the same hash, which a salted hash would not.
  */
 @Service
 public class RefreshTokenService {
