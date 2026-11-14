@@ -1,12 +1,13 @@
 package centuryroad.history;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -29,6 +30,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * has and fails for any that the document does not describe, so a new endpoint cannot be
  * added without its documentation.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT,
         properties = "springdoc.api-docs.enabled=true")
 @ActiveProfiles("test")
@@ -117,7 +119,7 @@ class OpenApiDocsTest {
         assertThat(operation.path("summary").asText()).isNotBlank();
         assertThat(parameter(operation, "month").path("in").asText()).isEqualTo("path");
         assertThat(parameter(operation, "day").path("in").asText()).isEqualTo("path");
-        assertThat(operation.path("responses").fieldNames()).toIterable()
+        assertThat(operation.path("responses").propertyNames())
                 .contains("200", "400", "502", "503");
     }
 
@@ -149,7 +151,7 @@ class OpenApiDocsTest {
         JsonNode responses = spec().path("paths").path(DAY_PATH).path("get").path("responses");
 
         for (String code : new String[]{"200", "400", "502", "503"}) {
-            assertThat(responses.path(code).path("content").fieldNames()).toIterable()
+            assertThat(responses.path(code).path("content").propertyNames())
                     .as("media types of the %s answer", code).containsExactly("application/json");
         }
     }
@@ -172,7 +174,7 @@ class OpenApiDocsTest {
 
         assertThat(ref).startsWith("#/components/schemas/");
         JsonNode envelope = spec.path("components").path("schemas").path(ref.substring(ref.lastIndexOf('/') + 1));
-        assertThat(envelope.path("properties").fieldNames()).toIterable().contains("success", "data", "sessionId");
+        assertThat(envelope.path("properties").propertyNames()).contains("success", "data", "sessionId");
     }
 
     @Test

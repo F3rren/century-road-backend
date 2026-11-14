@@ -10,7 +10,7 @@ import centuryroad.history.exception.UpstreamUnavailableException;
 import centuryroad.history.model.DayFeed;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.Section;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import io.micrometer.core.instrument.simple.SimpleMeterRegistry;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;

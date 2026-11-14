@@ -6,8 +6,8 @@ import centuryroad.history.dto.ReportReceipt;
 import centuryroad.history.dto.ReportRequest;
 import centuryroad.history.exception.InvalidRequestException;
 import centuryroad.history.service.ReportService;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.ObjectMapper;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.media.Content;
 import io.swagger.v3.oas.annotations.media.Schema;
@@ -82,7 +82,7 @@ public class ReportsController {
         }
         try {
             return mapper.readValue(body, ReportRequest.class);
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             // What the parser says can quote the body back, so it stays out of the answer.
             throw new InvalidRequestException("BAD_REQUEST", "report body is not valid JSON of the expected shape",
                     "La richiesta non e' valida.");

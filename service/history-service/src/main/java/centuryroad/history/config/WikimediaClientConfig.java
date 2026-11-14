@@ -4,7 +4,7 @@ import centuryroad.history.wikipedia.ResilientWikipediaFeedClient;
 import centuryroad.history.wikipedia.UpstreamCooldown;
 import centuryroad.history.wikipedia.WikimediaFeedHttpClient;
 import centuryroad.history.wikipedia.WikipediaFeedClient;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.ObjectMapper;
 import io.github.resilience4j.bulkhead.Bulkhead;
 import io.github.resilience4j.bulkhead.BulkheadConfig;
 import io.github.resilience4j.bulkhead.BulkheadRegistry;

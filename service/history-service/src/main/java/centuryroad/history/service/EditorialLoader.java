@@ -1,8 +1,10 @@
 package centuryroad.history.service;
 
 import centuryroad.history.model.StartHere;
-import com.fasterxml.jackson.databind.DeserializationFeature;
-import com.fasterxml.jackson.databind.json.JsonMapper;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.DeserializationFeature;
+import tools.jackson.databind.cfg.EnumFeature;
+import tools.jackson.databind.json.JsonMapper;
 import org.springframework.core.io.Resource;
 import org.springframework.core.io.support.ResourcePatternResolver;
 
@@ -44,7 +46,7 @@ final class EditorialLoader {
         this.mapper = JsonMapper.builder()
                 .findAndAddModules()
                 .enable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES)
-                .enable(DeserializationFeature.FAIL_ON_NUMBERS_FOR_ENUMS)
+                .enable(EnumFeature.FAIL_ON_NUMBERS_FOR_ENUMS)
                 .build();
     }
 
@@ -70,7 +72,7 @@ final class EditorialLoader {
                 } else {
                     loaded.add(new Loaded<>(file, folderOf(resource), value));
                 }
-            } catch (IOException e) {
+            } catch (IOException | JacksonException e) {
                 problems.add(file + ": cannot be read (" + e.getMessage() + ")");
             }
         }
@@ -90,7 +92,7 @@ final class EditorialLoader {
                 problems.add("start-here.json: is empty");
             }
             return Optional.ofNullable(file);
-        } catch (IOException e) {
+        } catch (IOException | JacksonException e) {
             problems.add("start-here.json: cannot be read (" + e.getMessage() + ")");
             return Optional.empty();
         }

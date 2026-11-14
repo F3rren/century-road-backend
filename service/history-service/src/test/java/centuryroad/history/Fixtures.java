@@ -1,7 +1,7 @@
 package centuryroad.history;
 
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -33,10 +33,6 @@ public final class Fixtures {
     }
 
     public static JsonNode json(String name) {
-        try {
-            return MAPPER.readTree(text(name));
-        } catch (IOException e) {
-            throw new UncheckedIOException(e);
-        }
+        return MAPPER.readTree(text(name));
     }
 }

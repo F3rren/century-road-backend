@@ -7,9 +7,9 @@ import centuryroad.history.exception.UpstreamRateLimitedException;
 import centuryroad.history.exception.UpstreamUnavailableException;
 import centuryroad.history.model.DayFeed;
 import centuryroad.history.model.Language;
-import com.fasterxml.jackson.core.JsonProcessingException;
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
+import tools.jackson.core.JacksonException;
+import tools.jackson.databind.JsonNode;
+import tools.jackson.databind.ObjectMapper;
 import io.micrometer.core.instrument.MeterRegistry;
 import io.micrometer.core.instrument.Timer;
 import lombok.extern.slf4j.Slf4j;
@@ -139,7 +139,7 @@ public class WikimediaFeedHttpClient implements WikipediaFeedClient {
         try {
             JsonNode root = objectMapper.readTree(body);
             return WikimediaFeedParser.parse(root, language, day);
-        } catch (JsonProcessingException e) {
+        } catch (JacksonException e) {
             throw new UpstreamBadResponseException("Response is not valid JSON", e);
         }
     }

@@ -2,8 +2,9 @@ package centuryroad.history;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpStatus;
 import org.springframework.test.context.ActiveProfiles;
@@ -14,6 +15,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * What a deployment gets unless somebody switches documentation on: nothing. The gateway is
  * public in production, so an API description is something to enable on purpose.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @Import(TestcontainersConfiguration.class)

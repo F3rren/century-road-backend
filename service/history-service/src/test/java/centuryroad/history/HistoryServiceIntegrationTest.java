@@ -6,8 +6,9 @@ import com.jayway.jsonpath.JsonPath;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.resttestclient.autoconfigure.AutoConfigureTestRestTemplate;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.boot.test.web.client.TestRestTemplate;
+import org.springframework.boot.resttestclient.TestRestTemplate;
 import org.springframework.context.annotation.Import;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
@@ -30,6 +31,7 @@ import static org.assertj.core.api.Assertions.assertThat;
  * The cache lives as long as the context, so a test that needs Wikipedia to be asked afresh
  * uses a day of its own.
  */
+@AutoConfigureTestRestTemplate
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.RANDOM_PORT)
 @ActiveProfiles("test")
 @Import({NoRetryClientConfiguration.class, TestcontainersConfiguration.class})

@@ -8,7 +8,7 @@ import centuryroad.history.model.ImageRef;
 import centuryroad.history.model.Language;
 import centuryroad.history.model.PageRef;
 import centuryroad.history.model.Section;
-import com.fasterxml.jackson.databind.JsonNode;
+import tools.jackson.databind.JsonNode;
 
 import java.time.MonthDay;
 import java.util.ArrayList;
