@@ -43,10 +43,24 @@ management:
       export:
         enabled: true
 
+# Every key below is bound and validated by AuthProperties: a missing or out-of-range value stops the
+# service at startup with the property named.
 jwt:
   # Neither the signing secret nor token lifetime has a fallback.
   secret: ${JWT_SECRET}
   expiration-ms: ${JWT_EXPIRATION_MS}
+
+# Login attempts per ip|email within one window (LoginAttemptLimiter).
+auth:
+  rate-limit:
+    max-attempts: 5
+    window-ms: 60000
+
+# BCrypt's work factor for new password hashes. Below 10 the service refuses to start, except under
+# the test profile (SecurityConfig); an older hash is upgraded at its owner's next login.
+security:
+  password:
+    bcrypt-strength: 12
 
 bootstrap:
   admin:

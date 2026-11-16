@@ -1,7 +1,7 @@
 package centuryroad.auth.service;
 
+import centuryroad.auth.config.AuthProperties;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.concurrent.ConcurrentHashMap;
@@ -36,9 +36,11 @@ public class LoginAttemptLimiter {
     private final ConcurrentHashMap<String, Attempts> attemptsByKey = new ConcurrentHashMap<>();
 
     @Autowired
-    public LoginAttemptLimiter(
-            @Value("${auth.rate-limit.max-attempts:5}") int maxAttempts,
-            @Value("${auth.rate-limit.window-ms:60000}") long windowMs) {
+    public LoginAttemptLimiter(AuthProperties.RateLimit rateLimit) {
+        this(rateLimit.maxAttempts(), rateLimit.windowMs());
+    }
+
+    LoginAttemptLimiter(int maxAttempts, long windowMs) {
         this(maxAttempts, windowMs, System::currentTimeMillis);
     }
 

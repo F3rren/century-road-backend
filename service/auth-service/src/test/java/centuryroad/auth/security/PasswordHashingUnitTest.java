@@ -2,11 +2,16 @@ package centuryroad.auth.security;
 
 import centuryroad.auth.config.ApiAccessDeniedHandler;
 import centuryroad.auth.config.ApiAuthenticationEntryPoint;
+import centuryroad.auth.config.AuthProperties;
 import centuryroad.auth.config.JwtAuthFilter;
 import centuryroad.auth.config.SecurityConfig;
 import org.junit.jupiter.api.Test;
+import org.springframework.boot.env.YamlPropertySourceLoader;
+import org.springframework.core.io.ClassPathResource;
 import org.springframework.mock.env.MockEnvironment;
 import org.springframework.security.crypto.password.PasswordEncoder;
+
+import java.io.IOException;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
@@ -26,9 +31,21 @@ class PasswordHashingUnitTest {
     private final SecurityConfig config = new SecurityConfig(mock(JwtAuthFilter.class),
             mock(ApiAuthenticationEntryPoint.class), mock(ApiAccessDeniedHandler.class), false);
 
-    /** What the application builds when nothing is configured: the default, outside the test profile. */
-    private final PasswordEncoder encoder = config.passwordEncoder(SecurityConfig.DEFAULT_BCRYPT_STRENGTH,
-            new MockEnvironment());
+    /** What the application builds with the shipped setting, outside the test profile. */
+    private final PasswordEncoder encoder = config.passwordEncoder(
+            new AuthProperties.PasswordHashing(shippedStrength()), new MockEnvironment());
+
+    /** security.password.bcrypt-strength as application.yml ships it. */
+    private static int shippedStrength() {
+        try {
+            Object value = new YamlPropertySourceLoader()
+                    .load("application", new ClassPathResource("application.yml")).get(0)
+                    .getProperty("security.password.bcrypt-strength");
+            return Integer.parseInt(String.valueOf(value));
+        } catch (IOException e) {
+            throw new IllegalStateException(e);
+        }
+    }
 
     @Test
     void theSamePasswordHashedTwiceGivesTwoDifferentHashesThatBothMatch() {
@@ -52,22 +69,22 @@ class PasswordHashingUnitTest {
     }
 
     @Test
-    void theDefaultWorkFactorIsTwelve() {
+    void theShippedWorkFactorIsTwelve() {
         // Each step doubles what an attacker pays per guess (and what a login costs).
         int cost = Integer.parseInt(encoder.encode(PASSWORD).substring(4, 6));
 
-        assertThat(SecurityConfig.DEFAULT_BCRYPT_STRENGTH).isEqualTo(12);
+        assertThat(shippedStrength()).isEqualTo(12);
         assertThat(cost).isEqualTo(12);
     }
 
     @Test
     void aWeakerFactorIsRefusedUnlessTheTestProfileIsActive() {
-        assertThatThrownBy(() -> config.passwordEncoder(4, new MockEnvironment()))
+        assertThatThrownBy(() -> config.passwordEncoder(new AuthProperties.PasswordHashing(4), new MockEnvironment()))
                 .isInstanceOf(IllegalStateException.class)
                 .hasMessageContaining("bcrypt-strength");
 
         MockEnvironment test = new MockEnvironment();
         test.setActiveProfiles("test");
-        assertThat(config.passwordEncoder(4, test).encode(PASSWORD)).startsWith("$2a$04$");
+        assertThat(config.passwordEncoder(new AuthProperties.PasswordHashing(4), test).encode(PASSWORD)).startsWith("$2a$04$");
     }
 }

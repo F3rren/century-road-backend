@@ -23,11 +23,29 @@ spring:
             connect-timeout: 2000
             response-timeout: 10s
 
+          # The two routes, written once for every profile. Requests are forwarded without stripping
+          # their /api/... paths. The addresses come from century-road.* below.
+          routes:
+            - id: auth-service
+              uri: ${century-road.auth-service-uri}
+              predicates:
+                - "Path=/api/auth/**,/api/admin/users/**,/api/me/**"
+            - id: history-service
+              uri: ${century-road.history-service-uri}
+              predicates:
+                - "Path=/api/history/**"
+              metadata:
+                # Milliseconds, and the longest history-service itself can take: primary and fallback
+                # language loaded one after the other, each up to ~14s (connect 2s + read 5s, two
+                # attempts, 300ms apart, plus the bulkhead's 1s wait). A flat 10s would turn answers
+                # it was about to give into 504s. Keep it above that figure if those timeouts grow.
+                response-timeout: 30000
           # The gateway handles preflight OPTIONS requests for the frontend.
           # Authentication uses a bearer token, not a browser-attached cookie.
           globalcors:
             cors-configurations:
               '[/**]':
+                allowedOrigins: ${century-road.frontend-origin}
                 allowedMethods:
                   - GET
                   - POST
@@ -42,6 +60,13 @@ spring:
                   - X-Request-Id
                   - Retry-After
                 maxAge: 3600
+
+# Where the two services and the frontend are: supplied by the deployment, with no default here so a
+# production start never falls back to a development address. application-dev.yml gives the local ones.
+century-road:
+  auth-service-uri: ${AUTH_SERVICE_URI}
+  history-service-uri: ${HISTORY_SERVICE_URI}
+  frontend-origin: ${FRONTEND_ORIGIN}
 
 # One Swagger UI at the gateway for both downstream services.
 # API documentation remains disabled unless explicitly enabled.

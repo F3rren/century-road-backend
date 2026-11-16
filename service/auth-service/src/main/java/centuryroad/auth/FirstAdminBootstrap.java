@@ -1,10 +1,10 @@
 package centuryroad.auth;
 
+import centuryroad.auth.config.AuthProperties;
 import centuryroad.auth.model.Role;
 import centuryroad.auth.model.User;
 import centuryroad.auth.repository.UserRepository;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
@@ -32,12 +32,11 @@ public class FirstAdminBootstrap implements CommandLineRunner {
     private final String adminPassword;
 
     public FirstAdminBootstrap(UserRepository userRepository, PasswordEncoder passwordEncoder,
-            @Value("${bootstrap.admin.email:}") String adminEmail,
-            @Value("${bootstrap.admin.password:}") String adminPassword) {
+            AuthProperties.BootstrapAdmin admin) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
-        this.adminEmail = adminEmail;
-        this.adminPassword = adminPassword;
+        this.adminEmail = admin.email();
+        this.adminPassword = admin.password();
     }
 
     @Override
