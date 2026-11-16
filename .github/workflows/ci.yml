@@ -79,7 +79,8 @@ jobs:
   # the default branch, the branch name on any other.
   publish-images:
     name: ${{ matrix.service }} image
-    needs: build-and-test
+    # The smoke test too: an image of a service that does not start is not worth publishing.
+    needs: [build-and-test, smoke]
     if: github.event_name == 'push'
     runs-on: ubuntu-latest
     timeout-minutes: 20
@@ -257,3 +258,50 @@ jobs:
 
       - name: Test the Caddyfile
         run: bash infra/caddy/headers_test.sh
+
+  # The three services as production runs them: their packaged jars, the prod profile, a real
+  # Postgres, a request through the gateway to each. The suites above run on the test classpath,
+  # which has more on it than a jar, so a service can pass every test and still not start -
+  # history-service did, after Boot 4 split RestClient's auto-configuration into its own module.
+  smoke:
+    name: packaged services smoke test
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    services:
+      postgres:
+        image: postgres:16-alpine
+        env:
+          POSTGRES_PASSWORD: smoke
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U postgres"
+          --health-interval 5s
+          --health-timeout 5s
+          --health-retries 10
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Setup Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+          cache: maven
+
+      - name: Package the three services
+        run: |
+          for service in auth-service history-service gateway; do
+            (cd "service/$service" && chmod +x mvnw && ./mvnw --batch-mode --quiet -DskipTests package)
+          done
+
+      - name: Start them and ask the gateway
+        env:
+          PGHOST: localhost
+          PGPORT: 5432
+          PGUSER: postgres
+          PGPASSWORD: smoke
+        run: bash infra/smoke_test.sh
