@@ -95,6 +95,14 @@
 		</dependency>
 
 		<!-- Migrations -->
+		<!-- WikimediaClientConfig builds its client from the RestClient.Builder Boot configures. Boot 4 moved
+		     that auto-configuration to its own module, which the web starter no longer brings: without
+		     this the tests still pass (spring-boot-resttestclient puts it on the test classpath) and the
+		     packaged service does not start. -->
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-restclient</artifactId>
+		</dependency>
 		<!-- Boot 4 split Flyway's auto-configuration out of the core: without this starter the
 		     migrations simply do not run. -->
 		<dependency>
@@ -150,11 +158,6 @@
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-resttestclient</artifactId>
-			<scope>test</scope>
-		</dependency>
-		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-restclient</artifactId>
 			<scope>test</scope>
 		</dependency>
 		<!-- The shape of the service as rules the build enforces: see ArchitectureTest. Not managed
