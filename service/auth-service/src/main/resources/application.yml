@@ -2,6 +2,13 @@ spring:
   application:
     name: auth-service
 
+  # On the VPS every secret is a file in /run/secrets named after its property (compose-prod.yml mounts
+  # them: spring.datasource.password, jwt.secret), and this reads them as properties. Where that directory
+  # does not exist (Railway, development, tests) it is skipped and the environment variables below do
+  # the job. A variable that is set wins over a file. CENTURY_ROAD_SECRETS_DIR exists for tests.
+  config:
+    import: "optional:configtree:${CENTURY_ROAD_SECRETS_DIR:/run/secrets}/"
+
   # Database connection details are supplied by the environment.
   datasource:
     url: ${SPRING_DATASOURCE_URL}
@@ -43,10 +50,24 @@ management:
       export:
         enabled: true
 
+# Every key below is bound and validated by AuthProperties: a missing or out-of-range value stops the
+# service at startup with the property named.
 jwt:
   # Neither the signing secret nor token lifetime has a fallback.
   secret: ${JWT_SECRET}
   expiration-ms: ${JWT_EXPIRATION_MS}
+
+# Login attempts per ip|email within one window (LoginAttemptLimiter).
+auth:
+  rate-limit:
+    max-attempts: 5
+    window-ms: 60000
+
+# BCrypt's work factor for new password hashes. Below 10 the service refuses to start, except under
+# the test profile (SecurityConfig); an older hash is upgraded at its owner's next login.
+security:
+  password:
+    bcrypt-strength: 12
 
 bootstrap:
   admin:

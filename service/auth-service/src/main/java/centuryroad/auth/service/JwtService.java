@@ -1,9 +1,9 @@
 package centuryroad.auth.service;
 
+import centuryroad.auth.config.AuthProperties;
 import centuryroad.auth.model.User;
 import centuryroad.auth.security.JwtKey;
 import io.jsonwebtoken.Jwts;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -19,9 +19,9 @@ public class JwtService {
     private final JwtKey jwtKey;
     private final long expirationMs;
 
-    public JwtService(JwtKey jwtKey, @Value("${jwt.expiration-ms}") long expirationMs) {
+    public JwtService(JwtKey jwtKey, AuthProperties.Jwt jwt) {
         this.jwtKey = jwtKey;
-        this.expirationMs = expirationMs;
+        this.expirationMs = jwt.expirationMs();
     }
 
     public String generateToken(User user) {

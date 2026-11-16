@@ -154,7 +154,7 @@ deliberate: a HIGH/CRITICAL CVE in a base image with no available fix should not
 The cost of not gating is that nothing stops a vulnerable image from being published; the Security tab is the control,
 and it has to be looked at.
 
-**`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`.
+**`history-service` got its own database, not just its own schema, revising the original design.** When its persistence layer was first added, it shared `auth-service`'s database under a separate `history` schema — real logical separation, but not real SQL-level isolation: both services connected as the same Postgres role, so nothing at the database layer actually stopped one from querying the other's tables, and the two share fate if that one Postgres container has a problem. Reconsidered on the reasonable objection that "database per service" is the actual microservices convention for a reason. A fully separate Postgres instance per service was the other option on the table; rejected for now as more infrastructure (and, on Railway, more paid resources) than this project's current scale justifies. A separate *database* in the same container is the middle ground: Postgres refuses cross-database queries outright regardless of role permissions, at zero extra infrastructure cost. See `infra/postgres/init-history-db.sh`. That stopped queries, not credentials: both services still connected as the same superuser, which can simply open the other database, or do anything else on the cluster. Since then each service has its own login role (`auth_app`, `history_app`), the owner of its database only, with `CONNECT` revoked from everyone else; the superuser is left to Postgres, its init and the backups (`infra/postgres/app-roles.sql`, README "One database user per service").
 
 **The country index is built ahead of time, every night, not answered per request.** Wikipedia's feed comes one day at a time, so "every Italian event" is 366 requests per edition. Answering it on demand would cost a reader minutes and Wikipedia 732 requests per question. Keeping a whole year in `FeedCache` instead (Caffeine, 800 entries, evicted by count only) would pin roughly 250–400 MB of heap with every section of every day, to serve a page that needs one section. So `TimelineIndexer` walks the year once a night, keeps only what the page reads (placed events: text, date, country), and writes it to `timeline_events`. It calls `WikipediaFeedClient` directly, so it shares the resilience chain (bulkhead, retry, breaker, the 429 cool-down) but never fills the cache users are served from. The cost is freshness: the index can be a day behind Wikipedia.
 
@@ -174,6 +174,35 @@ and it has to be looked at.
 
 **The Wikipedia feed stays the source of events; the alternatives were looked at and none replaces it.** `WikimediaFeedHttpClient` calls `https://{lang}.wikipedia.org/api/rest_v1/feed/onthisday/all/MM/DD`, the wikifeeds service, not the `api.wikimedia.org/feed/v1` gateway that Wikimedia has announced it will deprecate gradually from July 2026 — so the announced deprecation does not touch this client, though it is worth rechecking each quarter. Wikimedia Enterprise, the commercial API, has structured article content but no "on this day" endpoint in what was found. Wikidata's SPARQL service (CC0, a 60-second query deadline, a User-Agent policy) is the real alternative for events by date and place beyond what Wikipedia's day pages list, and the natural next source for "same period"; it was not adopted, because it would be a second upstream with its own resilience, cache and coverage story, to be justified by a measured gap in the index rather than added in advance.
 
+## Configuration
+
+Where each kind of value lives, so that a new setting has one obvious place and a secret never ends up
+in a file that is committed or in a container's environment:
+
+| Kind of value | Where |
+|---|---|
+| Behaviour that is the same everywhere, not secret (timeouts, cache sizes, limits, cron) | `application.yml`, with its default there and not in the Java |
+| A difference between environments, not secret (error detail, DEBUG logs, Swagger) | `application-<profile>.yml` |
+| Specific to one installation, not secret (ports, domain, frontend origin, backup retention) | `.env` on the VPS, a variable on Railway, read as `${VAR}` |
+| A secret, VPS | one file in `secrets/` (gitignored), mounted by Compose only into the containers that use it |
+| A secret, Railway | a sealed variable |
+| A secret, development | `.env.dev`, throwaway values |
+| Never | a secret with a default, in a `.yml` or in the code |
+
+How it holds together:
+
+- **Typed and validated settings.** `auth-service` binds its own under `AuthProperties`, `history-service`
+  under `HistoryProperties`: a missing or out-of-range value stops the start with the property named.
+- **Secrets as files, read as properties.** On the VPS, `auth-service` and `history-service` import
+  `/run/secrets` as a Spring config tree; each Compose secret is mounted under the name of the property it
+  carries (`spring.datasource.password`, `jwt.secret`). Where the directory does not exist (Railway,
+  development, tests) the import is skipped and the variables do the job; a variable that is set wins
+  over a file. Postgres and Grafana read theirs through their own `*_FILE` variables.
+- **Checked before the start.** `infra/check-env.sh` reads `.env` and `secrets/` without running them and
+  lists every problem at once: placeholders, a JWT secret `JwtKey` would refuse, files the containers
+  could not read or other host users could, three database passwords that are not all different.
+- **One database role per service**, not the superuser (see Key technical decisions).
+
 ## Deployment and environments
 
 Two fully isolated environments, deliberately sharing nothing at runtime (own project name, own volumes, own settings file) — `compose-dev.yml` refuses to start without `--env-file .env.dev` (guarded by a required `CENTURY_ROAD_ENV` marker that only exists in `.env.dev`), so it can never accidentally run against production secrets.
@@ -182,10 +211,11 @@ Two fully isolated environments, deliberately sharing nothing at runtime (own pr
 |---|---|---|
 | Compose file | `compose-dev.yml` | `compose-prod.yml` |
 | Settings | `.env.dev` | `.env` |
+| Secrets | `.env.dev` | one file each in `secrets/`, mounted as Compose secrets |
 | Start | `docker compose --env-file .env.dev -f compose-dev.yml up` | `docker compose -f compose-prod.yml up -d` |
 | Reverse proxy | none, plain HTTP | Caddy, TLS + HSTS |
 | Ports published | every service, on loopback | **only** Caddy (80/443); nothing else |
 
 **Railway** is the actual production target: one Railway project holds Postgres + the 3 backend services (pulled as pre-built GHCR images, not built on Railway) + the frontend (from its own repo, built there). Since Railway terminates TLS itself, there is no Caddy in front there — the gateway instead runs with `SPRING_PROFILES_INCLUDE=railway`, which hides everything but `/actuator/health` and adds the same security headers (`Strict-Transport-Security`, `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`) Caddy would otherwise add.
 
-**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`) — each image is scanned with Trivy, advisory only: findings go to the Security tab and a warning, and do not hold back the moving tag (see Key technical decisions). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).
+**CI/CD** (`.github/workflows/`): `ci.yml` runs `./mvnw clean verify` per service (matrix over all 3) and a smoke test that starts the three packaged jars in the prod profile against a real Postgres (`infra/smoke_test.sh`: the suites run on the test classpath, which has more on it than a jar), then on a push publishes images to `ghcr.io/f3rren/century-road-backend-{auth-service,gateway,history-service}`, tagged with the short commit SHA (immutable, the one to pin) plus a moving branch tag (`latest`/`develop`) — each image is scanned with Trivy, advisory only: findings go to the Security tab and a warning, and do not hold back the moving tag (see Key technical decisions). `release.yml` (triggered by a `vMAJOR.MINOR.PATCH` tag on `main`) retags the already-tested images with the semver — it rebuilds nothing, so a release is byte-for-byte what CI already tested. Also: `codeql.yml` (weekly + push/PR), `dependency-review.yml` (PR-only), and `dependabot.yml` (weekly, PRs target `develop`; explicitly ignores springdoc major/minor bumps since it's tied to the Spring Boot line, a PostGIS major bump since it needs a manual dump/restore, and a Java major bump since it's "a decision, not a bump" spanning `java.version` + Dockerfiles + CI together).

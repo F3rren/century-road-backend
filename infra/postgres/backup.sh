@@ -7,7 +7,8 @@
 #
 # Assumes the current directory is the repository root: the crontab line does the `cd`, the
 # same way every other host-invoked script here is documented rather than self-locating.
-# Reads .env for the backup/rclone settings; rclone's own remote credentials live separately,
+# Reads the backup/rclone settings from .env (with infra/lib/dotenv.sh, which reads values the way
+# Compose does instead of running the file as shell); rclone's own remote credentials live separately,
 # at the usual ~/.config/rclone/rclone.conf for whichever user cron runs as - never in .env,
 # never in this repo, same reasoning as every other secret here.
 set -euo pipefail
@@ -18,10 +19,15 @@ if [ ! -f .env ]; then
   echo "backup.sh: no .env in $(pwd) - run this from the repository root." >&2
   exit 1
 fi
-set -a
-# shellcheck disable=SC1091
-source .env
-set +a
+# shellcheck source=../lib/dotenv.sh
+source "$(dirname "${BASH_SOURCE[0]}")/../lib/dotenv.sh"
+# Only the settings this script uses. The database name and user are not among them: the dumps run
+# inside the db container, which has its own (see below), and Compose reads .env by itself.
+for key in BACKUP_DIR BACKUP_RETENTION_DAYS BACKUP_REMOTE_RETENTION_DAYS RCLONE_REMOTE ALERT_WEBHOOK_URL; do
+  if setting=$(dotenv_get .env "$key"); then
+    printf -v "$key" '%s' "$setting"
+  fi
+done
 
 # ALERT_WEBHOOK_URL is now available (if set), so the failure trap can go live before anything
 # below it that could fail - including the var guards themselves - rather than after them.

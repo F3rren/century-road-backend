@@ -1,5 +1,6 @@
 package centuryroad.auth.security;
 
+import centuryroad.auth.config.AuthProperties;
 import centuryroad.auth.model.Role;
 import centuryroad.auth.model.User;
 import centuryroad.auth.service.JwtService;
@@ -23,7 +24,7 @@ class JwtRoundTripUnitTest {
     private static final String SECRET = "Y2VudHVyeS1yb2FkLXRlc3Qtc2VjcmV0LWF0LWxlYXN0LTMyLWJ5dGVzLWxvbmctZm9yLWhzMjU2";
 
     private final JwtKey jwtKey = new JwtKey(SECRET);
-    private final JwtService jwtService = new JwtService(jwtKey, 3_600_000L);
+    private final JwtService jwtService = new JwtService(jwtKey, new AuthProperties.Jwt(SECRET, 3_600_000L));
     private final JwtVerifier jwtVerifier = new JwtVerifier(jwtKey);
 
     private User user(long id, Role role) {
@@ -62,7 +63,7 @@ class JwtRoundTripUnitTest {
     @Test
     void aTokenSignedWithADifferentKeyIsRejected() {
         JwtKey otherKey = new JwtKey("YW5vdGhlci1jb21wbGV0ZWx5LWRpZmZlcmVudC10ZXN0LXNlY3JldC1rZXk=");
-        JwtService otherService = new JwtService(otherKey, 3_600_000L);
+        JwtService otherService = new JwtService(otherKey, new AuthProperties.Jwt(SECRET, 3_600_000L));
 
         String token = otherService.generateToken(user(7L, Role.USER));
 

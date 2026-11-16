@@ -60,7 +60,8 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | | Development | Production |
 |---|---|---|
 | Compose file | `compose-dev.yml` | `compose-prod.yml` |
-| Settings and secrets | `.env.dev` | `.env` |
+| Settings | `.env.dev` | `.env` |
+| Secrets | `.env.dev` | one file each in `secrets/` ([secrets/README.md](secrets/README.md)) |
 | Start | `docker compose --env-file .env.dev -f compose-dev.yml up` | `docker compose -f compose-prod.yml up -d` |
 | The API is at | `http://localhost:8080` | `https://<PUBLIC_DOMAIN>` |
 | Ports | fixed in the file | from `.env` |
@@ -88,25 +89,39 @@ Production, on the server:
 cp .env.example .env
 ```
 
-Fill in at least these before the first start. `.env` and `.env.dev` are gitignored and must
-never be committed.
+and create the secrets, one file each in `secrets/`, as [secrets/README.md](secrets/README.md)
+shows (a directory of mode 700, files of mode 644, no line break at the end). In production no
+password is a variable: a variable shows in `docker inspect` and in `/proc/<pid>/environ`, and
+Compose mounts each file only into the containers that need it.
+
+| Secret file | Why it matters |
+|---|---|
+| `postgres_password` | the superuser's: Postgres itself, its init and the backups |
+| `auth_db_password`, `history_db_password` | each service's own database role (see [One database user per service](#one-database-user-per-service)) |
+| `jwt_secret` | see below — the service will not start with a bad one |
+| `grafana_password` | the Grafana admin login; sign-up is disabled, so this is the only way in |
+
+Then fill in at least these in `.env`. `.env`, `.env.dev` and the files in `secrets/` are
+gitignored and must never be committed.
 
 | Variable | Why it matters |
 |---|---|
-| `POSTGRES_PASSWORD` | also used by the services to connect |
-| `JWT_SECRET` | see below — the service will not start with a bad one |
-| `GRAFANA_PASSWORD` | the Grafana admin login; sign-up is disabled, so this is the only way in |
-| `GATEWAY_PORT`, `AUTH_PORT` | production only: where the two services listen (see step 3 below) |
+| `GATEWAY_PORT`, `AUTH_PORT`, `HISTORY_PORT` | production only: where the three services listen (see step 3 below) |
+| `ALERT_WEBHOOK_URL` | production only: where Grafana alerts and backup failures are sent; without it nobody hears of them |
 | `FRONTEND_ORIGIN` | exact origin of the frontend, or the browser blocks every call |
 | `WIKIMEDIA_CONTACT` | a URL or address Wikimedia can reach about this client; `history-service` will not start without it |
 | `PUBLIC_DOMAIN` | production only — must already resolve to the host |
 
-`.env.example` and `.env.dev.example` document the rest inline.
+`.env.example` and `.env.dev.example` document the rest inline. Before starting production, run
+`infra/check-env.sh`: Compose only refuses a value that is missing, and a `change-me` left from the
+template would otherwise become a real password. Where each kind of value belongs (`application.yml`,
+a profile, `.env`, a secret file) is written down in [docs/architecture.md](docs/architecture.md#configuration).
 
 ### Generating `JWT_SECRET`
 
 ```bash
-openssl rand -base64 48
+openssl rand -base64 48                                  # development: the value of JWT_SECRET in .env.dev
+openssl rand -base64 48 | tr -d '\n' > secrets/jwt_secret # production: the file
 ```
 
 The value is **base64-decoded** before use, and the decoded result must be at least 32
@@ -231,8 +246,14 @@ exposed directly: publishing 12129 would put it there.
 ### 4. Start the stack
 
 ```bash
+infra/check-env.sh
 docker compose -f compose-prod.yml up -d
 ```
+
+`infra/check-env.sh` reads `.env` without running it and lists everything that would break or weaken
+the start: placeholders left from the template, a JWT secret the service would refuse, secret
+files the containers could not read or other host users could, a
+`FRONTEND_ORIGIN` with a trailing slash, two services on one port. It changes nothing.
 
 That is the whole command. The reverse proxy is part of this file, and there is no override
 that could silently swap in the development stack: `compose-dev.yml` is a different file,
@@ -300,6 +321,54 @@ first administrator on its own. `FirstAdminBootstrap` exists for exactly that ga
    so leaving them set keeps a password readable by anyone who can inspect the container,
    for no further benefit — the mechanism will not fire again anyway.
 
+## One database user per service
+
+`auth-service` connects as `auth_app` and `history-service` as `history_app`, each the owner of its
+own database and unable even to open the other's. `POSTGRES_USER` is the superuser, left to Postgres
+itself, its init scripts and the backups. Before this, both services used the superuser: getting into
+`history-service` (the one that talks to Wikipedia) meant getting every user, password hash and
+refresh token, and the whole cluster.
+
+**A new installation** needs nothing: on an empty data directory `infra/postgres/init-app-roles.sh`
+creates both roles with the passwords in `secrets/auth_db_password` and `secrets/history_db_password`
+(in development, `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` in `.env.dev`) and gives each its
+database (`infra/postgres/app-roles.sql` explains every step).
+
+**An installation that already has data** never runs init scripts again, so this is done once, by
+hand. It is also the moment the passwords move from `.env` to `secrets/`:
+
+1. Take a backup (`bash infra/postgres/backup.sh`) and check that it arrived.
+2. Create `secrets/` as [secrets/README.md](secrets/README.md) shows: the superuser's, the JWT and
+   Grafana files with **the values `.env` has today** (Postgres and Grafana read theirs only when
+   their data is first created, and a new JWT secret logs everybody out), the two role passwords new.
+   Delete those five lines from `.env`, then run `infra/check-env.sh` until it has nothing to say.
+3. Recreate the database container, so it has the new variables and files (the data stays in its
+   volume): `docker compose -f compose-prod.yml up -d db`
+4. Create the roles and hand them what already exists:
+   `docker compose -f compose-prod.yml exec -T db sh /docker-entrypoint-initdb.d/30-app-roles.sh`
+5. Start the services as their own users, `docker compose -f compose-prod.yml up -d`, then log in and
+   open a day to check both.
+
+Step 4 is safe to repeat. Going back is a matter of the previous compose file and images: no data
+changed, only who owns it, and the superuser can still open everything.
+
+**Development:** a `compose-dev.yml` volume made before the roles existed has neither. Drop it
+(`docker compose --env-file .env.dev -f compose-dev.yml down -v`; its data is throwaway) or run step 4
+with `--env-file .env.dev -f compose-dev.yml`.
+
+**Railway** runs its own Postgres, without these init scripts. Once, from a machine with `psql`, with the
+`Postgres` service's public connection string (its *Connect* tab):
+
+```bash
+psql "<public connection string>" \
+  -v auth_db=<PGDATABASE> -v history_db=<PGDATABASE>_history \
+  -v auth_password='<a new password>' -v history_password='<another one>' \
+  -f infra/postgres/app-roles.sql
+```
+
+Then, in the two services' variables, the role and its password instead of `${{Postgres.PGUSER}}` and
+`${{Postgres.PGPASSWORD}}` (see the variables block below).
+
 ## Backups
 
 Everything either service knows — every user, every password hash, every view counter — lives
@@ -333,7 +402,10 @@ reasoning as [First administrator](#first-administrator) above.
    recreate the second database once: `CREATE DATABASE "${POSTGRES_DB}_history";` — the same
    one-time step `infra/postgres/init-history-db.sh` does automatically on a fresh container,
    or the Railway section above does by hand. Restoring onto the *same, still-running* instance
-   needs no such step: both databases already exist.
+   needs no such step: both databases already exist. The dumps name `auth_app` and `history_app`
+   as the owners of the tables, so those roles have to exist first: a container started with
+   `compose-prod.yml` creates them; any other instance needs `infra/postgres/app-roles.sql` (see
+   [One database user per service](#one-database-user-per-service)).
 2. Import the dump:
 
    ```bash
@@ -505,11 +577,11 @@ public domain - Railway still probes that port internally, and a mismatch fails 
 and silently keeps the previous revision running on the old port instead.
 
 ```
-# auth-service
+# auth-service (its own database role: see "One database user per service")
 AUTH_PORT=12130
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
-SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
-SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+SPRING_DATASOURCE_USERNAME=auth_app
+SPRING_DATASOURCE_PASSWORD=<auth_app's password>   # mark it sealed
 JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
 JWT_EXPIRATION_MS=86400000
 
@@ -524,8 +596,8 @@ WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
 # run its Flyway migration against an unresolved "${SPRING_DATASOURCE_URL}" or a
 # database that isn't there.
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}_history
-SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
-SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+SPRING_DATASOURCE_USERNAME=history_app
+SPRING_DATASOURCE_PASSWORD=<history_app's password>   # mark it sealed
 
 # gateway
 SPRING_PROFILES_INCLUDE=railway
@@ -1128,7 +1200,7 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    # 103 tests
+cd service/auth-service    && ./mvnw test    # 112 tests
 cd service/gateway         && ./mvnw test    #  47 tests
 cd service/history-service && ./mvnw test    # 451 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network

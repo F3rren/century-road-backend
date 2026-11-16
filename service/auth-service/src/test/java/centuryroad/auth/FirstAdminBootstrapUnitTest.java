@@ -1,5 +1,6 @@
 package centuryroad.auth;
 
+import centuryroad.auth.config.AuthProperties;
 import centuryroad.auth.model.Role;
 import centuryroad.auth.model.User;
 import centuryroad.auth.repository.UserRepository;
@@ -32,7 +33,7 @@ class FirstAdminBootstrapUnitTest {
     private final PasswordEncoder passwordEncoder = new BCryptPasswordEncoder();
 
     private FirstAdminBootstrap bootstrap(String email, String password) {
-        return new FirstAdminBootstrap(userRepository, passwordEncoder, email, password);
+        return new FirstAdminBootstrap(userRepository, passwordEncoder, new AuthProperties.BootstrapAdmin(email, password));
     }
 
     @Test

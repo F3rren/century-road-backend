@@ -3,7 +3,9 @@
 #
 #     docker compose -f compose-prod.yml up -d
 #
-# Secrets and ports all come from .env (see .env.example). Nothing is published except the
+# Settings and ports come from .env (see .env.example), the secrets from one file each in secrets/
+# (see secrets/README.md); check both with infra/check-env.sh, which also catches the template's
+# placeholders that ${VAR:?} lets through. Nothing is published except the
 # reverse proxy (80/443) and Prometheus/Grafana on the host's loopback.
 #
 # Not for local development: that is compose-dev.yml, which reads .env.dev instead.
@@ -50,13 +52,28 @@ services:
     restart: unless-stopped
     logging: *default-logging
     environment:
-      POSTGRES_DB:       ${POSTGRES_DB}
-      POSTGRES_USER:     ${POSTGRES_USER}
-      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      POSTGRES_DB:       ${POSTGRES_DB:?set POSTGRES_DB in .env}
+      POSTGRES_USER:     ${POSTGRES_USER:?set POSTGRES_USER in .env}
+      # Passwords are files, never variables: a variable is in `docker inspect` and in
+      # /proc/<pid>/environ for anyone who can look. The superuser's is for Postgres itself, its init
+      # and the backups; each service connects as its own role (infra/postgres/app-roles.sql), whose
+      # password the init script reads once, on an empty data directory - on an existing one, see
+      # README "One database user per service".
+      POSTGRES_PASSWORD_FILE:   /run/secrets/postgres_password
+      AUTH_DB_PASSWORD_FILE:    /run/secrets/auth_db_password
+      HISTORY_DB_PASSWORD_FILE: /run/secrets/history_db_password
+    secrets:
+      - postgres_password
+      - auth_db_password
+      - history_db_password
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
       - ./infra/postgres/init-history-db.sh:/docker-entrypoint-initdb.d/20-history-db.sh:ro
+      - ./infra/postgres/init-app-roles.sh:/docker-entrypoint-initdb.d/30-app-roles.sh:ro
+      # Outside docker-entrypoint-initdb.d on purpose: a .sql file there would run on its own,
+      # without the variables the script passes it.
+      - ./infra/postgres/app-roles.sql:/usr/local/share/century-road/app-roles.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
@@ -81,16 +98,21 @@ services:
       # .env and nowhere else.
       AUTH_PORT:                  ${AUTH_PORT:?set AUTH_PORT in .env}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
-      JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env}
-      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS}
+      SPRING_DATASOURCE_USERNAME: auth_app
+      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS:?set JWT_EXPIRATION_MS in .env}
       # Creating a user needs an admin token, so an empty database has no way to get
       # its first administrator without these. Inert unless both are set AND the users
       # table is empty - see FirstAdminBootstrap. Clear them again after the first
       # login and restart, or they sit in the container environment for good.
       BOOTSTRAP_ADMIN_EMAIL:      ${BOOTSTRAP_ADMIN_EMAIL:-}
       BOOTSTRAP_ADMIN_PASSWORD:   ${BOOTSTRAP_ADMIN_PASSWORD:-}
+    # Each file is named after the property it carries: application.yml imports /run/secrets as a
+    # config tree, so Spring reads them like any other setting.
+    secrets:
+      - source: auth_db_password
+        target: spring.datasource.password
+      - source: jwt_secret
+        target: jwt.secret
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:${AUTH_PORT}/actuator/health"]
       interval: 15s
@@ -121,8 +143,10 @@ services:
       HISTORY_PORT: ${HISTORY_PORT:?set HISTORY_PORT in .env}
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}_history
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      SPRING_DATASOURCE_USERNAME: history_app
+    secrets:
+      - source: history_db_password
+        target: spring.datasource.password
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:${HISTORY_PORT:?set HISTORY_PORT in .env}/actuator/health"]
       interval: 15s
@@ -239,20 +263,39 @@ services:
     restart: unless-stopped
     logging: *default-logging
     environment:
-      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
-      GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
+      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:?set GRAFANA_USER in .env}
+      GF_SECURITY_ADMIN_PASSWORD__FILE: /run/secrets/grafana_password
       GF_USERS_ALLOW_SIGN_UP:     "false"
       # Read by infra/grafana/provisioning/alerting/contact-points.yaml via Grafana's own
       # $__env{} provisioning macro - no sed/entrypoint step needed, unlike Prometheus's
       # config above, because Grafana (not this compose file) does that substitution itself.
-      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:-}
+      # Required, unlike in a quick local run: in production an alert nobody receives is the same as
+      # no alert, and the stack would look watched when it is not.
+      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:?set ALERT_WEBHOOK_URL in .env}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro
+    secrets:
+      - grafana_password
     ports:
       - "127.0.0.1:${GRAFANA_PORT:-3000}:3000"
     depends_on:
       - prometheus
+
+# The production secrets, one file each in secrets/ (gitignored; secrets/README.md says how to create
+# them, and infra/check-env.sh checks them). Compose mounts each into /run/secrets of the services that
+# list it, and of no other.
+secrets:
+  postgres_password:
+    file: ./secrets/postgres_password
+  auth_db_password:
+    file: ./secrets/auth_db_password
+  history_db_password:
+    file: ./secrets/history_db_password
+  jwt_secret:
+    file: ./secrets/jwt_secret
+  grafana_password:
+    file: ./secrets/grafana_password
 
 volumes:
   caddy_data:
