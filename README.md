@@ -60,7 +60,8 @@ Grafana are published on the host's loopback only, so the way to them is an SSH 
 | | Development | Production |
 |---|---|---|
 | Compose file | `compose-dev.yml` | `compose-prod.yml` |
-| Settings and secrets | `.env.dev` | `.env` |
+| Settings | `.env.dev` | `.env` |
+| Secrets | `.env.dev` | one file each in `secrets/` ([secrets/README.md](secrets/README.md)) |
 | Start | `docker compose --env-file .env.dev -f compose-dev.yml up` | `docker compose -f compose-prod.yml up -d` |
 | The API is at | `http://localhost:8080` | `https://<PUBLIC_DOMAIN>` |
 | Ports | fixed in the file | from `.env` |
@@ -88,15 +89,23 @@ Production, on the server:
 cp .env.example .env
 ```
 
-Fill in at least these before the first start. `.env` and `.env.dev` are gitignored and must
-never be committed.
+and create the secrets, one file each in `secrets/`, as [secrets/README.md](secrets/README.md)
+shows (a directory of mode 700, files of mode 644, no line break at the end). In production no
+password is a variable: a variable shows in `docker inspect` and in `/proc/<pid>/environ`, and
+Compose mounts each file only into the containers that need it.
+
+| Secret file | Why it matters |
+|---|---|
+| `postgres_password` | the superuser's: Postgres itself, its init and the backups |
+| `auth_db_password`, `history_db_password` | each service's own database role (see [One database user per service](#one-database-user-per-service)) |
+| `jwt_secret` | see below — the service will not start with a bad one |
+| `grafana_password` | the Grafana admin login; sign-up is disabled, so this is the only way in |
+
+Then fill in at least these in `.env`. `.env`, `.env.dev` and the files in `secrets/` are
+gitignored and must never be committed.
 
 | Variable | Why it matters |
 |---|---|
-| `POSTGRES_PASSWORD` | the superuser's: Postgres itself, its init and the backups |
-| `AUTH_DB_PASSWORD`, `HISTORY_DB_PASSWORD` | each service's own database role (see [One database user per service](#one-database-user-per-service)) |
-| `JWT_SECRET` | see below — the service will not start with a bad one |
-| `GRAFANA_PASSWORD` | the Grafana admin login; sign-up is disabled, so this is the only way in |
 | `GATEWAY_PORT`, `AUTH_PORT`, `HISTORY_PORT` | production only: where the three services listen (see step 3 below) |
 | `ALERT_WEBHOOK_URL` | production only: where Grafana alerts and backup failures are sent; without it nobody hears of them |
 | `FRONTEND_ORIGIN` | exact origin of the frontend, or the browser blocks every call |
@@ -105,12 +114,14 @@ never be committed.
 
 `.env.example` and `.env.dev.example` document the rest inline. Before starting production, run
 `infra/check-env.sh`: Compose only refuses a value that is missing, and a `change-me` left from the
-template would otherwise become a real password.
+template would otherwise become a real password. Where each kind of value belongs (`application.yml`,
+a profile, `.env`, a secret file) is written down in [docs/architecture.md](docs/architecture.md#configuration).
 
 ### Generating `JWT_SECRET`
 
 ```bash
-openssl rand -base64 48
+openssl rand -base64 48                                  # development: the value of JWT_SECRET in .env.dev
+openssl rand -base64 48 | tr -d '\n' > secrets/jwt_secret # production: the file
 ```
 
 The value is **base64-decoded** before use, and the decoded result must be at least 32
@@ -240,7 +251,8 @@ docker compose -f compose-prod.yml up -d
 ```
 
 `infra/check-env.sh` reads `.env` without running it and lists everything that would break or weaken
-the start: placeholders left from the template, a `JWT_SECRET` the service would refuse, a
+the start: placeholders left from the template, a JWT secret the service would refuse, secret
+files the containers could not read or other host users could, a
 `FRONTEND_ORIGIN` with a trailing slash, two services on one port. It changes nothing.
 
 That is the whole command. The reverse proxy is part of this file, and there is no override
@@ -318,14 +330,18 @@ itself, its init scripts and the backups. Before this, both services used the su
 refresh token, and the whole cluster.
 
 **A new installation** needs nothing: on an empty data directory `infra/postgres/init-app-roles.sh`
-creates both roles with `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` and gives each its database
-(`infra/postgres/app-roles.sql` explains every step).
+creates both roles with the passwords in `secrets/auth_db_password` and `secrets/history_db_password`
+(in development, `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` in `.env.dev`) and gives each its
+database (`infra/postgres/app-roles.sql` explains every step).
 
 **An installation that already has data** never runs init scripts again, so this is done once, by
-hand:
+hand. It is also the moment the passwords move from `.env` to `secrets/`:
 
 1. Take a backup (`bash infra/postgres/backup.sh`) and check that it arrived.
-2. Set `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` (see `.env.example`) and run `infra/check-env.sh`.
+2. Create `secrets/` as [secrets/README.md](secrets/README.md) shows: the superuser's, the JWT and
+   Grafana files with **the values `.env` has today** (Postgres and Grafana read theirs only when
+   their data is first created, and a new JWT secret logs everybody out), the two role passwords new.
+   Delete those five lines from `.env`, then run `infra/check-env.sh` until it has nothing to say.
 3. Recreate the database container, so it has the new variables and files (the data stays in its
    volume): `docker compose -f compose-prod.yml up -d db`
 4. Create the roles and hand them what already exists:
@@ -1184,7 +1200,7 @@ which are which.
 ## Tests
 
 ```bash
-cd service/auth-service    && ./mvnw test    # 109 tests
+cd service/auth-service    && ./mvnw test    # 112 tests
 cd service/gateway         && ./mvnw test    #  47 tests
 cd service/history-service && ./mvnw test    # 451 tests
 bash .github/scripts/release_test.sh           #  81 checks: the release script, no network

@@ -2,6 +2,13 @@ spring:
   application:
     name: history-service
 
+  # On the VPS every secret is a file in /run/secrets named after its property (compose-prod.yml mounts
+  # them: spring.datasource.password, jwt.secret), and this reads them as properties. Where that directory
+  # does not exist (Railway, development, tests) it is skipped and the environment variables below do
+  # the job. A variable that is set wins over a file. CENTURY_ROAD_SECRETS_DIR exists for tests.
+  config:
+    import: "optional:configtree:${CENTURY_ROAD_SECRETS_DIR:/run/secrets}/"
+
   # This service uses the "history" schema in the PostgreSQL instance
   # shared with auth-service. Connection details come from the environment.
   datasource:

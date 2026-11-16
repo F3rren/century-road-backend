@@ -4,6 +4,9 @@
 .env.prod
 .env.dev
 .env.local
+# Production secrets, one file each (compose-prod.yml): only the instructions are committed.
+secrets/*
+!secrets/README.md
 
 # Maven
 service/*/target/

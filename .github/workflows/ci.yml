@@ -129,12 +129,18 @@ jobs:
             echo "moving=$REF_NAME" >> "$GITHUB_OUTPUT"
           fi
 
-      # compose-prod.yml will not load without the secrets its containers need at run time
-      # (${VAR:?...}), and Bake loads the whole file even to build three of its services. None of
-      # those values reaches an image, so the template's placeholders are enough. A new required
-      # variable has to be added to .env.example anyway, so there is no second list to keep.
+      # compose-prod.yml will not load without the settings its containers need at run time
+      # (${VAR:?...}) and the secret files it names, and Bake loads the whole file even to build three
+      # of its services. None of them reaches an image, so the template's placeholders and dummy files
+      # are enough. The file names are read from compose-prod.yml itself and a new required variable
+      # has to be added to .env.example anyway, so there is no second list to keep.
       - name: Provide placeholder values for Compose interpolation
-        run: cp .env.example .env
+        run: |
+          cp .env.example .env
+          mkdir -p secrets
+          for name in $(grep -oE '\./secrets/[a-z_]+' compose-prod.yml | sed 's|\./secrets/||' | sort -u); do
+            printf placeholder > "secrets/$name"
+          done
 
       # source: . builds from the checkout. Without it Bake reads the definition from the
       # repository's Git URL instead, and compose-prod.yml would be looked up over the network.

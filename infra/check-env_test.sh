@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 # Tests infra/check-env.sh and infra/lib/dotenv.sh: what the preflight refuses, what it lets through,
-# and that values are read the way Compose reads them. Plain bash, no network, a few seconds.
+# that its list of secret files is compose-prod.yml's, and that values are read the way Compose reads
+# them. Plain bash, no network, a few seconds.
 #
 #     bash infra/check-env_test.sh
 set -euo pipefail
@@ -18,10 +19,10 @@ failures=0
 fail() { echo "FAIL: $1"; failures=$((failures + 1)); }
 pass() { echo "ok:   $1"; }
 
-# expect NAME STATUS PATTERN FILE - check-env exits with STATUS and its output matches PATTERN.
+# expect NAME STATUS PATTERN FILE [SECRETS_DIR] - check-env exits with STATUS and its output matches PATTERN.
 expect() {
-  local name=$1 status=$2 pattern=$3 file=$4 out rc=0
-  out=$(bash "$check" "$file" 2>&1) || rc=$?
+  local name=$1 status=$2 pattern=$3 file=$4 secrets=${5:-$work/secrets} out rc=0
+  out=$(SECRETS_DIR="$secrets" bash "$check" "$file" 2>&1) || rc=$?
   if [ "$rc" -ne "$status" ]; then
     fail "$name: exit $rc, expected $status"$'\n'"$out"
   elif ! grep -Eq -- "$pattern" <<<"$out"; then
@@ -31,40 +32,45 @@ expect() {
   fi
 }
 
-# A file that passes: the template with every placeholder replaced by a plausible value.
+# A .env that passes: the template with its placeholders replaced by plausible values.
 valid="$work/valid.env"
-sed -e "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$(openssl rand -hex 24)|" \
-    -e "s|^AUTH_DB_PASSWORD=.*|AUTH_DB_PASSWORD=$(openssl rand -hex 24)|" \
-    -e "s|^HISTORY_DB_PASSWORD=.*|HISTORY_DB_PASSWORD=$(openssl rand -hex 24)|" \
-    -e "s|^JWT_SECRET=.*|JWT_SECRET=$(openssl rand -base64 48)|" \
-    -e "s|^GRAFANA_PASSWORD=.*|GRAFANA_PASSWORD=$(openssl rand -hex 24)|" \
-    -e "s|^ALERT_WEBHOOK_URL=.*|ALERT_WEBHOOK_URL=https://hooks.example.test/century-road|" \
+sed -e "s|^ALERT_WEBHOOK_URL=.*|ALERT_WEBHOOK_URL=https://hooks.example.test/century-road|" \
     -e "s|^RCLONE_REMOTE=.*|RCLONE_REMOTE=offsite:century-road|" \
     "$root/.env.example" > "$valid"
 
-# variant NAME SED-EXPRESSION - a copy of the valid file with one change.
+# secrets DIR - a valid secrets directory, created the way secrets/README.md says.
+secrets() {
+  local dir=$1 name
+  mkdir -p "$dir" && chmod 700 "$dir"
+  for name in postgres_password auth_db_password history_db_password grafana_password; do
+    openssl rand -base64 32 | tr -d '\n' > "$dir/$name"
+  done
+  openssl rand -base64 48 | tr -d '\n' > "$dir/jwt_secret"
+  chmod 644 "$dir"/*
+  echo "$dir"
+}
+secrets "$work/secrets" >/dev/null
+
+# variant NAME SED-EXPRESSION - a copy of the valid .env with one change.
 variant() { sed -e "$2" "$valid" > "$work/$1.env"; echo "$work/$1.env"; }
+# broken NAME COMMAND - a fresh valid secrets directory, then COMMAND run inside it.
+broken() { local dir; dir=$(secrets "$work/$1"); (cd "$dir" && eval "$2"); echo "$dir"; }
 
-expect "the template is refused, every placeholder named" 1 \
-  "POSTGRES_PASSWORD.*placeholder" "$root/.env.example"
-for key in AUTH_DB_PASSWORD HISTORY_DB_PASSWORD JWT_SECRET GRAFANA_PASSWORD ALERT_WEBHOOK_URL RCLONE_REMOTE; do
-  expect "the template's $key is named" 1 "$key" "$root/.env.example"
-done
-expect "a filled-in file passes" 0 "looks ready" "$valid"
-expect "a missing file is its own status" 2 "not found" "$work/nope.env"
+# ---- the template and a filled-in installation ----
 
-expect "an empty secret is refused" 1 "JWT_SECRET is empty" \
-  "$(variant empty-secret 's|^JWT_SECRET=.*|JWT_SECRET=|')"
+expect "the template is refused, its placeholders named" 1 "ALERT_WEBHOOK_URL.*placeholder" "$root/.env.example"
+expect "the template's RCLONE_REMOTE is named" 1 "RCLONE_REMOTE" "$root/.env.example"
+expect "a filled-in installation passes" 0 "look ready" "$valid"
+expect "a missing .env is its own status" 2 "not found" "$work/nope.env"
+
+# ---- .env ----
+
 expect "a missing setting is refused" 1 "WIKIMEDIA_CONTACT is missing" \
   "$(variant no-contact '/^WIKIMEDIA_CONTACT=/d')"
-expect "a short JWT secret is refused" 1 "decodes to 16 bytes" \
-  "$(variant short-secret "s|^JWT_SECRET=.*|JWT_SECRET=$(openssl rand -base64 16)|")"
-expect "a JWT secret that is not base64 is refused" 1 "not valid base64" \
-  "$(variant bad-secret 's|^JWT_SECRET=.*|JWT_SECRET=not*base64*at*all*!!|')"
-expect "a url-safe JWT secret without padding passes" 0 "looks ready" \
-  "$(variant urlsafe-secret "s|^JWT_SECRET=.*|JWT_SECRET=$(openssl rand -base64 40 | tr '+/' '-_' | tr -d '=')|")"
-expect "a service sharing the superuser's password is refused" 1 "three different passwords" \
-  "$(variant shared-pw "s|^AUTH_DB_PASSWORD=.*|AUTH_DB_PASSWORD=$(dotenv_get "$valid" POSTGRES_PASSWORD)|")"
+expect "an empty setting is refused" 1 "PUBLIC_DOMAIN is empty" \
+  "$(variant empty-domain 's|^PUBLIC_DOMAIN=.*|PUBLIC_DOMAIN=|')"
+expect "a secret left in .env is refused" 1 "JWT_SECRET is now the file secrets/jwt_secret" \
+  "$(variant leftover "\$a JWT_SECRET=$(openssl rand -base64 48)")"
 expect "a trailing slash on the origin is refused" 1 "FRONTEND_ORIGIN" \
   "$(variant slash 's|^FRONTEND_ORIGIN=.*|FRONTEND_ORIGIN=https://app.example.test/|')"
 expect "two services on one port are refused" 1 "three different ports" \
@@ -77,10 +83,45 @@ expect "half the first-admin pair is refused" 1 "set together" \
   "$(variant half-admin 's|^BOOTSTRAP_ADMIN_EMAIL=.*|BOOTSTRAP_ADMIN_EMAIL=admin@example.test|')"
 expect "the whole pair passes with a reminder" 0 "warning: BOOTSTRAP_ADMIN" \
   "$(variant admin 's|^BOOTSTRAP_ADMIN_EMAIL=.*|BOOTSTRAP_ADMIN_EMAIL=admin@example.test|; s|^BOOTSTRAP_ADMIN_PASSWORD=.*|BOOTSTRAP_ADMIN_PASSWORD=long-enough-password-1|')"
-expect "a quoted value with a dollar sign passes" 0 "looks ready" \
-  "$(variant dollar "s|^GRAFANA_PASSWORD=.*|GRAFANA_PASSWORD='pa\$\$word with spaces'|")"
+expect "a quoted value with a dollar sign passes" 0 "look ready" \
+  "$(variant dollar "s|^WIKIMEDIA_CONTACT=.*|WIKIMEDIA_CONTACT='ops \$team <ops@example.test>'|")"
 
-# The reader itself, on the forms Compose accepts.
+# ---- secrets/ ----
+
+expect "a missing secrets directory is refused" 1 "does not exist" "$valid" "$work/no-secrets"
+expect "a directory other users can enter is refused" 1 "is 755: make it 700" "$valid" \
+  "$(broken open-dir 'chmod 755 .')"
+expect "a missing secret file is refused" 1 "secrets/jwt_secret is missing" "$valid" \
+  "$(broken no-jwt 'rm jwt_secret')"
+expect "an empty secret file is refused" 1 "secrets/grafana_password is empty" "$valid" \
+  "$(broken empty ': > grafana_password')"
+expect "a file the containers cannot read is refused" 1 "auth_db_password is 600: make it 644" "$valid" \
+  "$(broken private 'chmod 600 auth_db_password')"
+expect "a line break at the end is refused" 1 "postgres_password ends with a line break" "$valid" \
+  "$(broken newline 'echo >> postgres_password')"
+expect "a placeholder in a file is refused" 1 "history_db_password still holds a placeholder" "$valid" \
+  "$(broken placeholder "printf change-me > history_db_password")"
+expect "a short JWT secret is refused" 1 "decodes to 16 bytes" "$valid" \
+  "$(broken short-jwt "openssl rand -base64 16 | tr -d '\n' > jwt_secret")"
+expect "a JWT secret that is not base64 is refused" 1 "not valid base64" "$valid" \
+  "$(broken bad-jwt "printf 'not*base64*at*all*!!' > jwt_secret")"
+expect "a url-safe JWT secret without padding passes" 0 "look ready" "$valid" \
+  "$(broken urlsafe "openssl rand -base64 40 | tr '+/' '-_' | tr -d '=\n' > jwt_secret")"
+expect "a role sharing the superuser's password is refused" 1 "three different passwords" "$valid" \
+  "$(broken shared 'cp postgres_password auth_db_password')"
+
+# ---- the list of secrets is compose-prod.yml's ----
+
+listed=$(bash "$check" --list-secrets | sort)
+declared=$(grep -oE '\./secrets/[a-z_]+' "$root/compose-prod.yml" | sed 's|\./secrets/||' | sort -u)
+if [ "$listed" = "$declared" ]; then
+  pass "check-env.sh checks exactly the secret files compose-prod.yml declares"
+else
+  fail "check-env.sh lists [$(echo $listed)], compose-prod.yml declares [$(echo $declared)]"
+fi
+
+# ---- the reader itself, on the forms Compose accepts ----
+
 env="$work/forms.env"
 cat > "$env" <<'EOF'
 PLAIN=plain
