@@ -3,7 +3,8 @@
 #
 #     docker compose -f compose-prod.yml up -d
 #
-# Secrets and ports all come from .env (see .env.example). Nothing is published except the
+# Secrets and ports all come from .env (see .env.example; check it with infra/check-env.sh, which
+# also catches the template's placeholders that ${VAR:?} lets through). Nothing is published except the
 # reverse proxy (80/443) and Prometheus/Grafana on the host's loopback.
 #
 # Not for local development: that is compose-dev.yml, which reads .env.dev instead.
@@ -50,8 +51,8 @@ services:
     restart: unless-stopped
     logging: *default-logging
     environment:
-      POSTGRES_DB:       ${POSTGRES_DB}
-      POSTGRES_USER:     ${POSTGRES_USER}
+      POSTGRES_DB:       ${POSTGRES_DB:?set POSTGRES_DB in .env}
+      POSTGRES_USER:     ${POSTGRES_USER:?set POSTGRES_USER in .env}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
     volumes:
       - postgres_data:/var/lib/postgresql/data
@@ -84,7 +85,7 @@ services:
       SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
       SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
       JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env}
-      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS}
+      JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS:?set JWT_EXPIRATION_MS in .env}
       # Creating a user needs an admin token, so an empty database has no way to get
       # its first administrator without these. Inert unless both are set AND the users
       # table is empty - see FirstAdminBootstrap. Clear them again after the first
@@ -239,13 +240,15 @@ services:
     restart: unless-stopped
     logging: *default-logging
     environment:
-      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER}
+      GF_SECURITY_ADMIN_USER:     ${GRAFANA_USER:?set GRAFANA_USER in .env}
       GF_SECURITY_ADMIN_PASSWORD: ${GRAFANA_PASSWORD:?set GRAFANA_PASSWORD in .env}
       GF_USERS_ALLOW_SIGN_UP:     "false"
       # Read by infra/grafana/provisioning/alerting/contact-points.yaml via Grafana's own
       # $__env{} provisioning macro - no sed/entrypoint step needed, unlike Prometheus's
       # config above, because Grafana (not this compose file) does that substitution itself.
-      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:-}
+      # Required, unlike in a quick local run: in production an alert nobody receives is the same as
+      # no alert, and the stack would look watched when it is not.
+      ALERT_WEBHOOK_URL:          ${ALERT_WEBHOOK_URL:?set ALERT_WEBHOOK_URL in .env}
     volumes:
       - grafana_data:/var/lib/grafana
       - ./infra/grafana/provisioning:/etc/grafana/provisioning:ro

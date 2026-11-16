@@ -96,12 +96,15 @@ never be committed.
 | `POSTGRES_PASSWORD` | also used by the services to connect |
 | `JWT_SECRET` | see below — the service will not start with a bad one |
 | `GRAFANA_PASSWORD` | the Grafana admin login; sign-up is disabled, so this is the only way in |
-| `GATEWAY_PORT`, `AUTH_PORT` | production only: where the two services listen (see step 3 below) |
+| `GATEWAY_PORT`, `AUTH_PORT`, `HISTORY_PORT` | production only: where the three services listen (see step 3 below) |
+| `ALERT_WEBHOOK_URL` | production only: where Grafana alerts and backup failures are sent; without it nobody hears of them |
 | `FRONTEND_ORIGIN` | exact origin of the frontend, or the browser blocks every call |
 | `WIKIMEDIA_CONTACT` | a URL or address Wikimedia can reach about this client; `history-service` will not start without it |
 | `PUBLIC_DOMAIN` | production only — must already resolve to the host |
 
-`.env.example` and `.env.dev.example` document the rest inline.
+`.env.example` and `.env.dev.example` document the rest inline. Before starting production, run
+`infra/check-env.sh`: Compose only refuses a value that is missing, and a `change-me` left from the
+template would otherwise become a real password.
 
 ### Generating `JWT_SECRET`
 
@@ -231,8 +234,13 @@ exposed directly: publishing 12129 would put it there.
 ### 4. Start the stack
 
 ```bash
+infra/check-env.sh
 docker compose -f compose-prod.yml up -d
 ```
+
+`infra/check-env.sh` reads `.env` without running it and lists everything that would break or weaken
+the start: placeholders left from the template, a `JWT_SECRET` the service would refuse, a
+`FRONTEND_ORIGIN` with a trailing slash, two services on one port. It changes nothing.
 
 That is the whole command. The reverse proxy is part of this file, and there is no override
 that could silently swap in the development stack: `compose-dev.yml` is a different file,

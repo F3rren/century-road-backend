@@ -257,3 +257,18 @@ jobs:
 
       - name: Test the Caddyfile
         run: bash infra/caddy/headers_test.sh
+
+  # infra/check-env.sh is what stands between a `change-me` in .env and a real password, and
+  # infra/lib/dotenv.sh is how it and backup.sh read .env: both are tested like code. Plain bash,
+  # no network, a few seconds.
+  infra-scripts:
+    name: infra scripts test
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+
+      - name: Test the settings check and the .env reader
+        run: bash infra/check-env_test.sh
