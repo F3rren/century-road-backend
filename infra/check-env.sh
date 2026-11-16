@@ -35,7 +35,7 @@ value() { dotenv_get "$file" "$1" || true; }
 
 # Every setting compose-prod.yml or backup.sh needs, with no usable default.
 required=(
-  POSTGRES_DB POSTGRES_USER POSTGRES_PASSWORD
+  POSTGRES_DB POSTGRES_USER POSTGRES_PASSWORD AUTH_DB_PASSWORD HISTORY_DB_PASSWORD
   JWT_SECRET JWT_EXPIRATION_MS
   GATEWAY_PORT AUTH_PORT HISTORY_PORT
   PUBLIC_DOMAIN FRONTEND_ORIGIN WIKIMEDIA_CONTACT
@@ -66,6 +66,14 @@ if has JWT_SECRET; then
     problem "JWT_SECRET is not valid base64 (generate one with: openssl rand -base64 48)"
   elif [ "$bytes" -lt 32 ]; then
     problem "JWT_SECRET decodes to $bytes bytes; at least 32 are needed (openssl rand -base64 48)"
+  fi
+fi
+
+# One role per service is only an isolation if knowing one password does not give another.
+if has POSTGRES_PASSWORD && has AUTH_DB_PASSWORD && has HISTORY_DB_PASSWORD; then
+  pw=$(printf '%s\n' "$(value POSTGRES_PASSWORD)" "$(value AUTH_DB_PASSWORD)" "$(value HISTORY_DB_PASSWORD)")
+  if [ "$(sort -u <<<"$pw" | wc -l)" -ne 3 ]; then
+    problem "POSTGRES_PASSWORD, AUTH_DB_PASSWORD and HISTORY_DB_PASSWORD must be three different passwords"
   fi
 fi
 

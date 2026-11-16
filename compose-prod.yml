@@ -54,10 +54,19 @@ services:
       POSTGRES_DB:       ${POSTGRES_DB:?set POSTGRES_DB in .env}
       POSTGRES_USER:     ${POSTGRES_USER:?set POSTGRES_USER in .env}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      # The superuser above is for Postgres itself, its init and the backups. Each service connects as
+      # its own role instead (infra/postgres/app-roles.sql), whose password the init script reads once,
+      # on an empty data directory; on an existing one, see README "One database user per service".
+      AUTH_DB_PASSWORD:    ${AUTH_DB_PASSWORD:?set AUTH_DB_PASSWORD in .env}
+      HISTORY_DB_PASSWORD: ${HISTORY_DB_PASSWORD:?set HISTORY_DB_PASSWORD in .env}
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
       - ./infra/postgres/init-history-db.sh:/docker-entrypoint-initdb.d/20-history-db.sh:ro
+      - ./infra/postgres/init-app-roles.sh:/docker-entrypoint-initdb.d/30-app-roles.sh:ro
+      # Outside docker-entrypoint-initdb.d on purpose: a .sql file there would run on its own,
+      # without the variables the script passes it.
+      - ./infra/postgres/app-roles.sql:/usr/local/share/century-road/app-roles.sql:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
       interval: 10s
@@ -82,8 +91,8 @@ services:
       # .env and nowhere else.
       AUTH_PORT:                  ${AUTH_PORT:?set AUTH_PORT in .env}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      SPRING_DATASOURCE_USERNAME: auth_app
+      SPRING_DATASOURCE_PASSWORD: ${AUTH_DB_PASSWORD:?set AUTH_DB_PASSWORD in .env}
       JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env}
       JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS:?set JWT_EXPIRATION_MS in .env}
       # Creating a user needs an admin token, so an empty database has no way to get
@@ -122,8 +131,8 @@ services:
       HISTORY_PORT: ${HISTORY_PORT:?set HISTORY_PORT in .env}
       WIKIMEDIA_CONTACT:      ${WIKIMEDIA_CONTACT:?set WIKIMEDIA_CONTACT in .env (a URL or an address Wikimedia can reach)}
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB}_history
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env}
+      SPRING_DATASOURCE_USERNAME: history_app
+      SPRING_DATASOURCE_PASSWORD: ${HISTORY_DB_PASSWORD:?set HISTORY_DB_PASSWORD in .env}
     healthcheck:
       test: ["CMD", "curl", "-fsS", "http://localhost:${HISTORY_PORT:?set HISTORY_PORT in .env}/actuator/health"]
       interval: 15s

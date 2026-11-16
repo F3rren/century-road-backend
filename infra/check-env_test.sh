@@ -34,6 +34,8 @@ expect() {
 # A file that passes: the template with every placeholder replaced by a plausible value.
 valid="$work/valid.env"
 sed -e "s|^POSTGRES_PASSWORD=.*|POSTGRES_PASSWORD=$(openssl rand -hex 24)|" \
+    -e "s|^AUTH_DB_PASSWORD=.*|AUTH_DB_PASSWORD=$(openssl rand -hex 24)|" \
+    -e "s|^HISTORY_DB_PASSWORD=.*|HISTORY_DB_PASSWORD=$(openssl rand -hex 24)|" \
     -e "s|^JWT_SECRET=.*|JWT_SECRET=$(openssl rand -base64 48)|" \
     -e "s|^GRAFANA_PASSWORD=.*|GRAFANA_PASSWORD=$(openssl rand -hex 24)|" \
     -e "s|^ALERT_WEBHOOK_URL=.*|ALERT_WEBHOOK_URL=https://hooks.example.test/century-road|" \
@@ -45,7 +47,7 @@ variant() { sed -e "$2" "$valid" > "$work/$1.env"; echo "$work/$1.env"; }
 
 expect "the template is refused, every placeholder named" 1 \
   "POSTGRES_PASSWORD.*placeholder" "$root/.env.example"
-for key in JWT_SECRET GRAFANA_PASSWORD ALERT_WEBHOOK_URL RCLONE_REMOTE; do
+for key in AUTH_DB_PASSWORD HISTORY_DB_PASSWORD JWT_SECRET GRAFANA_PASSWORD ALERT_WEBHOOK_URL RCLONE_REMOTE; do
   expect "the template's $key is named" 1 "$key" "$root/.env.example"
 done
 expect "a filled-in file passes" 0 "looks ready" "$valid"
@@ -61,6 +63,8 @@ expect "a JWT secret that is not base64 is refused" 1 "not valid base64" \
   "$(variant bad-secret 's|^JWT_SECRET=.*|JWT_SECRET=not*base64*at*all*!!|')"
 expect "a url-safe JWT secret without padding passes" 0 "looks ready" \
   "$(variant urlsafe-secret "s|^JWT_SECRET=.*|JWT_SECRET=$(openssl rand -base64 40 | tr '+/' '-_' | tr -d '=')|")"
+expect "a service sharing the superuser's password is refused" 1 "three different passwords" \
+  "$(variant shared-pw "s|^AUTH_DB_PASSWORD=.*|AUTH_DB_PASSWORD=$(dotenv_get "$valid" POSTGRES_PASSWORD)|")"
 expect "a trailing slash on the origin is refused" 1 "FRONTEND_ORIGIN" \
   "$(variant slash 's|^FRONTEND_ORIGIN=.*|FRONTEND_ORIGIN=https://app.example.test/|')"
 expect "two services on one port are refused" 1 "three different ports" \

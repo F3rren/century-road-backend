@@ -93,7 +93,8 @@ never be committed.
 
 | Variable | Why it matters |
 |---|---|
-| `POSTGRES_PASSWORD` | also used by the services to connect |
+| `POSTGRES_PASSWORD` | the superuser's: Postgres itself, its init and the backups |
+| `AUTH_DB_PASSWORD`, `HISTORY_DB_PASSWORD` | each service's own database role (see [One database user per service](#one-database-user-per-service)) |
 | `JWT_SECRET` | see below — the service will not start with a bad one |
 | `GRAFANA_PASSWORD` | the Grafana admin login; sign-up is disabled, so this is the only way in |
 | `GATEWAY_PORT`, `AUTH_PORT`, `HISTORY_PORT` | production only: where the three services listen (see step 3 below) |
@@ -308,6 +309,50 @@ first administrator on its own. `FirstAdminBootstrap` exists for exactly that ga
    so leaving them set keeps a password readable by anyone who can inspect the container,
    for no further benefit — the mechanism will not fire again anyway.
 
+## One database user per service
+
+`auth-service` connects as `auth_app` and `history-service` as `history_app`, each the owner of its
+own database and unable even to open the other's. `POSTGRES_USER` is the superuser, left to Postgres
+itself, its init scripts and the backups. Before this, both services used the superuser: getting into
+`history-service` (the one that talks to Wikipedia) meant getting every user, password hash and
+refresh token, and the whole cluster.
+
+**A new installation** needs nothing: on an empty data directory `infra/postgres/init-app-roles.sh`
+creates both roles with `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` and gives each its database
+(`infra/postgres/app-roles.sql` explains every step).
+
+**An installation that already has data** never runs init scripts again, so this is done once, by
+hand:
+
+1. Take a backup (`bash infra/postgres/backup.sh`) and check that it arrived.
+2. Set `AUTH_DB_PASSWORD` and `HISTORY_DB_PASSWORD` (see `.env.example`) and run `infra/check-env.sh`.
+3. Recreate the database container, so it has the new variables and files (the data stays in its
+   volume): `docker compose -f compose-prod.yml up -d db`
+4. Create the roles and hand them what already exists:
+   `docker compose -f compose-prod.yml exec -T db sh /docker-entrypoint-initdb.d/30-app-roles.sh`
+5. Start the services as their own users, `docker compose -f compose-prod.yml up -d`, then log in and
+   open a day to check both.
+
+Step 4 is safe to repeat. Going back is a matter of the previous compose file and images: no data
+changed, only who owns it, and the superuser can still open everything.
+
+**Development:** a `compose-dev.yml` volume made before the roles existed has neither. Drop it
+(`docker compose --env-file .env.dev -f compose-dev.yml down -v`; its data is throwaway) or run step 4
+with `--env-file .env.dev -f compose-dev.yml`.
+
+**Railway** runs its own Postgres, without these init scripts. Once, from a machine with `psql`, with the
+`Postgres` service's public connection string (its *Connect* tab):
+
+```bash
+psql "<public connection string>" \
+  -v auth_db=<PGDATABASE> -v history_db=<PGDATABASE>_history \
+  -v auth_password='<a new password>' -v history_password='<another one>' \
+  -f infra/postgres/app-roles.sql
+```
+
+Then, in the two services' variables, the role and its password instead of `${{Postgres.PGUSER}}` and
+`${{Postgres.PGPASSWORD}}` (see the variables block below).
+
 ## Backups
 
 Everything either service knows — every user, every password hash, every view counter — lives
@@ -341,7 +386,10 @@ reasoning as [First administrator](#first-administrator) above.
    recreate the second database once: `CREATE DATABASE "${POSTGRES_DB}_history";` — the same
    one-time step `infra/postgres/init-history-db.sh` does automatically on a fresh container,
    or the Railway section above does by hand. Restoring onto the *same, still-running* instance
-   needs no such step: both databases already exist.
+   needs no such step: both databases already exist. The dumps name `auth_app` and `history_app`
+   as the owners of the tables, so those roles have to exist first: a container started with
+   `compose-prod.yml` creates them; any other instance needs `infra/postgres/app-roles.sql` (see
+   [One database user per service](#one-database-user-per-service)).
 2. Import the dump:
 
    ```bash
@@ -513,11 +561,11 @@ public domain - Railway still probes that port internally, and a mismatch fails 
 and silently keeps the previous revision running on the old port instead.
 
 ```
-# auth-service
+# auth-service (its own database role: see "One database user per service")
 AUTH_PORT=12130
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}
-SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
-SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+SPRING_DATASOURCE_USERNAME=auth_app
+SPRING_DATASOURCE_PASSWORD=<auth_app's password>   # mark it sealed
 JWT_SECRET=<openssl rand -base64 48>          # mark it sealed
 JWT_EXPIRATION_MS=86400000
 
@@ -532,8 +580,8 @@ WIKIMEDIA_CONTACT=https://github.com/F3rren/century-road-backend
 # run its Flyway migration against an unresolved "${SPRING_DATASOURCE_URL}" or a
 # database that isn't there.
 SPRING_DATASOURCE_URL=jdbc:postgresql://${{Postgres.PGHOST}}:${{Postgres.PGPORT}}/${{Postgres.PGDATABASE}}_history
-SPRING_DATASOURCE_USERNAME=${{Postgres.PGUSER}}
-SPRING_DATASOURCE_PASSWORD=${{Postgres.PGPASSWORD}}
+SPRING_DATASOURCE_USERNAME=history_app
+SPRING_DATASOURCE_PASSWORD=<history_app's password>   # mark it sealed
 
 # gateway
 SPRING_PROFILES_INCLUDE=railway

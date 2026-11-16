@@ -41,10 +41,19 @@ services:
       POSTGRES_DB:       ${POSTGRES_DB:-centuryroad}
       POSTGRES_USER:     ${POSTGRES_USER:-centuryroad}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
+      # The superuser above is for Postgres itself, its init and the backups. Each service connects as
+      # its own role instead (infra/postgres/app-roles.sql), whose password the init script reads once,
+      # on an empty data directory; on an existing one, see README "One database user per service".
+      AUTH_DB_PASSWORD:    ${AUTH_DB_PASSWORD:?set AUTH_DB_PASSWORD in .env.dev}
+      HISTORY_DB_PASSWORD: ${HISTORY_DB_PASSWORD:?set HISTORY_DB_PASSWORD in .env.dev}
     volumes:
       - postgres_data:/var/lib/postgresql/data
       - ./infra/postgres/init-postgis.sql:/docker-entrypoint-initdb.d/10-postgis.sql:ro
       - ./infra/postgres/init-history-db.sh:/docker-entrypoint-initdb.d/20-history-db.sh:ro
+      - ./infra/postgres/init-app-roles.sh:/docker-entrypoint-initdb.d/30-app-roles.sh:ro
+      # Outside docker-entrypoint-initdb.d on purpose: a .sql file there would run on its own,
+      # without the variables the script passes it.
+      - ./infra/postgres/app-roles.sql:/usr/local/share/century-road/app-roles.sql:ro
     ports:
       - "127.0.0.1:${DB_PORT:-5433}:5432"
     healthcheck:
@@ -64,8 +73,8 @@ services:
       SPRING_PROFILES_ACTIVE:     dev
       AUTH_PORT:                  "8081"
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
+      SPRING_DATASOURCE_USERNAME: auth_app
+      SPRING_DATASOURCE_PASSWORD: ${AUTH_DB_PASSWORD:?set AUTH_DB_PASSWORD in .env.dev}
       JWT_SECRET:                 ${JWT_SECRET:?set JWT_SECRET in .env.dev (openssl rand -base64 48)}
       JWT_EXPIRATION_MS:          ${JWT_EXPIRATION_MS:-86400000}
       # A first administrator for the empty development database, so login and the admin
@@ -108,8 +117,8 @@ services:
       # now, but V1 already created it that way and rewriting an applied migration just
       # to flatten it isn't worth the risk. See docs/architecture.md.
       SPRING_DATASOURCE_URL:      jdbc:postgresql://db:5432/${POSTGRES_DB:-centuryroad}_history
-      SPRING_DATASOURCE_USERNAME: ${POSTGRES_USER:-centuryroad}
-      SPRING_DATASOURCE_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD in .env.dev}
+      SPRING_DATASOURCE_USERNAME: history_app
+      SPRING_DATASOURCE_PASSWORD: ${HISTORY_DB_PASSWORD:?set HISTORY_DB_PASSWORD in .env.dev}
     volumes:
       - ./service/history-service:/app
       - maven_cache:/root/.m2
