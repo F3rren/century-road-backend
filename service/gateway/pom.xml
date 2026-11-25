@@ -6,7 +6,7 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>4.1.2</version>
+		<version>4.2.0</version>
 		<relativePath />
 	</parent>
 	<groupId>com.centuryroad</groupId>
@@ -21,11 +21,11 @@
 		     built on 4.1 yet (2026.0 is at RC2 and targets Boot 4.2), so 4.1.2 + 2025.1.4 is a
 		     pairing the Spring team does not list: see docs/boot-4-migration.md for what was
 		     checked and for the day this moves to 2026.0. -->
-		<spring-cloud.version>2025.1.4</spring-cloud.version>
+		<spring-cloud.version>2025.1.5</spring-cloud.version>
 
 		<!-- 3.2.0 is built against Spring Boot 4.1.2 - the line that matches ours. Raise it together
 		     with Spring Boot, not on its own (dependabot.yml ignores its minors). -->
-		<springdoc.version>3.2.0</springdoc.version>
+		<springdoc.version>3.2.1</springdoc.version>
 	</properties>
 
 	<dependencyManagement>
@@ -44,7 +44,7 @@
 			<dependency>
 				<groupId>org.bouncycastle</groupId>
 				<artifactId>bcprov-jdk18on</artifactId>
-				<version>1.86</version>
+				<version>1.87</version>
 			</dependency>
 		</dependencies>
 	</dependencyManagement>
@@ -132,7 +132,7 @@
 			<plugin>
 				<groupId>org.jacoco</groupId>
 				<artifactId>jacoco-maven-plugin</artifactId>
-				<version>0.8.15</version>
+				<version>0.8.16</version>
 				<executions>
 					<execution>
 						<id>prepare-agent</id>
